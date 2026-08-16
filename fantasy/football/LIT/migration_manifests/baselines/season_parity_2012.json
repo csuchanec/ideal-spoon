@@ -1,0 +1,180 @@
+{
+  "artifacts": {
+    "league/matchup/raw": {
+      "exists": true,
+      "metrics": {
+        "columns": 19,
+        "rows": 156,
+        "sum:teamPoints": 16214.49
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/matchup/raw/2012.csv",
+      "sha256": "aa828964fecb8fc0921897a83631589699baafd5ededcdf207fd197ffff91d76"
+    },
+    "league/standings/season/actual": {
+      "exists": true,
+      "metrics": {
+        "columns": 7,
+        "rows": 10
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/actual/2012.csv",
+      "sha256": "bc43446a5bb349d32d0d8e66ba25d0b6bf307610a41ef68cf30c80a5cbb4653f"
+    },
+    "league/standings/season/alternative_scoring": {
+      "exists": true,
+      "metrics": {
+        "columns": 7,
+        "rows": 10
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/alternative_scoring/2012.csv",
+      "sha256": "ae09e2b3487de95680996fe829e97779d8668ad0bbaf830be757205f02b627fa"
+    },
+    "league/standings/season/alternative_scoring_with_changes": {
+      "exists": true,
+      "metrics": {
+        "columns": 32,
+        "rows": 10
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/alternative_scoring_with_changes/2012.csv",
+      "sha256": "fc4ad0fdc6351032b5b5691100de85dc6e782ed36a0ce2765d000c25769c4f0c"
+    },
+    "league/stats": {
+      "exists": true,
+      "metrics": {
+        "columns": 4,
+        "rows": 1
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/stats/2012.csv",
+      "sha256": "7c20dc76f89ee864e388637416f0bb678a2c7cec162119673f246c970284877d"
+    },
+    "players/enriched/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 182,
+        "rows": 44251,
+        "sum:Total": 44338.72
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/enriched/weekly/2012.csv",
+      "sha256": "12d23af09eb32459cc8cbed224f30faa21a1c06cf59c87f396fe810612ec8007"
+    },
+    "players/score/season": {
+      "exists": true,
+      "metrics": {
+        "columns": 177,
+        "rows": 2603,
+        "sum:Total": 44338.72
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/score/season/2012.csv",
+      "sha256": "32c4e963c816e8052d8f11a401a1fcd7bbfd11ea4a57313e5e591bcfe23c14ea"
+    },
+    "teams/draft": {
+      "exists": true,
+      "metrics": {
+        "columns": 5,
+        "rows": 140
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/2012.csv",
+      "sha256": "63dbcc18ec579f3268d79bbdefc54bea8609b6667607cd32581aaf48a6ddbbb3"
+    },
+    "teams/draft/evaluation/points/season": {
+      "exists": true,
+      "metrics": {
+        "columns": 8,
+        "rows": 140,
+        "sum:Total": 22184.129999999997
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/evaluation/points/season/2012.csv",
+      "sha256": "98cdf66e58b0bde4d9f001fde1ffa9c4e9ab9b3476e200daa6c41182047dca8d"
+    },
+    "teams/roster/comparison/over_replacement/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 10,
+        "rows": 2238,
+        "sum:Total": 22537.92
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/comparison/over_replacement/weekly/2012.csv",
+      "sha256": "e3d90f1c8b5cb9e519b215abfe7f890ad04c4cf47dfa5d8a56929990d8deeb0f"
+    },
+    "teams/roster/lineup/ideal/lineup/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 190,
+        "rows": 1440,
+        "sum:Total": 19045.58
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/lineup/ideal/lineup/weekly/2012.csv",
+      "sha256": "755e805861e1b4595cc33dc807c4255e6758d2fda9992c4aabd9b54d25944432"
+    },
+    "teams/roster/lineup/ideal/total": {
+      "exists": true,
+      "metrics": {
+        "columns": 180,
+        "rows": 160,
+        "sum:Total": 19045.58
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/lineup/ideal/total/2012.csv",
+      "sha256": "2a46cf758b46cdc8c6d5eca87abf717fe71d0209505e4de7397dda3e5a4985a6"
+    },
+    "teams/roster/with_positions/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 188,
+        "rows": 2238,
+        "sum:Total": 22537.92
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2012.csv",
+      "sha256": "ac4857036d8acf407e5e725219f075d229d7fb3fd79b68e25414ff1092b91650"
+    },
+    "teams/roster/worst/by_position/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 189,
+        "rows": 959,
+        "sum:Total": 9574.83
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/worst/by_position/weekly/2012.csv",
+      "sha256": "234129133bb9ecc70cc25a1e47961ade7a7f872c95fef1eebf45e1187aa307c2"
+    },
+    "teams/score/actual/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 90,
+        "rows": 44251,
+        "sum:Total": 44338.72
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/actual/weekly/2012.csv",
+      "sha256": "c8e20fb55a38e62d89157b891f97c469fec41ab229bd5fc2947b0668a687a51a"
+    },
+    "teams/score/bench/total": {
+      "exists": true,
+      "metrics": {
+        "columns": 180,
+        "rows": 160,
+        "sum:Total": 5845.54
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/bench/total/2012.csv",
+      "sha256": "28e0ea9ed3edcd210d4dc5a665fe18a0b4472847f3db68ccf31238e0774289e3"
+    },
+    "teams/score/played/total": {
+      "exists": true,
+      "metrics": {
+        "columns": 180,
+        "rows": 160,
+        "sum:Total": 16692.38
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/played/total/2012.csv",
+      "sha256": "f14e6344e3dd6905d3e28365a2bf1e7cd8cd57c7cd1fbd0227f0e5a96ed81855"
+    },
+    "teams/season/consistency": {
+      "exists": true,
+      "metrics": {
+        "columns": 9,
+        "rows": 10,
+        "sum:wins": 78.0
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/season/consistency/2012.csv",
+      "sha256": "6b33de6ddbd20f1a8184ffce0976e95624fa0badd63299709bbf1fd8413fe38c"
+    }
+  },
+  "year": 2012
+}

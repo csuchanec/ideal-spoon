@@ -1,0 +1,1693 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2025,
+    "week": 2,
+    "generated_at": "2026-08-16T08:27:14.559361",
+    "page_title": "Millan Darling Millan vs Reverse Ted Lasso matchup report",
+    "matchup_id": "week-02-millan-darling-millan-vs-reverse-ted-lasso",
+    "output_dir": "analysis/weekly_report/data/2025/matchups_week_02"
+  },
+  "matchup": {
+    "matchup_id": "week-02-millan-darling-millan-vs-reverse-ted-lasso",
+    "team_a_name": "Millan Darling Millan",
+    "team_b_name": "Reverse Ted Lasso",
+    "team_a_score": 149.7666666666666,
+    "team_b_score": 113.7666666666666,
+    "actual_margin": 36.0,
+    "final_margin": 36.0,
+    "winner_team_name": "Millan Darling Millan",
+    "result_text": "Millan Darling Millan by 36.0",
+    "margin_text": "Millan Darling Millan 149.8 to 113.8",
+    "ideal_margin": 22.73333333333335,
+    "ideal_winner": "Millan Darling Millan",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 127.15,
+    "team_b_projected_score": 129.31,
+    "team_a_points_over_projected": 22.620000000000005,
+    "team_b_points_over_projected": -15.540000000000006,
+    "league_average_score": 121.33999999999995,
+    "league_median_score": 114.4666666666666,
+    "team_a_weekly_rank": 2,
+    "team_b_weekly_rank": 6,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": false
+  },
+  "summary": {
+    "decision_summary": "Millan Darling Millan won by 36.0. Millan Darling Millan left 9.2 lineup points on the table, while Reverse Ted Lasso left 22.5.",
+    "historical_summary": "Millan Darling Millan is 5-3 against Reverse Ted Lasso across 8 all-time meeting(s).",
+    "net_ideal_swing": -13.266666666666652,
+    "ideal_summary": "Ideal lineups still favor Millan Darling Millan",
+    "winner_reason": "Millan Darling Millan won by controlling total WR output (edge of 32.9) while also finishing +22.6 against projection.",
+    "loser_reason": "Reverse Ted Lasso did leave 22.5 lineup points on the bench, but that still was not enough to explain a 36.0-point loss."
+  },
+  "teams": [
+    {
+      "team_name": "Millan Darling Millan",
+      "manager_display": "Yarp",
+      "actual_score": 149.7666666666666,
+      "ideal_score": 158.96666666666658,
+      "manager_grade_pct": 92.96069342696717,
+      "manager_grade_letter": "A-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 92.96069342696717,
+          "letter": "A-",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 86.90048725808708,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 94.21262319144475,
+            "decision_grade_pct": 84.38430260402482,
+            "roster_missed_points": 9.199999999999989,
+            "free_agent_missed_points": 52.9,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": 16.166666666666686,
+            "season_average_score": 112.12333333333326,
+            "score_vs_season_average": 37.64333333333333,
+            "weekly_rank": 2,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 267.1999999999998,
+            "season_ideal_points": 312.19999999999976,
+            "season_lineup_efficiency_pct": 85.58616271620757,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving"
+          }
+        },
+        "summary": "Millan Darling Millan graded A- this week and B for the season-to-date. Weekly process reads as well managed, season process reads as well managed."
+      },
+      "process_score_pct": 92.96069342696717,
+      "process_score_letter": "A-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 92.96069342696717,
+          "letter": "A-",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 86.90048725808708,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 94.21262319144475,
+            "decision_grade_pct": 84.38430260402482,
+            "roster_missed_points": 9.199999999999989,
+            "free_agent_missed_points": 52.9,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": 16.166666666666686,
+            "season_average_score": 112.12333333333326,
+            "score_vs_season_average": 37.64333333333333,
+            "weekly_rank": 2,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 267.1999999999998,
+            "season_ideal_points": 312.19999999999976,
+            "season_lineup_efficiency_pct": 85.58616271620757,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving"
+          }
+        },
+        "summary": "Millan Darling Millan graded A- this week and B for the season-to-date. Weekly process reads as well managed, season process reads as well managed."
+      },
+      "season_context": {
+        "seed": 4,
+        "record": "1-1",
+        "points_for": 267.1999999999998,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 9.199999999999989,
+          "roster_swap_upside_points": 0,
+          "waiver_upside_points": 52.900000000000006
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 38.2
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "James Cook III",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 31.500000000000004
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 23.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 22.3666666666666
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 14.999999999999975
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 10.9
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 7.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chase McLaughlin",
+          "position": "K",
+          "roster_position": "K",
+          "points": 1.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 15.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tyrone Tracy Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 12.499999999999956
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 9.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Keon Coleman",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 4.6
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Evan Engram",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 2.2
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 15.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tyrone Tracy Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 12.499999999999956
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 9.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Keon Coleman",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 4.6
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Evan Engram",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 2.2
+        }
+      ],
+      "top_lineup_swings": [],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Wan'Dale Robinson",
+          "recommended_points": 25.200000000000003,
+          "benched_player": "Keon Coleman",
+          "benched_points": 4.6,
+          "point_swing": 20.6,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Wan'Dale Robinson instead of holding Keon Coleman for an estimated +20.6 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Keon Coleman",
+            "points": 4.6,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Tyler Allgeier",
+          "recommended_points": 21.0,
+          "benched_player": "Brian Robinson Jr.",
+          "benched_points": 1.9,
+          "point_swing": 19.1,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Tyler Allgeier instead of holding Brian Robinson Jr. for an estimated +19.1 points this week.",
+          "confidence": 0.9775,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Brian Robinson Jr.",
+            "points": 1.9,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.47750000000000004,
+            "capped_total": 0.9775
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "TE",
+          "recommended_player": "Zach Ertz",
+          "recommended_points": 15.4,
+          "benched_player": "Evan Engram",
+          "benched_points": 2.2,
+          "point_swing": 13.2,
+          "source": "FREE_AGENT",
+          "reason": "At TE, consider adding Zach Ertz instead of holding Evan Engram for an estimated +13.2 points this week.",
+          "confidence": 0.83,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Evan Engram",
+            "points": 2.2,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.32999999999999996,
+            "capped_total": 0.83
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 38.2
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "James Cook III",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 31.500000000000004
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 23.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 22.3666666666666
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 14.999999999999975
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 10.9
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 7.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chase McLaughlin",
+          "position": "K",
+          "roster_position": "K",
+          "points": 1.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Denver",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 0.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 15.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tyrone Tracy Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 12.499999999999956
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 9.4
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Keon Coleman",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 4.6
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Evan Engram",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 2.2
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Brian Robinson Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.9
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [],
+      "league_context": {
+        "weekly_rank": 2,
+        "league_size": 10,
+        "league_average_score": 121.33999999999995,
+        "league_median_score": 114.4666666666666,
+        "beat_league_median": true,
+        "all_play_record": "8-1",
+        "projected_score": 127.15,
+        "points_over_projected": 22.620000000000005
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 149.7666666666666,
+        "optimal_lineup_points": 158.96666666666658,
+        "bench_points": 45.59999999999996,
+        "points_left_on_bench": 9.199999999999989,
+        "lowest_scoring_starter": {
+          "team_name": "Millan Darling Millan",
+          "name": "Denver",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 0.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 100.0,
+        "best_swap": null,
+        "summary": "Millan Darling Millan started 9 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 62.163365234809746,
+        "top_2_share_pct": 46.53906076118409,
+        "volatility_std": 12.501819894954133,
+        "structural_integrity_pct": 37.836634765190254,
+        "fragility_score": 46.53906076118409,
+        "label": "Boom/Bust Build"
+      }
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "manager_display": "Liana",
+      "actual_score": 113.7666666666666,
+      "ideal_score": 136.23333333333323,
+      "manager_grade_pct": 77.24607010252296,
+      "manager_grade_letter": "C+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 77.24607010252296,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 77.11102247612578,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 83.5086860778077,
+            "decision_grade_pct": 75.4279147375051,
+            "roster_missed_points": 22.46666666666664,
+            "free_agent_missed_points": 41.7,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss"
+            ],
+            "score_vs_historical_avg": 16.05000000000001,
+            "season_average_score": 112.12333333333326,
+            "score_vs_season_average": 1.6433333333333309,
+            "weekly_rank": 6,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 195.43333333333317,
+            "season_ideal_points": 235.6666666666665,
+            "season_lineup_efficiency_pct": 82.92786421499292,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving"
+          }
+        },
+        "summary": "Reverse Ted Lasso graded C+ this week and C+ for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 77.24607010252296,
+      "process_score_letter": "C+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 77.24607010252296,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 77.11102247612578,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 83.5086860778077,
+            "decision_grade_pct": 75.4279147375051,
+            "roster_missed_points": 22.46666666666664,
+            "free_agent_missed_points": 41.7,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss"
+            ],
+            "score_vs_historical_avg": 16.05000000000001,
+            "season_average_score": 112.12333333333326,
+            "score_vs_season_average": 1.6433333333333309,
+            "weekly_rank": 6,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 195.43333333333317,
+            "season_ideal_points": 235.6666666666665,
+            "season_lineup_efficiency_pct": 82.92786421499292,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving"
+          }
+        },
+        "summary": "Reverse Ted Lasso graded C+ this week and C+ for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 9,
+        "record": "0-2",
+        "points_for": 195.43333333333317,
+        "max_possible_wins": 13
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 22.46666666666664,
+          "roster_swap_upside_points": 11.766666666666659,
+          "waiver_upside_points": 41.7
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 1,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Drake Maye",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 32.766666666666595
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 18.4
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 13.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Los Angeles",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 13.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 10.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "K",
+          "points": 10.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 7.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 4.5
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 16.26666666666666
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 16.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 13.966666666666658
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dylan Sampson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 11.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.3000000000000003
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 16.26666666666666
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 16.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 13.966666666666658
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dylan Sampson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 11.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.3000000000000003
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Bhayshul Tuten",
+          "recommended_points": 16.26666666666666,
+          "benched_player": "Omarion Hampton",
+          "benched_points": 4.5,
+          "point_swing": 11.766666666666659,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Bhayshul Tuten over Omarion Hampton for an estimated +11.8 points this week.",
+          "confidence": 0.8941666666666664,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Omarion Hampton",
+            "points": 4.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.29416666666666647,
+            "capped_total": 0.8941666666666664
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Wan'Dale Robinson",
+          "recommended_points": 25.200000000000003,
+          "benched_player": "Khalil Shakir",
+          "benched_points": 2.2,
+          "point_swing": 23.000000000000004,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Wan'Dale Robinson instead of holding Khalil Shakir for an estimated +23.0 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Khalil Shakir",
+            "points": 2.2,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Tyler Allgeier",
+          "recommended_points": 21.0,
+          "benched_player": "Aaron Jones Sr.",
+          "benched_points": 2.3000000000000003,
+          "point_swing": 18.7,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Tyler Allgeier instead of holding Aaron Jones Sr. for an estimated +18.7 points this week.",
+          "confidence": 0.9675,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Aaron Jones Sr.",
+            "points": 2.3000000000000003,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.46749999999999997,
+            "capped_total": 0.9675
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "actual_team": "Houston Texans",
+          "started": true,
+          "points": 3.9,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 9,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 4.800000000000001,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -0.9000000000000008,
+          "grade_adjustment_points": -1.5,
+          "grade_impact_label": "Speculative start miss",
+          "tags": [
+            "Speculative start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Dalton Schultz (TE, 3.9 pts, started, Speculative start miss) - Neutral"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Drake Maye",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 32.766666666666595
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 18.4
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 13.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Los Angeles",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 13.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 10.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "K",
+          "points": 10.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 7.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 4.5
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 3.9
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 16.26666666666666
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 16.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 13.966666666666658
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dylan Sampson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 11.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.3000000000000003
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 2.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [],
+      "league_context": {
+        "weekly_rank": 6,
+        "league_size": 10,
+        "league_average_score": 121.33999999999995,
+        "league_median_score": 114.4666666666666,
+        "beat_league_median": false,
+        "all_play_record": "4-5",
+        "projected_score": 129.31,
+        "points_over_projected": -15.540000000000006
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 113.7666666666666,
+        "optimal_lineup_points": 136.23333333333323,
+        "bench_points": 62.73333333333332,
+        "points_left_on_bench": 22.46666666666664,
+        "lowest_scoring_starter": {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 3.9
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Bhayshul Tuten",
+          "recommended_points": 16.26666666666666,
+          "benched_player": "Omarion Hampton",
+          "benched_points": 4.5,
+          "point_swing": 11.766666666666659,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Bhayshul Tuten over Omarion Hampton for an estimated +11.8 points this week.",
+          "confidence": 0.8941666666666664,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Omarion Hampton",
+            "points": 4.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.29416666666666647,
+            "capped_total": 0.8941666666666664
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Reverse Ted Lasso started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 56.57779079988276,
+        "top_2_share_pct": 44.97509522414295,
+        "volatility_std": 8.281435102235445,
+        "structural_integrity_pct": 43.42220920011724,
+        "fragility_score": 44.97509522414295,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 38.2
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Drake Maye",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 32.766666666666595
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "James Cook III",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 31.500000000000004
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Tucker Kraft",
+        "position": "TE",
+        "roster_position": "TE",
+        "points": 23.4
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Jayden Daniels",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 22.3666666666666
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Josh Jacobs",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 18.4
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Deebo Samuel",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "points": 14.999999999999975
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Nico Collins",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 13.2
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Los Angeles",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 13.0
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Zay Flowers",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 10.9
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Bhayshul Tuten",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 16.26666666666666
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "David Montgomery",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 16.1
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Tetairoa McMillan",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 15.0
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Rashid Shaheed",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 13.966666666666658
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Tyrone Tracy Jr.",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 12.499999999999956
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Dylan Sampson",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 11.9
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Chris Olave",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 9.4
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Keon Coleman",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 4.6
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "actual_team": "Houston Texans",
+        "started": true,
+        "points": 3.9,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 9,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 4.800000000000001,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -0.9000000000000008,
+        "grade_adjustment_points": -1.5,
+        "grade_impact_label": "Speculative start miss",
+        "tags": [
+          "Speculative start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Dalton Schultz (TE, 3.9 pts, started, Speculative start miss) - Neutral"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Millan Darling Millan",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 36.0,
+      "margin_relative_value": 0.0,
+      "position": "",
+      "summary": "Millan Darling Millan won the raw scoring battle by 36.0 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Millan Darling Millan",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 13.266666666666652,
+      "margin_relative_value": -22.73333333333335,
+      "position": "",
+      "summary": "Millan Darling Millan had the cleaner lineup week by 13.3 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Reverse Ted Lasso",
+      "loser_team": "Millan Darling Millan",
+      "value": 64.16666666666664,
+      "margin_relative_value": 28.166666666666643,
+      "position": "",
+      "summary": "Reverse Ted Lasso carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "MOSTLY",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 64.16666666666664,
+      "margin_relative_value": 28.166666666666643,
+      "position": "",
+      "summary": "Missed opportunities exceeded the 36.0-point margin, but not from one clear swap."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Millan Darling Millan",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 32.899999999999984,
+      "margin_relative_value": -3.1000000000000156,
+      "position": "WR",
+      "summary": "Millan Darling Millan controlled total WR output by 32.9 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 36.0,
+    "margin": 36.0,
+    "takeaways": [
+      "The 36.0-point margin was larger than either team's main lineup leak, so the matchup was decided more by raw scoring than one obvious swap.",
+      "The clearest unit edge was total WR output: Millan Darling Millan by 32.9 points.",
+      "Against projection, Millan Darling Millan finished +22.6 while Reverse Ted Lasso finished -15.5.",
+      "The biggest started performance was Amon-Ra St. Brown for Millan Darling Millan at 38.2 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Millan Darling Millan waiver upside",
+        "team_name": "Millan Darling Millan",
+        "value": 52.900000000000006,
+        "relative_to_margin": 16.900000000000006
+      },
+      {
+        "label": "Reverse Ted Lasso waiver upside",
+        "team_name": "Reverse Ted Lasso",
+        "value": 41.7,
+        "relative_to_margin": 5.700000000000003
+      },
+      {
+        "label": "Reverse Ted Lasso lineup leakage",
+        "team_name": "Reverse Ted Lasso",
+        "value": 22.46666666666664,
+        "relative_to_margin": -13.53333333333336
+      },
+      {
+        "label": "Millan Darling Millan lineup leakage",
+        "team_name": "Millan Darling Millan",
+        "value": 9.199999999999989,
+        "relative_to_margin": -26.80000000000001
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null
+  },
+  "skill_luck": {
+    "primary_label": "Earned Domination",
+    "summary": "Winner combined strong raw scoring with a strong league-relative result and did not need a narrow escaped lineup mistake.",
+    "league_average_score": 121.33999999999995,
+    "league_median_score": 114.4666666666666,
+    "teams": [
+      {
+        "team_name": "Millan Darling Millan",
+        "weekly_rank": 2,
+        "all_play_record": "8-1",
+        "beat_league_median": true,
+        "projected_score": 127.15,
+        "points_over_projected": 22.620000000000005,
+        "opponent_weekly_rank": 6
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "weekly_rank": 6,
+        "all_play_record": "4-5",
+        "beat_league_median": false,
+        "projected_score": 129.31,
+        "points_over_projected": -15.540000000000006,
+        "opponent_weekly_rank": 2
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Earned Domination",
+    "summary": "Winner combined strong raw scoring with a strong league-relative result and did not need a narrow escaped lineup mistake.",
+    "league_average_score": 121.33999999999995,
+    "league_median_score": 114.4666666666666,
+    "teams": [
+      {
+        "team_name": "Millan Darling Millan",
+        "weekly_rank": 2,
+        "all_play_record": "8-1",
+        "beat_league_median": true,
+        "projected_score": 127.15,
+        "points_over_projected": 22.620000000000005,
+        "opponent_weekly_rank": 6
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "weekly_rank": 6,
+        "all_play_record": "4-5",
+        "beat_league_median": false,
+        "projected_score": 129.31,
+        "points_over_projected": -15.540000000000006,
+        "opponent_weekly_rank": 2
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "WR",
+        "team_a_points": 64.09999999999998,
+        "team_b_points": 31.199999999999996,
+        "edge_points": 32.899999999999984,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": 32.899999999999984
+      },
+      {
+        "position": "TE",
+        "team_a_points": 23.4,
+        "team_b_points": 3.9,
+        "edge_points": 19.5,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": 19.5
+      },
+      {
+        "position": "RB",
+        "team_a_points": 38.900000000000006,
+        "team_b_points": 22.9,
+        "edge_points": 16.000000000000007,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": 16.000000000000007
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 0.0,
+        "team_b_points": 13.0,
+        "edge_points": 13.0,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -13.0
+      },
+      {
+        "position": "QB",
+        "team_a_points": 22.3666666666666,
+        "team_b_points": 32.766666666666595,
+        "edge_points": 10.399999999999995,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -10.399999999999995
+      },
+      {
+        "position": "K",
+        "team_a_points": 1.0,
+        "team_b_points": 10.0,
+        "edge_points": 9.0,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -9.0
+      }
+    ],
+    "largest_edge": {
+      "position": "WR",
+      "team_a_points": 64.09999999999998,
+      "team_b_points": 31.199999999999996,
+      "edge_points": 32.899999999999984,
+      "edge_team": "Millan Darling Millan",
+      "edge_direction": 32.899999999999984
+    },
+    "top_wins": [
+      {
+        "position": "WR",
+        "team_a_points": 64.09999999999998,
+        "team_b_points": 31.199999999999996,
+        "edge_points": 32.899999999999984,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": 32.899999999999984
+      },
+      {
+        "position": "TE",
+        "team_a_points": 23.4,
+        "team_b_points": 3.9,
+        "edge_points": 19.5,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": 19.5
+      },
+      {
+        "position": "RB",
+        "team_a_points": 38.900000000000006,
+        "team_b_points": 22.9,
+        "edge_points": 16.000000000000007,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": 16.000000000000007
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "DEF",
+        "team_a_points": 0.0,
+        "team_b_points": 13.0,
+        "edge_points": 13.0,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -13.0
+      },
+      {
+        "position": "QB",
+        "team_a_points": 22.3666666666666,
+        "team_b_points": 32.766666666666595,
+        "edge_points": 10.399999999999995,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -10.399999999999995
+      },
+      {
+        "position": "K",
+        "team_a_points": 1.0,
+        "team_b_points": 10.0,
+        "edge_points": 9.0,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -9.0
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Millan Darling Millan",
+      "actual_lineup_points": 149.7666666666666,
+      "optimal_lineup_points": 158.96666666666658,
+      "bench_points": 45.59999999999996,
+      "points_left_on_bench": 9.199999999999989,
+      "lowest_scoring_starter": {
+        "team_name": "Millan Darling Millan",
+        "name": "Denver",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 0.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 100.0,
+      "best_swap": null,
+      "summary": "Millan Darling Millan started 9 of 9 slots optimally"
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "actual_lineup_points": 113.7666666666666,
+      "optimal_lineup_points": 136.23333333333323,
+      "bench_points": 62.73333333333332,
+      "points_left_on_bench": 22.46666666666664,
+      "lowest_scoring_starter": {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "roster_position": "TE",
+        "points": 3.9
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Bhayshul Tuten",
+        "recommended_points": 16.26666666666666,
+        "benched_player": "Omarion Hampton",
+        "benched_points": 4.5,
+        "point_swing": 11.766666666666659,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Bhayshul Tuten over Omarion Hampton for an estimated +11.8 points this week.",
+        "confidence": 0.8941666666666664,
+        "signal_label": "Strong signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Omarion Hampton",
+          "points": 4.5,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.29416666666666647,
+          "capped_total": 0.8941666666666664
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Reverse Ted Lasso started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Millan Darling Millan",
+      "top_3_share_pct": 62.163365234809746,
+      "top_2_share_pct": 46.53906076118409,
+      "volatility_std": 12.501819894954133,
+      "structural_integrity_pct": 37.836634765190254,
+      "fragility_score": 46.53906076118409,
+      "label": "Boom/Bust Build"
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "top_3_share_pct": 56.57779079988276,
+      "top_2_share_pct": 44.97509522414295,
+      "volatility_std": 8.281435102235445,
+      "structural_integrity_pct": 43.42220920011724,
+      "fragility_score": 44.97509522414295,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Big Brain",
+      "team_name": "Millan Darling Millan",
+      "detail": "Weekly process score cleared the sharp-management threshold."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Millan Darling Millan",
+    "team_b_name": "Reverse Ted Lasso",
+    "record_for_team_a": "5-3",
+    "games": 8,
+    "playoff_games": 0,
+    "average_margin_for_team_a": 2.8654166666666665,
+    "series_summary": "Millan Darling Millan is 5-3 against Reverse Ted Lasso across 8 all-time meeting(s).",
+    "average_margin_text": "Average margin from Millan Darling Millan's perspective: +2.9.",
+    "current_margin_rank_text": "6th closest",
+    "current_total_rank_text": "1st highest combined score",
+    "streak_text": "Millan Darling Millan carries the current 2-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2025 W11",
+        "context": "regular season",
+        "winner": "Millan Darling Millan",
+        "margin": 3.533333333333374,
+        "combined_score": 129.26666666666654
+      },
+      {
+        "season_label": "2025 W2",
+        "context": "regular season",
+        "winner": "Millan Darling Millan",
+        "margin": 36.0,
+        "combined_score": 263.5333333333332
+      },
+      {
+        "season_label": "2024 W12",
+        "context": "regular season",
+        "winner": "Reverse Ted Lasso",
+        "margin": 28.560000000000016,
+        "combined_score": 250.04000000000002
+      },
+      {
+        "season_label": "2024 W3",
+        "context": "regular season",
+        "winner": "Reverse Ted Lasso",
+        "margin": 82.53000000000002,
+        "combined_score": 213.07
+      },
+      {
+        "season_label": "2023 W8",
+        "context": "regular season",
+        "winner": "Reverse Ted Lasso",
+        "margin": 3.430000000000007,
+        "combined_score": 173.03
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Millan Darling Millan Flies High While Reverse Ted Lasso Takes a Nose Dive!",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/925043/recap?week=2&mid1=4&mid2=10",
+    "grade_summary": "Millan Darling Millan: A+ | Reverse Ted Lasso: D"
+  }
+}

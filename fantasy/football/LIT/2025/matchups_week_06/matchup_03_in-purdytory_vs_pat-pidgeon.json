@@ -1,0 +1,1992 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2025,
+    "week": 6,
+    "generated_at": "2026-08-16T08:27:48.684163",
+    "page_title": "In Purdytory vs Pat Pidgeon matchup report",
+    "matchup_id": "week-06-in-purdytory-vs-pat-pidgeon",
+    "output_dir": "analysis/weekly_report/data/2025/matchups_week_06"
+  },
+  "matchup": {
+    "matchup_id": "week-06-in-purdytory-vs-pat-pidgeon",
+    "team_a_name": "In Purdytory",
+    "team_b_name": "Pat Pidgeon",
+    "team_a_score": 132.79999999999993,
+    "team_b_score": 124.3666666666666,
+    "actual_margin": 8.433333333333323,
+    "final_margin": 8.433333333333323,
+    "winner_team_name": "In Purdytory",
+    "result_text": "In Purdytory by 8.4",
+    "margin_text": "In Purdytory 132.8 to 124.4",
+    "ideal_margin": 22.53333333333333,
+    "ideal_winner": "In Purdytory",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 108.68,
+    "team_b_projected_score": 115.16,
+    "team_a_points_over_projected": 24.120000000000005,
+    "team_b_points_over_projected": 9.210000000000008,
+    "league_average_score": 116.15333333333326,
+    "league_median_score": 116.71666666666658,
+    "team_a_weekly_rank": 1,
+    "team_b_weekly_rank": 4,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": true
+  },
+  "summary": {
+    "decision_summary": "In Purdytory won by 8.4. In Purdytory left 29.6 lineup points on the table, while Pat Pidgeon left 15.5.",
+    "historical_summary": "In Purdytory is 22-9 against Pat Pidgeon across 31 all-time meeting(s).",
+    "net_ideal_swing": 14.09999999999998,
+    "ideal_summary": "Ideal lineups still favor In Purdytory",
+    "winner_reason": "In Purdytory won by controlling total WR output (edge of 13.0) while also finishing +24.1 against projection.",
+    "loser_reason": "Pat Pidgeon left 15.5 lineup points on the bench, more than the final margin, so lineup choices were a real part of the loss."
+  },
+  "teams": [
+    {
+      "team_name": "In Purdytory",
+      "manager_display": "Chris P.",
+      "actual_score": 132.79999999999995,
+      "ideal_score": 162.39999999999995,
+      "manager_grade_pct": 76.618341066574,
+      "manager_grade_letter": "C+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 76.618341066574,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 80.8387801501801,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 81.77339901477832,
+            "decision_grade_pct": 78.71962062833431,
+            "roster_missed_points": 29.599999999999994,
+            "free_agent_missed_points": 18.0,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -6.0,
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds reduced the weekly grade by 6.0 pts.",
+            "move_grade_tags": [
+              "Obvious start miss",
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": 25.67222222222226,
+            "season_average_score": 116.5366666666666,
+            "score_vs_season_average": 16.26333333333335,
+            "weekly_rank": 1,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 642.7666666666662,
+            "season_ideal_points": 757.0333333333328,
+            "season_lineup_efficiency_pct": 84.90599269076658,
+            "drop_regret_points_total": 45.0,
+            "trend": "improving"
+          }
+        },
+        "summary": "In Purdytory graded C+ this week and B- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 76.618341066574,
+      "process_score_letter": "C+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 76.618341066574,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 80.8387801501801,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 81.77339901477832,
+            "decision_grade_pct": 78.71962062833431,
+            "roster_missed_points": 29.599999999999994,
+            "free_agent_missed_points": 18.0,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -6.0,
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds reduced the weekly grade by 6.0 pts.",
+            "move_grade_tags": [
+              "Obvious start miss",
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": 25.67222222222226,
+            "season_average_score": 116.5366666666666,
+            "score_vs_season_average": 16.26333333333335,
+            "weekly_rank": 1,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 642.7666666666662,
+            "season_ideal_points": 757.0333333333328,
+            "season_lineup_efficiency_pct": 84.90599269076658,
+            "drop_regret_points_total": 45.0,
+            "trend": "improving"
+          }
+        },
+        "summary": "In Purdytory graded C+ this week and B- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 7,
+        "record": "3-3",
+        "points_for": 642.7666666666662,
+        "max_possible_wins": 12
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 29.599999999999994,
+          "roster_swap_upside_points": 28.166666666666664,
+          "waiver_upside_points": 18.0
+        },
+        "moves": {
+          "good_moves_this_week": 1,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 2,
+          "drop_regret_points_total": 45.0,
+          "former_player_followup_points": 45.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "De'Von Achane",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 34.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 20.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 17.4
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 14.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 13.766666666666664
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Breece Hall",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 10.9
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 10.133333333333272
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jason Myers",
+          "position": "K",
+          "roster_position": "K",
+          "points": 10.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 29.299999999999937
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 18.23333333333325
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Golden",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 15.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 13.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seattle",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 11.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 29.299999999999937
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 18.23333333333325
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Golden",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 15.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 13.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seattle",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 11.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "QB",
+          "recommended_player": "Jaxson Dart",
+          "recommended_points": 29.299999999999937,
+          "benched_player": "Matthew Stafford",
+          "benched_points": 10.133333333333272,
+          "point_swing": 19.166666666666664,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Jaxson Dart over Matthew Stafford for an estimated +19.2 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Matthew Stafford",
+            "points": 10.133333333333272,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.47916666666666663,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "DEF",
+          "recommended_player": "Seattle",
+          "recommended_points": 11.0,
+          "benched_player": "Jacksonville",
+          "benched_points": 2.0,
+          "point_swing": 9.0,
+          "source": "ROSTER",
+          "reason": "At DEF, swap in Seattle over Jacksonville for an estimated +9.0 points this week.",
+          "confidence": 0.825,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jacksonville",
+            "points": 2.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.225,
+            "capped_total": 0.825
+          },
+          "sample_context": {
+            "recommended_player_weeks": 12,
+            "comparison_player_weeks": 12
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Kayshon Boutte",
+          "recommended_points": 26.3,
+          "benched_player": "Jerry Jeudy",
+          "benched_points": 8.3,
+          "point_swing": 18.0,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Kayshon Boutte instead of holding Jerry Jeudy for an estimated +18.0 points this week.",
+          "confidence": 0.95,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Jerry Jeudy",
+            "points": 8.3,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.45,
+            "capped_total": 0.95
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Seattle",
+          "position": "DEF",
+          "actual_team": "Seattle Seahawks",
+          "started": false,
+          "points": 11.0,
+          "outscored_team_active_players": 4,
+          "outscored_league_active_players": 52,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 9.2,
+          "prior_scoring_sample_weeks": 5,
+          "surprise_points_vs_prior": 1.8000000000000007,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Seattle (DEF, 11.0 pts, benched, Bench stash) - Good Bench Stash"
+        },
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "actual_team": "Los Angeles Rams",
+          "started": true,
+          "points": 10.133333333333272,
+          "outscored_team_active_players": 2,
+          "outscored_league_active_players": 48,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 21.9399999999999,
+          "prior_scoring_sample_weeks": 5,
+          "surprise_points_vs_prior": -11.806666666666626,
+          "grade_adjustment_points": -3.0,
+          "grade_impact_label": "Obvious start miss",
+          "tags": [
+            "Obvious start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Matthew Stafford (QB, 10.1 pts, started, Obvious start miss) - Neutral"
+        },
+        {
+          "name": "Jacksonville",
+          "position": "DEF",
+          "actual_team": "Jacksonville Jaguars",
+          "started": true,
+          "points": 2.0,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 6,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 10.6,
+          "prior_scoring_sample_weeks": 5,
+          "surprise_points_vs_prior": -8.6,
+          "grade_adjustment_points": -3.0,
+          "grade_impact_label": "Obvious start miss",
+          "tags": [
+            "Obvious start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Jacksonville (DEF, 2.0 pts, started, Obvious start miss) - Neutral"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "In Purdytory",
+          "name": "De'Von Achane",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 34.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 20.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 17.4
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 14.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 13.766666666666664
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Breece Hall",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 10.9
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 10.133333333333272
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jason Myers",
+          "position": "K",
+          "roster_position": "K",
+          "points": 10.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jacksonville",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 2.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 29.299999999999937
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 18.23333333333325
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Golden",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 15.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 13.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seattle",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 11.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 8.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "actual_team": "New York Giants",
+          "points": 17.4,
+          "season_avg": 3.0666666666666664,
+          "type": "BOOM",
+          "z_score": 9.722636080391892,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "De'Von Achane",
+          "position": "RB",
+          "actual_team": "Miami Dolphins",
+          "points": 34.0,
+          "season_avg": 16.9,
+          "type": "BOOM",
+          "z_score": 3.886865588401423,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "actual_team": "Green Bay Packers",
+          "points": 15.2,
+          "season_avg": 4.286666666666664,
+          "type": "BOOM",
+          "z_score": 2.6727376640055907,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Zach Ertz",
+          "position": "TE",
+          "actual_team": "Washington Commanders",
+          "points": 13.3,
+          "season_avg": 5.125,
+          "type": "BOOM",
+          "z_score": 1.8863012935932675,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 1,
+        "league_size": 10,
+        "league_average_score": 116.15333333333326,
+        "league_median_score": 116.71666666666658,
+        "beat_league_median": true,
+        "all_play_record": "9-0",
+        "projected_score": 108.68,
+        "points_over_projected": 24.120000000000005
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 132.79999999999995,
+        "optimal_lineup_points": 162.39999999999995,
+        "bench_points": 95.33333333333319,
+        "points_left_on_bench": 29.599999999999994,
+        "lowest_scoring_starter": {
+          "team_name": "In Purdytory",
+          "name": "Jacksonville",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 2.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 77.77777777777779,
+        "best_swap": {
+          "position": "QB",
+          "recommended_player": "Jaxson Dart",
+          "recommended_points": 29.299999999999937,
+          "benched_player": "Matthew Stafford",
+          "benched_points": 10.133333333333272,
+          "point_swing": 19.166666666666664,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Jaxson Dart over Matthew Stafford for an estimated +19.2 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Matthew Stafford",
+            "points": 10.133333333333272,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.47916666666666663,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "In Purdytory started 7 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 53.84036144578316,
+        "top_2_share_pct": 40.73795180722894,
+        "volatility_std": 8.356619317627981,
+        "structural_integrity_pct": 46.15963855421684,
+        "fragility_score": 40.73795180722894,
+        "label": "Stable Build"
+      }
+    },
+    {
+      "team_name": "Pat Pidgeon",
+      "manager_display": "Jason P.",
+      "actual_score": 124.3666666666666,
+      "ideal_score": 139.86666666666662,
+      "manager_grade_pct": 88.65314860851973,
+      "manager_grade_letter": "B+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 88.65314860851973,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 81.59791083604674,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 88.91801715919922,
+            "decision_grade_pct": 84.57920090677243,
+            "roster_missed_points": 15.500000000000014,
+            "free_agent_missed_points": 20.5,
+            "good_moves_this_week": 2,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 2 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": -9.35555555555554,
+            "season_average_score": 116.5366666666666,
+            "score_vs_season_average": 7.829999999999998,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 802.3333333333329,
+            "season_ideal_points": 895.9666666666662,
+            "season_lineup_efficiency_pct": 89.54946240559543,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining"
+          }
+        },
+        "summary": "Pat Pidgeon graded B+ this week and B- for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 88.65314860851973,
+      "process_score_letter": "B+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 88.65314860851973,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 81.59791083604674,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 88.91801715919922,
+            "decision_grade_pct": 84.57920090677243,
+            "roster_missed_points": 15.500000000000014,
+            "free_agent_missed_points": 20.5,
+            "good_moves_this_week": 2,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 2 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": -9.35555555555554,
+            "season_average_score": 116.5366666666666,
+            "score_vs_season_average": 7.829999999999998,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 802.3333333333329,
+            "season_ideal_points": 895.9666666666662,
+            "season_lineup_efficiency_pct": 89.54946240559543,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining"
+          }
+        },
+        "summary": "Pat Pidgeon graded B+ this week and B- for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 1,
+        "record": "4-2",
+        "points_for": 802.3333333333329,
+        "max_possible_wins": 13
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 15.500000000000014,
+          "roster_swap_upside_points": 8.600000000000001,
+          "waiver_upside_points": 20.5
+        },
+        "moves": {
+          "good_moves_this_week": 2,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 28.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 27.7
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jared Goff",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 20.4666666666666
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "points": 15.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 11.3
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 9.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 5.9
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Marvin Harrison Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 4.2
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 12.8
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Hassan Haskins",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 4.300000000000001
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 12.8
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Hassan Haskins",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 4.300000000000001
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Chris Olave",
+          "recommended_points": 12.8,
+          "benched_player": "Marvin Harrison Jr.",
+          "benched_points": 4.2,
+          "point_swing": 8.600000000000001,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Chris Olave over Marvin Harrison Jr. for an estimated +8.6 points this week.",
+          "confidence": 0.815,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Marvin Harrison Jr.",
+            "points": 4.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.21500000000000002,
+            "capped_total": 0.815
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Kimani Vidal",
+          "recommended_points": 24.8,
+          "benched_player": "Hassan Haskins",
+          "benched_points": 4.300000000000001,
+          "point_swing": 20.5,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Kimani Vidal instead of holding Hassan Haskins for an estimated +20.5 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Hassan Haskins",
+            "points": 4.300000000000001,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "actual_team": "New Orleans Saints",
+          "started": false,
+          "points": 12.8,
+          "outscored_team_active_players": 5,
+          "outscored_league_active_players": 55,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 8.68,
+          "prior_scoring_sample_weeks": 5,
+          "surprise_points_vs_prior": 4.120000000000001,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Chris Olave (WR, 12.8 pts, benched, Bench stash) - Good Bench Stash"
+        },
+        {
+          "name": "Hassan Haskins",
+          "position": "RB",
+          "actual_team": "Los Angeles Chargers",
+          "started": false,
+          "points": 4.300000000000001,
+          "outscored_team_active_players": 2,
+          "outscored_league_active_players": 16,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 1.2399999999999907,
+          "prior_scoring_sample_weeks": 5,
+          "surprise_points_vs_prior": 3.0600000000000103,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Hassan Haskins (RB, 4.3 pts, benched, Bench stash) - Good Bench Stash"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 28.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 27.7
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jared Goff",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 20.4666666666666
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "points": 15.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 11.3
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 9.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 5.9
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Marvin Harrison Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 4.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Detroit",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 2.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 12.8
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Hassan Haskins",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 4.300000000000001
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "T.J. Hockenson",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Woody Marks",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "actual_team": "New Orleans Saints",
+          "points": 12.8,
+          "season_avg": 8.625,
+          "type": "BOOM",
+          "z_score": 3.7863386695995307,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "actual_team": "Seattle Seahawks",
+          "points": 28.2,
+          "season_avg": 17.7,
+          "type": "BOOM",
+          "z_score": 2.1522901619383177,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 4,
+        "league_size": 10,
+        "league_average_score": 116.15333333333326,
+        "league_median_score": 116.71666666666658,
+        "beat_league_median": true,
+        "all_play_record": "6-3",
+        "projected_score": 115.16,
+        "points_over_projected": 9.210000000000008
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 124.3666666666666,
+        "optimal_lineup_points": 139.86666666666662,
+        "bench_points": 17.1,
+        "points_left_on_bench": 15.500000000000014,
+        "lowest_scoring_starter": {
+          "team_name": "Pat Pidgeon",
+          "name": "Detroit",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 2.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Chris Olave",
+          "recommended_points": 12.8,
+          "benched_player": "Marvin Harrison Jr.",
+          "benched_points": 4.2,
+          "point_swing": 8.600000000000001,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Chris Olave over Marvin Harrison Jr. for an estimated +8.6 points this week.",
+          "confidence": 0.815,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Marvin Harrison Jr.",
+            "points": 4.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.21500000000000002,
+            "capped_total": 0.815
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Pat Pidgeon started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 61.40444920932724,
+        "top_2_share_pct": 44.94773519163765,
+        "volatility_std": 9.214429252383884,
+        "structural_integrity_pct": 38.59555079067276,
+        "fragility_score": 44.94773519163765,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "In Purdytory",
+        "name": "De'Von Achane",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 34.0
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 28.2
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jonathan Taylor",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 27.7
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jared Goff",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 20.4666666666666
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Ja'Marr Chase",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 20.1
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Wan'Dale Robinson",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "points": 17.4
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Boswell",
+        "position": "K",
+        "roster_position": "K",
+        "points": 15.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Sam LaPorta",
+        "position": "TE",
+        "roster_position": "TE",
+        "points": 14.5
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 13.766666666666664
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jake Ferguson",
+        "position": "TE",
+        "roster_position": "TE",
+        "points": 11.3
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "In Purdytory",
+        "name": "Jaxson Dart",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 29.299999999999937
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jordan Love",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 18.23333333333325
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Matthew Golden",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 15.2
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Zach Ertz",
+        "position": "TE",
+        "roster_position": "BN",
+        "points": 13.3
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Olave",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 12.8
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Seattle",
+        "position": "DEF",
+        "roster_position": "BN",
+        "points": 11.0
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Hassan Haskins",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 4.300000000000001
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chuba Hubbard",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 0.0
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Olave",
+        "position": "WR",
+        "actual_team": "New Orleans Saints",
+        "started": false,
+        "points": 12.8,
+        "outscored_team_active_players": 5,
+        "outscored_league_active_players": 55,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 8.68,
+        "prior_scoring_sample_weeks": 5,
+        "surprise_points_vs_prior": 4.120000000000001,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Chris Olave (WR, 12.8 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Seattle",
+        "position": "DEF",
+        "actual_team": "Seattle Seahawks",
+        "started": false,
+        "points": 11.0,
+        "outscored_team_active_players": 4,
+        "outscored_league_active_players": 52,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 9.2,
+        "prior_scoring_sample_weeks": 5,
+        "surprise_points_vs_prior": 1.8000000000000007,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Seattle (DEF, 11.0 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Matthew Stafford",
+        "position": "QB",
+        "actual_team": "Los Angeles Rams",
+        "started": true,
+        "points": 10.133333333333272,
+        "outscored_team_active_players": 2,
+        "outscored_league_active_players": 48,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 21.9399999999999,
+        "prior_scoring_sample_weeks": 5,
+        "surprise_points_vs_prior": -11.806666666666626,
+        "grade_adjustment_points": -3.0,
+        "grade_impact_label": "Obvious start miss",
+        "tags": [
+          "Obvious start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Matthew Stafford (QB, 10.1 pts, started, Obvious start miss) - Neutral"
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Hassan Haskins",
+        "position": "RB",
+        "actual_team": "Los Angeles Chargers",
+        "started": false,
+        "points": 4.300000000000001,
+        "outscored_team_active_players": 2,
+        "outscored_league_active_players": 16,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 1.2399999999999907,
+        "prior_scoring_sample_weeks": 5,
+        "surprise_points_vs_prior": 3.0600000000000103,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Hassan Haskins (RB, 4.3 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jacksonville",
+        "position": "DEF",
+        "actual_team": "Jacksonville Jaguars",
+        "started": true,
+        "points": 2.0,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 6,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 10.6,
+        "prior_scoring_sample_weeks": 5,
+        "surprise_points_vs_prior": -8.6,
+        "grade_adjustment_points": -3.0,
+        "grade_impact_label": "Obvious start miss",
+        "tags": [
+          "Obvious start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Jacksonville (DEF, 2.0 pts, started, Obvious start miss) - Neutral"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "In Purdytory",
+      "loser_team": "Pat Pidgeon",
+      "value": 8.433333333333351,
+      "margin_relative_value": 2.842170943040401e-14,
+      "position": "",
+      "summary": "In Purdytory won the raw scoring battle by 8.4 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "In Purdytory",
+      "value": 14.09999999999998,
+      "margin_relative_value": 5.666666666666657,
+      "position": "",
+      "summary": "Pat Pidgeon had the cleaner lineup week by 14.1 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "In Purdytory",
+      "loser_team": "Pat Pidgeon",
+      "value": 47.599999999999994,
+      "margin_relative_value": 39.16666666666667,
+      "position": "",
+      "summary": "In Purdytory carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "YES",
+      "loser_team": "Pat Pidgeon",
+      "value": 8.600000000000001,
+      "margin_relative_value": 0.1666666666666785,
+      "position": "",
+      "summary": "Pat Pidgeon would have flipped the matchup by starting Chris Olave over Marvin Harrison Jr. for a projected +8.6-point swing."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "In Purdytory",
+      "loser_team": "Pat Pidgeon",
+      "value": 12.966666666666661,
+      "margin_relative_value": 4.5333333333333385,
+      "position": "WR",
+      "summary": "In Purdytory controlled total WR output by 13.0 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 8.433333333333323,
+    "margin": 8.433333333333323,
+    "takeaways": [
+      "Pat Pidgeon left 15.5 lineup points on the table, more than the 8.4-point final margin.",
+      "The clearest unit edge was total WR output: In Purdytory by 13.0 points.",
+      "Against projection, In Purdytory finished +24.1 while Pat Pidgeon finished +9.2.",
+      "The biggest started performance was De'Von Achane for In Purdytory at 34.0 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "In Purdytory lineup leakage",
+        "team_name": "In Purdytory",
+        "value": 29.599999999999994,
+        "relative_to_margin": 21.16666666666667
+      },
+      {
+        "label": "Pat Pidgeon waiver upside",
+        "team_name": "Pat Pidgeon",
+        "value": 20.5,
+        "relative_to_margin": 12.066666666666677
+      },
+      {
+        "label": "In Purdytory waiver upside",
+        "team_name": "In Purdytory",
+        "value": 18.0,
+        "relative_to_margin": 9.566666666666677
+      },
+      {
+        "label": "Pat Pidgeon lineup leakage",
+        "team_name": "Pat Pidgeon",
+        "value": 15.500000000000014,
+        "relative_to_margin": 7.066666666666691
+      }
+    ],
+    "single_swap_flip": {
+      "team_name": "Pat Pidgeon",
+      "recommended_player": "Chris Olave",
+      "benched_player": "Marvin Harrison Jr.",
+      "point_swing": 8.600000000000001,
+      "position": "WR",
+      "reason": "At WR, swap in Chris Olave over Marvin Harrison Jr. for an estimated +8.6 points this week.",
+      "reasonable": true
+    },
+    "would_have_won_summary": "Pat Pidgeon would have flipped the matchup by starting Chris Olave over Marvin Harrison Jr. for a projected +8.6-point swing."
+  },
+  "skill_luck": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 116.15333333333326,
+    "league_median_score": 116.71666666666658,
+    "teams": [
+      {
+        "team_name": "In Purdytory",
+        "weekly_rank": 1,
+        "all_play_record": "9-0",
+        "beat_league_median": true,
+        "projected_score": 108.68,
+        "points_over_projected": 24.120000000000005,
+        "opponent_weekly_rank": 4
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 115.16,
+        "points_over_projected": 9.210000000000008,
+        "opponent_weekly_rank": 1
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 116.15333333333326,
+    "league_median_score": 116.71666666666658,
+    "teams": [
+      {
+        "team_name": "In Purdytory",
+        "weekly_rank": 1,
+        "all_play_record": "9-0",
+        "beat_league_median": true,
+        "projected_score": 108.68,
+        "points_over_projected": 24.120000000000005,
+        "opponent_weekly_rank": 4
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 115.16,
+        "points_over_projected": 9.210000000000008,
+        "opponent_weekly_rank": 1
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "WR",
+        "team_a_points": 51.266666666666666,
+        "team_b_points": 38.300000000000004,
+        "edge_points": 12.966666666666661,
+        "edge_team": "In Purdytory",
+        "edge_direction": 12.966666666666661
+      },
+      {
+        "position": "QB",
+        "team_a_points": 10.133333333333272,
+        "team_b_points": 20.4666666666666,
+        "edge_points": 10.333333333333329,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": -10.333333333333329
+      },
+      {
+        "position": "RB",
+        "team_a_points": 44.9,
+        "team_b_points": 37.3,
+        "edge_points": 7.600000000000001,
+        "edge_team": "In Purdytory",
+        "edge_direction": 7.600000000000001
+      },
+      {
+        "position": "K",
+        "team_a_points": 10.0,
+        "team_b_points": 15.0,
+        "edge_points": 5.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": -5.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 14.5,
+        "team_b_points": 11.3,
+        "edge_points": 3.1999999999999993,
+        "edge_team": "In Purdytory",
+        "edge_direction": 3.1999999999999993
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 2.0,
+        "team_b_points": 2.0,
+        "edge_points": 0.0,
+        "edge_team": "Tie",
+        "edge_direction": 0.0
+      }
+    ],
+    "largest_edge": {
+      "position": "WR",
+      "team_a_points": 51.266666666666666,
+      "team_b_points": 38.300000000000004,
+      "edge_points": 12.966666666666661,
+      "edge_team": "In Purdytory",
+      "edge_direction": 12.966666666666661
+    },
+    "top_wins": [
+      {
+        "position": "WR",
+        "team_a_points": 51.266666666666666,
+        "team_b_points": 38.300000000000004,
+        "edge_points": 12.966666666666661,
+        "edge_team": "In Purdytory",
+        "edge_direction": 12.966666666666661
+      },
+      {
+        "position": "RB",
+        "team_a_points": 44.9,
+        "team_b_points": 37.3,
+        "edge_points": 7.600000000000001,
+        "edge_team": "In Purdytory",
+        "edge_direction": 7.600000000000001
+      },
+      {
+        "position": "TE",
+        "team_a_points": 14.5,
+        "team_b_points": 11.3,
+        "edge_points": 3.1999999999999993,
+        "edge_team": "In Purdytory",
+        "edge_direction": 3.1999999999999993
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "QB",
+        "team_a_points": 10.133333333333272,
+        "team_b_points": 20.4666666666666,
+        "edge_points": 10.333333333333329,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": -10.333333333333329
+      },
+      {
+        "position": "K",
+        "team_a_points": 10.0,
+        "team_b_points": 15.0,
+        "edge_points": 5.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": -5.0
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "In Purdytory",
+      "actual_lineup_points": 132.79999999999995,
+      "optimal_lineup_points": 162.39999999999995,
+      "bench_points": 95.33333333333319,
+      "points_left_on_bench": 29.599999999999994,
+      "lowest_scoring_starter": {
+        "team_name": "In Purdytory",
+        "name": "Jacksonville",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 2.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 77.77777777777779,
+      "best_swap": {
+        "position": "QB",
+        "recommended_player": "Jaxson Dart",
+        "recommended_points": 29.299999999999937,
+        "benched_player": "Matthew Stafford",
+        "benched_points": 10.133333333333272,
+        "point_swing": 19.166666666666664,
+        "source": "ROSTER",
+        "reason": "At QB, swap in Jaxson Dart over Matthew Stafford for an estimated +19.2 points this week.",
+        "confidence": 1.0,
+        "signal_label": "Strong signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Matthew Stafford",
+          "points": 10.133333333333272,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.47916666666666663,
+          "capped_total": 1.0
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "In Purdytory started 7 of 9 slots optimally"
+    },
+    {
+      "team_name": "Pat Pidgeon",
+      "actual_lineup_points": 124.3666666666666,
+      "optimal_lineup_points": 139.86666666666662,
+      "bench_points": 17.1,
+      "points_left_on_bench": 15.500000000000014,
+      "lowest_scoring_starter": {
+        "team_name": "Pat Pidgeon",
+        "name": "Detroit",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 2.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Chris Olave",
+        "recommended_points": 12.8,
+        "benched_player": "Marvin Harrison Jr.",
+        "benched_points": 4.2,
+        "point_swing": 8.600000000000001,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Chris Olave over Marvin Harrison Jr. for an estimated +8.6 points this week.",
+        "confidence": 0.815,
+        "signal_label": "Good signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Marvin Harrison Jr.",
+          "points": 4.2,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.21500000000000002,
+          "capped_total": 0.815
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Pat Pidgeon started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "In Purdytory",
+      "top_3_share_pct": 53.84036144578316,
+      "top_2_share_pct": 40.73795180722894,
+      "volatility_std": 8.356619317627981,
+      "structural_integrity_pct": 46.15963855421684,
+      "fragility_score": 40.73795180722894,
+      "label": "Stable Build"
+    },
+    {
+      "team_name": "Pat Pidgeon",
+      "top_3_share_pct": 61.40444920932724,
+      "top_2_share_pct": 44.94773519163765,
+      "volatility_std": 9.214429252383884,
+      "structural_integrity_pct": 38.59555079067276,
+      "fragility_score": 44.94773519163765,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Bench Pain",
+      "team_name": "Pat Pidgeon",
+      "detail": "Pat Pidgeon left 15.5 lineup points on the table, more than the 8.4-point final margin."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "In Purdytory",
+    "team_b_name": "Pat Pidgeon",
+    "record_for_team_a": "22-9",
+    "games": 31,
+    "playoff_games": 1,
+    "average_margin_for_team_a": 14.369677419354836,
+    "series_summary": "In Purdytory is 22-9 against Pat Pidgeon across 31 all-time meeting(s).",
+    "average_margin_text": "Average margin from In Purdytory's perspective: +14.4.",
+    "current_margin_rank_text": "6th closest",
+    "current_total_rank_text": "2nd highest combined score",
+    "streak_text": "In Purdytory carries the current 2-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2025 W15",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 10.766666666666609,
+        "combined_score": 223.3666666666665
+      },
+      {
+        "season_label": "2025 W6",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 8.433333333333323,
+        "combined_score": 257.1666666666665
+      },
+      {
+        "season_label": "2024 W11",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 50.74000000000001,
+        "combined_score": 218.0
+      },
+      {
+        "season_label": "2024 W2",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 18.03,
+        "combined_score": 186.43
+      },
+      {
+        "season_label": "2023 W9",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 77.07,
+        "combined_score": 211.93
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "In Purdytory Takes the Cake, Pat Pidgeon Left with Crumbs!",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/925043/recap?week=6&mid1=3&mid2=5",
+    "grade_summary": "In Purdytory: A | Pat Pidgeon: C"
+  }
+}

@@ -1,0 +1,2081 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2025,
+    "week": 14,
+    "generated_at": "2026-08-16T08:29:09.950493",
+    "page_title": "Pat Pidgeon vs Reverse Ted Lasso matchup report",
+    "matchup_id": "week-14-pat-pidgeon-vs-reverse-ted-lasso",
+    "output_dir": "analysis/weekly_report/data/2025/matchups_week_14"
+  },
+  "matchup": {
+    "matchup_id": "week-14-pat-pidgeon-vs-reverse-ted-lasso",
+    "team_a_name": "Pat Pidgeon",
+    "team_b_name": "Reverse Ted Lasso",
+    "team_a_score": 116.7999999999999,
+    "team_b_score": 83.4,
+    "actual_margin": 33.39999999999989,
+    "final_margin": 33.39999999999989,
+    "winner_team_name": "Pat Pidgeon",
+    "result_text": "Pat Pidgeon by 33.4",
+    "margin_text": "Pat Pidgeon 116.8 to 83.4",
+    "ideal_margin": 63.29999999999994,
+    "ideal_winner": "Pat Pidgeon",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 118.28,
+    "team_b_projected_score": 115.85,
+    "team_a_points_over_projected": -1.480000000000004,
+    "team_b_points_over_projected": -32.44999999999999,
+    "league_average_score": 113.66333333333327,
+    "league_median_score": 112.98333333333329,
+    "team_a_weekly_rank": 4,
+    "team_b_weekly_rank": 10,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": false
+  },
+  "summary": {
+    "decision_summary": "Pat Pidgeon won by 33.4. Pat Pidgeon left 43.9 lineup points on the table, while Reverse Ted Lasso left 12.2.",
+    "historical_summary": "Pat Pidgeon is 5-4 against Reverse Ted Lasso across 9 all-time meeting(s).",
+    "net_ideal_swing": 31.70000000000003,
+    "ideal_summary": "Ideal lineups still favor Pat Pidgeon",
+    "winner_reason": "Pat Pidgeon won by controlling total QB output (edge of 17.9) while also finishing -1.5 against projection.",
+    "loser_reason": "Reverse Ted Lasso did leave 12.2 lineup points on the bench, but that still was not enough to explain a 33.4-point loss."
+  },
+  "teams": [
+    {
+      "team_name": "Pat Pidgeon",
+      "manager_display": "Jason P.",
+      "actual_score": 116.7999999999999,
+      "ideal_score": 160.69999999999993,
+      "manager_grade_pct": 69.89493880348853,
+      "manager_grade_letter": "C-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 69.89493880348853,
+          "letter": "C-",
+          "label": "bad decisions"
+        },
+        "season": {
+          "score_pct": 67.41789238440496,
+          "letter": "D+",
+          "label": "bad decisions"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 72.6820161792159,
+            "decision_grade_pct": 66.29959698018956,
+            "roster_missed_points": 43.900000000000034,
+            "free_agent_missed_points": 44.2,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash",
+              "Neutral add/start"
+            ],
+            "score_vs_historical_avg": -6.357142857142904,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -0.4540476190476568,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1724.199999999999,
+            "season_ideal_points": 1959.4333333333323,
+            "season_lineup_efficiency_pct": 87.99482843679294,
+            "drop_regret_points_total": 252.06666666666644,
+            "trend": "declining"
+          }
+        },
+        "summary": "Pat Pidgeon graded C- this week and D+ for the season-to-date. Weekly process reads as bad decisions, season process reads as bad decisions."
+      },
+      "process_score_pct": 69.89493880348853,
+      "process_score_letter": "C-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 69.89493880348853,
+          "letter": "C-",
+          "label": "bad decisions"
+        },
+        "season": {
+          "score_pct": 67.41789238440496,
+          "letter": "D+",
+          "label": "bad decisions"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 72.6820161792159,
+            "decision_grade_pct": 66.29959698018956,
+            "roster_missed_points": 43.900000000000034,
+            "free_agent_missed_points": 44.2,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash",
+              "Neutral add/start"
+            ],
+            "score_vs_historical_avg": -6.357142857142904,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -0.4540476190476568,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1724.199999999999,
+            "season_ideal_points": 1959.4333333333323,
+            "season_lineup_efficiency_pct": 87.99482843679294,
+            "drop_regret_points_total": 252.06666666666644,
+            "trend": "declining"
+          }
+        },
+        "summary": "Pat Pidgeon graded C- this week and D+ for the season-to-date. Weekly process reads as bad decisions, season process reads as bad decisions."
+      },
+      "season_context": {
+        "seed": 2,
+        "record": "8-6",
+        "points_for": 1724.199999999999,
+        "max_possible_wins": 9
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 43.900000000000034,
+          "roster_swap_upside_points": 16.700000000000003,
+          "waiver_upside_points": 44.2
+        },
+        "moves": {
+          "good_moves_this_week": 1,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 1,
+          "drop_regret_points_total": 252.06666666666644,
+          "former_player_followup_points": 252.06666666666644
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 25.1
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Woody Marks",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 17.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jared Goff",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 16.0999999999999
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 14.8
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 14.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "points": 9.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 7.800000000000001
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Titans",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 7.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Blake Corum",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 31.1
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 24.599999999999927
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 10.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 3.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Blake Corum",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 31.1
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 24.599999999999927
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 10.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 3.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Blake Corum",
+          "recommended_points": 31.1,
+          "benched_player": "Jonathan Taylor",
+          "benched_points": 14.4,
+          "point_swing": 16.700000000000003,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Blake Corum over Jonathan Taylor for an estimated +16.7 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jonathan Taylor",
+            "points": 14.4,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.4175000000000001,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Michael Wilson",
+          "recommended_points": 35.2,
+          "benched_player": "Jordan Addison",
+          "benched_points": 10.2,
+          "point_swing": 25.000000000000004,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Michael Wilson instead of holding Jordan Addison for an estimated +25.0 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Jordan Addison",
+            "points": 10.2,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "TE",
+          "recommended_player": "Harold Fannin Jr.",
+          "recommended_points": 22.4,
+          "benched_player": "Dalton Schultz",
+          "benched_points": 3.2,
+          "point_swing": 19.2,
+          "source": "FREE_AGENT",
+          "reason": "At TE, consider adding Harold Fannin Jr. instead of holding Dalton Schultz for an estimated +19.2 points this week.",
+          "confidence": 0.98,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Dalton Schultz",
+            "points": 3.2,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.48,
+            "capped_total": 0.98
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Blake Corum",
+          "position": "RB",
+          "actual_team": "Los Angeles Rams",
+          "started": false,
+          "points": 31.1,
+          "outscored_team_active_players": 9,
+          "outscored_league_active_players": 86,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 7.082051282051274,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": 24.017948717948727,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Blake Corum (RB, 31.1 pts, benched, Bench stash) - Good Bench Stash"
+        },
+        {
+          "name": "Titans",
+          "position": "DEF",
+          "actual_team": "Tennessee Titans",
+          "started": true,
+          "points": 7.0,
+          "outscored_team_active_players": 1,
+          "outscored_league_active_players": 29,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 3.0,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": 4.0,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Neutral add/start",
+          "tags": [
+            "Neutral add/start",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Titans (DEF, 7.0 pts, started, Neutral add/start) - Neutral"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 25.1
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Woody Marks",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 17.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jared Goff",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 16.0999999999999
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 14.8
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 14.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "points": 9.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 7.800000000000001
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Titans",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 7.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 5.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Blake Corum",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 31.1
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 24.599999999999927
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 10.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 3.2
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Marvin Harrison Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Blake Corum",
+          "position": "RB",
+          "actual_team": "Los Angeles Rams",
+          "points": 31.1,
+          "season_avg": 6.011111111111099,
+          "type": "BOOM",
+          "z_score": 4.066369982823826,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 4,
+        "league_size": 10,
+        "league_average_score": 113.66333333333327,
+        "league_median_score": 112.98333333333329,
+        "beat_league_median": true,
+        "all_play_record": "6-3",
+        "projected_score": 118.28,
+        "points_over_projected": -1.480000000000004
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 116.7999999999999,
+        "optimal_lineup_points": 160.69999999999993,
+        "bench_points": 69.09999999999992,
+        "points_left_on_bench": 43.900000000000034,
+        "lowest_scoring_starter": {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 5.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Blake Corum",
+          "recommended_points": 31.1,
+          "benched_player": "Jonathan Taylor",
+          "benched_points": 14.4,
+          "point_swing": 16.700000000000003,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Blake Corum over Jonathan Taylor for an estimated +16.7 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jonathan Taylor",
+            "points": 14.4,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.4175000000000001,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Pat Pidgeon started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 50.34246575342461,
+        "top_2_share_pct": 36.558219178082226,
+        "volatility_std": 6.013092710961408,
+        "structural_integrity_pct": 49.65753424657539,
+        "fragility_score": 36.558219178082226,
+        "label": "Stable Build"
+      }
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "manager_display": "Liana",
+      "actual_score": 85.19999999999999,
+      "ideal_score": 97.39999999999999,
+      "manager_grade_pct": 78.28673864707991,
+      "manager_grade_letter": "C+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 78.28673864707991,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 69.26937607405651,
+          "letter": "C-",
+          "label": "bad decisions"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 87.47433264887063,
+            "decision_grade_pct": 77.87578264247522,
+            "roster_missed_points": 12.200000000000003,
+            "free_agent_missed_points": 34.300000000000004,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 1,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 1 positive | 1 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss",
+              "Bench stash",
+              "Neutral add/start"
+            ],
+            "score_vs_historical_avg": -18.55714285714278,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -32.054047619047566,
+            "weekly_rank": 9,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1452.599999999999,
+            "season_ideal_points": 1660.8999999999987,
+            "season_lineup_efficiency_pct": 87.45860677945693,
+            "drop_regret_points_total": 248.20000000000002,
+            "trend": "declining"
+          }
+        },
+        "summary": "Reverse Ted Lasso graded C+ this week and C- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as bad decisions."
+      },
+      "process_score_pct": 78.28673864707991,
+      "process_score_letter": "C+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 78.28673864707991,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 69.26937607405651,
+          "letter": "C-",
+          "label": "bad decisions"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 87.47433264887063,
+            "decision_grade_pct": 77.87578264247522,
+            "roster_missed_points": 12.200000000000003,
+            "free_agent_missed_points": 34.300000000000004,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 1,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 1 positive | 1 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss",
+              "Bench stash",
+              "Neutral add/start"
+            ],
+            "score_vs_historical_avg": -18.55714285714278,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -32.054047619047566,
+            "weekly_rank": 9,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1452.599999999999,
+            "season_ideal_points": 1660.8999999999987,
+            "season_lineup_efficiency_pct": 87.45860677945693,
+            "drop_regret_points_total": 248.20000000000002,
+            "trend": "declining"
+          }
+        },
+        "summary": "Reverse Ted Lasso graded C+ this week and C- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as bad decisions."
+      },
+      "season_context": {
+        "seed": 10,
+        "record": "3-11",
+        "points_for": 1452.599999999999,
+        "max_possible_wins": 4
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 12.200000000000003,
+          "roster_swap_upside_points": 6.799999999999997,
+          "waiver_upside_points": 34.300000000000004
+        },
+        "moves": {
+          "good_moves_this_week": 1,
+          "bad_moves_this_week": 1,
+          "neutral_moves_this_week": 3,
+          "drop_regret_points_total": 248.20000000000002,
+          "former_player_followup_points": 248.20000000000002
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 22.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 17.3
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 15.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 11.7
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Wil Lutz",
+          "position": "K",
+          "roster_position": "K",
+          "points": 6.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 5.800000000000001
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Buccaneers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 5.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 2.1
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 11.6
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bills",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 10.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 8.899999999999997
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.5333333333333128
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 11.6
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bills",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 10.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 8.899999999999997
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.5333333333333128
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Khalil Shakir",
+          "recommended_points": 8.899999999999997,
+          "benched_player": "Justin Jefferson",
+          "benched_points": 2.1,
+          "point_swing": 6.799999999999997,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Khalil Shakir over Justin Jefferson for an estimated +6.8 points this week.",
+          "confidence": 0.7699999999999999,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Justin Jefferson",
+            "points": 2.1,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.16999999999999993,
+            "capped_total": 0.7699999999999999
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Michael Wilson",
+          "recommended_points": 35.2,
+          "benched_player": "Khalil Shakir",
+          "benched_points": 8.899999999999997,
+          "point_swing": 26.300000000000004,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Michael Wilson instead of holding Khalil Shakir for an estimated +26.3 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Khalil Shakir",
+            "points": 8.899999999999997,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "DEF",
+          "recommended_player": "Vikings",
+          "recommended_points": 18.0,
+          "benched_player": "Bills",
+          "benched_points": 10.0,
+          "point_swing": 8.0,
+          "source": "FREE_AGENT",
+          "reason": "At DEF, consider adding Vikings instead of holding Bills for an estimated +8.0 points this week.",
+          "confidence": 0.7,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Bills",
+            "points": 10.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.2,
+            "capped_total": 0.7
+          },
+          "sample_context": {
+            "recommended_player_weeks": 5,
+            "comparison_player_weeks": 5
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Harold Fannin Jr.",
+          "position": "UNK",
+          "actual_team": null,
+          "started": false,
+          "points": 22.4,
+          "outscored_team_active_players": 9,
+          "outscored_league_active_players": 78,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 6.961538461538462,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": 15.438461538461537,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Harold Fannin Jr. (UNK, 22.4 pts, benched, Bench stash) - Good Bench Stash"
+        },
+        {
+          "name": "Wil Lutz",
+          "position": "K",
+          "actual_team": "Denver Broncos",
+          "started": true,
+          "points": 6.0,
+          "outscored_team_active_players": 4,
+          "outscored_league_active_players": 27,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 7.0,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": -1.0,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Neutral add/start",
+          "tags": [
+            "Neutral add/start",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Wil Lutz (K, 6.0 pts, started, Neutral add/start) - Neutral"
+        },
+        {
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "actual_team": "New Orleans Saints",
+          "started": true,
+          "points": 5.800000000000001,
+          "outscored_team_active_players": 3,
+          "outscored_league_active_players": 25,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 7.815384615384616,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": -2.0153846153846153,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Neutral add/start",
+          "tags": [
+            "Neutral add/start",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Juwan Johnson (TE, 5.8 pts, started, Neutral add/start) - Neutral"
+        },
+        {
+          "name": "Buccaneers",
+          "position": "DEF",
+          "actual_team": "Tampa Bay Buccaneers",
+          "started": true,
+          "points": 5.0,
+          "outscored_team_active_players": 2,
+          "outscored_league_active_players": 18,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 7.0,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -2.0,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Neutral add/start",
+          "tags": [
+            "Neutral add/start",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Buccaneers (DEF, 5.0 pts, started, Neutral add/start) - Neutral"
+        },
+        {
+          "name": "Tyrod Taylor",
+          "position": "QB",
+          "actual_team": "New York Jets",
+          "started": true,
+          "points": -1.800000000000002,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 0,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 5.851282051282031,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": -7.651282051282033,
+          "grade_adjustment_points": -1.5,
+          "grade_impact_label": "Speculative start miss",
+          "tags": [
+            "Speculative start miss",
+            "Bad",
+            "Started Add"
+          ],
+          "move_quality": "BAD",
+          "move_quality_label": "Bad",
+          "usage_label": "started",
+          "summary": "Tyrod Taylor (QB, -1.8 pts, started, Speculative start miss) - Bad"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 22.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 17.3
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 15.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 11.7
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Wil Lutz",
+          "position": "K",
+          "roster_position": "K",
+          "points": 6.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 5.800000000000001
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Buccaneers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 5.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 2.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Tyrod Taylor",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": -1.800000000000002
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 11.6
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bills",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 10.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 8.899999999999997
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.5333333333333128
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Drake Maye",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Theo Johnson",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "actual_team": "Minnesota Vikings",
+          "points": 2.1,
+          "season_avg": 9.715384615384615,
+          "type": "BUST",
+          "z_score": -1.3856522957060695,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 10,
+        "league_size": 10,
+        "league_average_score": 113.66333333333327,
+        "league_median_score": 112.98333333333329,
+        "beat_league_median": false,
+        "all_play_record": "0-9",
+        "projected_score": 115.85,
+        "points_over_projected": -32.44999999999999
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 85.19999999999999,
+        "optimal_lineup_points": 97.39999999999999,
+        "bench_points": 49.73333333333331,
+        "points_left_on_bench": 12.200000000000003,
+        "lowest_scoring_starter": {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Tyrod Taylor",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": -1.800000000000002
+        },
+        "lineup_landmine": {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "points": 2.1,
+          "season_avg": 9.715384615384615,
+          "z_score": -1.3856522957060695,
+          "reason": "Started player materially underperformed season baseline."
+        },
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Khalil Shakir",
+          "recommended_points": 8.899999999999997,
+          "benched_player": "Justin Jefferson",
+          "benched_points": 2.1,
+          "point_swing": 6.799999999999997,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Khalil Shakir over Justin Jefferson for an estimated +6.8 points this week.",
+          "confidence": 0.7699999999999999,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Justin Jefferson",
+            "points": 2.1,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.16999999999999993,
+            "capped_total": 0.7699999999999999
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Reverse Ted Lasso started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 65.46762589928058,
+        "top_2_share_pct": 47.362110311750605,
+        "volatility_std": 7.3520972064665555,
+        "structural_integrity_pct": 34.53237410071942,
+        "fragility_score": 47.362110311750605,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 25.1
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Josh Jacobs",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 22.2
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Woody Marks",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 17.6
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "David Montgomery",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 17.3
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jared Goff",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 16.0999999999999
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Nico Collins",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 15.1
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jakobi Meyers",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "points": 14.8
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jonathan Taylor",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 14.4
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Brian Thomas Jr.",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 11.7
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Boswell",
+        "position": "K",
+        "roster_position": "K",
+        "points": 9.0
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Blake Corum",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 31.1
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Lamar Jackson",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 24.599999999999927
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Omarion Hampton",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 17.700000000000003
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Aaron Jones Sr.",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 11.6
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jordan Addison",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 10.2
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Bills",
+        "position": "DEF",
+        "roster_position": "BN",
+        "points": 10.0
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Khalil Shakir",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 8.899999999999997
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "roster_position": "BN",
+        "points": 3.2
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Blake Corum",
+        "position": "RB",
+        "actual_team": "Los Angeles Rams",
+        "started": false,
+        "points": 31.1,
+        "outscored_team_active_players": 9,
+        "outscored_league_active_players": 86,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 7.082051282051274,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": 24.017948717948727,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Blake Corum (RB, 31.1 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Harold Fannin Jr.",
+        "position": "UNK",
+        "actual_team": null,
+        "started": false,
+        "points": 22.4,
+        "outscored_team_active_players": 9,
+        "outscored_league_active_players": 78,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 6.961538461538462,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": 15.438461538461537,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Harold Fannin Jr. (UNK, 22.4 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Titans",
+        "position": "DEF",
+        "actual_team": "Tennessee Titans",
+        "started": true,
+        "points": 7.0,
+        "outscored_team_active_players": 1,
+        "outscored_league_active_players": 29,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 3.0,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": 4.0,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Neutral add/start",
+        "tags": [
+          "Neutral add/start",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Titans (DEF, 7.0 pts, started, Neutral add/start) - Neutral"
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Wil Lutz",
+        "position": "K",
+        "actual_team": "Denver Broncos",
+        "started": true,
+        "points": 6.0,
+        "outscored_team_active_players": 4,
+        "outscored_league_active_players": 27,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 7.0,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": -1.0,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Neutral add/start",
+        "tags": [
+          "Neutral add/start",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Wil Lutz (K, 6.0 pts, started, Neutral add/start) - Neutral"
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Juwan Johnson",
+        "position": "TE",
+        "actual_team": "New Orleans Saints",
+        "started": true,
+        "points": 5.800000000000001,
+        "outscored_team_active_players": 3,
+        "outscored_league_active_players": 25,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 7.815384615384616,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": -2.0153846153846153,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Neutral add/start",
+        "tags": [
+          "Neutral add/start",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Juwan Johnson (TE, 5.8 pts, started, Neutral add/start) - Neutral"
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Buccaneers",
+        "position": "DEF",
+        "actual_team": "Tampa Bay Buccaneers",
+        "started": true,
+        "points": 5.0,
+        "outscored_team_active_players": 2,
+        "outscored_league_active_players": 18,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 7.0,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -2.0,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Neutral add/start",
+        "tags": [
+          "Neutral add/start",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Buccaneers (DEF, 5.0 pts, started, Neutral add/start) - Neutral"
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Tyrod Taylor",
+        "position": "QB",
+        "actual_team": "New York Jets",
+        "started": true,
+        "points": -1.800000000000002,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 0,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 5.851282051282031,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": -7.651282051282033,
+        "grade_adjustment_points": -1.5,
+        "grade_impact_label": "Speculative start miss",
+        "tags": [
+          "Speculative start miss",
+          "Bad",
+          "Started Add"
+        ],
+        "move_quality": "BAD",
+        "move_quality_label": "Bad",
+        "usage_label": "started",
+        "summary": "Tyrod Taylor (QB, -1.8 pts, started, Speculative start miss) - Bad"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 31.59999999999991,
+      "margin_relative_value": -1.799999999999983,
+      "position": "",
+      "summary": "Pat Pidgeon won the raw scoring battle by 31.6 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Reverse Ted Lasso",
+      "loser_team": "Pat Pidgeon",
+      "value": 31.70000000000003,
+      "margin_relative_value": -1.6999999999998607,
+      "position": "",
+      "summary": "Reverse Ted Lasso had the cleaner lineup week by 31.7 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 88.10000000000004,
+      "margin_relative_value": 54.700000000000145,
+      "position": "",
+      "summary": "Pat Pidgeon carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "MOSTLY",
+      "loser_team": "Pat Pidgeon",
+      "value": 88.10000000000004,
+      "margin_relative_value": 54.700000000000145,
+      "position": "",
+      "summary": "Missed opportunities exceeded the 33.4-point margin, but not from one clear swap."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 17.8999999999999,
+      "margin_relative_value": -15.499999999999993,
+      "position": "QB",
+      "summary": "Pat Pidgeon controlled total QB output by 17.9 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 33.39999999999989,
+    "margin": 33.39999999999989,
+    "takeaways": [
+      "Pat Pidgeon still won despite leaving 43.9 lineup points on the table, which exceeded the final margin.",
+      "The clearest unit edge was total QB output: Pat Pidgeon by 17.9 points.",
+      "Against projection, Pat Pidgeon finished -1.5 while Reverse Ted Lasso finished -32.4.",
+      "The biggest started performance was Jaxon Smith-Njigba for Pat Pidgeon at 25.1 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Pat Pidgeon waiver upside",
+        "team_name": "Pat Pidgeon",
+        "value": 44.2,
+        "relative_to_margin": 10.80000000000011
+      },
+      {
+        "label": "Pat Pidgeon lineup leakage",
+        "team_name": "Pat Pidgeon",
+        "value": 43.900000000000034,
+        "relative_to_margin": 10.500000000000142
+      },
+      {
+        "label": "Reverse Ted Lasso waiver upside",
+        "team_name": "Reverse Ted Lasso",
+        "value": 34.300000000000004,
+        "relative_to_margin": 0.9000000000001123
+      },
+      {
+        "label": "Reverse Ted Lasso lineup leakage",
+        "team_name": "Reverse Ted Lasso",
+        "value": 12.200000000000003,
+        "relative_to_margin": -21.19999999999989
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null
+  },
+  "skill_luck": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 113.66333333333327,
+    "league_median_score": 112.98333333333329,
+    "teams": [
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 118.28,
+        "points_over_projected": -1.480000000000004,
+        "opponent_weekly_rank": 10
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "weekly_rank": 10,
+        "all_play_record": "0-9",
+        "beat_league_median": false,
+        "projected_score": 115.85,
+        "points_over_projected": -32.44999999999999,
+        "opponent_weekly_rank": 4
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 113.66333333333327,
+    "league_median_score": 112.98333333333329,
+    "teams": [
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 118.28,
+        "points_over_projected": -1.480000000000004,
+        "opponent_weekly_rank": 10
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "weekly_rank": 10,
+        "all_play_record": "0-9",
+        "beat_league_median": false,
+        "projected_score": 115.85,
+        "points_over_projected": -32.44999999999999,
+        "opponent_weekly_rank": 4
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "QB",
+        "team_a_points": 16.0999999999999,
+        "team_b_points": -1.800000000000002,
+        "edge_points": 17.8999999999999,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 17.8999999999999
+      },
+      {
+        "position": "WR",
+        "team_a_points": 44.900000000000006,
+        "team_b_points": 28.9,
+        "edge_points": 16.000000000000007,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 16.000000000000007
+      },
+      {
+        "position": "RB",
+        "team_a_points": 32.0,
+        "team_b_points": 39.5,
+        "edge_points": 7.5,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -7.5
+      },
+      {
+        "position": "K",
+        "team_a_points": 9.0,
+        "team_b_points": 6.0,
+        "edge_points": 3.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 3.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 7.800000000000001,
+        "team_b_points": 5.800000000000001,
+        "edge_points": 2.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 2.0
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 7.0,
+        "team_b_points": 5.0,
+        "edge_points": 2.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 2.0
+      }
+    ],
+    "largest_edge": {
+      "position": "QB",
+      "team_a_points": 16.0999999999999,
+      "team_b_points": -1.800000000000002,
+      "edge_points": 17.8999999999999,
+      "edge_team": "Pat Pidgeon",
+      "edge_direction": 17.8999999999999
+    },
+    "top_wins": [
+      {
+        "position": "QB",
+        "team_a_points": 16.0999999999999,
+        "team_b_points": -1.800000000000002,
+        "edge_points": 17.8999999999999,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 17.8999999999999
+      },
+      {
+        "position": "WR",
+        "team_a_points": 44.900000000000006,
+        "team_b_points": 28.9,
+        "edge_points": 16.000000000000007,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 16.000000000000007
+      },
+      {
+        "position": "K",
+        "team_a_points": 9.0,
+        "team_b_points": 6.0,
+        "edge_points": 3.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 3.0
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "RB",
+        "team_a_points": 32.0,
+        "team_b_points": 39.5,
+        "edge_points": 7.5,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -7.5
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Pat Pidgeon",
+      "actual_lineup_points": 116.7999999999999,
+      "optimal_lineup_points": 160.69999999999993,
+      "bench_points": 69.09999999999992,
+      "points_left_on_bench": 43.900000000000034,
+      "lowest_scoring_starter": {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Olave",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 5.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Blake Corum",
+        "recommended_points": 31.1,
+        "benched_player": "Jonathan Taylor",
+        "benched_points": 14.4,
+        "point_swing": 16.700000000000003,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Blake Corum over Jonathan Taylor for an estimated +16.7 points this week.",
+        "confidence": 1.0,
+        "signal_label": "Strong signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Jonathan Taylor",
+          "points": 14.4,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.4175000000000001,
+          "capped_total": 1.0
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Pat Pidgeon started 8 of 9 slots optimally"
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "actual_lineup_points": 85.19999999999999,
+      "optimal_lineup_points": 97.39999999999999,
+      "bench_points": 49.73333333333331,
+      "points_left_on_bench": 12.200000000000003,
+      "lowest_scoring_starter": {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Tyrod Taylor",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": -1.800000000000002
+      },
+      "lineup_landmine": {
+        "name": "Justin Jefferson",
+        "position": "WR",
+        "points": 2.1,
+        "season_avg": 9.715384615384615,
+        "z_score": -1.3856522957060695,
+        "reason": "Started player materially underperformed season baseline."
+      },
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Khalil Shakir",
+        "recommended_points": 8.899999999999997,
+        "benched_player": "Justin Jefferson",
+        "benched_points": 2.1,
+        "point_swing": 6.799999999999997,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Khalil Shakir over Justin Jefferson for an estimated +6.8 points this week.",
+        "confidence": 0.7699999999999999,
+        "signal_label": "Good signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Justin Jefferson",
+          "points": 2.1,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.16999999999999993,
+          "capped_total": 0.7699999999999999
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Reverse Ted Lasso started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Pat Pidgeon",
+      "top_3_share_pct": 50.34246575342461,
+      "top_2_share_pct": 36.558219178082226,
+      "volatility_std": 6.013092710961408,
+      "structural_integrity_pct": 49.65753424657539,
+      "fragility_score": 36.558219178082226,
+      "label": "Stable Build"
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "top_3_share_pct": 65.46762589928058,
+      "top_2_share_pct": 47.362110311750605,
+      "volatility_std": 7.3520972064665555,
+      "structural_integrity_pct": 34.53237410071942,
+      "fragility_score": 47.362110311750605,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Pat Pidgeon",
+    "team_b_name": "Reverse Ted Lasso",
+    "record_for_team_a": "5-4",
+    "games": 9,
+    "playoff_games": 0,
+    "average_margin_for_team_a": 4.4411111111111,
+    "series_summary": "Pat Pidgeon is 5-4 against Reverse Ted Lasso across 9 all-time meeting(s).",
+    "average_margin_text": "Average margin from Pat Pidgeon's perspective: +4.4.",
+    "current_margin_rank_text": "6th closest",
+    "current_total_rank_text": "7th highest combined score",
+    "streak_text": "Pat Pidgeon carries the current 2-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2025 W14",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 33.39999999999989,
+        "combined_score": 200.1999999999999
+      },
+      {
+        "season_label": "2025 W5",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 37.0,
+        "combined_score": 250.59999999999985
+      },
+      {
+        "season_label": "2024 W7",
+        "context": "regular season",
+        "winner": "Reverse Ted Lasso",
+        "margin": 49.06999999999999,
+        "combined_score": 191.19
+      },
+      {
+        "season_label": "2023 W10",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 33.730000000000004,
+        "combined_score": 213.87
+      },
+      {
+        "season_label": "2023 W1",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 24.700000000000003,
+        "combined_score": 209.16000000000003
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Pat Pidgeon Schools Reverse Ted Lasso: A Lesson in Fantasy Football",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/925043/recap?week=14&mid1=3&mid2=4",
+    "grade_summary": "Pat Pidgeon: A- | Reverse Ted Lasso: D"
+  }
+}

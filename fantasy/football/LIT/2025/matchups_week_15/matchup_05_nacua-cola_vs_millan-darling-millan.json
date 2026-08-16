@@ -1,0 +1,1851 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2025,
+    "week": 15,
+    "generated_at": "2026-08-16T08:29:20.599248",
+    "page_title": "Nacua-Cola vs Millan Darling Millan matchup report",
+    "matchup_id": "week-15-nacua-cola-vs-millan-darling-millan",
+    "output_dir": "analysis/weekly_report/data/2025/matchups_week_15"
+  },
+  "matchup": {
+    "matchup_id": "week-15-nacua-cola-vs-millan-darling-millan",
+    "team_a_name": "Nacua-Cola",
+    "team_b_name": "Millan Darling Millan",
+    "team_a_score": 137.16666666666657,
+    "team_b_score": 132.29999999999993,
+    "actual_margin": 4.866666666666646,
+    "final_margin": 4.866666666666646,
+    "winner_team_name": "Nacua-Cola",
+    "result_text": "Nacua-Cola by 4.9",
+    "margin_text": "Nacua-Cola 137.2 to 132.3",
+    "ideal_margin": -13.03333333333336,
+    "ideal_winner": "Millan Darling Millan",
+    "winner_changed_under_ideal": true,
+    "team_a_projected_score": 123.3,
+    "team_b_projected_score": 124.18,
+    "team_a_points_over_projected": 15.470000000000011,
+    "team_b_points_over_projected": 8.120000000000005,
+    "league_average_score": 128.82999999999993,
+    "league_median_score": 126.7166666666666,
+    "team_a_weekly_rank": 3,
+    "team_b_weekly_rank": 4,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": true
+  },
+  "summary": {
+    "decision_summary": "Nacua-Cola won by 4.9. Nacua-Cola left 12.5 lineup points on the table, while Millan Darling Millan left 30.4.",
+    "historical_summary": "Nacua-Cola is 9-6 against Millan Darling Millan across 15 all-time meeting(s).",
+    "net_ideal_swing": -17.900000000000006,
+    "ideal_summary": "Ideal lineups still favor Millan Darling Millan",
+    "winner_reason": "Nacua-Cola won by controlling total QB output (edge of 33.1) while also finishing +15.5 against projection.",
+    "loser_reason": "Millan Darling Millan left 30.4 lineup points on the bench, more than the final margin, so lineup choices were a real part of the loss."
+  },
+  "teams": [
+    {
+      "team_name": "Nacua-Cola",
+      "manager_display": "Craig S.",
+      "actual_score": 137.16666666666657,
+      "ideal_score": 149.66666666666657,
+      "manager_grade_pct": 85.13575434013727,
+      "manager_grade_letter": "B",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 85.13575434013727,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 72.11357660868215,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 91.64810690423162,
+            "decision_grade_pct": 87.72303822294228,
+            "roster_missed_points": 12.5,
+            "free_agent_missed_points": 19.13333333333337,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 1,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 0 positive | 1 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss"
+            ],
+            "score_vs_historical_avg": 16.960000000000008,
+            "season_average_score": 118.02577777777769,
+            "score_vs_season_average": 19.14088888888888,
+            "weekly_rank": 3,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1803.0999999999988,
+            "season_ideal_points": 2066.433333333332,
+            "season_lineup_efficiency_pct": 87.25662574806833,
+            "drop_regret_points_total": 999.6999999999996,
+            "trend": "improving"
+          }
+        },
+        "summary": "Nacua-Cola graded B this week and C for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 85.13575434013727,
+      "process_score_letter": "B",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 85.13575434013727,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 72.11357660868215,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 91.64810690423162,
+            "decision_grade_pct": 87.72303822294228,
+            "roster_missed_points": 12.5,
+            "free_agent_missed_points": 19.13333333333337,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 1,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 0 positive | 1 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss"
+            ],
+            "score_vs_historical_avg": 16.960000000000008,
+            "season_average_score": 118.02577777777769,
+            "score_vs_season_average": 19.14088888888888,
+            "weekly_rank": 3,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1803.0999999999988,
+            "season_ideal_points": 2066.433333333332,
+            "season_lineup_efficiency_pct": 87.25662574806833,
+            "drop_regret_points_total": 999.6999999999996,
+            "trend": "improving"
+          }
+        },
+        "summary": "Nacua-Cola graded B this week and C for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 2,
+        "record": "9-6",
+        "points_for": 1803.0999999999988,
+        "max_possible_wins": 9
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 12.5,
+          "roster_swap_upside_points": 6.400000000000002,
+          "waiver_upside_points": 19.13333333333337
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 1,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 999.6999999999996,
+          "former_player_followup_points": 999.6999999999996
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 37.06666666666656
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Puka Nacua",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 26.9
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 19.200000000000003
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "roster_position": "K",
+          "points": 16.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "RJ Harvey",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 12.5
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Devin Neal",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "points": 12.2
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 10.4
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 2.9000000000000004
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 18.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 10.999999999999927
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Sean Tucker",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 9.099999999999984
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 4.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 4.300000000000001
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 18.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 10.999999999999927
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Sean Tucker",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 9.099999999999984
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 4.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 4.300000000000001
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Kenneth Gainwell",
+          "recommended_points": 18.6,
+          "benched_player": "Devin Neal",
+          "benched_points": 12.2,
+          "point_swing": 6.400000000000002,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Kenneth Gainwell over Devin Neal for an estimated +6.4 points this week.",
+          "confidence": 0.76,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Devin Neal",
+            "points": 12.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.16000000000000006,
+            "capped_total": 0.76
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Jacory Croskey-Merritt",
+          "recommended_points": 22.6,
+          "benched_player": "Emanuel Wilson",
+          "benched_points": 3.466666666666635,
+          "point_swing": 19.13333333333337,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Jacory Croskey-Merritt instead of holding Emanuel Wilson for an estimated +19.1 points this week.",
+          "confidence": 0.9783333333333342,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Emanuel Wilson",
+            "points": 3.466666666666635,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.4783333333333342,
+            "capped_total": 0.9783333333333342
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "49ers",
+          "position": "DEF",
+          "actual_team": "San Francisco 49ers",
+          "started": true,
+          "points": 0.0,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 0,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 5.5,
+          "prior_scoring_sample_weeks": 2,
+          "surprise_points_vs_prior": -5.5,
+          "grade_adjustment_points": -1.5,
+          "grade_impact_label": "Speculative start miss",
+          "tags": [
+            "Speculative start miss",
+            "Bad",
+            "Started Add"
+          ],
+          "move_quality": "BAD",
+          "move_quality_label": "Bad",
+          "usage_label": "started",
+          "summary": "49ers (DEF, 0.0 pts, started, Speculative start miss) - Bad"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 37.06666666666656
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Puka Nacua",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 26.9
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 19.200000000000003
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "roster_position": "K",
+          "points": 16.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "RJ Harvey",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 12.5
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Devin Neal",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "points": 12.2
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 10.4
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 2.9000000000000004
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "49ers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 0.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 18.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 10.999999999999927
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Sean Tucker",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 9.099999999999984
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 4.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 4.300000000000001
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Emanuel Wilson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 3.466666666666635
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Drake London",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Bo Nix",
+          "position": "QB",
+          "actual_team": "Denver Broncos",
+          "points": 37.06666666666656,
+          "season_avg": 18.84761904761898,
+          "type": "BOOM",
+          "z_score": 1.6024055035515334,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "actual_team": "Chicago Bears",
+          "points": 4.300000000000001,
+          "season_avg": 16.8,
+          "type": "BUST",
+          "z_score": -1.5842851761513368,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 3,
+        "league_size": 10,
+        "league_average_score": 128.82999999999993,
+        "league_median_score": 126.7166666666666,
+        "beat_league_median": true,
+        "all_play_record": "7-2",
+        "projected_score": 123.3,
+        "points_over_projected": 15.470000000000011
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 137.16666666666657,
+        "optimal_lineup_points": 149.66666666666657,
+        "bench_points": 51.06666666666655,
+        "points_left_on_bench": 12.5,
+        "lowest_scoring_starter": {
+          "team_name": "Nacua-Cola",
+          "name": "49ers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 0.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Kenneth Gainwell",
+          "recommended_points": 18.6,
+          "benched_player": "Devin Neal",
+          "benched_points": 12.2,
+          "point_swing": 6.400000000000002,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Kenneth Gainwell over Devin Neal for an estimated +6.4 points this week.",
+          "confidence": 0.76,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Devin Neal",
+            "points": 12.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.16000000000000006,
+            "capped_total": 0.76
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Nacua-Cola started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 60.631834750911274,
+        "top_2_share_pct": 46.6342648845686,
+        "volatility_std": 10.818328957219377,
+        "structural_integrity_pct": 39.368165249088726,
+        "fragility_score": 46.6342648845686,
+        "label": "Stable Build"
+      }
+    },
+    {
+      "team_name": "Millan Darling Millan",
+      "manager_display": "Yarp",
+      "actual_score": 132.29999999999993,
+      "ideal_score": 162.69999999999993,
+      "manager_grade_pct": 81.6588049251131,
+      "manager_grade_letter": "B-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 81.6588049251131,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 72.69824787008463,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 81.31530424093422,
+            "decision_grade_pct": 77.7206638272874,
+            "roster_missed_points": 30.400000000000006,
+            "free_agent_missed_points": 21.5,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": 10.691111111111127,
+            "season_average_score": 118.02577777777769,
+            "score_vs_season_average": 14.274222222222235,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1824.133333333332,
+            "season_ideal_points": 2041.933333333332,
+            "season_lineup_efficiency_pct": 89.33363805543765,
+            "drop_regret_points_total": 954.2999999999987,
+            "trend": "improving"
+          }
+        },
+        "summary": "Millan Darling Millan graded B- this week and C for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 81.6588049251131,
+      "process_score_letter": "B-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 81.6588049251131,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 72.69824787008463,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 81.31530424093422,
+            "decision_grade_pct": 77.7206638272874,
+            "roster_missed_points": 30.400000000000006,
+            "free_agent_missed_points": 21.5,
+            "good_moves_this_week": 1,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": 10.691111111111127,
+            "season_average_score": 118.02577777777769,
+            "score_vs_season_average": 14.274222222222235,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1824.133333333332,
+            "season_ideal_points": 2041.933333333332,
+            "season_lineup_efficiency_pct": 89.33363805543765,
+            "drop_regret_points_total": 954.2999999999987,
+            "trend": "improving"
+          }
+        },
+        "summary": "Millan Darling Millan graded B- this week and C for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 1,
+        "record": "10-5",
+        "points_for": 1824.133333333332,
+        "max_possible_wins": 10
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 30.400000000000006,
+          "roster_swap_upside_points": 17.300000000000004,
+          "waiver_upside_points": 21.5
+        },
+        "moves": {
+          "good_moves_this_week": 1,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 954.2999999999987,
+          "former_player_followup_points": 954.2999999999987
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 37.400000000000006
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "James Cook III",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 34.1
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 24.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chase McLaughlin",
+          "position": "K",
+          "roster_position": "K",
+          "points": 11.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Broncos",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 7.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 6.1000000000000005
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 5.2
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Joe Burrow",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 3.9999999999999254
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Darren Waller",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 23.6
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Mike Evans",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 19.200000000000003
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 7.3
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Kimani Vidal",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 6.800000000000001
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.1
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Darren Waller",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 23.6
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Mike Evans",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 19.200000000000003
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 7.3
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Kimani Vidal",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 6.800000000000001
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.1
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Mike Evans",
+          "recommended_points": 19.200000000000003,
+          "benched_player": "Tetairoa McMillan",
+          "benched_points": 3.5,
+          "point_swing": 15.700000000000003,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Mike Evans over Tetairoa McMillan for an estimated +15.7 points this week.",
+          "confidence": 0.9925,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Tetairoa McMillan",
+            "points": 3.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.39250000000000007,
+            "capped_total": 0.9925
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Kimani Vidal",
+          "recommended_points": 6.800000000000001,
+          "benched_player": "Ashton Jeanty",
+          "benched_points": 5.2,
+          "point_swing": 1.6000000000000005,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Kimani Vidal over Ashton Jeanty for an estimated +1.6 points this week.",
+          "confidence": 0.64,
+          "signal_label": "Thin signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Ashton Jeanty",
+            "points": 5.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.040000000000000015,
+            "capped_total": 0.64
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Jacory Croskey-Merritt",
+          "recommended_points": 22.6,
+          "benched_player": "Jaylen Wright",
+          "benched_points": 1.1,
+          "point_swing": 21.5,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Jacory Croskey-Merritt instead of holding Jaylen Wright for an estimated +21.5 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Jaylen Wright",
+            "points": 1.1,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "actual_team": "Miami Dolphins",
+          "started": false,
+          "points": 1.1,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 2,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 2.442857142857143,
+          "prior_scoring_sample_weeks": 14,
+          "surprise_points_vs_prior": -1.342857142857143,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Jaylen Wright (RB, 1.1 pts, benched, Bench stash) - Good Bench Stash"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 37.400000000000006
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "James Cook III",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 34.1
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 24.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Chase McLaughlin",
+          "position": "K",
+          "roster_position": "K",
+          "points": 11.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Broncos",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 7.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 6.1000000000000005
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 5.2
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Joe Burrow",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 3.9999999999999254
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 3.5
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Darren Waller",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 23.6
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Mike Evans",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 19.200000000000003
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 7.3
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Kimani Vidal",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 6.800000000000001
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 1.1
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Millan Darling Millan",
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Mike Evans",
+          "position": "WR",
+          "actual_team": "Tampa Bay Buccaneers",
+          "points": 19.200000000000003,
+          "season_avg": 3.7500000000000004,
+          "type": "BOOM",
+          "z_score": 2.9230583813319546,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Darren Waller",
+          "position": "TE",
+          "actual_team": "Miami Dolphins",
+          "points": 23.6,
+          "season_avg": 7.280000000000001,
+          "type": "BOOM",
+          "z_score": 2.2972931093815503,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "actual_team": "Detroit Lions",
+          "points": 37.400000000000006,
+          "season_avg": 14.32142857142857,
+          "type": "BOOM",
+          "z_score": 2.1850738183559497,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "actual_team": "Philadelphia Eagles",
+          "points": 24.0,
+          "season_avg": 9.007692307692308,
+          "type": "BOOM",
+          "z_score": 2.1100423239836275,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 4,
+        "league_size": 10,
+        "league_average_score": 128.82999999999993,
+        "league_median_score": 126.7166666666666,
+        "beat_league_median": true,
+        "all_play_record": "6-3",
+        "projected_score": 124.18,
+        "points_over_projected": 8.120000000000005
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 132.29999999999993,
+        "optimal_lineup_points": 162.69999999999993,
+        "bench_points": 58.00000000000001,
+        "points_left_on_bench": 30.400000000000006,
+        "lowest_scoring_starter": {
+          "team_name": "Millan Darling Millan",
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 3.5
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 77.77777777777779,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Mike Evans",
+          "recommended_points": 19.200000000000003,
+          "benched_player": "Tetairoa McMillan",
+          "benched_points": 3.5,
+          "point_swing": 15.700000000000003,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Mike Evans over Tetairoa McMillan for an estimated +15.7 points this week.",
+          "confidence": 0.9925,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Tetairoa McMillan",
+            "points": 3.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.39250000000000007,
+            "capped_total": 0.9925
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Millan Darling Millan started 7 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 72.18442932728651,
+        "top_2_share_pct": 54.0438397581255,
+        "volatility_std": 12.715956729855437,
+        "structural_integrity_pct": 27.81557067271349,
+        "fragility_score": 54.0438397581255,
+        "label": "Top-Heavy Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 37.400000000000006
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Bo Nix",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 37.06666666666656
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "James Cook III",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 34.1
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Puka Nacua",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 26.9
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Dallas Goedert",
+        "position": "TE",
+        "roster_position": "TE",
+        "points": 24.0
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Saquon Barkley",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 19.200000000000003
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Brandon Aubrey",
+        "position": "K",
+        "roster_position": "K",
+        "points": 16.0
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "RJ Harvey",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 12.5
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Devin Neal",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "points": 12.2
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Chase McLaughlin",
+        "position": "K",
+        "roster_position": "K",
+        "points": 11.0
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Darren Waller",
+        "position": "TE",
+        "roster_position": "BN",
+        "points": 23.6
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Mike Evans",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 19.200000000000003
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Kenneth Gainwell",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 18.6
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Justin Herbert",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 10.999999999999927
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Sean Tucker",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 9.099999999999984
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Deebo Samuel",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 7.3
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Kimani Vidal",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 6.800000000000001
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Michael Pittman Jr.",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 4.6
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Millan Darling Millan",
+        "name": "Jaylen Wright",
+        "position": "RB",
+        "actual_team": "Miami Dolphins",
+        "started": false,
+        "points": 1.1,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 2,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 2.442857142857143,
+        "prior_scoring_sample_weeks": 14,
+        "surprise_points_vs_prior": -1.342857142857143,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Jaylen Wright (RB, 1.1 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "49ers",
+        "position": "DEF",
+        "actual_team": "San Francisco 49ers",
+        "started": true,
+        "points": 0.0,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 0,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 5.5,
+        "prior_scoring_sample_weeks": 2,
+        "surprise_points_vs_prior": -5.5,
+        "grade_adjustment_points": -1.5,
+        "grade_impact_label": "Speculative start miss",
+        "tags": [
+          "Speculative start miss",
+          "Bad",
+          "Started Add"
+        ],
+        "move_quality": "BAD",
+        "move_quality_label": "Bad",
+        "usage_label": "started",
+        "summary": "49ers (DEF, 0.0 pts, started, Speculative start miss) - Bad"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Nacua-Cola",
+      "loser_team": "Millan Darling Millan",
+      "value": 4.866666666666646,
+      "margin_relative_value": 0.0,
+      "position": "",
+      "summary": "Nacua-Cola won the raw scoring battle by 4.9 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Nacua-Cola",
+      "loser_team": "Millan Darling Millan",
+      "value": 17.900000000000006,
+      "margin_relative_value": 13.03333333333336,
+      "position": "",
+      "summary": "Nacua-Cola had the cleaner lineup week by 17.9 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Millan Darling Millan",
+      "loser_team": "Nacua-Cola",
+      "value": 51.900000000000006,
+      "margin_relative_value": 47.03333333333336,
+      "position": "",
+      "summary": "Millan Darling Millan carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "YES",
+      "loser_team": "Millan Darling Millan",
+      "value": 15.700000000000003,
+      "margin_relative_value": 10.833333333333357,
+      "position": "",
+      "summary": "Millan Darling Millan would have flipped the matchup by starting Mike Evans over Tetairoa McMillan for a projected +15.7-point swing."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Nacua-Cola",
+      "loser_team": "Millan Darling Millan",
+      "value": 33.066666666666634,
+      "margin_relative_value": 28.19999999999999,
+      "position": "QB",
+      "summary": "Nacua-Cola controlled total QB output by 33.1 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 4.866666666666646,
+    "margin": 4.866666666666646,
+    "takeaways": [
+      "Millan Darling Millan left 30.4 lineup points on the table, more than the 4.9-point final margin.",
+      "The clearest unit edge was total QB output: Nacua-Cola by 33.1 points.",
+      "Against projection, Nacua-Cola finished +15.5 while Millan Darling Millan finished +8.1.",
+      "The biggest started performance was Amon-Ra St. Brown for Millan Darling Millan at 37.4 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Millan Darling Millan lineup leakage",
+        "team_name": "Millan Darling Millan",
+        "value": 30.400000000000006,
+        "relative_to_margin": 25.53333333333336
+      },
+      {
+        "label": "Millan Darling Millan waiver upside",
+        "team_name": "Millan Darling Millan",
+        "value": 21.5,
+        "relative_to_margin": 16.633333333333354
+      },
+      {
+        "label": "Nacua-Cola waiver upside",
+        "team_name": "Nacua-Cola",
+        "value": 19.13333333333337,
+        "relative_to_margin": 14.266666666666723
+      },
+      {
+        "label": "Nacua-Cola lineup leakage",
+        "team_name": "Nacua-Cola",
+        "value": 12.5,
+        "relative_to_margin": 7.633333333333354
+      }
+    ],
+    "single_swap_flip": {
+      "team_name": "Millan Darling Millan",
+      "recommended_player": "Mike Evans",
+      "benched_player": "Tetairoa McMillan",
+      "point_swing": 15.700000000000003,
+      "position": "WR",
+      "reason": "At WR, swap in Mike Evans over Tetairoa McMillan for an estimated +15.7 points this week.",
+      "reasonable": true
+    },
+    "would_have_won_summary": "Millan Darling Millan would have flipped the matchup by starting Mike Evans over Tetairoa McMillan for a projected +15.7-point swing."
+  },
+  "skill_luck": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 128.82999999999993,
+    "league_median_score": 126.7166666666666,
+    "teams": [
+      {
+        "team_name": "Nacua-Cola",
+        "weekly_rank": 3,
+        "all_play_record": "7-2",
+        "beat_league_median": true,
+        "projected_score": 123.3,
+        "points_over_projected": 15.470000000000011,
+        "opponent_weekly_rank": 4
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 124.18,
+        "points_over_projected": 8.120000000000005,
+        "opponent_weekly_rank": 3
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 128.82999999999993,
+    "league_median_score": 126.7166666666666,
+    "teams": [
+      {
+        "team_name": "Nacua-Cola",
+        "weekly_rank": 3,
+        "all_play_record": "7-2",
+        "beat_league_median": true,
+        "projected_score": 123.3,
+        "points_over_projected": 15.470000000000011,
+        "opponent_weekly_rank": 4
+      },
+      {
+        "team_name": "Millan Darling Millan",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 124.18,
+        "points_over_projected": 8.120000000000005,
+        "opponent_weekly_rank": 3
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "QB",
+        "team_a_points": 37.06666666666656,
+        "team_b_points": 3.9999999999999254,
+        "edge_points": 33.066666666666634,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": 33.066666666666634
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.9000000000000004,
+        "team_b_points": 24.0,
+        "edge_points": 21.1,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": -21.1
+      },
+      {
+        "position": "WR",
+        "team_a_points": 37.3,
+        "team_b_points": 47.00000000000001,
+        "edge_points": 9.70000000000001,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": -9.70000000000001
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 0.0,
+        "team_b_points": 7.0,
+        "edge_points": 7.0,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": -7.0
+      },
+      {
+        "position": "K",
+        "team_a_points": 16.0,
+        "team_b_points": 11.0,
+        "edge_points": 5.0,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": 5.0
+      },
+      {
+        "position": "RB",
+        "team_a_points": 43.900000000000006,
+        "team_b_points": 39.300000000000004,
+        "edge_points": 4.600000000000001,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": 4.600000000000001
+      }
+    ],
+    "largest_edge": {
+      "position": "QB",
+      "team_a_points": 37.06666666666656,
+      "team_b_points": 3.9999999999999254,
+      "edge_points": 33.066666666666634,
+      "edge_team": "Nacua-Cola",
+      "edge_direction": 33.066666666666634
+    },
+    "top_wins": [
+      {
+        "position": "QB",
+        "team_a_points": 37.06666666666656,
+        "team_b_points": 3.9999999999999254,
+        "edge_points": 33.066666666666634,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": 33.066666666666634
+      },
+      {
+        "position": "K",
+        "team_a_points": 16.0,
+        "team_b_points": 11.0,
+        "edge_points": 5.0,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": 5.0
+      },
+      {
+        "position": "RB",
+        "team_a_points": 43.900000000000006,
+        "team_b_points": 39.300000000000004,
+        "edge_points": 4.600000000000001,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": 4.600000000000001
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "TE",
+        "team_a_points": 2.9000000000000004,
+        "team_b_points": 24.0,
+        "edge_points": 21.1,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": -21.1
+      },
+      {
+        "position": "WR",
+        "team_a_points": 37.3,
+        "team_b_points": 47.00000000000001,
+        "edge_points": 9.70000000000001,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": -9.70000000000001
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 0.0,
+        "team_b_points": 7.0,
+        "edge_points": 7.0,
+        "edge_team": "Millan Darling Millan",
+        "edge_direction": -7.0
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Nacua-Cola",
+      "actual_lineup_points": 137.16666666666657,
+      "optimal_lineup_points": 149.66666666666657,
+      "bench_points": 51.06666666666655,
+      "points_left_on_bench": 12.5,
+      "lowest_scoring_starter": {
+        "team_name": "Nacua-Cola",
+        "name": "49ers",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 0.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Kenneth Gainwell",
+        "recommended_points": 18.6,
+        "benched_player": "Devin Neal",
+        "benched_points": 12.2,
+        "point_swing": 6.400000000000002,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Kenneth Gainwell over Devin Neal for an estimated +6.4 points this week.",
+        "confidence": 0.76,
+        "signal_label": "Good signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Devin Neal",
+          "points": 12.2,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.16000000000000006,
+          "capped_total": 0.76
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Nacua-Cola started 8 of 9 slots optimally"
+    },
+    {
+      "team_name": "Millan Darling Millan",
+      "actual_lineup_points": 132.29999999999993,
+      "optimal_lineup_points": 162.69999999999993,
+      "bench_points": 58.00000000000001,
+      "points_left_on_bench": 30.400000000000006,
+      "lowest_scoring_starter": {
+        "team_name": "Millan Darling Millan",
+        "name": "Tetairoa McMillan",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "points": 3.5
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 77.77777777777779,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Mike Evans",
+        "recommended_points": 19.200000000000003,
+        "benched_player": "Tetairoa McMillan",
+        "benched_points": 3.5,
+        "point_swing": 15.700000000000003,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Mike Evans over Tetairoa McMillan for an estimated +15.7 points this week.",
+        "confidence": 0.9925,
+        "signal_label": "Strong signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Tetairoa McMillan",
+          "points": 3.5,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.39250000000000007,
+          "capped_total": 0.9925
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Millan Darling Millan started 7 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Nacua-Cola",
+      "top_3_share_pct": 60.631834750911274,
+      "top_2_share_pct": 46.6342648845686,
+      "volatility_std": 10.818328957219377,
+      "structural_integrity_pct": 39.368165249088726,
+      "fragility_score": 46.6342648845686,
+      "label": "Stable Build"
+    },
+    {
+      "team_name": "Millan Darling Millan",
+      "top_3_share_pct": 72.18442932728651,
+      "top_2_share_pct": 54.0438397581255,
+      "volatility_std": 12.715956729855437,
+      "structural_integrity_pct": 27.81557067271349,
+      "fragility_score": 54.0438397581255,
+      "label": "Top-Heavy Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Bench Pain",
+      "team_name": "Millan Darling Millan",
+      "detail": "Millan Darling Millan left 30.4 lineup points on the table, more than the 4.9-point final margin."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Nacua-Cola",
+    "team_b_name": "Millan Darling Millan",
+    "record_for_team_a": "9-6",
+    "games": 15,
+    "playoff_games": 0,
+    "average_margin_for_team_a": 8.694222222222225,
+    "series_summary": "Nacua-Cola is 9-6 against Millan Darling Millan across 15 all-time meeting(s).",
+    "average_margin_text": "Average margin from Nacua-Cola's perspective: +8.7.",
+    "current_margin_rank_text": "3rd closest",
+    "current_total_rank_text": "2nd highest combined score",
+    "streak_text": "Nacua-Cola carries the current 1-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2025 W15",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 4.866666666666646,
+        "combined_score": 269.46666666666647
+      },
+      {
+        "season_label": "2025 W6",
+        "context": "regular season",
+        "winner": "Millan Darling Millan",
+        "margin": 8.033333333333331,
+        "combined_score": 217.63333333333318
+      },
+      {
+        "season_label": "2024 W11",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 75.53,
+        "combined_score": 267.33000000000004
+      },
+      {
+        "season_label": "2024 W2",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 21.239999999999995,
+        "combined_score": 209.7
+      },
+      {
+        "season_label": "2023 W13",
+        "context": "regular season",
+        "winner": "Millan Darling Millan",
+        "margin": 1.1300000000000097,
+        "combined_score": 240.67000000000002
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Nacua-Cola Steals the Show from Millan Darling Millan: A Matchup of Epic Proportions!",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/925043/recap?week=15&mid1=6&mid2=10",
+    "grade_summary": "Nacua-Cola: A- | Millan Darling Millan: C"
+  }
+}

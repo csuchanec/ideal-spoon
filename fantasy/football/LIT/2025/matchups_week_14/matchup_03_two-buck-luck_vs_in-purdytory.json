@@ -1,0 +1,1851 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2025,
+    "week": 14,
+    "generated_at": "2026-08-16T08:29:09.956090",
+    "page_title": "Two Buck Luck vs In Purdytory matchup report",
+    "matchup_id": "week-14-two-buck-luck-vs-in-purdytory",
+    "output_dir": "analysis/weekly_report/data/2025/matchups_week_14"
+  },
+  "matchup": {
+    "matchup_id": "week-14-two-buck-luck-vs-in-purdytory",
+    "team_a_name": "Two Buck Luck",
+    "team_b_name": "In Purdytory",
+    "team_a_score": 113.0,
+    "team_b_score": 112.96666666666658,
+    "actual_margin": 0.033333333333416704,
+    "final_margin": 0.033333333333416704,
+    "winner_team_name": "Two Buck Luck",
+    "result_text": "Two Buck Luck by 0.0",
+    "margin_text": "Two Buck Luck 113.0 to 113.0",
+    "ideal_margin": 17.800000000000068,
+    "ideal_winner": "Two Buck Luck",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 101.52,
+    "team_b_projected_score": 126.87,
+    "team_a_points_over_projected": 11.480000000000004,
+    "team_b_points_over_projected": -13.900000000000006,
+    "league_average_score": 113.66333333333327,
+    "league_median_score": 112.98333333333329,
+    "team_a_weekly_rank": 5,
+    "team_b_weekly_rank": 6,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": false
+  },
+  "summary": {
+    "decision_summary": "Two Buck Luck won by 0.0. Two Buck Luck left 19.3 lineup points on the table, while In Purdytory left 1.1.",
+    "historical_summary": "Two Buck Luck is 27-17 against In Purdytory across 44 all-time meeting(s).",
+    "net_ideal_swing": 18.166666666666657,
+    "ideal_summary": "Ideal lineups still favor Two Buck Luck",
+    "winner_reason": "Two Buck Luck won by controlling total RB output (edge of 46.4) while also finishing +11.5 against projection.",
+    "loser_reason": "In Purdytory left 1.1 lineup points on the bench, more than the final margin, so lineup choices were a real part of the loss."
+  },
+  "teams": [
+    {
+      "team_name": "Two Buck Luck",
+      "manager_display": "Dave F.",
+      "actual_score": 112.99999999999999,
+      "ideal_score": 132.29999999999995,
+      "manager_grade_pct": 84.65782312925171,
+      "manager_grade_letter": "B",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 84.65782312925171,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 61.51652845056114,
+          "letter": "D",
+          "label": "bad decisions"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 85.41194255479971,
+            "decision_grade_pct": 82.36151603498544,
+            "roster_missed_points": 19.29999999999997,
+            "free_agent_missed_points": 14.0,
+            "good_moves_this_week": 2,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 2 positive | 0 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss",
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": -12.533333333333275,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -4.254047619047569,
+            "weekly_rank": 6,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1757.4666666666656,
+            "season_ideal_points": 2135.733333333332,
+            "season_lineup_efficiency_pct": 82.28867524035459,
+            "drop_regret_points_total": 799.8666666666659,
+            "trend": "unchanged"
+          }
+        },
+        "summary": "Two Buck Luck graded B this week and D for the season-to-date. Weekly process reads as well managed, season process reads as bad decisions."
+      },
+      "process_score_pct": 84.65782312925171,
+      "process_score_letter": "B",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 84.65782312925171,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 61.51652845056114,
+          "letter": "D",
+          "label": "bad decisions"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 85.41194255479971,
+            "decision_grade_pct": 82.36151603498544,
+            "roster_missed_points": 19.29999999999997,
+            "free_agent_missed_points": 14.0,
+            "good_moves_this_week": 2,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -1.5,
+            "move_grade_summary": "Adds classified this week: 2 positive | 0 bad. Adds reduced the weekly grade by 1.5 pts.",
+            "move_grade_tags": [
+              "Speculative start miss",
+              "Bench stash"
+            ],
+            "score_vs_historical_avg": -12.533333333333275,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -4.254047619047569,
+            "weekly_rank": 6,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1757.4666666666656,
+            "season_ideal_points": 2135.733333333332,
+            "season_lineup_efficiency_pct": 82.28867524035459,
+            "drop_regret_points_total": 799.8666666666659,
+            "trend": "unchanged"
+          }
+        },
+        "summary": "Two Buck Luck graded B this week and D for the season-to-date. Weekly process reads as well managed, season process reads as bad decisions."
+      },
+      "season_context": {
+        "seed": 5,
+        "record": "7-7",
+        "points_for": 1757.4666666666656,
+        "max_possible_wins": 8
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 19.29999999999997,
+          "roster_swap_upside_points": 19.299999999999958,
+          "waiver_upside_points": 14.0
+        },
+        "moves": {
+          "good_moves_this_week": 2,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 1,
+          "drop_regret_points_total": 799.8666666666659,
+          "former_player_followup_points": 799.8666666666659
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 37.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Cameron Dicker",
+          "position": "K",
+          "roster_position": "K",
+          "points": 20.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 17.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chase Brown",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "points": 17.5
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 16.1
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 2.2
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 2.1
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Daniel Jones",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 0.39999999999998
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 19.69999999999994
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Steelers",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 4.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "George Kittle",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 19.69999999999994
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Steelers",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 4.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "George Kittle",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "QB",
+          "recommended_player": "Caleb Williams",
+          "recommended_points": 19.69999999999994,
+          "benched_player": "Daniel Jones",
+          "benched_points": 0.39999999999998,
+          "point_swing": 19.299999999999958,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Caleb Williams over Daniel Jones for an estimated +19.3 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Daniel Jones",
+            "points": 0.39999999999998,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.48249999999999893,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "DEF",
+          "recommended_player": "Vikings",
+          "recommended_points": 18.0,
+          "benched_player": "Steelers",
+          "benched_points": 4.0,
+          "point_swing": 14.0,
+          "source": "FREE_AGENT",
+          "reason": "At DEF, consider adding Vikings instead of holding Steelers for an estimated +14.0 points this week.",
+          "confidence": 0.85,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Steelers",
+            "points": 4.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.35,
+            "capped_total": 0.85
+          },
+          "sample_context": {
+            "recommended_player_weeks": 5,
+            "comparison_player_weeks": 5
+          }
+        }
+      ],
+      "top_additions_this_week": [
+        {
+          "name": "Dalton Kincaid",
+          "position": "UNK",
+          "actual_team": null,
+          "started": false,
+          "points": 13.1,
+          "outscored_team_active_players": 4,
+          "outscored_league_active_players": 48,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 6.907692307692309,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": 6.192307692307691,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Dalton Kincaid (UNK, 13.1 pts, benched, Bench stash) - Good Bench Stash"
+        },
+        {
+          "name": "Steelers",
+          "position": "DEF",
+          "actual_team": "Pittsburgh Steelers",
+          "started": false,
+          "points": 4.0,
+          "outscored_team_active_players": 4,
+          "outscored_league_active_players": 15,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 5.0,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -1.0,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Steelers (DEF, 4.0 pts, benched, Bench stash) - Good Bench Stash"
+        },
+        {
+          "name": "Zach Ertz",
+          "position": "TE",
+          "actual_team": "Washington Commanders",
+          "started": true,
+          "points": 2.1,
+          "outscored_team_active_players": 2,
+          "outscored_league_active_players": 8,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 7.638461538461538,
+          "prior_scoring_sample_weeks": 13,
+          "surprise_points_vs_prior": -5.538461538461538,
+          "grade_adjustment_points": -1.5,
+          "grade_impact_label": "Speculative start miss",
+          "tags": [
+            "Speculative start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Zach Ertz (TE, 2.1 pts, started, Speculative start miss) - Neutral"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 37.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Cameron Dicker",
+          "position": "K",
+          "roster_position": "K",
+          "points": 20.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 17.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chase Brown",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "points": 17.5
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 16.1
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 2.2
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 2.1
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Daniel Jones",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 0.39999999999998
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Ravens",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 0.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 19.69999999999994
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Steelers",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": 4.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "George Kittle",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Cameron Dicker",
+          "position": "K",
+          "actual_team": "Los Angeles Chargers",
+          "points": 20.0,
+          "season_avg": 8.4,
+          "type": "BOOM",
+          "z_score": 2.7650415088122173,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "actual_team": "Indianapolis Colts",
+          "points": 0.39999999999998,
+          "season_avg": 18.542424242424165,
+          "type": "BUST",
+          "z_score": -2.288743514276307,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 5,
+        "league_size": 10,
+        "league_average_score": 113.66333333333327,
+        "league_median_score": 112.98333333333329,
+        "beat_league_median": true,
+        "all_play_record": "5-4",
+        "projected_score": 101.52,
+        "points_over_projected": 11.480000000000004
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 112.99999999999999,
+        "optimal_lineup_points": 132.29999999999995,
+        "bench_points": 23.69999999999994,
+        "points_left_on_bench": 19.29999999999997,
+        "lowest_scoring_starter": {
+          "team_name": "Two Buck Luck",
+          "name": "Ravens",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 0.0
+        },
+        "lineup_landmine": {
+          "name": "Daniel Jones",
+          "position": "QB",
+          "points": 0.39999999999998,
+          "season_avg": 18.542424242424165,
+          "z_score": -2.288743514276307,
+          "reason": "Started player materially underperformed season baseline."
+        },
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "QB",
+          "recommended_player": "Caleb Williams",
+          "recommended_points": 19.69999999999994,
+          "benched_player": "Daniel Jones",
+          "benched_points": 0.39999999999998,
+          "point_swing": 19.299999999999958,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Caleb Williams over Daniel Jones for an estimated +19.3 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Daniel Jones",
+            "points": 0.39999999999998,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.48249999999999893,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Two Buck Luck started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 66.1061946902655,
+        "top_2_share_pct": 50.44247787610621,
+        "volatility_std": 11.730218441757941,
+        "structural_integrity_pct": 33.8938053097345,
+        "fragility_score": 50.44247787610621,
+        "label": "Boom/Bust Build"
+      }
+    },
+    {
+      "team_name": "In Purdytory",
+      "manager_display": "Chris P.",
+      "actual_score": 113.36666666666657,
+      "ideal_score": 114.49999999999989,
+      "manager_grade_pct": 95.89325364610488,
+      "manager_grade_letter": "A",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 95.89325364610488,
+          "letter": "A",
+          "label": "creative edge"
+        },
+        "season": {
+          "score_pct": 73.17028582284831,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 99.01018922852985,
+            "decision_grade_pct": 89.66399071986923,
+            "roster_missed_points": 1.1333333333333115,
+            "free_agent_missed_points": 34.1,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": -5.1976190476190425,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -3.8873809523809797,
+            "weekly_rank": 5,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1659.899999999999,
+            "season_ideal_points": 1860.6666666666656,
+            "season_lineup_efficiency_pct": 89.20996058760299,
+            "drop_regret_points_total": 441.16666666666623,
+            "trend": "unchanged"
+          }
+        },
+        "summary": "In Purdytory graded A this week and C for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 95.89325364610488,
+      "process_score_letter": "A",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 95.89325364610488,
+          "letter": "A",
+          "label": "creative edge"
+        },
+        "season": {
+          "score_pct": 73.17028582284831,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 99.01018922852985,
+            "decision_grade_pct": 89.66399071986923,
+            "roster_missed_points": 1.1333333333333115,
+            "free_agent_missed_points": 34.1,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": -5.1976190476190425,
+            "season_average_score": 117.25404761904755,
+            "score_vs_season_average": -3.8873809523809797,
+            "weekly_rank": 5,
+            "league_size": 10,
+            "beat_league_median": true
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 1659.899999999999,
+            "season_ideal_points": 1860.6666666666656,
+            "season_lineup_efficiency_pct": 89.20996058760299,
+            "drop_regret_points_total": 441.16666666666623,
+            "trend": "unchanged"
+          }
+        },
+        "summary": "In Purdytory graded A this week and C for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 4,
+        "record": "8-6",
+        "points_for": 1659.899999999999,
+        "max_possible_wins": 9
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 1.1333333333333115,
+          "roster_swap_upside_points": 1.1333333333333186,
+          "waiver_upside_points": 34.1
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 441.16666666666623,
+          "former_player_followup_points": 441.16666666666623
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 27.366666666666575
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "De'Von Achane",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 20.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seahawks",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 19.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 18.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jason Myers",
+          "position": "K",
+          "roster_position": "K",
+          "points": 14.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 8.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Breece Hall",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 5.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Mark Andrews",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 0.9
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 23.69999999999992
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ty Johnson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 6.4333333333333185
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Troy Franklin",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 1.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 23.69999999999992
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ty Johnson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 6.4333333333333185
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Troy Franklin",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 1.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Ty Johnson",
+          "recommended_points": 6.4333333333333185,
+          "benched_player": "Breece Hall",
+          "benched_points": 5.3,
+          "point_swing": 1.1333333333333186,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Ty Johnson over Breece Hall for an estimated +1.1 points this week.",
+          "confidence": 0.628333333333333,
+          "signal_label": "Thin signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Breece Hall",
+            "points": 5.3,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.028333333333332968,
+            "capped_total": 0.628333333333333
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Michael Wilson",
+          "recommended_points": 35.2,
+          "benched_player": "Troy Franklin",
+          "benched_points": 1.1,
+          "point_swing": 34.1,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Michael Wilson instead of holding Troy Franklin for an estimated +34.1 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Troy Franklin",
+            "points": 1.1,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 27.366666666666575
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "De'Von Achane",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 20.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seahawks",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 19.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 18.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jason Myers",
+          "position": "K",
+          "roster_position": "K",
+          "points": 14.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 8.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Breece Hall",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 5.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Mark Andrews",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 0.9
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "DJ Moore",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": -0.4
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 23.69999999999992
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ty Johnson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 6.4333333333333185
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Troy Franklin",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 1.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.3
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Nick Chubb",
+          "position": "RB",
+          "actual_team": "Houston Texans",
+          "points": 0.3,
+          "season_avg": 6.976923076923078,
+          "type": "BUST",
+          "z_score": -1.3200659586906358,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 6,
+        "league_size": 10,
+        "league_average_score": 113.66333333333327,
+        "league_median_score": 112.98333333333329,
+        "beat_league_median": false,
+        "all_play_record": "4-5",
+        "projected_score": 126.87,
+        "points_over_projected": -13.900000000000006
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 113.36666666666657,
+        "optimal_lineup_points": 114.49999999999989,
+        "bench_points": 31.53333333333324,
+        "points_left_on_bench": 1.1333333333333115,
+        "lowest_scoring_starter": {
+          "team_name": "In Purdytory",
+          "name": "DJ Moore",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": -0.4
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Ty Johnson",
+          "recommended_points": 6.4333333333333185,
+          "benched_player": "Breece Hall",
+          "benched_points": 5.3,
+          "point_swing": 1.1333333333333186,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Ty Johnson over Breece Hall for an estimated +1.1 points this week.",
+          "confidence": 0.628333333333333,
+          "signal_label": "Thin signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Breece Hall",
+            "points": 5.3,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.028333333333332968,
+            "capped_total": 0.628333333333333
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "In Purdytory started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 59.191501917969866,
+        "top_2_share_pct": 42.37238123340214,
+        "volatility_std": 9.01944553757116,
+        "structural_integrity_pct": 40.808498082030134,
+        "fragility_score": 42.37238123340214,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 37.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Matthew Stafford",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 27.366666666666575
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "De'Von Achane",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 20.5
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Cameron Dicker",
+        "position": "K",
+        "roster_position": "K",
+        "points": 20.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Seahawks",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 19.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 18.1
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Javonte Williams",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 17.7
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Chase Brown",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "points": 17.5
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "CeeDee Lamb",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 16.1
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jason Myers",
+        "position": "K",
+        "roster_position": "K",
+        "points": 14.0
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "In Purdytory",
+        "name": "Jordan Love",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 23.69999999999992
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Caleb Williams",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 19.69999999999994
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Ty Johnson",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 6.4333333333333185
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Steelers",
+        "position": "DEF",
+        "roster_position": "BN",
+        "points": 4.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Troy Franklin",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 1.1
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Nick Chubb",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 0.3
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Garrett Wilson",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 0.0
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "George Kittle",
+        "position": "TE",
+        "roster_position": "BN",
+        "points": 0.0
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Dalton Kincaid",
+        "position": "UNK",
+        "actual_team": null,
+        "started": false,
+        "points": 13.1,
+        "outscored_team_active_players": 4,
+        "outscored_league_active_players": 48,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 6.907692307692309,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": 6.192307692307691,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Dalton Kincaid (UNK, 13.1 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Steelers",
+        "position": "DEF",
+        "actual_team": "Pittsburgh Steelers",
+        "started": false,
+        "points": 4.0,
+        "outscored_team_active_players": 4,
+        "outscored_league_active_players": 15,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 5.0,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -1.0,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Steelers (DEF, 4.0 pts, benched, Bench stash) - Good Bench Stash"
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Zach Ertz",
+        "position": "TE",
+        "actual_team": "Washington Commanders",
+        "started": true,
+        "points": 2.1,
+        "outscored_team_active_players": 2,
+        "outscored_league_active_players": 8,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 7.638461538461538,
+        "prior_scoring_sample_weeks": 13,
+        "surprise_points_vs_prior": -5.538461538461538,
+        "grade_adjustment_points": -1.5,
+        "grade_impact_label": "Speculative start miss",
+        "tags": [
+          "Speculative start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Zach Ertz (TE, 2.1 pts, started, Speculative start miss) - Neutral"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "In Purdytory",
+      "loser_team": "Two Buck Luck",
+      "value": 0.366666666666589,
+      "margin_relative_value": 0.3333333333331723,
+      "position": "",
+      "summary": "In Purdytory won the raw scoring battle by 0.4 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "In Purdytory",
+      "loser_team": "Two Buck Luck",
+      "value": 18.166666666666657,
+      "margin_relative_value": 18.13333333333324,
+      "position": "",
+      "summary": "In Purdytory had the cleaner lineup week by 18.2 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "In Purdytory",
+      "loser_team": "Two Buck Luck",
+      "value": 35.23333333333331,
+      "margin_relative_value": 35.199999999999896,
+      "position": "",
+      "summary": "In Purdytory carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "YES",
+      "loser_team": "In Purdytory",
+      "value": 1.1333333333333186,
+      "margin_relative_value": 1.099999999999902,
+      "position": "",
+      "summary": "In Purdytory would have flipped the matchup by starting Ty Johnson over Breece Hall for a projected +1.1-point swing."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Two Buck Luck",
+      "loser_team": "In Purdytory",
+      "value": 46.400000000000006,
+      "margin_relative_value": 46.36666666666659,
+      "position": "RB",
+      "summary": "Two Buck Luck controlled total RB output by 46.4 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 0.033333333333416704,
+    "margin": 0.033333333333416704,
+    "takeaways": [
+      "In Purdytory left 1.1 lineup points on the table, more than the 0.0-point final margin.",
+      "The clearest unit edge was total RB output: Two Buck Luck by 46.4 points.",
+      "Against projection, Two Buck Luck finished +11.5 while In Purdytory finished -13.9.",
+      "The biggest started performance was Jahmyr Gibbs for Two Buck Luck at 37.0 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "In Purdytory waiver upside",
+        "team_name": "In Purdytory",
+        "value": 34.1,
+        "relative_to_margin": 34.066666666666585
+      },
+      {
+        "label": "Two Buck Luck lineup leakage",
+        "team_name": "Two Buck Luck",
+        "value": 19.29999999999997,
+        "relative_to_margin": 19.266666666666552
+      },
+      {
+        "label": "Two Buck Luck waiver upside",
+        "team_name": "Two Buck Luck",
+        "value": 14.0,
+        "relative_to_margin": 13.966666666666583
+      },
+      {
+        "label": "In Purdytory lineup leakage",
+        "team_name": "In Purdytory",
+        "value": 1.1333333333333115,
+        "relative_to_margin": 1.0999999999998948
+      }
+    ],
+    "single_swap_flip": {
+      "team_name": "In Purdytory",
+      "recommended_player": "Ty Johnson",
+      "benched_player": "Breece Hall",
+      "point_swing": 1.1333333333333186,
+      "position": "RB",
+      "reason": "At RB, swap in Ty Johnson over Breece Hall for an estimated +1.1 points this week.",
+      "reasonable": false
+    },
+    "would_have_won_summary": "In Purdytory would have flipped the matchup by starting Ty Johnson over Breece Hall for a projected +1.1-point swing."
+  },
+  "skill_luck": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 113.66333333333327,
+    "league_median_score": 112.98333333333329,
+    "teams": [
+      {
+        "team_name": "Two Buck Luck",
+        "weekly_rank": 5,
+        "all_play_record": "5-4",
+        "beat_league_median": true,
+        "projected_score": 101.52,
+        "points_over_projected": 11.480000000000004,
+        "opponent_weekly_rank": 6
+      },
+      {
+        "team_name": "In Purdytory",
+        "weekly_rank": 6,
+        "all_play_record": "4-5",
+        "beat_league_median": false,
+        "projected_score": 126.87,
+        "points_over_projected": -13.900000000000006,
+        "opponent_weekly_rank": 5
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Competitive Win",
+    "summary": "The matchup was decided by a real edge, but not a runaway league-wide performance.",
+    "league_average_score": 113.66333333333327,
+    "league_median_score": 112.98333333333329,
+    "teams": [
+      {
+        "team_name": "Two Buck Luck",
+        "weekly_rank": 5,
+        "all_play_record": "5-4",
+        "beat_league_median": true,
+        "projected_score": 101.52,
+        "points_over_projected": 11.480000000000004,
+        "opponent_weekly_rank": 6
+      },
+      {
+        "team_name": "In Purdytory",
+        "weekly_rank": 6,
+        "all_play_record": "4-5",
+        "beat_league_median": false,
+        "projected_score": 126.87,
+        "points_over_projected": -13.900000000000006,
+        "opponent_weekly_rank": 5
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "RB",
+        "team_a_points": 72.2,
+        "team_b_points": 25.8,
+        "edge_points": 46.400000000000006,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 46.400000000000006
+      },
+      {
+        "position": "QB",
+        "team_a_points": 0.39999999999998,
+        "team_b_points": 27.366666666666575,
+        "edge_points": 26.966666666666594,
+        "edge_team": "In Purdytory",
+        "edge_direction": -26.966666666666594
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 0.0,
+        "team_b_points": 19.0,
+        "edge_points": 19.0,
+        "edge_team": "In Purdytory",
+        "edge_direction": -19.0
+      },
+      {
+        "position": "WR",
+        "team_a_points": 18.3,
+        "team_b_points": 25.900000000000002,
+        "edge_points": 7.600000000000001,
+        "edge_team": "In Purdytory",
+        "edge_direction": -7.600000000000001
+      },
+      {
+        "position": "K",
+        "team_a_points": 20.0,
+        "team_b_points": 14.0,
+        "edge_points": 6.0,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 6.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.1,
+        "team_b_points": 0.9,
+        "edge_points": 1.2000000000000002,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 1.2000000000000002
+      }
+    ],
+    "largest_edge": {
+      "position": "RB",
+      "team_a_points": 72.2,
+      "team_b_points": 25.8,
+      "edge_points": 46.400000000000006,
+      "edge_team": "Two Buck Luck",
+      "edge_direction": 46.400000000000006
+    },
+    "top_wins": [
+      {
+        "position": "RB",
+        "team_a_points": 72.2,
+        "team_b_points": 25.8,
+        "edge_points": 46.400000000000006,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 46.400000000000006
+      },
+      {
+        "position": "K",
+        "team_a_points": 20.0,
+        "team_b_points": 14.0,
+        "edge_points": 6.0,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 6.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.1,
+        "team_b_points": 0.9,
+        "edge_points": 1.2000000000000002,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 1.2000000000000002
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "QB",
+        "team_a_points": 0.39999999999998,
+        "team_b_points": 27.366666666666575,
+        "edge_points": 26.966666666666594,
+        "edge_team": "In Purdytory",
+        "edge_direction": -26.966666666666594
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 0.0,
+        "team_b_points": 19.0,
+        "edge_points": 19.0,
+        "edge_team": "In Purdytory",
+        "edge_direction": -19.0
+      },
+      {
+        "position": "WR",
+        "team_a_points": 18.3,
+        "team_b_points": 25.900000000000002,
+        "edge_points": 7.600000000000001,
+        "edge_team": "In Purdytory",
+        "edge_direction": -7.600000000000001
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Two Buck Luck",
+      "actual_lineup_points": 112.99999999999999,
+      "optimal_lineup_points": 132.29999999999995,
+      "bench_points": 23.69999999999994,
+      "points_left_on_bench": 19.29999999999997,
+      "lowest_scoring_starter": {
+        "team_name": "Two Buck Luck",
+        "name": "Ravens",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 0.0
+      },
+      "lineup_landmine": {
+        "name": "Daniel Jones",
+        "position": "QB",
+        "points": 0.39999999999998,
+        "season_avg": 18.542424242424165,
+        "z_score": -2.288743514276307,
+        "reason": "Started player materially underperformed season baseline."
+      },
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "QB",
+        "recommended_player": "Caleb Williams",
+        "recommended_points": 19.69999999999994,
+        "benched_player": "Daniel Jones",
+        "benched_points": 0.39999999999998,
+        "point_swing": 19.299999999999958,
+        "source": "ROSTER",
+        "reason": "At QB, swap in Caleb Williams over Daniel Jones for an estimated +19.3 points this week.",
+        "confidence": 1.0,
+        "signal_label": "Strong signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Daniel Jones",
+          "points": 0.39999999999998,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.48249999999999893,
+          "capped_total": 1.0
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Two Buck Luck started 8 of 9 slots optimally"
+    },
+    {
+      "team_name": "In Purdytory",
+      "actual_lineup_points": 113.36666666666657,
+      "optimal_lineup_points": 114.49999999999989,
+      "bench_points": 31.53333333333324,
+      "points_left_on_bench": 1.1333333333333115,
+      "lowest_scoring_starter": {
+        "team_name": "In Purdytory",
+        "name": "DJ Moore",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "points": -0.4
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Ty Johnson",
+        "recommended_points": 6.4333333333333185,
+        "benched_player": "Breece Hall",
+        "benched_points": 5.3,
+        "point_swing": 1.1333333333333186,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Ty Johnson over Breece Hall for an estimated +1.1 points this week.",
+        "confidence": 0.628333333333333,
+        "signal_label": "Thin signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Breece Hall",
+          "points": 5.3,
+          "role": "STARTER"
+        },
+        "swing_tier": "LOW",
+        "leverage_label": "Close point edge",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Close point edge",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.028333333333332968,
+          "capped_total": 0.628333333333333
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "In Purdytory started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Two Buck Luck",
+      "top_3_share_pct": 66.1061946902655,
+      "top_2_share_pct": 50.44247787610621,
+      "volatility_std": 11.730218441757941,
+      "structural_integrity_pct": 33.8938053097345,
+      "fragility_score": 50.44247787610621,
+      "label": "Boom/Bust Build"
+    },
+    {
+      "team_name": "In Purdytory",
+      "top_3_share_pct": 59.191501917969866,
+      "top_2_share_pct": 42.37238123340214,
+      "volatility_std": 9.01944553757116,
+      "structural_integrity_pct": 40.808498082030134,
+      "fragility_score": 42.37238123340214,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Big Brain",
+      "team_name": "In Purdytory",
+      "detail": "Weekly process score cleared the sharp-management threshold."
+    },
+    {
+      "title": "Bench Pain",
+      "team_name": "In Purdytory",
+      "detail": "In Purdytory left 1.1 lineup points on the table, more than the 0.0-point final margin."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Two Buck Luck",
+    "team_b_name": "In Purdytory",
+    "record_for_team_a": "27-17",
+    "games": 44,
+    "playoff_games": 5,
+    "average_margin_for_team_a": 4.984242424242427,
+    "series_summary": "Two Buck Luck is 27-17 against In Purdytory across 44 all-time meeting(s).",
+    "average_margin_text": "Average margin from Two Buck Luck's perspective: +5.0.",
+    "current_margin_rank_text": "1st closest",
+    "current_total_rank_text": "20th highest combined score",
+    "streak_text": "Two Buck Luck carries the current 1-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2025 W14",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 0.033333333333416704,
+        "combined_score": 225.96666666666658
+      },
+      {
+        "season_label": "2025 W5",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 10.166666666666686,
+        "combined_score": 295.09999999999985
+      },
+      {
+        "season_label": "2024 W14",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 22.200000000000003,
+        "combined_score": 216.2
+      },
+      {
+        "season_label": "2024 W5",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 53.900000000000006,
+        "combined_score": 268.96000000000004
+      },
+      {
+        "season_label": "2023 W15",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 45.77000000000001,
+        "combined_score": 235.97
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Two Buck Luck Sneaks Past In Purdytory in a Nail-Biter!",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/925043/recap?week=14&mid1=5&mid2=9",
+    "grade_summary": "Two Buck Luck: B+ | In Purdytory: C-"
+  }
+}

@@ -1,0 +1,1738 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2025,
+    "week": 7,
+    "generated_at": "2026-08-16T08:27:58.039046",
+    "page_title": "In Purdytory vs Reverse Ted Lasso matchup report",
+    "matchup_id": "week-07-in-purdytory-vs-reverse-ted-lasso",
+    "output_dir": "analysis/weekly_report/data/2025/matchups_week_07"
+  },
+  "matchup": {
+    "matchup_id": "week-07-in-purdytory-vs-reverse-ted-lasso",
+    "team_a_name": "In Purdytory",
+    "team_b_name": "Reverse Ted Lasso",
+    "team_a_score": 112.36666666666662,
+    "team_b_score": 85.09999999999992,
+    "actual_margin": 27.266666666666694,
+    "final_margin": 27.266666666666694,
+    "winner_team_name": "In Purdytory",
+    "result_text": "In Purdytory by 27.3",
+    "margin_text": "In Purdytory 112.4 to 85.1",
+    "ideal_margin": 40.26666666666668,
+    "ideal_winner": "In Purdytory",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 112.34,
+    "team_b_projected_score": 112.49,
+    "team_a_points_over_projected": 0.0300000000000011,
+    "team_b_points_over_projected": -27.39,
+    "league_average_score": 118.3766666666666,
+    "league_median_score": 118.18333333333324,
+    "team_a_weekly_rank": 6,
+    "team_b_weekly_rank": 8,
+    "league_size": 10,
+    "team_a_beat_league_median": false,
+    "team_b_beat_league_median": false
+  },
+  "summary": {
+    "decision_summary": "In Purdytory won by 27.3. In Purdytory left 21.2 lineup points on the table, while Reverse Ted Lasso left 5.2.",
+    "historical_summary": "In Purdytory is 4-2 against Reverse Ted Lasso across 6 all-time meeting(s).",
+    "net_ideal_swing": 16.0,
+    "ideal_summary": "Ideal lineups still favor In Purdytory",
+    "winner_reason": "In Purdytory won by controlling total WR output (edge of 13.9) while also finishing +0.0 against projection.",
+    "loser_reason": "Reverse Ted Lasso did leave 5.2 lineup points on the bench, but that still was not enough to explain a 27.3-point loss."
+  },
+  "teams": [
+    {
+      "team_name": "In Purdytory",
+      "manager_display": "Chris P.",
+      "actual_score": 112.3666666666666,
+      "ideal_score": 133.5666666666666,
+      "manager_grade_pct": 81.62697353342953,
+      "manager_grade_letter": "B-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 81.62697353342953,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 80.33170284181159,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 84.1277763913152,
+            "decision_grade_pct": 80.80348047029494,
+            "roster_missed_points": 21.200000000000003,
+            "free_agent_missed_points": 15.7,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": 4.490476190476215,
+            "season_average_score": 116.79952380952375,
+            "score_vs_season_average": -4.432857142857145,
+            "weekly_rank": 6,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 755.1333333333329,
+            "season_ideal_points": 896.1999999999995,
+            "season_lineup_efficiency_pct": 84.25946589302983,
+            "drop_regret_points_total": 84.2,
+            "trend": "improving"
+          }
+        },
+        "summary": "In Purdytory graded B- this week and B- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 81.62697353342953,
+      "process_score_letter": "B-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 81.62697353342953,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 80.33170284181159,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 84.1277763913152,
+            "decision_grade_pct": 80.80348047029494,
+            "roster_missed_points": 21.200000000000003,
+            "free_agent_missed_points": 15.7,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": 4.490476190476215,
+            "season_average_score": 116.79952380952375,
+            "score_vs_season_average": -4.432857142857145,
+            "weekly_rank": 6,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 755.1333333333329,
+            "season_ideal_points": 896.1999999999995,
+            "season_lineup_efficiency_pct": 84.25946589302983,
+            "drop_regret_points_total": 84.2,
+            "trend": "improving"
+          }
+        },
+        "summary": "In Purdytory graded B- this week and B- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 6,
+        "record": "4-3",
+        "points_for": 755.1333333333329,
+        "max_possible_wins": 12
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 21.200000000000003,
+          "roster_swap_upside_points": 21.2,
+          "waiver_upside_points": 15.7
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 84.2,
+          "former_player_followup_points": 84.2
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 36.16666666666661
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 31.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "De'Von Achane",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 12.8
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jason Myers",
+          "position": "K",
+          "roster_position": "K",
+          "points": 10.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seattle",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 9.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Breece Hall",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 7.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 2.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 2.5
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 34.53333333333324
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 15.166666666666607
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 14.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 11.7
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Golden",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 6.7
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 34.53333333333324
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 15.166666666666607
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 14.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 11.7
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Golden",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 6.7
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Wan'Dale Robinson",
+          "recommended_points": 14.5,
+          "benched_player": "Jaylen Waddle",
+          "benched_points": 2.5,
+          "point_swing": 12.0,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Wan'Dale Robinson over Jaylen Waddle for an estimated +12.0 points this week.",
+          "confidence": 0.8999999999999999,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jaylen Waddle",
+            "points": 2.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.3,
+            "capped_total": 0.8999999999999999
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        {
+          "position": "TE",
+          "recommended_player": "Zach Ertz",
+          "recommended_points": 11.7,
+          "benched_player": "Sam LaPorta",
+          "benched_points": 2.5,
+          "point_swing": 9.2,
+          "source": "ROSTER",
+          "reason": "At TE, swap in Zach Ertz over Sam LaPorta for an estimated +9.2 points this week.",
+          "confidence": 0.83,
+          "signal_label": "Good signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Sam LaPorta",
+            "points": 2.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.22999999999999998,
+            "capped_total": 0.83
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "TE",
+          "recommended_player": "Oronde Gadsden",
+          "recommended_points": 27.4,
+          "benched_player": "Zach Ertz",
+          "benched_points": 11.7,
+          "point_swing": 15.7,
+          "source": "FREE_AGENT",
+          "reason": "At TE, consider adding Oronde Gadsden instead of holding Zach Ertz for an estimated +15.7 points this week.",
+          "confidence": 0.8925,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Zach Ertz",
+            "points": 11.7,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.39249999999999996,
+            "capped_total": 0.8925
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 36.16666666666661
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 31.1
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "De'Von Achane",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 12.8
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jason Myers",
+          "position": "K",
+          "roster_position": "K",
+          "points": 10.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Seattle",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": 9.0
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Breece Hall",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 7.2
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 2.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 2.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "points": 1.1
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "In Purdytory",
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 34.53333333333324
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jordan Love",
+          "position": "QB",
+          "roster_position": "BN",
+          "points": 15.166666666666607
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 14.5
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Zach Ertz",
+          "position": "TE",
+          "roster_position": "BN",
+          "points": 11.7
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Matthew Golden",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 6.7
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 2.7
+        },
+        {
+          "team_name": "In Purdytory",
+          "name": "Jacksonville",
+          "position": "DEF",
+          "roster_position": "BN",
+          "points": -4.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "actual_team": "New York Giants",
+          "points": 34.53333333333324,
+          "season_avg": 25.7666666666666,
+          "type": "BOOM",
+          "z_score": 1.7544253155854839,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "actual_team": "Miami Dolphins",
+          "points": 2.5,
+          "season_avg": 13.044444444444444,
+          "type": "BUST",
+          "z_score": -1.5996055223445576,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Nick Chubb",
+          "position": "RB",
+          "actual_team": "Houston Texans",
+          "points": 1.1,
+          "season_avg": 9.083333333333334,
+          "type": "BUST",
+          "z_score": -1.3031575049322028,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 6,
+        "league_size": 10,
+        "league_average_score": 118.3766666666666,
+        "league_median_score": 118.18333333333324,
+        "beat_league_median": false,
+        "all_play_record": "4-5",
+        "projected_score": 112.34,
+        "points_over_projected": 0.0300000000000011
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 112.3666666666666,
+        "optimal_lineup_points": 133.5666666666666,
+        "bench_points": 81.29999999999984,
+        "points_left_on_bench": 21.200000000000003,
+        "lowest_scoring_starter": {
+          "team_name": "In Purdytory",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "points": 1.1
+        },
+        "lineup_landmine": {
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "points": 2.5,
+          "season_avg": 13.044444444444444,
+          "z_score": -1.5996055223445576,
+          "reason": "Started player materially underperformed season baseline."
+        },
+        "optimal_start_rate_pct": 77.77777777777779,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Wan'Dale Robinson",
+          "recommended_points": 14.5,
+          "benched_player": "Jaylen Waddle",
+          "benched_points": 2.5,
+          "point_swing": 12.0,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Wan'Dale Robinson over Jaylen Waddle for an estimated +12.0 points this week.",
+          "confidence": 0.8999999999999999,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jaylen Waddle",
+            "points": 2.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.3,
+            "capped_total": 0.8999999999999999
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "In Purdytory started 7 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 71.2548205280332,
+        "top_2_share_pct": 59.86354197567486,
+        "volatility_std": 11.938309650506856,
+        "structural_integrity_pct": 28.745179471966793,
+        "fragility_score": 59.86354197567486,
+        "label": "Boom/Bust Build"
+      }
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "manager_display": "Liana",
+      "actual_score": 88.09999999999992,
+      "ideal_score": 93.29999999999993,
+      "manager_grade_pct": 82.0,
+      "manager_grade_letter": "B-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 82.0,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 77.10641541230991,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 94.42658092175776,
+            "decision_grade_pct": 87.71405814416566,
+            "roster_missed_points": 5.200000000000003,
+            "free_agent_missed_points": 20.4,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": -22.919047619047618,
+            "season_average_score": 116.79952380952375,
+            "score_vs_season_average": -28.699523809523825,
+            "weekly_rank": 8,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 777.1333333333328,
+            "season_ideal_points": 870.2999999999994,
+            "season_lineup_efficiency_pct": 89.29487916044275,
+            "drop_regret_points_total": 79.5,
+            "trend": "declining"
+          }
+        },
+        "summary": "Reverse Ted Lasso graded B- this week and C+ for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "process_score_pct": 82.0,
+      "process_score_letter": "B-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 82.0,
+          "letter": "B-",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 77.10641541230991,
+          "letter": "C+",
+          "label": "reasonable but costly"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 85.0,
+            "lineup_efficiency_pct": 94.42658092175776,
+            "decision_grade_pct": 87.71405814416566,
+            "roster_missed_points": 5.200000000000003,
+            "free_agent_missed_points": 20.4,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "score_vs_historical_avg": -22.919047619047618,
+            "season_average_score": 116.79952380952375,
+            "score_vs_season_average": -28.699523809523825,
+            "weekly_rank": 8,
+            "league_size": 10,
+            "beat_league_median": false
+          },
+          "season": {
+            "baseline": 85.0,
+            "season_actual_points": 777.1333333333328,
+            "season_ideal_points": 870.2999999999994,
+            "season_lineup_efficiency_pct": 89.29487916044275,
+            "drop_regret_points_total": 79.5,
+            "trend": "declining"
+          }
+        },
+        "summary": "Reverse Ted Lasso graded B- this week and C+ for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 9,
+        "record": "2-5",
+        "points_for": 777.1333333333328,
+        "max_possible_wins": 10
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 5.200000000000003,
+          "roster_swap_upside_points": 2.9000000000000004,
+          "waiver_upside_points": 20.4
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 79.5,
+          "former_player_followup_points": 79.5
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Drake Maye",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 28.599999999999927
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 21.8
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 10.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "K",
+          "points": 8.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Mason Taylor",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 5.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 4.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 4.7
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 4.1
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 7.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dylan Sampson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.933333333333321
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 7.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dylan Sampson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.933333333333321
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Rashid Shaheed",
+          "recommended_points": 7.0,
+          "benched_player": "Brian Thomas Jr.",
+          "benched_points": 4.1,
+          "point_swing": 2.9000000000000004,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Rashid Shaheed over Brian Thomas Jr. for an estimated +2.9 points this week.",
+          "confidence": 0.6725,
+          "signal_label": "Thin signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Brian Thomas Jr.",
+            "points": 4.1,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.07250000000000001,
+            "capped_total": 0.6725
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Kyle Monangai",
+          "recommended_points": 22.4,
+          "benched_player": "Tank Bigsby",
+          "benched_points": 2.0,
+          "point_swing": 20.4,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Kyle Monangai instead of holding Tank Bigsby for an estimated +20.4 points this week.",
+          "confidence": 1.0,
+          "signal_label": "Strong signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Tank Bigsby",
+            "points": 2.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.5,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Drake Maye",
+          "position": "QB",
+          "roster_position": "QB",
+          "points": 28.599999999999927
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 21.8
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "points": 10.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "K",
+          "points": 8.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Mason Taylor",
+          "position": "TE",
+          "roster_position": "TE",
+          "points": 5.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "RB",
+          "points": 4.9
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 4.7
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "points": 4.1
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Los Angeles",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": -3.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 7.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Dylan Sampson",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.933333333333321
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.2
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 2.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "roster_position": "BN",
+          "points": 0.0
+        },
+        {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "BN",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Los Angeles",
+          "position": "DEF",
+          "actual_team": "Los Angeles Chargers",
+          "points": -3.0,
+          "season_avg": 5.142857142857143,
+          "type": "BUST",
+          "z_score": -1.9295261196989424,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "actual_team": "Jacksonville Jaguars",
+          "points": 4.1,
+          "season_avg": 10.833333333333334,
+          "type": "BUST",
+          "z_score": -1.4391319690349926,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 8,
+        "league_size": 10,
+        "league_average_score": 118.3766666666666,
+        "league_median_score": 118.18333333333324,
+        "beat_league_median": false,
+        "all_play_record": "2-7",
+        "projected_score": 112.49,
+        "points_over_projected": -27.39
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 88.09999999999992,
+        "optimal_lineup_points": 93.29999999999993,
+        "bench_points": 14.133333333333322,
+        "points_left_on_bench": 5.200000000000003,
+        "lowest_scoring_starter": {
+          "team_name": "Reverse Ted Lasso",
+          "name": "Los Angeles",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "points": -3.0
+        },
+        "lineup_landmine": {
+          "name": "Los Angeles",
+          "position": "DEF",
+          "points": -3.0,
+          "season_avg": 5.142857142857143,
+          "z_score": -1.9295261196989424,
+          "reason": "Started player materially underperformed season baseline."
+        },
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Rashid Shaheed",
+          "recommended_points": 7.0,
+          "benched_player": "Brian Thomas Jr.",
+          "benched_points": 4.1,
+          "point_swing": 2.9000000000000004,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Rashid Shaheed over Brian Thomas Jr. for an estimated +2.9 points this week.",
+          "confidence": 0.6725,
+          "signal_label": "Thin signal",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Brian Thomas Jr.",
+            "points": 4.1,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.07250000000000001,
+            "capped_total": 0.6725
+          },
+          "sample_context": {
+            "recommended_player_weeks": 17,
+            "comparison_player_weeks": 17
+          }
+        },
+        "summary": "Reverse Ted Lasso started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 72.03290246768506,
+        "top_2_share_pct": 59.224441833137455,
+        "volatility_std": 9.245192277444168,
+        "structural_integrity_pct": 27.967097532314938,
+        "fragility_score": 59.224441833137455,
+        "label": "Top-Heavy Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "In Purdytory",
+        "name": "Matthew Stafford",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 36.16666666666661
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Ja'Marr Chase",
+        "position": "WR",
+        "roster_position": "WR",
+        "points": 31.1
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Drake Maye",
+        "position": "QB",
+        "roster_position": "QB",
+        "points": 28.599999999999927
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Josh Jacobs",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 21.8
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "De'Von Achane",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 12.8
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Justin Jefferson",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "points": 10.9
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jason Myers",
+        "position": "K",
+        "roster_position": "K",
+        "points": 10.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Seattle",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": 9.0
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Jake Bates",
+        "position": "K",
+        "roster_position": "K",
+        "points": 8.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Breece Hall",
+        "position": "RB",
+        "roster_position": "RB",
+        "points": 7.2
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "In Purdytory",
+        "name": "Jaxson Dart",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 34.53333333333324
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Jordan Love",
+        "position": "QB",
+        "roster_position": "BN",
+        "points": 15.166666666666607
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Wan'Dale Robinson",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 14.5
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Zach Ertz",
+        "position": "TE",
+        "roster_position": "BN",
+        "points": 11.7
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Rashid Shaheed",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 7.0
+      },
+      {
+        "team_name": "In Purdytory",
+        "name": "Matthew Golden",
+        "position": "WR",
+        "roster_position": "BN",
+        "points": 6.7
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Dylan Sampson",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 2.933333333333321
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Bhayshul Tuten",
+        "position": "RB",
+        "roster_position": "BN",
+        "points": 2.2
+      }
+    ],
+    "top_additions_this_week": []
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "In Purdytory",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 24.26666666666668,
+      "margin_relative_value": -3.000000000000014,
+      "position": "",
+      "summary": "In Purdytory won the raw scoring battle by 24.3 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Reverse Ted Lasso",
+      "loser_team": "In Purdytory",
+      "value": 16.0,
+      "margin_relative_value": -11.266666666666694,
+      "position": "",
+      "summary": "Reverse Ted Lasso had the cleaner lineup week by 16.0 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "In Purdytory",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 36.900000000000006,
+      "margin_relative_value": 9.633333333333312,
+      "position": "",
+      "summary": "In Purdytory carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "MOSTLY",
+      "loser_team": "In Purdytory",
+      "value": 36.900000000000006,
+      "margin_relative_value": 9.633333333333312,
+      "position": "",
+      "summary": "Missed opportunities exceeded the 27.3-point margin, but not from one clear swap."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "In Purdytory",
+      "loser_team": "Reverse Ted Lasso",
+      "value": 13.899999999999999,
+      "margin_relative_value": -13.366666666666696,
+      "position": "WR",
+      "summary": "In Purdytory controlled total WR output by 13.9 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 27.266666666666694,
+    "margin": 27.266666666666694,
+    "takeaways": [
+      "The 27.3-point margin was larger than either team's main lineup leak, so the matchup was decided more by raw scoring than one obvious swap.",
+      "The clearest unit edge was total WR output: In Purdytory by 13.9 points.",
+      "Against projection, In Purdytory finished +0.0 while Reverse Ted Lasso finished -27.4.",
+      "The biggest started performance was Matthew Stafford for In Purdytory at 36.2 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "In Purdytory lineup leakage",
+        "team_name": "In Purdytory",
+        "value": 21.200000000000003,
+        "relative_to_margin": -6.066666666666691
+      },
+      {
+        "label": "Reverse Ted Lasso waiver upside",
+        "team_name": "Reverse Ted Lasso",
+        "value": 20.4,
+        "relative_to_margin": -6.866666666666696
+      },
+      {
+        "label": "In Purdytory waiver upside",
+        "team_name": "In Purdytory",
+        "value": 15.7,
+        "relative_to_margin": -11.566666666666695
+      },
+      {
+        "label": "Reverse Ted Lasso lineup leakage",
+        "team_name": "Reverse Ted Lasso",
+        "value": 5.200000000000003,
+        "relative_to_margin": -22.06666666666669
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null
+  },
+  "skill_luck": {
+    "primary_label": "Lucky Win",
+    "summary": "Winner got the result without posting one of the league's stronger weekly profiles.",
+    "league_average_score": 118.3766666666666,
+    "league_median_score": 118.18333333333324,
+    "teams": [
+      {
+        "team_name": "In Purdytory",
+        "weekly_rank": 6,
+        "all_play_record": "4-5",
+        "beat_league_median": false,
+        "projected_score": 112.34,
+        "points_over_projected": 0.0300000000000011,
+        "opponent_weekly_rank": 8
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "weekly_rank": 8,
+        "all_play_record": "2-7",
+        "beat_league_median": false,
+        "projected_score": 112.49,
+        "points_over_projected": -27.39,
+        "opponent_weekly_rank": 6
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Lucky Win",
+    "summary": "Winner got the result without posting one of the league's stronger weekly profiles.",
+    "league_average_score": 118.3766666666666,
+    "league_median_score": 118.18333333333324,
+    "teams": [
+      {
+        "team_name": "In Purdytory",
+        "weekly_rank": 6,
+        "all_play_record": "4-5",
+        "beat_league_median": false,
+        "projected_score": 112.34,
+        "points_over_projected": 0.0300000000000011,
+        "opponent_weekly_rank": 8
+      },
+      {
+        "team_name": "Reverse Ted Lasso",
+        "weekly_rank": 8,
+        "all_play_record": "2-7",
+        "beat_league_median": false,
+        "projected_score": 112.49,
+        "points_over_projected": -27.39,
+        "opponent_weekly_rank": 6
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "WR",
+        "team_a_points": 33.6,
+        "team_b_points": 19.700000000000003,
+        "edge_points": 13.899999999999999,
+        "edge_team": "In Purdytory",
+        "edge_direction": 13.899999999999999
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 9.0,
+        "team_b_points": -3.0,
+        "edge_points": 12.0,
+        "edge_team": "In Purdytory",
+        "edge_direction": 12.0
+      },
+      {
+        "position": "QB",
+        "team_a_points": 36.16666666666661,
+        "team_b_points": 28.599999999999927,
+        "edge_points": 7.566666666666681,
+        "edge_team": "In Purdytory",
+        "edge_direction": 7.566666666666681
+      },
+      {
+        "position": "RB",
+        "team_a_points": 21.1,
+        "team_b_points": 26.700000000000003,
+        "edge_points": 5.600000000000001,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -5.600000000000001
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.5,
+        "team_b_points": 5.1,
+        "edge_points": 2.5999999999999996,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -2.5999999999999996
+      },
+      {
+        "position": "K",
+        "team_a_points": 10.0,
+        "team_b_points": 8.0,
+        "edge_points": 2.0,
+        "edge_team": "In Purdytory",
+        "edge_direction": 2.0
+      }
+    ],
+    "largest_edge": {
+      "position": "WR",
+      "team_a_points": 33.6,
+      "team_b_points": 19.700000000000003,
+      "edge_points": 13.899999999999999,
+      "edge_team": "In Purdytory",
+      "edge_direction": 13.899999999999999
+    },
+    "top_wins": [
+      {
+        "position": "WR",
+        "team_a_points": 33.6,
+        "team_b_points": 19.700000000000003,
+        "edge_points": 13.899999999999999,
+        "edge_team": "In Purdytory",
+        "edge_direction": 13.899999999999999
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 9.0,
+        "team_b_points": -3.0,
+        "edge_points": 12.0,
+        "edge_team": "In Purdytory",
+        "edge_direction": 12.0
+      },
+      {
+        "position": "QB",
+        "team_a_points": 36.16666666666661,
+        "team_b_points": 28.599999999999927,
+        "edge_points": 7.566666666666681,
+        "edge_team": "In Purdytory",
+        "edge_direction": 7.566666666666681
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "RB",
+        "team_a_points": 21.1,
+        "team_b_points": 26.700000000000003,
+        "edge_points": 5.600000000000001,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -5.600000000000001
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.5,
+        "team_b_points": 5.1,
+        "edge_points": 2.5999999999999996,
+        "edge_team": "Reverse Ted Lasso",
+        "edge_direction": -2.5999999999999996
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "In Purdytory",
+      "actual_lineup_points": 112.3666666666666,
+      "optimal_lineup_points": 133.5666666666666,
+      "bench_points": 81.29999999999984,
+      "points_left_on_bench": 21.200000000000003,
+      "lowest_scoring_starter": {
+        "team_name": "In Purdytory",
+        "name": "Nick Chubb",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "points": 1.1
+      },
+      "lineup_landmine": {
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "points": 2.5,
+        "season_avg": 13.044444444444444,
+        "z_score": -1.5996055223445576,
+        "reason": "Started player materially underperformed season baseline."
+      },
+      "optimal_start_rate_pct": 77.77777777777779,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Wan'Dale Robinson",
+        "recommended_points": 14.5,
+        "benched_player": "Jaylen Waddle",
+        "benched_points": 2.5,
+        "point_swing": 12.0,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Wan'Dale Robinson over Jaylen Waddle for an estimated +12.0 points this week.",
+        "confidence": 0.8999999999999999,
+        "signal_label": "Strong signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Jaylen Waddle",
+          "points": 2.5,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.3,
+          "capped_total": 0.8999999999999999
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "In Purdytory started 7 of 9 slots optimally"
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "actual_lineup_points": 88.09999999999992,
+      "optimal_lineup_points": 93.29999999999993,
+      "bench_points": 14.133333333333322,
+      "points_left_on_bench": 5.200000000000003,
+      "lowest_scoring_starter": {
+        "team_name": "Reverse Ted Lasso",
+        "name": "Los Angeles",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "points": -3.0
+      },
+      "lineup_landmine": {
+        "name": "Los Angeles",
+        "position": "DEF",
+        "points": -3.0,
+        "season_avg": 5.142857142857143,
+        "z_score": -1.9295261196989424,
+        "reason": "Started player materially underperformed season baseline."
+      },
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Rashid Shaheed",
+        "recommended_points": 7.0,
+        "benched_player": "Brian Thomas Jr.",
+        "benched_points": 4.1,
+        "point_swing": 2.9000000000000004,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Rashid Shaheed over Brian Thomas Jr. for an estimated +2.9 points this week.",
+        "confidence": 0.6725,
+        "signal_label": "Thin signal",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Brian Thomas Jr.",
+          "points": 4.1,
+          "role": "STARTER"
+        },
+        "swing_tier": "LOW",
+        "leverage_label": "Close point edge",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Close point edge",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.07250000000000001,
+          "capped_total": 0.6725
+        },
+        "sample_context": {
+          "recommended_player_weeks": 17,
+          "comparison_player_weeks": 17
+        }
+      },
+      "summary": "Reverse Ted Lasso started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "In Purdytory",
+      "top_3_share_pct": 71.2548205280332,
+      "top_2_share_pct": 59.86354197567486,
+      "volatility_std": 11.938309650506856,
+      "structural_integrity_pct": 28.745179471966793,
+      "fragility_score": 59.86354197567486,
+      "label": "Boom/Bust Build"
+    },
+    {
+      "team_name": "Reverse Ted Lasso",
+      "top_3_share_pct": 72.03290246768506,
+      "top_2_share_pct": 59.224441833137455,
+      "volatility_std": 9.245192277444168,
+      "structural_integrity_pct": 27.967097532314938,
+      "fragility_score": 59.224441833137455,
+      "label": "Top-Heavy Build"
+    }
+  ],
+  "awards": [],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "In Purdytory",
+    "team_b_name": "Reverse Ted Lasso",
+    "record_for_team_a": "4-2",
+    "games": 6,
+    "playoff_games": 0,
+    "average_margin_for_team_a": 14.422777777777787,
+    "series_summary": "In Purdytory is 4-2 against Reverse Ted Lasso across 6 all-time meeting(s).",
+    "average_margin_text": "Average margin from In Purdytory's perspective: +14.4.",
+    "current_margin_rank_text": "5th closest",
+    "current_total_rank_text": "3rd highest combined score",
+    "streak_text": "In Purdytory carries the current 3-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2025 W7",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 27.266666666666694,
+        "combined_score": 197.46666666666653
+      },
+      {
+        "season_label": "2024 W8",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 18.430000000000007,
+        "combined_score": 219.43
+      },
+      {
+        "season_label": "2023 W14",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 40.8,
+        "combined_score": 189.54000000000002
+      },
+      {
+        "season_label": "2023 W5",
+        "context": "regular season",
+        "winner": "Reverse Ted Lasso",
+        "margin": 4.929999999999993,
+        "combined_score": 144.67000000000002
+      },
+      {
+        "season_label": "2022 W7",
+        "context": "regular season",
+        "winner": "In Purdytory",
+        "margin": 9.670000000000002,
+        "combined_score": 170.13
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "In Purdytory Dominates Reverse Ted Lasso: A Lesson in Fantasy Grading",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/925043/recap?week=7&mid1=4&mid2=5",
+    "grade_summary": "In Purdytory: A- | Reverse Ted Lasso: D"
+  }
+}

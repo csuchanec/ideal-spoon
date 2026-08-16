@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Fantasy Football Reports</title>
+    <style>
+        body { margin: 0; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #20242a; background: #f5f7fa; }
+        .index-page { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+        h1 { margin: 0 0 16px; font-size: 32px; }
+        h2 { margin: 0 0 12px; font-size: 20px; }
+        h3 { margin: 0 0 8px; font-size: 16px; }
+        .lede { color: #4b5563; max-width: 820px; line-height: 1.5; }
+        .muted { color: #64748b; }
+        a { color: #1b5dbf; font-weight: 700; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+        .index-card, section { background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 18px; margin-top: 16px; }
+        .index-links { display: flex; flex-wrap: wrap; gap: 12px; }
+        .metric-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0; }
+        .metric-strip div { background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 12px; }
+        .metric-strip span { display: block; color: #697386; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+        .metric-strip strong { display: block; margin-top: 4px; font-size: 18px; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { padding: 10px 12px; border-bottom: 1px solid #e5eaf0; text-align: left; vertical-align: top; }
+        th { color: #334155; font-size: 12px; text-transform: uppercase; background: #f8fafc; }
+        .num { text-align: right; white-space: nowrap; }
+        ul { padding-left: 20px; }
+        li { margin: 8px 0; }
+    </style>
+</head>
+<body>
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">2025 Season Index</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../index.html">Report Index</a></li><li><a href="../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><span class="report-nav-current">Season Index</span></li><li><a href="season.html">Season Report</a></li><li><a href="teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (11)</summary><ul class="report-nav__links"><li><a href="teams/index.html">All Teams</a></li><li><a href="teams/big-fire-knowles-energy.html">Big Fire Knowles Energy</a></li><li><a href="teams/in-purdytory.html">In Purdytory</a></li><li><a href="teams/joes-cocksmithing-station.html">Joe’s Cocksmithing Station</a></li><li><a href="teams/millan-darling-millan.html">Millan Darling Millan</a></li><li><a href="teams/moonbeam-ice-cream.html">Moonbeam Ice Cream</a></li><li><a href="teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="teams/reverse-ted-lasso.html">Reverse Ted Lasso</a></li><li><a href="teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="teams/you-arent-worthy-of-coleman.html">You aren’t Worthy of Coleman</a></li></ul></details><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Weeks (17)</summary><ul class="report-nav__links"><li><a href="week_01.html">W1</a></li><li><a href="week_02.html">W2</a></li><li><a href="week_03.html">W3</a></li><li><a href="week_04.html">W4</a></li><li><a href="week_05.html">W5</a></li><li><a href="week_06.html">W6</a></li><li><a href="week_07.html">W7</a></li><li><a href="week_08.html">W8</a></li><li><a href="week_09.html">W9</a></li><li><a href="week_10.html">W10</a></li><li><a href="week_11.html">W11</a></li><li><a href="week_12.html">W12</a></li><li><a href="week_13.html">W13</a></li><li><a href="week_14.html">W14</a></li><li><a href="week_15.html">W15</a></li><li><a href="week_16.html">W16</a></li><li><a href="week_17.html">W17</a></li></ul></details></div></div></nav>
+<!-- report-nav:end -->
+
+            <main class="index-page">
+                <p><a href="../index.html">Report Index</a></p>
+                <h1>2025 Fantasy Football Reports</h1>
+                <p class="lede">A reading hub for the season archive. Use the start-here cards first, then jump into full weekly, matchup, and team directories.</p>
+                <section><h2>Start Here</h2><div class="index-grid">
+        <article class="index-card">
+            <h3><a href="season.html">Season Story</a></h3>
+            <p>Champion, scoring race, team profiles, and season-long player intelligence.</p>
+        </article>
+    
+        <article class="index-card">
+            <h3><a href="teams/index.html">Team Deep Dives</a></h3>
+            <p>Each team&#x27;s trend, schedule pressure, defining games, and roster move follow-up.</p>
+        </article>
+    
+        <article class="index-card">
+            <h3><a href="week_17.html">Latest Weekly Report</a></h3>
+            <p>Week outcome, process grades, retrospective lineup review, and player signals.</p>
+        </article>
+    
+        <article class="index-card">
+            <h3><a href="matchups_week_17/index.html">Latest Matchups</a></h3>
+            <p>Head-to-head pages with strength/context, decisions, and difference makers.</p>
+        </article>
+    </div></section>
+                <p><a href="season.html">Season Report</a></p>
+                <p><a href="teams/index.html">Team Index</a></p>
+                <section><h2>Weekly Reports</h2><ul><li><a href="week_01.html">Week 1</a></li><li><a href="week_02.html">Week 2</a></li><li><a href="week_03.html">Week 3</a></li><li><a href="week_04.html">Week 4</a></li><li><a href="week_05.html">Week 5</a></li><li><a href="week_06.html">Week 6</a></li><li><a href="week_07.html">Week 7</a></li><li><a href="week_08.html">Week 8</a></li><li><a href="week_09.html">Week 9</a></li><li><a href="week_10.html">Week 10</a></li><li><a href="week_11.html">Week 11</a></li><li><a href="week_12.html">Week 12</a></li><li><a href="week_13.html">Week 13</a></li><li><a href="week_14.html">Week 14</a></li><li><a href="week_15.html">Week 15</a></li><li><a href="week_16.html">Week 16</a></li><li><a href="week_17.html">Week 17</a></li></ul></section>
+                <section><h2>Matchup Reports</h2><ul><li><a href="matchups_week_01/index.html">Week 1 Matchups</a></li><li><a href="matchups_week_02/index.html">Week 2 Matchups</a></li><li><a href="matchups_week_03/index.html">Week 3 Matchups</a></li><li><a href="matchups_week_04/index.html">Week 4 Matchups</a></li><li><a href="matchups_week_05/index.html">Week 5 Matchups</a></li><li><a href="matchups_week_06/index.html">Week 6 Matchups</a></li><li><a href="matchups_week_07/index.html">Week 7 Matchups</a></li><li><a href="matchups_week_08/index.html">Week 8 Matchups</a></li><li><a href="matchups_week_09/index.html">Week 9 Matchups</a></li><li><a href="matchups_week_10/index.html">Week 10 Matchups</a></li><li><a href="matchups_week_11/index.html">Week 11 Matchups</a></li><li><a href="matchups_week_12/index.html">Week 12 Matchups</a></li><li><a href="matchups_week_13/index.html">Week 13 Matchups</a></li><li><a href="matchups_week_14/index.html">Week 14 Matchups</a></li><li><a href="matchups_week_15/index.html">Week 15 Matchups</a></li><li><a href="matchups_week_16/index.html">Week 16 Matchups</a></li><li><a href="matchups_week_17/index.html">Week 17 Matchups</a></li></ul></section>
+                <section><h2>Team Reports</h2><ul><li><a href="teams/big-fire-knowles-energy.html">Big Fire Knowles Energy</a></li><li><a href="teams/in-purdytory.html">In Purdytory</a></li><li><a href="teams/joes-cocksmithing-station.html">Joe’s Cocksmithing Station</a></li><li><a href="teams/millan-darling-millan.html">Millan Darling Millan</a></li><li><a href="teams/moonbeam-ice-cream.html">Moonbeam Ice Cream</a></li><li><a href="teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="teams/reverse-ted-lasso.html">Reverse Ted Lasso</a></li><li><a href="teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="teams/you-arent-worthy-of-coleman.html">You aren’t Worthy of Coleman</a></li></ul></section>
+            </main>
+        
+</body>
+</html>

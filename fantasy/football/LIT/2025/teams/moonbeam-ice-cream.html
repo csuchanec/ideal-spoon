@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonbeam Ice Cream 2025 Team Report</title>
+    <style>
+        body { margin: 0; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #20242a; background: #f5f7fa; }
+        .index-page { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+        h1 { margin: 0 0 16px; font-size: 32px; }
+        h2 { margin: 0 0 12px; font-size: 20px; }
+        .lede { color: #4b5563; max-width: 820px; line-height: 1.5; }
+        a { color: #1b5dbf; font-weight: 700; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        section { background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 18px; margin-top: 16px; }
+        h3 { margin: 4px 0 10px; font-size: 15px; color: #334155; }
+        .metric-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0; }
+        .metric-strip div { background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 12px; }
+        .metric-strip span { display: block; color: #697386; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+        .metric-strip strong { display: block; margin-top: 4px; font-size: 18px; }
+        .chart-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; background: #f8fafc; }
+        .chart-note { color: #64748b; font-size: 12px; line-height: 1.45; }
+        .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+        .section-grid.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+        .mini-grid { display: grid; gap: 8px; }
+        .snapshot-grid { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+        .mini-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; background: #fff; }
+        .mini-card__label { color: #64748b; font-size: 12px; font-weight: 700; }
+        .mini-card strong { display: block; margin-top: 4px; font-size: 20px; color: #111827; }
+        .mini-card p { margin: 4px 0 0; color: #475569; font-size: 12px; line-height: 1.35; }
+        .legend { display: flex; flex-wrap: wrap; gap: 12px; color: #475569; font-size: 12px; font-weight: 700; }
+        .legend span { display: inline-flex; gap: 6px; align-items: center; }
+        .legend i { display: inline-block; width: 18px; height: 3px; border-radius: 999px; }
+        .legend .blue { background: #1d4ed8; }
+        .legend .red { background: #dc2626; }
+        .legend .gray { background: #94a3b8; }
+        .muted { color: #64748b; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { padding: 10px 12px; border-bottom: 1px solid #e5eaf0; text-align: left; vertical-align: top; }
+        th { color: #334155; font-size: 12px; text-transform: uppercase; background: #f8fafc; }
+        .num { text-align: right; white-space: nowrap; }
+    </style>
+</head>
+<body>
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Moonbeam Ice Cream Team Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season.html">Season Report</a></li><li><a href="index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (11)</summary><ul class="report-nav__links"><li><a href="index.html">All Teams</a></li><li><a href="big-fire-knowles-energy.html">Big Fire Knowles Energy</a></li><li><a href="in-purdytory.html">In Purdytory</a></li><li><a href="joes-cocksmithing-station.html">Joe’s Cocksmithing Station</a></li><li><a href="millan-darling-millan.html">Millan Darling Millan</a></li><li><span class="report-nav-current">Moonbeam Ice Cream</span></li><li><a href="nacua-cola.html">Nacua-Cola</a></li><li><a href="pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="reverse-ted-lasso.html">Reverse Ted Lasso</a></li><li><a href="two-buck-luck.html">Two Buck Luck</a></li><li><a href="you-arent-worthy-of-coleman.html">You aren’t Worthy of Coleman</a></li></ul></details><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Weeks (17)</summary><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li><li><a href="../week_04.html">W4</a></li><li><a href="../week_05.html">W5</a></li><li><a href="../week_06.html">W6</a></li><li><a href="../week_07.html">W7</a></li><li><a href="../week_08.html">W8</a></li><li><a href="../week_09.html">W9</a></li><li><a href="../week_10.html">W10</a></li><li><a href="../week_11.html">W11</a></li><li><a href="../week_12.html">W12</a></li><li><a href="../week_13.html">W13</a></li><li><a href="../week_14.html">W14</a></li><li><a href="../week_15.html">W15</a></li><li><a href="../week_16.html">W16</a></li><li><a href="../week_17.html">W17</a></li></ul></details></div></div></nav>
+<!-- report-nav:end -->
+
+            <main class="index-page">
+                <p><a href="index.html">Team Index</a></p>
+                <h1>Moonbeam Ice Cream</h1>
+                <p class="lede">2025 team season deep dive: weekly outcomes, matchup links, process grades, form, and roster move follow-up.</p>
+                <div class="metric-strip">
+                    <div><span>Record</span><strong>9-8</strong></div>
+                    <div><span>Total Points</span><strong>1887.7</strong></div>
+                    <div><span>Avg Score</span><strong>111.0</strong></div>
+                    <div><span>Avg Process Score</span><strong>77%</strong></div>
+                    <div><span>Missed Lineup Points</span><strong>499.3</strong></div>
+                    <div><span>Move Value</span><strong>-3.5</strong></div>
+                    <div><span>Best Week</span><strong>W7: 163.7</strong></div>
+                    <div><span>Low Week</span><strong>W1: 60.9</strong></div>
+                </div>
+                <section><h2>Season Snapshot</h2>
+                    <p class="lede">A quick read on the team's scoring identity, close-game story, unused lineup points, and roster-move follow-up before the detailed week trail.</p>
+                    <div class='mini-grid snapshot-grid'><article class='mini-card'><div class='mini-card__label'>Scoring Identity</div><strong>111.0</strong><p>Avg score with 22.9 pts week-to-week volatility.</p></article><article class='mini-card'><div class='mini-card__label'>Weekly Margin</div><strong>-7.2</strong><p>Average scoreboard margin across the season.</p></article><article class='mini-card'><div class='mini-card__label'>Close Games</div><strong>0-1</strong><p>1 games decided by 8 points or fewer.</p></article><article class='mini-card'><div class='mini-card__label'>Unused Lineup Points</div><strong>499.3</strong><p>Total points left outside the selected lineup.</p></article><article class='mini-card'><div class='mini-card__label'>Move Value</div><strong>-3.5</strong><p>Season total from non-obvious start/add hits and misses.</p></article><article class='mini-card'><div class='mini-card__label'>Moved-Away Follow-Up</div><strong>275.9</strong><p>Top deduped moved-away-player follow-up points.</p></article></div>
+                </section>
+                <section><h2>Scoring Trend</h2>
+                    <p class="lede">Actual score is the main line, with opponent score and ideal score shown for context. The dashed baseline is this team's season scoring average.</p>
+                    <div class="chart-card">
+        <svg viewBox="0 0 760 260" width="100%" role="img" aria-label="Team scoring trend over time">
+            <line x1="42.0" y1="218.0" x2="742.0" y2="218.0" stroke="#cbd5e1" />
+            <line x1="42.0" y1="18.0" x2="42.0" y2="218.0" stroke="#cbd5e1" />
+            <line x1="42.0" y1="146.7" x2="742.0" y2="146.7" stroke="#64748b" stroke-dasharray="4 4" />
+            <text x="742.0" y="140.7" font-size="10" text-anchor="end" fill="#64748b">team avg 111.0</text>
+            <polyline points="42.0,139.1 85.8,61.1 129.5,63.7 173.2,113.3 217.0,140.1 260.8,60.6 304.5,29.8 348.2,135.4 392.0,171.3 435.8,120.4 479.5,129.8 523.2,130.3 567.0,87.2 610.8,126.2 654.5,93.6 698.2,133.6 742.0,167.5" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5" />
+            <polyline points="42.0,126.8 85.8,141.8 129.5,181.2 173.2,157.0 217.0,136.2 260.8,135.4 304.5,157.4 348.2,115.6 392.0,135.1 435.8,158.6 479.5,113.8 523.2,72.2 567.0,185.2 610.8,102.9 654.5,142.1 698.2,100.9 742.0,186.1" fill="none" stroke="#dc2626" stroke-width="2.5" opacity="0.75" />
+            <polyline points="42.0,206.2 85.8,125.9 129.5,132.1 173.2,130.7 217.0,140.1 260.8,122.4 304.5,84.3 348.2,151.7 392.0,171.3 435.8,148.8 479.5,166.3 523.2,159.8 567.0,126.1 610.8,178.2 654.5,129.7 698.2,149.3 742.0,171.6" fill="none" stroke="#1d4ed8" stroke-width="3" />
+            <text x='42.0' y='246.0' font-size='10' text-anchor='middle' fill='#64748b'>W1</text><text x='173.2' y='246.0' font-size='10' text-anchor='middle' fill='#64748b'>W4</text><text x='348.2' y='246.0' font-size='10' text-anchor='middle' fill='#64748b'>W8</text><text x='523.2' y='246.0' font-size='10' text-anchor='middle' fill='#64748b'>W12</text><text x='698.2' y='246.0' font-size='10' text-anchor='middle' fill='#64748b'>W16</text><text x='742.0' y='246.0' font-size='10' text-anchor='middle' fill='#64748b'>W17</text>
+        </svg>
+        <div class="legend"><span><i class="blue"></i>Team score</span><span><i class="red"></i>Opponent score</span><span><i class="gray"></i>Ideal score</span></div>
+    </div>
+                </section>
+                <section><h2>Lineup And Process Drag</h2>
+                    <p class="lede">This view shows where lineup value was left unused, while keeping the weekly process score visible so high-scoring weeks and clean-process weeks do not get confused.</p>
+                    <div class="chart-card">
+        <svg viewBox="0 0 760 446" width="100%" role="img" aria-label="Lineup and process trend by week">
+            <text x="116.0" y="12" font-size="11" fill="#64748b">missed lineup points as bars; blue dot is process score</text>
+            <line x1="116.0" y1="18" x2="682.0" y2="18" stroke="#cbd5e1" />
+            <text x='8' y='38.0' font-size='11' fill='#475569'>W1</text><rect x='116.0' y='26.0' width='554.6' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='409.2' cy='33.0' r='4' fill='#1d4ed8' /><text x='690.0' y='37.0' font-size='10' fill='#334155'>56.6 missed | 52% | move +0.0</text><text x='8' y='62.0' font-size='11' fill='#475569'>W2</text><rect x='116.0' y='50.0' width='535.6' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='502.9' cy='57.0' r='4' fill='#1d4ed8' /><text x='690.0' y='61.0' font-size='10' fill='#334155'>54.7 missed | 68% | move +0.0</text><text x='8' y='86.0' font-size='11' fill='#475569'>W3</text><rect x='116.0' y='74.0' width='566.0' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='491.2' cy='81.0' r='4' fill='#1d4ed8' /><text x='690.0' y='85.0' font-size='10' fill='#334155'>57.8 missed | 66% | move +0.0</text><text x='8' y='110.0' font-size='11' fill='#475569'>W4</text><rect x='116.0' y='98.0' width='143.9' height='14' rx='4' fill='#f59e0b' opacity='0.84'/><circle cx='604.9' cy='105.0' r='4' fill='#1d4ed8' /><text x='690.0' y='109.0' font-size='10' fill='#334155'>14.7 missed | 86% | move +0.0</text><text x='8' y='134.0' font-size='11' fill='#475569'>W5</text><rect x='116.0' y='122.0' width='1.5' height='14' rx='4' fill='#16a34a' opacity='0.84'/><circle cx='602.8' cy='129.0' r='4' fill='#1d4ed8' /><text x='690.0' y='133.0' font-size='10' fill='#334155'>0.0 missed | 86% | move +0.0</text><text x='8' y='158.0' font-size='11' fill='#475569'>W6</text><rect x='116.0' y='146.0' width='511.2' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='514.9' cy='153.0' r='4' fill='#1d4ed8' /><text x='690.0' y='157.0' font-size='10' fill='#334155'>52.2 missed | 70% | move +0.0</text><text x='8' y='182.0' font-size='11' fill='#475569'>W7</text><rect x='116.0' y='170.0' width='450.4' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='606.0' cy='177.0' r='4' fill='#1d4ed8' /><text x='690.0' y='181.0' font-size='10' fill='#334155'>46.0 missed | 87% | move +2.5</text><text x='8' y='206.0' font-size='11' fill='#475569'>W8</text><rect x='116.0' y='194.0' width='134.2' height='14' rx='4' fill='#f59e0b' opacity='0.84'/><circle cx='602.0' cy='201.0' r='4' fill='#1d4ed8' /><text x='690.0' y='205.0' font-size='10' fill='#334155'>13.7 missed | 86% | move -1.5</text><text x='8' y='230.0' font-size='11' fill='#475569'>W9</text><rect x='116.0' y='218.0' width='1.5' height='14' rx='4' fill='#16a34a' opacity='0.84'/><circle cx='580.1' cy='225.0' r='4' fill='#1d4ed8' /><text x='690.0' y='229.0' font-size='10' fill='#334155'>0.0 missed | 82% | move -1.5</text><text x='8' y='254.0' font-size='11' fill='#475569'>W10</text><rect x='116.0' y='242.0' width='234.0' height='14' rx='4' fill='#f59e0b' opacity='0.84'/><circle cx='563.5' cy='249.0' r='4' fill='#1d4ed8' /><text x='690.0' y='253.0' font-size='10' fill='#334155'>23.9 missed | 79% | move -3.0</text><text x='8' y='278.0' font-size='11' fill='#475569'>W11</text><rect x='116.0' y='266.0' width='301.6' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='517.1' cy='273.0' r='4' fill='#1d4ed8' /><text x='690.0' y='277.0' font-size='10' fill='#334155'>30.8 missed | 71% | move +0.0</text><text x='8' y='302.0' font-size='11' fill='#475569'>W12</text><rect x='116.0' y='290.0' width='243.8' height='14' rx='4' fill='#f59e0b' opacity='0.84'/><circle cx='569.2' cy='297.0' r='4' fill='#1d4ed8' /><text x='690.0' y='301.0' font-size='10' fill='#334155'>24.9 missed | 80% | move +0.0</text><text x='8' y='326.0' font-size='11' fill='#475569'>W13</text><rect x='116.0' y='314.0' width='321.2' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='578.2' cy='321.0' r='4' fill='#1d4ed8' /><text x='690.0' y='325.0' font-size='10' fill='#334155'>32.8 missed | 82% | move +0.0</text><text x='8' y='350.0' font-size='11' fill='#475569'>W14</text><rect x='116.0' y='338.0' width='430.2' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='474.9' cy='345.0' r='4' fill='#1d4ed8' /><text x='690.0' y='349.0' font-size='10' fill='#334155'>43.9 missed | 63% | move +0.0</text><text x='8' y='374.0' font-size='11' fill='#475569'>W15</text><rect x='116.0' y='362.0' width='298.7' height='14' rx='4' fill='#dc2626' opacity='0.84'/><circle cx='555.5' cy='369.0' r='4' fill='#1d4ed8' /><text x='690.0' y='373.0' font-size='10' fill='#334155'>30.5 missed | 78% | move +0.0</text><text x='8' y='398.0' font-size='11' fill='#475569'>W16</text><rect x='116.0' y='386.0' width='130.6' height='14' rx='4' fill='#f59e0b' opacity='0.84'/><circle cx='602.8' cy='393.0' r='4' fill='#1d4ed8' /><text x='690.0' y='397.0' font-size='10' fill='#334155'>13.3 missed | 86% | move +0.0</text><text x='8' y='422.0' font-size='11' fill='#475569'>W17</text><rect x='116.0' y='410.0' width='33.3' height='14' rx='4' fill='#16a34a' opacity='0.84'/><circle cx='580.1' cy='417.0' r='4' fill='#1d4ed8' /><text x='690.0' y='421.0' font-size='10' fill='#334155'>3.4 missed | 82% | move +0.0</text>
+        </svg>
+        <p class="chart-note">Longer bars mark weeks where more lineup value was left unused. The blue dot keeps that in context with the process score for the same week.</p>
+    </div>
+                </section>
+                <section><h2>Season Defining Games</h2>
+                    <div class="section-grid">
+                        <div><h3>Best Games</h3><div class='mini-grid'><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_07/matchup_04_moonbeam-ice-cream_vs_millan-darling-millan.html">Week 7</a> vs Millan Darling Millan</div><strong>163.7</strong><p>Team score | W 163.7-102.0</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_06/matchup_04_moonbeam-ice-cream_vs_reverse-ted-lasso.html">Week 6</a> vs Reverse Ted Lasso</div><strong>131.6</strong><p>Team score | W 131.6-120.6</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_02/matchup_05_moonbeam-ice-cream_vs_two-buck-luck.html">Week 2</a> vs Two Buck Luck</div><strong>128.6</strong><p>Team score | W 128.6-115.2</p></article></div></div>
+                        <div><h3>Worst Games</h3><div class='mini-grid'><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_01/matchup_02_you-aren-t-worthy-of-coleman_vs_moonbeam-ice-cream.html">Week 1</a> vs You aren’t Worthy of Coleman</div><strong>60.9</strong><p>Team score | L 60.9-127.8</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_14/matchup_04_nacua-cola_vs_moonbeam-ice-cream.html">Week 14</a> vs Nacua-Cola</div><strong>84.5</strong><p>Team score | L 84.5-148.1</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 17</a> vs You aren’t Worthy of Coleman</div><strong>90.1</strong><p>Team score | W 90.1-77.8</p></article></div></div>
+                        <div><h3>Biggest Lineup Misses</h3><div class='mini-grid'><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_03/matchup_05_moonbeam-ice-cream_vs_joe-s-cocksmithing-station.html">Week 3</a> vs Joe’s Cocksmithing Station</div><strong>57.8</strong><p>Missed lineup points | W 123.4-81.9</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_01/matchup_02_you-aren-t-worthy-of-coleman_vs_moonbeam-ice-cream.html">Week 1</a> vs You aren’t Worthy of Coleman</div><strong>56.6</strong><p>Missed lineup points | L 60.9-127.8</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_02/matchup_05_moonbeam-ice-cream_vs_two-buck-luck.html">Week 2</a> vs Two Buck Luck</div><strong>54.7</strong><p>Missed lineup points | W 128.6-115.2</p></article></div></div>
+                    </div>
+                </section>
+                <section><h2>Schedule Pressure</h2>
+                    <p class="lede">Schedule pressure means opponent score versus that opponent's own season average. It does not judge lineup skill; it shows when the opposing side ran unusually hot or cold.</p>
+                    <div class="chart-card">
+        <svg viewBox="0 0 760 408" width="100%" role="img" aria-label="Opponent schedule pressure by week">
+            <line x1="378.0" y1="14" x2="378.0" y2="400.0" stroke="#64748b" stroke-width="1.2" />
+            <text x="378.0" y="10" font-size="11" text-anchor="middle" fill="#64748b">opponent norm</text>
+            <text x='8' y='36.0' font-size='11' fill='#475569'>W1</text><rect x='378.0' y='24.0' width='108.3' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='492.3' y='35.0' font-size='10' text-anchor='start' fill='#334155'>+17.6</text><text x='8' y='58.0' font-size='11' fill='#475569'>W2</text><rect x='282.6' y='46.0' width='95.4' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='276.6' y='57.0' font-size='10' text-anchor='end' fill='#334155'>-15.5</text><text x='8' y='80.0' font-size='11' fill='#475569'>W3</text><rect x='106.5' y='68.0' width='271.5' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='100.5' y='79.0' font-size='10' text-anchor='end' fill='#334155'>-44.2</text><text x='8' y='102.0' font-size='11' fill='#475569'>W4</text><rect x='284.9' y='90.0' width='93.1' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='278.9' y='101.0' font-size='10' text-anchor='end' fill='#334155'>-15.2</text><text x='8' y='124.0' font-size='11' fill='#475569'>W5</text><rect x='364.3' y='112.0' width='13.7' height='14' rx='4' fill='#94a3b8' opacity='0.88'/><text x='358.3' y='123.0' font-size='10' text-anchor='end' fill='#334155'>-2.2</text><text x='8' y='146.0' font-size='11' fill='#475569'>W6</text><rect x='378.0' y='134.0' width='98.9' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='482.9' y='145.0' font-size='10' text-anchor='start' fill='#334155'>+16.1</text><text x='8' y='168.0' font-size='11' fill='#475569'>W7</text><rect x='287.2' y='156.0' width='90.8' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='281.2' y='167.0' font-size='10' text-anchor='end' fill='#334155'>-14.8</text><text x='8' y='190.0' font-size='11' fill='#475569'>W8</text><rect x='378.0' y='178.0' width='160.4' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='544.4' y='189.0' font-size='10' text-anchor='start' fill='#334155'>+26.1</text><text x='8' y='212.0' font-size='11' fill='#475569'>W9</text><rect x='378.0' y='200.0' width='28.1' height='14' rx='4' fill='#94a3b8' opacity='0.88'/><text x='412.1' y='211.0' font-size='10' text-anchor='start' fill='#334155'>+4.6</text><text x='8' y='234.0' font-size='11' fill='#475569'>W10</text><rect x='321.4' y='222.0' width='56.6' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='315.4' y='233.0' font-size='10' text-anchor='end' fill='#334155'>-9.2</text><text x='8' y='256.0' font-size='11' fill='#475569'>W11</text><rect x='378.0' y='244.0' width='50.0' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='434.0' y='255.0' font-size='10' text-anchor='start' fill='#334155'>+8.1</text><text x='8' y='278.0' font-size='11' fill='#475569'>W12</text><rect x='378.0' y='266.0' width='294.0' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='678.0' y='277.0' font-size='10' text-anchor='start' fill='#334155'>+47.8</text><text x='8' y='300.0' font-size='11' fill='#475569'>W13</text><rect x='138.7' y='288.0' width='239.3' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='132.7' y='299.0' font-size='10' text-anchor='end' fill='#334155'>-39.0</text><text x='8' y='322.0' font-size='11' fill='#475569'>W14</text><rect x='378.0' y='310.0' width='159.3' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='543.3' y='321.0' font-size='10' text-anchor='start' fill='#334155'>+25.9</text><text x='8' y='344.0' font-size='11' fill='#475569'>W15</text><rect x='378.0' y='332.0' width='64.3' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='448.3' y='343.0' font-size='10' text-anchor='start' fill='#334155'>+10.5</text><text x='8' y='366.0' font-size='11' fill='#475569'>W16</text><rect x='378.0' y='354.0' width='145.3' height='14' rx='4' fill='#dc2626' opacity='0.88'/><text x='529.3' y='365.0' font-size='10' text-anchor='start' fill='#334155'>+23.6</text><text x='8' y='388.0' font-size='11' fill='#475569'>W17</text><rect x='179.1' y='376.0' width='198.9' height='14' rx='4' fill='#16a34a' opacity='0.88'/><text x='173.1' y='387.0' font-size='10' text-anchor='end' fill='#334155'>-32.4</text>
+        </svg>
+        <p class="chart-note">Red means the opponent beat their own season average by at least 8 points; green means they fell at least 8 points below it.</p>
+    </div>
+                    <div class="section-grid two">
+                        <div><h3>Tough Schedule Breaks</h3><div class='mini-grid'><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_12/matchup_05_joe-s-cocksmithing-station_vs_moonbeam-ice-cream.html">Week 12</a> vs Joe’s Cocksmithing Station</div><strong>+47.8</strong><p>Opponent scored 173.9 vs their 126.1 norm.</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_08/matchup_04_in-purdytory_vs_moonbeam-ice-cream.html">Week 8</a> vs In Purdytory</div><strong>+26.1</strong><p>Opponent scored 137.3 vs their 111.2 norm.</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_14/matchup_04_nacua-cola_vs_moonbeam-ice-cream.html">Week 14</a> vs Nacua-Cola</div><strong>+25.9</strong><p>Opponent scored 148.1 vs their 122.1 norm.</p></article></div></div>
+                        <div><h3>Soft Schedule Breaks</h3><div class='mini-grid'><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_03/matchup_05_moonbeam-ice-cream_vs_joe-s-cocksmithing-station.html">Week 3</a> vs Joe’s Cocksmithing Station</div><strong>-44.2</strong><p>Opponent scored 81.9 vs their 126.1 norm.</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_13/matchup_03_moonbeam-ice-cream_vs_pat-pidgeon.html">Week 13</a> vs Pat Pidgeon</div><strong>-39.0</strong><p>Opponent scored 78.6 vs their 117.6 norm.</p></article><article class='mini-card'><div class='mini-card__label'><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 17</a> vs You aren’t Worthy of Coleman</div><strong>-32.4</strong><p>Opponent scored 77.8 vs their 110.2 norm.</p></article></div></div>
+                    </div>
+                </section>
+                <section><h2>Roster Move Story</h2>
+                    <div class="section-grid two">
+                        <div><h3>Top Pickups And Starts</h3>
+        <p class="chart-note">These are additions or starts that beat the player&#x27;s prior scoring pace.</p>
+        <div class="table-wrap"><table><thead><tr>
+            <th>Week</th><th>Player</th><th>Pos</th><th>Use</th><th class="num">Pts</th>
+            <th class="num">Prior Avg</th><th class="num">Surprise</th><th>Signal</th>
+        </tr></thead><tbody><tr><td><a href="../matchups_week_07/matchup_04_moonbeam-ice-cream_vs_millan-darling-millan.html">Week 7</a></td><td>Philadelphia</td><td>DEF</td><td>started</td><td class='num'>12.0</td><td class='num'>6.3</td><td class='num'>+5.7</td><td>Non-obvious start hit</td></tr><tr><td><a href="../matchups_week_16/matchup_03_joe-s-cocksmithing-station_vs_moonbeam-ice-cream.html">Week 16</a></td><td>Aaron Rodgers</td><td>QB</td><td>started</td><td class='num'>15.8</td><td class='num'>14.3</td><td class='num'>+1.4</td><td>Neutral add/start</td></tr><tr><td><a href="../matchups_week_09/matchup_01_big-fire-knowles-energy_vs_moonbeam-ice-cream.html">Week 9</a></td><td>Chicago</td><td>DEF</td><td>started</td><td class='num'>5.0</td><td class='num'>6.4</td><td class='num'>-1.4</td><td>Neutral add/start</td></tr><tr><td><a href="../matchups_week_08/matchup_04_in-purdytory_vs_moonbeam-ice-cream.html">Week 8</a></td><td>Dalton Schultz</td><td>TE</td><td>started</td><td class='num'>3.4</td><td class='num'>6.3</td><td class='num'>-2.9</td><td>Speculative start miss</td></tr><tr><td><a href="../matchups_week_09/matchup_01_big-fire-knowles-energy_vs_moonbeam-ice-cream.html">Week 9</a></td><td>Joshua Karty</td><td>K</td><td>started</td><td class='num'>2.0</td><td class='num'>6.1</td><td class='num'>-4.1</td><td>Speculative start miss</td></tr></tbody></table></div>
+    </div>
+                        <div><h3>Cold Adds And Starts</h3>
+        <p class="chart-note">These are additions or starts that ran cold versus the player&#x27;s prior scoring pace.</p>
+        <div class="table-wrap"><table><thead><tr>
+            <th>Week</th><th>Player</th><th>Pos</th><th>Use</th><th class="num">Pts</th>
+            <th class="num">Prior Avg</th><th class="num">Surprise</th><th>Signal</th>
+        </tr></thead><tbody><tr><td><a href="../matchups_week_10/matchup_02_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 10</a></td><td>Sam Darnold</td><td>QB</td><td>started</td><td class='num'>5.7</td><td class='num'>17.6</td><td class='num'>-11.9</td><td>Obvious start miss</td></tr><tr><td><a href="../matchups_week_09/matchup_01_big-fire-knowles-energy_vs_moonbeam-ice-cream.html">Week 9</a></td><td>Joshua Karty</td><td>K</td><td>started</td><td class='num'>2.0</td><td class='num'>6.1</td><td class='num'>-4.1</td><td>Speculative start miss</td></tr><tr><td><a href="../matchups_week_08/matchup_04_in-purdytory_vs_moonbeam-ice-cream.html">Week 8</a></td><td>Dalton Schultz</td><td>TE</td><td>started</td><td class='num'>3.4</td><td class='num'>6.3</td><td class='num'>-2.9</td><td>Speculative start miss</td></tr><tr><td><a href="../matchups_week_09/matchup_01_big-fire-knowles-energy_vs_moonbeam-ice-cream.html">Week 9</a></td><td>Chicago</td><td>DEF</td><td>started</td><td class='num'>5.0</td><td class='num'>6.4</td><td class='num'>-1.4</td><td>Neutral add/start</td></tr><tr><td><a href="../matchups_week_16/matchup_03_joe-s-cocksmithing-station_vs_moonbeam-ice-cream.html">Week 16</a></td><td>Aaron Rodgers</td><td>QB</td><td>started</td><td class='num'>15.8</td><td class='num'>14.3</td><td class='num'>+1.4</td><td>Neutral add/start</td></tr></tbody></table></div>
+    </div>
+                    </div>
+                    <h3>Biggest Moved-Away Follow-Ups</h3>
+                    <p class="lede">These are deduplicated by player and drop week, keeping the largest follow-up window so repeated weekly rows do not drown out the signal.</p>
+                    
+        <div class="table-wrap"><table><thead><tr>
+            <th>Report Week</th><th>Player</th><th>Pos</th><th>Move Week</th><th>Window</th>
+            <th class="num">Pts After Move</th><th class="num">This Week</th>
+        </tr></thead><tbody><tr><td><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 17</a></td><td>Joe Burrow</td><td>QB</td><td>Week 9</td><td>Weeks 10-17</td><td class='num'>116.2</td><td class='num'>23.4</td></tr><tr><td><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 17</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-17</td><td class='num'>70.8</td><td class='num'>3.8</td></tr><tr><td><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 17</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-17</td><td class='num'>65.9</td><td class='num'>1.9</td></tr><tr><td><a href="../matchups_week_12/matchup_05_joe-s-cocksmithing-station_vs_moonbeam-ice-cream.html">Week 12</a></td><td>Buffalo</td><td>DEF</td><td>Week 8</td><td>Weeks 9-12</td><td class='num'>18.0</td><td class='num'>6.0</td></tr><tr><td><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Week 17</a></td><td>Bears</td><td>DEF</td><td>Week 16</td><td>Weeks 17-17</td><td class='num'>5.0</td><td class='num'>5.0</td></tr></tbody></table></div>
+    
+                </section>
+                <section><h2>Season Trail</h2><div class="table-wrap"><table><thead><tr>
+                    <th>Week</th><th>Matchup</th><th>Opponent</th><th>Result</th><th class="num">Score</th>
+                    <th>Grade</th><th class="num">Missed Lineup Pts</th><th>Form</th>
+                    <th class="num">Move Value</th><th>Notable Add/Start</th><th>Top Moved-Away Follow-Up</th>
+                </tr></thead><tbody><tr><td><a href="../week_01.html">Week 1</a></td><td><a href="../matchups_week_01/matchup_02_you-aren-t-worthy-of-coleman_vs_moonbeam-ice-cream.html">Matchup</a></td><td>You aren’t Worthy of Coleman</td><td>L</td><td class='num'>60.9 - 127.8</td><td>F (52%)</td><td class='num'>56.6</td><td>Too Early (+0.0)</td><td class='num'>+0.0</td><td>-</td><td>-</td></tr><tr><td><a href="../week_02.html">Week 2</a></td><td><a href="../matchups_week_02/matchup_05_moonbeam-ice-cream_vs_two-buck-luck.html">Matchup</a></td><td>Two Buck Luck</td><td>W</td><td class='num'>128.6 - 115.2</td><td>C- (68%)</td><td class='num'>54.7</td><td>Heating Up (+67.8)</td><td class='num'>+0.0</td><td>-</td><td>-</td></tr><tr><td><a href="../week_03.html">Week 3</a></td><td><a href="../matchups_week_03/matchup_05_moonbeam-ice-cream_vs_joe-s-cocksmithing-station.html">Matchup</a></td><td>Joe’s Cocksmithing Station</td><td>W</td><td class='num'>123.4 - 81.9</td><td>D+ (66%)</td><td class='num'>57.8</td><td>Unchanged (-5.3)</td><td class='num'>+0.0</td><td>-</td><td>-</td></tr><tr><td><a href="../week_04.html">Week 4</a></td><td><a href="../matchups_week_04/matchup_03_moonbeam-ice-cream_vs_pat-pidgeon.html">Matchup</a></td><td>Pat Pidgeon</td><td>W</td><td class='num'>124.6 - 102.4</td><td>B (86%)</td><td class='num'>14.7</td><td>Heating Up (+64.7)</td><td class='num'>+0.0</td><td>-</td><td>-</td></tr><tr><td><a href="../week_05.html">Week 5</a></td><td><a href="../matchups_week_05/matchup_04_nacua-cola_vs_moonbeam-ice-cream.html">Matchup</a></td><td>Nacua-Cola</td><td>L</td><td class='num'>116.6 - 119.9</td><td>B (86%)</td><td class='num'>0.0</td><td>Heating Up (+26.8)</td><td class='num'>+0.0</td><td>-</td><td>-</td></tr><tr><td><a href="../week_06.html">Week 6</a></td><td><a href="../matchups_week_06/matchup_04_moonbeam-ice-cream_vs_reverse-ted-lasso.html">Matchup</a></td><td>Reverse Ted Lasso</td><td>W</td><td class='num'>131.6 - 120.6</td><td>C- (70%)</td><td class='num'>52.2</td><td>Heating Up (+20.0)</td><td class='num'>+0.0</td><td>-</td><td>-</td></tr><tr><td><a href="../week_07.html">Week 7</a></td><td><a href="../matchups_week_07/matchup_04_moonbeam-ice-cream_vs_millan-darling-millan.html">Matchup</a></td><td>Millan Darling Millan</td><td>W</td><td class='num'>163.7 - 102.0</td><td>B (87%)</td><td class='num'>46.0</td><td>Heating Up (+11.8)</td><td class='num'>+2.5</td><td>Philadelphia; 12.0 pts; started; Smart start</td><td>-</td></tr><tr><td><a href="../week_08.html">Week 8</a></td><td><a href="../matchups_week_08/matchup_04_in-purdytory_vs_moonbeam-ice-cream.html">Matchup</a></td><td>In Purdytory</td><td>L</td><td class='num'>106.9 - 137.3</td><td>B (86%)</td><td class='num'>13.7</td><td>Heating Up (+12.5)</td><td class='num'>-1.5</td><td>Dalton Schultz; 3.4 pts; started; Risky start missed</td><td>Mark Andrews - 4.4 pts after move (Weeks 8-8)</td></tr><tr><td><a href="../week_09.html">Week 9</a></td><td><a href="../matchups_week_09/matchup_01_big-fire-knowles-energy_vs_moonbeam-ice-cream.html">Matchup</a></td><td>Big Fire Knowles Energy</td><td>L</td><td class='num'>90.3 - 120.8</td><td>B- (82%)</td><td class='num'>0.0</td><td>Unchanged (-3.9)</td><td class='num'>-1.5</td><td>Joshua Karty; 2.0 pts; started; Risky start missed</td><td>Mark Andrews - 23.0 pts after move (Weeks 8-9)</td></tr><tr><td><a href="../week_10.html">Week 10</a></td><td><a href="../matchups_week_10/matchup_02_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Matchup</a></td><td>You aren’t Worthy of Coleman</td><td>W</td><td class='num'>109.3 - 101.0</td><td>C+ (79%)</td><td class='num'>23.9</td><td>Cooling Off (-35.1)</td><td class='num'>-3.0</td><td>Sam Darnold; 5.7 pts; started; Expected starter missed</td><td>Mark Andrews - 32.4 pts after move (Weeks 8-10)</td></tr><tr><td><a href="../week_11.html">Week 11</a></td><td><a href="../matchups_week_11/matchup_05_two-buck-luck_vs_moonbeam-ice-cream.html">Matchup</a></td><td>Two Buck Luck</td><td>L</td><td class='num'>94.5 - 138.8</td><td>C- (71%)</td><td class='num'>30.8</td><td>Cooling Off (-36.0)</td><td class='num'>+0.0</td><td>-</td><td>Mark Andrews - 49.1 pts after move (Weeks 8-11)</td></tr><tr><td><a href="../week_12.html">Week 12</a></td><td><a href="../matchups_week_12/matchup_05_joe-s-cocksmithing-station_vs_moonbeam-ice-cream.html">Matchup</a></td><td>Joe’s Cocksmithing Station</td><td>L</td><td class='num'>100.0 - 173.9</td><td>B- (80%)</td><td class='num'>24.9</td><td>Cooling Off (-19.0)</td><td class='num'>+0.0</td><td>-</td><td>Mark Andrews - 52.2 pts after move (Weeks 8-12)</td></tr><tr><td><a href="../week_13.html">Week 13</a></td><td><a href="../matchups_week_13/matchup_03_moonbeam-ice-cream_vs_pat-pidgeon.html">Matchup</a></td><td>Pat Pidgeon</td><td>W</td><td class='num'>128.5 - 78.6</td><td>B- (82%)</td><td class='num'>32.8</td><td>Unchanged (+5.5)</td><td class='num'>+0.0</td><td>-</td><td>Mark Andrews - 58.9 pts after move (Weeks 8-13)</td></tr><tr><td><a href="../week_14.html">Week 14</a></td><td><a href="../matchups_week_14/matchup_04_nacua-cola_vs_moonbeam-ice-cream.html">Matchup</a></td><td>Nacua-Cola</td><td>L</td><td class='num'>84.5 - 148.1</td><td>D (63%)</td><td class='num'>43.9</td><td>Unchanged (+6.3)</td><td class='num'>+0.0</td><td>-</td><td>Mark Andrews - 59.8 pts after move (Weeks 8-14)</td></tr><tr><td><a href="../week_15.html">Week 15</a></td><td><a href="../matchups_week_15/matchup_04_moonbeam-ice-cream_vs_reverse-ted-lasso.html">Matchup</a></td><td>Reverse Ted Lasso</td><td>W</td><td class='num'>125.4 - 115.0</td><td>C+ (78%)</td><td class='num'>30.5</td><td>Heating Up (+11.5)</td><td class='num'>+0.0</td><td>-</td><td>Mark Andrews - 62.6 pts after move (Weeks 8-15)</td></tr><tr><td><a href="../week_16.html">Week 16</a></td><td><a href="../matchups_week_16/matchup_03_joe-s-cocksmithing-station_vs_moonbeam-ice-cream.html">Matchup</a></td><td>Joe’s Cocksmithing Station</td><td>L</td><td class='num'>108.8 - 149.7</td><td>B (86%)</td><td class='num'>13.3</td><td>Unchanged (-1.4)</td><td class='num'>+0.0</td><td>Aaron Rodgers; 15.8 pts; started; Neutral move</td><td>Joe Burrow - 92.9 pts after move (Weeks 10-16)</td></tr><tr><td><a href="../week_17.html">Week 17</a></td><td><a href="../matchups_week_17/matchup_01_moonbeam-ice-cream_vs_you-aren-t-worthy-of-coleman.html">Matchup</a></td><td>You aren’t Worthy of Coleman</td><td>W</td><td class='num'>90.1 - 77.8</td><td>B- (82%)</td><td class='num'>3.4</td><td>Unchanged (+3.8)</td><td class='num'>+0.0</td><td>-</td><td>Joe Burrow - 116.2 pts after move (Weeks 10-17)</td></tr></tbody></table></div></section>
+                <section><h2>Roster Move Outcomes</h2>
+                    <p class="lede">Adds are listed by the week they entered the report, with points compared to the player's prior scoring average where available.</p>
+                    <div class="table-wrap"><table><thead><tr>
+                        <th>Week</th><th>Player</th><th>Pos</th><th>Use</th><th class="num">Pts</th>
+                        <th class="num">Prior Avg</th><th class="num">Surprise</th><th>Signal</th>
+                    </tr></thead><tbody><tr><td><a href="../week_07.html">Week 7</a></td><td>Philadelphia</td><td>DEF</td><td>started</td><td class='num'>12.0</td><td class='num'>6.3</td><td class='num'>+5.7</td><td>Smart start</td></tr><tr><td><a href="../week_08.html">Week 8</a></td><td>Dalton Schultz</td><td>TE</td><td>started</td><td class='num'>3.4</td><td class='num'>6.3</td><td class='num'>-2.9</td><td>Risky start missed</td></tr><tr><td><a href="../week_09.html">Week 9</a></td><td>Chicago</td><td>DEF</td><td>started</td><td class='num'>5.0</td><td class='num'>6.4</td><td class='num'>-1.4</td><td>Neutral move</td></tr><tr><td><a href="../week_09.html">Week 9</a></td><td>Joshua Karty</td><td>K</td><td>started</td><td class='num'>2.0</td><td class='num'>6.1</td><td class='num'>-4.1</td><td>Risky start missed</td></tr><tr><td><a href="../week_10.html">Week 10</a></td><td>Sam Darnold</td><td>QB</td><td>started</td><td class='num'>5.7</td><td class='num'>17.6</td><td class='num'>-11.9</td><td>Expected starter missed</td></tr><tr><td><a href="../week_16.html">Week 16</a></td><td>Aaron Rodgers</td><td>QB</td><td>started</td><td class='num'>15.8</td><td class='num'>14.3</td><td class='num'>+1.4</td><td>Neutral move</td></tr></tbody></table></div></section>
+                <section><h2>Moved-Away Follow-Up</h2>
+                    <p class="lede">Moved-away players are tracked after the move so the table shows when the move happened and how many raw points followed in the listed window. This is follow-up context, not automatic regret.</p>
+                    <div class="table-wrap"><table><thead><tr>
+                        <th>Report Week</th><th>Player</th><th>Pos</th><th>Move Week</th><th>Window</th>
+                        <th class="num">Pts After Move</th><th class="num">This Week</th>
+                    </tr></thead><tbody><tr><td><a href="../week_08.html">Week 8</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-8</td><td class='num'>4.4</td><td class='num'>4.4</td></tr><tr><td><a href="../week_09.html">Week 9</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-9</td><td class='num'>23.0</td><td class='num'>18.6</td></tr><tr><td><a href="../week_09.html">Week 9</a></td><td>Buffalo</td><td>DEF</td><td>Week 8</td><td>Weeks 9-9</td><td class='num'>5.0</td><td class='num'>5.0</td></tr><tr><td><a href="../week_10.html">Week 10</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-10</td><td class='num'>32.4</td><td class='num'>9.4</td></tr><tr><td><a href="../week_10.html">Week 10</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-10</td><td class='num'>16.3</td><td class='num'>16.3</td></tr><tr><td><a href="../week_10.html">Week 10</a></td><td>Buffalo</td><td>DEF</td><td>Week 8</td><td>Weeks 9-10</td><td class='num'>8.0</td><td class='num'>3.0</td></tr><tr><td><a href="../week_11.html">Week 11</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-11</td><td class='num'>49.1</td><td class='num'>16.7</td></tr><tr><td><a href="../week_11.html">Week 11</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-11</td><td class='num'>22.4</td><td class='num'>6.1</td></tr><tr><td><a href="../week_11.html">Week 11</a></td><td>Buffalo</td><td>DEF</td><td>Week 8</td><td>Weeks 9-11</td><td class='num'>12.0</td><td class='num'>4.0</td></tr><tr><td><a href="../week_12.html">Week 12</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-12</td><td class='num'>52.2</td><td class='num'>3.1</td></tr><tr><td><a href="../week_12.html">Week 12</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-12</td><td class='num'>23.2</td><td class='num'>0.8</td></tr><tr><td><a href="../week_12.html">Week 12</a></td><td>Buffalo</td><td>DEF</td><td>Week 8</td><td>Weeks 9-12</td><td class='num'>18.0</td><td class='num'>6.0</td></tr><tr><td><a href="../week_13.html">Week 13</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-13</td><td class='num'>58.9</td><td class='num'>6.7</td></tr><tr><td><a href="../week_13.html">Week 13</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-13</td><td class='num'>30.7</td><td class='num'>7.5</td></tr><tr><td><a href="../week_13.html">Week 13</a></td><td>Joe Burrow</td><td>QB</td><td>Week 9</td><td>Weeks 10-13</td><td class='num'>23.5</td><td class='num'>23.5</td></tr><tr><td><a href="../week_14.html">Week 14</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-14</td><td class='num'>59.8</td><td class='num'>0.9</td></tr><tr><td><a href="../week_14.html">Week 14</a></td><td>Joe Burrow</td><td>QB</td><td>Week 9</td><td>Weeks 10-14</td><td class='num'>53.0</td><td class='num'>29.5</td></tr><tr><td><a href="../week_14.html">Week 14</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-14</td><td class='num'>33.9</td><td class='num'>3.2</td></tr><tr><td><a href="../week_15.html">Week 15</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-15</td><td class='num'>62.6</td><td class='num'>2.8</td></tr><tr><td><a href="../week_15.html">Week 15</a></td><td>Joe Burrow</td><td>QB</td><td>Week 9</td><td>Weeks 10-15</td><td class='num'>57.0</td><td class='num'>4.0</td></tr><tr><td><a href="../week_15.html">Week 15</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-15</td><td class='num'>52.5</td><td class='num'>18.6</td></tr><tr><td><a href="../week_16.html">Week 16</a></td><td>Joe Burrow</td><td>QB</td><td>Week 9</td><td>Weeks 10-16</td><td class='num'>92.9</td><td class='num'>35.9</td></tr><tr><td><a href="../week_16.html">Week 16</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-16</td><td class='num'>67.0</td><td class='num'>4.4</td></tr><tr><td><a href="../week_16.html">Week 16</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-16</td><td class='num'>64.0</td><td class='num'>11.5</td></tr><tr><td><a href="../week_17.html">Week 17</a></td><td>Joe Burrow</td><td>QB</td><td>Week 9</td><td>Weeks 10-17</td><td class='num'>116.2</td><td class='num'>23.4</td></tr><tr><td><a href="../week_17.html">Week 17</a></td><td>Mark Andrews</td><td>TE</td><td>Week 7</td><td>Weeks 8-17</td><td class='num'>70.8</td><td class='num'>3.8</td></tr><tr><td><a href="../week_17.html">Week 17</a></td><td>Dalton Schultz</td><td>TE</td><td>Week 9</td><td>Weeks 10-17</td><td class='num'>65.9</td><td class='num'>1.9</td></tr><tr><td><a href="../week_17.html">Week 17</a></td><td>Bears</td><td>DEF</td><td>Week 16</td><td>Weeks 17-17</td><td class='num'>5.0</td><td class='num'>5.0</td></tr></tbody></table></div></section>
+            </main>
+            
+</body>
+</html>

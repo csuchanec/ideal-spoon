@@ -1,0 +1,180 @@
+{
+  "artifacts": {
+    "league/matchup/raw": {
+      "exists": true,
+      "metrics": {
+        "columns": 19,
+        "rows": 156,
+        "sum:teamPoints": 16854.01
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/matchup/raw/2020.csv",
+      "sha256": "0901e7dcdcbd557713331e4bc767fca068c14574a7cbc883a48096f704cdad6e"
+    },
+    "league/standings/season/actual": {
+      "exists": true,
+      "metrics": {
+        "columns": 7,
+        "rows": 10
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/actual/2020.csv",
+      "sha256": "02af6d6924a671afb0bade51f1326a458fe1f07fc76de4184b3897201af7bd92"
+    },
+    "league/standings/season/alternative_scoring": {
+      "exists": true,
+      "metrics": {
+        "columns": 7,
+        "rows": 10
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/alternative_scoring/2020.csv",
+      "sha256": "042ba048d004043fdee13201abad52d9fb5c51999d36dde47d92b0d7047fc659"
+    },
+    "league/standings/season/alternative_scoring_with_changes": {
+      "exists": true,
+      "metrics": {
+        "columns": 32,
+        "rows": 10
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/alternative_scoring_with_changes/2020.csv",
+      "sha256": "b6b587b2ae6dc9cc7f39b0edc685b66cb072f767b162893f71101ee089dc6885"
+    },
+    "league/stats": {
+      "exists": true,
+      "metrics": {
+        "columns": 4,
+        "rows": 1
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/stats/2020.csv",
+      "sha256": "1f2704c4f4d3778b29c33f501e6405c21adefcb9d8f88ada2ae064ad746a4c25"
+    },
+    "players/enriched/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 182,
+        "rows": 45441,
+        "sum:Total": 47204.66666666663
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/enriched/weekly/2020.csv",
+      "sha256": "46b244d4d473aa2fb72a6dbcbd508bf3585453c929465ace540ab76065d9d476"
+    },
+    "players/score/season": {
+      "exists": true,
+      "metrics": {
+        "columns": 177,
+        "rows": 2673,
+        "sum:Total": 47204.66666666663
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/score/season/2020.csv",
+      "sha256": "964689b8984b739a1348c08d14876ee4e8e7ecc2fcd2c70f6b24f1fa5ff3bcbb"
+    },
+    "teams/draft": {
+      "exists": true,
+      "metrics": {
+        "columns": 5,
+        "rows": 160
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/2020.csv",
+      "sha256": "0a726a0a0fbde51013dfd2620d6a647ebce14d94561af374ea091c5c49924f60"
+    },
+    "teams/draft/evaluation/points/season": {
+      "exists": true,
+      "metrics": {
+        "columns": 8,
+        "rows": 160,
+        "sum:Total": 24125.03333333331
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/evaluation/points/season/2020.csv",
+      "sha256": "1294f8a1b5586d25a5c55b80dc084c7d4db2889a2a15514851e4e232dd87a5d0"
+    },
+    "teams/roster/comparison/over_replacement/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 10,
+        "rows": 2554,
+        "sum:Total": 24551.933333333312
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/comparison/over_replacement/weekly/2020.csv",
+      "sha256": "5ce263dcad6f28b1c16d250a020cf606a3c7f0f28b2b302e4531e5db1929b5a5"
+    },
+    "teams/roster/lineup/ideal/lineup/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 190,
+        "rows": 1440,
+        "sum:Total": 19885.199999999986
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/lineup/ideal/lineup/weekly/2020.csv",
+      "sha256": "6b610cea9f387145d25a5d2a899860f2ebe7006b19e8dbcc4f536e3b13e81997"
+    },
+    "teams/roster/lineup/ideal/total": {
+      "exists": true,
+      "metrics": {
+        "columns": 180,
+        "rows": 160,
+        "sum:Total": 19885.199999999986
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/lineup/ideal/total/2020.csv",
+      "sha256": "033cf71008e512929998d8df083fc552684e06923e973cf61402e647507a2821"
+    },
+    "teams/roster/with_positions/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 188,
+        "rows": 2554,
+        "sum:Total": 24551.933333333312
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2020.csv",
+      "sha256": "7275e3096d61f3125e54cce87cde10bd5a44a0661206314bc2fe554a16c7d610"
+    },
+    "teams/roster/worst/by_position/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 189,
+        "rows": 960,
+        "sum:Total": 9444.766666666652
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/worst/by_position/weekly/2020.csv",
+      "sha256": "e084aef49a0fb1a4a57cf017d232e05862a6d28352dfa6615292bb557fd7d40c"
+    },
+    "teams/score/actual/weekly": {
+      "exists": true,
+      "metrics": {
+        "columns": 90,
+        "rows": 45441,
+        "sum:Total": 47204.66666666663
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/actual/weekly/2020.csv",
+      "sha256": "817ce4a4c6ba19a1affcec3c163dda2e1c3e86ccace61b8428721fe7588e7c0d"
+    },
+    "teams/score/bench/total": {
+      "exists": true,
+      "metrics": {
+        "columns": 180,
+        "rows": 160,
+        "sum:Total": 7315.166666666659
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/bench/total/2020.csv",
+      "sha256": "ccc921b17bc344252ecfc513b149e51cb5576be0b99fefe6804002fa795a74ac"
+    },
+    "teams/score/played/total": {
+      "exists": true,
+      "metrics": {
+        "columns": 180,
+        "rows": 160,
+        "sum:Total": 17236.766666666656
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/played/total/2020.csv",
+      "sha256": "a8955383289b84d0c1711ebdf821a24def54292bc580a4fcc3f0cb7a05705881"
+    },
+    "teams/season/consistency": {
+      "exists": true,
+      "metrics": {
+        "columns": 9,
+        "rows": 10,
+        "sum:wins": 78.0
+      },
+      "path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/season/consistency/2020.csv",
+      "sha256": "fa7053705146e2030f812fc2919a4740b49e792e8878c804f5371b1af52d7ad8"
+    }
+  },
+  "year": 2020
+}

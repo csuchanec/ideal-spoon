@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Matchup Reports</title>
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --surface: #ffffff;
+            --surface-muted: #f2f4f7;
+            --text: #111827;
+            --text-muted: #5b6472;
+            --line: #e2e8f0;
+            --line-strong: #cbd5e1;
+            --accent: #1f4f8c;
+            --accent-soft: #e8f0fb;
+            --positive: #1f7a45;
+            --negative: #b42318;
+            --warning: #a15c07;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.45;
+        }
+        .page {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 24px 20px 48px;
+        }
+        .section {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 18px;
+        }
+        .eyebrow {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 34px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin: 0 0 10px;
+        }
+        h2 {
+            font-size: 22px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        p { margin: 0 0 10px; }
+        .muted { color: var(--text-muted); }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 12px;
+        }
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .meta-chip {
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 8px 12px;
+            background: #f8fafc;
+            min-height: 44px;
+        }
+        .section-jump-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .section-jump-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 34px;
+            padding: 7px 10px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--text);
+            background: var(--surface-muted);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.2;
+            max-width: 180px;
+            overflow-wrap: anywhere;
+        }
+        .section-jump-link:hover,
+        .section-jump-link:focus {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .meta-chip strong {
+            color: var(--text);
+            margin-right: 6px;
+        }
+        .insight-pair {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 14px;
+            align-items: stretch;
+        }
+        .hero-card {
+            border: 1px solid #c9d8ee;
+            border-radius: 16px;
+            padding: 20px;
+            background: linear-gradient(180deg, #f4f8fe 0%, #e8f0fb 100%);
+        }
+        .hero-card .value {
+            font-size: 42px;
+            line-height: 0.95;
+            margin-bottom: 8px;
+        }
+        .hero-card .subvalue {
+            font-size: 15px;
+            color: var(--text);
+        }
+        .hero-sidekick {
+            display: grid;
+            gap: 12px;
+        }
+        .detail-card {
+            grid-column: span 3;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 14px;
+            background: var(--surface-muted);
+        }
+        .detail-card.tertiary,
+        .chart-card.tertiary {
+            background: #f8fafc;
+            border-style: dashed;
+        }
+        .detail-card.wide {
+            grid-column: span 6;
+        }
+        .label {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 26px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .subvalue {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+        .team-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+        .manager-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+        .team-panel {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px;
+            background: var(--surface-muted);
+        }
+        .team-panel.winner {
+            border-color: #c9d8ee;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .team-panel.loser {
+            border-color: #f1d4cf;
+            background: linear-gradient(180deg, #fff8f6 0%, #fdf1ef 100%);
+        }
+        .team-panel h3 { margin-bottom: 6px; }
+        .panel-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .panel-badge.winner {
+            color: var(--accent);
+            background: #e8f0fb;
+        }
+        .panel-badge.loser {
+            color: var(--negative);
+            background: #fde9e5;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0 12px;
+        }
+        .pill {
+            border: 1px solid var(--line-strong);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background: var(--surface);
+        }
+        .pill.good { color: var(--positive); border-color: #b7e0c4; }
+        .pill.bad { color: var(--negative); border-color: #f1c0ba; }
+        .pill.warn { color: var(--warning); border-color: #f4d39c; }
+        .decision-table-stack {
+            display: grid;
+            gap: 14px;
+        }
+        .decision-table-card {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 14px;
+            background: var(--surface-muted);
+        }
+        .decision-table-card h3 {
+            margin-bottom: 4px;
+        }
+        .decision-table-card p {
+            margin-bottom: 10px;
+        }
+        .compare-cell {
+            min-width: 220px;
+        }
+        .compare-player {
+            display: block;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .compare-meta {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        .compare-edge {
+            font-weight: 700;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .compare-edge.left {
+            color: var(--accent);
+        }
+        .compare-edge.right {
+            color: var(--negative);
+        }
+        .compare-edge.neutral {
+            color: var(--text-muted);
+        }
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th, td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: var(--surface-muted);
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        ul.compact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+        ul.compact-list li {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: var(--surface);
+        }
+        .two-up {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 14px;
+            align-items: start;
+        }
+        .compare-table td:first-child,
+        .compare-table th:first-child {
+            white-space: nowrap;
+        }
+        .metric-win {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .chart-card {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 14px;
+            background: var(--surface-muted);
+        }
+        .chart-card.highlight {
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+            border-color: #c9d8ee;
+        }
+        .chart-card + .chart-card {
+            margin-top: 12px;
+        }
+        .chart-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-kicker {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-note {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .legend-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            display: inline-block;
+        }
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .verdict-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 12px;
+            margin: 12px 0 14px;
+        }
+        .verdict-card {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 14px;
+            background: var(--surface-muted);
+        }
+        .verdict-card .value {
+            font-size: 22px;
+        }
+        .callout {
+            border: 1px solid #f1c0ba;
+            background: #fff5f3;
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 12px;
+        }
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .takeaway-card {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 14px;
+            background: var(--surface-muted);
+        }
+        .takeaway-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        .takeaway-card li + li {
+            margin-top: 6px;
+        }
+        .award-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+        .skill-hero {
+            border: 1px solid #d7e4f7;
+            border-radius: 14px;
+            padding: 18px;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .skill-team-list {
+            display: grid;
+            gap: 10px;
+        }
+        .skill-team-card {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 12px;
+            background: var(--surface-muted);
+        }
+        .award-card {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 10px 12px;
+            background: #f8fafc;
+            min-width: 220px;
+            flex: 1 1 220px;
+        }
+        details.deep-metrics {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: var(--surface-muted);
+            padding: 14px;
+        }
+        details.deep-metrics summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .evidence-list {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .evidence-list li + li {
+            margin-top: 6px;
+        }
+        @media (max-width: 900px) {
+            .detail-card,
+            .detail-card.wide {
+                grid-column: span 12;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+            .compare-grid,
+            .verdict-grid,
+            .insight-pair,
+            .takeaway-grid,
+            .manager-summary-grid,
+            .team-columns,
+            .two-up {
+                grid-template-columns: 1fr;
+            }
+            .section-jump-link {
+                flex: 1 1 calc(50% - 8px);
+                max-width: none;
+            }
+        }
+        </style>
+</head>
+<body>
+    <main class="page">
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Week 6 Matchups</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season.html">Season Report</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (11)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/big-fire-knowles-energy.html">Big Fire Knowles Energy</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/joes-cocksmithing-station.html">Joe’s Cocksmithing Station</a></li><li><a href="../teams/millan-darling-millan.html">Millan Darling Millan</a></li><li><a href="../teams/moonbeam-ice-cream.html">Moonbeam Ice Cream</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/reverse-ted-lasso.html">Reverse Ted Lasso</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/you-arent-worthy-of-coleman.html">You aren’t Worthy of Coleman</a></li></ul></details><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Weeks (17)</summary><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li><li><a href="../week_04.html">W4</a></li><li><a href="../week_05.html">W5</a></li><li><a href="../week_06.html">W6</a></li><li><a href="../week_07.html">W7</a></li><li><a href="../week_08.html">W8</a></li><li><a href="../week_09.html">W9</a></li><li><a href="../week_10.html">W10</a></li><li><a href="../week_11.html">W11</a></li><li><a href="../week_12.html">W12</a></li><li><a href="../week_13.html">W13</a></li><li><a href="../week_14.html">W14</a></li><li><a href="../week_15.html">W15</a></li><li><a href="../week_16.html">W16</a></li><li><a href="../week_17.html">W17</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_06.html">Week 6 Report</a></li><li><span class="report-nav-current">Week 6 Matchups</span></li></ul></div></div></div></nav>
+<!-- report-nav:end -->
+        <section class="section">
+            <div class="eyebrow">Weekly Matchup Reports</div>
+            <h1>Week 6 Matchup Reports</h1>
+            <p class="muted">Season 2025 | 5 matchup reports generated</p>
+        </section>
+        <section class="section">
+            <h2>Matchup Hub</h2>
+            <p class="muted">Start with the week-shaping matchups, then use the table for direct navigation.</p>
+            <div class="card-grid">
+                
+                <article class="detail-card">
+                    <div class="label">Highest Scoring Matchup</div>
+                    <div class="value">257.2 total pts</div>
+                    <div class="subvalue">In Purdytory vs Pat Pidgeon</div>
+                    <p>The matchup with the largest combined score.</p>
+                    <a href="matchup_03_in-purdytory_vs_pat-pidgeon.html">Open matchup</a>
+                </article>
+            
+                
+                <article class="detail-card">
+                    <div class="label">Closest Game</div>
+                    <div class="value">8.0 pt margin</div>
+                    <div class="subvalue">Millan Darling Millan vs Nacua-Cola</div>
+                    <p>The matchup most likely to reward a detailed decision review.</p>
+                    <a href="matchup_05_millan-darling-millan_vs_nacua-cola.html">Open matchup</a>
+                </article>
+            
+                
+                <article class="detail-card">
+                    <div class="label">Biggest Margin</div>
+                    <div class="value">41.6 pt margin</div>
+                    <div class="subvalue">Big Fire Knowles Energy vs Joe’s Cocksmithing Station</div>
+                    <p>The clearest scoreboard separation of the week.</p>
+                    <a href="matchup_01_big-fire-knowles-energy_vs_joe-s-cocksmithing-station.html">Open matchup</a>
+                </article>
+            
+            </div>
+        </section>
+        <section class="section">
+            <h2>Reports</h2>
+            <div class="table-wrap no-scroll-wrap">
+                <table class="sortable-grid-table dense-table">
+                    <thead>
+                        <tr>
+                            <th>Team A</th>
+                            <th>Team B</th>
+                            <th>Winner</th>
+                            <th class="num">Margin</th>
+                            <th>Weekly Ranks</th>
+                            <th>Report</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr><td><a href="matchup_01_big-fire-knowles-energy_vs_joe-s-cocksmithing-station.html" title="Big Fire Knowles Energy vs Joe’s Cocksmithing Station matchup report"><strong>Big Fire Knowles Energy</strong></a><div class='muted'>130.4 pts | #3</div></td><td><a href="matchup_01_big-fire-knowles-energy_vs_joe-s-cocksmithing-station.html" title="Big Fire Knowles Energy vs Joe’s Cocksmithing Station matchup report"><strong>Joe’s Cocksmithing Station</strong></a><div class='muted'>88.8 pts | #10</div></td><td><span class='chip chip-positive'>Big Fire Knowles Energy</span></td><td class='num'>41.6</td><td>#3 / #10</td><td><a href="matchup_01_big-fire-knowles-energy_vs_joe-s-cocksmithing-station.html">Open Report</a></td></tr><tr><td><a href="matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html" title="Two Buck Luck vs You aren’t Worthy of Coleman matchup report"><strong>Two Buck Luck</strong></a><div class='muted'>112.2 pts | #7</div></td><td><a href="matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html" title="Two Buck Luck vs You aren’t Worthy of Coleman matchup report"><strong>You aren’t Worthy of Coleman</strong></a><div class='muted'>103.2 pts | #9</div></td><td><span class='chip chip-positive'>Two Buck Luck</span></td><td class='num'>9.0</td><td>#7 / #9</td><td><a href="matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html">Open Report</a></td></tr><tr><td><a href="matchup_03_in-purdytory_vs_pat-pidgeon.html" title="In Purdytory vs Pat Pidgeon matchup report"><strong>In Purdytory</strong></a><div class='muted'>132.8 pts | #1</div></td><td><a href="matchup_03_in-purdytory_vs_pat-pidgeon.html" title="In Purdytory vs Pat Pidgeon matchup report"><strong>Pat Pidgeon</strong></a><div class='muted'>124.4 pts | #4</div></td><td><span class='chip chip-positive'>In Purdytory</span></td><td class='num'>8.4</td><td>#1 / #4</td><td><a href="matchup_03_in-purdytory_vs_pat-pidgeon.html">Open Report</a></td></tr><tr><td><a href="matchup_04_moonbeam-ice-cream_vs_reverse-ted-lasso.html" title="Moonbeam Ice Cream vs Reverse Ted Lasso matchup report"><strong>Moonbeam Ice Cream</strong></a><div class='muted'>131.6 pts | #2</div></td><td><a href="matchup_04_moonbeam-ice-cream_vs_reverse-ted-lasso.html" title="Moonbeam Ice Cream vs Reverse Ted Lasso matchup report"><strong>Reverse Ted Lasso</strong></a><div class='muted'>120.6 pts | #5</div></td><td><span class='chip chip-positive'>Moonbeam Ice Cream</span></td><td class='num'>11.0</td><td>#2 / #5</td><td><a href="matchup_04_moonbeam-ice-cream_vs_reverse-ted-lasso.html">Open Report</a></td></tr><tr><td><a href="matchup_05_millan-darling-millan_vs_nacua-cola.html" title="Millan Darling Millan vs Nacua-Cola matchup report"><strong>Millan Darling Millan</strong></a><div class='muted'>112.8 pts | #6</div></td><td><a href="matchup_05_millan-darling-millan_vs_nacua-cola.html" title="Millan Darling Millan vs Nacua-Cola matchup report"><strong>Nacua-Cola</strong></a><div class='muted'>104.8 pts | #8</div></td><td><span class='chip chip-positive'>Millan Darling Millan</span></td><td class='num'>8.0</td><td>#6 / #8</td><td><a href="matchup_05_millan-darling-millan_vs_nacua-cola.html">Open Report</a></td></tr></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
