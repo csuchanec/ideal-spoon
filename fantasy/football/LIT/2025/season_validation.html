@@ -29,22 +29,22 @@
             background: var(--bg);
             color: var(--text);
             font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.45;
-            font-size: 15px;
+            line-height: 1.38;
+            font-size: 14px;
         }
 
         .page {
-            max-width: 1160px;
+            max-width: 1240px;
             margin: 0 auto;
-            padding: 24px 20px 56px;
+            padding: 18px 18px 44px;
         }
 
         .report-header {
             background: var(--surface);
             border: 1px solid var(--line);
-            border-radius: 14px;
-            padding: 28px;
-            margin-bottom: 18px;
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-bottom: 12px;
         }
 
         .eyebrow {
@@ -90,17 +90,17 @@
         .section-jump-nav {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 14px;
+            gap: 6px;
+            margin-top: 10px;
         }
 
         .section-jump-link {
             display: inline-flex;
             align-items: center;
-            min-height: 34px;
-            padding: 7px 10px;
+            min-height: 30px;
+            padding: 5px 9px;
             border: 1px solid var(--line);
-            border-radius: 8px;
+            border-radius: 6px;
             color: var(--text);
             background: var(--surface-muted);
             text-decoration: none;
@@ -120,22 +120,22 @@
         .section {
             background: var(--surface);
             border: 1px solid var(--line);
-            border-radius: 14px;
-            padding: 24px;
-            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
 
         .section-title {
-            font-size: 22px;
+            font-size: 19px;
             line-height: 1.2;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
             letter-spacing: -0.01em;
         }
 
         .section-insight {
             color: var(--text-muted);
-            font-size: 14px;
-            margin-bottom: 18px;
+            font-size: 13px;
+            margin-bottom: 10px;
             max-width: 820px;
         }
 
@@ -156,16 +156,16 @@
         .story-cards {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 12px;
-            margin-bottom: 16px;
+            gap: 8px;
+            margin-bottom: 10px;
         }
 
         .story-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
+            border-radius: 6px;
             background: var(--surface-muted);
-            padding: 14px;
-            min-height: 124px;
+            padding: 10px;
+            min-height: 86px;
         }
 
         .story-card.featured {
@@ -183,14 +183,14 @@
         }
 
         .story-value {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 1.25;
         }
 
         .story-sub {
             margin-top: 4px;
-            font-size: 13px;
+            font-size: 12px;
             color: var(--text-muted);
         }
 
@@ -225,15 +225,15 @@
         .kpi-grid {
             display: grid;
             grid-template-columns: repeat(12, minmax(0, 1fr));
-            gap: 10px;
+            gap: 8px;
         }
 
         .kpi-card {
             grid-column: span 3;
-            min-height: 104px;
-            padding: 12px;
+            min-height: 82px;
+            padding: 10px;
             border: 1px solid var(--line);
-            border-radius: 10px;
+            border-radius: 6px;
             background: var(--surface);
         }
 
@@ -247,7 +247,7 @@
         }
 
         .kpi-value {
-            font-size: 28px;
+            font-size: 24px;
             line-height: 1.1;
             font-weight: 700;
             font-variant-numeric: tabular-nums lining-nums;
@@ -256,9 +256,9 @@
         }
 
         .kpi-context {
-            margin-top: 6px;
+            margin-top: 4px;
             color: var(--text-muted);
-            font-size: 12px;
+            font-size: 11px;
         }
 
         .controls {
@@ -304,7 +304,11 @@
         .table-wrap {
             overflow-x: auto;
             border: 1px solid var(--line);
-            border-radius: 10px;
+            border-radius: 6px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
         }
 
         .no-scroll-wrap {
@@ -319,13 +323,27 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 13px;
+            font-size: 12px;
             font-variant-numeric: tabular-nums lining-nums;
+        }
+
+        .compact-table {
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .compact-table table {
+            min-width: 640px;
+        }
+
+        .compact-table .table-wrap table {
+            min-width: 0;
         }
 
         th,
         td {
-            padding: 10px 12px;
+            padding: 7px 9px;
             border-bottom: 1px solid var(--line);
         }
 
@@ -551,7 +569,11 @@
         .deep-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 14px;
+            gap: 8px;
+        }
+
+        .deep-grid > * {
+            min-width: 0;
         }
 
         .tab-nav {
@@ -590,8 +612,8 @@
 
         .deep-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 14px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface);
         }
 
@@ -600,7 +622,7 @@
             text-transform: uppercase;
             letter-spacing: 0.03em;
             color: var(--text-muted);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .deep-card p {
@@ -611,15 +633,15 @@
 
         .stat-list {
             display: grid;
-            gap: 8px;
+            gap: 4px;
         }
 
         .stat-row {
             display: grid;
             grid-template-columns: minmax(110px, 0.45fr) minmax(0, 1fr);
-            gap: 12px;
+            gap: 8px;
             align-items: start;
-            padding: 8px 0;
+            padding: 6px 0;
             border-bottom: 1px solid var(--line);
         }
 
@@ -647,10 +669,10 @@
         .deep-card > summary {
             list-style: none;
             cursor: pointer;
-            margin: -14px;
-            padding: 14px 16px;
+            margin: -10px;
+            padding: 10px 12px;
             background: linear-gradient(180deg, #fbfcfe 0%, #f7f9fc 100%);
-            border-radius: 10px;
+            border-radius: 6px;
             font-size: 13px;
         }
 
@@ -658,20 +680,20 @@
 
         .deep-card[open] > summary {
             border-bottom: 1px solid var(--line);
-            border-radius: 10px 10px 0 0;
+            border-radius: 6px 6px 0 0;
         }
 
         .callout-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 10px;
-            margin: 10px 0 14px;
+            gap: 8px;
+            margin: 8px 0 10px;
         }
 
         .callout-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 12px;
+            border-radius: 6px;
+            padding: 10px;
             background: linear-gradient(180deg, #fbfcfe 0%, #f5f7fb 100%);
         }
 
@@ -782,8 +804,9 @@
 
         .evidence-table {
             width: 100%;
+            min-width: 620px;
             border: 1px solid var(--line);
-            border-radius: 8px;
+            border-radius: 6px;
             overflow: hidden;
             margin-top: 8px;
         }
@@ -814,10 +837,10 @@
 
         .decision-impact-card {
             border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 12px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface-muted);
-            min-height: 104px;
+            min-height: 84px;
         }
 
         .decision-impact-label {
@@ -888,9 +911,12 @@
 
         .evidence-card {
             border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 10px;
+            border-radius: 6px;
+            padding: 8px;
             background: #fbfcfe;
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
         }
 
         .evidence-title {
@@ -974,11 +1000,40 @@
         }
 
         @media (max-width: 640px) {
-            .page { padding: 14px 12px 40px; }
-            .report-header { padding: 18px; border-radius: 10px; }
+            .page { padding: 12px 10px 32px; }
+            .report-header { padding: 12px; border-radius: 6px; }
             h1 { font-size: 26px; }
             .subhead { font-size: 13px; }
-            .section { padding: 14px; }
+            .section { padding: 10px; }
+            table { font-size: 12px; }
+            th,
+            td { padding: 7px 8px; }
+            th {
+                font-size: 10px;
+                letter-spacing: 0.02em;
+                white-space: normal;
+                line-height: 1.2;
+            }
+            .dense-table th,
+            .dense-table td,
+            .compact-table th,
+            .compact-table td {
+                padding: 6px 7px;
+            }
+            .compact-table table { font-size: 11px; }
+            .no-scroll-wrap {
+                overflow-x: auto;
+            }
+            .no-scroll-wrap table {
+                table-layout: auto;
+                min-width: max-content;
+            }
+            #rankingsTable {
+                min-width: 680px;
+            }
+            #rankingsTable .chip {
+                white-space: nowrap;
+            }
             .kpi-card { grid-column: span 12; }
             .story-cards { grid-template-columns: 1fr; }
             .mini-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -991,7 +1046,7 @@
             .tab-btn { flex: 1 1 auto; min-width: 92px; }
             .decision-impact-grid { grid-template-columns: 1fr; }
             .chip { white-space: normal; }
-            .section-jump-link { flex: 1 1 calc(50% - 8px); max-width: none; }
+            .section-jump-link { flex: 1 1 calc(50% - 6px); max-width: none; }
         }
     </style>
 </head>
@@ -1003,7 +1058,7 @@
             <p class="subhead">2025 Season Validation Report | Audit and model evidence</p>
             <div class="meta-strip">
                 <span>League: Fantasy Football | Season: 2025</span>
-                <span>Generated: 2026-08-16 08:45:56 | Schema v1.0</span>
+                <span>Generated: 2026-08-16 09:53:41 | Schema v1.0</span>
                 <span>Weeks Completed: 17</span>
                 <span>Teams in League: 10</span>
             </div>
@@ -2123,13 +2178,6 @@
                             <tbody>
                     <tr>
                         <td><a href="#missed-week-two-buck-luck-9" onclick="const week=document.getElementById('missed-week-two-buck-luck-9'); if(week) week.open=true; const team=week ? week.closest('details.team-drill') : null; if(team) team.open=true;">Week 9</a></td>
-                        <td>Rico Dowdle (34.1) over Jahmyr Gibbs (2.8)</td>
-                        <td>RB</td>
-                        <td class='num'>31.30</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="#missed-week-two-buck-luck-9" onclick="const week=document.getElementById('missed-week-two-buck-luck-9'); if(week) week.open=true; const team=week ? week.closest('details.team-drill') : null; if(team) team.open=true;">Week 9</a></td>
                         <td>Caleb Williams (44.8) over Daniel Jones (15.8)</td>
                         <td>QB</td>
                         <td class='num'>29.03</td>
@@ -2140,6 +2188,13 @@
                         <td>TreVeyon Henderson (33.1) over Jahmyr Gibbs (6.8)</td>
                         <td>RB</td>
                         <td class='num'>26.30</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href="#missed-week-two-buck-luck-9" onclick="const week=document.getElementById('missed-week-two-buck-luck-9'); if(week) week.open=true; const team=week ? week.closest('details.team-drill') : null; if(team) team.open=true;">Week 9</a></td>
+                        <td>Rico Dowdle (34.1) over Javonte Williams (12.3)</td>
+                        <td>W/R/T</td>
+                        <td class='num'>21.80</td>
                     </tr>
                     </tbody>
                         </table>
@@ -2153,7 +2208,7 @@
                 <h4>Players Who Would Have Added The Most Lineup Gain</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Total Lineup Gain</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Best Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Best Week Gain</th></tr></thead>
-                    <tbody><tr><td class=''>Caleb Williams</td><td class=''>QB</td><td class=''>QB</td><td class='num'>73.13</td><td class='num'>4</td><td class='num'>9</td><td class='num'>29.03</td></tr><tr><td class=''>Stefon Diggs</td><td class=''>WR</td><td class=''>WR</td><td class='num'>57.40</td><td class='num'>6</td><td class='num'>11</td><td class='num'>15.20</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>51.70</td><td class='num'>3</td><td class='num'>15</td><td class='num'>26.30</td></tr><tr><td class=''>J.K. Dobbins</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>38.40</td><td class='num'>3</td><td class='num'>5</td><td class='num'>14.60</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>RB</td><td class='num'>32.90</td><td class='num'>3</td><td class='num'>1</td><td class='num'>16.40</td></tr><tr><td class=''>Rico Dowdle</td><td class=''>RB</td><td class=''>RB</td><td class='num'>31.47</td><td class='num'>2</td><td class='num'>9</td><td class='num'>31.30</td></tr><tr><td class=''>Baker Mayfield</td><td class=''>QB</td><td class=''>QB</td><td class='num'>28.07</td><td class='num'>3</td><td class='num'>11</td><td class='num'>10.63</td></tr><tr><td class=''>Garrett Wilson</td><td class=''>WR</td><td class=''>WR</td><td class='num'>27.50</td><td class='num'>2</td><td class='num'>3</td><td class='num'>18.40</td></tr><tr><td class=''>Daniel Jones</td><td class=''>QB</td><td class=''>QB</td><td class='num'>20.77</td><td class='num'>1</td><td class='num'>7</td><td class='num'>20.77</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.70</td><td class='num'>1</td><td class='num'>6</td><td class='num'>18.70</td></tr><tr><td class=''>J.K. Dobbins</td><td class=''>RB</td><td class=''>RB</td><td class='num'>14.30</td><td class='num'>1</td><td class='num'>3</td><td class='num'>14.30</td></tr><tr><td class=''>Hollywood Brown</td><td class=''>WR</td><td class=''>WR</td><td class='num'>9.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>9.70</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>5.40</td><td class='num'>1</td><td class='num'>11</td><td class='num'>5.40</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>4.40</td><td class='num'>1</td><td class='num'>13</td><td class='num'>4.40</td></tr><tr><td class=''>Steelers</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>4.00</td><td class='num'>1</td><td class='num'>14</td><td class='num'>4.00</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>RB</td><td class='num'>3.50</td><td class='num'>1</td><td class='num'>6</td><td class='num'>3.50</td></tr><tr><td class=''>Saints</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>2.00</td><td class='num'>1</td><td class='num'>17</td><td class='num'>2.00</td></tr><tr><td class=''>Calvin Ridley</td><td class=''>WR</td><td class=''>WR</td><td class='num'>1.70</td><td class='num'>1</td><td class='num'>2</td><td class='num'>1.70</td></tr><tr><td class=''>Ollie Gordon II</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>3</td><td class='num'>1.60</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class='num'>1</td><td class='num'>9</td><td class='num'>0.40</td></tr></tbody>
+                    <tbody><tr><td class=''>Caleb Williams</td><td class=''>QB</td><td class=''>QB</td><td class='num'>73.13</td><td class='num'>4</td><td class='num'>9</td><td class='num'>29.03</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>61.60</td><td class='num'>4</td><td class='num'>15</td><td class='num'>26.30</td></tr><tr><td class=''>Stefon Diggs</td><td class=''>WR</td><td class=''>WR</td><td class='num'>57.40</td><td class='num'>6</td><td class='num'>11</td><td class='num'>15.20</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>42.30</td><td class='num'>3</td><td class='num'>1</td><td class='num'>19.70</td></tr><tr><td class=''>J.K. Dobbins</td><td class=''>RB</td><td class=''>RB</td><td class='num'>30.10</td><td class='num'>3</td><td class='num'>3</td><td class='num'>14.30</td></tr><tr><td class=''>Baker Mayfield</td><td class=''>QB</td><td class=''>QB</td><td class='num'>28.07</td><td class='num'>3</td><td class='num'>11</td><td class='num'>10.63</td></tr><tr><td class=''>Garrett Wilson</td><td class=''>WR</td><td class=''>WR</td><td class='num'>27.50</td><td class='num'>2</td><td class='num'>3</td><td class='num'>18.40</td></tr><tr><td class=''>Rico Dowdle</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>21.80</td><td class='num'>1</td><td class='num'>9</td><td class='num'>21.80</td></tr><tr><td class=''>Daniel Jones</td><td class=''>QB</td><td class=''>QB</td><td class='num'>20.77</td><td class='num'>1</td><td class='num'>7</td><td class='num'>20.77</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.70</td><td class='num'>1</td><td class='num'>6</td><td class='num'>18.70</td></tr><tr><td class=''>J.K. Dobbins</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.60</td><td class='num'>1</td><td class='num'>5</td><td class='num'>14.60</td></tr><tr><td class=''>Hollywood Brown</td><td class=''>WR</td><td class=''>WR</td><td class='num'>9.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>9.70</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>5.40</td><td class='num'>1</td><td class='num'>11</td><td class='num'>5.40</td></tr><tr><td class=''>Steelers</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>4.00</td><td class='num'>1</td><td class='num'>14</td><td class='num'>4.00</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>RB</td><td class='num'>3.50</td><td class='num'>1</td><td class='num'>6</td><td class='num'>3.50</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>RB</td><td class='num'>3.00</td><td class='num'>1</td><td class='num'>12</td><td class='num'>3.00</td></tr><tr><td class=''>Saints</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>2.00</td><td class='num'>1</td><td class='num'>17</td><td class='num'>2.00</td></tr><tr><td class=''>Calvin Ridley</td><td class=''>WR</td><td class=''>WR</td><td class='num'>1.70</td><td class='num'>1</td><td class='num'>2</td><td class='num'>1.70</td></tr><tr><td class=''>Ollie Gordon II</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>3</td><td class='num'>1.60</td></tr><tr><td class=''>Rico Dowdle</td><td class=''>RB</td><td class=''>RB</td><td class='num'>0.17</td><td class='num'>1</td><td class='num'>15</td><td class='num'>0.17</td></tr></tbody>
                 </table>
             </article>
         
@@ -2167,7 +2222,7 @@
                 <h4>Poor Start Totals</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Starter</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Jahmyr Gibbs</td><td class=''>RB</td><td class=''>RB</td><td class='num'>79.80</td><td class='num'>4</td><td class='num'>9</td><td class='num'>31.30</td></tr><tr><td class=''>Daniel Jones</td><td class=''>QB</td><td class=''>QB</td><td class='num'>67.03</td><td class='num'>4</td><td class='num'>9</td><td class='num'>29.03</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>WR</td><td class='num'>48.10</td><td class='num'>6</td><td class='num'>11</td><td class='num'>15.20</td></tr><tr><td class=''>Caleb Williams</td><td class=''>QB</td><td class=''>QB</td><td class='num'>39.97</td><td class='num'>3</td><td class='num'>7</td><td class='num'>20.77</td></tr><tr><td class=''>Garrett Wilson</td><td class=''>WR</td><td class=''>WR</td><td class='num'>34.00</td><td class='num'>3</td><td class='num'>6</td><td class='num'>18.70</td></tr><tr><td class=''>CeeDee Lamb</td><td class=''>WR</td><td class=''>WR</td><td class='num'>32.90</td><td class='num'>2</td><td class='num'>3</td><td class='num'>18.40</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>RB</td><td class='num'>27.97</td><td class='num'>3</td><td class='num'>3</td><td class='num'>14.30</td></tr><tr><td class=''>J.K. Dobbins</td><td class=''>RB</td><td class=''>RB</td><td class='num'>19.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>19.60</td></tr><tr><td class=''>Baker Mayfield</td><td class=''>QB</td><td class=''>QB</td><td class='num'>14.97</td><td class='num'>1</td><td class='num'>3</td><td class='num'>14.97</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.60</td><td class='num'>1</td><td class='num'>5</td><td class='num'>14.60</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>12.70</td><td class='num'>1</td><td class='num'>2</td><td class='num'>12.70</td></tr><tr><td class=''>Calvin Ridley</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>11.10</td><td class='num'>1</td><td class='num'>1</td><td class='num'>11.10</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>5.80</td><td class='num'>2</td><td class='num'>11</td><td class='num'>5.40</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>RB</td><td class='num'>5.10</td><td class='num'>2</td><td class='num'>6</td><td class='num'>3.50</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>4.40</td><td class='num'>1</td><td class='num'>13</td><td class='num'>4.40</td></tr><tr><td class=''>Ravens</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>4.00</td><td class='num'>1</td><td class='num'>14</td><td class='num'>4.00</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>3.00</td><td class='num'>1</td><td class='num'>12</td><td class='num'>3.00</td></tr><tr><td class=''>Steelers</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>2.00</td><td class='num'>1</td><td class='num'>17</td><td class='num'>2.00</td></tr></tbody>
+                    <tbody><tr><td class=''>Daniel Jones</td><td class=''>QB</td><td class=''>QB</td><td class='num'>67.03</td><td class='num'>4</td><td class='num'>9</td><td class='num'>29.03</td></tr><tr><td class=''>Jahmyr Gibbs</td><td class=''>RB</td><td class=''>RB</td><td class='num'>49.80</td><td class='num'>4</td><td class='num'>15</td><td class='num'>26.30</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>WR</td><td class='num'>48.10</td><td class='num'>6</td><td class='num'>11</td><td class='num'>15.20</td></tr><tr><td class=''>Caleb Williams</td><td class=''>QB</td><td class=''>QB</td><td class='num'>39.97</td><td class='num'>3</td><td class='num'>7</td><td class='num'>20.77</td></tr><tr><td class=''>Garrett Wilson</td><td class=''>WR</td><td class=''>WR</td><td class='num'>34.00</td><td class='num'>3</td><td class='num'>6</td><td class='num'>18.70</td></tr><tr><td class=''>CeeDee Lamb</td><td class=''>WR</td><td class=''>WR</td><td class='num'>32.90</td><td class='num'>2</td><td class='num'>3</td><td class='num'>18.40</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>27.20</td><td class='num'>2</td><td class='num'>9</td><td class='num'>21.80</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>RB</td><td class='num'>22.47</td><td class='num'>3</td><td class='num'>3</td><td class='num'>14.30</td></tr><tr><td class=''>Calvin Ridley</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>19.70</td><td class='num'>1</td><td class='num'>1</td><td class='num'>19.70</td></tr><tr><td class=''>J.K. Dobbins</td><td class=''>RB</td><td class=''>RB</td><td class='num'>19.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>19.60</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>18.20</td><td class='num'>1</td><td class='num'>2</td><td class='num'>18.20</td></tr><tr><td class=''>Baker Mayfield</td><td class=''>QB</td><td class=''>QB</td><td class='num'>14.97</td><td class='num'>1</td><td class='num'>3</td><td class='num'>14.97</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.60</td><td class='num'>1</td><td class='num'>5</td><td class='num'>14.60</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>RB</td><td class='num'>5.10</td><td class='num'>2</td><td class='num'>6</td><td class='num'>3.50</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>4.40</td><td class='num'>1</td><td class='num'>13</td><td class='num'>4.40</td></tr><tr><td class=''>Ravens</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>4.00</td><td class='num'>1</td><td class='num'>14</td><td class='num'>4.00</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>3.00</td><td class='num'>1</td><td class='num'>12</td><td class='num'>3.00</td></tr><tr><td class=''>Steelers</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>2.00</td><td class='num'>1</td><td class='num'>17</td><td class='num'>2.00</td></tr></tbody>
                 </table>
             </article>
         
@@ -2220,7 +2275,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Javonte Williams (23.4) over Jahmyr Gibbs (7.0)</td><td class=''>RB</td><td class='num'>16.40</td><td class=''>RB</td></tr><tr><td class=''>J.K. Dobbins (14.8) over Calvin Ridley (3.7)</td><td class=''>W/R/T</td><td class='num'>11.10</td><td class=''>RB</td></tr><tr><td class=''>Garrett Wilson (19.5) over Ladd McConkey (10.4)</td><td class=''>WR</td><td class='num'>9.10</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Javonte Williams (23.4) over Calvin Ridley (3.7)</td><td class=''>W/R/T</td><td class='num'>19.70</td><td class=''>RB</td></tr><tr><td class=''>Garrett Wilson (19.5) over Ladd McConkey (10.4)</td><td class=''>WR</td><td class='num'>9.10</td><td class=''>WR</td></tr><tr><td class=''>J.K. Dobbins (14.8) over Jahmyr Gibbs (7.0)</td><td class=''>RB</td><td class='num'>7.80</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -2234,7 +2289,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Javonte Williams (23.4) over Jahmyr Gibbs (7.0)</td><td class=''>RB</td><td class='num'>16.40</td><td class=''>RB</td></tr><tr><td class=''>J.K. Dobbins (14.8) over Calvin Ridley (3.7)</td><td class=''>W/R/T</td><td class='num'>11.10</td><td class=''>WR</td></tr><tr><td class=''>Garrett Wilson (19.5) over Ladd McConkey (10.4)</td><td class=''>WR</td><td class='num'>9.10</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Javonte Williams (23.4) over Calvin Ridley (3.7)</td><td class=''>W/R/T</td><td class='num'>19.70</td><td class=''>WR</td></tr><tr><td class=''>Garrett Wilson (19.5) over Ladd McConkey (10.4)</td><td class=''>WR</td><td class='num'>9.10</td><td class=''>WR</td></tr><tr><td class=''>J.K. Dobbins (14.8) over Jahmyr Gibbs (7.0)</td><td class=''>RB</td><td class='num'>7.80</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -2289,7 +2344,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Javonte Williams (25.0) over Chase Brown (11.5)</td><td class=''>RB</td><td class='num'>13.50</td><td class=''>RB</td></tr><tr><td class=''>J.K. Dobbins (19.5) over Ladd McConkey (6.8)</td><td class=''>W/R/T</td><td class='num'>12.70</td><td class=''>RB</td></tr><tr><td class=''>Calvin Ridley (8.7) over Garrett Wilson (7.0)</td><td class=''>WR</td><td class='num'>1.70</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Javonte Williams (25.0) over Ladd McConkey (6.8)</td><td class=''>W/R/T</td><td class='num'>18.20</td><td class=''>RB</td></tr><tr><td class=''>J.K. Dobbins (19.5) over Chase Brown (11.5)</td><td class=''>RB</td><td class='num'>8.00</td><td class=''>RB</td></tr><tr><td class=''>Calvin Ridley (8.7) over Garrett Wilson (7.0)</td><td class=''>WR</td><td class='num'>1.70</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -2303,7 +2358,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Javonte Williams (25.0) over Chase Brown (11.5)</td><td class=''>RB</td><td class='num'>13.50</td><td class=''>RB</td></tr><tr><td class=''>J.K. Dobbins (19.5) over Ladd McConkey (6.8)</td><td class=''>W/R/T</td><td class='num'>12.70</td><td class=''>WR</td></tr><tr><td class=''>Calvin Ridley (8.7) over Garrett Wilson (7.0)</td><td class=''>WR</td><td class='num'>1.70</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Javonte Williams (25.0) over Ladd McConkey (6.8)</td><td class=''>W/R/T</td><td class='num'>18.20</td><td class=''>WR</td></tr><tr><td class=''>J.K. Dobbins (19.5) over Chase Brown (11.5)</td><td class=''>RB</td><td class='num'>8.00</td><td class=''>RB</td></tr><tr><td class=''>Calvin Ridley (8.7) over Garrett Wilson (7.0)</td><td class=''>WR</td><td class='num'>1.70</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -2772,7 +2827,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Rico Dowdle (34.1) over Jahmyr Gibbs (2.8)</td><td class=''>RB</td><td class='num'>31.30</td><td class=''>RB</td></tr><tr><td class=''>Caleb Williams (44.8) over Daniel Jones (15.8)</td><td class=''>QB</td><td class='num'>29.03</td><td class=''>QB</td></tr><tr><td class=''>Stefon Diggs (11.8) over Ladd McConkey (7.6)</td><td class=''>WR</td><td class='num'>4.20</td><td class=''>WR</td></tr><tr><td class=''>TreVeyon Henderson (12.7) over Javonte Williams (12.3)</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Caleb Williams (44.8) over Daniel Jones (15.8)</td><td class=''>QB</td><td class='num'>29.03</td><td class=''>QB</td></tr><tr><td class=''>Rico Dowdle (34.1) over Javonte Williams (12.3)</td><td class=''>W/R/T</td><td class='num'>21.80</td><td class=''>RB</td></tr><tr><td class=''>TreVeyon Henderson (12.7) over Jahmyr Gibbs (2.8)</td><td class=''>RB</td><td class='num'>9.90</td><td class=''>RB</td></tr><tr><td class=''>Stefon Diggs (11.8) over Ladd McConkey (7.6)</td><td class=''>WR</td><td class='num'>4.20</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -2786,7 +2841,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Rico Dowdle (34.1) over Jahmyr Gibbs (2.8)</td><td class=''>RB</td><td class='num'>31.30</td><td class=''>RB</td></tr><tr><td class=''>Caleb Williams (44.8) over Daniel Jones (15.8)</td><td class=''>QB</td><td class='num'>29.03</td><td class=''>QB</td></tr><tr><td class=''>Stefon Diggs (11.8) over Ladd McConkey (7.6)</td><td class=''>WR</td><td class='num'>4.20</td><td class=''>WR</td></tr><tr><td class=''>TreVeyon Henderson (12.7) over Javonte Williams (12.3)</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Caleb Williams (44.8) over Daniel Jones (15.8)</td><td class=''>QB</td><td class='num'>29.03</td><td class=''>QB</td></tr><tr><td class=''>Rico Dowdle (34.1) over Javonte Williams (12.3)</td><td class=''>W/R/T</td><td class='num'>21.80</td><td class=''>RB</td></tr><tr><td class=''>TreVeyon Henderson (12.7) over Jahmyr Gibbs (2.8)</td><td class=''>RB</td><td class='num'>9.90</td><td class=''>RB</td></tr><tr><td class=''>Stefon Diggs (11.8) over Ladd McConkey (7.6)</td><td class=''>WR</td><td class='num'>4.20</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -5830,14 +5885,14 @@
                     </article>
                 
                         <details class="deep-card compact-table sub-drill" style="margin-top:10px; background:var(--surface-muted);">
-                            <summary><strong>Players Who Would Have Added The Most Lineup Gain</strong> <span class="muted">| 17 rows</span></summary>
+                            <summary><strong>Players Who Would Have Added The Most Lineup Gain</strong> <span class="muted">| 15 rows</span></summary>
                             <div style="margin-top:10px;">
                                 
             <article class="deep-card compact-table">
                 <h4>Players Who Would Have Added The Most Lineup Gain</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Total Lineup Gain</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Best Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Best Week Gain</th></tr></thead>
-                    <tbody><tr><td class=''>Dak Prescott</td><td class=''>QB</td><td class=''>QB</td><td class='num'>42.00</td><td class='num'>4</td><td class='num'>5</td><td class='num'>15.07</td></tr><tr><td class=''>Tee Higgins</td><td class=''>WR</td><td class=''>WR</td><td class='num'>29.70</td><td class='num'>2</td><td class='num'>14</td><td class='num'>20.50</td></tr><tr><td class=''>George Pickens</td><td class=''>WR</td><td class=''>WR</td><td class='num'>24.80</td><td class='num'>1</td><td class='num'>4</td><td class='num'>24.80</td></tr><tr><td class=''>Jalen Hurts</td><td class=''>QB</td><td class=''>QB</td><td class='num'>21.73</td><td class='num'>1</td><td class='num'>15</td><td class='num'>21.73</td></tr><tr><td class=''>Tee Higgins</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>18.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>18.60</td></tr><tr><td class=''>Terry McLaurin</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.40</td><td class='num'>2</td><td class='num'>15</td><td class='num'>10.60</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>16.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>16.60</td></tr><tr><td class=''>Travis Etienne Jr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>15.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>15.70</td></tr><tr><td class=''>Tyler Allgeier</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>12.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Kyle Pitts Sr.</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.20</td><td class='num'>1</td><td class='num'>4</td><td class='num'>12.20</td></tr><tr><td class=''>Bucky Irving</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>11.80</td><td class='num'>1</td><td class='num'>13</td><td class='num'>11.80</td></tr><tr><td class=''>Christian Watson</td><td class=''>WR</td><td class=''>WR</td><td class='num'>10.60</td><td class='num'>1</td><td class='num'>14</td><td class='num'>10.60</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>8.90</td><td class='num'>1</td><td class='num'>9</td><td class='num'>8.90</td></tr><tr><td class=''>Tyler Allgeier</td><td class=''>RB</td><td class=''>RB</td><td class='num'>8.40</td><td class='num'>1</td><td class='num'>13</td><td class='num'>8.40</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>WR</td><td class='num'>3.40</td><td class='num'>1</td><td class='num'>11</td><td class='num'>3.40</td></tr><tr><td class=''>Jacory Croskey-Merritt</td><td class=''>RB</td><td class=''>RB</td><td class='num'>2.30</td><td class='num'>1</td><td class='num'>4</td><td class='num'>2.30</td></tr><tr><td class=''>Romeo Doubs</td><td class=''>WR</td><td class=''>WR</td><td class='num'>0.40</td><td class='num'>1</td><td class='num'>9</td><td class='num'>0.40</td></tr></tbody>
+                    <tbody><tr><td class=''>Dak Prescott</td><td class=''>QB</td><td class=''>QB</td><td class='num'>42.00</td><td class='num'>4</td><td class='num'>5</td><td class='num'>15.07</td></tr><tr><td class=''>Tee Higgins</td><td class=''>WR</td><td class=''>WR</td><td class='num'>29.70</td><td class='num'>2</td><td class='num'>14</td><td class='num'>20.50</td></tr><tr><td class=''>George Pickens</td><td class=''>WR</td><td class=''>WR</td><td class='num'>24.80</td><td class='num'>1</td><td class='num'>4</td><td class='num'>24.80</td></tr><tr><td class=''>Jalen Hurts</td><td class=''>QB</td><td class=''>QB</td><td class='num'>21.73</td><td class='num'>1</td><td class='num'>15</td><td class='num'>21.73</td></tr><tr><td class=''>Tyler Allgeier</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>20.80</td><td class='num'>2</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Tee Higgins</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>18.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>18.60</td></tr><tr><td class=''>Terry McLaurin</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.40</td><td class='num'>2</td><td class='num'>15</td><td class='num'>10.60</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>16.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>16.60</td></tr><tr><td class=''>Travis Etienne Jr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>15.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>15.70</td></tr><tr><td class=''>Kyle Pitts Sr.</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.20</td><td class='num'>1</td><td class='num'>4</td><td class='num'>12.20</td></tr><tr><td class=''>Bucky Irving</td><td class=''>RB</td><td class=''>RB</td><td class='num'>12.00</td><td class='num'>1</td><td class='num'>13</td><td class='num'>12.00</td></tr><tr><td class=''>Christian Watson</td><td class=''>WR</td><td class=''>WR</td><td class='num'>10.60</td><td class='num'>1</td><td class='num'>14</td><td class='num'>10.60</td></tr><tr><td class=''>Romeo Doubs</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>7.60</td><td class='num'>1</td><td class='num'>9</td><td class='num'>7.60</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>WR</td><td class='num'>5.10</td><td class='num'>2</td><td class='num'>11</td><td class='num'>3.40</td></tr><tr><td class=''>Jacory Croskey-Merritt</td><td class=''>RB</td><td class=''>RB</td><td class='num'>2.30</td><td class='num'>1</td><td class='num'>4</td><td class='num'>2.30</td></tr></tbody>
                 </table>
             </article>
         
@@ -5851,7 +5906,7 @@
                 <h4>Poor Start Totals</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Starter</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Jalen Hurts</td><td class=''>QB</td><td class=''>QB</td><td class='num'>42.00</td><td class='num'>4</td><td class='num'>5</td><td class='num'>15.07</td></tr><tr><td class=''>George Pickens</td><td class=''>WR</td><td class=''>WR</td><td class='num'>39.30</td><td class='num'>4</td><td class='num'>14</td><td class='num'>20.50</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>33.30</td><td class='num'>3</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Ricky Pearsall</td><td class=''>WR</td><td class=''>WR</td><td class='num'>24.80</td><td class='num'>1</td><td class='num'>4</td><td class='num'>24.80</td></tr><tr><td class=''>Dak Prescott</td><td class=''>QB</td><td class=''>QB</td><td class='num'>21.73</td><td class='num'>1</td><td class='num'>15</td><td class='num'>21.73</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>WR</td><td class='num'>19.80</td><td class='num'>2</td><td class='num'>14</td><td class='num'>10.60</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>18.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>18.60</td></tr><tr><td class=''>Bucky Irving</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>16.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>16.60</td></tr><tr><td class=''>Derrick Henry</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>15.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>15.70</td></tr><tr><td class=''>Juwan Johnson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.20</td><td class='num'>1</td><td class='num'>4</td><td class='num'>12.20</td></tr><tr><td class=''>Travis Etienne Jr.</td><td class=''>RB</td><td class=''>RB</td><td class='num'>8.40</td><td class='num'>1</td><td class='num'>13</td><td class='num'>8.40</td></tr><tr><td class=''>Tee Higgins</td><td class=''>WR</td><td class=''>WR</td><td class='num'>3.40</td><td class='num'>1</td><td class='num'>11</td><td class='num'>3.40</td></tr><tr><td class=''>Trey Benson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>2.30</td><td class='num'>1</td><td class='num'>4</td><td class='num'>2.30</td></tr></tbody>
+                    <tbody><tr><td class=''>Jalen Hurts</td><td class=''>QB</td><td class=''>QB</td><td class='num'>42.00</td><td class='num'>4</td><td class='num'>5</td><td class='num'>15.07</td></tr><tr><td class=''>George Pickens</td><td class=''>WR</td><td class=''>WR</td><td class='num'>40.60</td><td class='num'>4</td><td class='num'>14</td><td class='num'>20.50</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>28.40</td><td class='num'>3</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Ricky Pearsall</td><td class=''>WR</td><td class=''>WR</td><td class='num'>24.80</td><td class='num'>1</td><td class='num'>4</td><td class='num'>24.80</td></tr><tr><td class=''>Dak Prescott</td><td class=''>QB</td><td class=''>QB</td><td class='num'>21.73</td><td class='num'>1</td><td class='num'>15</td><td class='num'>21.73</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>WR</td><td class='num'>19.80</td><td class='num'>2</td><td class='num'>14</td><td class='num'>10.60</td></tr><tr><td class=''>Jameson Williams</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>18.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>18.60</td></tr><tr><td class=''>Bucky Irving</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>16.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>16.60</td></tr><tr><td class=''>Derrick Henry</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>15.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>15.70</td></tr><tr><td class=''>Juwan Johnson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.20</td><td class='num'>1</td><td class='num'>4</td><td class='num'>12.20</td></tr><tr><td class=''>Travis Etienne Jr.</td><td class=''>RB</td><td class=''>RB</td><td class='num'>12.00</td><td class='num'>1</td><td class='num'>13</td><td class='num'>12.00</td></tr><tr><td class=''>Tee Higgins</td><td class=''>WR</td><td class=''>WR</td><td class='num'>3.40</td><td class='num'>1</td><td class='num'>11</td><td class='num'>3.40</td></tr><tr><td class=''>Trey Benson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>2.30</td><td class='num'>1</td><td class='num'>4</td><td class='num'>2.30</td></tr></tbody>
                 </table>
             </article>
         
@@ -6456,7 +6511,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Jameson Williams (15.6) over Tyrone Tracy Jr. (6.7)</td><td class=''>W/R/T</td><td class='num'>8.90</td><td class=''>WR</td></tr><tr><td class=''>Romeo Doubs (14.3) over George Pickens (13.9)</td><td class=''>WR</td><td class='num'>0.40</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Romeo Doubs (14.3) over Tyrone Tracy Jr. (6.7)</td><td class=''>W/R/T</td><td class='num'>7.60</td><td class=''>WR</td></tr><tr><td class=''>Jameson Williams (15.6) over George Pickens (13.9)</td><td class=''>WR</td><td class='num'>1.70</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -6470,7 +6525,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Jameson Williams (15.6) over Tyrone Tracy Jr. (6.7)</td><td class=''>W/R/T</td><td class='num'>8.90</td><td class=''>RB</td></tr><tr><td class=''>Romeo Doubs (14.3) over George Pickens (13.9)</td><td class=''>WR</td><td class='num'>0.40</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Romeo Doubs (14.3) over Tyrone Tracy Jr. (6.7)</td><td class=''>W/R/T</td><td class='num'>7.60</td><td class=''>RB</td></tr><tr><td class=''>Jameson Williams (15.6) over George Pickens (13.9)</td><td class=''>WR</td><td class='num'>1.70</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -6732,7 +6787,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Bucky Irving (18.1) over Tyrone Tracy Jr. (6.3)</td><td class=''>W/R/T</td><td class='num'>11.80</td><td class=''>RB</td></tr><tr><td class=''>Tyler Allgeier (14.5) over Travis Etienne Jr. (6.1)</td><td class=''>RB</td><td class='num'>8.40</td><td class=''>RB</td></tr><tr><td class=''>Terry McLaurin (21.6) over George Pickens (13.8)</td><td class=''>WR</td><td class='num'>7.80</td><td class=''>WR</td></tr><tr><td class=''>Dak Prescott (22.5) over Jalen Hurts (19.8)</td><td class=''>QB</td><td class='num'>2.70</td><td class=''>QB</td></tr></tbody>
+                    <tbody><tr><td class=''>Bucky Irving (18.1) over Travis Etienne Jr. (6.1)</td><td class=''>RB</td><td class='num'>12.00</td><td class=''>RB</td></tr><tr><td class=''>Tyler Allgeier (14.5) over Tyrone Tracy Jr. (6.3)</td><td class=''>W/R/T</td><td class='num'>8.20</td><td class=''>RB</td></tr><tr><td class=''>Terry McLaurin (21.6) over George Pickens (13.8)</td><td class=''>WR</td><td class='num'>7.80</td><td class=''>WR</td></tr><tr><td class=''>Dak Prescott (22.5) over Jalen Hurts (19.8)</td><td class=''>QB</td><td class='num'>2.70</td><td class=''>QB</td></tr></tbody>
                 </table>
             </article>
         
@@ -6746,7 +6801,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Bucky Irving (18.1) over Tyrone Tracy Jr. (6.3)</td><td class=''>W/R/T</td><td class='num'>11.80</td><td class=''>RB</td></tr><tr><td class=''>Tyler Allgeier (14.5) over Travis Etienne Jr. (6.1)</td><td class=''>RB</td><td class='num'>8.40</td><td class=''>RB</td></tr><tr><td class=''>Terry McLaurin (21.6) over George Pickens (13.8)</td><td class=''>WR</td><td class='num'>7.80</td><td class=''>WR</td></tr><tr><td class=''>Dak Prescott (22.5) over Jalen Hurts (19.8)</td><td class=''>QB</td><td class='num'>2.70</td><td class=''>QB</td></tr></tbody>
+                    <tbody><tr><td class=''>Bucky Irving (18.1) over Travis Etienne Jr. (6.1)</td><td class=''>RB</td><td class='num'>12.00</td><td class=''>RB</td></tr><tr><td class=''>Tyler Allgeier (14.5) over Tyrone Tracy Jr. (6.3)</td><td class=''>W/R/T</td><td class='num'>8.20</td><td class=''>RB</td></tr><tr><td class=''>Terry McLaurin (21.6) over George Pickens (13.8)</td><td class=''>WR</td><td class='num'>7.80</td><td class=''>WR</td></tr><tr><td class=''>Dak Prescott (22.5) over Jalen Hurts (19.8)</td><td class=''>QB</td><td class='num'>2.70</td><td class=''>QB</td></tr></tbody>
                 </table>
             </article>
         
@@ -6966,14 +7021,14 @@
                     </article>
                 
                         <details class="deep-card compact-table sub-drill" style="margin-top:10px; background:var(--surface-muted);">
-                            <summary><strong>Players Who Would Have Added The Most Lineup Gain</strong> <span class="muted">| 16 rows</span></summary>
+                            <summary><strong>Players Who Would Have Added The Most Lineup Gain</strong> <span class="muted">| 17 rows</span></summary>
                             <div style="margin-top:10px;">
                                 
             <article class="deep-card compact-table">
                 <h4>Players Who Would Have Added The Most Lineup Gain</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Total Lineup Gain</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Best Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Best Week Gain</th></tr></thead>
-                    <tbody><tr><td class=''>Jared Goff</td><td class=''>QB</td><td class=''>QB</td><td class='num'>64.80</td><td class='num'>7</td><td class='num'>13</td><td class='num'>16.03</td></tr><tr><td class=''>Woody Marks</td><td class=''>RB</td><td class=''>RB</td><td class='num'>30.40</td><td class='num'>2</td><td class='num'>4</td><td class='num'>20.00</td></tr><tr><td class=''>Jordan Addison</td><td class=''>WR</td><td class=''>WR</td><td class='num'>21.40</td><td class='num'>2</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.90</td><td class='num'>3</td><td class='num'>6</td><td class='num'>8.60</td></tr><tr><td class=''>Dalton Schultz</td><td class=''>TE</td><td class=''>TE</td><td class='num'>18.90</td><td class='num'>2</td><td class='num'>15</td><td class='num'>17.00</td></tr><tr><td class=''>Woody Marks</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>11.60</td><td class='num'>2</td><td class='num'>8</td><td class='num'>7.60</td></tr><tr><td class=''>Jauan Jennings</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>10.50</td><td class='num'>2</td><td class='num'>15</td><td class='num'>6.60</td></tr><tr><td class=''>Jake Ferguson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>10.40</td><td class='num'>2</td><td class='num'>2</td><td class='num'>9.60</td></tr><tr><td class=''>Jauan Jennings</td><td class=''>WR</td><td class=''>WR</td><td class='num'>9.60</td><td class='num'>1</td><td class='num'>13</td><td class='num'>9.60</td></tr><tr><td class=''>Alvin Kamara</td><td class=''>RB</td><td class=''>RB</td><td class='num'>7.10</td><td class='num'>1</td><td class='num'>10</td><td class='num'>7.10</td></tr><tr><td class=''>Darnell Mooney</td><td class=''>WR</td><td class=''>WR</td><td class='num'>6.10</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6.10</td></tr><tr><td class=''>T.J. Hockenson</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>5.30</td><td class='num'>1</td><td class='num'>3</td><td class='num'>5.30</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>5.00</td><td class='num'>1</td><td class='num'>1</td><td class='num'>5.00</td></tr><tr><td class=''>Jakobi Meyers</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>5.00</td><td class='num'>2</td><td class='num'>12</td><td class='num'>3.00</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>4.40</td><td class='num'>1</td><td class='num'>4</td><td class='num'>4.40</td></tr><tr><td class=''>Blake Corum</td><td class=''>RB</td><td class=''>RB</td><td class='num'>4.30</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.30</td></tr></tbody>
+                    <tbody><tr><td class=''>Jared Goff</td><td class=''>QB</td><td class=''>QB</td><td class='num'>64.80</td><td class='num'>7</td><td class='num'>13</td><td class='num'>16.03</td></tr><tr><td class=''>Woody Marks</td><td class=''>RB</td><td class=''>RB</td><td class='num'>40.10</td><td class='num'>3</td><td class='num'>4</td><td class='num'>20.00</td></tr><tr><td class=''>Dalton Schultz</td><td class=''>TE</td><td class=''>TE</td><td class='num'>18.90</td><td class='num'>2</td><td class='num'>15</td><td class='num'>17.00</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>17.60</td><td class='num'>2</td><td class='num'>4</td><td class='num'>12.60</td></tr><tr><td class=''>Jauan Jennings</td><td class=''>WR</td><td class=''>WR</td><td class='num'>14.00</td><td class='num'>2</td><td class='num'>13</td><td class='num'>9.60</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>WR</td><td class='num'>13.70</td><td class='num'>2</td><td class='num'>6</td><td class='num'>8.60</td></tr><tr><td class=''>Jordan Addison</td><td class=''>WR</td><td class=''>WR</td><td class='num'>11.00</td><td class='num'>1</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Jake Ferguson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>10.40</td><td class='num'>2</td><td class='num'>2</td><td class='num'>9.60</td></tr><tr><td class=''>Woody Marks</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>7.60</td><td class='num'>1</td><td class='num'>8</td><td class='num'>7.60</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>7.40</td><td class='num'>1</td><td class='num'>15</td><td class='num'>7.40</td></tr><tr><td class=''>Darnell Mooney</td><td class=''>WR</td><td class=''>WR</td><td class='num'>6.10</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6.10</td></tr><tr><td class=''>T.J. Hockenson</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>5.30</td><td class='num'>1</td><td class='num'>3</td><td class='num'>5.30</td></tr><tr><td class=''>Jakobi Meyers</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>5.00</td><td class='num'>2</td><td class='num'>12</td><td class='num'>3.00</td></tr><tr><td class=''>Blake Corum</td><td class=''>RB</td><td class=''>RB</td><td class='num'>4.30</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.30</td></tr><tr><td class=''>Jauan Jennings</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.90</td><td class='num'>1</td><td class='num'>2</td><td class='num'>3.90</td></tr><tr><td class=''>Jordan Addison</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>2.20</td><td class='num'>1</td><td class='num'>4</td><td class='num'>2.20</td></tr><tr><td class=''>Alvin Kamara</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>1.40</td><td class='num'>1</td><td class='num'>10</td><td class='num'>1.40</td></tr></tbody>
                 </table>
             </article>
         
@@ -6987,7 +7042,7 @@
                 <h4>Poor Start Totals</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Starter</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Lamar Jackson</td><td class=''>QB</td><td class=''>QB</td><td class='num'>64.80</td><td class='num'>7</td><td class='num'>13</td><td class='num'>16.03</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>24.70</td><td class='num'>3</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Malik Nabers</td><td class=''>WR</td><td class=''>WR</td><td class='num'>21.50</td><td class='num'>3</td><td class='num'>4</td><td class='num'>10.40</td></tr><tr><td class=''>Alvin Kamara</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>21.20</td><td class='num'>4</td><td class='num'>8</td><td class='num'>7.60</td></tr><tr><td class=''>Chuba Hubbard</td><td class=''>RB</td><td class=''>RB</td><td class='num'>20.00</td><td class='num'>1</td><td class='num'>4</td><td class='num'>20.00</td></tr><tr><td class=''>Jake Ferguson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>18.90</td><td class='num'>2</td><td class='num'>15</td><td class='num'>17.00</td></tr><tr><td class=''>Jaxon Smith-Njigba</td><td class=''>WR</td><td class=''>WR</td><td class='num'>14.80</td><td class='num'>2</td><td class='num'>13</td><td class='num'>9.60</td></tr><tr><td class=''>T.J. Hockenson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>10.40</td><td class='num'>2</td><td class='num'>2</td><td class='num'>9.60</td></tr><tr><td class=''>Alvin Kamara</td><td class=''>RB</td><td class=''>RB</td><td class='num'>10.40</td><td class='num'>1</td><td class='num'>12</td><td class='num'>10.40</td></tr><tr><td class=''>Rachaad White</td><td class=''>RB</td><td class=''>RB</td><td class='num'>7.10</td><td class='num'>1</td><td class='num'>10</td><td class='num'>7.10</td></tr><tr><td class=''>Jakobi Meyers</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>6.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>6.60</td></tr><tr><td class=''>Jauan Jennings</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>6.00</td><td class='num'>2</td><td class='num'>10</td><td class='num'>4.00</td></tr><tr><td class=''>Woody Marks</td><td class=''>RB</td><td class=''>RB</td><td class='num'>4.30</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.30</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.00</td><td class='num'>1</td><td class='num'>12</td><td class='num'>3.00</td></tr></tbody>
+                    <tbody><tr><td class=''>Lamar Jackson</td><td class=''>QB</td><td class=''>QB</td><td class='num'>64.80</td><td class='num'>7</td><td class='num'>13</td><td class='num'>16.03</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>24.70</td><td class='num'>3</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Malik Nabers</td><td class=''>WR</td><td class=''>WR</td><td class='num'>23.70</td><td class='num'>3</td><td class='num'>4</td><td class='num'>12.60</td></tr><tr><td class=''>Chuba Hubbard</td><td class=''>RB</td><td class=''>RB</td><td class='num'>20.00</td><td class='num'>1</td><td class='num'>4</td><td class='num'>20.00</td></tr><tr><td class=''>Alvin Kamara</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>19.00</td><td class='num'>4</td><td class='num'>8</td><td class='num'>7.60</td></tr><tr><td class=''>Jake Ferguson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>18.90</td><td class='num'>2</td><td class='num'>15</td><td class='num'>17.00</td></tr><tr><td class=''>Jaxon Smith-Njigba</td><td class=''>WR</td><td class=''>WR</td><td class='num'>14.00</td><td class='num'>2</td><td class='num'>13</td><td class='num'>9.60</td></tr><tr><td class=''>T.J. Hockenson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>10.40</td><td class='num'>2</td><td class='num'>2</td><td class='num'>9.60</td></tr><tr><td class=''>Alvin Kamara</td><td class=''>RB</td><td class=''>RB</td><td class='num'>10.40</td><td class='num'>1</td><td class='num'>12</td><td class='num'>10.40</td></tr><tr><td class=''>Rachaad White</td><td class=''>RB</td><td class=''>RB</td><td class='num'>9.70</td><td class='num'>1</td><td class='num'>10</td><td class='num'>9.70</td></tr><tr><td class=''>Jakobi Meyers</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>7.40</td><td class='num'>1</td><td class='num'>15</td><td class='num'>7.40</td></tr><tr><td class=''>Woody Marks</td><td class=''>RB</td><td class=''>RB</td><td class='num'>4.30</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.30</td></tr><tr><td class=''>Jauan Jennings</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.40</td><td class='num'>2</td><td class='num'>11</td><td class='num'>2.00</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.00</td><td class='num'>1</td><td class='num'>12</td><td class='num'>3.00</td></tr></tbody>
                 </table>
             </article>
         
@@ -7247,7 +7302,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Woody Marks (30.9) over Chuba Hubbard (10.9)</td><td class=''>RB</td><td class='num'>20.00</td><td class=''>RB</td></tr><tr><td class=''>Jordan Addison (13.4) over Malik Nabers (3.0)</td><td class=''>WR</td><td class='num'>10.40</td><td class=''>WR</td></tr><tr><td class=''>Marvin Harrison Jr. (15.6) over Alvin Kamara (11.2)</td><td class=''>W/R/T</td><td class='num'>4.40</td><td class=''>WR</td></tr><tr><td class=''>Jared Goff (15.6) over Lamar Jackson (14.7)</td><td class=''>QB</td><td class='num'>0.90</td><td class=''>QB</td></tr></tbody>
+                    <tbody><tr><td class=''>Woody Marks (30.9) over Chuba Hubbard (10.9)</td><td class=''>RB</td><td class='num'>20.00</td><td class=''>RB</td></tr><tr><td class=''>Marvin Harrison Jr. (15.6) over Malik Nabers (3.0)</td><td class=''>WR</td><td class='num'>12.60</td><td class=''>WR</td></tr><tr><td class=''>Jordan Addison (13.4) over Alvin Kamara (11.2)</td><td class=''>W/R/T</td><td class='num'>2.20</td><td class=''>WR</td></tr><tr><td class=''>Jared Goff (15.6) over Lamar Jackson (14.7)</td><td class=''>QB</td><td class='num'>0.90</td><td class=''>QB</td></tr></tbody>
                 </table>
             </article>
         
@@ -7261,7 +7316,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Woody Marks (30.9) over Chuba Hubbard (10.9)</td><td class=''>RB</td><td class='num'>20.00</td><td class=''>RB</td></tr><tr><td class=''>Jordan Addison (13.4) over Malik Nabers (3.0)</td><td class=''>WR</td><td class='num'>10.40</td><td class=''>WR</td></tr><tr><td class=''>Marvin Harrison Jr. (15.6) over Alvin Kamara (11.2)</td><td class=''>W/R/T</td><td class='num'>4.40</td><td class=''>RB</td></tr><tr><td class=''>Jared Goff (15.6) over Lamar Jackson (14.7)</td><td class=''>QB</td><td class='num'>0.90</td><td class=''>QB</td></tr></tbody>
+                    <tbody><tr><td class=''>Woody Marks (30.9) over Chuba Hubbard (10.9)</td><td class=''>RB</td><td class='num'>20.00</td><td class=''>RB</td></tr><tr><td class=''>Marvin Harrison Jr. (15.6) over Malik Nabers (3.0)</td><td class=''>WR</td><td class='num'>12.60</td><td class=''>WR</td></tr><tr><td class=''>Jordan Addison (13.4) over Alvin Kamara (11.2)</td><td class=''>W/R/T</td><td class='num'>2.20</td><td class=''>RB</td></tr><tr><td class=''>Jared Goff (15.6) over Lamar Jackson (14.7)</td><td class=''>QB</td><td class='num'>0.90</td><td class=''>QB</td></tr></tbody>
                 </table>
             </article>
         
@@ -7661,7 +7716,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Jared Goff (28.7) over Lamar Jackson (20.5)</td><td class=''>QB</td><td class='num'>8.20</td><td class=''>QB</td></tr><tr><td class=''>Alvin Kamara (16.5) over Rachaad White (9.4)</td><td class=''>RB</td><td class='num'>7.10</td><td class=''>RB</td></tr><tr><td class=''>Chris Olave (19.4) over Marvin Harrison Jr. (14.3)</td><td class=''>WR</td><td class='num'>5.10</td><td class=''>WR</td></tr><tr><td class=''>Woody Marks (19.1) over Jauan Jennings (15.1)</td><td class=''>W/R/T</td><td class='num'>4.00</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Woody Marks (19.1) over Rachaad White (9.4)</td><td class=''>RB</td><td class='num'>9.70</td><td class=''>RB</td></tr><tr><td class=''>Jared Goff (28.7) over Lamar Jackson (20.5)</td><td class=''>QB</td><td class='num'>8.20</td><td class=''>QB</td></tr><tr><td class=''>Chris Olave (19.4) over Marvin Harrison Jr. (14.3)</td><td class=''>WR</td><td class='num'>5.10</td><td class=''>WR</td></tr><tr><td class=''>Alvin Kamara (16.5) over Jauan Jennings (15.1)</td><td class=''>W/R/T</td><td class='num'>1.40</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -7675,7 +7730,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Jared Goff (28.7) over Lamar Jackson (20.5)</td><td class=''>QB</td><td class='num'>8.20</td><td class=''>QB</td></tr><tr><td class=''>Alvin Kamara (16.5) over Rachaad White (9.4)</td><td class=''>RB</td><td class='num'>7.10</td><td class=''>RB</td></tr><tr><td class=''>Chris Olave (19.4) over Marvin Harrison Jr. (14.3)</td><td class=''>WR</td><td class='num'>5.10</td><td class=''>WR</td></tr><tr><td class=''>Woody Marks (19.1) over Jauan Jennings (15.1)</td><td class=''>W/R/T</td><td class='num'>4.00</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Woody Marks (19.1) over Rachaad White (9.4)</td><td class=''>RB</td><td class='num'>9.70</td><td class=''>RB</td></tr><tr><td class=''>Jared Goff (28.7) over Lamar Jackson (20.5)</td><td class=''>QB</td><td class='num'>8.20</td><td class=''>QB</td></tr><tr><td class=''>Chris Olave (19.4) over Marvin Harrison Jr. (14.3)</td><td class=''>WR</td><td class='num'>5.10</td><td class=''>WR</td></tr><tr><td class=''>Alvin Kamara (16.5) over Jauan Jennings (15.1)</td><td class=''>W/R/T</td><td class='num'>1.40</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -8006,7 +8061,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Dalton Schultz (18.6) over Jake Ferguson (1.6)</td><td class=''>TE</td><td class='num'>17.00</td><td class=''>TE</td></tr><tr><td class=''>Jared Goff (29.3) over Lamar Jackson (19.6)</td><td class=''>QB</td><td class='num'>9.67</td><td class=''>QB</td></tr><tr><td class=''>Jauan Jennings (18.7) over Jakobi Meyers (12.1)</td><td class=''>W/R/T</td><td class='num'>6.60</td><td class=''>WR</td></tr><tr><td class=''>Chris Olave (19.5) over Jaxon Smith-Njigba (14.3)</td><td class=''>WR</td><td class='num'>5.20</td><td class=''>WR</td></tr><tr><td class=''>Blake Corum (17.1) over Woody Marks (12.8)</td><td class=''>RB</td><td class='num'>4.30</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Dalton Schultz (18.6) over Jake Ferguson (1.6)</td><td class=''>TE</td><td class='num'>17.00</td><td class=''>TE</td></tr><tr><td class=''>Jared Goff (29.3) over Lamar Jackson (19.6)</td><td class=''>QB</td><td class='num'>9.67</td><td class=''>QB</td></tr><tr><td class=''>Chris Olave (19.5) over Jakobi Meyers (12.1)</td><td class=''>W/R/T</td><td class='num'>7.40</td><td class=''>WR</td></tr><tr><td class=''>Jauan Jennings (18.7) over Jaxon Smith-Njigba (14.3)</td><td class=''>WR</td><td class='num'>4.40</td><td class=''>WR</td></tr><tr><td class=''>Blake Corum (17.1) over Woody Marks (12.8)</td><td class=''>RB</td><td class='num'>4.30</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -8020,7 +8075,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Dalton Schultz (18.6) over Jake Ferguson (1.6)</td><td class=''>TE</td><td class='num'>17.00</td><td class=''>TE</td></tr><tr><td class=''>Jared Goff (29.3) over Lamar Jackson (19.6)</td><td class=''>QB</td><td class='num'>9.67</td><td class=''>QB</td></tr><tr><td class=''>Jauan Jennings (18.7) over Jakobi Meyers (12.1)</td><td class=''>W/R/T</td><td class='num'>6.60</td><td class=''>WR</td></tr><tr><td class=''>Chris Olave (19.5) over Jaxon Smith-Njigba (14.3)</td><td class=''>WR</td><td class='num'>5.20</td><td class=''>WR</td></tr><tr><td class=''>Blake Corum (17.1) over Woody Marks (12.8)</td><td class=''>RB</td><td class='num'>4.30</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Dalton Schultz (18.6) over Jake Ferguson (1.6)</td><td class=''>TE</td><td class='num'>17.00</td><td class=''>TE</td></tr><tr><td class=''>Jared Goff (29.3) over Lamar Jackson (19.6)</td><td class=''>QB</td><td class='num'>9.67</td><td class=''>QB</td></tr><tr><td class=''>Chris Olave (19.5) over Jakobi Meyers (12.1)</td><td class=''>W/R/T</td><td class='num'>7.40</td><td class=''>WR</td></tr><tr><td class=''>Jauan Jennings (18.7) over Jaxon Smith-Njigba (14.3)</td><td class=''>WR</td><td class='num'>4.40</td><td class=''>WR</td></tr><tr><td class=''>Blake Corum (17.1) over Woody Marks (12.8)</td><td class=''>RB</td><td class='num'>4.30</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -8109,7 +8164,7 @@
                 <h4>Players Who Would Have Added The Most Lineup Gain</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Total Lineup Gain</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Best Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Best Week Gain</th></tr></thead>
-                    <tbody><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>WR</td><td class='num'>30.90</td><td class='num'>2</td><td class='num'>11</td><td class='num'>26.80</td></tr><tr><td class=''>Dallas Goedert</td><td class=''>TE</td><td class=''>TE</td><td class='num'>25.60</td><td class='num'>3</td><td class='num'>4</td><td class='num'>10.10</td></tr><tr><td class=''>Joe Burrow</td><td class=''>QB</td><td class=''>QB</td><td class='num'>23.63</td><td class='num'>1</td><td class='num'>16</td><td class='num'>23.63</td></tr><tr><td class=''>Zay Flowers</td><td class=''>WR</td><td class=''>WR</td><td class='num'>23.10</td><td class='num'>2</td><td class='num'>1</td><td class='num'>17.60</td></tr><tr><td class=''>Dallas Goedert</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>20.60</td><td class='num'>1</td><td class='num'>6</td><td class='num'>20.60</td></tr><tr><td class=''>Darren Waller</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>20.10</td><td class='num'>1</td><td class='num'>15</td><td class='num'>20.10</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>17.70</td><td class='num'>2</td><td class='num'>11</td><td class='num'>14.50</td></tr><tr><td class=''>Mike Evans</td><td class=''>WR</td><td class=''>WR</td><td class='num'>13.10</td><td class='num'>1</td><td class='num'>15</td><td class='num'>13.10</td></tr><tr><td class=''>Keon Coleman</td><td class=''>WR</td><td class=''>WR</td><td class='num'>12.40</td><td class='num'>1</td><td class='num'>1</td><td class='num'>12.40</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>WR</td><td class='num'>7.40</td><td class='num'>1</td><td class='num'>3</td><td class='num'>7.40</td></tr><tr><td class=''>Tucker Kraft</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.80</td><td class='num'>1</td><td class='num'>1</td><td class='num'>5.80</td></tr><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>5.30</td><td class='num'>2</td><td class='num'>7</td><td class='num'>3.50</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>RB</td><td class='num'>5.10</td><td class='num'>1</td><td class='num'>2</td><td class='num'>5.10</td></tr><tr><td class=''>Zay Flowers</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>4.80</td><td class='num'>2</td><td class='num'>9</td><td class='num'>4.40</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>WR</td><td class='num'>3.70</td><td class='num'>2</td><td class='num'>14</td><td class='num'>3.20</td></tr><tr><td class=''>Ashton Jeanty</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>17</td><td class='num'>1.60</td></tr><tr><td class=''>Kimani Vidal</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>1.60</td></tr><tr><td class=''>Tyjae Spears</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>1.60</td></tr><tr><td class=''>Tyjae Spears</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class='num'>1</td><td class='num'>8</td><td class='num'>0.40</td></tr></tbody>
+                    <tbody><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>WR</td><td class='num'>36.40</td><td class='num'>3</td><td class='num'>11</td><td class='num'>26.80</td></tr><tr><td class=''>Dallas Goedert</td><td class=''>TE</td><td class=''>TE</td><td class='num'>25.60</td><td class='num'>3</td><td class='num'>4</td><td class='num'>10.10</td></tr><tr><td class=''>Joe Burrow</td><td class=''>QB</td><td class=''>QB</td><td class='num'>23.63</td><td class='num'>1</td><td class='num'>16</td><td class='num'>23.63</td></tr><tr><td class=''>Dallas Goedert</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>20.60</td><td class='num'>1</td><td class='num'>6</td><td class='num'>20.60</td></tr><tr><td class=''>Darren Waller</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>20.10</td><td class='num'>1</td><td class='num'>15</td><td class='num'>20.10</td></tr><tr><td class=''>Zay Flowers</td><td class=''>WR</td><td class=''>WR</td><td class='num'>17.60</td><td class='num'>1</td><td class='num'>1</td><td class='num'>17.60</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>WR</td><td class='num'>14.60</td><td class='num'>3</td><td class='num'>11</td><td class='num'>10.90</td></tr><tr><td class=''>Zay Flowers</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>13.90</td><td class='num'>3</td><td class='num'>11</td><td class='num'>9.10</td></tr><tr><td class=''>Mike Evans</td><td class=''>WR</td><td class=''>WR</td><td class='num'>13.10</td><td class='num'>1</td><td class='num'>15</td><td class='num'>13.10</td></tr><tr><td class=''>Keon Coleman</td><td class=''>WR</td><td class=''>WR</td><td class='num'>12.40</td><td class='num'>1</td><td class='num'>1</td><td class='num'>12.40</td></tr><tr><td class=''>Tucker Kraft</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.80</td><td class='num'>1</td><td class='num'>1</td><td class='num'>5.80</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>RB</td><td class='num'>5.10</td><td class='num'>1</td><td class='num'>2</td><td class='num'>5.10</td></tr><tr><td class=''>Chris Olave</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.70</td><td class='num'>1</td><td class='num'>3</td><td class='num'>3.70</td></tr><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.50</td><td class='num'>1</td><td class='num'>7</td><td class='num'>3.50</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.20</td><td class='num'>1</td><td class='num'>10</td><td class='num'>3.20</td></tr><tr><td class=''>Ashton Jeanty</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>17</td><td class='num'>1.60</td></tr><tr><td class=''>Kimani Vidal</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>15</td><td class='num'>1.60</td></tr><tr><td class=''>Tyjae Spears</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>1.60</td></tr><tr><td class=''>Tyjae Spears</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class='num'>1</td><td class='num'>8</td><td class='num'>0.40</td></tr></tbody>
                 </table>
             </article>
         
@@ -8123,7 +8178,7 @@
                 <h4>Poor Start Totals</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Starter</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Amon-Ra St. Brown</td><td class=''>WR</td><td class=''>WR</td><td class='num'>44.90</td><td class='num'>3</td><td class='num'>11</td><td class='num'>26.80</td></tr><tr><td class=''>Jacoby Brissett</td><td class=''>QB</td><td class=''>QB</td><td class='num'>23.63</td><td class='num'>1</td><td class='num'>16</td><td class='num'>23.63</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>22.40</td><td class='num'>2</td><td class='num'>6</td><td class='num'>20.60</td></tr><tr><td class=''>Rashee Rice</td><td class=''>WR</td><td class=''>WR</td><td class='num'>21.80</td><td class='num'>3</td><td class='num'>15</td><td class='num'>13.10</td></tr><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>20.50</td><td class='num'>2</td><td class='num'>15</td><td class='num'>20.10</td></tr><tr><td class=''>Kimani Vidal</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>18.90</td><td class='num'>2</td><td class='num'>11</td><td class='num'>14.50</td></tr><tr><td class=''>Tucker Kraft</td><td class=''>TE</td><td class=''>TE</td><td class='num'>16.50</td><td class='num'>2</td><td class='num'>4</td><td class='num'>10.10</td></tr><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>WR</td><td class='num'>12.40</td><td class='num'>1</td><td class='num'>1</td><td class='num'>12.40</td></tr><tr><td class=''>Zay Flowers</td><td class=''>WR</td><td class=''>WR</td><td class='num'>11.50</td><td class='num'>2</td><td class='num'>3</td><td class='num'>7.40</td></tr><tr><td class=''>Darren Waller</td><td class=''>TE</td><td class=''>TE</td><td class='num'>9.10</td><td class='num'>1</td><td class='num'>14</td><td class='num'>9.10</td></tr><tr><td class=''>Ashton Jeanty</td><td class=''>RB</td><td class=''>RB</td><td class='num'>8.30</td><td class='num'>3</td><td class='num'>2</td><td class='num'>5.10</td></tr><tr><td class=''>Evan Engram</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.80</td><td class='num'>1</td><td class='num'>1</td><td class='num'>5.80</td></tr><tr><td class=''>Dallas Goedert</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>3.90</td><td class='num'>2</td><td class='num'>7</td><td class='num'>3.50</td></tr><tr><td class=''>James Cook III</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>3.20</td><td class='num'>1</td><td class='num'>10</td><td class='num'>3.20</td></tr><tr><td class=''>James Cook III</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>17</td><td class='num'>1.60</td></tr></tbody>
+                    <tbody><tr><td class=''>Amon-Ra St. Brown</td><td class=''>WR</td><td class=''>WR</td><td class='num'>44.90</td><td class='num'>3</td><td class='num'>11</td><td class='num'>26.80</td></tr><tr><td class=''>Rashee Rice</td><td class=''>WR</td><td class=''>WR</td><td class='num'>27.20</td><td class='num'>3</td><td class='num'>15</td><td class='num'>13.10</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>24.30</td><td class='num'>2</td><td class='num'>6</td><td class='num'>20.60</td></tr><tr><td class=''>Jacoby Brissett</td><td class=''>QB</td><td class=''>QB</td><td class='num'>23.63</td><td class='num'>1</td><td class='num'>16</td><td class='num'>23.63</td></tr><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>20.50</td><td class='num'>2</td><td class='num'>15</td><td class='num'>20.10</td></tr><tr><td class=''>Tucker Kraft</td><td class=''>TE</td><td class=''>TE</td><td class='num'>16.50</td><td class='num'>2</td><td class='num'>4</td><td class='num'>10.10</td></tr><tr><td class=''>Kimani Vidal</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>13.50</td><td class='num'>2</td><td class='num'>11</td><td class='num'>9.10</td></tr><tr><td class=''>Tetairoa McMillan</td><td class=''>WR</td><td class=''>WR</td><td class='num'>12.40</td><td class='num'>1</td><td class='num'>1</td><td class='num'>12.40</td></tr><tr><td class=''>Zay Flowers</td><td class=''>WR</td><td class=''>WR</td><td class='num'>9.60</td><td class='num'>2</td><td class='num'>3</td><td class='num'>5.50</td></tr><tr><td class=''>Darren Waller</td><td class=''>TE</td><td class=''>TE</td><td class='num'>9.10</td><td class='num'>1</td><td class='num'>14</td><td class='num'>9.10</td></tr><tr><td class=''>Ashton Jeanty</td><td class=''>RB</td><td class=''>RB</td><td class='num'>8.30</td><td class='num'>3</td><td class='num'>2</td><td class='num'>5.10</td></tr><tr><td class=''>Evan Engram</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.80</td><td class='num'>1</td><td class='num'>1</td><td class='num'>5.80</td></tr><tr><td class=''>Dallas Goedert</td><td class=''>TE</td><td class=''>W/R/T</td><td class='num'>3.90</td><td class='num'>2</td><td class='num'>7</td><td class='num'>3.50</td></tr><tr><td class=''>James Cook III</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>3.20</td><td class='num'>1</td><td class='num'>10</td><td class='num'>3.20</td></tr><tr><td class=''>James Cook III</td><td class=''>RB</td><td class=''>RB</td><td class='num'>1.60</td><td class='num'>1</td><td class='num'>17</td><td class='num'>1.60</td></tr></tbody>
                 </table>
             </article>
         
@@ -8314,7 +8369,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Chris Olave (9.7) over Zay Flowers (2.3)</td><td class=''>WR</td><td class='num'>7.40</td><td class=''>WR</td></tr><tr><td class=''>Dallas Goedert (10.3) over Tucker Kraft (3.9)</td><td class=''>TE</td><td class='num'>6.40</td><td class=''>TE</td></tr><tr><td class=''>Tetairoa McMillan (7.8) over Deebo Samuel (6.0)</td><td class=''>W/R/T</td><td class='num'>1.80</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Dallas Goedert (10.3) over Tucker Kraft (3.9)</td><td class=''>TE</td><td class='num'>6.40</td><td class=''>TE</td></tr><tr><td class=''>Tetairoa McMillan (7.8) over Zay Flowers (2.3)</td><td class=''>WR</td><td class='num'>5.50</td><td class=''>WR</td></tr><tr><td class=''>Chris Olave (9.7) over Deebo Samuel (6.0)</td><td class=''>W/R/T</td><td class='num'>3.70</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -8328,7 +8383,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Chris Olave (9.7) over Zay Flowers (2.3)</td><td class=''>WR</td><td class='num'>7.40</td><td class=''>WR</td></tr><tr><td class=''>Dallas Goedert (10.3) over Tucker Kraft (3.9)</td><td class=''>TE</td><td class='num'>6.40</td><td class=''>TE</td></tr><tr><td class=''>Tetairoa McMillan (7.8) over Deebo Samuel (6.0)</td><td class=''>W/R/T</td><td class='num'>1.80</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Dallas Goedert (10.3) over Tucker Kraft (3.9)</td><td class=''>TE</td><td class='num'>6.40</td><td class=''>TE</td></tr><tr><td class=''>Tetairoa McMillan (7.8) over Zay Flowers (2.3)</td><td class=''>WR</td><td class='num'>5.50</td><td class=''>WR</td></tr><tr><td class=''>Chris Olave (9.7) over Deebo Samuel (6.0)</td><td class=''>W/R/T</td><td class='num'>3.70</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -8866,7 +8921,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Tetairoa McMillan (32.0) over Amon-Ra St. Brown (5.2)</td><td class=''>WR</td><td class='num'>26.80</td><td class=''>WR</td></tr><tr><td class=''>Deebo Samuel (16.7) over Kimani Vidal (2.2)</td><td class=''>W/R/T</td><td class='num'>14.50</td><td class=''>WR</td></tr><tr><td class=''>Zay Flowers (11.3) over Rashee Rice (5.8)</td><td class=''>WR</td><td class='num'>5.50</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Tetairoa McMillan (32.0) over Amon-Ra St. Brown (5.2)</td><td class=''>WR</td><td class='num'>26.80</td><td class=''>WR</td></tr><tr><td class=''>Deebo Samuel (16.7) over Rashee Rice (5.8)</td><td class=''>WR</td><td class='num'>10.90</td><td class=''>WR</td></tr><tr><td class=''>Zay Flowers (11.3) over Kimani Vidal (2.2)</td><td class=''>W/R/T</td><td class='num'>9.10</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -8880,7 +8935,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Tetairoa McMillan (32.0) over Amon-Ra St. Brown (5.2)</td><td class=''>WR</td><td class='num'>26.80</td><td class=''>WR</td></tr><tr><td class=''>Deebo Samuel (16.7) over Kimani Vidal (2.2)</td><td class=''>W/R/T</td><td class='num'>14.50</td><td class=''>RB</td></tr><tr><td class=''>Zay Flowers (11.3) over Rashee Rice (5.8)</td><td class=''>WR</td><td class='num'>5.50</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Tetairoa McMillan (32.0) over Amon-Ra St. Brown (5.2)</td><td class=''>WR</td><td class='num'>26.80</td><td class=''>WR</td></tr><tr><td class=''>Deebo Samuel (16.7) over Rashee Rice (5.8)</td><td class=''>WR</td><td class='num'>10.90</td><td class=''>WR</td></tr><tr><td class=''>Zay Flowers (11.3) over Kimani Vidal (2.2)</td><td class=''>W/R/T</td><td class='num'>9.10</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -10519,7 +10574,7 @@
                 <h4>Players Who Would Have Added The Most Lineup Gain</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Total Lineup Gain</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Best Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Best Week Gain</th></tr></thead>
-                    <tbody><tr><td class=''>Michael Pittman Jr.</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>33.60</td><td class='num'>3</td><td class='num'>7</td><td class='num'>14.60</td></tr><tr><td class=''>Kyle Monangai</td><td class=''>RB</td><td class=''>RB</td><td class='num'>25.23</td><td class='num'>2</td><td class='num'>13</td><td class='num'>18.40</td></tr><tr><td class=''>Kenneth Gainwell</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>25.23</td><td class='num'>2</td><td class='num'>16</td><td class='num'>18.83</td></tr><tr><td class=''>Justin Herbert</td><td class=''>QB</td><td class=''>QB</td><td class='num'>24.80</td><td class='num'>2</td><td class='num'>1</td><td class='num'>23.13</td></tr><tr><td class=''>Michael Pittman Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>20.60</td><td class='num'>3</td><td class='num'>14</td><td class='num'>11.40</td></tr><tr><td class=''>Bo Nix</td><td class=''>QB</td><td class=''>QB</td><td class='num'>15.90</td><td class='num'>4</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Emeka Egbuka</td><td class=''>WR</td><td class=''>WR</td><td class='num'>15.70</td><td class='num'>2</td><td class='num'>1</td><td class='num'>14.10</td></tr><tr><td class=''>Quentin Johnston</td><td class=''>WR</td><td class=''>WR</td><td class='num'>13.40</td><td class='num'>2</td><td class='num'>2</td><td class='num'>9.00</td></tr><tr><td class=''>Tyler Warren</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>RJ Harvey</td><td class=''>RB</td><td class=''>RB</td><td class='num'>9.83</td><td class='num'>3</td><td class='num'>4</td><td class='num'>8.47</td></tr><tr><td class=''>Isiah Pacheco</td><td class=''>RB</td><td class=''>RB</td><td class='num'>7.13</td><td class='num'>1</td><td class='num'>5</td><td class='num'>7.13</td></tr><tr><td class=''>Blake Corum</td><td class=''>RB</td><td class=''>RB</td><td class='num'>6.33</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6.33</td></tr><tr><td class=''>Oronde Gadsden</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.20</td><td class='num'>1</td><td class='num'>9</td><td class='num'>5.20</td></tr><tr><td class=''>Quentin Johnston</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>0.70</td><td class='num'>1</td><td class='num'>4</td><td class='num'>0.70</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>0.47</td><td class='num'>1</td><td class='num'>3</td><td class='num'>0.47</td></tr><tr><td class=''>Kyle Monangai</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.13</td><td class='num'>1</td><td class='num'>17</td><td class='num'>0.13</td></tr></tbody>
+                    <tbody><tr><td class=''>Michael Pittman Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>29.40</td><td class='num'>4</td><td class='num'>14</td><td class='num'>11.40</td></tr><tr><td class=''>Michael Pittman Jr.</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>28.80</td><td class='num'>2</td><td class='num'>7</td><td class='num'>14.60</td></tr><tr><td class=''>Kyle Monangai</td><td class=''>RB</td><td class=''>RB</td><td class='num'>25.23</td><td class='num'>2</td><td class='num'>13</td><td class='num'>18.40</td></tr><tr><td class=''>Kenneth Gainwell</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>25.23</td><td class='num'>2</td><td class='num'>16</td><td class='num'>18.83</td></tr><tr><td class=''>Justin Herbert</td><td class=''>QB</td><td class=''>QB</td><td class='num'>24.80</td><td class='num'>2</td><td class='num'>1</td><td class='num'>23.13</td></tr><tr><td class=''>Bo Nix</td><td class=''>QB</td><td class=''>QB</td><td class='num'>15.90</td><td class='num'>4</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Emeka Egbuka</td><td class=''>WR</td><td class=''>WR</td><td class='num'>15.70</td><td class='num'>2</td><td class='num'>1</td><td class='num'>14.10</td></tr><tr><td class=''>Tyler Warren</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>RJ Harvey</td><td class=''>RB</td><td class=''>RB</td><td class='num'>9.83</td><td class='num'>3</td><td class='num'>4</td><td class='num'>8.47</td></tr><tr><td class=''>Quentin Johnston</td><td class=''>WR</td><td class=''>WR</td><td class='num'>9.00</td><td class='num'>1</td><td class='num'>2</td><td class='num'>9.00</td></tr><tr><td class=''>Isiah Pacheco</td><td class=''>RB</td><td class=''>RB</td><td class='num'>7.13</td><td class='num'>1</td><td class='num'>5</td><td class='num'>7.13</td></tr><tr><td class=''>Blake Corum</td><td class=''>RB</td><td class=''>RB</td><td class='num'>6.33</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6.33</td></tr><tr><td class=''>Oronde Gadsden</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.20</td><td class='num'>1</td><td class='num'>9</td><td class='num'>5.20</td></tr><tr><td class=''>Quentin Johnston</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>1.10</td><td class='num'>2</td><td class='num'>4</td><td class='num'>0.70</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>0.47</td><td class='num'>1</td><td class='num'>3</td><td class='num'>0.47</td></tr><tr><td class=''>Kyle Monangai</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.13</td><td class='num'>1</td><td class='num'>17</td><td class='num'>0.13</td></tr></tbody>
                 </table>
             </article>
         
@@ -10533,7 +10588,7 @@
                 <h4>Poor Start Totals</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Starter</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Drake London</td><td class=''>WR</td><td class=''>WR</td><td class='num'>30.30</td><td class='num'>5</td><td class='num'>1</td><td class='num'>14.10</td></tr><tr><td class=''>Bo Nix</td><td class=''>QB</td><td class=''>QB</td><td class='num'>24.80</td><td class='num'>2</td><td class='num'>1</td><td class='num'>23.13</td></tr><tr><td class=''>Saquon Barkley</td><td class=''>RB</td><td class=''>RB</td><td class='num'>19.87</td><td class='num'>3</td><td class='num'>13</td><td class='num'>18.40</td></tr><tr><td class=''>Audric Estime</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>18.83</td><td class='num'>1</td><td class='num'>16</td><td class='num'>18.83</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>15.97</td><td class='num'>3</td><td class='num'>4</td><td class='num'>8.47</td></tr><tr><td class=''>Justin Herbert</td><td class=''>QB</td><td class=''>QB</td><td class='num'>15.90</td><td class='num'>4</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Jacory Croskey-Merritt</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>14.60</td></tr><tr><td class=''>Isiah Pacheco</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.20</td><td class='num'>1</td><td class='num'>1</td><td class='num'>14.20</td></tr><tr><td class=''>Oronde Gadsden</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Emeka Egbuka</td><td class=''>WR</td><td class=''>WR</td><td class='num'>11.40</td><td class='num'>1</td><td class='num'>14</td><td class='num'>11.40</td></tr><tr><td class=''>Quentin Johnston</td><td class=''>WR</td><td class=''>WR</td><td class='num'>8.00</td><td class='num'>1</td><td class='num'>5</td><td class='num'>8.00</td></tr><tr><td class=''>RJ Harvey</td><td class=''>RB</td><td class=''>RB</td><td class='num'>6.83</td><td class='num'>1</td><td class='num'>10</td><td class='num'>6.83</td></tr><tr><td class=''>Devin Neal</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>6.40</td><td class='num'>1</td><td class='num'>15</td><td class='num'>6.40</td></tr><tr><td class=''>Isiah Pacheco</td><td class=''>RB</td><td class=''>RB</td><td class='num'>6.33</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6.33</td></tr><tr><td class=''>Emeka Egbuka</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>5.50</td><td class='num'>2</td><td class='num'>3</td><td class='num'>4.80</td></tr><tr><td class=''>Tyler Warren</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.20</td><td class='num'>1</td><td class='num'>9</td><td class='num'>5.20</td></tr><tr><td class=''>Kenneth Gainwell</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.13</td><td class='num'>1</td><td class='num'>17</td><td class='num'>0.13</td></tr></tbody>
+                    <tbody><tr><td class=''>Drake London</td><td class=''>WR</td><td class=''>WR</td><td class='num'>34.70</td><td class='num'>5</td><td class='num'>1</td><td class='num'>14.10</td></tr><tr><td class=''>Bo Nix</td><td class=''>QB</td><td class=''>QB</td><td class='num'>24.80</td><td class='num'>2</td><td class='num'>1</td><td class='num'>23.13</td></tr><tr><td class=''>Saquon Barkley</td><td class=''>RB</td><td class=''>RB</td><td class='num'>19.87</td><td class='num'>3</td><td class='num'>13</td><td class='num'>18.40</td></tr><tr><td class=''>Audric Estime</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>18.83</td><td class='num'>1</td><td class='num'>16</td><td class='num'>18.83</td></tr><tr><td class=''>TreVeyon Henderson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>15.97</td><td class='num'>3</td><td class='num'>4</td><td class='num'>8.47</td></tr><tr><td class=''>Justin Herbert</td><td class=''>QB</td><td class=''>QB</td><td class='num'>15.90</td><td class='num'>4</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Jacory Croskey-Merritt</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.60</td><td class='num'>1</td><td class='num'>7</td><td class='num'>14.60</td></tr><tr><td class=''>Isiah Pacheco</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>14.20</td><td class='num'>1</td><td class='num'>1</td><td class='num'>14.20</td></tr><tr><td class=''>Oronde Gadsden</td><td class=''>TE</td><td class=''>TE</td><td class='num'>12.60</td><td class='num'>1</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Emeka Egbuka</td><td class=''>WR</td><td class=''>WR</td><td class='num'>11.40</td><td class='num'>1</td><td class='num'>14</td><td class='num'>11.40</td></tr><tr><td class=''>Quentin Johnston</td><td class=''>WR</td><td class=''>WR</td><td class='num'>8.00</td><td class='num'>1</td><td class='num'>5</td><td class='num'>8.00</td></tr><tr><td class=''>RJ Harvey</td><td class=''>RB</td><td class=''>RB</td><td class='num'>6.83</td><td class='num'>1</td><td class='num'>10</td><td class='num'>6.83</td></tr><tr><td class=''>Devin Neal</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>6.40</td><td class='num'>1</td><td class='num'>15</td><td class='num'>6.40</td></tr><tr><td class=''>Isiah Pacheco</td><td class=''>RB</td><td class=''>RB</td><td class='num'>6.33</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6.33</td></tr><tr><td class=''>Tyler Warren</td><td class=''>TE</td><td class=''>TE</td><td class='num'>5.20</td><td class='num'>1</td><td class='num'>9</td><td class='num'>5.20</td></tr><tr><td class=''>Emeka Egbuka</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>1.10</td><td class='num'>2</td><td class='num'>4</td><td class='num'>0.70</td></tr><tr><td class=''>Kenneth Gainwell</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>0.13</td><td class='num'>1</td><td class='num'>17</td><td class='num'>0.13</td></tr></tbody>
                 </table>
             </article>
         
@@ -10724,7 +10779,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Blake Corum (13.1) over Isiah Pacheco (6.8)</td><td class=''>RB</td><td class='num'>6.33</td><td class=''>RB</td></tr><tr><td class=''>Michael Pittman Jr. (17.3) over Emeka Egbuka (12.5)</td><td class=''>W/R/T</td><td class='num'>4.80</td><td class=''>WR</td></tr><tr><td class=''>Quentin Johnston (12.9) over Drake London (8.5)</td><td class=''>WR</td><td class='num'>4.40</td><td class=''>WR</td></tr><tr><td class=''>TreVeyon Henderson (9.0) over Saquon Barkley (8.5)</td><td class=''>RB</td><td class='num'>0.47</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Michael Pittman Jr. (17.3) over Drake London (8.5)</td><td class=''>WR</td><td class='num'>8.80</td><td class=''>WR</td></tr><tr><td class=''>Blake Corum (13.1) over Isiah Pacheco (6.8)</td><td class=''>RB</td><td class='num'>6.33</td><td class=''>RB</td></tr><tr><td class=''>TreVeyon Henderson (9.0) over Saquon Barkley (8.5)</td><td class=''>RB</td><td class='num'>0.47</td><td class=''>RB</td></tr><tr><td class=''>Quentin Johnston (12.9) over Emeka Egbuka (12.5)</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -10738,7 +10793,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Blake Corum (13.1) over Isiah Pacheco (6.8)</td><td class=''>RB</td><td class='num'>6.33</td><td class=''>RB</td></tr><tr><td class=''>Michael Pittman Jr. (17.3) over Emeka Egbuka (12.5)</td><td class=''>W/R/T</td><td class='num'>4.80</td><td class=''>WR</td></tr><tr><td class=''>Quentin Johnston (12.9) over Drake London (8.5)</td><td class=''>WR</td><td class='num'>4.40</td><td class=''>WR</td></tr><tr><td class=''>TreVeyon Henderson (9.0) over Saquon Barkley (8.5)</td><td class=''>RB</td><td class='num'>0.47</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>Michael Pittman Jr. (17.3) over Drake London (8.5)</td><td class=''>WR</td><td class='num'>8.80</td><td class=''>WR</td></tr><tr><td class=''>Blake Corum (13.1) over Isiah Pacheco (6.8)</td><td class=''>RB</td><td class='num'>6.33</td><td class=''>RB</td></tr><tr><td class=''>TreVeyon Henderson (9.0) over Saquon Barkley (8.5)</td><td class=''>RB</td><td class='num'>0.47</td><td class=''>RB</td></tr><tr><td class=''>Quentin Johnston (12.9) over Emeka Egbuka (12.5)</td><td class=''>W/R/T</td><td class='num'>0.40</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -11777,23 +11832,23 @@
                     
                     <tr>
                         <td><a href="#missed-week-reverse-ted-lasso-13" onclick="const week=document.getElementById('missed-week-reverse-ted-lasso-13'); if(week) week.open=true; const team=week ? week.closest('details.team-drill') : null; if(team) team.open=true;">Week 13</a></td>
-                        <td>David Montgomery (14.8) over Aaron Jones Sr. (1.5)</td>
-                        <td>RB</td>
-                        <td class='num'>13.30</td>
+                        <td>David Montgomery (14.8) over Justin Jefferson (0.4)</td>
+                        <td>W/R/T</td>
+                        <td class='num'>14.40</td>
                     </tr>
                     </tbody>
                         </table>
                     </article>
                 
                         <details class="deep-card compact-table sub-drill" style="margin-top:10px; background:var(--surface-muted);">
-                            <summary><strong>Players Who Would Have Added The Most Lineup Gain</strong> <span class="muted">| 13 rows</span></summary>
+                            <summary><strong>Players Who Would Have Added The Most Lineup Gain</strong> <span class="muted">| 12 rows</span></summary>
                             <div style="margin-top:10px;">
                                 
             <article class="deep-card compact-table">
                 <h4>Players Who Would Have Added The Most Lineup Gain</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Total Lineup Gain</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Best Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Best Week Gain</th></tr></thead>
-                    <tbody><tr><td class=''>David Montgomery</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>25.90</td><td class='num'>1</td><td class='num'>3</td><td class='num'>25.90</td></tr><tr><td class=''>David Montgomery</td><td class=''>RB</td><td class=''>RB</td><td class='num'>25.60</td><td class='num'>3</td><td class='num'>13</td><td class='num'>13.30</td></tr><tr><td class=''>Bhayshul Tuten</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>23.93</td><td class='num'>3</td><td class='num'>13</td><td class='num'>9.57</td></tr><tr><td class=''>Rashid Shaheed</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.37</td><td class='num'>3</td><td class='num'>5</td><td class='num'>9.40</td></tr><tr><td class=''>Omarion Hampton</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>15.60</td><td class='num'>1</td><td class='num'>14</td><td class='num'>15.60</td></tr><tr><td class=''>Khalil Shakir</td><td class=''>WR</td><td class=''>WR</td><td class='num'>11.50</td><td class='num'>2</td><td class='num'>4</td><td class='num'>6.50</td></tr><tr><td class=''>Dylan Sampson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>11.43</td><td class='num'>1</td><td class='num'>12</td><td class='num'>11.43</td></tr><tr><td class=''>Tank Bigsby</td><td class=''>RB</td><td class=''>RB</td><td class='num'>11.40</td><td class='num'>1</td><td class='num'>8</td><td class='num'>11.40</td></tr><tr><td class=''>Aaron Jones Sr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>10.20</td><td class='num'>1</td><td class='num'>10</td><td class='num'>10.20</td></tr><tr><td class=''>Bills</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>7.00</td><td class='num'>2</td><td class='num'>14</td><td class='num'>5.00</td></tr><tr><td class=''>Theo Johnson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>4.20</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.20</td></tr><tr><td class=''>Dylan Sampson</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>3.23</td><td class='num'>1</td><td class='num'>6</td><td class='num'>3.23</td></tr><tr><td class=''>Drake Maye</td><td class=''>QB</td><td class=''>QB</td><td class='num'>1.80</td><td class='num'>1</td><td class='num'>14</td><td class='num'>1.80</td></tr></tbody>
+                    <tbody><tr><td class=''>David Montgomery</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>54.30</td><td class='num'>4</td><td class='num'>3</td><td class='num'>25.90</td></tr><tr><td class=''>Bhayshul Tuten</td><td class=''>RB</td><td class=''>RB</td><td class='num'>21.13</td><td class='num'>3</td><td class='num'>2</td><td class='num'>11.77</td></tr><tr><td class=''>Rashid Shaheed</td><td class=''>WR</td><td class=''>WR</td><td class='num'>18.37</td><td class='num'>3</td><td class='num'>5</td><td class='num'>9.40</td></tr><tr><td class=''>Omarion Hampton</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>15.60</td><td class='num'>1</td><td class='num'>14</td><td class='num'>15.60</td></tr><tr><td class=''>Khalil Shakir</td><td class=''>WR</td><td class=''>WR</td><td class='num'>11.50</td><td class='num'>2</td><td class='num'>4</td><td class='num'>6.50</td></tr><tr><td class=''>Dylan Sampson</td><td class=''>RB</td><td class=''>RB</td><td class='num'>11.43</td><td class='num'>1</td><td class='num'>12</td><td class='num'>11.43</td></tr><tr><td class=''>Tank Bigsby</td><td class=''>RB</td><td class=''>RB</td><td class='num'>11.40</td><td class='num'>1</td><td class='num'>8</td><td class='num'>11.40</td></tr><tr><td class=''>Aaron Jones Sr.</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>10.20</td><td class='num'>1</td><td class='num'>10</td><td class='num'>10.20</td></tr><tr><td class=''>Bills</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>7.00</td><td class='num'>2</td><td class='num'>14</td><td class='num'>5.00</td></tr><tr><td class=''>Theo Johnson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>4.20</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.20</td></tr><tr><td class=''>Dylan Sampson</td><td class=''>RB</td><td class=''>W/R/T</td><td class='num'>3.23</td><td class='num'>1</td><td class='num'>6</td><td class='num'>3.23</td></tr><tr><td class=''>Drake Maye</td><td class=''>QB</td><td class=''>QB</td><td class='num'>1.80</td><td class='num'>1</td><td class='num'>14</td><td class='num'>1.80</td></tr></tbody>
                 </table>
             </article>
         
@@ -11807,7 +11862,7 @@
                 <h4>Poor Start Totals</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Starter</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Justin Jefferson</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>75.63</td><td class='num'>6</td><td class='num'>3</td><td class='num'>25.90</td></tr><tr><td class=''>Brian Thomas Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>29.87</td><td class='num'>5</td><td class='num'>5</td><td class='num'>9.40</td></tr><tr><td class=''>Aaron Jones Sr.</td><td class=''>RB</td><td class=''>RB</td><td class='num'>24.70</td><td class='num'>2</td><td class='num'>13</td><td class='num'>13.30</td></tr><tr><td class=''>Omarion Hampton</td><td class=''>RB</td><td class=''>RB</td><td class='num'>12.30</td><td class='num'>2</td><td class='num'>2</td><td class='num'>11.60</td></tr><tr><td class=''>David Montgomery</td><td class=''>RB</td><td class=''>RB</td><td class='num'>11.43</td><td class='num'>1</td><td class='num'>12</td><td class='num'>11.43</td></tr><tr><td class=''>Buccaneers</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>7.00</td><td class='num'>2</td><td class='num'>14</td><td class='num'>5.00</td></tr><tr><td class=''>Juwan Johnson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>4.20</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.20</td></tr><tr><td class=''>Khalil Shakir</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.23</td><td class='num'>1</td><td class='num'>6</td><td class='num'>3.23</td></tr><tr><td class=''>Tyrod Taylor</td><td class=''>QB</td><td class=''>QB</td><td class='num'>1.80</td><td class='num'>1</td><td class='num'>14</td><td class='num'>1.80</td></tr></tbody>
+                    <tbody><tr><td class=''>Justin Jefferson</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>80.10</td><td class='num'>6</td><td class='num'>3</td><td class='num'>25.90</td></tr><tr><td class=''>Brian Thomas Jr.</td><td class=''>WR</td><td class=''>WR</td><td class='num'>29.87</td><td class='num'>5</td><td class='num'>5</td><td class='num'>9.40</td></tr><tr><td class=''>Aaron Jones Sr.</td><td class=''>RB</td><td class=''>RB</td><td class='num'>19.87</td><td class='num'>2</td><td class='num'>8</td><td class='num'>11.40</td></tr><tr><td class=''>Omarion Hampton</td><td class=''>RB</td><td class=''>RB</td><td class='num'>12.67</td><td class='num'>2</td><td class='num'>2</td><td class='num'>11.77</td></tr><tr><td class=''>David Montgomery</td><td class=''>RB</td><td class=''>RB</td><td class='num'>11.43</td><td class='num'>1</td><td class='num'>12</td><td class='num'>11.43</td></tr><tr><td class=''>Buccaneers</td><td class=''>DEF</td><td class=''>DEF</td><td class='num'>7.00</td><td class='num'>2</td><td class='num'>14</td><td class='num'>5.00</td></tr><tr><td class=''>Juwan Johnson</td><td class=''>TE</td><td class=''>TE</td><td class='num'>4.20</td><td class='num'>1</td><td class='num'>15</td><td class='num'>4.20</td></tr><tr><td class=''>Khalil Shakir</td><td class=''>WR</td><td class=''>W/R/T</td><td class='num'>3.23</td><td class='num'>1</td><td class='num'>6</td><td class='num'>3.23</td></tr><tr><td class=''>Tyrod Taylor</td><td class=''>QB</td><td class=''>QB</td><td class='num'>1.80</td><td class='num'>1</td><td class='num'>14</td><td class='num'>1.80</td></tr></tbody>
                 </table>
             </article>
         
@@ -11929,7 +11984,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>David Montgomery (16.1) over Omarion Hampton (4.5)</td><td class=''>RB</td><td class='num'>11.60</td><td class=''>RB</td></tr><tr><td class=''>Bhayshul Tuten (16.3) over Justin Jefferson (10.1)</td><td class=''>W/R/T</td><td class='num'>6.17</td><td class=''>RB</td></tr><tr><td class=''>Rashid Shaheed (14.0) over Brian Thomas Jr. (7.9)</td><td class=''>WR</td><td class='num'>6.07</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Bhayshul Tuten (16.3) over Omarion Hampton (4.5)</td><td class=''>RB</td><td class='num'>11.77</td><td class=''>RB</td></tr><tr><td class=''>Rashid Shaheed (14.0) over Brian Thomas Jr. (7.9)</td><td class=''>WR</td><td class='num'>6.07</td><td class=''>WR</td></tr><tr><td class=''>David Montgomery (16.1) over Justin Jefferson (10.1)</td><td class=''>W/R/T</td><td class='num'>6.00</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -11943,7 +11998,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>David Montgomery (16.1) over Omarion Hampton (4.5)</td><td class=''>RB</td><td class='num'>11.60</td><td class=''>RB</td></tr><tr><td class=''>Bhayshul Tuten (16.3) over Justin Jefferson (10.1)</td><td class=''>W/R/T</td><td class='num'>6.17</td><td class=''>WR</td></tr><tr><td class=''>Rashid Shaheed (14.0) over Brian Thomas Jr. (7.9)</td><td class=''>WR</td><td class='num'>6.07</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>Bhayshul Tuten (16.3) over Omarion Hampton (4.5)</td><td class=''>RB</td><td class='num'>11.77</td><td class=''>RB</td></tr><tr><td class=''>Rashid Shaheed (14.0) over Brian Thomas Jr. (7.9)</td><td class=''>WR</td><td class='num'>6.07</td><td class=''>WR</td></tr><tr><td class=''>David Montgomery (16.1) over Justin Jefferson (10.1)</td><td class=''>W/R/T</td><td class='num'>6.00</td><td class=''>WR</td></tr></tbody>
                 </table>
             </article>
         
@@ -12688,7 +12743,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>David Montgomery (14.8) over Aaron Jones Sr. (1.5)</td><td class=''>RB</td><td class='num'>13.30</td><td class=''>RB</td></tr><tr><td class=''>Bhayshul Tuten (10.0) over Justin Jefferson (0.4)</td><td class=''>W/R/T</td><td class='num'>9.57</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>David Montgomery (14.8) over Justin Jefferson (0.4)</td><td class=''>W/R/T</td><td class='num'>14.40</td><td class=''>RB</td></tr><tr><td class=''>Bhayshul Tuten (10.0) over Aaron Jones Sr. (1.5)</td><td class=''>RB</td><td class='num'>8.47</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -12702,7 +12757,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>David Montgomery (14.8) over Aaron Jones Sr. (1.5)</td><td class=''>RB</td><td class='num'>13.30</td><td class=''>RB</td></tr><tr><td class=''>Bhayshul Tuten (10.0) over Justin Jefferson (0.4)</td><td class=''>W/R/T</td><td class='num'>9.57</td><td class=''>WR</td></tr></tbody>
+                    <tbody><tr><td class=''>David Montgomery (14.8) over Justin Jefferson (0.4)</td><td class=''>W/R/T</td><td class='num'>14.40</td><td class=''>WR</td></tr><tr><td class=''>Bhayshul Tuten (10.0) over Aaron Jones Sr. (1.5)</td><td class=''>RB</td><td class='num'>8.47</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -12826,7 +12881,7 @@
                 <h4>Lineup Swaps That Would Have Gained Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Startable Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Lineup Gain</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Bhayshul Tuten (12.4) over Justin Jefferson (4.2)</td><td class=''>W/R/T</td><td class='num'>8.20</td><td class=''>RB</td></tr><tr><td class=''>Theo Johnson (9.2) over Juwan Johnson (5.0)</td><td class=''>TE</td><td class='num'>4.20</td><td class=''>TE</td></tr><tr><td class=''>Bills (4.0) over Buccaneers (2.0)</td><td class=''>DEF</td><td class='num'>2.00</td><td class=''>DEF</td></tr><tr><td class=''>David Montgomery (12.2) over Omarion Hampton (11.5)</td><td class=''>RB</td><td class='num'>0.70</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>David Montgomery (12.2) over Justin Jefferson (4.2)</td><td class=''>W/R/T</td><td class='num'>8.00</td><td class=''>RB</td></tr><tr><td class=''>Theo Johnson (9.2) over Juwan Johnson (5.0)</td><td class=''>TE</td><td class='num'>4.20</td><td class=''>TE</td></tr><tr><td class=''>Bills (4.0) over Buccaneers (2.0)</td><td class=''>DEF</td><td class='num'>2.00</td><td class=''>DEF</td></tr><tr><td class=''>Bhayshul Tuten (12.4) over Omarion Hampton (11.5)</td><td class=''>RB</td><td class='num'>0.90</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -12840,7 +12895,7 @@
                 <h4>Starters Who Cost Points</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Better Swap</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Slot</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Points Lost</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Pos</th></tr></thead>
-                    <tbody><tr><td class=''>Bhayshul Tuten (12.4) over Justin Jefferson (4.2)</td><td class=''>W/R/T</td><td class='num'>8.20</td><td class=''>WR</td></tr><tr><td class=''>Theo Johnson (9.2) over Juwan Johnson (5.0)</td><td class=''>TE</td><td class='num'>4.20</td><td class=''>TE</td></tr><tr><td class=''>Bills (4.0) over Buccaneers (2.0)</td><td class=''>DEF</td><td class='num'>2.00</td><td class=''>DEF</td></tr><tr><td class=''>David Montgomery (12.2) over Omarion Hampton (11.5)</td><td class=''>RB</td><td class='num'>0.70</td><td class=''>RB</td></tr></tbody>
+                    <tbody><tr><td class=''>David Montgomery (12.2) over Justin Jefferson (4.2)</td><td class=''>W/R/T</td><td class='num'>8.00</td><td class=''>WR</td></tr><tr><td class=''>Theo Johnson (9.2) over Juwan Johnson (5.0)</td><td class=''>TE</td><td class='num'>4.20</td><td class=''>TE</td></tr><tr><td class=''>Bills (4.0) over Buccaneers (2.0)</td><td class=''>DEF</td><td class='num'>2.00</td><td class=''>DEF</td></tr><tr><td class=''>Bhayshul Tuten (12.4) over Omarion Hampton (11.5)</td><td class=''>RB</td><td class='num'>0.90</td><td class=''>RB</td></tr></tbody>
                 </table>
             </article>
         
@@ -32450,7 +32505,7 @@
                 <h4>Worst Starts</h4>
                 <table class="sortable-grid-table">
                     <thead><tr><th class='grid-sortable' data-sort-col='0' data-sort-type='text'>Player</th><th class='grid-sortable' data-sort-col='1' data-sort-type='text'>Pos</th><th class='grid-sortable' data-sort-col='2' data-sort-type='text'>Fantasy Team</th><th class='grid-sortable' data-sort-col='3' data-sort-type='text'>Points Lost</th><th class='grid-sortable num' data-sort-col='4' data-sort-type='num'>Weeks</th><th class='grid-sortable' data-sort-col='5' data-sort-type='text'>Worst Week</th><th class='grid-sortable' data-sort-col='6' data-sort-type='text'>Worst Week Cost</th></tr></thead>
-                    <tbody><tr><td class=''>Jahmyr Gibbs</td><td class=''>RB</td><td class=''>Two Buck Luck</td><td class='num'>79.80</td><td class='num'>4</td><td class='num'>9</td><td class='num'>31.30</td></tr><tr><td class=''>Justin Jefferson</td><td class=''>WR</td><td class=''>Reverse Ted Lasso</td><td class='num'>75.63</td><td class='num'>6</td><td class='num'>3</td><td class='num'>25.90</td></tr><tr><td class=''>Daniel Jones</td><td class=''>QB</td><td class=''>Two Buck Luck</td><td class='num'>67.03</td><td class='num'>4</td><td class='num'>9</td><td class='num'>29.03</td></tr><tr><td class=''>Lamar Jackson</td><td class=''>QB</td><td class=''>Pat Pidgeon</td><td class='num'>64.80</td><td class='num'>7</td><td class='num'>13</td><td class='num'>16.03</td></tr><tr><td class=''>Matthew Stafford</td><td class=''>QB</td><td class=''>In Purdytory</td><td class='num'>62.30</td><td class='num'>6</td><td class='num'>6</td><td class='num'>19.17</td></tr><tr><td class=''>Courtland Sutton</td><td class=''>WR</td><td class=''>Moonbeam Ice Cream</td><td class='num'>59.30</td><td class='num'>4</td><td class='num'>2</td><td class='num'>30.20</td></tr><tr><td class=''>DeVonta Smith</td><td class=''>WR</td><td class=''>Moonbeam Ice Cream</td><td class='num'>49.80</td><td class='num'>5</td><td class='num'>1</td><td class='num'>13.50</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>Two Buck Luck</td><td class='num'>48.10</td><td class='num'>6</td><td class='num'>11</td><td class='num'>15.20</td></tr><tr><td class=''>Kenneth Walker III</td><td class=''>RB</td><td class=''>Moonbeam Ice Cream</td><td class='num'>47.30</td><td class='num'>4</td><td class='num'>6</td><td class='num'>26.80</td></tr><tr><td class=''>Amon-Ra St. Brown</td><td class=''>WR</td><td class=''>Millan Darling Millan</td><td class='num'>44.90</td><td class='num'>3</td><td class='num'>11</td><td class='num'>26.80</td></tr><tr><td class=''>Rhamondre Stevenson</td><td class=''>RB</td><td class=''>Joe’s Cocksmithing Station</td><td class='num'>43.90</td><td class='num'>3</td><td class='num'>9</td><td class='num'>20.10</td></tr><tr><td class=''>Jalen Hurts</td><td class=''>QB</td><td class=''>Big Fire Knowles Energy</td><td class='num'>42.00</td><td class='num'>4</td><td class='num'>5</td><td class='num'>15.07</td></tr><tr><td class=''>Caleb Williams</td><td class=''>QB</td><td class=''>Two Buck Luck</td><td class='num'>39.97</td><td class='num'>3</td><td class='num'>7</td><td class='num'>20.77</td></tr><tr><td class=''>George Pickens</td><td class=''>WR</td><td class=''>Big Fire Knowles Energy</td><td class='num'>39.30</td><td class='num'>4</td><td class='num'>14</td><td class='num'>20.50</td></tr><tr><td class=''>Trevor Lawrence</td><td class=''>QB</td><td class=''>Joe’s Cocksmithing Station</td><td class='num'>38.07</td><td class='num'>2</td><td class='num'>1</td><td class='num'>21.93</td></tr><tr><td class=''>Justin Fields</td><td class=''>QB</td><td class=''>Joe’s Cocksmithing Station</td><td class='num'>34.73</td><td class='num'>4</td><td class='num'>6</td><td class='num'>16.90</td></tr><tr><td class=''>Garrett Wilson</td><td class=''>WR</td><td class=''>Two Buck Luck</td><td class='num'>34.00</td><td class='num'>3</td><td class='num'>6</td><td class='num'>18.70</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>Big Fire Knowles Energy</td><td class='num'>33.30</td><td class='num'>3</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Jaxson Dart</td><td class=''>QB</td><td class=''>In Purdytory</td><td class='num'>33.03</td><td class='num'>1</td><td class='num'>16</td><td class='num'>33.03</td></tr><tr><td class=''>CeeDee Lamb</td><td class=''>WR</td><td class=''>Two Buck Luck</td><td class='num'>32.90</td><td class='num'>2</td><td class='num'>3</td><td class='num'>18.40</td></tr><tr><td class=''>Drake London</td><td class=''>WR</td><td class=''>Nacua-Cola</td><td class='num'>30.30</td><td class='num'>5</td><td class='num'>1</td><td class='num'>14.10</td></tr><tr><td class=''>Brian Thomas Jr.</td><td class=''>WR</td><td class=''>Reverse Ted Lasso</td><td class='num'>29.87</td><td class='num'>5</td><td class='num'>5</td><td class='num'>9.40</td></tr><tr><td class=''>Chase Brown</td><td class=''>RB</td><td class=''>Two Buck Luck</td><td class='num'>27.97</td><td class='num'>3</td><td class='num'>3</td><td class='num'>14.30</td></tr><tr><td class=''>Jaylen Waddle</td><td class=''>WR</td><td class=''>In Purdytory</td><td class='num'>27.63</td><td class='num'>3</td><td class='num'>15</td><td class='num'>14.20</td></tr><tr><td class=''>Patrick Mahomes</td><td class=''>QB</td><td class=''>Moonbeam Ice Cream</td><td class='num'>26.67</td><td class='num'>2</td><td class='num'>14</td><td class='num'>23.37</td></tr><tr><td class=''>Ricky Pearsall</td><td class=''>WR</td><td class=''>Big Fire Knowles Energy</td><td class='num'>24.80</td><td class='num'>1</td><td class='num'>4</td><td class='num'>24.80</td></tr><tr><td class=''>Bo Nix</td><td class=''>QB</td><td class=''>Nacua-Cola</td><td class='num'>24.80</td><td class='num'>2</td><td class='num'>1</td><td class='num'>23.13</td></tr><tr><td class=''>Aaron Jones Sr.</td><td class=''>RB</td><td class=''>Reverse Ted Lasso</td><td class='num'>24.70</td><td class='num'>2</td><td class='num'>13</td><td class='num'>13.30</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>Pat Pidgeon</td><td class='num'>24.70</td><td class='num'>3</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Jacoby Brissett</td><td class=''>QB</td><td class=''>Millan Darling Millan</td><td class='num'>23.63</td><td class='num'>1</td><td class='num'>16</td><td class='num'>23.63</td></tr></tbody>
+                    <tbody><tr><td class=''>Justin Jefferson</td><td class=''>WR</td><td class=''>Reverse Ted Lasso</td><td class='num'>80.10</td><td class='num'>6</td><td class='num'>3</td><td class='num'>25.90</td></tr><tr><td class=''>Daniel Jones</td><td class=''>QB</td><td class=''>Two Buck Luck</td><td class='num'>67.03</td><td class='num'>4</td><td class='num'>9</td><td class='num'>29.03</td></tr><tr><td class=''>Lamar Jackson</td><td class=''>QB</td><td class=''>Pat Pidgeon</td><td class='num'>64.80</td><td class='num'>7</td><td class='num'>13</td><td class='num'>16.03</td></tr><tr><td class=''>Matthew Stafford</td><td class=''>QB</td><td class=''>In Purdytory</td><td class='num'>62.30</td><td class='num'>6</td><td class='num'>6</td><td class='num'>19.17</td></tr><tr><td class=''>Courtland Sutton</td><td class=''>WR</td><td class=''>Moonbeam Ice Cream</td><td class='num'>59.30</td><td class='num'>4</td><td class='num'>2</td><td class='num'>30.20</td></tr><tr><td class=''>DeVonta Smith</td><td class=''>WR</td><td class=''>Moonbeam Ice Cream</td><td class='num'>49.80</td><td class='num'>5</td><td class='num'>1</td><td class='num'>13.50</td></tr><tr><td class=''>Jahmyr Gibbs</td><td class=''>RB</td><td class=''>Two Buck Luck</td><td class='num'>49.80</td><td class='num'>4</td><td class='num'>15</td><td class='num'>26.30</td></tr><tr><td class=''>Ladd McConkey</td><td class=''>WR</td><td class=''>Two Buck Luck</td><td class='num'>48.10</td><td class='num'>6</td><td class='num'>11</td><td class='num'>15.20</td></tr><tr><td class=''>Kenneth Walker III</td><td class=''>RB</td><td class=''>Moonbeam Ice Cream</td><td class='num'>47.30</td><td class='num'>4</td><td class='num'>6</td><td class='num'>26.80</td></tr><tr><td class=''>Amon-Ra St. Brown</td><td class=''>WR</td><td class=''>Millan Darling Millan</td><td class='num'>44.90</td><td class='num'>3</td><td class='num'>11</td><td class='num'>26.80</td></tr><tr><td class=''>Rhamondre Stevenson</td><td class=''>RB</td><td class=''>Joe’s Cocksmithing Station</td><td class='num'>43.90</td><td class='num'>3</td><td class='num'>9</td><td class='num'>20.10</td></tr><tr><td class=''>Jalen Hurts</td><td class=''>QB</td><td class=''>Big Fire Knowles Energy</td><td class='num'>42.00</td><td class='num'>4</td><td class='num'>5</td><td class='num'>15.07</td></tr><tr><td class=''>George Pickens</td><td class=''>WR</td><td class=''>Big Fire Knowles Energy</td><td class='num'>40.60</td><td class='num'>4</td><td class='num'>14</td><td class='num'>20.50</td></tr><tr><td class=''>Caleb Williams</td><td class=''>QB</td><td class=''>Two Buck Luck</td><td class='num'>39.97</td><td class='num'>3</td><td class='num'>7</td><td class='num'>20.77</td></tr><tr><td class=''>Trevor Lawrence</td><td class=''>QB</td><td class=''>Joe’s Cocksmithing Station</td><td class='num'>38.07</td><td class='num'>2</td><td class='num'>1</td><td class='num'>21.93</td></tr><tr><td class=''>Justin Fields</td><td class=''>QB</td><td class=''>Joe’s Cocksmithing Station</td><td class='num'>34.73</td><td class='num'>4</td><td class='num'>6</td><td class='num'>16.90</td></tr><tr><td class=''>Drake London</td><td class=''>WR</td><td class=''>Nacua-Cola</td><td class='num'>34.70</td><td class='num'>5</td><td class='num'>1</td><td class='num'>14.10</td></tr><tr><td class=''>Garrett Wilson</td><td class=''>WR</td><td class=''>Two Buck Luck</td><td class='num'>34.00</td><td class='num'>3</td><td class='num'>6</td><td class='num'>18.70</td></tr><tr><td class=''>Jaxson Dart</td><td class=''>QB</td><td class=''>In Purdytory</td><td class='num'>33.03</td><td class='num'>1</td><td class='num'>16</td><td class='num'>33.03</td></tr><tr><td class=''>CeeDee Lamb</td><td class=''>WR</td><td class=''>Two Buck Luck</td><td class='num'>32.90</td><td class='num'>2</td><td class='num'>3</td><td class='num'>18.40</td></tr><tr><td class=''>Brian Thomas Jr.</td><td class=''>WR</td><td class=''>Reverse Ted Lasso</td><td class='num'>29.87</td><td class='num'>5</td><td class='num'>5</td><td class='num'>9.40</td></tr><tr><td class=''>Tyrone Tracy Jr.</td><td class=''>RB</td><td class=''>Big Fire Knowles Energy</td><td class='num'>28.40</td><td class='num'>3</td><td class='num'>10</td><td class='num'>12.60</td></tr><tr><td class=''>Jaylen Waddle</td><td class=''>WR</td><td class=''>In Purdytory</td><td class='num'>27.63</td><td class='num'>3</td><td class='num'>15</td><td class='num'>14.20</td></tr><tr><td class=''>Javonte Williams</td><td class=''>RB</td><td class=''>Two Buck Luck</td><td class='num'>27.20</td><td class='num'>2</td><td class='num'>9</td><td class='num'>21.80</td></tr><tr><td class=''>Rashee Rice</td><td class=''>WR</td><td class=''>Millan Darling Millan</td><td class='num'>27.20</td><td class='num'>3</td><td class='num'>15</td><td class='num'>13.10</td></tr><tr><td class=''>Patrick Mahomes</td><td class=''>QB</td><td class=''>Moonbeam Ice Cream</td><td class='num'>26.67</td><td class='num'>2</td><td class='num'>14</td><td class='num'>23.37</td></tr><tr><td class=''>Ricky Pearsall</td><td class=''>WR</td><td class=''>Big Fire Knowles Energy</td><td class='num'>24.80</td><td class='num'>1</td><td class='num'>4</td><td class='num'>24.80</td></tr><tr><td class=''>Bo Nix</td><td class=''>QB</td><td class=''>Nacua-Cola</td><td class='num'>24.80</td><td class='num'>2</td><td class='num'>1</td><td class='num'>23.13</td></tr><tr><td class=''>Marvin Harrison Jr.</td><td class=''>WR</td><td class=''>Pat Pidgeon</td><td class='num'>24.70</td><td class='num'>3</td><td class='num'>7</td><td class='num'>11.00</td></tr><tr><td class=''>Deebo Samuel</td><td class=''>WR</td><td class=''>Millan Darling Millan</td><td class='num'>24.30</td><td class='num'>2</td><td class='num'>6</td><td class='num'>20.60</td></tr></tbody>
                 </table>
             </article>
         

@@ -25,19 +25,20 @@
             background: var(--bg);
             color: var(--text);
             font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.45;
+            line-height: 1.38;
+            font-size: 14px;
         }
         .page {
-            max-width: 1180px;
+            max-width: 1240px;
             margin: 0 auto;
-            padding: 24px 20px 48px;
+            padding: 18px 18px 42px;
         }
         .section {
             background: var(--surface);
             border: 1px solid var(--line);
-            border-radius: 14px;
-            padding: 24px;
-            margin-bottom: 18px;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
         .eyebrow {
             color: var(--text-muted);
@@ -48,15 +49,15 @@
             margin-bottom: 10px;
         }
         h1 {
-            font-size: 34px;
+            font-size: 30px;
             line-height: 1.1;
             letter-spacing: -0.02em;
             margin: 0 0 10px;
         }
         h2 {
-            font-size: 22px;
+            font-size: 19px;
             line-height: 1.2;
-            margin: 0 0 10px;
+            margin: 0 0 6px;
         }
         h3 {
             font-size: 16px;
@@ -67,34 +68,34 @@
         .card-grid {
             display: grid;
             grid-template-columns: repeat(12, minmax(0, 1fr));
-            gap: 12px;
+            gap: 8px;
         }
         .meta-strip {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 12px;
+            gap: 6px;
+            margin-top: 8px;
         }
         .meta-chip {
             border: 1px solid var(--line);
-            border-radius: 999px;
-            padding: 8px 12px;
+            border-radius: 6px;
+            padding: 6px 9px;
             background: #f8fafc;
-            min-height: 44px;
+            min-height: 34px;
         }
         .section-jump-nav {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 14px;
+            gap: 6px;
+            margin-top: 10px;
         }
         .section-jump-link {
             display: inline-flex;
             align-items: center;
-            min-height: 34px;
-            padding: 7px 10px;
+            min-height: 30px;
+            padding: 5px 9px;
             border: 1px solid var(--line);
-            border-radius: 8px;
+            border-radius: 6px;
             color: var(--text);
             background: var(--surface-muted);
             text-decoration: none;
@@ -116,25 +117,25 @@
         .insight-pair {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 12px;
-            margin-top: 12px;
+            gap: 8px;
+            margin-top: 8px;
         }
         .hero-grid {
             display: grid;
             grid-template-columns: 1.35fr 1fr;
-            gap: 14px;
+            gap: 10px;
             align-items: stretch;
         }
         .hero-card {
             border: 1px solid #c9d8ee;
-            border-radius: 16px;
-            padding: 20px;
+            border-radius: 8px;
+            padding: 14px;
             background: linear-gradient(180deg, #f4f8fe 0%, #e8f0fb 100%);
         }
         .hero-card .value {
-            font-size: 42px;
+            font-size: 34px;
             line-height: 0.95;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
         .hero-card .subvalue {
             font-size: 15px;
@@ -147,8 +148,8 @@
         .detail-card {
             grid-column: span 3;
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 14px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface-muted);
         }
         .detail-card.tertiary,
@@ -181,18 +182,18 @@
         .team-columns {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 14px;
+            gap: 10px;
         }
         .manager-summary-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 14px;
-            margin-bottom: 14px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
         .team-panel {
             border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 16px;
+            border-radius: 8px;
+            padding: 12px;
             background: var(--surface-muted);
         }
         .team-panel.winner {
@@ -241,13 +242,16 @@
         .pill.warn { color: var(--warning); border-color: #f4d39c; }
         .decision-table-stack {
             display: grid;
-            gap: 14px;
+            gap: 10px;
         }
         .decision-table-card {
             border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 14px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface-muted);
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
         }
         .decision-table-card h3 {
             margin-bottom: 4px;
@@ -286,15 +290,30 @@
         .table-wrap {
             overflow-x: auto;
             border: 1px solid var(--line);
-            border-radius: 10px;
+            border-radius: 6px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 13px;
+            font-size: 12px;
+        }
+        .compact-table {
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+        .compact-table table {
+            min-width: 640px;
+        }
+        .compact-table .table-wrap table {
+            min-width: 0;
         }
         th, td {
-            padding: 10px 12px;
+            padding: 7px 9px;
             border-bottom: 1px solid var(--line);
             text-align: left;
             vertical-align: top;
@@ -323,12 +342,12 @@
         .two-up {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 14px;
+            gap: 10px;
         }
         .compare-grid {
             display: grid;
             grid-template-columns: 1.2fr 1fr;
-            gap: 14px;
+            gap: 10px;
             align-items: start;
         }
         .compare-table td:first-child,
@@ -341,8 +360,8 @@
         }
         .chart-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 14px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface-muted);
         }
         .chart-card.highlight {
@@ -350,7 +369,7 @@
             border-color: #c9d8ee;
         }
         .chart-card + .chart-card {
-            margin-top: 12px;
+            margin-top: 8px;
         }
         .chart-title {
             font-size: 15px;
@@ -392,19 +411,19 @@
         .takeaway-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 12px;
-            margin-top: 12px;
+            gap: 8px;
+            margin-top: 8px;
         }
         .verdict-grid {
             display: grid;
             grid-template-columns: repeat(5, minmax(0, 1fr));
-            gap: 12px;
-            margin: 12px 0 14px;
+            gap: 8px;
+            margin: 8px 0 10px;
         }
         .verdict-card {
             border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 14px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface-muted);
         }
         .verdict-card .value {
@@ -413,9 +432,9 @@
         .callout {
             border: 1px solid #f1c0ba;
             background: #fff5f3;
-            border-radius: 12px;
-            padding: 12px 14px;
-            margin-bottom: 12px;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
         }
         .callout strong {
             display: block;
@@ -423,8 +442,8 @@
         }
         .takeaway-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 14px;
+            border-radius: 6px;
+            padding: 10px;
             background: var(--surface-muted);
         }
         .takeaway-card ul {
@@ -437,43 +456,43 @@
         .award-strip {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
         .skill-grid {
             display: grid;
             grid-template-columns: 1.2fr 1fr;
-            gap: 14px;
-            margin-bottom: 12px;
+            gap: 10px;
+            margin-bottom: 8px;
         }
         .skill-hero {
             border: 1px solid #d7e4f7;
-            border-radius: 14px;
-            padding: 18px;
+            border-radius: 8px;
+            padding: 12px;
             background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
         }
         .skill-team-list {
             display: grid;
-            gap: 10px;
+            gap: 8px;
         }
         .skill-team-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 12px;
+            border-radius: 6px;
+            padding: 9px;
             background: var(--surface-muted);
         }
         .award-card {
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 10px 12px;
+            border-radius: 6px;
+            padding: 8px 10px;
             background: #f8fafc;
             min-width: 220px;
             flex: 1 1 220px;
         }
         details.deep-metrics {
             border: 1px solid var(--line);
-            border-radius: 10px;
+            border-radius: 6px;
             background: var(--surface-muted);
-            padding: 14px;
+            padding: 10px;
         }
         details.deep-metrics summary {
             cursor: pointer;
@@ -509,6 +528,21 @@
             .section-jump-link {
                 flex: 1 1 calc(50% - 8px);
                 max-width: none;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 7px 8px;
+            }
+            th {
+                font-size: 10px;
+                letter-spacing: 0.02em;
+                line-height: 1.2;
+            }
+            .chart-card,
+            .decision-table-card {
+                padding: 8px;
             }
         }
         </style>
