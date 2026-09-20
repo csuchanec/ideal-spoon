@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chris B. Career Report</title><style>
+body{margin:0;background:#f5f7fa;color:#20242a;font:14px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1120px;margin:auto;padding:20px}a{color:#1b5dbf;font-weight:700;text-decoration:none}h1{margin:8px 0 2px;font-size:32px}h2{font-size:20px;margin:0 0 8px}section{background:#fff;border:1px solid #dde3ea;border-radius:6px;padding:16px;margin-top:14px}.lede{color:#4b5563;margin:0}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:14px}.metric{border:1px solid #dde3ea;padding:10px;border-radius:6px}.metric span{display:block;color:#64748b;font-size:11px;text-transform:uppercase;font-weight:700}.metric strong{font-size:19px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #e5e7eb;text-align:left}th{background:#f8fafc;color:#475569;font-size:12px}.num{text-align:right}
+</style></head><body>
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Chris-B</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../league_history.html">League History</a></li></ul></div></div></div></nav>
+<!-- report-nav:end --><main>
+<p><a href="../league_history.html">League History</a></p><div class="eyebrow">Historical Manager Report</div><h1>Chris B.</h1>
+<p class="lede">Completed-season career history across 8 seasons. The live season contributes to the all-time league standings but does not enter full-season comparisons until complete.</p>
+<div class="metrics">
+<div class="metric"><span>Career Record</span><strong>58-54-0</strong></div>
+<div class="metric"><span>Manager Type</span><strong>Boom-bust wild card</strong></div>
+<div class="metric"><span>Championships</span><strong>1</strong></div>
+<div class="metric"><span>Playoffs</span><strong>4</strong></div>
+<div class="metric"><span>Points Titles</span><strong>1</strong></div>
+<div class="metric"><span>Best Season</span><strong>2016 (#3, 11-5-0, 1643.1 pts)</strong></div>
+</div>
+<section><h2>Season By Season</h2><p class="lede">The career arc by team name, record, scoring, finish, and playoff result.</p><div class="table-wrap"><table><thead><tr><th>Year</th><th>Team</th><th>Record</th><th class="num">Points</th><th class="num">Rank</th><th>Playoff Finish</th></tr></thead><tbody><tr><td>2018</td><td>Don’t Stop Belleavin</td><td>5-9-0</td><td class='num'>1489.5</td><td class='num'>9</td><td>-</td></tr><tr><td>2017</td><td>Jayajayajayajayajayi</td><td>6-10-0</td><td class='num'>1462.5</td><td class='num'>7</td><td>-</td></tr><tr><td>2016</td><td>Jayajayajayajayajayi</td><td>11-5-0</td><td class='num'>1643.1</td><td class='num'>3</td><td>Champion</td></tr><tr><td>2015</td><td>Big Pete&#x27;s INTel</td><td>10-6-0</td><td class='num'>1540.7</td><td class='num'>3</td><td>Runner Up</td></tr><tr><td>2014</td><td>Maximum Barnage</td><td>11-5-0</td><td class='num'>1718.8</td><td class='num'>2</td><td>Runner Up</td></tr><tr><td>2013</td><td>Maximum Barnage</td><td>10-6-0</td><td class='num'>1776.6</td><td class='num'>2</td><td>-</td></tr><tr><td>2012</td><td>Maximum Barnage</td><td>5-9-0</td><td class='num'>1645.2</td><td class='num'>9</td><td>-</td></tr><tr><td>2011</td><td>Maximum Barnage</td><td>4-10-0</td><td class='num'>1681.9</td><td class='num'>10</td><td>-</td></tr></tbody></table></div></section>
+<section><h2>Head-To-Head History</h2><div class="table-wrap"><table><thead><tr><th>Opponent</th><th>Record</th><th class="num">Games</th><th class="num">Avg Margin</th></tr></thead><tbody><tr><td>Brian B</td><td>8-7-0</td><td class='num'>15</td><td class='num'>-0.7</td></tr><tr><td>Dave F.</td><td>5-9-0</td><td class='num'>14</td><td class='num'>-8.8</td></tr><tr><td>Craig S.</td><td>5-9-0</td><td class='num'>14</td><td class='num'>-8.3</td></tr><tr><td>Elissa P.</td><td>6-8-0</td><td class='num'>14</td><td class='num'>+6.6</td></tr><tr><td>Andrew P.</td><td>6-7-0</td><td class='num'>13</td><td class='num'>-4.6</td></tr><tr><td>Matt</td><td>6-7-0</td><td class='num'>13</td><td class='num'>+4.9</td></tr><tr><td>Chris P.</td><td>6-6-0</td><td class='num'>12</td><td class='num'>-3.7</td></tr><tr><td>Joe P.</td><td>9-3-0</td><td class='num'>12</td><td class='num'>+12.9</td></tr></tbody></table></div></section>
+</main></body></html>

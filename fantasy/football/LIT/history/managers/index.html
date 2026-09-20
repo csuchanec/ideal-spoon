@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Manager Career Reports</title></head><body>
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Index</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../league_history.html">League History</a></li></ul></div></div></div></nav>
+<!-- report-nav:end --><main><p><a href='../league_history.html'>League History</a></p><h1>Manager Career Reports</h1><table><thead><tr><th>Manager</th><th>Seasons</th><th>Record</th><th>Titles</th></tr></thead><tbody><tr><td><a href="dave-f.html">Dave F.</a></td><td>23</td><td>191-130</td><td>6</td></tr><tr><td><a href="brian-b.html">Brian B</a></td><td>22</td><td>177-131</td><td>4</td></tr><tr><td><a href="chris-p.html">Chris P.</a></td><td>23</td><td>162-159</td><td>2</td></tr><tr><td><a href="craig-s.html">Craig S.</a></td><td>23</td><td>160-160</td><td>3</td></tr><tr><td><a href="elissa-p.html">Elissa P.</a></td><td>22</td><td>156-150</td><td>1</td></tr><tr><td><a href="jason-p.html">Jason P.</a></td><td>21</td><td>137-155</td><td>1</td></tr><tr><td><a href="matt.html">Matt</a></td><td>19</td><td>135-131</td><td>4</td></tr><tr><td><a href="andrew-p.html">Andrew P.</a></td><td>17</td><td>118-122</td><td>0</td></tr><tr><td><a href="joe-p.html">Joe P.</a></td><td>17</td><td>112-120</td><td>1</td></tr><tr><td><a href="chris-b.html">Chris B.</a></td><td>8</td><td>58-54</td><td>1</td></tr><tr><td><a href="alex-m.html">Alex M.</a></td><td>8</td><td>56-51</td><td>0</td></tr><tr><td><a href="yarp.html">Yarp</a></td><td>9</td><td>54-76</td><td>0</td></tr><tr><td><a href="liana.html">Liana</a></td><td>5</td><td>32-44</td><td>0</td></tr><tr><td><a href="sean-r.html">Sean R.</a></td><td>5</td><td>16-47</td><td>0</td></tr><tr><td><a href="shannon-d.html">Shannon D.</a></td><td>2</td><td>16-12</td><td>0</td></tr><tr><td><a href="steve-n.html">Steve N.</a></td><td>2</td><td>10-19</td><td>0</td></tr><tr><td><a href="melissa-p.html">Melissa P.</a></td><td>1</td><td>5-8</td><td>0</td></tr><tr><td><a href="joe-d.html">Joe D.</a></td><td>1</td><td>3-12</td><td>0</td></tr></tbody></table></main></body></html>

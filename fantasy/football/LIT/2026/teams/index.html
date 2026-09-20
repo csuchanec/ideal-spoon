@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Team Reports</title>
+    <style>
+        body { margin: 0; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #20242a; background: #f5f7fa; font-size: 14px; line-height: 1.38; }
+        .index-page { max-width: 1240px; margin: 0 auto; padding: 18px 18px 44px; }
+        h1 { margin: 0 0 10px; font-size: 30px; }
+        h2 { margin: 0 0 8px; font-size: 19px; }
+        .lede { color: #4b5563; max-width: 820px; line-height: 1.38; margin: 0 0 8px; }
+        .manager-line { margin: 0 0 8px; font-size: 15px; color: #334155; }
+        .grade-pill { display: inline-block; margin-left: 8px; padding: 3px 7px; border: 1px solid #bfdbfe; border-radius: 999px; background: #eff6ff; color: #1e40af; font-size: 12px; font-weight: 700; }
+        a { color: #1b5dbf; font-weight: 700; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        section { background: #fff; border: 1px solid #dde3ea; border-radius: 6px; padding: 14px; margin-top: 12px; }
+        h3 { margin: 2px 0 6px; font-size: 14px; color: #334155; }
+        .metric-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin: 10px 0; }
+        .metric-strip div { background: #fff; border: 1px solid #dde3ea; border-radius: 6px; padding: 9px; }
+        .metric-strip span { display: block; color: #697386; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+        .metric-strip strong { display: block; margin-top: 2px; font-size: 17px; }
+        .chart-card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 9px; background: #f8fafc; }
+        .chart-note { color: #64748b; font-size: 12px; line-height: 1.45; }
+        .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+        .section-grid.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+        .mini-grid { display: grid; gap: 6px; }
+        .snapshot-grid { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; }
+        .mini-card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px; background: #fff; }
+        .mini-card__label { color: #64748b; font-size: 11px; font-weight: 700; }
+        .mini-card strong { display: block; margin-top: 2px; font-size: 18px; color: #111827; }
+        .mini-card p { margin: 3px 0 0; color: #475569; font-size: 12px; line-height: 1.3; }
+        .legend { display: flex; flex-wrap: wrap; gap: 8px; color: #475569; font-size: 12px; font-weight: 700; }
+        .legend span { display: inline-flex; gap: 6px; align-items: center; }
+        .legend i { display: inline-block; width: 18px; height: 3px; border-radius: 999px; }
+        .legend .blue { background: #1d4ed8; }
+        .legend .red { background: #dc2626; }
+        .legend .gray { background: #94a3b8; }
+        .muted { color: #64748b; }
+        .table-wrap { overflow-x: auto; max-width: 100%; min-width: 0; box-sizing: border-box; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        th, td { padding: 7px 9px; border-bottom: 1px solid #e5eaf0; text-align: left; vertical-align: top; }
+        th { color: #334155; font-size: 11px; text-transform: uppercase; background: #f8fafc; }
+        .num { text-align: right; white-space: nowrap; }
+        @media (max-width: 640px) {
+            .team-page { padding: 14px 10px 32px; }
+            section { padding: 10px; margin-top: 10px; }
+            .chart-card { padding: 8px; }
+            table { font-size: 12px; }
+            th, td { padding: 7px 8px; }
+            th { font-size: 10px; letter-spacing: 0.02em; line-height: 1.2; }
+        }
+    </style>
+</head>
+<body>
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">2026 Team Index</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><span class="report-nav-current">Team Index</span></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><span class="report-nav-current">All Teams</span></li><li><a href="bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="in-purdytory.html">In Purdytory</a></li><li><a href="love-land-hurts.html">Love(land) Hurts</a></li><li><a href="millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="nacua-cola.html">Nacua-Cola</a></li><li><a href="pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="squat.html">Squat</a></li><li><a href="two-buck-luck.html">Two Buck Luck</a></li><li><a href="zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li></ul></div></div></div></nav>
+<!-- report-nav:end -->
+
+            <main class="index-page">
+                <p><a href="../index.html">Season Index</a></p>
+                <h1>2026 Team Reports</h1>
+                <p class="lede">Team-specific season pages collect weekly scores, matchups, management grades, form, and roster move outcomes in one place.</p>
+                <section>
+                    <h2>Teams</h2>
+                    <div class="table-wrap"><table><thead><tr>
+                        <th>Team</th><th>Manager</th><th>Record</th><th class="num">Points</th>
+                        <th>Season Grade</th><th class="num">Lineup Pts Left</th><th>Report</th>
+                    </tr></thead><tbody><tr><td><a href="pat-pidgeon.html">Pat Pidgeon</a></td><td>Jason P.</td><td>1-0</td><td class='num'>186.5</td><td>A- (90%)</td><td class='num'>11.4</td><td><a href="pat-pidgeon.html">Team Detail</a></td></tr><tr><td><a href="sigma-chi-whiteout.html">Sigma Chi Whiteout</a></td><td>Brian B</td><td>1-0</td><td class='num'>178.0</td><td>B (87%)</td><td class='num'>13.3</td><td><a href="sigma-chi-whiteout.html">Team Detail</a></td></tr><tr><td><a href="bend-snap-count.html">Bend &amp; Snap Count</a></td><td>Elissa P.</td><td>1-0</td><td class='num'>148.3</td><td>A+ (99%)</td><td class='num'>3.1</td><td><a href="bend-snap-count.html">Team Detail</a></td></tr><tr><td><a href="zszizzle.html">ZSzizzle</a></td><td>Mike</td><td>1-0</td><td class='num'>136.3</td><td>C (75%)</td><td class='num'>29.6</td><td><a href="zszizzle.html">Team Detail</a></td></tr><tr><td><a href="love-land-hurts.html">Love(land) Hurts</a></td><td>Matt</td><td>1-0</td><td class='num'>96.3</td><td>D- (60%)</td><td class='num'>48.6</td><td><a href="love-land-hurts.html">Team Detail</a></td></tr><tr><td><a href="millans-last-supper.html">Millan’s Last Supper</a></td><td>Liana</td><td>0-1</td><td class='num'>127.4</td><td>B- (83%)</td><td class='num'>15.6</td><td><a href="millans-last-supper.html">Team Detail</a></td></tr><tr><td><a href="two-buck-luck.html">Two Buck Luck</a></td><td>Dave F.</td><td>0-1</td><td class='num'>124.7</td><td>B- (81%)</td><td class='num'>23.2</td><td><a href="two-buck-luck.html">Team Detail</a></td></tr><tr><td><a href="in-purdytory.html">In Purdytory</a></td><td>Chris P.</td><td>0-1</td><td class='num'>111.7</td><td>C (75%)</td><td class='num'>22.9</td><td><a href="in-purdytory.html">Team Detail</a></td></tr><tr><td><a href="nacua-cola.html">Nacua-Cola</a></td><td>Craig</td><td>0-1</td><td class='num'>77.7</td><td>D+ (64%)</td><td class='num'>31.1</td><td><a href="nacua-cola.html">Team Detail</a></td></tr><tr><td><a href="squat.html">Squat</a></td><td>Yarp</td><td>0-1</td><td class='num'>52.0</td><td>D (64%)</td><td class='num'>19.0</td><td><a href="squat.html">Team Detail</a></td></tr></tbody></table></div>
+                </section>
+            </main>
+            
+</body>
+</html>

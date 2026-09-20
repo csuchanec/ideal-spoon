@@ -3,7 +3,7 @@
     "schema_version": "1.1",
     "year": 2003,
     "week": 1,
-    "generated_at": "2026-09-07T16:19:14.077909",
+    "generated_at": "2026-09-19T06:54:20.834836",
     "total_active_players": 0,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
@@ -47,12 +47,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -61,7 +118,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -72,8 +129,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -101,7 +158,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -112,8 +169,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -663,12 +720,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 11,
+        "bench_count": 5,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 0,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 0,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -677,7 +791,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -688,8 +802,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -717,7 +831,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -728,8 +842,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -1279,12 +1393,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 2,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -1293,7 +1464,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -1304,8 +1475,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -1333,7 +1504,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -1344,8 +1515,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -1895,12 +2066,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 2,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -1909,7 +2137,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -1920,8 +2148,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -1949,7 +2177,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -1960,8 +2188,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -2511,12 +2739,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 14,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 3,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -2525,7 +2810,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -2536,8 +2821,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -2565,7 +2850,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -2576,8 +2861,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -3127,12 +3412,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 2,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -3141,7 +3483,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -3152,8 +3494,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -3181,7 +3523,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -3192,8 +3534,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -3743,12 +4085,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 14,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 3,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -3757,7 +4156,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -3768,8 +4167,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -3797,7 +4196,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -3808,8 +4207,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -4359,12 +4758,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -4373,7 +4829,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -4384,8 +4840,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -4413,7 +4869,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -4424,8 +4880,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -4975,12 +5431,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -4989,7 +5502,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -5000,8 +5513,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -5029,7 +5542,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -5040,8 +5553,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -5591,12 +6104,69 @@
       "manager_effectiveness": "failing process",
       "recommendations": [],
       "lineup_context": {
-        "starter_count": 0,
-        "bench_count": 0,
+        "starter_count": 13,
+        "bench_count": 3,
         "starter_points": 0.0,
         "bench_points": 0.0,
         "bench_points_above_starters": 0.0,
-        "position_breakdown": []
+        "position_breakdown": [
+          {
+            "position": "DB",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DEF",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "DL",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "K",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "QB",
+            "starters": 2,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "RB",
+            "starters": 2,
+            "bench": 1,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          },
+          {
+            "position": "WR",
+            "starters": 3,
+            "bench": 2,
+            "starter_points": 0.0,
+            "bench_points": 0.0
+          }
+        ]
       },
       "recommendation_summary": {
         "total": 0,
@@ -5605,7 +6175,7 @@
         "total_upside_points": 0.0,
         "strong_signal_count": 0,
         "high_confidence_count": 0,
-        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+        "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
         "diagnostic_upside": "",
         "top_call": null,
         "top_calls": [],
@@ -5616,8 +6186,8 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
@@ -5645,7 +6215,7 @@
           "total_upside_points": 0.0,
           "strong_signal_count": 0,
           "high_confidence_count": 0,
-          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the swing and signal-strength filters.",
+          "diagnostic_summary": "No qualifying start/sit or waiver recommendations cleared the completed-score and minimum-impact filters.",
           "diagnostic_upside": "",
           "top_call": null,
           "top_calls": [],
@@ -5656,8 +6226,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -6188,6 +6758,7 @@
     "unrostered_outperformance_by_position": []
   },
   "original_brief": {
+    "week": 1,
     "top_scoring_player": {
       "name": "Tony Gonzalez",
       "position": "TE",
@@ -6216,6 +6787,152 @@
         "points": 0.0,
         "fantasy_team": "Team 8",
         "ownership_status": "ACTIVE"
+      }
+    ],
+    "top_scoring_players_by_position": [
+      {
+        "position": "QB",
+        "position_rank": 1,
+        "name": "A.J. Feeley",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "QB",
+        "position_rank": 2,
+        "name": "Aaron Brooks",
+        "points": 0.0,
+        "fantasy_team": "Team 8",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "QB",
+        "position_rank": 3,
+        "name": "Akili Smith",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "RB",
+        "position_rank": 1,
+        "name": "Aaron Stecker",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "RB",
+        "position_rank": 2,
+        "name": "Adrian Murrell",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "RB",
+        "position_rank": 3,
+        "name": "Adrian Peterson",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "WR",
+        "position_rank": 1,
+        "name": "Aaron Lockett",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "WR",
+        "position_rank": 2,
+        "name": "Aaron Moorehead",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "WR",
+        "position_rank": 3,
+        "name": "Adam Herzing",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "TE",
+        "position_rank": 1,
+        "name": "Aaron Shea",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "TE",
+        "position_rank": 2,
+        "name": "Aaron Walker",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "TE",
+        "position_rank": 3,
+        "name": "Alge Crumpler",
+        "points": 0.0,
+        "fantasy_team": "Team 10",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "K",
+        "position_rank": 1,
+        "name": "Aaron Elling",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "K",
+        "position_rank": 2,
+        "name": "Adam Vinatieri",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "K",
+        "position_rank": 3,
+        "name": "Bill Gramatica",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "DEF",
+        "position_rank": 1,
+        "name": "Arizona",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "DEF",
+        "position_rank": 2,
+        "name": "Atlanta",
+        "points": 0.0,
+        "fantasy_team": "Team 10",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "DEF",
+        "position_rank": 3,
+        "name": "Baltimore",
+        "points": 0.0,
+        "fantasy_team": null,
+        "ownership_status": null
       }
     ],
     "biggest_over_under_performers": {
@@ -7665,22 +8382,11 @@
       ]
     },
     "team_z_score_performance": {
-      "over": {
-        "teamKey": "79.l.462122.t.1",
-        "teamName": "Team 1",
-        "week_points": 0.0,
-        "mean_prior": 0.0,
-        "std_prior": 0.0,
-        "z_score": 0.0
-      },
-      "under": {
-        "teamKey": "79.l.462122.t.1",
-        "teamName": "Team 1",
-        "week_points": 0.0,
-        "mean_prior": 0.0,
-        "std_prior": 0.0,
-        "z_score": 0.0
-      }
+      "status": "insufficient_history",
+      "minimum_prior_weeks": 3,
+      "available_prior_weeks": 0,
+      "over": null,
+      "under": null
     },
     "playoff_picture": {
       "playoff_spots": 4,
@@ -8130,77 +8836,11 @@
       ]
     },
     "playoff_snapshot": {
-      "in_playoffs_top4": [
-        {
-          "seed": 1,
-          "teamKey": "79.l.462122.t.10",
-          "teamName": "Team 10",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 196.55
-        },
-        {
-          "seed": 2,
-          "teamKey": "79.l.462122.t.9",
-          "teamName": "Team 9",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 156.29
-        },
-        {
-          "seed": 3,
-          "teamKey": "79.l.462122.t.7",
-          "teamName": "Team 7",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 144.63
-        },
-        {
-          "seed": 4,
-          "teamKey": "79.l.462122.t.1",
-          "teamName": "Team 1",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 139.0
-        }
-      ],
+      "status": "too_early",
+      "minimum_week": 4,
+      "in_playoffs_top4": [],
       "eliminated": [],
-      "bubble": [
-        {
-          "seed": 4,
-          "teamKey": "79.l.462122.t.1",
-          "teamName": "Team 1",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 139.0,
-          "max_possible_wins": 15
-        },
-        {
-          "seed": 5,
-          "teamKey": "79.l.462122.t.11",
-          "teamName": null,
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 101.98,
-          "max_possible_wins": 15
-        },
-        {
-          "seed": 6,
-          "teamKey": "79.l.462122.t.6",
-          "teamName": "Team 6",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 96.0,
-          "max_possible_wins": 15
-        }
-      ]
+      "bubble": []
     },
     "over_under": {
       "over_abs_top3": [],

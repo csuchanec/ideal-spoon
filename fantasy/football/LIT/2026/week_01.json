@@ -3,28 +3,28 @@
     "schema_version": "1.1",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-17T11:10:53.121558",
+    "generated_at": "2026-09-20T06:03:59.989898",
     "total_active_players": 368,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
     "image_policy": "disabled",
-    "output_dir": "/Users/csuchanec/dev/code/FantasyFootball/analysis/weekly_report/data/2026",
+    "output_dir": "analysis/weekly_report/data/2026",
     "data_quality": {
       "boom_bust_missing_team_count": 0,
       "recommendations_generated": 26,
-      "recommendations_deduped": 18,
-      "free_agent_recommendations_filtered": 34,
+      "recommendations_deduped": 19,
+      "free_agent_recommendations_filtered": 37,
       "trend_week_causal": true
     }
   },
   "teams": {
     "Sigma Chi Whiteout": {
       "actual_score": 178.0333333333333,
-      "ideal_score": 200.2,
-      "optimization_missed": 22.166666666666686,
-      "manager_grade_pct": 94.92773892773891,
+      "ideal_score": 191.36666666666665,
+      "optimization_missed": 13.333333333333336,
+      "manager_grade_pct": 93.0325727225222,
       "manager_grade_letter": "A",
-      "lineup_grade_pct": 88.92773892773891,
+      "lineup_grade_pct": 93.0325727225222,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
       "trend_basis": "Need at least two scored weeks.",
@@ -56,7 +56,7 @@
           "source": "ROSTER",
           "reason": "At WR, swap in Parker Washington over George Pickens for an estimated +13.3 points this week.",
           "confidence": 0.9333333333333333,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -77,17 +77,17 @@
             "capped_total": 0.9333333333333333
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
         "starter_count": 9,
-        "bench_count": 6,
+        "bench_count": 7,
         "starter_points": 178.0333333333333,
-        "bench_points": 79.63333333333333,
-        "bench_points_above_starters": 22.166666666666686,
+        "bench_points": 79.13333333333333,
+        "bench_points_above_starters": 13.333333333333336,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -127,9 +127,9 @@
           {
             "position": "WR",
             "starters": 2,
-            "bench": 3,
+            "bench": 4,
             "starter_points": 14.100000000000001,
-            "bench_points": 48.53333333333333
+            "bench_points": 48.03333333333333
           }
         ]
       },
@@ -141,7 +141,7 @@
         "strong_signal_count": 1,
         "high_confidence_count": 1,
         "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 13.3 pts. Large-enough edge calls: 1.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 13.3 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Parker Washington",
           "benched_player": "George Pickens",
@@ -158,7 +158,7 @@
             "point_swing": 13.333333333333336,
             "recommended_points": 18.133333333333336,
             "compared_points": 4.800000000000001,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
           }
         ],
@@ -169,17 +169,17 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 22.166666666666686,
+        "roster_missed_points": 13.333333333333336,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
-        "blended_ideal_score": 200.2,
-        "lineup_grade_pct": 88.92773892773891,
-        "decision_grade_pct": 88.92773892773891,
+        "blended_ideal_score": 191.36666666666665,
+        "lineup_grade_pct": 93.0325727225222,
+        "decision_grade_pct": 93.0325727225222,
         "top_lineup_swap": {
           "recommended_player": "Parker Washington",
           "starter_replaced": "George Pickens",
@@ -189,11 +189,62 @@
           "position": "WR"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 94.92773892773891
+        "manager_grade_final_pct": 93.0325727225222
       },
-      "team_story": "Sigma Chi Whiteout is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth an estimated +13.3 points; 1 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 94.92773892773891,
+      "team_story": "Sigma Chi Whiteout is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +13.3 points; 1 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "actual_team": "Washington Commanders",
+          "points": 18.6,
+          "season_avg": 7.160000000000001,
+          "type": "BOOM",
+          "z_score": 2.3548645592733775,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "actual_team": "Chicago Bears",
+          "points": 37.4,
+          "season_avg": 15.282352941176471,
+          "type": "BOOM",
+          "z_score": 2.2889254768057348,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "actual_team": "Green Bay Packers",
+          "points": 13.5,
+          "season_avg": 4.0861111111111095,
+          "type": "BOOM",
+          "z_score": 1.980735883786544,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "actual_team": "Philadelphia Eagles",
+          "points": 22.7,
+          "season_avg": 9.94375,
+          "type": "BOOM",
+          "z_score": 1.7258785745789615,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Mike Evans",
+          "position": "WR",
+          "actual_team": "San Francisco 49ers",
+          "points": 16.9,
+          "season_avg": 6.581818181818182,
+          "type": "BOOM",
+          "z_score": 1.5053876573109228,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "process_score_pct": 93.0325727225222,
       "process_score_letter": "A",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -207,7 +258,7 @@
             "source": "ROSTER",
             "reason": "At WR, swap in Parker Washington over George Pickens for an estimated +13.3 points this week.",
             "confidence": 0.9333333333333333,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -228,8 +279,8 @@
               "capped_total": 0.9333333333333333
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -242,7 +293,7 @@
           "strong_signal_count": 1,
           "high_confidence_count": 1,
           "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 13.3 pts. Large-enough edge calls: 1.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 13.3 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Parker Washington",
             "benched_player": "George Pickens",
@@ -259,7 +310,7 @@
               "point_swing": 13.333333333333336,
               "recommended_points": 18.133333333333336,
               "compared_points": 4.800000000000001,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
             }
           ],
@@ -270,8 +321,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -314,21 +365,21 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 94.92773892773891,
+          "score_pct": 93.0325727225222,
           "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 87.11604429802622,
-          "letter": "B+",
+          "score_pct": 86.64225274672205,
+          "letter": "B",
           "label": "well managed"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 88.92773892773891,
-            "decision_grade_pct": 88.92773892773891,
-            "roster_missed_points": 22.166666666666686,
+            "lineup_efficiency_pct": 93.0325727225222,
+            "decision_grade_pct": 93.0325727225222,
+            "roster_missed_points": 13.333333333333336,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -351,25 +402,25 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Sigma Chi Whiteout graded A this week and B+ for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
+        "summary": "Sigma Chi Whiteout graded A this week and B for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 94.92773892773891,
+          "score_pct": 93.0325727225222,
           "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 87.11604429802622,
-          "letter": "B+",
+          "score_pct": 86.64225274672205,
+          "letter": "B",
           "label": "well managed"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 88.92773892773891,
-            "decision_grade_pct": 88.92773892773891,
-            "roster_missed_points": 22.166666666666686,
+            "lineup_efficiency_pct": 93.0325727225222,
+            "decision_grade_pct": 93.0325727225222,
+            "roster_missed_points": 13.333333333333336,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -392,16 +443,16 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Sigma Chi Whiteout graded A this week and B+ for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
+        "summary": "Sigma Chi Whiteout graded A this week and B for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
       }
     },
     "Squat": {
-      "actual_score": 52.5,
-      "ideal_score": 81.19999999999996,
-      "optimization_missed": 28.69999999999996,
-      "manager_grade_pct": 64.65517241379314,
-      "manager_grade_letter": "D+",
-      "lineup_grade_pct": 64.65517241379314,
+      "actual_score": 51.99999999999999,
+      "ideal_score": 70.96666666666658,
+      "optimization_missed": 18.966666666666583,
+      "manager_grade_pct": 73.27383748238617,
+      "manager_grade_letter": "C",
+      "lineup_grade_pct": 73.27383748238617,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
       "trend_basis": "Need at least two scored weeks.",
@@ -421,7 +472,7 @@
         }
       ],
       "historical_avg": 52.0,
-      "manager_effectiveness": "bad decisions",
+      "manager_effectiveness": "reasonable but costly",
       "recommendations": [
         {
           "position": "WR",
@@ -433,7 +484,7 @@
           "source": "ROSTER",
           "reason": "At WR, swap in Stefon Diggs over Quentin Johnston for an estimated +13.8 points this week.",
           "confidence": 0.9450000000000001,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -454,8 +505,43 @@
             "capped_total": 0.9450000000000001
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
+          }
+        },
+        {
+          "position": "QB",
+          "recommended_player": "Matthew Stafford",
+          "recommended_points": 3.0666666666666145,
+          "benched_player": "Kyler Murray",
+          "benched_points": -0.5000000000000061,
+          "point_swing": 3.5666666666666207,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Matthew Stafford over Kyler Murray for an estimated +3.6 points this week.",
+          "confidence": 0.6891666666666655,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Kyler Murray",
+            "points": -0.5000000000000061,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.08916666666666552,
+            "capped_total": 0.6891666666666655
+          },
+          "sample_context": {
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         },
         {
@@ -468,7 +554,7 @@
           "source": "ROSTER",
           "reason": "At RB, swap in RJ Harvey over Jonathon Brooks for an estimated +1.6 points this week.",
           "confidence": 0.639999999999999,
-          "signal_label": "Thin signal",
+          "signal_label": "Low hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -489,17 +575,17 @@
             "capped_total": 0.639999999999999
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
-        "starter_count": 8,
-        "bench_count": 6,
-        "starter_points": 52.5,
+        "starter_count": 9,
+        "bench_count": 7,
+        "starter_points": 51.99999999999999,
         "bench_points": 43.06666666666658,
-        "bench_points_above_starters": 28.69999999999996,
+        "bench_points_above_starters": 18.966666666666583,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -517,9 +603,9 @@
           },
           {
             "position": "QB",
-            "starters": 0,
+            "starters": 1,
             "bench": 1,
-            "starter_points": 0.0,
+            "starter_points": -0.5000000000000061,
             "bench_points": 3.0666666666666145
           },
           {
@@ -539,21 +625,21 @@
           {
             "position": "WR",
             "starters": 2,
-            "bench": 2,
+            "bench": 3,
             "starter_points": 3.9000000000000004,
             "bench_points": 21.2
           }
         ]
       },
       "recommendation_summary": {
-        "total": 2,
-        "roster_swaps": 2,
+        "total": 3,
+        "roster_swaps": 3,
         "waiver_moves": 0,
-        "total_upside_points": 15.399999999999963,
+        "total_upside_points": 18.966666666666583,
         "strong_signal_count": 1,
         "high_confidence_count": 1,
-        "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 15.4 pts. Large-enough edge calls: 1.",
+        "diagnostic_summary": "3 qualifying recommendation(s): 3 start/sit, 0 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 19.0 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Stefon Diggs",
           "benched_player": "Quentin Johnston",
@@ -570,8 +656,19 @@
             "point_swing": 13.8,
             "recommended_points": 15.5,
             "compared_points": 1.7000000000000002,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
+          },
+          {
+            "recommended_player": "Matthew Stafford",
+            "compared_player": "Kyler Murray",
+            "source": "ROSTER",
+            "source_label": "start/sit swap",
+            "point_swing": 3.5666666666666207,
+            "recommended_points": 3.0666666666666145,
+            "compared_points": -0.5000000000000061,
+            "signal_label": "Low hindsight impact",
+            "edge_label": "Close point edge"
           },
           {
             "recommended_player": "RJ Harvey",
@@ -581,7 +678,7 @@
             "point_swing": 1.5999999999999623,
             "recommended_points": 8.799999999999963,
             "compared_points": 7.200000000000001,
-            "signal_label": "Thin signal",
+            "signal_label": "Low hindsight impact",
             "edge_label": "Close point edge"
           }
         ],
@@ -592,17 +689,17 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 28.69999999999996,
+        "roster_missed_points": 18.966666666666583,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
-        "blended_ideal_score": 81.19999999999996,
-        "lineup_grade_pct": 64.65517241379314,
-        "decision_grade_pct": 64.65517241379314,
+        "blended_ideal_score": 70.96666666666658,
+        "lineup_grade_pct": 73.27383748238617,
+        "decision_grade_pct": 73.27383748238617,
         "top_lineup_swap": {
           "recommended_player": "Stefon Diggs",
           "starter_replaced": "Quentin Johnston",
@@ -612,12 +709,33 @@
           "position": "WR"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 64.65517241379314
+        "manager_grade_final_pct": 73.27383748238617
       },
-      "team_story": "Squat is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth an estimated +15.4 points; 1 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 64.65517241379314,
-      "process_score_letter": "D+",
+      "team_story": "Squat is insufficient data with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +19.0 points; 1 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "actual_team": "Los Angeles Rams",
+          "points": 3.0666666666666145,
+          "season_avg": 22.36388888888881,
+          "type": "BUST",
+          "z_score": -1.7065218453293964,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Eagles",
+          "position": "DEF",
+          "actual_team": "Philadelphia Eagles",
+          "points": 3.0,
+          "season_avg": 10.2,
+          "type": "BUST",
+          "z_score": -1.3439761073038032,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "process_score_pct": 73.27383748238617,
+      "process_score_letter": "C",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -630,7 +748,7 @@
             "source": "ROSTER",
             "reason": "At WR, swap in Stefon Diggs over Quentin Johnston for an estimated +13.8 points this week.",
             "confidence": 0.9450000000000001,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -651,8 +769,43 @@
               "capped_total": 0.9450000000000001
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
+            }
+          },
+          {
+            "position": "QB",
+            "recommended_player": "Matthew Stafford",
+            "recommended_points": 3.0666666666666145,
+            "benched_player": "Kyler Murray",
+            "benched_points": -0.5000000000000061,
+            "point_swing": 3.5666666666666207,
+            "source": "ROSTER",
+            "reason": "At QB, swap in Matthew Stafford over Kyler Murray for an estimated +3.6 points this week.",
+            "confidence": 0.6891666666666655,
+            "signal_label": "Low hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Kyler Murray",
+              "points": -0.5000000000000061,
+              "role": "STARTER"
+            },
+            "swing_tier": "LOW",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.08916666666666552,
+              "capped_total": 0.6891666666666655
+            },
+            "sample_context": {
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           },
           {
@@ -665,7 +818,7 @@
             "source": "ROSTER",
             "reason": "At RB, swap in RJ Harvey over Jonathon Brooks for an estimated +1.6 points this week.",
             "confidence": 0.639999999999999,
-            "signal_label": "Thin signal",
+            "signal_label": "Low hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -686,21 +839,21 @@
               "capped_total": 0.639999999999999
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
         "available_players": [],
         "summary": {
-          "total": 2,
-          "roster_swaps": 2,
+          "total": 3,
+          "roster_swaps": 3,
           "waiver_moves": 0,
-          "total_upside_points": 15.399999999999963,
+          "total_upside_points": 18.966666666666583,
           "strong_signal_count": 1,
           "high_confidence_count": 1,
-          "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 15.4 pts. Large-enough edge calls: 1.",
+          "diagnostic_summary": "3 qualifying recommendation(s): 3 start/sit, 0 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 19.0 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Stefon Diggs",
             "benched_player": "Quentin Johnston",
@@ -717,8 +870,19 @@
               "point_swing": 13.8,
               "recommended_points": 15.5,
               "compared_points": 1.7000000000000002,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
+            },
+            {
+              "recommended_player": "Matthew Stafford",
+              "compared_player": "Kyler Murray",
+              "source": "ROSTER",
+              "source_label": "start/sit swap",
+              "point_swing": 3.5666666666666207,
+              "recommended_points": 3.0666666666666145,
+              "compared_points": -0.5000000000000061,
+              "signal_label": "Low hindsight impact",
+              "edge_label": "Close point edge"
             },
             {
               "recommended_player": "RJ Harvey",
@@ -728,7 +892,7 @@
               "point_swing": 1.5999999999999623,
               "recommended_points": 8.799999999999963,
               "compared_points": 7.200000000000001,
-              "signal_label": "Thin signal",
+              "signal_label": "Low hindsight impact",
               "edge_label": "Close point edge"
             }
           ],
@@ -739,8 +903,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -783,30 +947,30 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 64.65517241379314,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 73.27383748238617,
+          "letter": "C",
+          "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 61.40402400930978,
+          "score_pct": 63.55869027645804,
           "letter": "D",
           "label": "bad decisions"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 64.65517241379314,
-            "decision_grade_pct": 64.65517241379314,
-            "roster_missed_points": 28.69999999999996,
+            "lineup_efficiency_pct": 73.27383748238617,
+            "decision_grade_pct": 73.27383748238617,
+            "roster_missed_points": 18.966666666666583,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
             "move_grade_tags": [],
-            "score_vs_historical_avg": 0.5,
+            "score_vs_historical_avg": -7.105427357601002e-15,
             "season_average_score": 123.88400000000001,
-            "score_vs_season_average": -71.38400000000001,
+            "score_vs_season_average": -71.88400000000001,
             "weekly_rank": 10,
             "league_size": 10,
             "beat_league_median": false
@@ -820,34 +984,34 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Squat graded D+ this week and D for the season-to-date. Weekly process reads as bad decisions, season process reads as bad decisions."
+        "summary": "Squat graded C this week and D for the season-to-date. Weekly process reads as reasonable but costly, season process reads as bad decisions."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 64.65517241379314,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 73.27383748238617,
+          "letter": "C",
+          "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 61.40402400930978,
+          "score_pct": 63.55869027645804,
           "letter": "D",
           "label": "bad decisions"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 64.65517241379314,
-            "decision_grade_pct": 64.65517241379314,
-            "roster_missed_points": 28.69999999999996,
+            "lineup_efficiency_pct": 73.27383748238617,
+            "decision_grade_pct": 73.27383748238617,
+            "roster_missed_points": 18.966666666666583,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
             "move_grade_tags": [],
-            "score_vs_historical_avg": 0.5,
+            "score_vs_historical_avg": -7.105427357601002e-15,
             "season_average_score": 123.88400000000001,
-            "score_vs_season_average": -71.38400000000001,
+            "score_vs_season_average": -71.88400000000001,
             "weekly_rank": 10,
             "league_size": 10,
             "beat_league_median": false
@@ -861,16 +1025,16 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Squat graded D+ this week and D for the season-to-date. Weekly process reads as bad decisions, season process reads as bad decisions."
+        "summary": "Squat graded C this week and D for the season-to-date. Weekly process reads as reasonable but costly, season process reads as bad decisions."
       }
     },
     "Love(land) Hurts": {
       "actual_score": 96.33333333333323,
-      "ideal_score": 161.93333333333322,
-      "optimization_missed": 65.6,
-      "manager_grade_pct": 57.4664259814747,
-      "manager_grade_letter": "D-",
-      "lineup_grade_pct": 59.489501852614225,
+      "ideal_score": 144.93333333333322,
+      "optimization_missed": 48.6,
+      "manager_grade_pct": 66.46734130634772,
+      "manager_grade_letter": "D+",
+      "lineup_grade_pct": 66.46734130634772,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
       "trend_basis": "Need at least two scored weeks.",
@@ -890,7 +1054,7 @@
         }
       ],
       "historical_avg": 96.33333333333323,
-      "manager_effectiveness": "failing process",
+      "manager_effectiveness": "bad decisions",
       "recommendations": [
         {
           "position": "RB",
@@ -902,7 +1066,7 @@
           "source": "ROSTER",
           "reason": "At RB, swap in Ashton Jeanty over Quinshon Judkins for an estimated +28.7 points this week.",
           "confidence": 1.0,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -923,43 +1087,8 @@
             "capped_total": 1.0
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
-          }
-        },
-        {
-          "position": "DEF",
-          "recommended_player": "Bengals",
-          "recommended_points": 18.0,
-          "benched_player": "Broncos",
-          "benched_points": 3.0,
-          "point_swing": 15.0,
-          "source": "FREE_AGENT",
-          "reason": "At DEF, consider adding Bengals instead of holding Broncos for an estimated +15.0 points this week.",
-          "confidence": 0.875,
-          "signal_label": "Strong signal",
-          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
-          "decision_type": "WAIVER_ADD",
-          "decision_type_label": "Waiver Add",
-          "comparison_target": {
-            "name": "Broncos",
-            "points": 3.0,
-            "role": "BENCH"
-          },
-          "swing_tier": "HIGH",
-          "leverage_label": "Major point swing",
-          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-          "edge_label": "Major point swing",
-          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-          "comparison_label": "Bench/roster candidate",
-          "confidence_breakdown": {
-            "base": 0.5,
-            "swing_bonus": 0.375,
-            "capped_total": 0.875
-          },
-          "sample_context": {
-            "recommended_player_weeks": 4,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         },
         {
@@ -972,7 +1101,7 @@
           "source": "ROSTER",
           "reason": "At K, swap in Tyler Loop over Harrison Mevis for an estimated +13.0 points this week.",
           "confidence": 0.925,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -993,17 +1122,52 @@
             "capped_total": 0.925
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
+          }
+        },
+        {
+          "position": "TE",
+          "recommended_player": "Mark Andrews",
+          "recommended_points": 6.9,
+          "benched_player": "Colston Loveland",
+          "benched_points": 0.0,
+          "point_swing": 6.9,
+          "source": "ROSTER",
+          "reason": "At TE, swap in Mark Andrews over Colston Loveland for an estimated +6.9 points this week.",
+          "confidence": 0.7725,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Colston Loveland",
+            "points": 0.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.17250000000000001,
+            "capped_total": 0.7725
+          },
+          "sample_context": {
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
-        "starter_count": 8,
+        "starter_count": 9,
         "bench_count": 7,
         "starter_points": 96.33333333333323,
         "bench_points": 97.26666666666661,
-        "bench_points_above_starters": 65.6,
+        "bench_points_above_starters": 48.6,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -1035,7 +1199,7 @@
           },
           {
             "position": "TE",
-            "starters": 0,
+            "starters": 1,
             "bench": 1,
             "starter_points": 0.0,
             "bench_points": 6.9
@@ -1051,13 +1215,13 @@
       },
       "recommendation_summary": {
         "total": 3,
-        "roster_swaps": 2,
-        "waiver_moves": 1,
-        "total_upside_points": 56.7,
-        "strong_signal_count": 3,
-        "high_confidence_count": 3,
-        "diagnostic_summary": "3 qualifying recommendation(s): 2 start/sit, 1 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 56.7 pts. Large-enough edge calls: 3.",
+        "roster_swaps": 3,
+        "waiver_moves": 0,
+        "total_upside_points": 48.6,
+        "strong_signal_count": 2,
+        "high_confidence_count": 2,
+        "diagnostic_summary": "3 qualifying recommendation(s): 3 start/sit, 0 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 48.6 pts. High-impact hindsight rows: 2.",
         "top_call": {
           "recommended_player": "Ashton Jeanty",
           "benched_player": "Quinshon Judkins",
@@ -1074,18 +1238,7 @@
             "point_swing": 28.700000000000003,
             "recommended_points": 35.7,
             "compared_points": 7.0,
-            "signal_label": "Strong signal",
-            "edge_label": "Major point swing"
-          },
-          {
-            "recommended_player": "Bengals",
-            "compared_player": "Broncos",
-            "source": "FREE_AGENT",
-            "source_label": "waiver add",
-            "point_swing": 15.0,
-            "recommended_points": 18.0,
-            "compared_points": 3.0,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
           },
           {
@@ -1096,8 +1249,19 @@
             "point_swing": 13.0,
             "recommended_points": 14.0,
             "compared_points": 1.0,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
+          },
+          {
+            "recommended_player": "Mark Andrews",
+            "compared_player": "Colston Loveland",
+            "source": "ROSTER",
+            "source_label": "start/sit swap",
+            "point_swing": 6.9,
+            "recommended_points": 6.9,
+            "compared_points": 0.0,
+            "signal_label": "Medium hindsight impact",
+            "edge_label": "Useful point swing"
           }
         ],
         "diagnostic_story": "Top recommendation was Ashton Jeanty over Quinshon Judkins (+28.7). Waiver calls are league-available opportunities, not proof that every manager had an easy actionable move.",
@@ -1107,17 +1271,17 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 65.6,
-        "free_agent_missed_points": 15.0,
+        "roster_missed_points": 48.6,
+        "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
-        "blended_ideal_score": 167.18333333333322,
-        "lineup_grade_pct": 59.489501852614225,
-        "decision_grade_pct": 57.62137374140163,
+        "blended_ideal_score": 144.93333333333322,
+        "lineup_grade_pct": 66.46734130634772,
+        "decision_grade_pct": 66.46734130634772,
         "top_lineup_swap": {
           "recommended_player": "Ashton Jeanty",
           "starter_replaced": "Quinshon Judkins",
@@ -1126,20 +1290,24 @@
           "point_swing": 28.700000000000003,
           "position": "RB"
         },
-        "top_waiver_opportunity": {
-          "recommended_player": "Bengals",
-          "compared_player": "Broncos",
-          "recommended_points": 18.0,
-          "compared_points": 3.0,
-          "point_swing": 15.0,
-          "position": "DEF"
-        },
-        "manager_grade_final_pct": 57.4664259814747
+        "top_waiver_opportunity": null,
+        "manager_grade_final_pct": 66.46734130634772
       },
-      "team_story": "Love(land) Hurts is insufficient data with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth an estimated +56.7 points; 3 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 57.4664259814747,
-      "process_score_letter": "D-",
+      "team_story": "Love(land) Hurts is insufficient data with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +48.6 points; 2 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "actual_team": "Las Vegas Raiders",
+          "points": 35.7,
+          "season_avg": 13.805882352941177,
+          "type": "BOOM",
+          "z_score": 2.0386977346326427,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "process_score_pct": 66.46734130634772,
+      "process_score_letter": "D+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -1152,7 +1320,7 @@
             "source": "ROSTER",
             "reason": "At RB, swap in Ashton Jeanty over Quinshon Judkins for an estimated +28.7 points this week.",
             "confidence": 1.0,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -1173,8 +1341,8 @@
               "capped_total": 1.0
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           },
           {
@@ -1187,7 +1355,7 @@
             "source": "ROSTER",
             "reason": "At K, swap in Tyler Loop over Harrison Mevis for an estimated +13.0 points this week.",
             "confidence": 0.925,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -1208,57 +1376,56 @@
               "capped_total": 0.925
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
-          }
-        ],
-        "available_players": [
+          },
           {
-            "position": "DEF",
-            "recommended_player": "Bengals",
-            "recommended_points": 18.0,
-            "benched_player": "Broncos",
-            "benched_points": 3.0,
-            "point_swing": 15.0,
-            "source": "FREE_AGENT",
-            "reason": "At DEF, consider adding Bengals instead of holding Broncos for an estimated +15.0 points this week.",
-            "confidence": 0.875,
-            "signal_label": "Strong signal",
+            "position": "TE",
+            "recommended_player": "Mark Andrews",
+            "recommended_points": 6.9,
+            "benched_player": "Colston Loveland",
+            "benched_points": 0.0,
+            "point_swing": 6.9,
+            "source": "ROSTER",
+            "reason": "At TE, swap in Mark Andrews over Colston Loveland for an estimated +6.9 points this week.",
+            "confidence": 0.7725,
+            "signal_label": "Medium hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
-            "decision_type": "WAIVER_ADD",
-            "decision_type_label": "Waiver Add",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
             "comparison_target": {
-              "name": "Broncos",
-              "points": 3.0,
-              "role": "BENCH"
+              "name": "Colston Loveland",
+              "points": 0.0,
+              "role": "STARTER"
             },
-            "swing_tier": "HIGH",
-            "leverage_label": "Major point swing",
+            "swing_tier": "MEDIUM",
+            "leverage_label": "Useful point swing",
             "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-            "edge_label": "Major point swing",
+            "edge_label": "Useful point swing",
             "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-            "comparison_label": "Bench/roster candidate",
+            "comparison_label": "Current starter",
             "confidence_breakdown": {
-              "base": 0.5,
-              "swing_bonus": 0.375,
-              "capped_total": 0.875
+              "base": 0.6,
+              "swing_bonus": 0.17250000000000001,
+              "capped_total": 0.7725
             },
             "sample_context": {
-              "recommended_player_weeks": 4,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
+        "available_players": [],
         "summary": {
           "total": 3,
-          "roster_swaps": 2,
-          "waiver_moves": 1,
-          "total_upside_points": 56.7,
-          "strong_signal_count": 3,
-          "high_confidence_count": 3,
-          "diagnostic_summary": "3 qualifying recommendation(s): 2 start/sit, 1 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 56.7 pts. Large-enough edge calls: 3.",
+          "roster_swaps": 3,
+          "waiver_moves": 0,
+          "total_upside_points": 48.6,
+          "strong_signal_count": 2,
+          "high_confidence_count": 2,
+          "diagnostic_summary": "3 qualifying recommendation(s): 3 start/sit, 0 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 48.6 pts. High-impact hindsight rows: 2.",
           "top_call": {
             "recommended_player": "Ashton Jeanty",
             "benched_player": "Quinshon Judkins",
@@ -1275,18 +1442,7 @@
               "point_swing": 28.700000000000003,
               "recommended_points": 35.7,
               "compared_points": 7.0,
-              "signal_label": "Strong signal",
-              "edge_label": "Major point swing"
-            },
-            {
-              "recommended_player": "Bengals",
-              "compared_player": "Broncos",
-              "source": "FREE_AGENT",
-              "source_label": "waiver add",
-              "point_swing": 15.0,
-              "recommended_points": 18.0,
-              "compared_points": 3.0,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
             },
             {
@@ -1297,8 +1453,19 @@
               "point_swing": 13.0,
               "recommended_points": 14.0,
               "compared_points": 1.0,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
+            },
+            {
+              "recommended_player": "Mark Andrews",
+              "compared_player": "Colston Loveland",
+              "source": "ROSTER",
+              "source_label": "start/sit swap",
+              "point_swing": 6.9,
+              "recommended_points": 6.9,
+              "compared_points": 0.0,
+              "signal_label": "Medium hindsight impact",
+              "edge_label": "Useful point swing"
             }
           ],
           "diagnostic_story": "Top recommendation was Ashton Jeanty over Quinshon Judkins (+28.7). Waiver calls are league-available opportunities, not proof that every manager had an easy actionable move.",
@@ -1308,8 +1475,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -1352,22 +1519,22 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 57.4664259814747,
-          "letter": "D-",
-          "label": "failing process"
+          "score_pct": 66.46734130634772,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
-          "score_pct": 57.418506243594834,
+          "score_pct": 59.66873507481309,
           "letter": "D-",
           "label": "failing process"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 59.489501852614225,
-            "decision_grade_pct": 57.62137374140163,
-            "roster_missed_points": 65.6,
-            "free_agent_missed_points": 15.0,
+            "lineup_efficiency_pct": 66.46734130634772,
+            "decision_grade_pct": 66.46734130634772,
+            "roster_missed_points": 48.6,
+            "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -1389,26 +1556,26 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Love(land) Hurts graded D- this week and D- for the season-to-date. Weekly process reads as failing process, season process reads as failing process."
+        "summary": "Love(land) Hurts graded D+ this week and D- for the season-to-date. Weekly process reads as bad decisions, season process reads as failing process."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 57.4664259814747,
-          "letter": "D-",
-          "label": "failing process"
+          "score_pct": 66.46734130634772,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
-          "score_pct": 57.418506243594834,
+          "score_pct": 59.66873507481309,
           "letter": "D-",
           "label": "failing process"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 59.489501852614225,
-            "decision_grade_pct": 57.62137374140163,
-            "roster_missed_points": 65.6,
-            "free_agent_missed_points": 15.0,
+            "lineup_efficiency_pct": 66.46734130634772,
+            "decision_grade_pct": 66.46734130634772,
+            "roster_missed_points": 48.6,
+            "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -1430,15 +1597,15 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Love(land) Hurts graded D- this week and D- for the season-to-date. Weekly process reads as failing process, season process reads as failing process."
+        "summary": "Love(land) Hurts graded D+ this week and D- for the season-to-date. Weekly process reads as bad decisions, season process reads as failing process."
       }
     },
     "Pat Pidgeon": {
       "actual_score": 186.53333333333327,
       "ideal_score": 197.93333333333328,
-      "optimization_missed": 11.400000000000006,
-      "manager_grade_pct": 100.0,
-      "manager_grade_letter": "A+",
+      "optimization_missed": 11.400000000000002,
+      "manager_grade_pct": 94.24048501178848,
+      "manager_grade_letter": "A",
       "lineup_grade_pct": 94.24048501178848,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
@@ -1471,7 +1638,7 @@
           "source": "ROSTER",
           "reason": "At RB, swap in Chuba Hubbard over Omarion Hampton for an estimated +11.4 points this week.",
           "confidence": 0.885,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -1492,17 +1659,17 @@
             "capped_total": 0.885
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
         "starter_count": 9,
-        "bench_count": 6,
+        "bench_count": 7,
         "starter_points": 186.53333333333327,
         "bench_points": 78.19999999999992,
-        "bench_points_above_starters": 11.400000000000006,
+        "bench_points_above_starters": 11.400000000000002,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -1542,7 +1709,7 @@
           {
             "position": "WR",
             "starters": 3,
-            "bench": 2,
+            "bench": 3,
             "starter_points": 74.4,
             "bench_points": 25.0
           }
@@ -1556,7 +1723,7 @@
         "strong_signal_count": 1,
         "high_confidence_count": 1,
         "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 11.4 pts. Large-enough edge calls: 1.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 11.4 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Chuba Hubbard",
           "benched_player": "Omarion Hampton",
@@ -1573,7 +1740,7 @@
             "point_swing": 11.400000000000002,
             "recommended_points": 24.700000000000003,
             "compared_points": 13.3,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Useful point swing"
           }
         ],
@@ -1584,12 +1751,12 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 11.400000000000006,
+        "roster_missed_points": 11.400000000000002,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
         "blended_ideal_score": 197.93333333333328,
@@ -1604,12 +1771,43 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 100.0
+        "manager_grade_final_pct": 94.24048501178848
       },
-      "team_story": "Pat Pidgeon is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth an estimated +11.4 points; 1 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 100.0,
-      "process_score_letter": "A+",
+      "team_story": "Pat Pidgeon is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +11.4 points; 1 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Evan McPherson",
+          "position": "K",
+          "actual_team": "Cincinnati Bengals",
+          "points": 19.0,
+          "season_avg": 5.666666666666667,
+          "type": "BOOM",
+          "z_score": 11.547005383792513,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "actual_team": "Carolina Panthers",
+          "points": 24.700000000000003,
+          "season_avg": 8.513888888888888,
+          "type": "BOOM",
+          "z_score": 2.388876446260435,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "actual_team": "Baltimore Ravens",
+          "points": 26.0,
+          "season_avg": 10.18125,
+          "type": "BOOM",
+          "z_score": 2.289505853523878,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "process_score_pct": 94.24048501178848,
+      "process_score_letter": "A",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -1622,7 +1820,7 @@
             "source": "ROSTER",
             "reason": "At RB, swap in Chuba Hubbard over Omarion Hampton for an estimated +11.4 points this week.",
             "confidence": 0.885,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -1643,8 +1841,8 @@
               "capped_total": 0.885
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -1657,7 +1855,7 @@
           "strong_signal_count": 1,
           "high_confidence_count": 1,
           "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 11.4 pts. Large-enough edge calls: 1.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 11.4 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Chuba Hubbard",
             "benched_player": "Omarion Hampton",
@@ -1674,7 +1872,7 @@
               "point_swing": 11.400000000000002,
               "recommended_points": 24.700000000000003,
               "compared_points": 13.3,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Useful point swing"
             }
           ],
@@ -1685,8 +1883,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -1729,12 +1927,12 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 100.0,
-          "letter": "A+",
+          "score_pct": 94.24048501178848,
+          "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 91.71716066015495,
+          "score_pct": 90.27728191310206,
           "letter": "A-",
           "label": "well managed"
         },
@@ -1743,7 +1941,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 94.24048501178848,
             "decision_grade_pct": 94.24048501178848,
-            "roster_missed_points": 11.400000000000006,
+            "roster_missed_points": 11.400000000000002,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -1766,16 +1964,16 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Pat Pidgeon graded A+ this week and A- for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
+        "summary": "Pat Pidgeon graded A this week and A- for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 100.0,
-          "letter": "A+",
+          "score_pct": 94.24048501178848,
+          "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 91.71716066015495,
+          "score_pct": 90.27728191310206,
           "letter": "A-",
           "label": "well managed"
         },
@@ -1784,7 +1982,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 94.24048501178848,
             "decision_grade_pct": 94.24048501178848,
-            "roster_missed_points": 11.400000000000006,
+            "roster_missed_points": 11.400000000000002,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -1807,16 +2005,16 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Pat Pidgeon graded A+ this week and A- for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
+        "summary": "Pat Pidgeon graded A this week and A- for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
       }
     },
     "Millan\u2019s Last Supper": {
       "actual_score": 127.36666666666657,
-      "ideal_score": 149.16666666666657,
-      "optimization_missed": 21.799999999999997,
-      "manager_grade_pct": 85.3854748603352,
-      "manager_grade_letter": "B",
-      "lineup_grade_pct": 85.3854748603352,
+      "ideal_score": 142.96666666666658,
+      "optimization_missed": 15.6,
+      "manager_grade_pct": 89.08836558638376,
+      "manager_grade_letter": "B+",
+      "lineup_grade_pct": 89.08836558638376,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
       "trend_basis": "Need at least two scored weeks.",
@@ -1848,7 +2046,7 @@
           "source": "ROSTER",
           "reason": "At RB, swap in Kyle Monangai over Christian McCaffrey for an estimated +10.6 points this week.",
           "confidence": 0.865,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -1869,8 +2067,8 @@
             "capped_total": 0.865
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         },
         {
@@ -1883,7 +2081,7 @@
           "source": "ROSTER",
           "reason": "At WR, swap in Michael Wilson over Davante Adams for an estimated +5.0 points this week.",
           "confidence": 0.7250000000000001,
-          "signal_label": "Good signal",
+          "signal_label": "Medium hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -1904,8 +2102,8 @@
             "capped_total": 0.7250000000000001
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
@@ -1914,7 +2112,7 @@
         "bench_count": 7,
         "starter_points": 127.36666666666657,
         "bench_points": 68.89999999999992,
-        "bench_points_above_starters": 21.799999999999997,
+        "bench_points_above_starters": 15.6,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -1968,7 +2166,7 @@
         "strong_signal_count": 1,
         "high_confidence_count": 1,
         "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 15.6 pts. Large-enough edge calls: 1.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 15.6 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Kyle Monangai",
           "benched_player": "Christian McCaffrey",
@@ -1985,7 +2183,7 @@
             "point_swing": 10.599999999999998,
             "recommended_points": 21.4,
             "compared_points": 10.8,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Useful point swing"
           },
           {
@@ -1996,7 +2194,7 @@
             "point_swing": 5.000000000000002,
             "recommended_points": 8.600000000000001,
             "compared_points": 3.6,
-            "signal_label": "Good signal",
+            "signal_label": "Medium hindsight impact",
             "edge_label": "Useful point swing"
           }
         ],
@@ -2007,17 +2205,17 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 21.799999999999997,
+        "roster_missed_points": 15.6,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
-        "blended_ideal_score": 149.16666666666657,
-        "lineup_grade_pct": 85.3854748603352,
-        "decision_grade_pct": 85.3854748603352,
+        "blended_ideal_score": 142.96666666666658,
+        "lineup_grade_pct": 89.08836558638376,
+        "decision_grade_pct": 89.08836558638376,
         "top_lineup_swap": {
           "recommended_player": "Kyle Monangai",
           "starter_replaced": "Christian McCaffrey",
@@ -2027,12 +2225,33 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 85.3854748603352
+        "manager_grade_final_pct": 89.08836558638376
       },
-      "team_story": "Millan\u2019s Last Supper is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth an estimated +15.6 points; 1 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 85.3854748603352,
-      "process_score_letter": "B",
+      "team_story": "Millan\u2019s Last Supper is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth a retrospective +15.6 points; 1 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Michael Wilson",
+          "position": "WR",
+          "actual_team": "Arizona Cardinals",
+          "points": 8.600000000000001,
+          "season_avg": 15.5,
+          "type": "BUST",
+          "z_score": -2.2961762234570404,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "actual_team": "Baltimore Ravens",
+          "points": 42.3,
+          "season_avg": 19.405882352941177,
+          "type": "BOOM",
+          "z_score": 1.6816730747009427,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "process_score_pct": 89.08836558638376,
+      "process_score_letter": "B+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -2045,7 +2264,7 @@
             "source": "ROSTER",
             "reason": "At RB, swap in Kyle Monangai over Christian McCaffrey for an estimated +10.6 points this week.",
             "confidence": 0.865,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -2066,8 +2285,8 @@
               "capped_total": 0.865
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           },
           {
@@ -2080,7 +2299,7 @@
             "source": "ROSTER",
             "reason": "At WR, swap in Michael Wilson over Davante Adams for an estimated +5.0 points this week.",
             "confidence": 0.7250000000000001,
-            "signal_label": "Good signal",
+            "signal_label": "Medium hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -2101,8 +2320,8 @@
               "capped_total": 0.7250000000000001
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -2115,7 +2334,7 @@
           "strong_signal_count": 1,
           "high_confidence_count": 1,
           "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 15.6 pts. Large-enough edge calls: 1.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 15.6 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Kyle Monangai",
             "benched_player": "Christian McCaffrey",
@@ -2132,7 +2351,7 @@
               "point_swing": 10.599999999999998,
               "recommended_points": 21.4,
               "compared_points": 10.8,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Useful point swing"
             },
             {
@@ -2143,7 +2362,7 @@
               "point_swing": 5.000000000000002,
               "recommended_points": 8.600000000000001,
               "compared_points": 3.6,
-              "signal_label": "Good signal",
+              "signal_label": "Medium hindsight impact",
               "edge_label": "Useful point swing"
             }
           ],
@@ -2154,8 +2373,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -2198,21 +2417,21 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 85.3854748603352,
-          "letter": "B",
+          "score_pct": 89.08836558638376,
+          "letter": "B+",
           "label": "well managed"
         },
         "season": {
-          "score_pct": 81.82772199779933,
+          "score_pct": 82.75344467931147,
           "letter": "B-",
           "label": "reasonable but costly"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 85.3854748603352,
-            "decision_grade_pct": 85.3854748603352,
-            "roster_missed_points": 21.799999999999997,
+            "lineup_efficiency_pct": 89.08836558638376,
+            "decision_grade_pct": 89.08836558638376,
+            "roster_missed_points": 15.6,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -2235,25 +2454,25 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Millan\u2019s Last Supper graded B this week and B- for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+        "summary": "Millan\u2019s Last Supper graded B+ this week and B- for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 85.3854748603352,
-          "letter": "B",
+          "score_pct": 89.08836558638376,
+          "letter": "B+",
           "label": "well managed"
         },
         "season": {
-          "score_pct": 81.82772199779933,
+          "score_pct": 82.75344467931147,
           "letter": "B-",
           "label": "reasonable but costly"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 85.3854748603352,
-            "decision_grade_pct": 85.3854748603352,
-            "roster_missed_points": 21.799999999999997,
+            "lineup_efficiency_pct": 89.08836558638376,
+            "decision_grade_pct": 89.08836558638376,
+            "roster_missed_points": 15.6,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -2276,13 +2495,13 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Millan\u2019s Last Supper graded B this week and B- for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+        "summary": "Millan\u2019s Last Supper graded B+ this week and B- for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
       }
     },
     "In Purdytory": {
       "actual_score": 111.66666666666659,
       "ideal_score": 134.56666666666658,
-      "optimization_missed": 22.89999999999999,
+      "optimization_missed": 22.9,
       "manager_grade_pct": 82.98241268268515,
       "manager_grade_letter": "B-",
       "lineup_grade_pct": 82.98241268268515,
@@ -2317,7 +2536,7 @@
           "source": "ROSTER",
           "reason": "At TE, swap in Isaiah Likely over Sam LaPorta for an estimated +19.0 points this week.",
           "confidence": 1.0,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -2338,8 +2557,8 @@
             "capped_total": 1.0
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         },
         {
@@ -2352,7 +2571,7 @@
           "source": "ROSTER",
           "reason": "At WR, swap in Chris Godwin Jr. over Terry McLaurin for an estimated +3.9 points this week.",
           "confidence": 0.6975,
-          "signal_label": "Thin signal",
+          "signal_label": "Low hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -2373,17 +2592,17 @@
             "capped_total": 0.6975
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
         "starter_count": 9,
-        "bench_count": 5,
+        "bench_count": 7,
         "starter_points": 111.66666666666659,
         "bench_points": 73.33333333333327,
-        "bench_points_above_starters": 22.89999999999999,
+        "bench_points_above_starters": 22.9,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -2409,14 +2628,14 @@
           {
             "position": "RB",
             "starters": 2,
-            "bench": 1,
+            "bench": 2,
             "starter_points": 34.400000000000006,
             "bench_points": 8.8
           },
           {
             "position": "TE",
             "starters": 1,
-            "bench": 1,
+            "bench": 2,
             "starter_points": 6.800000000000001,
             "bench_points": 25.8
           },
@@ -2437,7 +2656,7 @@
         "strong_signal_count": 1,
         "high_confidence_count": 1,
         "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 22.9 pts. Large-enough edge calls: 1.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 22.9 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Isaiah Likely",
           "benched_player": "Sam LaPorta",
@@ -2454,7 +2673,7 @@
             "point_swing": 19.0,
             "recommended_points": 25.8,
             "compared_points": 6.800000000000001,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
           },
           {
@@ -2465,7 +2684,7 @@
             "point_swing": 3.8999999999999995,
             "recommended_points": 6.3,
             "compared_points": 2.4000000000000004,
-            "signal_label": "Thin signal",
+            "signal_label": "Low hindsight impact",
             "edge_label": "Close point edge"
           }
         ],
@@ -2476,12 +2695,12 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 22.89999999999999,
+        "roster_missed_points": 22.9,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
         "blended_ideal_score": 134.56666666666658,
@@ -2498,7 +2717,7 @@
         "top_waiver_opportunity": null,
         "manager_grade_final_pct": 82.98241268268515
       },
-      "team_story": "In Purdytory is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth an estimated +22.9 points; 1 have strong/good signal.",
+      "team_story": "In Purdytory is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth a retrospective +22.9 points; 1 had high hindsight impact.",
       "boom_bust": [],
       "process_score_pct": 82.98241268268515,
       "process_score_letter": "B-",
@@ -2514,7 +2733,7 @@
             "source": "ROSTER",
             "reason": "At TE, swap in Isaiah Likely over Sam LaPorta for an estimated +19.0 points this week.",
             "confidence": 1.0,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -2535,8 +2754,8 @@
               "capped_total": 1.0
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           },
           {
@@ -2549,7 +2768,7 @@
             "source": "ROSTER",
             "reason": "At WR, swap in Chris Godwin Jr. over Terry McLaurin for an estimated +3.9 points this week.",
             "confidence": 0.6975,
-            "signal_label": "Thin signal",
+            "signal_label": "Low hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -2570,8 +2789,8 @@
               "capped_total": 0.6975
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -2584,7 +2803,7 @@
           "strong_signal_count": 1,
           "high_confidence_count": 1,
           "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 22.9 pts. Large-enough edge calls: 1.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 22.9 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Isaiah Likely",
             "benched_player": "Sam LaPorta",
@@ -2601,7 +2820,7 @@
               "point_swing": 19.0,
               "recommended_points": 25.8,
               "compared_points": 6.800000000000001,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
             },
             {
@@ -2612,7 +2831,7 @@
               "point_swing": 3.8999999999999995,
               "recommended_points": 6.3,
               "compared_points": 2.4000000000000004,
-              "signal_label": "Thin signal",
+              "signal_label": "Low hindsight impact",
               "edge_label": "Close point edge"
             }
           ],
@@ -2623,8 +2842,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -2681,7 +2900,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 82.98241268268515,
             "decision_grade_pct": 82.98241268268515,
-            "roster_missed_points": 22.89999999999999,
+            "roster_missed_points": 22.9,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -2722,7 +2941,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 82.98241268268515,
             "decision_grade_pct": 82.98241268268515,
-            "roster_missed_points": 22.89999999999999,
+            "roster_missed_points": 22.9,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -2749,12 +2968,12 @@
       }
     },
     "Nacua-Cola": {
-      "actual_score": 79.6666666666666,
-      "ideal_score": 147.6666666666666,
-      "optimization_missed": 68.0,
-      "manager_grade_pct": 55.450338600451445,
-      "manager_grade_letter": "D-",
-      "lineup_grade_pct": 53.950338600451445,
+      "actual_score": 77.6666666666666,
+      "ideal_score": 108.7666666666666,
+      "optimization_missed": 31.1,
+      "manager_grade_pct": 71.40668096843395,
+      "manager_grade_letter": "C-",
+      "lineup_grade_pct": 71.40668096843395,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
       "trend_basis": "Need at least two scored weeks.",
@@ -2774,7 +2993,7 @@
         }
       ],
       "historical_avg": 77.6666666666666,
-      "manager_effectiveness": "failing process",
+      "manager_effectiveness": "bad decisions",
       "recommendations": [
         {
           "position": "WR",
@@ -2786,7 +3005,7 @@
           "source": "ROSTER",
           "reason": "At WR, swap in Christian Watson over A.J. Brown for an estimated +27.1 points this week.",
           "confidence": 1.0,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -2807,8 +3026,8 @@
             "capped_total": 1.0
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         },
         {
@@ -2821,7 +3040,7 @@
           "source": "ROSTER",
           "reason": "At RB, swap in Bhayshul Tuten over Jadarian Price for an estimated +4.0 points this week.",
           "confidence": 0.7,
-          "signal_label": "Good signal",
+          "signal_label": "Medium hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -2842,18 +3061,25 @@
             "capped_total": 0.7
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
-        "starter_count": 8,
+        "starter_count": 9,
         "bench_count": 7,
-        "starter_points": 79.6666666666666,
+        "starter_points": 77.6666666666666,
         "bench_points": 76.43333333333325,
-        "bench_points_above_starters": 68.0,
+        "bench_points_above_starters": 31.1,
         "position_breakdown": [
+          {
+            "position": "DEF",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": -2.0,
+            "bench_points": 0.0
+          },
           {
             "position": "K",
             "starters": 1,
@@ -2899,7 +3125,7 @@
         "strong_signal_count": 1,
         "high_confidence_count": 1,
         "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 31.1 pts. Large-enough edge calls: 1.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 31.1 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Christian Watson",
           "benched_player": "A.J. Brown",
@@ -2916,7 +3142,7 @@
             "point_swing": 27.1,
             "recommended_points": 31.700000000000003,
             "compared_points": 4.6,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
           },
           {
@@ -2927,7 +3153,7 @@
             "point_swing": 4.0,
             "recommended_points": 13.8,
             "compared_points": 9.8,
-            "signal_label": "Good signal",
+            "signal_label": "Medium hindsight impact",
             "edge_label": "Close point edge"
           }
         ],
@@ -2938,17 +3164,17 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 68.0,
+        "roster_missed_points": 31.1,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
-        "blended_ideal_score": 147.6666666666666,
-        "lineup_grade_pct": 53.950338600451445,
-        "decision_grade_pct": 53.950338600451445,
+        "blended_ideal_score": 108.7666666666666,
+        "lineup_grade_pct": 71.40668096843395,
+        "decision_grade_pct": 71.40668096843395,
         "top_lineup_swap": {
           "recommended_player": "Christian Watson",
           "starter_replaced": "A.J. Brown",
@@ -2958,12 +3184,53 @@
           "position": "WR"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 55.450338600451445
+        "manager_grade_final_pct": 71.40668096843395
       },
-      "team_story": "Nacua-Cola is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth an estimated +31.1 points; 1 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 55.450338600451445,
-      "process_score_letter": "D-",
+      "team_story": "Nacua-Cola is insufficient data with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth a retrospective +31.1 points; 1 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Texans",
+          "position": "DEF",
+          "actual_team": "Houston Texans",
+          "points": -2.0,
+          "season_avg": 8.0,
+          "type": "BUST",
+          "z_score": -2.54000254000381,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Christian Watson",
+          "position": "WR",
+          "actual_team": "Green Bay Packers",
+          "points": 31.700000000000003,
+          "season_avg": 13.45,
+          "type": "BOOM",
+          "z_score": 1.6349695056026323,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "actual_team": "Los Angeles Chargers",
+          "points": 19.200000000000003,
+          "season_avg": 8.862745098039214,
+          "type": "BOOM",
+          "z_score": 1.559601773557255,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "actual_team": "Dallas Cowboys",
+          "points": 1.0,
+          "season_avg": 10.647058823529411,
+          "type": "BUST",
+          "z_score": -1.518372077656177,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "process_score_pct": 71.40668096843395,
+      "process_score_letter": "C-",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -2976,7 +3243,7 @@
             "source": "ROSTER",
             "reason": "At WR, swap in Christian Watson over A.J. Brown for an estimated +27.1 points this week.",
             "confidence": 1.0,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -2997,8 +3264,8 @@
               "capped_total": 1.0
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           },
           {
@@ -3011,7 +3278,7 @@
             "source": "ROSTER",
             "reason": "At RB, swap in Bhayshul Tuten over Jadarian Price for an estimated +4.0 points this week.",
             "confidence": 0.7,
-            "signal_label": "Good signal",
+            "signal_label": "Medium hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -3032,8 +3299,8 @@
               "capped_total": 0.7
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -3046,7 +3313,7 @@
           "strong_signal_count": 1,
           "high_confidence_count": 1,
           "diagnostic_summary": "2 qualifying recommendation(s): 2 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 31.1 pts. Large-enough edge calls: 1.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 31.1 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Christian Watson",
             "benched_player": "A.J. Brown",
@@ -3063,7 +3330,7 @@
               "point_swing": 27.1,
               "recommended_points": 31.700000000000003,
               "compared_points": 4.6,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
             },
             {
@@ -3074,7 +3341,7 @@
               "point_swing": 4.0,
               "recommended_points": 13.8,
               "compared_points": 9.8,
-              "signal_label": "Good signal",
+              "signal_label": "Medium hindsight impact",
               "edge_label": "Close point edge"
             }
           ],
@@ -3085,8 +3352,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -3106,14 +3373,14 @@
           "drop_regret_points_total": 0.0,
           "drops_this_week_count": 1,
           "move_quality_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
-          "dropped_summary": "Moved away this week: 470.p.32696.",
+          "dropped_summary": "Moved away this week: Jordan Love.",
           "top_drop_regret_summary": ""
         },
         "additions_this_week": [
           {
             "name": "Baker Mayfield",
             "position": "QB",
-            "actual_team": null,
+            "actual_team": "Tampa Bay Buccaneers",
             "started": false,
             "points": 11.199999999999928,
             "outscored_team_active_players": 6,
@@ -3136,7 +3403,7 @@
           }
         ],
         "drops_this_week": [
-          "470.p.32696"
+          "Jordan Love"
         ],
         "drop_regret_top": [],
         "what_could_have_been": {
@@ -3160,21 +3427,21 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 55.450338600451445,
-          "letter": "D-",
-          "label": "failing process"
+          "score_pct": 71.40668096843395,
+          "letter": "C-",
+          "label": "bad decisions"
         },
         "season": {
-          "score_pct": 60.05393051249544,
-          "letter": "D",
+          "score_pct": 64.04301610449106,
+          "letter": "D+",
           "label": "bad decisions"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 53.950338600451445,
-            "decision_grade_pct": 53.950338600451445,
-            "roster_missed_points": 68.0,
+            "lineup_efficiency_pct": 71.40668096843395,
+            "decision_grade_pct": 71.40668096843395,
+            "roster_missed_points": 31.1,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 1,
             "bad_moves_this_week": 0,
@@ -3183,9 +3450,9 @@
             "move_grade_tags": [
               "Bench stash"
             ],
-            "score_vs_historical_avg": 2.0,
+            "score_vs_historical_avg": 0.0,
             "season_average_score": 123.88400000000001,
-            "score_vs_season_average": -44.217333333333414,
+            "score_vs_season_average": -46.217333333333414,
             "weekly_rank": 9,
             "league_size": 10,
             "beat_league_median": false
@@ -3199,25 +3466,25 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Nacua-Cola graded D- this week and D for the season-to-date. Weekly process reads as failing process, season process reads as bad decisions."
+        "summary": "Nacua-Cola graded C- this week and D+ for the season-to-date. Weekly process reads as bad decisions, season process reads as bad decisions."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 55.450338600451445,
-          "letter": "D-",
-          "label": "failing process"
+          "score_pct": 71.40668096843395,
+          "letter": "C-",
+          "label": "bad decisions"
         },
         "season": {
-          "score_pct": 60.05393051249544,
-          "letter": "D",
+          "score_pct": 64.04301610449106,
+          "letter": "D+",
           "label": "bad decisions"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 53.950338600451445,
-            "decision_grade_pct": 53.950338600451445,
-            "roster_missed_points": 68.0,
+            "lineup_efficiency_pct": 71.40668096843395,
+            "decision_grade_pct": 71.40668096843395,
+            "roster_missed_points": 31.1,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 1,
             "bad_moves_this_week": 0,
@@ -3226,9 +3493,9 @@
             "move_grade_tags": [
               "Bench stash"
             ],
-            "score_vs_historical_avg": 2.0,
+            "score_vs_historical_avg": 0.0,
             "season_average_score": 123.88400000000001,
-            "score_vs_season_average": -44.217333333333414,
+            "score_vs_season_average": -46.217333333333414,
             "weekly_rank": 9,
             "league_size": 10,
             "beat_league_median": false
@@ -3242,14 +3509,14 @@
             "trend": "insufficient_data"
           }
         },
-        "summary": "Nacua-Cola graded D- this week and D for the season-to-date. Weekly process reads as failing process, season process reads as bad decisions."
+        "summary": "Nacua-Cola graded C- this week and D+ for the season-to-date. Weekly process reads as bad decisions, season process reads as bad decisions."
       }
     },
     "Bend & Snap Count": {
       "actual_score": 148.2666666666666,
       "ideal_score": 151.36666666666662,
-      "optimization_missed": 3.1000000000000227,
-      "manager_grade_pct": 100.0,
+      "optimization_missed": 3.10000000000003,
+      "manager_grade_pct": 97.95199295309402,
       "manager_grade_letter": "A+",
       "lineup_grade_pct": 97.95199295309402,
       "trend": "insufficient_data",
@@ -3283,7 +3550,7 @@
           "source": "ROSTER",
           "reason": "At QB, swap in Jayden Daniels over Joe Burrow for an estimated +3.1 points this week.",
           "confidence": 0.6775000000000008,
-          "signal_label": "Thin signal",
+          "signal_label": "Low hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -3304,17 +3571,17 @@
             "capped_total": 0.6775000000000008
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
         "starter_count": 9,
-        "bench_count": 6,
+        "bench_count": 7,
         "starter_points": 148.2666666666666,
         "bench_points": 45.266666666666595,
-        "bench_points_above_starters": 3.1000000000000227,
+        "bench_points_above_starters": 3.10000000000003,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -3354,7 +3621,7 @@
           {
             "position": "WR",
             "starters": 2,
-            "bench": 4,
+            "bench": 5,
             "starter_points": 43.6,
             "bench_points": 18.033333333333328
           }
@@ -3368,7 +3635,7 @@
         "strong_signal_count": 0,
         "high_confidence_count": 0,
         "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 3.1 pts. Large-enough edge calls: 0.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 3.1 pts. High-impact hindsight rows: 0.",
         "top_call": {
           "recommended_player": "Jayden Daniels",
           "benched_player": "Joe Burrow",
@@ -3385,7 +3652,7 @@
             "point_swing": 3.10000000000003,
             "recommended_points": 21.566666666666613,
             "compared_points": 18.466666666666583,
-            "signal_label": "Thin signal",
+            "signal_label": "Low hindsight impact",
             "edge_label": "Close point edge"
           }
         ],
@@ -3396,12 +3663,12 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 3.1000000000000227,
+        "roster_missed_points": 3.10000000000003,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
         "blended_ideal_score": 151.36666666666662,
@@ -3416,11 +3683,42 @@
           "position": "QB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 100.0
+        "manager_grade_final_pct": 97.95199295309402
       },
-      "team_story": "Bend & Snap Count is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth an estimated +3.1 points; 0 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 100.0,
+      "team_story": "Bend & Snap Count is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +3.1 points; 0 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "actual_team": "Minnesota Vikings",
+          "points": 28.200000000000003,
+          "season_avg": 8.770588235294117,
+          "type": "BOOM",
+          "z_score": 3.5617511847368033,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "actual_team": "New England Patriots",
+          "points": 0.0,
+          "season_avg": 8.423809523809519,
+          "type": "BUST",
+          "z_score": -2.0597743039501233,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "actual_team": "Denver Broncos",
+          "points": 1.1,
+          "season_avg": 11.6,
+          "type": "BUST",
+          "z_score": -1.4542713106843608,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "process_score_pct": 97.95199295309402,
       "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -3434,7 +3732,7 @@
             "source": "ROSTER",
             "reason": "At QB, swap in Jayden Daniels over Joe Burrow for an estimated +3.1 points this week.",
             "confidence": 0.6775000000000008,
-            "signal_label": "Thin signal",
+            "signal_label": "Low hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -3455,8 +3753,8 @@
               "capped_total": 0.6775000000000008
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -3469,7 +3767,7 @@
           "strong_signal_count": 0,
           "high_confidence_count": 0,
           "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 3.1 pts. Large-enough edge calls: 0.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 3.1 pts. High-impact hindsight rows: 0.",
           "top_call": {
             "recommended_player": "Jayden Daniels",
             "benched_player": "Joe Burrow",
@@ -3486,7 +3784,7 @@
               "point_swing": 3.10000000000003,
               "recommended_points": 21.566666666666613,
               "compared_points": 18.466666666666583,
-              "signal_label": "Thin signal",
+              "signal_label": "Low hindsight impact",
               "edge_label": "Close point edge"
             }
           ],
@@ -3497,8 +3795,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -3541,12 +3839,12 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 100.0,
+          "score_pct": 97.95199295309402,
           "letter": "A+",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 99.31793657784631,
+          "score_pct": 98.80593481611982,
           "letter": "A+",
           "label": "creative edge"
         },
@@ -3555,7 +3853,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 97.95199295309402,
             "decision_grade_pct": 97.95199295309402,
-            "roster_missed_points": 3.1000000000000227,
+            "roster_missed_points": 3.10000000000003,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -3582,12 +3880,12 @@
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 100.0,
+          "score_pct": 97.95199295309402,
           "letter": "A+",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 99.31793657784631,
+          "score_pct": 98.80593481611982,
           "letter": "A+",
           "label": "creative edge"
         },
@@ -3596,7 +3894,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 97.95199295309402,
             "decision_grade_pct": 97.95199295309402,
-            "roster_missed_points": 3.1000000000000227,
+            "roster_missed_points": 3.10000000000003,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -3624,11 +3922,11 @@
     },
     "ZSzizzle": {
       "actual_score": 136.2999999999999,
-      "ideal_score": 166.3666666666666,
-      "optimization_missed": 30.06666666666669,
-      "manager_grade_pct": 82.16260700176868,
+      "ideal_score": 165.8666666666666,
+      "optimization_missed": 29.566666666666684,
+      "manager_grade_pct": 82.17443729903535,
       "manager_grade_letter": "B-",
-      "lineup_grade_pct": 81.92746944500098,
+      "lineup_grade_pct": 82.17443729903535,
       "trend": "insufficient_data",
       "trend_label": "Too Early",
       "trend_basis": "Need at least two scored weeks.",
@@ -3660,7 +3958,7 @@
           "source": "ROSTER",
           "reason": "At QB, swap in Caleb Williams over Lamar Jackson for an estimated +15.7 points this week.",
           "confidence": 0.9916666666666671,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -3681,43 +3979,8 @@
             "capped_total": 0.9916666666666671
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
-          }
-        },
-        {
-          "position": "DEF",
-          "recommended_player": "Bengals",
-          "recommended_points": 18.0,
-          "benched_player": "Patriots",
-          "benched_points": 6.0,
-          "point_swing": 12.0,
-          "source": "FREE_AGENT",
-          "reason": "At DEF, consider adding Bengals instead of holding Patriots for an estimated +12.0 points this week.",
-          "confidence": 0.8,
-          "signal_label": "Good signal",
-          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
-          "decision_type": "WAIVER_ADD",
-          "decision_type_label": "Waiver Add",
-          "comparison_target": {
-            "name": "Patriots",
-            "points": 6.0,
-            "role": "BENCH"
-          },
-          "swing_tier": "HIGH",
-          "leverage_label": "Major point swing",
-          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-          "edge_label": "Major point swing",
-          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-          "comparison_label": "Bench/roster candidate",
-          "confidence_breakdown": {
-            "base": 0.5,
-            "swing_bonus": 0.3,
-            "capped_total": 0.8
-          },
-          "sample_context": {
-            "recommended_player_weeks": 4,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         },
         {
@@ -3730,7 +3993,7 @@
           "source": "ROSTER",
           "reason": "At WR, swap in Alec Pierce over Jaylen Waddle for an estimated +9.9 points this week.",
           "confidence": 0.8474999999999999,
-          "signal_label": "Good signal",
+          "signal_label": "Medium hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -3751,8 +4014,43 @@
             "capped_total": 0.8474999999999999
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
+          }
+        },
+        {
+          "position": "DEF",
+          "recommended_player": "Patriots",
+          "recommended_points": 6.0,
+          "benched_player": "Rams",
+          "benched_points": 2.0,
+          "point_swing": 4.0,
+          "source": "ROSTER",
+          "reason": "At DEF, swap in Patriots over Rams for an estimated +4.0 points this week.",
+          "confidence": 0.7,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Rams",
+            "points": 2.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1,
+            "capped_total": 0.7
+          },
+          "sample_context": {
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
@@ -3761,7 +4059,7 @@
         "bench_count": 7,
         "starter_points": 136.2999999999999,
         "bench_points": 85.96666666666658,
-        "bench_points_above_starters": 30.06666666666669,
+        "bench_points_above_starters": 29.566666666666684,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -3809,13 +4107,13 @@
       },
       "recommendation_summary": {
         "total": 3,
-        "roster_swaps": 2,
-        "waiver_moves": 1,
-        "total_upside_points": 37.566666666666684,
-        "strong_signal_count": 3,
-        "high_confidence_count": 3,
-        "diagnostic_summary": "3 qualifying recommendation(s): 2 start/sit, 1 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 37.6 pts. Large-enough edge calls: 3.",
+        "roster_swaps": 3,
+        "waiver_moves": 0,
+        "total_upside_points": 29.566666666666684,
+        "strong_signal_count": 2,
+        "high_confidence_count": 2,
+        "diagnostic_summary": "3 qualifying recommendation(s): 3 start/sit, 0 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 29.6 pts. High-impact hindsight rows: 2.",
         "top_call": {
           "recommended_player": "Caleb Williams",
           "benched_player": "Lamar Jackson",
@@ -3832,18 +4130,7 @@
             "point_swing": 15.666666666666686,
             "recommended_points": 43.466666666666576,
             "compared_points": 27.79999999999989,
-            "signal_label": "Strong signal",
-            "edge_label": "Major point swing"
-          },
-          {
-            "recommended_player": "Bengals",
-            "compared_player": "Patriots",
-            "source": "FREE_AGENT",
-            "source_label": "waiver add",
-            "point_swing": 12.0,
-            "recommended_points": 18.0,
-            "compared_points": 6.0,
-            "signal_label": "Good signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
           },
           {
@@ -3854,8 +4141,19 @@
             "point_swing": 9.9,
             "recommended_points": 10.1,
             "compared_points": 0.2,
-            "signal_label": "Good signal",
+            "signal_label": "Medium hindsight impact",
             "edge_label": "Useful point swing"
+          },
+          {
+            "recommended_player": "Patriots",
+            "compared_player": "Rams",
+            "source": "ROSTER",
+            "source_label": "start/sit swap",
+            "point_swing": 4.0,
+            "recommended_points": 6.0,
+            "compared_points": 2.0,
+            "signal_label": "Medium hindsight impact",
+            "edge_label": "Close point edge"
           }
         ],
         "diagnostic_story": "Top recommendation was Caleb Williams over Lamar Jackson (+15.7). Waiver calls are league-available opportunities, not proof that every manager had an easy actionable move.",
@@ -3865,17 +4163,17 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 30.06666666666669,
-        "free_agent_missed_points": 12.0,
+        "roster_missed_points": 29.566666666666684,
+        "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
-        "blended_ideal_score": 170.56666666666658,
-        "lineup_grade_pct": 81.92746944500098,
-        "decision_grade_pct": 79.91010357631423,
+        "blended_ideal_score": 165.8666666666666,
+        "lineup_grade_pct": 82.17443729903535,
+        "decision_grade_pct": 82.17443729903535,
         "top_lineup_swap": {
           "recommended_player": "Caleb Williams",
           "starter_replaced": "Lamar Jackson",
@@ -3884,19 +4182,63 @@
           "point_swing": 15.666666666666686,
           "position": "QB"
         },
-        "top_waiver_opportunity": {
-          "recommended_player": "Bengals",
-          "compared_player": "Patriots",
-          "recommended_points": 18.0,
-          "compared_points": 6.0,
-          "point_swing": 12.0,
-          "position": "DEF"
-        },
-        "manager_grade_final_pct": 82.16260700176868
+        "top_waiver_opportunity": null,
+        "manager_grade_final_pct": 82.17443729903535
       },
-      "team_story": "ZSzizzle is insufficient data with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth an estimated +37.6 points; 3 have strong/good signal.",
-      "boom_bust": [],
-      "process_score_pct": 82.16260700176868,
+      "team_story": "ZSzizzle is insufficient data with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +29.6 points; 2 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "actual_team": "Houston Texans",
+          "points": 30.9,
+          "season_avg": 11.023529411764706,
+          "type": "BOOM",
+          "z_score": 2.2201154276464776,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Caleb Williams",
+          "position": "QB",
+          "actual_team": "Chicago Bears",
+          "points": 43.466666666666576,
+          "season_avg": 20.37083333333326,
+          "type": "BOOM",
+          "z_score": 2.022816820632994,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "DJ Moore",
+          "position": "WR",
+          "actual_team": "Buffalo Bills",
+          "points": 20.0,
+          "season_avg": 7.1000000000000005,
+          "type": "BOOM",
+          "z_score": 1.8556143885758067,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "actual_team": "Denver Broncos",
+          "points": 0.2,
+          "season_avg": 10.533333333333333,
+          "type": "BUST",
+          "z_score": -1.4786043991084636,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Cameron Dicker",
+          "position": "K",
+          "actual_team": "Los Angeles Chargers",
+          "points": 2.0,
+          "season_avg": 9.142857142857142,
+          "type": "BUST",
+          "z_score": -1.3931955314383822,
+          "ownership_status": "BENCH"
+        }
+      ],
+      "process_score_pct": 82.17443729903535,
       "process_score_letter": "B-",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -3910,7 +4252,7 @@
             "source": "ROSTER",
             "reason": "At QB, swap in Caleb Williams over Lamar Jackson for an estimated +15.7 points this week.",
             "confidence": 0.9916666666666671,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -3931,8 +4273,8 @@
               "capped_total": 0.9916666666666671
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           },
           {
@@ -3945,7 +4287,7 @@
             "source": "ROSTER",
             "reason": "At WR, swap in Alec Pierce over Jaylen Waddle for an estimated +9.9 points this week.",
             "confidence": 0.8474999999999999,
-            "signal_label": "Good signal",
+            "signal_label": "Medium hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -3966,57 +4308,56 @@
               "capped_total": 0.8474999999999999
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
-          }
-        ],
-        "available_players": [
+          },
           {
             "position": "DEF",
-            "recommended_player": "Bengals",
-            "recommended_points": 18.0,
-            "benched_player": "Patriots",
-            "benched_points": 6.0,
-            "point_swing": 12.0,
-            "source": "FREE_AGENT",
-            "reason": "At DEF, consider adding Bengals instead of holding Patriots for an estimated +12.0 points this week.",
-            "confidence": 0.8,
-            "signal_label": "Good signal",
+            "recommended_player": "Patriots",
+            "recommended_points": 6.0,
+            "benched_player": "Rams",
+            "benched_points": 2.0,
+            "point_swing": 4.0,
+            "source": "ROSTER",
+            "reason": "At DEF, swap in Patriots over Rams for an estimated +4.0 points this week.",
+            "confidence": 0.7,
+            "signal_label": "Medium hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
-            "decision_type": "WAIVER_ADD",
-            "decision_type_label": "Waiver Add",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
             "comparison_target": {
-              "name": "Patriots",
-              "points": 6.0,
-              "role": "BENCH"
+              "name": "Rams",
+              "points": 2.0,
+              "role": "STARTER"
             },
-            "swing_tier": "HIGH",
-            "leverage_label": "Major point swing",
+            "swing_tier": "MEDIUM",
+            "leverage_label": "Close point edge",
             "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-            "edge_label": "Major point swing",
+            "edge_label": "Close point edge",
             "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
-            "comparison_label": "Bench/roster candidate",
+            "comparison_label": "Current starter",
             "confidence_breakdown": {
-              "base": 0.5,
-              "swing_bonus": 0.3,
-              "capped_total": 0.8
+              "base": 0.6,
+              "swing_bonus": 0.1,
+              "capped_total": 0.7
             },
             "sample_context": {
-              "recommended_player_weeks": 4,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
+        "available_players": [],
         "summary": {
           "total": 3,
-          "roster_swaps": 2,
-          "waiver_moves": 1,
-          "total_upside_points": 37.566666666666684,
-          "strong_signal_count": 3,
-          "high_confidence_count": 3,
-          "diagnostic_summary": "3 qualifying recommendation(s): 2 start/sit, 1 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 37.6 pts. Large-enough edge calls: 3.",
+          "roster_swaps": 3,
+          "waiver_moves": 0,
+          "total_upside_points": 29.566666666666684,
+          "strong_signal_count": 2,
+          "high_confidence_count": 2,
+          "diagnostic_summary": "3 qualifying recommendation(s): 3 start/sit, 0 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 29.6 pts. High-impact hindsight rows: 2.",
           "top_call": {
             "recommended_player": "Caleb Williams",
             "benched_player": "Lamar Jackson",
@@ -4033,18 +4374,7 @@
               "point_swing": 15.666666666666686,
               "recommended_points": 43.466666666666576,
               "compared_points": 27.79999999999989,
-              "signal_label": "Strong signal",
-              "edge_label": "Major point swing"
-            },
-            {
-              "recommended_player": "Bengals",
-              "compared_player": "Patriots",
-              "source": "FREE_AGENT",
-              "source_label": "waiver add",
-              "point_swing": 12.0,
-              "recommended_points": 18.0,
-              "compared_points": 6.0,
-              "signal_label": "Good signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
             },
             {
@@ -4055,8 +4385,19 @@
               "point_swing": 9.9,
               "recommended_points": 10.1,
               "compared_points": 0.2,
-              "signal_label": "Good signal",
+              "signal_label": "Medium hindsight impact",
               "edge_label": "Useful point swing"
+            },
+            {
+              "recommended_player": "Patriots",
+              "compared_player": "Rams",
+              "source": "ROSTER",
+              "source_label": "start/sit swap",
+              "point_swing": 4.0,
+              "recommended_points": 6.0,
+              "compared_points": 2.0,
+              "signal_label": "Medium hindsight impact",
+              "edge_label": "Close point edge"
             }
           ],
           "diagnostic_story": "Top recommendation was Caleb Williams over Lamar Jackson (+15.7). Waiver calls are league-available opportunities, not proof that every manager had an easy actionable move.",
@@ -4066,8 +4407,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -4110,22 +4451,22 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 82.16260700176868,
+          "score_pct": 82.17443729903535,
           "letter": "B-",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.6398803619429,
+          "score_pct": 74.64283793625957,
           "letter": "C",
           "label": "reasonable but costly"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 81.92746944500098,
-            "decision_grade_pct": 79.91010357631423,
-            "roster_missed_points": 30.06666666666669,
-            "free_agent_missed_points": 12.0,
+            "lineup_efficiency_pct": 82.17443729903535,
+            "decision_grade_pct": 82.17443729903535,
+            "roster_missed_points": 29.566666666666684,
+            "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -4151,22 +4492,22 @@
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 82.16260700176868,
+          "score_pct": 82.17443729903535,
           "letter": "B-",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.6398803619429,
+          "score_pct": 74.64283793625957,
           "letter": "C",
           "label": "reasonable but costly"
         },
         "components": {
           "weekly": {
             "baseline": 85.0,
-            "lineup_efficiency_pct": 81.92746944500098,
-            "decision_grade_pct": 79.91010357631423,
-            "roster_missed_points": 30.06666666666669,
-            "free_agent_missed_points": 12.0,
+            "lineup_efficiency_pct": 82.17443729903535,
+            "decision_grade_pct": 82.17443729903535,
+            "roster_missed_points": 29.566666666666684,
+            "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -4194,7 +4535,7 @@
     "Two Buck Luck": {
       "actual_score": 124.66666666666663,
       "ideal_score": 147.83333333333326,
-      "optimization_missed": 23.16666666666663,
+      "optimization_missed": 23.166666666666643,
       "manager_grade_pct": 84.32919954904173,
       "manager_grade_letter": "B",
       "lineup_grade_pct": 84.32919954904173,
@@ -4229,7 +4570,7 @@
           "source": "ROSTER",
           "reason": "At QB, swap in Brock Purdy over Bo Nix for an estimated +23.2 points this week.",
           "confidence": 1.0,
-          "signal_label": "Strong signal",
+          "signal_label": "High hindsight impact",
           "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
           "decision_type": "START_SIT",
           "decision_type_label": "Start/Sit",
@@ -4250,17 +4591,17 @@
             "capped_total": 1.0
           },
           "sample_context": {
-            "recommended_player_weeks": 2,
-            "comparison_player_weeks": 2
+            "recommended_player_weeks": 1,
+            "comparison_player_weeks": 1
           }
         }
       ],
       "lineup_context": {
-        "starter_count": 8,
-        "bench_count": 6,
+        "starter_count": 9,
+        "bench_count": 7,
         "starter_points": 124.66666666666663,
         "bench_points": 66.83333333333326,
-        "bench_points_above_starters": 23.16666666666663,
+        "bench_points_above_starters": 23.166666666666643,
         "position_breakdown": [
           {
             "position": "DEF",
@@ -4286,9 +4627,16 @@
           {
             "position": "RB",
             "starters": 3,
-            "bench": 3,
+            "bench": 4,
             "starter_points": 57.5,
             "bench_points": 22.9
+          },
+          {
+            "position": "TE",
+            "starters": 1,
+            "bench": 0,
+            "starter_points": 0.0,
+            "bench_points": 0.0
           },
           {
             "position": "WR",
@@ -4307,7 +4655,7 @@
         "strong_signal_count": 1,
         "high_confidence_count": 1,
         "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 23.2 pts. Large-enough edge calls: 1.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 23.2 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Brock Purdy",
           "benched_player": "Bo Nix",
@@ -4324,7 +4672,7 @@
             "point_swing": 23.166666666666643,
             "recommended_points": 29.733333333333263,
             "compared_points": 6.566666666666622,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "edge_label": "Major point swing"
           }
         ],
@@ -4335,12 +4683,12 @@
           "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
           "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
           "min_point_edge": 1.0,
-          "min_waiver_signal": 0.65,
-          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+          "min_waiver_hindsight_score": 0.65,
+          "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
         }
       },
       "missed_breakdown": {
-        "roster_missed_points": 23.16666666666663,
+        "roster_missed_points": 23.166666666666643,
         "free_agent_missed_points": 0.0,
         "free_agent_weight_applied": 0.35,
         "blended_ideal_score": 147.83333333333326,
@@ -4357,8 +4705,19 @@
         "top_waiver_opportunity": null,
         "manager_grade_final_pct": 84.32919954904173
       },
-      "team_story": "Two Buck Luck is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth an estimated +23.2 points; 1 have strong/good signal.",
-      "boom_bust": [],
+      "team_story": "Two Buck Luck is insufficient data with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +23.2 points; 1 had high hindsight impact.",
+      "boom_bust": [
+        {
+          "name": "Steelers",
+          "position": "DEF",
+          "actual_team": "Pittsburgh Steelers",
+          "points": 18.0,
+          "season_avg": 6.5,
+          "type": "BOOM",
+          "z_score": 4.3465914396061125,
+          "ownership_status": "ACTIVE"
+        }
+      ],
       "process_score_pct": 84.32919954904173,
       "process_score_letter": "B",
       "hindsight_opportunities": {
@@ -4373,7 +4732,7 @@
             "source": "ROSTER",
             "reason": "At QB, swap in Brock Purdy over Bo Nix for an estimated +23.2 points this week.",
             "confidence": 1.0,
-            "signal_label": "Strong signal",
+            "signal_label": "High hindsight impact",
             "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
             "decision_type": "START_SIT",
             "decision_type_label": "Start/Sit",
@@ -4394,8 +4753,8 @@
               "capped_total": 1.0
             },
             "sample_context": {
-              "recommended_player_weeks": 2,
-              "comparison_player_weeks": 2
+              "recommended_player_weeks": 1,
+              "comparison_player_weeks": 1
             }
           }
         ],
@@ -4408,7 +4767,7 @@
           "strong_signal_count": 1,
           "high_confidence_count": 1,
           "diagnostic_summary": "1 qualifying recommendation(s): 1 start/sit, 0 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 23.2 pts. Large-enough edge calls: 1.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 23.2 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Brock Purdy",
             "benched_player": "Bo Nix",
@@ -4425,7 +4784,7 @@
               "point_swing": 23.166666666666643,
               "recommended_points": 29.733333333333263,
               "compared_points": 6.566666666666622,
-              "signal_label": "Strong signal",
+              "signal_label": "High hindsight impact",
               "edge_label": "Major point swing"
             }
           ],
@@ -4436,8 +4795,8 @@
             "lineup_review_description": "Eligible bench-over-starter swaps using completed scores.",
             "waiver_review_description": "League-available players with enough scoring sample and a completed-score edge over a roster candidate.",
             "min_point_edge": 1.0,
-            "min_waiver_signal": 0.65,
-            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and signal filters; it does not mean the team had no possible future waiver strategy."
+            "min_waiver_hindsight_score": 0.65,
+            "empty_state_meaning": "Empty means no row cleared the point-edge, sample-size, availability, and hindsight-impact filters; it does not mean the team had no possible future waiver strategy."
           }
         }
       },
@@ -4494,7 +4853,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 84.32919954904173,
             "decision_grade_pct": 84.32919954904173,
-            "roster_missed_points": 23.16666666666663,
+            "roster_missed_points": 23.166666666666643,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -4535,7 +4894,7 @@
             "baseline": 85.0,
             "lineup_efficiency_pct": 84.32919954904173,
             "decision_grade_pct": 84.32919954904173,
-            "roster_missed_points": 23.16666666666663,
+            "roster_missed_points": 23.166666666666643,
             "free_agent_missed_points": 0.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
@@ -4562,7 +4921,320 @@
       }
     }
   },
-  "boom_bust": [],
+  "boom_bust": [
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Pat Pidgeon",
+      "actual_team": "Cincinnati Bengals",
+      "ownership_status": "ACTIVE",
+      "points": 19.0,
+      "season_avg": 5.666666666666667,
+      "baseline_games": 3,
+      "type": "BOOM",
+      "z_score": 11.547005383792513
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Two Buck Luck",
+      "actual_team": "Pittsburgh Steelers",
+      "ownership_status": "ACTIVE",
+      "points": 18.0,
+      "season_avg": 6.5,
+      "baseline_games": 4,
+      "type": "BOOM",
+      "z_score": 4.3465914396061125
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Bend & Snap Count",
+      "actual_team": "Minnesota Vikings",
+      "ownership_status": "ACTIVE",
+      "points": 28.200000000000003,
+      "season_avg": 8.770588235294117,
+      "baseline_games": 17,
+      "type": "BOOM",
+      "z_score": 3.5617511847368033
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Nacua-Cola",
+      "actual_team": "Houston Texans",
+      "ownership_status": "ACTIVE",
+      "points": -2.0,
+      "season_avg": 8.0,
+      "baseline_games": 5,
+      "type": "BUST",
+      "z_score": -2.54000254000381
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Pat Pidgeon",
+      "actual_team": "Carolina Panthers",
+      "ownership_status": "BENCH",
+      "points": 24.700000000000003,
+      "season_avg": 8.513888888888888,
+      "baseline_games": 12,
+      "type": "BOOM",
+      "z_score": 2.388876446260435
+    },
+    {
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "team": "Sigma Chi Whiteout",
+      "actual_team": "Washington Commanders",
+      "ownership_status": "BENCH",
+      "points": 18.6,
+      "season_avg": 7.160000000000001,
+      "baseline_games": 10,
+      "type": "BOOM",
+      "z_score": 2.3548645592733775
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Millan\u2019s Last Supper",
+      "actual_team": "Arizona Cardinals",
+      "ownership_status": "BENCH",
+      "points": 8.600000000000001,
+      "season_avg": 15.5,
+      "baseline_games": 3,
+      "type": "BUST",
+      "z_score": -2.2961762234570404
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Pat Pidgeon",
+      "actual_team": "Baltimore Ravens",
+      "ownership_status": "ACTIVE",
+      "points": 26.0,
+      "season_avg": 10.18125,
+      "baseline_games": 16,
+      "type": "BOOM",
+      "z_score": 2.289505853523878
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Sigma Chi Whiteout",
+      "actual_team": "Chicago Bears",
+      "ownership_status": "ACTIVE",
+      "points": 37.4,
+      "season_avg": 15.282352941176471,
+      "baseline_games": 17,
+      "type": "BOOM",
+      "z_score": 2.2889254768057348
+    },
+    {
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "ZSzizzle",
+      "actual_team": "Houston Texans",
+      "ownership_status": "ACTIVE",
+      "points": 30.9,
+      "season_avg": 11.023529411764706,
+      "baseline_games": 17,
+      "type": "BOOM",
+      "z_score": 2.2201154276464776
+    },
+    {
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "team": "Bend & Snap Count",
+      "actual_team": "New England Patriots",
+      "ownership_status": "BENCH",
+      "points": 0.0,
+      "season_avg": 8.423809523809519,
+      "baseline_games": 7,
+      "type": "BUST",
+      "z_score": -2.0597743039501233
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "Love(land) Hurts",
+      "actual_team": "Las Vegas Raiders",
+      "ownership_status": "BENCH",
+      "points": 35.7,
+      "season_avg": 13.805882352941177,
+      "baseline_games": 17,
+      "type": "BOOM",
+      "z_score": 2.0386977346326427
+    },
+    {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "ZSzizzle",
+      "actual_team": "Chicago Bears",
+      "ownership_status": "BENCH",
+      "points": 43.466666666666576,
+      "season_avg": 20.37083333333326,
+      "baseline_games": 16,
+      "type": "BOOM",
+      "z_score": 2.022816820632994
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "Sigma Chi Whiteout",
+      "actual_team": "Green Bay Packers",
+      "ownership_status": "BENCH",
+      "points": 13.5,
+      "season_avg": 4.0861111111111095,
+      "baseline_games": 12,
+      "type": "BOOM",
+      "z_score": 1.980735883786544
+    },
+    {
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "ZSzizzle",
+      "actual_team": "Buffalo Bills",
+      "ownership_status": "ACTIVE",
+      "points": 20.0,
+      "season_avg": 7.1000000000000005,
+      "baseline_games": 8,
+      "type": "BOOM",
+      "z_score": 1.8556143885758067
+    },
+    {
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team": "Sigma Chi Whiteout",
+      "actual_team": "Philadelphia Eagles",
+      "ownership_status": "ACTIVE",
+      "points": 22.7,
+      "season_avg": 9.94375,
+      "baseline_games": 16,
+      "type": "BOOM",
+      "z_score": 1.7258785745789615
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "Squat",
+      "actual_team": "Los Angeles Rams",
+      "ownership_status": "BENCH",
+      "points": 3.0666666666666145,
+      "season_avg": 22.36388888888881,
+      "baseline_games": 12,
+      "type": "BUST",
+      "z_score": -1.7065218453293964
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Millan\u2019s Last Supper",
+      "actual_team": "Baltimore Ravens",
+      "ownership_status": "ACTIVE",
+      "points": 42.3,
+      "season_avg": 19.405882352941177,
+      "baseline_games": 17,
+      "type": "BOOM",
+      "z_score": 1.6816730747009427
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "Nacua-Cola",
+      "actual_team": "Green Bay Packers",
+      "ownership_status": "BENCH",
+      "points": 31.700000000000003,
+      "season_avg": 13.45,
+      "baseline_games": 4,
+      "type": "BOOM",
+      "z_score": 1.6349695056026323
+    },
+    {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "Nacua-Cola",
+      "actual_team": "Los Angeles Chargers",
+      "ownership_status": "ACTIVE",
+      "points": 19.200000000000003,
+      "season_avg": 8.862745098039214,
+      "baseline_games": 17,
+      "type": "BOOM",
+      "z_score": 1.559601773557255
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Nacua-Cola",
+      "actual_team": "Dallas Cowboys",
+      "ownership_status": "ACTIVE",
+      "points": 1.0,
+      "season_avg": 10.647058823529411,
+      "baseline_games": 17,
+      "type": "BUST",
+      "z_score": -1.518372077656177
+    },
+    {
+      "name": "Mike Evans",
+      "position": "WR",
+      "team": "Sigma Chi Whiteout",
+      "actual_team": "San Francisco 49ers",
+      "ownership_status": "BENCH",
+      "points": 16.9,
+      "season_avg": 6.581818181818182,
+      "baseline_games": 11,
+      "type": "BOOM",
+      "z_score": 1.5053876573109228
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "ZSzizzle",
+      "actual_team": "Denver Broncos",
+      "ownership_status": "ACTIVE",
+      "points": 0.2,
+      "season_avg": 10.533333333333333,
+      "baseline_games": 17,
+      "type": "BUST",
+      "z_score": -1.4786043991084636
+    },
+    {
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "Bend & Snap Count",
+      "actual_team": "Denver Broncos",
+      "ownership_status": "BENCH",
+      "points": 1.1,
+      "season_avg": 11.6,
+      "baseline_games": 17,
+      "type": "BUST",
+      "z_score": -1.4542713106843608
+    },
+    {
+      "name": "Cameron Dicker",
+      "position": "K",
+      "team": "ZSzizzle",
+      "actual_team": "Los Angeles Chargers",
+      "ownership_status": "BENCH",
+      "points": 2.0,
+      "season_avg": 9.142857142857142,
+      "baseline_games": 14,
+      "type": "BUST",
+      "z_score": -1.3931955314383822
+    },
+    {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Squat",
+      "actual_team": "Philadelphia Eagles",
+      "ownership_status": "ACTIVE",
+      "points": 3.0,
+      "season_avg": 10.2,
+      "baseline_games": 5,
+      "type": "BUST",
+      "z_score": -1.3439761073038032
+    }
+  ],
   "player_market_views": {
     "biggest_busts": [],
     "booms_on_bench": [],
@@ -5202,7 +5874,286 @@
       }
     ]
   },
+  "weekly_player_story": {
+    "big_time_players": [
+      {
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "fantasy_team": "Pat Pidgeon",
+        "points": 43.6,
+        "team_score_share_pct": 23.374256151825445,
+        "opponent": "Millan\u2019s Last Supper",
+        "result": "W",
+        "margin": 59.16,
+        "impact_summary": "43.6 points supplied 23% of Pat Pidgeon's score in a 59.2-point W."
+      },
+      {
+        "name": "Derrick Henry",
+        "position": "RB",
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "points": 42.3,
+        "team_score_share_pct": 33.21033210332103,
+        "opponent": "Pat Pidgeon",
+        "result": "L",
+        "margin": 59.16,
+        "impact_summary": "42.3 points supplied 33% of Millan\u2019s Last Supper's score in a 59.2-point L."
+      },
+      {
+        "name": "Kenneth Walker",
+        "position": "RB",
+        "fantasy_team": "Sigma Chi Whiteout",
+        "points": 41.1,
+        "team_score_share_pct": 23.085996742122113,
+        "opponent": "In Purdytory",
+        "result": "W",
+        "margin": 66.36,
+        "impact_summary": "41.1 points supplied 23% of Sigma Chi Whiteout's score in a 66.4-point W."
+      },
+      {
+        "name": "Josh Allen",
+        "position": "QB",
+        "fantasy_team": "Love(land) Hurts",
+        "points": 39.43333333333322,
+        "team_score_share_pct": 40.93567251461977,
+        "opponent": "Squat",
+        "result": "W",
+        "margin": 44.33,
+        "impact_summary": "39.4 points supplied 41% of Love(land) Hurts's score in a 44.3-point W."
+      },
+      {
+        "name": "D'Andre Swift",
+        "position": "RB",
+        "fantasy_team": "Sigma Chi Whiteout",
+        "points": 37.4,
+        "team_score_share_pct": 21.007695332247373,
+        "opponent": "In Purdytory",
+        "result": "W",
+        "margin": 66.36,
+        "impact_summary": "37.4 points supplied 21% of Sigma Chi Whiteout's score in a 66.4-point W."
+      },
+      {
+        "name": "Jaxson Dart",
+        "position": "QB",
+        "fantasy_team": "In Purdytory",
+        "points": 35.06666666666659,
+        "team_score_share_pct": 31.402047700068586,
+        "opponent": "Sigma Chi Whiteout",
+        "result": "L",
+        "margin": 66.36,
+        "impact_summary": "35.1 points supplied 31% of In Purdytory's score in a 66.4-point L."
+      },
+      {
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "points": 33.46666666666658,
+        "team_score_share_pct": 26.275156368584895,
+        "opponent": "Pat Pidgeon",
+        "result": "L",
+        "margin": 59.16,
+        "impact_summary": "33.5 points supplied 26% of Millan\u2019s Last Supper's score in a 59.2-point L."
+      },
+      {
+        "name": "Bijan Robinson",
+        "position": "RB",
+        "fantasy_team": "ZSzizzle",
+        "points": 32.3,
+        "team_score_share_pct": 23.69772560528246,
+        "opponent": "Nacua-Cola",
+        "result": "W",
+        "margin": 58.63000000000001,
+        "impact_summary": "32.3 points supplied 24% of ZSzizzle's score in a 58.6-point W."
+      },
+      {
+        "name": "David Montgomery",
+        "position": "RB",
+        "fantasy_team": "ZSzizzle",
+        "points": 30.9,
+        "team_score_share_pct": 22.67057960381511,
+        "opponent": "Nacua-Cola",
+        "result": "W",
+        "margin": 58.63000000000001,
+        "impact_summary": "30.9 points supplied 23% of ZSzizzle's score in a 58.6-point W."
+      },
+      {
+        "name": "Jonathan Taylor",
+        "position": "RB",
+        "fantasy_team": "Sigma Chi Whiteout",
+        "points": 29.1,
+        "team_score_share_pct": 16.345559737122958,
+        "opponent": "In Purdytory",
+        "result": "W",
+        "margin": 66.36,
+        "impact_summary": "29.1 points supplied 16% of Sigma Chi Whiteout's score in a 66.4-point W."
+      }
+    ],
+    "came_up_small": [
+      {
+        "name": "Texans",
+        "position": "DEF",
+        "fantasy_team": "Nacua-Cola",
+        "points": -2.0,
+        "team_score_share_pct": -2.5749967812540233,
+        "opponent": "ZSzizzle",
+        "result": "L",
+        "margin": 58.63000000000001,
+        "impact_summary": "-2.0 points supplied -3% of Nacua-Cola's score in a 58.6-point L."
+      },
+      {
+        "name": "Kyler Murray",
+        "position": "QB",
+        "fantasy_team": "Squat",
+        "points": -0.5000000000000061,
+        "team_score_share_pct": -0.9615384615384732,
+        "opponent": "Love(land) Hurts",
+        "result": "L",
+        "margin": 44.33,
+        "impact_summary": "-0.5 points supplied -1% of Squat's score in a 44.3-point L."
+      },
+      {
+        "name": "Colston Loveland",
+        "position": "TE",
+        "fantasy_team": "Love(land) Hurts",
+        "points": 0.0,
+        "team_score_share_pct": 0.0,
+        "opponent": "Squat",
+        "result": "W",
+        "margin": 44.33,
+        "impact_summary": "0.0 points supplied 0% of Love(land) Hurts's score in a 44.3-point W."
+      },
+      {
+        "name": "Kyle Pitts Sr.",
+        "position": "TE",
+        "fantasy_team": "Two Buck Luck",
+        "points": 0.0,
+        "team_score_share_pct": 0.0,
+        "opponent": "Bend & Snap Count",
+        "result": "L",
+        "margin": 23.60000000000001,
+        "impact_summary": "0.0 points supplied 0% of Two Buck Luck's score in a 23.6-point L."
+      },
+      {
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "fantasy_team": "ZSzizzle",
+        "points": 0.2,
+        "team_score_share_pct": 0.14673514306676447,
+        "opponent": "Nacua-Cola",
+        "result": "W",
+        "margin": 58.63000000000001,
+        "impact_summary": "0.2 points supplied 0% of ZSzizzle's score in a 58.6-point W."
+      },
+      {
+        "name": "Harrison Mevis",
+        "position": "K",
+        "fantasy_team": "Love(land) Hurts",
+        "points": 1.0,
+        "team_score_share_pct": 1.038098204090107,
+        "opponent": "Squat",
+        "result": "W",
+        "margin": 44.33,
+        "impact_summary": "1.0 points supplied 1% of Love(land) Hurts's score in a 44.3-point W."
+      },
+      {
+        "name": "Chargers",
+        "position": "DEF",
+        "fantasy_team": "Pat Pidgeon",
+        "points": 1.0,
+        "team_score_share_pct": 0.5361067924730606,
+        "opponent": "Millan\u2019s Last Supper",
+        "result": "W",
+        "margin": 59.16,
+        "impact_summary": "1.0 points supplied 1% of Pat Pidgeon's score in a 59.2-point W."
+      },
+      {
+        "name": "Brandon Aubrey",
+        "position": "K",
+        "fantasy_team": "Nacua-Cola",
+        "points": 1.0,
+        "team_score_share_pct": 1.2874983906270117,
+        "opponent": "ZSzizzle",
+        "result": "L",
+        "margin": 58.63000000000001,
+        "impact_summary": "1.0 points supplied 1% of Nacua-Cola's score in a 58.6-point L."
+      },
+      {
+        "name": "George Kittle",
+        "position": "TE",
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "points": 1.2000000000000002,
+        "team_score_share_pct": 0.9421370809452776,
+        "opponent": "Pat Pidgeon",
+        "result": "L",
+        "margin": 59.16,
+        "impact_summary": "1.2 points supplied 1% of Millan\u2019s Last Supper's score in a 59.2-point L."
+      },
+      {
+        "name": "Quentin Johnston",
+        "position": "WR",
+        "fantasy_team": "Squat",
+        "points": 1.7000000000000002,
+        "team_score_share_pct": 3.2692307692307696,
+        "opponent": "Love(land) Hurts",
+        "result": "L",
+        "margin": 44.33,
+        "impact_summary": "1.7 points supplied 3% of Squat's score in a 44.3-point L."
+      }
+    ],
+    "busts": [
+      {
+        "name": "Texans",
+        "position": "DEF",
+        "team": "Nacua-Cola",
+        "actual_team": "Houston Texans",
+        "ownership_status": "ACTIVE",
+        "points": -2.0,
+        "season_avg": 8.0,
+        "baseline_games": 5,
+        "type": "BUST",
+        "z_score": -2.54000254000381
+      },
+      {
+        "name": "Brandon Aubrey",
+        "position": "K",
+        "team": "Nacua-Cola",
+        "actual_team": "Dallas Cowboys",
+        "ownership_status": "ACTIVE",
+        "points": 1.0,
+        "season_avg": 10.647058823529411,
+        "baseline_games": 17,
+        "type": "BUST",
+        "z_score": -1.518372077656177
+      },
+      {
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "team": "ZSzizzle",
+        "actual_team": "Denver Broncos",
+        "ownership_status": "ACTIVE",
+        "points": 0.2,
+        "season_avg": 10.533333333333333,
+        "baseline_games": 17,
+        "type": "BUST",
+        "z_score": -1.4786043991084636
+      },
+      {
+        "name": "Eagles",
+        "position": "DEF",
+        "team": "Squat",
+        "actual_team": "Philadelphia Eagles",
+        "ownership_status": "ACTIVE",
+        "points": 3.0,
+        "season_avg": 10.2,
+        "baseline_games": 5,
+        "type": "BUST",
+        "z_score": -1.3439761073038032
+      }
+    ],
+    "bust_method": "A bust is a starter at least 1.3 standard deviations below that player's scoring baseline, using at least three prior games.",
+    "small_output_method": "Came up small ranks raw starter output and is not an expectation-adjusted bust label."
+  },
   "original_brief": {
+    "week": 1,
     "top_scoring_player": {
       "name": "Jahmyr Gibbs",
       "position": "RB",
@@ -5233,6 +6184,704 @@
         "ownership_status": "ACTIVE"
       }
     ],
+    "top_scoring_players_top10": [
+      {
+        "overall_rank": 1,
+        "position_label": "RB1",
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "points": 43.6,
+        "fantasy_team": "Pat Pidgeon",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "overall_rank": 2,
+        "position_label": "QB1",
+        "name": "Caleb Williams",
+        "position": "QB",
+        "points": 43.466666666666576,
+        "fantasy_team": "ZSzizzle",
+        "ownership_status": "BENCH"
+      },
+      {
+        "overall_rank": 3,
+        "position_label": "RB2",
+        "name": "Derrick Henry",
+        "position": "RB",
+        "points": 42.3,
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "overall_rank": 4,
+        "position_label": "RB3",
+        "name": "Kenneth Walker",
+        "position": "RB",
+        "points": 41.1,
+        "fantasy_team": "Sigma Chi Whiteout",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "overall_rank": 5,
+        "position_label": "QB2",
+        "name": "Josh Allen",
+        "position": "QB",
+        "points": 39.43333333333322,
+        "fantasy_team": "Love(land) Hurts",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "overall_rank": 6,
+        "position_label": "RB4",
+        "name": "D'Andre Swift",
+        "position": "RB",
+        "points": 37.4,
+        "fantasy_team": "Sigma Chi Whiteout",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "overall_rank": 7,
+        "position_label": "QB3",
+        "name": "Bryce Young",
+        "position": "QB",
+        "points": 36.03333333333321,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "overall_rank": 8,
+        "position_label": "RB5",
+        "name": "Ashton Jeanty",
+        "position": "RB",
+        "points": 35.7,
+        "fantasy_team": "Love(land) Hurts",
+        "ownership_status": "BENCH"
+      },
+      {
+        "overall_rank": 9,
+        "position_label": "QB4",
+        "name": "Jaxson Dart",
+        "position": "QB",
+        "points": 35.06666666666659,
+        "fantasy_team": "In Purdytory",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "overall_rank": 10,
+        "position_label": "QB5",
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "points": 33.46666666666658,
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "ownership_status": "ACTIVE"
+      }
+    ],
+    "top_scoring_players_by_position": [
+      {
+        "position": "QB",
+        "position_rank": 1,
+        "name": "Caleb Williams",
+        "points": 43.466666666666576,
+        "fantasy_team": "ZSzizzle",
+        "ownership_status": "BENCH"
+      },
+      {
+        "position": "QB",
+        "position_rank": 2,
+        "name": "Josh Allen",
+        "points": 39.43333333333322,
+        "fantasy_team": "Love(land) Hurts",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "QB",
+        "position_rank": 3,
+        "name": "Bryce Young",
+        "points": 36.03333333333321,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "QB",
+        "position_rank": 4,
+        "name": "Jaxson Dart",
+        "points": 35.06666666666659,
+        "fantasy_team": "In Purdytory",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "QB",
+        "position_rank": 5,
+        "name": "Trevor Lawrence",
+        "points": 33.46666666666658,
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "RB",
+        "position_rank": 1,
+        "name": "Jahmyr Gibbs",
+        "points": 43.6,
+        "fantasy_team": "Pat Pidgeon",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "RB",
+        "position_rank": 2,
+        "name": "Derrick Henry",
+        "points": 42.3,
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "RB",
+        "position_rank": 3,
+        "name": "Kenneth Walker",
+        "points": 41.1,
+        "fantasy_team": "Sigma Chi Whiteout",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "RB",
+        "position_rank": 4,
+        "name": "D'Andre Swift",
+        "points": 37.4,
+        "fantasy_team": "Sigma Chi Whiteout",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "RB",
+        "position_rank": 5,
+        "name": "Ashton Jeanty",
+        "points": 35.7,
+        "fantasy_team": "Love(land) Hurts",
+        "ownership_status": "BENCH"
+      },
+      {
+        "position": "WR",
+        "position_rank": 1,
+        "name": "Jalen Coker",
+        "points": 31.8,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "WR",
+        "position_rank": 2,
+        "name": "Christian Watson",
+        "points": 31.700000000000003,
+        "fantasy_team": "Nacua-Cola",
+        "ownership_status": "BENCH"
+      },
+      {
+        "position": "WR",
+        "position_rank": 3,
+        "name": "Justin Jefferson",
+        "points": 28.200000000000003,
+        "fantasy_team": "Bend & Snap Count",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "WR",
+        "position_rank": 4,
+        "name": "Zay Flowers",
+        "points": 26.0,
+        "fantasy_team": "Pat Pidgeon",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "WR",
+        "position_rank": 5,
+        "name": "Chris Olave",
+        "points": 25.2,
+        "fantasy_team": "Pat Pidgeon",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "TE",
+        "position_rank": 1,
+        "name": "Isaiah Likely",
+        "points": 25.8,
+        "fantasy_team": "In Purdytory",
+        "ownership_status": "BENCH"
+      },
+      {
+        "position": "TE",
+        "position_rank": 2,
+        "name": "Dallas Goedert",
+        "points": 22.7,
+        "fantasy_team": "Sigma Chi Whiteout",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "TE",
+        "position_rank": 3,
+        "name": "Trey McBride",
+        "points": 21.5,
+        "fantasy_team": "Bend & Snap Count",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "TE",
+        "position_rank": 4,
+        "name": "Mike Gesicki",
+        "points": 18.8,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "TE",
+        "position_rank": 5,
+        "name": "Dalton Kincaid",
+        "points": 17.0,
+        "fantasy_team": "Pat Pidgeon",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "K",
+        "position_rank": 1,
+        "name": "Evan McPherson",
+        "points": 19.0,
+        "fantasy_team": "Pat Pidgeon",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "K",
+        "position_rank": 2,
+        "name": "Chad Ryland",
+        "points": 16.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "K",
+        "position_rank": 3,
+        "name": "Jason Sanders",
+        "points": 15.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "K",
+        "position_rank": 4,
+        "name": "Tyler Loop",
+        "points": 14.0,
+        "fantasy_team": "Love(land) Hurts",
+        "ownership_status": "BENCH"
+      },
+      {
+        "position": "K",
+        "position_rank": 5,
+        "name": "Tyler Bass",
+        "points": 13.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "DEF",
+        "position_rank": 1,
+        "name": "Bengals",
+        "points": 18.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "DEF",
+        "position_rank": 2,
+        "name": "Steelers",
+        "points": 18.0,
+        "fantasy_team": "Two Buck Luck",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "DEF",
+        "position_rank": 3,
+        "name": "Jaguars",
+        "points": 13.0,
+        "fantasy_team": "Millan\u2019s Last Supper",
+        "ownership_status": "ACTIVE"
+      },
+      {
+        "position": "DEF",
+        "position_rank": 4,
+        "name": "Raiders",
+        "points": 13.0,
+        "fantasy_team": null,
+        "ownership_status": null
+      },
+      {
+        "position": "DEF",
+        "position_rank": 5,
+        "name": "Seahawks",
+        "points": 13.0,
+        "fantasy_team": "Love(land) Hurts",
+        "ownership_status": "ACTIVE"
+      }
+    ],
+    "scoring_separation": {
+      "overall": {
+        "has_clear_break": false,
+        "top_tier_count": 0,
+        "gap_points": 0.0,
+        "threshold_points": 3.0
+      },
+      "positions": [
+        {
+          "position": "QB",
+          "leaders": [
+            {
+              "position": "QB",
+              "position_rank": 1,
+              "name": "Caleb Williams",
+              "points": 43.466666666666576,
+              "fantasy_team": "ZSzizzle",
+              "ownership_status": "BENCH",
+              "position_label": "QB1",
+              "is_difference_maker": true
+            },
+            {
+              "position": "QB",
+              "position_rank": 2,
+              "name": "Josh Allen",
+              "points": 39.43333333333322,
+              "fantasy_team": "Love(land) Hurts",
+              "ownership_status": "ACTIVE",
+              "position_label": "QB2",
+              "is_difference_maker": false
+            },
+            {
+              "position": "QB",
+              "position_rank": 3,
+              "name": "Bryce Young",
+              "points": 36.03333333333321,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "QB3",
+              "is_difference_maker": false
+            },
+            {
+              "position": "QB",
+              "position_rank": 4,
+              "name": "Jaxson Dart",
+              "points": 35.06666666666659,
+              "fantasy_team": "In Purdytory",
+              "ownership_status": "ACTIVE",
+              "position_label": "QB4",
+              "is_difference_maker": false
+            },
+            {
+              "position": "QB",
+              "position_rank": 5,
+              "name": "Trevor Lawrence",
+              "points": 33.46666666666658,
+              "fantasy_team": "Millan\u2019s Last Supper",
+              "ownership_status": "ACTIVE",
+              "position_label": "QB5",
+              "is_difference_maker": false
+            }
+          ],
+          "has_clear_break": true,
+          "top_tier_count": 1,
+          "gap_points": 4.033333333333353,
+          "threshold_points": 3.0
+        },
+        {
+          "position": "RB",
+          "leaders": [
+            {
+              "position": "RB",
+              "position_rank": 1,
+              "name": "Jahmyr Gibbs",
+              "points": 43.6,
+              "fantasy_team": "Pat Pidgeon",
+              "ownership_status": "ACTIVE",
+              "position_label": "RB1",
+              "is_difference_maker": true
+            },
+            {
+              "position": "RB",
+              "position_rank": 2,
+              "name": "Derrick Henry",
+              "points": 42.3,
+              "fantasy_team": "Millan\u2019s Last Supper",
+              "ownership_status": "ACTIVE",
+              "position_label": "RB2",
+              "is_difference_maker": true
+            },
+            {
+              "position": "RB",
+              "position_rank": 3,
+              "name": "Kenneth Walker",
+              "points": 41.1,
+              "fantasy_team": "Sigma Chi Whiteout",
+              "ownership_status": "ACTIVE",
+              "position_label": "RB3",
+              "is_difference_maker": true
+            },
+            {
+              "position": "RB",
+              "position_rank": 4,
+              "name": "D'Andre Swift",
+              "points": 37.4,
+              "fantasy_team": "Sigma Chi Whiteout",
+              "ownership_status": "ACTIVE",
+              "position_label": "RB4",
+              "is_difference_maker": false
+            },
+            {
+              "position": "RB",
+              "position_rank": 5,
+              "name": "Ashton Jeanty",
+              "points": 35.7,
+              "fantasy_team": "Love(land) Hurts",
+              "ownership_status": "BENCH",
+              "position_label": "RB5",
+              "is_difference_maker": false
+            }
+          ],
+          "has_clear_break": true,
+          "top_tier_count": 3,
+          "gap_points": 3.700000000000003,
+          "threshold_points": 3.0
+        },
+        {
+          "position": "WR",
+          "leaders": [
+            {
+              "position": "WR",
+              "position_rank": 1,
+              "name": "Jalen Coker",
+              "points": 31.8,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "WR1",
+              "is_difference_maker": true
+            },
+            {
+              "position": "WR",
+              "position_rank": 2,
+              "name": "Christian Watson",
+              "points": 31.700000000000003,
+              "fantasy_team": "Nacua-Cola",
+              "ownership_status": "BENCH",
+              "position_label": "WR2",
+              "is_difference_maker": true
+            },
+            {
+              "position": "WR",
+              "position_rank": 3,
+              "name": "Justin Jefferson",
+              "points": 28.200000000000003,
+              "fantasy_team": "Bend & Snap Count",
+              "ownership_status": "ACTIVE",
+              "position_label": "WR3",
+              "is_difference_maker": false
+            },
+            {
+              "position": "WR",
+              "position_rank": 4,
+              "name": "Zay Flowers",
+              "points": 26.0,
+              "fantasy_team": "Pat Pidgeon",
+              "ownership_status": "ACTIVE",
+              "position_label": "WR4",
+              "is_difference_maker": false
+            },
+            {
+              "position": "WR",
+              "position_rank": 5,
+              "name": "Chris Olave",
+              "points": 25.2,
+              "fantasy_team": "Pat Pidgeon",
+              "ownership_status": "ACTIVE",
+              "position_label": "WR5",
+              "is_difference_maker": false
+            }
+          ],
+          "has_clear_break": true,
+          "top_tier_count": 2,
+          "gap_points": 3.5,
+          "threshold_points": 3.0
+        },
+        {
+          "position": "TE",
+          "leaders": [
+            {
+              "position": "TE",
+              "position_rank": 1,
+              "name": "Isaiah Likely",
+              "points": 25.8,
+              "fantasy_team": "In Purdytory",
+              "ownership_status": "BENCH",
+              "position_label": "TE1",
+              "is_difference_maker": true
+            },
+            {
+              "position": "TE",
+              "position_rank": 2,
+              "name": "Dallas Goedert",
+              "points": 22.7,
+              "fantasy_team": "Sigma Chi Whiteout",
+              "ownership_status": "ACTIVE",
+              "position_label": "TE2",
+              "is_difference_maker": false
+            },
+            {
+              "position": "TE",
+              "position_rank": 3,
+              "name": "Trey McBride",
+              "points": 21.5,
+              "fantasy_team": "Bend & Snap Count",
+              "ownership_status": "ACTIVE",
+              "position_label": "TE3",
+              "is_difference_maker": false
+            },
+            {
+              "position": "TE",
+              "position_rank": 4,
+              "name": "Mike Gesicki",
+              "points": 18.8,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "TE4",
+              "is_difference_maker": false
+            },
+            {
+              "position": "TE",
+              "position_rank": 5,
+              "name": "Dalton Kincaid",
+              "points": 17.0,
+              "fantasy_team": "Pat Pidgeon",
+              "ownership_status": "ACTIVE",
+              "position_label": "TE5",
+              "is_difference_maker": false
+            }
+          ],
+          "has_clear_break": true,
+          "top_tier_count": 1,
+          "gap_points": 3.1000000000000014,
+          "threshold_points": 3.0
+        },
+        {
+          "position": "K",
+          "leaders": [
+            {
+              "position": "K",
+              "position_rank": 1,
+              "name": "Evan McPherson",
+              "points": 19.0,
+              "fantasy_team": "Pat Pidgeon",
+              "ownership_status": "ACTIVE",
+              "position_label": "K1",
+              "is_difference_maker": true
+            },
+            {
+              "position": "K",
+              "position_rank": 2,
+              "name": "Chad Ryland",
+              "points": 16.0,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "K2",
+              "is_difference_maker": false
+            },
+            {
+              "position": "K",
+              "position_rank": 3,
+              "name": "Jason Sanders",
+              "points": 15.0,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "K3",
+              "is_difference_maker": false
+            },
+            {
+              "position": "K",
+              "position_rank": 4,
+              "name": "Tyler Loop",
+              "points": 14.0,
+              "fantasy_team": "Love(land) Hurts",
+              "ownership_status": "BENCH",
+              "position_label": "K4",
+              "is_difference_maker": false
+            },
+            {
+              "position": "K",
+              "position_rank": 5,
+              "name": "Tyler Bass",
+              "points": 13.0,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "K5",
+              "is_difference_maker": false
+            }
+          ],
+          "has_clear_break": true,
+          "top_tier_count": 1,
+          "gap_points": 3.0,
+          "threshold_points": 3.0
+        },
+        {
+          "position": "DEF",
+          "leaders": [
+            {
+              "position": "DEF",
+              "position_rank": 1,
+              "name": "Bengals",
+              "points": 18.0,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "DEF1",
+              "is_difference_maker": true
+            },
+            {
+              "position": "DEF",
+              "position_rank": 2,
+              "name": "Steelers",
+              "points": 18.0,
+              "fantasy_team": "Two Buck Luck",
+              "ownership_status": "ACTIVE",
+              "position_label": "DEF2",
+              "is_difference_maker": true
+            },
+            {
+              "position": "DEF",
+              "position_rank": 3,
+              "name": "Jaguars",
+              "points": 13.0,
+              "fantasy_team": "Millan\u2019s Last Supper",
+              "ownership_status": "ACTIVE",
+              "position_label": "DEF3",
+              "is_difference_maker": false
+            },
+            {
+              "position": "DEF",
+              "position_rank": 4,
+              "name": "Raiders",
+              "points": 13.0,
+              "fantasy_team": null,
+              "ownership_status": null,
+              "position_label": "DEF4",
+              "is_difference_maker": false
+            },
+            {
+              "position": "DEF",
+              "position_rank": 5,
+              "name": "Seahawks",
+              "points": 13.0,
+              "fantasy_team": "Love(land) Hurts",
+              "ownership_status": "ACTIVE",
+              "position_label": "DEF5",
+              "is_difference_maker": false
+            }
+          ],
+          "has_clear_break": true,
+          "top_tier_count": 2,
+          "gap_points": 5.0,
+          "threshold_points": 3.0
+        }
+      ]
+    },
     "biggest_over_under_performers": {
       "over_abs": null,
       "over_pct": null,
@@ -5964,7 +7613,8 @@
         "ideal_margin": -70.56666666666662,
         "actual_winner": "Love(land) Hurts",
         "ideal_winner": "Love(land) Hurts",
-        "winner_changed": false
+        "winner_changed": false,
+        "matchup_report_href": "matchups_week_01/matchup_02_love-land-hurts_vs_squat.html"
       },
       {
         "teamName": "Sigma Chi Whiteout",
@@ -5977,7 +7627,8 @@
         "ideal_margin": 61.900000000000006,
         "actual_winner": "Sigma Chi Whiteout",
         "ideal_winner": "Sigma Chi Whiteout",
-        "winner_changed": false
+        "winner_changed": false,
+        "matchup_report_href": "matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html"
       },
       {
         "teamName": "Pat Pidgeon",
@@ -5990,7 +7641,8 @@
         "ideal_margin": 48.666666666666686,
         "actual_winner": "Pat Pidgeon",
         "ideal_winner": "Pat Pidgeon",
-        "winner_changed": false
+        "winner_changed": false,
+        "matchup_report_href": "matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html"
       },
       {
         "teamName": "Nacua-Cola",
@@ -6003,7 +7655,8 @@
         "ideal_margin": -56.39999999999996,
         "actual_winner": "ZSzizzle",
         "ideal_winner": "ZSzizzle",
-        "winner_changed": false
+        "winner_changed": false,
+        "matchup_report_href": "matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html"
       },
       {
         "teamName": "Bend & Snap Count",
@@ -6016,7 +7669,8 @@
         "ideal_margin": 3.53333333333336,
         "actual_winner": "Bend & Snap Count",
         "ideal_winner": "Bend & Snap Count",
-        "winner_changed": false
+        "winner_changed": false,
+        "matchup_report_href": "matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html"
       }
     ],
     "biggest_bench_miss": {
@@ -6401,22 +8055,11 @@
       ]
     },
     "team_z_score_performance": {
-      "over": {
-        "teamKey": "470.l.932349.t.3",
-        "teamName": "Pat Pidgeon",
-        "week_points": 186.53333333333327,
-        "mean_prior": 0.0,
-        "std_prior": 0.0,
-        "z_score": 186.53333333333327
-      },
-      "under": {
-        "teamKey": "470.l.932349.t.10",
-        "teamName": "Squat",
-        "week_points": 52.0,
-        "mean_prior": 0.0,
-        "std_prior": 0.0,
-        "z_score": 52.0
-      }
+      "status": "insufficient_history",
+      "minimum_prior_weeks": 3,
+      "available_prior_weeks": 0,
+      "over": null,
+      "under": null
     },
     "playoff_picture": {
       "playoff_spots": 4,
@@ -6693,7 +8336,8 @@
           "ideal_margin": -70.56666666666662,
           "actual_winner": "Love(land) Hurts",
           "ideal_winner": "Love(land) Hurts",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_02_love-land-hurts_vs_squat.html"
         },
         {
           "teamName": "Sigma Chi Whiteout",
@@ -6706,7 +8350,8 @@
           "ideal_margin": 61.900000000000006,
           "actual_winner": "Sigma Chi Whiteout",
           "ideal_winner": "Sigma Chi Whiteout",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html"
         },
         {
           "teamName": "Pat Pidgeon",
@@ -6719,7 +8364,8 @@
           "ideal_margin": 48.666666666666686,
           "actual_winner": "Pat Pidgeon",
           "ideal_winner": "Pat Pidgeon",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html"
         },
         {
           "teamName": "Nacua-Cola",
@@ -6732,7 +8378,8 @@
           "ideal_margin": -56.39999999999996,
           "actual_winner": "ZSzizzle",
           "ideal_winner": "ZSzizzle",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html"
         },
         {
           "teamName": "Bend & Snap Count",
@@ -6745,7 +8392,8 @@
           "ideal_margin": 3.53333333333336,
           "actual_winner": "Bend & Snap Count",
           "ideal_winner": "Bend & Snap Count",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html"
         }
       ],
       "ideal_outcome_changes": [],
@@ -6761,7 +8409,8 @@
           "ideal_margin": -70.56666666666662,
           "actual_winner": "Love(land) Hurts",
           "ideal_winner": "Love(land) Hurts",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_02_love-land-hurts_vs_squat.html"
         },
         {
           "teamName": "Sigma Chi Whiteout",
@@ -6774,7 +8423,8 @@
           "ideal_margin": 61.900000000000006,
           "actual_winner": "Sigma Chi Whiteout",
           "ideal_winner": "Sigma Chi Whiteout",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html"
         },
         {
           "teamName": "Pat Pidgeon",
@@ -6787,7 +8437,8 @@
           "ideal_margin": 48.666666666666686,
           "actual_winner": "Pat Pidgeon",
           "ideal_winner": "Pat Pidgeon",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html"
         },
         {
           "teamName": "Nacua-Cola",
@@ -6800,7 +8451,8 @@
           "ideal_margin": -56.39999999999996,
           "actual_winner": "ZSzizzle",
           "ideal_winner": "ZSzizzle",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html"
         },
         {
           "teamName": "Bend & Snap Count",
@@ -6813,82 +8465,17 @@
           "ideal_margin": 3.53333333333336,
           "actual_winner": "Bend & Snap Count",
           "ideal_winner": "Bend & Snap Count",
-          "winner_changed": false
+          "winner_changed": false,
+          "matchup_report_href": "matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html"
         }
       ]
     },
     "playoff_snapshot": {
-      "in_playoffs_top4": [
-        {
-          "seed": 1,
-          "teamKey": "470.l.932349.t.3",
-          "teamName": "Pat Pidgeon",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 186.53
-        },
-        {
-          "seed": 2,
-          "teamKey": "470.l.932349.t.1",
-          "teamName": "Sigma Chi Whiteout",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 178.03
-        },
-        {
-          "seed": 3,
-          "teamKey": "470.l.932349.t.7",
-          "teamName": "Bend & Snap Count",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 148.27
-        },
-        {
-          "seed": 4,
-          "teamKey": "470.l.932349.t.8",
-          "teamName": "ZSzizzle",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 136.3
-        }
-      ],
+      "status": "too_early",
+      "minimum_week": 4,
+      "in_playoffs_top4": [],
       "eliminated": [],
-      "bubble": [
-        {
-          "seed": 4,
-          "teamKey": "470.l.932349.t.8",
-          "teamName": "ZSzizzle",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 136.3,
-          "max_possible_wins": 15
-        },
-        {
-          "seed": 5,
-          "teamKey": "470.l.932349.t.2",
-          "teamName": "Love(land) Hurts",
-          "wins": 1,
-          "losses": 0,
-          "ties": 0,
-          "points_for": 96.33,
-          "max_possible_wins": 15
-        },
-        {
-          "seed": 6,
-          "teamKey": "470.l.932349.t.4",
-          "teamName": "Millan\u2019s Last Supper",
-          "wins": 0,
-          "losses": 1,
-          "ties": 0,
-          "points_for": 127.37,
-          "max_possible_wins": 14
-        }
-      ]
+      "bubble": []
     },
     "over_under": {
       "over_abs_top3": [],

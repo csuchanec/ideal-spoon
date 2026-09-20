@@ -1,13 +1,18 @@
 {
   "metadata": {
     "schema_version": "1.0",
-    "generated_at": "2026-08-16T09:53:58.734950",
+    "generated_at": "2026-09-20T06:29:50.550046",
     "start_year": 2003,
-    "end_year": 2025,
-    "latest_included_year": 2025,
-    "latest_year_label": "2025",
-    "total_managers": 24,
-    "total_seasons": 23,
+    "end_year": 2026,
+    "latest_included_year": 2026,
+    "latest_year_label": "2026 (in progress)",
+    "in_progress_years": [
+      2026
+    ],
+    "completed_seasons": 23,
+    "latest_completed_week": 1,
+    "total_managers": 25,
+    "total_seasons": 24,
     "minimum_multi_season_sample": 3,
     "minimum_rivalry_games": 4,
     "player_data_coverage": [
@@ -217,15 +222,23 @@
         "has_player_stat_detail": true,
         "has_usable_player_scoring": true,
         "coverage_label": "full"
+      },
+      {
+        "year": 2026,
+        "player_rows": 5774,
+        "nonzero_stat_columns": 72,
+        "roster_point_rows": 152,
+        "has_player_stat_detail": true,
+        "has_usable_player_scoring": true,
+        "coverage_label": "full"
       }
     ],
     "partial_player_data_years": [
       2003
     ],
     "manager_chart_rank_axis_max": 10,
-    "manager_chart_points_axis_min": 900,
-    "manager_chart_points_axis_max": 2800,
-    "output_dir": "/Users/csuchanec/dev/code/FantasyFootball/analysis/weekly_report/data/history"
+    "manager_chart_points_axis_min": 0,
+    "manager_chart_points_axis_max": 2800
   },
   "league_history_story": {
     "title": "League history through the manager lens",
@@ -238,11 +251,11 @@
       {
         "label": "Winningest manager",
         "value": "Dave F.",
-        "detail": "191-129-0 with 36154.5 points"
+        "detail": "191-130-0 with 36279.2 points"
       },
       {
         "label": "Defining rivalry",
-        "value": "Brian B. vs Dave F.",
+        "value": "Brian B vs Dave F.",
         "detail": "41 games across 22 seasons, with 8 playoff meetings"
       },
       {
@@ -252,8 +265,8 @@
       },
       {
         "label": "Current era",
-        "value": "Millan Darling Millan",
-        "detail": "Managed by Yarp, it finished first in the regular season in 2025"
+        "value": "Pat Pidgeon",
+        "detail": "Managed by Jason P., it finished first in the regular season in 2026 (in progress)"
       }
     ],
     "lore_cards": [
@@ -264,46 +277,41 @@
       },
       {
         "label": "Defining rivalry",
-        "value": "Brian B. vs Dave F.",
+        "value": "Brian B vs Dave F.",
         "detail": "41 games spread over 22 seasons made this the league's most durable high-stakes matchup"
       },
       {
         "label": "Playoff roadblock",
-        "value": "Brian B. vs Dave F.",
+        "value": "Brian B vs Dave F.",
         "detail": "8 postseason meetings that repeatedly shaped title paths"
-      },
-      {
-        "label": "Latest champion",
-        "value": "Dave F.",
-        "detail": "Two Buck Luck closed out 2025"
       }
     ],
     "highlights": [
       "Dave F. owns both the championship standard and the regular-season volume lead, which gives the all-time table a clear center of gravity.",
-      "The rivalry section is strongest when durability and stakes overlap, and Brian B. vs Dave F. is the clearest example of that.",
-      "The current era still sits inside the longer league arc: Millan Darling Millan led the regular season in 2025. The tightest durable matchup today runs through Joe P. vs Sean R.."
+      "The rivalry section is strongest when durability and stakes overlap, and Brian B vs Dave F. is the clearest example of that.",
+      "The current era still sits inside the longer league arc: Pat Pidgeon led the regular season in 2026 (in progress). The tightest durable matchup today runs through Joe P. vs Sean R.."
     ],
     "manager_archetypes": [
       {
         "manager_display": "Dave F.",
         "classification": "Dynasty",
         "wins": 191,
-        "points_for": 36154.48,
-        "seasons": 23
+        "points_for": 36279.15,
+        "seasons": 24
       },
       {
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "classification": "Multi-title power",
-        "wins": 176,
-        "points_for": 34460.416666666664,
-        "seasons": 22
+        "wins": 177,
+        "points_for": 34638.44666666666,
+        "seasons": 23
       },
       {
         "manager_display": "Chris P.",
         "classification": "Multi-title power",
         "wins": 162,
-        "points_for": 34484.65666666666,
-        "seasons": 23
+        "points_for": 34596.32666666667,
+        "seasons": 24
       },
       {
         "manager_display": "Craig S.",
@@ -315,23 +323,23 @@
       {
         "manager_display": "Elissa P.",
         "classification": "Perennial contender",
-        "wins": 155,
-        "points_for": 31669.2,
-        "seasons": 22
+        "wins": 156,
+        "points_for": 31817.469999999998,
+        "seasons": 23
       },
       {
         "manager_display": "Jason P.",
         "classification": "Boom-bust wild card",
-        "wins": 136,
-        "points_for": 29957.59,
-        "seasons": 21
+        "wins": 137,
+        "points_for": 30144.12,
+        "seasons": 22
       },
       {
         "manager_display": "Matt",
         "classification": "Multi-title power",
-        "wins": 134,
-        "points_for": 27989.39,
-        "seasons": 19
+        "wins": 135,
+        "points_for": 28085.719999999998,
+        "seasons": 20
       },
       {
         "manager_display": "Andrew P.",
@@ -346,7 +354,7 @@
     "hall_of_fame": [
       {
         "label": "Manager single-week high",
-        "subject": "Brian B.",
+        "subject": "Brian B",
         "value": 236.26,
         "context": "regular_season",
         "detail": "2004 week 13 for Roethlischeeseberger"
@@ -403,6 +411,20 @@
     "manager_streaks": [
       {
         "label": "Longest win streak",
+        "subject": "Craig",
+        "value": 1.0,
+        "context": "regular_season",
+        "detail": "2026 W1 to 2026 W1"
+      },
+      {
+        "label": "Longest losing streak",
+        "subject": "Craig",
+        "value": 1.0,
+        "context": "regular_season",
+        "detail": "2026 W1 to 2026 W1"
+      },
+      {
+        "label": "Longest win streak",
         "subject": "Shannon D.",
         "value": 3.0,
         "context": "regular_season",
@@ -448,7 +470,7 @@
         "subject": "Matt",
         "value": 8.0,
         "context": "regular_season",
-        "detail": "2025 W14 to 2022 W1"
+        "detail": "2026 W1 to 2022 W1"
       },
       {
         "label": "Longest losing streak",
@@ -483,7 +505,7 @@
         "subject": "Chris P.",
         "value": 8.0,
         "context": "regular_season",
-        "detail": "2025 W14 to 2020 W14"
+        "detail": "2026 W1 to 2020 W14"
       },
       {
         "label": "Longest win streak",
@@ -509,9 +531,9 @@
       {
         "label": "Longest losing streak",
         "subject": "Liana",
-        "value": 5.0,
+        "value": 6.0,
         "context": "regular_season",
-        "detail": "2025 W11 to 2025 W9"
+        "detail": "2025 W11 to 2026 W1"
       },
       {
         "label": "Longest win streak",
@@ -686,7 +708,7 @@
         "subject": "Jason P.",
         "value": 8.0,
         "context": "regular_season",
-        "detail": "2025 W14 to 2005 W13"
+        "detail": "2026 W1 to 2005 W13"
       },
       {
         "label": "Longest losing streak",
@@ -697,14 +719,14 @@
       },
       {
         "label": "Longest win streak",
-        "subject": "Brian B.",
+        "subject": "Brian B",
         "value": 10.0,
         "context": "regular_season",
-        "detail": "2025 W11 to 2004 W4"
+        "detail": "2026 W1 to 2004 W4"
       },
       {
         "label": "Longest losing streak",
-        "subject": "Brian B.",
+        "subject": "Brian B",
         "value": 6.0,
         "context": "regular_season",
         "detail": "2025 W13 to 2009 W3"
@@ -721,7 +743,7 @@
         "subject": "Dave F.",
         "value": 6.0,
         "context": "regular_season",
-        "detail": "2025 W9 to 2013 W4"
+        "detail": "2026 W1 to 2013 W4"
       }
     ],
     "player_position_records": [
@@ -807,7 +829,7 @@
         "record": "Single Week Low",
         "subject": "Rex Grossman (QB)",
         "value": -9.47,
-        "detail": "2006 week 6 for Brian B."
+        "detail": "2006 week 6 for Brian B"
       },
       {
         "position": "QB,TE",
@@ -1024,14 +1046,14 @@
       {
         "category": "Wins",
         "record": "Most Wins",
-        "record_holder": "Chris P. (In Purdytory)",
-        "value": 10.0
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": 1.0
       },
       {
         "category": "Losses",
         "record": "Most Losses",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": 12.0
+        "record_holder": "Chris P. (In Purdytory)",
+        "value": 1.0
       },
       {
         "category": "Wins",
@@ -1048,8 +1070,8 @@
       {
         "category": "Wins",
         "record": "Longest Streak",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": 6.0
+        "record_holder": "Brian B (Sigma Chi Whiteout)",
+        "value": 1.0
       },
       {
         "category": "Wins",
@@ -1060,14 +1082,14 @@
       {
         "category": "Wins",
         "record": "Current Streak",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": 6.0
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": 1.0
       },
       {
         "category": "Losses",
         "record": "Longest Streak",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": 5.0
+        "record_holder": "Yarp (Squat)",
+        "value": 1.0
       },
       {
         "category": "Losses",
@@ -1078,20 +1100,20 @@
       {
         "category": "Losses",
         "record": "Current Streak",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": 5.0
+        "record_holder": "Chris P. (In Purdytory)",
+        "value": 1.0
       },
       {
         "category": "Margin of Victory - Largest",
         "record": "Single Week",
-        "record_holder": "Jason P. (Pat Pidgeon) vs. Matt (You aren\u2019t Worthy of Coleman) - Week 7",
-        "value": 109.43
+        "record_holder": "Brian B (Sigma Chi Whiteout) vs. Chris P. (In Purdytory) - Week 1",
+        "value": 66.36
       },
       {
         "category": "Margin of Victory - Largest",
         "record": "Average",
-        "record_holder": "Pat Pidgeon",
-        "value": 46.62
+        "record_holder": "Sigma Chi Whiteout",
+        "value": 66.36
       },
       {
         "category": "Margin of Victory - Largest",
@@ -1102,20 +1124,20 @@
       {
         "category": "Margin of Victory - Largest",
         "record": "Average, All Time",
-        "record_holder": "Dumples, Season 2004",
-        "value": 62.05
+        "record_holder": "Sigma Chi Whiteout, Season 2026",
+        "value": 66.36
       },
       {
         "category": "Margin of Victory - Smallest",
         "record": "Single Week",
-        "record_holder": "Dave F. (Two Buck Luck) vs. Chris P. (In Purdytory) - Week 14",
-        "value": 0.03
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 23.6
       },
       {
         "category": "Margin of Victory - Smallest",
         "record": "Average",
-        "record_holder": "Reverse Ted Lasso",
-        "value": 16.08
+        "record_holder": "Bend & Snap Count",
+        "value": 23.6
       },
       {
         "category": "Margin of Victory - Smallest",
@@ -1132,14 +1154,14 @@
       {
         "category": "Margin of Defeat - Largest",
         "record": "Single Week",
-        "record_holder": "Matt (You aren\u2019t Worthy of Coleman) vs. Jason P. (Pat Pidgeon) - Week 7",
-        "value": 109.43
+        "record_holder": "Chris P. (In Purdytory) vs. Brian B (Sigma Chi Whiteout) - Week 1",
+        "value": 66.36
       },
       {
         "category": "Margin of Defeat - Largest",
         "record": "Average",
-        "record_holder": "Moonbeam Ice Cream",
-        "value": 44.72
+        "record_holder": "In Purdytory",
+        "value": 66.36
       },
       {
         "category": "Margin of Defeat - Largest",
@@ -1150,20 +1172,20 @@
       {
         "category": "Margin of Defeat - Largest",
         "record": "Average, All Time",
-        "record_holder": "Come to Penn Staaate, Season 2009",
-        "value": 61.45
+        "record_holder": "In Purdytory, Season 2026",
+        "value": 66.36
       },
       {
         "category": "Margin of Defeat - Smallest",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Dave F. (Two Buck Luck) - Week 14",
-        "value": 0.03
+        "record_holder": "Dave F. (Two Buck Luck) vs. Elissa P. (Bend & Snap Count) - Week 1",
+        "value": 23.6
       },
       {
         "category": "Margin of Defeat - Smallest",
         "record": "Average",
-        "record_holder": "In Purdytory",
-        "value": 14.46
+        "record_holder": "Two Buck Luck",
+        "value": 23.6
       },
       {
         "category": "Margin of Defeat - Smallest",
@@ -1180,43 +1202,43 @@
       {
         "category": "Strength of Schedule - Hardest",
         "record": "Weekly Average",
-        "record_holder": "Big Fire Knowles Energy",
-        "value": 125.48
+        "record_holder": "Millan\u2019s Last Supper",
+        "value": 186.53
       },
       {
         "category": "Strength of Schedule - Easiest",
         "record": "Weekly Average",
-        "record_holder": "In Purdytory",
-        "value": 107.82
+        "record_holder": "Love(land) Hurts",
+        "value": 52.0
       },
       {
         "category": "Strength of Schedule - Hardest",
         "record": "Weekly Average, All Time",
-        "record_holder": "Jolly Green Giants, Season 2004",
-        "value": 161.33
+        "record_holder": "Millan\u2019s Last Supper, Season 2026",
+        "value": 186.53
       },
       {
         "category": "Strength of Schedule - Easiest",
         "record": "Weekly Average, All Time",
-        "record_holder": "Mexico's Dog Pound, Season 2007",
-        "value": 77.68
+        "record_holder": "Love(land) Hurts, Season 2026",
+        "value": 52.0
       },
       {
         "category": "Team Points - Most",
         "record": "Single Week",
-        "record_holder": "Yarp (Millan Darling Millan) vs. Brian B. (Big Fire Knowles Energy) - Week 8",
-        "value": 184.1
+        "record_holder": "Jason P. (Pat Pidgeon) vs. Liana (Millan\u2019s Last Supper) - Week 1",
+        "value": 186.53
       },
       {
         "category": "Team Points - Least",
         "record": "Single Week",
-        "record_holder": "Matt (You aren\u2019t Worthy of Coleman) vs. Jason P. (Pat Pidgeon) - Week 7",
-        "value": 49.8
+        "record_holder": "Yarp (Squat) vs. Matt (Love(land) Hurts) - Week 1",
+        "value": 52.0
       },
       {
         "category": "Team Points - Most",
         "record": "Single Week, All Time",
-        "record_holder": "Brian B. (Roethlischeeseberger) vs. Joe P. (Rubbing Genitals) - Week 13, Season 2004",
+        "record_holder": "Brian B (Roethlischeeseberger) vs. Joe P. (Rubbing Genitals) - Week 13, Season 2004",
         "value": 236.26
       },
       {
@@ -1228,14 +1250,14 @@
       {
         "category": "Team Points - Most",
         "record": "Season (Average)",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": "2221.83 (130.70)"
+        "record_holder": "Jason P. (Pat Pidgeon)",
+        "value": "186.53 (10.97)"
       },
       {
         "category": "Team Points - Least",
         "record": "Season (Average)",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": "1767.27 (103.96)"
+        "record_holder": "Yarp (Squat)",
+        "value": "52.00 (3.06)"
       },
       {
         "category": "Team Points - Most",
@@ -1252,38 +1274,38 @@
       {
         "category": "Offensive Points - Most",
         "record": "Single Week",
-        "record_holder": "Yarp (Millan Darling Millan) vs. Brian B. (Big Fire Knowles Energy) - Week 8",
-        "value": 177.1
+        "record_holder": "Jason P. (Pat Pidgeon) vs. Liana (Millan\u2019s Last Supper) - Week 1",
+        "value": 166.53
       },
       {
         "category": "Offensive Points - Least",
         "record": "Single Week",
-        "record_holder": "Yarp (Millan Darling Millan) - Week 17",
-        "value": 22.5
+        "record_holder": "Elissa P. (Bend & Snap Count) - Week 2",
+        "value": 0.0
       },
       {
         "category": "Offensive Points - Most",
         "record": "Single Week, All Time",
-        "record_holder": "Brian B. (Roethlischeeseberger) vs. Joe P. (Rubbing Genitals) - Week 13, Season 2004",
+        "record_holder": "Brian B (Roethlischeeseberger) vs. Joe P. (Rubbing Genitals) - Week 13, Season 2004",
         "value": 191.13
       },
       {
         "category": "Offensive Points - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Sean R. (who the hell is kolb) - Week 14, Season 2007",
-        "value": 17.38
+        "record_holder": "Elissa P. (Bend & Snap Count) - Week 2, Season 2026",
+        "value": 0.0
       },
       {
         "category": "Offensive Points - Most",
         "record": "Season (Average)",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": "1907.83 (112.23)"
+        "record_holder": "Jason P. (Pat Pidgeon)",
+        "value": "166.53 (9.80)"
       },
       {
         "category": "Offensive Points - Least",
         "record": "Season (Average)",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": "1549.27 (91.13)"
+        "record_holder": "Yarp (Squat)",
+        "value": "42.00 (2.47)"
       },
       {
         "category": "Offensive Points - Most",
@@ -1294,20 +1316,20 @@
       {
         "category": "Offensive Points - Least",
         "record": "Season, All Time",
-        "record_holder": "Sean R. (Jet Favre), Season 2008",
-        "value": 703.16
+        "record_holder": "Yarp (Squat), Season 2026",
+        "value": 42.0
       },
       {
         "category": "Kicking Points - Most",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Jason P. (Pat Pidgeon) - Week 15",
-        "value": 24.0
+        "record_holder": "Jason P. (Pat Pidgeon) vs. Liana (Millan\u2019s Last Supper) - Week 1",
+        "value": 19.0
       },
       {
         "category": "Kicking Points - Least",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Brian B. (Big Fire Knowles Energy) - Week 4",
-        "value": -2.0
+        "record_holder": "Elissa P. (Bend & Snap Count) - Week 2",
+        "value": 0.0
       },
       {
         "category": "Kicking Points - Most",
@@ -1318,20 +1340,20 @@
       {
         "category": "Kicking Points - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Chris P. (In Purdytory) vs. Brian B. (Big Fire Knowles Energy) - Week 4, Season 2025",
+        "record_holder": "Chris P. (In Purdytory) vs. Brian B (Big Fire Knowles Energy) - Week 4, Season 2025",
         "value": -2.0
       },
       {
         "category": "Kicking Points - Most",
         "record": "Season (Average)",
-        "record_holder": "Joe P. (Joe\u2019s Cocksmithing Station)",
-        "value": "182.00 (10.71)"
+        "record_holder": "Jason P. (Pat Pidgeon)",
+        "value": "19.00 (1.12)"
       },
       {
         "category": "Kicking Points - Least",
         "record": "Season (Average)",
-        "record_holder": "Yarp (Millan Darling Millan)",
-        "value": "105.00 (6.18)"
+        "record_holder": "Matt (Love(land) Hurts)",
+        "value": "1.00 (0.06)"
       },
       {
         "category": "Kicking Points - Most",
@@ -1342,20 +1364,20 @@
       {
         "category": "Kicking Points - Least",
         "record": "Season, All Time",
-        "record_holder": "Elissa P. (First Pick Bitch), Season 2005",
-        "value": 59.0
+        "record_holder": "Matt (Love(land) Hurts), Season 2026",
+        "value": 1.0
       },
       {
         "category": "Defensive Points - Most",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Brian B. (Big Fire Knowles Energy) - Week 13",
-        "value": 30.0
+        "record_holder": "Dave F. (Two Buck Luck) vs. Elissa P. (Bend & Snap Count) - Week 1",
+        "value": 18.0
       },
       {
         "category": "Defensive Points - Least",
         "record": "Single Week",
-        "record_holder": "Brian B. (Big Fire Knowles Energy) vs. Yarp (Millan Darling Millan) - Week 8",
-        "value": -4.0
+        "record_holder": "Craig (Nacua-Cola) vs. Craig (ZSzizzle) - Week 1",
+        "value": -2.0
       },
       {
         "category": "Defensive Points - Most",
@@ -1373,13 +1395,13 @@
         "category": "Defensive Points - Most",
         "record": "Season (Average)",
         "record_holder": "Dave F. (Two Buck Luck)",
-        "value": "158.00 (9.29)"
+        "value": "18.00 (1.06)"
       },
       {
         "category": "Defensive Points - Least",
         "record": "Season (Average)",
-        "record_holder": "Brian B. (Big Fire Knowles Energy)",
-        "value": "82.00 (4.82)"
+        "record_holder": "Craig (Nacua-Cola)",
+        "value": "-2.00 (-0.12)"
       },
       {
         "category": "Defensive Points - Most",
@@ -1390,44 +1412,44 @@
       {
         "category": "Defensive Points - Least",
         "record": "Season, All Time",
-        "record_holder": "Elissa P. (First Pick Bitch), Season 2005",
-        "value": 57.0
+        "record_holder": "Craig (Nacua-Cola), Season 2026",
+        "value": -2.0
       },
       {
         "category": "Points From Draft Players - Most",
         "record": "Single Week",
-        "record_holder": "Jason P. (Pat Pidgeon) vs. Brian B. (Big Fire Knowles Energy) - Week 2",
-        "value": 172.2
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Points From Draft Players - Least",
         "record": "Single Week",
-        "record_holder": "Dave F. (Two Buck Luck) vs. Matt (You aren\u2019t Worthy of Coleman) - Week 6",
-        "value": 15.2
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Points From Draft Players - Most",
         "record": "Single Week, All Time",
-        "record_holder": "Jason P. (Pat Pidgeon) vs. Brian B. (Big Fire Knowles Energy) - Week 2, Season 2025",
+        "record_holder": "Jason P. (Pat Pidgeon) vs. Brian B (Big Fire Knowles Energy) - Week 2, Season 2025",
         "value": 172.2
       },
       {
         "category": "Points From Draft Players - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Andrew P. (3 Dogs 2 Horses 3 Cats 5 Ducks) vs. Elissa P. (Pommel Horse Guy) - Week 1, Season 2024",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1, Season 2026",
         "value": 0.0
       },
       {
         "category": "Points From Draft Players - Most",
         "record": "Season (Average)",
-        "record_holder": "Craig S. (Nacua-Cola)",
-        "value": "1814.50 (106.74)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Points From Draft Players - Least",
         "record": "Season (Average)",
-        "record_holder": "Chris P. (In Purdytory)",
-        "value": "1245.33 (73.25)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Points From Draft Players - Most",
@@ -1438,44 +1460,44 @@
       {
         "category": "Points From Draft Players - Least",
         "record": "Season, All Time",
-        "record_holder": "Andrew P. (3 Dogs 2 Horses 3 Cats 5 Ducks), Season 2024",
+        "record_holder": "Elissa P. (Bend & Snap Count), Season 2026",
         "value": 0.0
       },
       {
         "category": "Points From Post-Draft Acquisitions - Most",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Yarp (Millan Darling Millan) - Week 12",
-        "value": 104.13
+        "record_holder": "Jason P. (Pat Pidgeon) vs. Liana (Millan\u2019s Last Supper) - Week 1",
+        "value": 186.53
       },
       {
         "category": "Points From Post-Draft Acquisitions - Least",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Brian B. (Big Fire Knowles Energy) - Week 4",
-        "value": -2.0
+        "record_holder": "Elissa P. (Bend & Snap Count) - Week 2",
+        "value": 0.0
       },
       {
         "category": "Points From Post-Draft Acquisitions - Most",
         "record": "Single Week, All Time",
-        "record_holder": "Brian B. (Roethlischeeseberger) vs. Joe P. (Rubbing Genitals) - Week 13, Season 2004",
+        "record_holder": "Brian B (Roethlischeeseberger) vs. Joe P. (Rubbing Genitals) - Week 13, Season 2004",
         "value": 235.51
       },
       {
         "category": "Points From Post-Draft Acquisitions - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Chris P. (In Purdytory) vs. Brian B. (Big Fire Knowles Energy) - Week 4, Season 2025",
+        "record_holder": "Chris P. (In Purdytory) vs. Brian B (Big Fire Knowles Energy) - Week 4, Season 2025",
         "value": -2.0
       },
       {
         "category": "Points From Post-Draft Acquisitions - Most",
         "record": "Season (Average)",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": "854.70 (50.28)"
+        "record_holder": "Jason P. (Pat Pidgeon)",
+        "value": "186.53 (10.97)"
       },
       {
         "category": "Points From Post-Draft Acquisitions - Least",
         "record": "Season (Average)",
-        "record_holder": "Elissa P. (Moonbeam Ice Cream)",
-        "value": "127.10 (7.48)"
+        "record_holder": "Yarp (Squat)",
+        "value": "52.00 (3.06)"
       },
       {
         "category": "Points From Post-Draft Acquisitions - Most",
@@ -1486,19 +1508,19 @@
       {
         "category": "Points From Post-Draft Acquisitions - Least",
         "record": "Season, All Time",
-        "record_holder": "Elissa P. (Moonbeam Ice Cream), Season 2025",
-        "value": 127.1
+        "record_holder": "Yarp (Squat), Season 2026",
+        "value": 52.0
       },
       {
         "category": "Touchdowns - Most",
         "record": "Single Week",
-        "record_holder": "Dave F. (Two Buck Luck) vs. Yarp (Millan Darling Millan) - Week 16",
-        "value": 11.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Touchdowns - Least",
         "record": "Single Week",
-        "record_holder": "Yarp (Millan Darling Millan) - Week 17",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
         "value": 0.0
       },
       {
@@ -1510,43 +1532,43 @@
       {
         "category": "Touchdowns - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Yarp (Millan Darling Millan) - Week 17, Season 2025",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1, Season 2026",
         "value": 0.0
       },
       {
         "category": "Touchdowns - Most",
         "record": "Season (Average)",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": "103.00 (6.06)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Touchdowns - Least",
         "record": "Season (Average)",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": "73.00 (4.29)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Touchdowns - Most",
         "record": "Season, All Time",
-        "record_holder": "Brian B. (Vince LomBarna), Season 2007",
+        "record_holder": "Brian B (Vince LomBarna), Season 2007",
         "value": 145.0
       },
       {
         "category": "Touchdowns - Least",
         "record": "Season, All Time",
-        "record_holder": "Sean R. (Jet Favre), Season 2008",
-        "value": 34.0
+        "record_holder": "Elissa P. (Bend & Snap Count), Season 2026",
+        "value": 0.0
       },
       {
         "category": "Passing Yards - Most",
         "record": "Single Week",
-        "record_holder": "Craig S. (Nacua-Cola) vs. Brian B. (Big Fire Knowles Energy) - Week 7",
-        "value": 420.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Passing Yards - Least",
         "record": "Single Week",
-        "record_holder": "Yarp (Millan Darling Millan) - Week 17",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
         "value": 0.0
       },
       {
@@ -1558,44 +1580,44 @@
       {
         "category": "Passing Yards - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Yarp (Millan Darling Millan) - Week 17, Season 2025",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1, Season 2026",
         "value": 0.0
       },
       {
         "category": "Passing Yards - Most",
         "record": "Season (Average)",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": "4212.00 (247.76)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Passing Yards - Least",
         "record": "Season (Average)",
-        "record_holder": "Joe P. (Joe\u2019s Cocksmithing Station)",
-        "value": "2984.00 (175.53)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Passing Yards - Most",
         "record": "Season, All Time",
-        "record_holder": "Brian B. (Vince LomBarna), Season 2007",
+        "record_holder": "Brian B (Vince LomBarna), Season 2007",
         "value": 8696.0
       },
       {
         "category": "Passing Yards - Least",
         "record": "Season, All Time",
-        "record_holder": "Sean R. (Jet Favre), Season 2008",
-        "value": 1629.0
+        "record_holder": "Elissa P. (Bend & Snap Count), Season 2026",
+        "value": 0.0
       },
       {
         "category": "Rushing Yards - Most",
         "record": "Single Week",
-        "record_holder": "Dave F. (Two Buck Luck) vs. Jason P. (Pat Pidgeon) - Week 12",
-        "value": 413.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Rushing Yards - Least",
         "record": "Single Week",
-        "record_holder": "Liana (Reverse Ted Lasso) - Week 17",
-        "value": 54.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Rushing Yards - Most",
@@ -1612,14 +1634,14 @@
       {
         "category": "Rushing Yards - Most",
         "record": "Season (Average)",
-        "record_holder": "Dave F. (Two Buck Luck)",
-        "value": "3862.00 (227.18)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Rushing Yards - Least",
         "record": "Season (Average)",
-        "record_holder": "Liana (Reverse Ted Lasso)",
-        "value": "2252.00 (132.47)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Rushing Yards - Most",
@@ -1630,20 +1652,20 @@
       {
         "category": "Rushing Yards - Least",
         "record": "Season, All Time",
-        "record_holder": "Elissa P. (First Pick Bitch), Season 2005",
-        "value": 598.0
+        "record_holder": "Elissa P. (Bend & Snap Count), Season 2026",
+        "value": 0.0
       },
       {
         "category": "Receiving Yards - Most",
         "record": "Single Week",
-        "record_holder": "Craig S. (Nacua-Cola) vs. Joe P. (Joe\u2019s Cocksmithing Station) - Week 4",
-        "value": 496.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Receiving Yards - Least",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) - Week 17",
-        "value": 29.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Receiving Yards - Most",
@@ -1654,20 +1676,20 @@
       {
         "category": "Receiving Yards - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Yarp (Dome?) vs. Matt (2 KUHL) - Week 4, Season 2010",
-        "value": 27.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1, Season 2026",
+        "value": 0.0
       },
       {
         "category": "Receiving Yards - Most",
         "record": "Season (Average)",
-        "record_holder": "Craig S. (Nacua-Cola)",
-        "value": "5032.00 (296.00)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Receiving Yards - Least",
         "record": "Season (Average)",
-        "record_holder": "Matt (You aren\u2019t Worthy of Coleman)",
-        "value": "3239.00 (190.53)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Receiving Yards - Most",
@@ -1678,19 +1700,19 @@
       {
         "category": "Receiving Yards - Least",
         "record": "Season, All Time",
-        "record_holder": "Chris P. (Foosball's the Devil), Season 2004",
-        "value": 2396.0
+        "record_holder": "Elissa P. (Bend & Snap Count), Season 2026",
+        "value": 0.0
       },
       {
         "category": "Field Goals - Most",
         "record": "Single Week",
-        "record_holder": "Chris P. (In Purdytory) vs. Jason P. (Pat Pidgeon) - Week 15",
-        "value": 6.0
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
+        "value": 0.0
       },
       {
         "category": "Field Goals - Least",
         "record": "Single Week",
-        "record_holder": "Brian B. (Big Fire Knowles Energy) vs. Elissa P. (Moonbeam Ice Cream) - Week 9",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1",
         "value": 0.0
       },
       {
@@ -1702,20 +1724,20 @@
       {
         "category": "Field Goals - Least",
         "record": "Single Week, All Time",
-        "record_holder": "Brian B. (Big Fire Knowles Energy) vs. Elissa P. (Moonbeam Ice Cream) - Week 9, Season 2025",
+        "record_holder": "Elissa P. (Bend & Snap Count) vs. Dave F. (Two Buck Luck) - Week 1, Season 2026",
         "value": 0.0
       },
       {
         "category": "Field Goals - Most",
         "record": "Season (Average)",
-        "record_holder": "Joe P. (Joe\u2019s Cocksmithing Station)",
-        "value": "40.00 (2.35)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Field Goals - Least",
         "record": "Season (Average)",
-        "record_holder": "Elissa P. (Moonbeam Ice Cream)",
-        "value": "19.00 (1.12)"
+        "record_holder": "Elissa P. (Bend & Snap Count)",
+        "value": "0.00 (0.00)"
       },
       {
         "category": "Field Goals - Most",
@@ -1726,14 +1748,8 @@
       {
         "category": "Field Goals - Least",
         "record": "Season, All Time",
-        "record_holder": "Matt (2 KUHL 4 MILLAN), Season 2019",
+        "record_holder": "Elissa P. (Bend & Snap Count), Season 2026",
         "value": 0.0
-      },
-      {
-        "category": "Missed Points - Most",
-        "record": "Season",
-        "record_holder": "Dave F.",
-        "value": 446.73
       },
       {
         "category": "Missed Points - Most",
@@ -1743,21 +1759,9 @@
       },
       {
         "category": "Missed Points - Least",
-        "record": "Season",
-        "record_holder": "Matt",
-        "value": 248.23
-      },
-      {
-        "category": "Missed Points - Least",
         "record": "Season, All Time",
         "record_holder": "Joe P., Season 2004",
         "value": -453.67
-      },
-      {
-        "category": "Draft Surplus - Most",
-        "record": "Season",
-        "record_holder": "Brian B.",
-        "value": 2872.37
       },
       {
         "category": "Draft Surplus - Most",
@@ -1767,21 +1771,9 @@
       },
       {
         "category": "Draft Surplus - Least",
-        "record": "Season",
-        "record_holder": "Matt",
-        "value": 2153.5
-      },
-      {
-        "category": "Draft Surplus - Least",
         "record": "Season, All Time",
         "record_holder": "Andrew P., Season 2018",
         "value": 0.0
-      },
-      {
-        "category": "Draft ROI - Best",
-        "record": "Season",
-        "record_holder": "Brian B.",
-        "value": 16.53
       },
       {
         "category": "Draft ROI - Best",
@@ -1791,21 +1783,9 @@
       },
       {
         "category": "Draft ROI - Worst",
-        "record": "Season",
-        "record_holder": "Matt",
-        "value": 11.93
-      },
-      {
-        "category": "Draft ROI - Worst",
         "record": "Season, All Time",
         "record_holder": "Chris P., Season 2024",
         "value": 10.04
-      },
-      {
-        "category": "Draft Missed Points - Most",
-        "record": "Season",
-        "record_holder": "Elissa P.",
-        "value": 657.87
       },
       {
         "category": "Draft Missed Points - Most",
@@ -1815,33 +1795,15 @@
       },
       {
         "category": "Draft Missed Points - Least",
-        "record": "Season",
-        "record_holder": "Chris P.",
-        "value": 272.07
-      },
-      {
-        "category": "Draft Missed Points - Least",
         "record": "Season, All Time",
         "record_holder": "Andrew P., Season 2018",
         "value": 0.0
       },
       {
         "category": "Lineup Efficiency - Best",
-        "record": "Season",
-        "record_holder": "Matt",
-        "value": 0.88
-      },
-      {
-        "category": "Lineup Efficiency - Best",
         "record": "Season, All Time",
         "record_holder": "Elissa P., Season 2004",
         "value": 1.33
-      },
-      {
-        "category": "Lineup Efficiency - Worst",
-        "record": "Season",
-        "record_holder": "Elissa P.",
-        "value": 0.82
       },
       {
         "category": "Lineup Efficiency - Worst",
@@ -1857,34 +1819,34 @@
         "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "manager_display": "Dave F.",
         "wins": 191,
-        "losses": 129,
+        "losses": 130,
         "ties": 0,
-        "points_for": 36154.48,
-        "seasons": 23,
-        "win_pct": 0.596875,
-        "points_per_game": 112.98275000000001
+        "points_for": 36279.15,
+        "seasons": 24,
+        "win_pct": 0.5701492537313433,
+        "points_per_game": 108.29597014925373
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
-        "wins": 176,
+        "manager_display": "Brian B",
+        "wins": 177,
         "losses": 131,
         "ties": 0,
-        "points_for": 34460.416666666664,
-        "seasons": 22,
-        "win_pct": 0.5732899022801303,
-        "points_per_game": 112.24891422366991
+        "points_for": 34638.44666666666,
+        "seasons": 23,
+        "win_pct": 0.5496894409937888,
+        "points_per_game": 107.57281573498963
       },
       {
         "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
         "manager_display": "Chris P.",
         "wins": 162,
-        "losses": 158,
+        "losses": 159,
         "ties": 0,
-        "points_for": 34484.65666666666,
-        "seasons": 23,
-        "win_pct": 0.50625,
-        "points_per_game": 107.76455208333331
+        "points_for": 34596.32666666667,
+        "seasons": 24,
+        "win_pct": 0.4835820895522388,
+        "points_per_game": 103.27261691542289
       },
       {
         "manager_key": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
@@ -1900,35 +1862,35 @@
       {
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "manager_display": "Elissa P.",
-        "wins": 155,
+        "wins": 156,
         "losses": 150,
         "ties": 0,
-        "points_for": 31669.2,
-        "seasons": 22,
-        "win_pct": 0.5081967213114754,
-        "points_per_game": 103.83344262295083
+        "points_for": 31817.469999999998,
+        "seasons": 23,
+        "win_pct": 0.4875,
+        "points_per_game": 99.42959375
       },
       {
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "manager_display": "Jason P.",
-        "wins": 136,
+        "wins": 137,
         "losses": 155,
         "ties": 0,
-        "points_for": 29957.59,
-        "seasons": 21,
-        "win_pct": 0.46735395189003437,
-        "points_per_game": 102.94704467353952
+        "points_for": 30144.12,
+        "seasons": 22,
+        "win_pct": 0.4477124183006536,
+        "points_per_game": 98.51019607843136
       },
       {
         "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "manager_display": "Matt",
-        "wins": 134,
+        "wins": 135,
         "losses": 131,
         "ties": 0,
-        "points_for": 27989.39,
-        "seasons": 19,
-        "win_pct": 0.5056603773584906,
-        "points_per_game": 105.62033962264151
+        "points_for": 28085.719999999998,
+        "seasons": 20,
+        "win_pct": 0.48214285714285715,
+        "points_per_game": 100.30614285714285
       },
       {
         "manager_key": "AFWUOVC7H64SN7TQ2N4IYX27KU",
@@ -1978,23 +1940,23 @@
         "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "manager_display": "Yarp",
         "wins": 54,
-        "losses": 75,
+        "losses": 76,
         "ties": 0,
-        "points_for": 13504.423333333332,
-        "seasons": 9,
-        "win_pct": 0.4186046511627907,
-        "points_per_game": 104.68545219638241
+        "points_for": 13556.423333333332,
+        "seasons": 10,
+        "win_pct": 0.375,
+        "points_per_game": 94.1418287037037
       },
       {
         "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "manager_display": "Liana",
         "wins": 32,
-        "losses": 43,
+        "losses": 44,
         "ties": 0,
-        "points_for": 8087.716666666665,
-        "seasons": 5,
-        "win_pct": 0.4266666666666667,
-        "points_per_game": 107.8362222222222
+        "points_for": 8215.086666666666,
+        "seasons": 6,
+        "win_pct": 0.35555555555555557,
+        "points_per_game": 91.27874074074073
       },
       {
         "manager_key": "SEAN-RILEY",
@@ -2116,6 +2078,17 @@
         "seasons": 1,
         "win_pct": 0.14285714285714285,
         "points_per_game": 126.00928571428571
+      },
+      {
+        "manager_key": "--hidden--",
+        "manager_display": "Craig",
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "points_for": 213.97000000000003,
+        "seasons": 1,
+        "win_pct": 0.03333333333333333,
+        "points_per_game": 7.132333333333334
       }
     ],
     "trophy_case": [
@@ -2133,7 +2106,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "playoff_appearances": 13,
         "championships": 4,
         "runner_ups": 4,
@@ -2417,9 +2390,9 @@
         "best_season": "2018 (#1, 14-2-0, 2253.7 pts)",
         "worst_season": "2013 (#9, 5-9-0, 1647.0 pts)",
         "best_opponent": "Chris P.",
-        "toughest_opponent": "Brian B.",
+        "toughest_opponent": "Brian B",
         "wins": 191,
-        "win_pct": 0.597,
+        "win_pct": 0.57,
         "playoff_appearances": 17,
         "podiums": 16,
         "championships": 6,
@@ -2438,15 +2411,15 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "classification": "Multi-title power",
         "seasons": 22,
         "best_season": "2003 (#1, 14-3-0, 2215.5 pts)",
         "worst_season": "2008 (#9, 5-8-0, 1475.6 pts)",
         "best_opponent": "Chris P.",
         "toughest_opponent": "Dave F.",
-        "wins": 176,
-        "win_pct": 0.573,
+        "wins": 177,
+        "win_pct": 0.55,
         "playoff_appearances": 13,
         "podiums": 10,
         "championships": 4,
@@ -2473,7 +2446,7 @@
         "best_opponent": "Elissa P.",
         "toughest_opponent": "Dave F.",
         "wins": 162,
-        "win_pct": 0.506,
+        "win_pct": 0.484,
         "playoff_appearances": 9,
         "podiums": 7,
         "championships": 2,
@@ -2526,8 +2499,8 @@
         "worst_season": "2006 (#10, 3-10-0, 1574.7 pts)",
         "best_opponent": "Dave F.",
         "toughest_opponent": "Chris P.",
-        "wins": 155,
-        "win_pct": 0.508,
+        "wins": 156,
+        "win_pct": 0.487,
         "playoff_appearances": 8,
         "podiums": 4,
         "championships": 1,
@@ -2551,10 +2524,10 @@
         "seasons": 21,
         "best_season": "2022 (#3, 11-6-0, 1809.1 pts)",
         "worst_season": "2017 (#10, 3-11-0, 1379.2 pts)",
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Chris P.",
-        "wins": 136,
-        "win_pct": 0.467,
+        "wins": 137,
+        "win_pct": 0.448,
         "playoff_appearances": 8,
         "podiums": 5,
         "championships": 1,
@@ -2580,8 +2553,8 @@
         "worst_season": "2005 (#10, 3-8-0, 1309.1 pts)",
         "best_opponent": "Craig S.",
         "toughest_opponent": "Jason P.",
-        "wins": 134,
-        "win_pct": 0.506,
+        "wins": 135,
+        "win_pct": 0.482,
         "playoff_appearances": 6,
         "podiums": 5,
         "championships": 4,
@@ -2716,7 +2689,7 @@
         "best_opponent": "Jason P.",
         "toughest_opponent": "Jason P.",
         "wins": 54,
-        "win_pct": 0.419,
+        "win_pct": 0.375,
         "playoff_appearances": 3,
         "podiums": 1,
         "championships": 0,
@@ -2743,7 +2716,7 @@
         "best_opponent": "Andrew P.",
         "toughest_opponent": "Craig S.",
         "wins": 32,
-        "win_pct": 0.427,
+        "win_pct": 0.356,
         "playoff_appearances": 1,
         "podiums": 1,
         "championships": 0,
@@ -2821,7 +2794,7 @@
         "seasons": 2,
         "best_season": "2003 (#7, 9-8-0, 2091.8 pts)",
         "worst_season": "2004 (#10, 3-11-0, 2102.0 pts)",
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Andrew P.",
         "wins": 10,
         "win_pct": 0.345,
@@ -3040,11 +3013,11 @@
         "qualifies_volatility": true,
         "seasons": 23,
         "wins": 191,
-        "losses": 129,
+        "losses": 130,
         "ties": 0,
-        "win_pct": 0.597,
-        "points_for": 36154.5,
-        "points_per_game": 112.98,
+        "win_pct": 0.57,
+        "points_for": 36279.2,
+        "points_per_game": 108.3,
         "best_season": "2018 (#1, 14-2-0, 2253.7 pts)",
         "worst_season": "2013 (#9, 5-9-0, 1647.0 pts)",
         "playoff_appearances": 17,
@@ -3053,7 +3026,7 @@
         "milans": 0,
         "points_titles": 6,
         "best_opponent": "Chris P.",
-        "toughest_opponent": "Brian B.",
+        "toughest_opponent": "Brian B",
         "actual_points": 38205.4,
         "ideal_points": 42123.8,
         "missed_points": 3918.3,
@@ -4174,11 +4147,18 @@
             "playoff_games": 5
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "20-21-0",
             "games": 41,
             "avg_margin": -0.3791056910569103,
             "playoff_games": 8
+          },
+          {
+            "opponent_display": "Elissa P.",
+            "record": "20-21-0",
+            "games": 41,
+            "avg_margin": 1.671382113821139,
+            "playoff_games": 4
           },
           {
             "opponent_display": "Craig S.",
@@ -4186,13 +4166,6 @@
             "games": 40,
             "avg_margin": 11.900749999999999,
             "playoff_games": 5
-          },
-          {
-            "opponent_display": "Elissa P.",
-            "record": "20-20-0",
-            "games": 40,
-            "avg_margin": 2.3031666666666677,
-            "playoff_games": 4
           },
           {
             "opponent_display": "Jason P.",
@@ -4226,17 +4199,17 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "classification": "Multi-title power",
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 22,
-        "wins": 176,
+        "wins": 177,
         "losses": 131,
         "ties": 0,
-        "win_pct": 0.573,
-        "points_for": 34460.4,
-        "points_per_game": 112.25,
+        "win_pct": 0.55,
+        "points_for": 34638.4,
+        "points_per_game": 107.57,
         "best_season": "2003 (#1, 14-3-0, 2215.5 pts)",
         "worst_season": "2008 (#9, 5-8-0, 1475.6 pts)",
         "playoff_appearances": 13,
@@ -5328,9 +5301,9 @@
           },
           {
             "opponent_display": "Chris P.",
-            "record": "23-17-0",
-            "games": 40,
-            "avg_margin": 0.02916666666666945,
+            "record": "24-17-0",
+            "games": 41,
+            "avg_margin": 1.646991869918702,
             "playoff_games": 2
           },
           {
@@ -5385,11 +5358,11 @@
         "qualifies_volatility": true,
         "seasons": 23,
         "wins": 162,
-        "losses": 158,
+        "losses": 159,
         "ties": 0,
-        "win_pct": 0.506,
-        "points_for": 34484.7,
-        "points_per_game": 107.76,
+        "win_pct": 0.484,
+        "points_for": 34596.3,
+        "points_per_game": 103.27,
         "best_season": "2017 (#2, 11-5-0, 1748.1 pts)",
         "worst_season": "2020 (#10, 3-11-0, 1391.2 pts)",
         "playoff_appearances": 9,
@@ -6503,10 +6476,10 @@
             "playoff_games": 3
           },
           {
-            "opponent_display": "Brian B.",
-            "record": "17-23-0",
-            "games": 40,
-            "avg_margin": -0.02916666666666945,
+            "opponent_display": "Brian B",
+            "record": "17-24-0",
+            "games": 41,
+            "avg_margin": -1.646991869918702,
             "playoff_games": 2
           },
           {
@@ -7662,7 +7635,7 @@
             "playoff_games": 1
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "17-19-0",
             "games": 36,
             "avg_margin": -7.291574074074077,
@@ -7705,12 +7678,12 @@
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 22,
-        "wins": 155,
+        "wins": 156,
         "losses": 150,
         "ties": 0,
-        "win_pct": 0.508,
-        "points_for": 31669.2,
-        "points_per_game": 103.83,
+        "win_pct": 0.487,
+        "points_for": 31817.5,
+        "points_per_game": 99.43,
         "best_season": "2023 (#4, 11-6-0, 1768.1 pts)",
         "worst_season": "2006 (#10, 3-10-0, 1574.7 pts)",
         "playoff_appearances": 8,
@@ -8782,18 +8755,18 @@
         ],
         "rival_rows": [
           {
+            "opponent_display": "Dave F.",
+            "record": "21-20-0",
+            "games": 41,
+            "avg_margin": -1.671382113821139,
+            "playoff_games": 4
+          },
+          {
             "opponent_display": "Chris P.",
             "record": "14-27-0",
             "games": 41,
             "avg_margin": -8.4469918699187,
             "playoff_games": 3
-          },
-          {
-            "opponent_display": "Dave F.",
-            "record": "20-20-0",
-            "games": 40,
-            "avg_margin": -2.3031666666666677,
-            "playoff_games": 4
           },
           {
             "opponent_display": "Craig S.",
@@ -8817,7 +8790,7 @@
             "playoff_games": 3
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "12-16-0",
             "games": 28,
             "avg_margin": -4.435714285714285,
@@ -8846,12 +8819,12 @@
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 21,
-        "wins": 136,
+        "wins": 137,
         "losses": 155,
         "ties": 0,
-        "win_pct": 0.467,
-        "points_for": 29957.6,
-        "points_per_game": 102.95,
+        "win_pct": 0.448,
+        "points_for": 30144.1,
+        "points_per_game": 98.51,
         "best_season": "2022 (#3, 11-6-0, 1809.1 pts)",
         "worst_season": "2017 (#10, 3-11-0, 1379.2 pts)",
         "playoff_appearances": 8,
@@ -8859,7 +8832,7 @@
         "podiums": 5,
         "milans": 2,
         "points_titles": 1,
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Chris P.",
         "actual_points": 33687.7,
         "ideal_points": 38481.5,
@@ -9897,7 +9870,7 @@
         ],
         "rival_rows": [
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "20-18-0",
             "games": 38,
             "avg_margin": 0.8558771929824556,
@@ -9961,12 +9934,12 @@
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 19,
-        "wins": 134,
+        "wins": 135,
         "losses": 131,
         "ties": 0,
-        "win_pct": 0.506,
-        "points_for": 27989.4,
-        "points_per_game": 105.62,
+        "win_pct": 0.482,
+        "points_for": 28085.7,
+        "points_per_game": 100.31,
         "best_season": "2012 (#1, 11-5-0, 1738.6 pts)",
         "worst_season": "2005 (#10, 3-8-0, 1309.1 pts)",
         "playoff_appearances": 6,
@@ -10985,7 +10958,7 @@
             "playoff_games": 1
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "18-17-0",
             "games": 35,
             "avg_margin": -2.7779047619047614,
@@ -12024,7 +11997,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "11-13-0",
             "games": 24,
             "avg_margin": 1.9154166666666665,
@@ -13023,7 +12996,7 @@
             "playoff_games": 3
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "14-16-0",
             "games": 30,
             "avg_margin": -4.848888888888884,
@@ -13845,7 +13818,7 @@
         ],
         "rival_rows": [
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "8-7-0",
             "games": 15,
             "avg_margin": -0.6859999999999995,
@@ -14699,7 +14672,7 @@
             "playoff_games": 2
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "3-9-0",
             "games": 12,
             "avg_margin": -12.615,
@@ -14736,11 +14709,11 @@
         "qualifies_volatility": true,
         "seasons": 9,
         "wins": 54,
-        "losses": 75,
+        "losses": 76,
         "ties": 0,
-        "win_pct": 0.419,
-        "points_for": 13504.4,
-        "points_per_game": 104.69,
+        "win_pct": 0.375,
+        "points_for": 13556.4,
+        "points_per_game": 94.14,
         "best_season": "2022 (#1, 11-6-0, 1837.1 pts)",
         "worst_season": "2009 (#10, 2-11-0, 1376.9 pts)",
         "playoff_appearances": 3,
@@ -15533,6 +15506,13 @@
             "playoff_games": 1
           },
           {
+            "opponent_display": "Matt",
+            "record": "7-10-0",
+            "games": 17,
+            "avg_margin": -4.847843137254906,
+            "playoff_games": 0
+          },
+          {
             "opponent_display": "Elissa P.",
             "record": "6-10-0",
             "games": 16,
@@ -15544,13 +15524,6 @@
             "record": "6-10-0",
             "games": 16,
             "avg_margin": -8.820625000000003,
-            "playoff_games": 0
-          },
-          {
-            "opponent_display": "Matt",
-            "record": "7-9-0",
-            "games": 16,
-            "avg_margin": -2.380208333333338,
             "playoff_games": 0
           },
           {
@@ -15568,7 +15541,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "3-11-0",
             "games": 14,
             "avg_margin": -9.509523809523813,
@@ -15591,11 +15564,11 @@
         "qualifies_volatility": true,
         "seasons": 5,
         "wins": 32,
-        "losses": 43,
+        "losses": 44,
         "ties": 0,
-        "win_pct": 0.427,
-        "points_for": 8087.7,
-        "points_per_game": 107.84,
+        "win_pct": 0.356,
+        "points_for": 8215.1,
+        "points_per_game": 91.28,
         "best_season": "2021 (#3, 10-7-0, 1842.8 pts)",
         "worst_season": "2025 (#10, 3-12-0, 1767.3 pts)",
         "playoff_appearances": 1,
@@ -16297,24 +16270,24 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "4-6-0",
             "games": 10,
             "avg_margin": -13.019333333333332,
             "playoff_games": 1
           },
           {
+            "opponent_display": "Jason P.",
+            "record": "4-6-0",
+            "games": 10,
+            "avg_margin": -9.91299999999999,
+            "playoff_games": 0
+          },
+          {
             "opponent_display": "Craig S.",
             "record": "3-7-0",
             "games": 10,
             "avg_margin": -3.130000000000004,
-            "playoff_games": 0
-          },
-          {
-            "opponent_display": "Jason P.",
-            "record": "4-5-0",
-            "games": 9,
-            "avg_margin": -4.4411111111111,
             "playoff_games": 0
           },
           {
@@ -17017,7 +16990,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "2-3-0",
             "games": 5,
             "avg_margin": -33.648,
@@ -17596,7 +17569,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "2-2-0",
             "games": 4,
             "avg_margin": 7.474999999999998,
@@ -17638,7 +17611,7 @@
         "podiums": 0,
         "milans": 0,
         "points_titles": 0,
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Andrew P.",
         "actual_points": 0.0,
         "ideal_points": 0.0,
@@ -17800,7 +17773,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "1-3-0",
             "games": 4,
             "avg_margin": -3.312500000000007,
@@ -20430,7 +20403,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "0-1-0",
             "games": 1,
             "avg_margin": -85.28000000000002,
@@ -21128,34 +21101,34 @@
         "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "manager_display": "Dave F.",
         "wins": 191,
-        "losses": 129,
+        "losses": 130,
         "ties": 0,
-        "points_for": 36154.48,
-        "seasons": 23,
-        "win_pct": 0.596875,
-        "points_per_game": 112.98275000000001
+        "points_for": 36279.15,
+        "seasons": 24,
+        "win_pct": 0.5701492537313433,
+        "points_per_game": 108.29597014925373
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
-        "wins": 176,
+        "manager_display": "Brian B",
+        "wins": 177,
         "losses": 131,
         "ties": 0,
-        "points_for": 34460.416666666664,
-        "seasons": 22,
-        "win_pct": 0.5732899022801303,
-        "points_per_game": 112.24891422366991
+        "points_for": 34638.44666666666,
+        "seasons": 23,
+        "win_pct": 0.5496894409937888,
+        "points_per_game": 107.57281573498963
       },
       {
         "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
         "manager_display": "Chris P.",
         "wins": 162,
-        "losses": 158,
+        "losses": 159,
         "ties": 0,
-        "points_for": 34484.65666666666,
-        "seasons": 23,
-        "win_pct": 0.50625,
-        "points_per_game": 107.76455208333331
+        "points_for": 34596.32666666667,
+        "seasons": 24,
+        "win_pct": 0.4835820895522388,
+        "points_per_game": 103.27261691542289
       },
       {
         "manager_key": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
@@ -21171,35 +21144,35 @@
       {
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "manager_display": "Elissa P.",
-        "wins": 155,
+        "wins": 156,
         "losses": 150,
         "ties": 0,
-        "points_for": 31669.2,
-        "seasons": 22,
-        "win_pct": 0.5081967213114754,
-        "points_per_game": 103.83344262295083
+        "points_for": 31817.469999999998,
+        "seasons": 23,
+        "win_pct": 0.4875,
+        "points_per_game": 99.42959375
       },
       {
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "manager_display": "Jason P.",
-        "wins": 136,
+        "wins": 137,
         "losses": 155,
         "ties": 0,
-        "points_for": 29957.59,
-        "seasons": 21,
-        "win_pct": 0.46735395189003437,
-        "points_per_game": 102.94704467353952
+        "points_for": 30144.12,
+        "seasons": 22,
+        "win_pct": 0.4477124183006536,
+        "points_per_game": 98.51019607843136
       },
       {
         "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "manager_display": "Matt",
-        "wins": 134,
+        "wins": 135,
         "losses": 131,
         "ties": 0,
-        "points_for": 27989.39,
-        "seasons": 19,
-        "win_pct": 0.5056603773584906,
-        "points_per_game": 105.62033962264151
+        "points_for": 28085.719999999998,
+        "seasons": 20,
+        "win_pct": 0.48214285714285715,
+        "points_per_game": 100.30614285714285
       },
       {
         "manager_key": "AFWUOVC7H64SN7TQ2N4IYX27KU",
@@ -21249,23 +21222,23 @@
         "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "manager_display": "Yarp",
         "wins": 54,
-        "losses": 75,
+        "losses": 76,
         "ties": 0,
-        "points_for": 13504.423333333332,
-        "seasons": 9,
-        "win_pct": 0.4186046511627907,
-        "points_per_game": 104.68545219638241
+        "points_for": 13556.423333333332,
+        "seasons": 10,
+        "win_pct": 0.375,
+        "points_per_game": 94.1418287037037
       },
       {
         "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "manager_display": "Liana",
         "wins": 32,
-        "losses": 43,
+        "losses": 44,
         "ties": 0,
-        "points_for": 8087.716666666665,
-        "seasons": 5,
-        "win_pct": 0.4266666666666667,
-        "points_per_game": 107.8362222222222
+        "points_for": 8215.086666666666,
+        "seasons": 6,
+        "win_pct": 0.35555555555555557,
+        "points_per_game": 91.27874074074073
       },
       {
         "manager_key": "SEAN-RILEY",
@@ -21294,7 +21267,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "playoff_appearances": 13,
         "championships": 4,
         "runner_ups": 4,
@@ -21458,9 +21431,9 @@
         "best_season": "2018 (#1, 14-2-0, 2253.7 pts)",
         "worst_season": "2013 (#9, 5-9-0, 1647.0 pts)",
         "best_opponent": "Chris P.",
-        "toughest_opponent": "Brian B.",
+        "toughest_opponent": "Brian B",
         "wins": 191,
-        "win_pct": 0.597,
+        "win_pct": 0.57,
         "playoff_appearances": 17,
         "podiums": 16,
         "championships": 6,
@@ -21479,15 +21452,15 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "classification": "Multi-title power",
         "seasons": 22,
         "best_season": "2003 (#1, 14-3-0, 2215.5 pts)",
         "worst_season": "2008 (#9, 5-8-0, 1475.6 pts)",
         "best_opponent": "Chris P.",
         "toughest_opponent": "Dave F.",
-        "wins": 176,
-        "win_pct": 0.573,
+        "wins": 177,
+        "win_pct": 0.55,
         "playoff_appearances": 13,
         "podiums": 10,
         "championships": 4,
@@ -21514,7 +21487,7 @@
         "best_opponent": "Elissa P.",
         "toughest_opponent": "Dave F.",
         "wins": 162,
-        "win_pct": 0.506,
+        "win_pct": 0.484,
         "playoff_appearances": 9,
         "podiums": 7,
         "championships": 2,
@@ -21567,8 +21540,8 @@
         "worst_season": "2006 (#10, 3-10-0, 1574.7 pts)",
         "best_opponent": "Dave F.",
         "toughest_opponent": "Chris P.",
-        "wins": 155,
-        "win_pct": 0.508,
+        "wins": 156,
+        "win_pct": 0.487,
         "playoff_appearances": 8,
         "podiums": 4,
         "championships": 1,
@@ -21592,10 +21565,10 @@
         "seasons": 21,
         "best_season": "2022 (#3, 11-6-0, 1809.1 pts)",
         "worst_season": "2017 (#10, 3-11-0, 1379.2 pts)",
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Chris P.",
-        "wins": 136,
-        "win_pct": 0.467,
+        "wins": 137,
+        "win_pct": 0.448,
         "playoff_appearances": 8,
         "podiums": 5,
         "championships": 1,
@@ -21621,8 +21594,8 @@
         "worst_season": "2005 (#10, 3-8-0, 1309.1 pts)",
         "best_opponent": "Craig S.",
         "toughest_opponent": "Jason P.",
-        "wins": 134,
-        "win_pct": 0.506,
+        "wins": 135,
+        "win_pct": 0.482,
         "playoff_appearances": 6,
         "podiums": 5,
         "championships": 4,
@@ -21757,7 +21730,7 @@
         "best_opponent": "Jason P.",
         "toughest_opponent": "Jason P.",
         "wins": 54,
-        "win_pct": 0.419,
+        "win_pct": 0.375,
         "playoff_appearances": 3,
         "podiums": 1,
         "championships": 0,
@@ -21784,7 +21757,7 @@
         "best_opponent": "Andrew P.",
         "toughest_opponent": "Craig S.",
         "wins": 32,
-        "win_pct": 0.427,
+        "win_pct": 0.356,
         "playoff_appearances": 1,
         "podiums": 1,
         "championships": 0,
@@ -21862,7 +21835,7 @@
         "seasons": 2,
         "best_season": "2003 (#7, 9-8-0, 2091.8 pts)",
         "worst_season": "2004 (#10, 3-11-0, 2102.0 pts)",
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Andrew P.",
         "wins": 10,
         "win_pct": 0.345,
@@ -21946,11 +21919,11 @@
         "qualifies_volatility": true,
         "seasons": 23,
         "wins": 191,
-        "losses": 129,
+        "losses": 130,
         "ties": 0,
-        "win_pct": 0.597,
-        "points_for": 36154.5,
-        "points_per_game": 112.98,
+        "win_pct": 0.57,
+        "points_for": 36279.2,
+        "points_per_game": 108.3,
         "best_season": "2018 (#1, 14-2-0, 2253.7 pts)",
         "worst_season": "2013 (#9, 5-9-0, 1647.0 pts)",
         "playoff_appearances": 17,
@@ -21959,7 +21932,7 @@
         "milans": 0,
         "points_titles": 6,
         "best_opponent": "Chris P.",
-        "toughest_opponent": "Brian B.",
+        "toughest_opponent": "Brian B",
         "actual_points": 38205.4,
         "ideal_points": 42123.8,
         "missed_points": 3918.3,
@@ -23080,11 +23053,18 @@
             "playoff_games": 5
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "20-21-0",
             "games": 41,
             "avg_margin": -0.3791056910569103,
             "playoff_games": 8
+          },
+          {
+            "opponent_display": "Elissa P.",
+            "record": "20-21-0",
+            "games": 41,
+            "avg_margin": 1.671382113821139,
+            "playoff_games": 4
           },
           {
             "opponent_display": "Craig S.",
@@ -23092,13 +23072,6 @@
             "games": 40,
             "avg_margin": 11.900749999999999,
             "playoff_games": 5
-          },
-          {
-            "opponent_display": "Elissa P.",
-            "record": "20-20-0",
-            "games": 40,
-            "avg_margin": 2.3031666666666677,
-            "playoff_games": 4
           },
           {
             "opponent_display": "Jason P.",
@@ -23132,17 +23105,17 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "classification": "Multi-title power",
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 22,
-        "wins": 176,
+        "wins": 177,
         "losses": 131,
         "ties": 0,
-        "win_pct": 0.573,
-        "points_for": 34460.4,
-        "points_per_game": 112.25,
+        "win_pct": 0.55,
+        "points_for": 34638.4,
+        "points_per_game": 107.57,
         "best_season": "2003 (#1, 14-3-0, 2215.5 pts)",
         "worst_season": "2008 (#9, 5-8-0, 1475.6 pts)",
         "playoff_appearances": 13,
@@ -24234,9 +24207,9 @@
           },
           {
             "opponent_display": "Chris P.",
-            "record": "23-17-0",
-            "games": 40,
-            "avg_margin": 0.02916666666666945,
+            "record": "24-17-0",
+            "games": 41,
+            "avg_margin": 1.646991869918702,
             "playoff_games": 2
           },
           {
@@ -24291,11 +24264,11 @@
         "qualifies_volatility": true,
         "seasons": 23,
         "wins": 162,
-        "losses": 158,
+        "losses": 159,
         "ties": 0,
-        "win_pct": 0.506,
-        "points_for": 34484.7,
-        "points_per_game": 107.76,
+        "win_pct": 0.484,
+        "points_for": 34596.3,
+        "points_per_game": 103.27,
         "best_season": "2017 (#2, 11-5-0, 1748.1 pts)",
         "worst_season": "2020 (#10, 3-11-0, 1391.2 pts)",
         "playoff_appearances": 9,
@@ -25409,10 +25382,10 @@
             "playoff_games": 3
           },
           {
-            "opponent_display": "Brian B.",
-            "record": "17-23-0",
-            "games": 40,
-            "avg_margin": -0.02916666666666945,
+            "opponent_display": "Brian B",
+            "record": "17-24-0",
+            "games": 41,
+            "avg_margin": -1.646991869918702,
             "playoff_games": 2
           },
           {
@@ -26568,7 +26541,7 @@
             "playoff_games": 1
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "17-19-0",
             "games": 36,
             "avg_margin": -7.291574074074077,
@@ -26611,12 +26584,12 @@
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 22,
-        "wins": 155,
+        "wins": 156,
         "losses": 150,
         "ties": 0,
-        "win_pct": 0.508,
-        "points_for": 31669.2,
-        "points_per_game": 103.83,
+        "win_pct": 0.487,
+        "points_for": 31817.5,
+        "points_per_game": 99.43,
         "best_season": "2023 (#4, 11-6-0, 1768.1 pts)",
         "worst_season": "2006 (#10, 3-10-0, 1574.7 pts)",
         "playoff_appearances": 8,
@@ -27688,18 +27661,18 @@
         ],
         "rival_rows": [
           {
+            "opponent_display": "Dave F.",
+            "record": "21-20-0",
+            "games": 41,
+            "avg_margin": -1.671382113821139,
+            "playoff_games": 4
+          },
+          {
             "opponent_display": "Chris P.",
             "record": "14-27-0",
             "games": 41,
             "avg_margin": -8.4469918699187,
             "playoff_games": 3
-          },
-          {
-            "opponent_display": "Dave F.",
-            "record": "20-20-0",
-            "games": 40,
-            "avg_margin": -2.3031666666666677,
-            "playoff_games": 4
           },
           {
             "opponent_display": "Craig S.",
@@ -27723,7 +27696,7 @@
             "playoff_games": 3
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "12-16-0",
             "games": 28,
             "avg_margin": -4.435714285714285,
@@ -27752,12 +27725,12 @@
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 21,
-        "wins": 136,
+        "wins": 137,
         "losses": 155,
         "ties": 0,
-        "win_pct": 0.467,
-        "points_for": 29957.6,
-        "points_per_game": 102.95,
+        "win_pct": 0.448,
+        "points_for": 30144.1,
+        "points_per_game": 98.51,
         "best_season": "2022 (#3, 11-6-0, 1809.1 pts)",
         "worst_season": "2017 (#10, 3-11-0, 1379.2 pts)",
         "playoff_appearances": 8,
@@ -27765,7 +27738,7 @@
         "podiums": 5,
         "milans": 2,
         "points_titles": 1,
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Chris P.",
         "actual_points": 33687.7,
         "ideal_points": 38481.5,
@@ -28803,7 +28776,7 @@
         ],
         "rival_rows": [
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "20-18-0",
             "games": 38,
             "avg_margin": 0.8558771929824556,
@@ -28867,12 +28840,12 @@
         "qualifies_multi_season": true,
         "qualifies_volatility": true,
         "seasons": 19,
-        "wins": 134,
+        "wins": 135,
         "losses": 131,
         "ties": 0,
-        "win_pct": 0.506,
-        "points_for": 27989.4,
-        "points_per_game": 105.62,
+        "win_pct": 0.482,
+        "points_for": 28085.7,
+        "points_per_game": 100.31,
         "best_season": "2012 (#1, 11-5-0, 1738.6 pts)",
         "worst_season": "2005 (#10, 3-8-0, 1309.1 pts)",
         "playoff_appearances": 6,
@@ -29891,7 +29864,7 @@
             "playoff_games": 1
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "18-17-0",
             "games": 35,
             "avg_margin": -2.7779047619047614,
@@ -30930,7 +30903,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "11-13-0",
             "games": 24,
             "avg_margin": 1.9154166666666665,
@@ -31929,7 +31902,7 @@
             "playoff_games": 3
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "14-16-0",
             "games": 30,
             "avg_margin": -4.848888888888884,
@@ -32751,7 +32724,7 @@
         ],
         "rival_rows": [
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "8-7-0",
             "games": 15,
             "avg_margin": -0.6859999999999995,
@@ -33605,7 +33578,7 @@
             "playoff_games": 2
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "3-9-0",
             "games": 12,
             "avg_margin": -12.615,
@@ -33642,11 +33615,11 @@
         "qualifies_volatility": true,
         "seasons": 9,
         "wins": 54,
-        "losses": 75,
+        "losses": 76,
         "ties": 0,
-        "win_pct": 0.419,
-        "points_for": 13504.4,
-        "points_per_game": 104.69,
+        "win_pct": 0.375,
+        "points_for": 13556.4,
+        "points_per_game": 94.14,
         "best_season": "2022 (#1, 11-6-0, 1837.1 pts)",
         "worst_season": "2009 (#10, 2-11-0, 1376.9 pts)",
         "playoff_appearances": 3,
@@ -34439,6 +34412,13 @@
             "playoff_games": 1
           },
           {
+            "opponent_display": "Matt",
+            "record": "7-10-0",
+            "games": 17,
+            "avg_margin": -4.847843137254906,
+            "playoff_games": 0
+          },
+          {
             "opponent_display": "Elissa P.",
             "record": "6-10-0",
             "games": 16,
@@ -34450,13 +34430,6 @@
             "record": "6-10-0",
             "games": 16,
             "avg_margin": -8.820625000000003,
-            "playoff_games": 0
-          },
-          {
-            "opponent_display": "Matt",
-            "record": "7-9-0",
-            "games": 16,
-            "avg_margin": -2.380208333333338,
             "playoff_games": 0
           },
           {
@@ -34474,7 +34447,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "3-11-0",
             "games": 14,
             "avg_margin": -9.509523809523813,
@@ -34497,11 +34470,11 @@
         "qualifies_volatility": true,
         "seasons": 5,
         "wins": 32,
-        "losses": 43,
+        "losses": 44,
         "ties": 0,
-        "win_pct": 0.427,
-        "points_for": 8087.7,
-        "points_per_game": 107.84,
+        "win_pct": 0.356,
+        "points_for": 8215.1,
+        "points_per_game": 91.28,
         "best_season": "2021 (#3, 10-7-0, 1842.8 pts)",
         "worst_season": "2025 (#10, 3-12-0, 1767.3 pts)",
         "playoff_appearances": 1,
@@ -35203,24 +35176,24 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "4-6-0",
             "games": 10,
             "avg_margin": -13.019333333333332,
             "playoff_games": 1
           },
           {
+            "opponent_display": "Jason P.",
+            "record": "4-6-0",
+            "games": 10,
+            "avg_margin": -9.91299999999999,
+            "playoff_games": 0
+          },
+          {
             "opponent_display": "Craig S.",
             "record": "3-7-0",
             "games": 10,
             "avg_margin": -3.130000000000004,
-            "playoff_games": 0
-          },
-          {
-            "opponent_display": "Jason P.",
-            "record": "4-5-0",
-            "games": 9,
-            "avg_margin": -4.4411111111111,
             "playoff_games": 0
           },
           {
@@ -35923,7 +35896,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "2-3-0",
             "games": 5,
             "avg_margin": -33.648,
@@ -36502,7 +36475,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "2-2-0",
             "games": 4,
             "avg_margin": 7.474999999999998,
@@ -36544,7 +36517,7 @@
         "podiums": 0,
         "milans": 0,
         "points_titles": 0,
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Andrew P.",
         "actual_points": 0.0,
         "ideal_points": 0.0,
@@ -36706,7 +36679,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "1-3-0",
             "games": 4,
             "avg_margin": -3.312500000000007,
@@ -37836,7 +37809,7 @@
             "playoff_games": 0
           },
           {
-            "opponent_display": "Brian B.",
+            "opponent_display": "Brian B",
             "record": "0-1-0",
             "games": 1,
             "avg_margin": -85.28000000000002,
@@ -37882,9 +37855,9 @@
         "best_season": "2018 (#1, 14-2-0, 2253.7 pts)",
         "worst_season": "2013 (#9, 5-9-0, 1647.0 pts)",
         "best_opponent": "Chris P.",
-        "toughest_opponent": "Brian B.",
+        "toughest_opponent": "Brian B",
         "wins": 191,
-        "win_pct": 0.597,
+        "win_pct": 0.57,
         "playoff_appearances": 17,
         "podiums": 16,
         "championships": 6,
@@ -37903,15 +37876,15 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "classification": "Multi-title power",
         "seasons": 22,
         "best_season": "2003 (#1, 14-3-0, 2215.5 pts)",
         "worst_season": "2008 (#9, 5-8-0, 1475.6 pts)",
         "best_opponent": "Chris P.",
         "toughest_opponent": "Dave F.",
-        "wins": 176,
-        "win_pct": 0.573,
+        "wins": 177,
+        "win_pct": 0.55,
         "playoff_appearances": 13,
         "podiums": 10,
         "championships": 4,
@@ -37938,7 +37911,7 @@
         "best_opponent": "Elissa P.",
         "toughest_opponent": "Dave F.",
         "wins": 162,
-        "win_pct": 0.506,
+        "win_pct": 0.484,
         "playoff_appearances": 9,
         "podiums": 7,
         "championships": 2,
@@ -37991,8 +37964,8 @@
         "worst_season": "2006 (#10, 3-10-0, 1574.7 pts)",
         "best_opponent": "Dave F.",
         "toughest_opponent": "Chris P.",
-        "wins": 155,
-        "win_pct": 0.508,
+        "wins": 156,
+        "win_pct": 0.487,
         "playoff_appearances": 8,
         "podiums": 4,
         "championships": 1,
@@ -38016,10 +37989,10 @@
         "seasons": 21,
         "best_season": "2022 (#3, 11-6-0, 1809.1 pts)",
         "worst_season": "2017 (#10, 3-11-0, 1379.2 pts)",
-        "best_opponent": "Brian B.",
+        "best_opponent": "Brian B",
         "toughest_opponent": "Chris P.",
-        "wins": 136,
-        "win_pct": 0.467,
+        "wins": 137,
+        "win_pct": 0.448,
         "playoff_appearances": 8,
         "podiums": 5,
         "championships": 1,
@@ -38104,7 +38077,7 @@
       },
       {
         "year": 2025,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 9,
         "points": 2024.433333333332,
         "wins": 6,
@@ -38120,7 +38093,7 @@
       },
       {
         "year": 2024,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 1,
         "points": 2340.699999999999,
         "wins": 13,
@@ -38216,7 +38189,7 @@
       },
       {
         "year": 2023,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 3,
         "points": 1894.8666666666654,
         "wins": 10,
@@ -38336,7 +38309,7 @@
       },
       {
         "year": 2022,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 8,
         "points": 1722.2999999999986,
         "wins": 8,
@@ -38384,7 +38357,7 @@
       },
       {
         "year": 2021,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 4,
         "points": 1832.2666666666655,
         "wins": 10,
@@ -38480,7 +38453,7 @@
       },
       {
         "year": 2020,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 7,
         "points": 1683.2999999999988,
         "wins": 7,
@@ -38520,7 +38493,7 @@
       },
       {
         "year": 2019,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 2,
         "points": 1776.8999999999985,
         "wins": 10,
@@ -38608,7 +38581,7 @@
       },
       {
         "year": 2018,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 4,
         "points": 1866.4999999999984,
         "wins": 7,
@@ -38704,7 +38677,7 @@
       },
       {
         "year": 2017,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 6,
         "points": 1526.2666666666653,
         "wins": 8,
@@ -38768,7 +38741,7 @@
       },
       {
         "year": 2016,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 4,
         "points": 1539.9166666666652,
         "wins": 9,
@@ -38864,7 +38837,7 @@
       },
       {
         "year": 2015,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 6,
         "points": 1636.533333333332,
         "wins": 7,
@@ -38904,7 +38877,7 @@
       },
       {
         "year": 2014,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 1,
         "points": 1707.9166666666652,
         "wins": 11,
@@ -39000,7 +38973,7 @@
       },
       {
         "year": 2013,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 3,
         "points": 1890.83,
         "wins": 10,
@@ -39120,7 +39093,7 @@
       },
       {
         "year": 2012,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 8,
         "points": 1641.06,
         "wins": 6,
@@ -39160,7 +39133,7 @@
       },
       {
         "year": 2011,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 3,
         "points": 1710.0700000000002,
         "wins": 8,
@@ -39344,7 +39317,7 @@
       },
       {
         "year": 2009,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 7,
         "points": 1616.1100000000001,
         "wins": 4,
@@ -39440,7 +39413,7 @@
       },
       {
         "year": 2008,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 9,
         "points": 1475.63,
         "wins": 5,
@@ -39456,7 +39429,7 @@
       },
       {
         "year": 2007,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 1,
         "points": 1662.72,
         "wins": 12,
@@ -39568,7 +39541,7 @@
       },
       {
         "year": 2006,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 5,
         "points": 1688.71,
         "wins": 8,
@@ -39624,7 +39597,7 @@
       },
       {
         "year": 2005,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 2,
         "points": 1585.9,
         "wins": 9,
@@ -39696,7 +39669,7 @@
       },
       {
         "year": 2004,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 1,
         "points": 2745.09,
         "wins": 12,
@@ -39760,7 +39733,7 @@
       },
       {
         "year": 2003,
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "regular_season_rank": 1,
         "points": 2215.51,
         "wins": 14,
@@ -39820,14 +39793,14 @@
     "rivalry_leaderboards": {
       "featured": [
         {
-          "pair": "Brian B. vs Dave F.",
+          "pair": "Brian B vs Dave F.",
           "games": 41,
           "avg_margin": 28.461382113821134,
           "playoff_games": 8,
           "years": 22,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.975609756097561,
-          "rivalry_score": 14.817809902198926
+          "rivalry_score": 13.761239258254186
         },
         {
           "pair": "Chris P. vs Craig S.",
@@ -39837,7 +39810,17 @@
           "years": 23,
           "leader": "Chris P.",
           "balance_score": 0.9130434782608696,
-          "rivalry_score": 13.161052730085158
+          "rivalry_score": 12.21243634262445
+        },
+        {
+          "pair": "Dave F. vs Elissa P.",
+          "games": 41,
+          "avg_margin": 24.594146341463414,
+          "playoff_games": 4,
+          "years": 23,
+          "leader": "Elissa P.",
+          "balance_score": 0.975609756097561,
+          "rivalry_score": 10.866068004813096
         },
         {
           "pair": "Chris P. vs Dave F.",
@@ -39847,27 +39830,17 @@
           "years": 23,
           "leader": "Dave F.",
           "balance_score": 0.7727272727272727,
-          "rivalry_score": 11.017478709539198
+          "rivalry_score": 10.223365877783928
         },
         {
-          "pair": "Dave F. vs Elissa P.",
-          "games": 40,
-          "avg_margin": 24.619,
-          "playoff_games": 4,
-          "years": 22,
-          "leader": "Dave F.",
-          "balance_score": 1.0,
-          "rivalry_score": 10.819252132172954
-        },
-        {
-          "pair": "Brian B. vs Jason P.",
+          "pair": "Brian B vs Jason P.",
           "games": 38,
           "avg_margin": 22.55938596491228,
           "playoff_games": 4,
           "years": 20,
           "leader": "Jason P.",
           "balance_score": 0.9473684210526316,
-          "rivalry_score": 9.014724708402007
+          "rivalry_score": 8.388526190133643
         },
         {
           "pair": "Craig S. vs Dave F.",
@@ -39877,17 +39850,17 @@
           "years": 23,
           "leader": "Dave F.",
           "balance_score": 0.75,
-          "rivalry_score": 8.366079350995058
+          "rivalry_score": 7.7630728792552235
         },
         {
-          "pair": "Brian B. vs Craig S.",
+          "pair": "Brian B vs Craig S.",
           "games": 36,
           "avg_margin": 27.599537037037038,
           "playoff_games": 3,
           "years": 22,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.9444444444444444,
-          "rivalry_score": 7.006923854658442
+          "rivalry_score": 6.507301434202799
         },
         {
           "pair": "Chris P. vs Elissa P.",
@@ -39897,7 +39870,17 @@
           "years": 22,
           "leader": "Chris P.",
           "balance_score": 0.6829268292682926,
-          "rivalry_score": 6.849654206637766
+          "rivalry_score": 6.361245757368074
+        },
+        {
+          "pair": "Brian B vs Chris P.",
+          "games": 41,
+          "avg_margin": 27.140325203252033,
+          "playoff_games": 2,
+          "years": 23,
+          "leader": "Brian B",
+          "balance_score": 0.8292682926829268,
+          "rivalry_score": 5.928512361854179
         },
         {
           "pair": "Dave F. vs Matt",
@@ -39907,27 +39890,17 @@
           "years": 19,
           "leader": "Dave F.",
           "balance_score": 0.9032258064516129,
-          "rivalry_score": 6.223769937540618
+          "rivalry_score": 5.798277405334575
         },
         {
-          "pair": "Brian B. vs Chris P.",
-          "games": 40,
-          "avg_margin": 26.15983333333333,
-          "playoff_games": 2,
-          "years": 22,
-          "leader": "Brian B.",
-          "balance_score": 0.85,
-          "rivalry_score": 6.130406636600018
-        },
-        {
-          "pair": "Brian B. vs Matt",
+          "pair": "Brian B vs Matt",
           "games": 35,
           "avg_margin": 22.769523809523808,
           "playoff_games": 3,
           "years": 18,
           "leader": "Matt",
           "balance_score": 0.9714285714285714,
-          "rivalry_score": 6.039759512124771
+          "rivalry_score": 5.634354217207629
         },
         {
           "pair": "Chris P. vs Matt",
@@ -39937,7 +39910,7 @@
           "years": 19,
           "leader": "Chris P.",
           "balance_score": 0.972972972972973,
-          "rivalry_score": 5.859520941579071
+          "rivalry_score": 5.4589305553714444
         }
       ],
       "closest": [
@@ -39949,7 +39922,7 @@
           "years": 5,
           "leader": "Joe P.",
           "balance_score": 0.2857142857142857,
-          "rivalry_score": 0.06063344690189032
+          "rivalry_score": 0.05932965511305529
         },
         {
           "pair": "Andrew P. vs Jason P.",
@@ -39959,7 +39932,7 @@
           "years": 15,
           "leader": "Andrew P.",
           "balance_score": 0.75,
-          "rivalry_score": 2.149566485303632
+          "rivalry_score": 2.0157279294340755
         },
         {
           "pair": "Chris P. vs Liana",
@@ -39969,7 +39942,7 @@
           "years": 5,
           "leader": "Chris P.",
           "balance_score": 0.6666666666666667,
-          "rivalry_score": 0.10780747103725441
+          "rivalry_score": 0.10548930338069881
         },
         {
           "pair": "Liana vs Matt",
@@ -39979,7 +39952,7 @@
           "years": 5,
           "leader": "Matt",
           "balance_score": 0.9090909090909091,
-          "rivalry_score": 0.2627198333428652
+          "rivalry_score": 0.2570706087155604
         },
         {
           "pair": "Andrew P. vs Joe P.",
@@ -39989,7 +39962,7 @@
           "years": 11,
           "leader": "Joe P.",
           "balance_score": 0.5882352941176471,
-          "rivalry_score": 0.7059191624404455
+          "rivalry_score": 0.6694031988901399
         },
         {
           "pair": "Craig S. vs Liana",
@@ -39999,7 +39972,7 @@
           "years": 5,
           "leader": "Craig S.",
           "balance_score": 0.6,
-          "rivalry_score": 0.15132771915030682
+          "rivalry_score": 0.1480737422162468
         },
         {
           "pair": "Craig S. vs Yarp",
@@ -40009,7 +39982,7 @@
           "years": 9,
           "leader": "Craig S.",
           "balance_score": 0.8,
-          "rivalry_score": 0.45439844740251467
+          "rivalry_score": 0.4344916995123255
         },
         {
           "pair": "Dave F. vs Liana",
@@ -40019,17 +39992,17 @@
           "years": 5,
           "leader": "Dave F.",
           "balance_score": 0.75,
-          "rivalry_score": 0.14077309868765214
+          "rivalry_score": 0.13774607615246948
         },
         {
-          "pair": "Brian B. vs Yarp",
+          "pair": "Brian B vs Yarp",
           "games": 14,
           "avg_margin": 20.4047619047619,
           "playoff_games": 1,
           "years": 8,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.4285714285714286,
-          "rivalry_score": 0.26620745864701456
+          "rivalry_score": 0.25582263710618436
         },
         {
           "pair": "Alex M. vs Matt",
@@ -40039,7 +40012,7 @@
           "years": 5,
           "leader": "Matt",
           "balance_score": 0.8571428571428572,
-          "rivalry_score": 0.13636622522124253
+          "rivalry_score": 0.13343396301610072
         },
         {
           "pair": "Chris B. vs Jason P.",
@@ -40049,29 +40022,29 @@
           "years": 8,
           "leader": "Chris B.",
           "balance_score": 0.36363636363636365,
-          "rivalry_score": 0.1270631997979883
+          "rivalry_score": 0.12210643164049415
         },
         {
-          "pair": "Brian B. vs Chris B.",
+          "pair": "Brian B vs Chris B.",
           "games": 15,
           "avg_margin": 21.352666666666668,
           "playoff_games": 2,
           "years": 8,
           "leader": "Chris B.",
           "balance_score": 0.9333333333333333,
-          "rivalry_score": 0.7474662169639387
+          "rivalry_score": 0.7183073672817342
         }
       ],
       "playoff_foils": [
         {
-          "pair": "Brian B. vs Dave F.",
+          "pair": "Brian B vs Dave F.",
           "games": 41,
           "avg_margin": 28.461382113821134,
           "playoff_games": 8,
           "years": 22,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.975609756097561,
-          "rivalry_score": 14.817809902198926
+          "rivalry_score": 13.761239258254186
         },
         {
           "pair": "Chris P. vs Craig S.",
@@ -40081,7 +40054,7 @@
           "years": 23,
           "leader": "Chris P.",
           "balance_score": 0.9130434782608696,
-          "rivalry_score": 13.161052730085158
+          "rivalry_score": 12.21243634262445
         },
         {
           "pair": "Chris P. vs Dave F.",
@@ -40091,7 +40064,7 @@
           "years": 23,
           "leader": "Dave F.",
           "balance_score": 0.7727272727272727,
-          "rivalry_score": 11.017478709539198
+          "rivalry_score": 10.223365877783928
         },
         {
           "pair": "Craig S. vs Dave F.",
@@ -40101,27 +40074,27 @@
           "years": 23,
           "leader": "Dave F.",
           "balance_score": 0.75,
-          "rivalry_score": 8.366079350995058
+          "rivalry_score": 7.7630728792552235
         },
         {
           "pair": "Dave F. vs Elissa P.",
-          "games": 40,
-          "avg_margin": 24.619,
+          "games": 41,
+          "avg_margin": 24.594146341463414,
           "playoff_games": 4,
-          "years": 22,
-          "leader": "Dave F.",
-          "balance_score": 1.0,
-          "rivalry_score": 10.819252132172954
+          "years": 23,
+          "leader": "Elissa P.",
+          "balance_score": 0.975609756097561,
+          "rivalry_score": 10.866068004813096
         },
         {
-          "pair": "Brian B. vs Jason P.",
+          "pair": "Brian B vs Jason P.",
           "games": 38,
           "avg_margin": 22.55938596491228,
           "playoff_games": 4,
           "years": 20,
           "leader": "Jason P.",
           "balance_score": 0.9473684210526316,
-          "rivalry_score": 9.014724708402007
+          "rivalry_score": 8.388526190133643
         },
         {
           "pair": "Dave F. vs Matt",
@@ -40131,17 +40104,17 @@
           "years": 19,
           "leader": "Dave F.",
           "balance_score": 0.9032258064516129,
-          "rivalry_score": 6.223769937540618
+          "rivalry_score": 5.798277405334575
         },
         {
-          "pair": "Brian B. vs Craig S.",
+          "pair": "Brian B vs Craig S.",
           "games": 36,
           "avg_margin": 27.599537037037038,
           "playoff_games": 3,
           "years": 22,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.9444444444444444,
-          "rivalry_score": 7.006923854658442
+          "rivalry_score": 6.507301434202799
         },
         {
           "pair": "Chris P. vs Elissa P.",
@@ -40151,7 +40124,7 @@
           "years": 22,
           "leader": "Chris P.",
           "balance_score": 0.6829268292682926,
-          "rivalry_score": 6.849654206637766
+          "rivalry_score": 6.361245757368074
         },
         {
           "pair": "Craig S. vs Jason P.",
@@ -40161,7 +40134,7 @@
           "years": 21,
           "leader": "Craig S.",
           "balance_score": 0.9090909090909091,
-          "rivalry_score": 5.576590532591944
+          "rivalry_score": 5.183788175443524
         },
         {
           "pair": "Chris P. vs Matt",
@@ -40171,7 +40144,7 @@
           "years": 19,
           "leader": "Chris P.",
           "balance_score": 0.972972972972973,
-          "rivalry_score": 5.859520941579071
+          "rivalry_score": 5.4589305553714444
         },
         {
           "pair": "Elissa P. vs Matt",
@@ -40181,7 +40154,7 @@
           "years": 19,
           "leader": "Elissa P.",
           "balance_score": 0.7586206896551724,
-          "rivalry_score": 3.675126518874552
+          "rivalry_score": 3.423873836917057
         }
       ],
       "most_played": [
@@ -40193,7 +40166,7 @@
           "years": 23,
           "leader": "Chris P.",
           "balance_score": 0.9130434782608696,
-          "rivalry_score": 13.161052730085158
+          "rivalry_score": 12.21243634262445
         },
         {
           "pair": "Chris P. vs Dave F.",
@@ -40203,7 +40176,7 @@
           "years": 23,
           "leader": "Dave F.",
           "balance_score": 0.7727272727272727,
-          "rivalry_score": 11.017478709539198
+          "rivalry_score": 10.223365877783928
         },
         {
           "pair": "Chris P. vs Elissa P.",
@@ -40213,37 +40186,37 @@
           "years": 22,
           "leader": "Chris P.",
           "balance_score": 0.6829268292682926,
-          "rivalry_score": 6.849654206637766
+          "rivalry_score": 6.361245757368074
         },
         {
-          "pair": "Brian B. vs Dave F.",
+          "pair": "Dave F. vs Elissa P.",
+          "games": 41,
+          "avg_margin": 24.594146341463414,
+          "playoff_games": 4,
+          "years": 23,
+          "leader": "Elissa P.",
+          "balance_score": 0.975609756097561,
+          "rivalry_score": 10.866068004813096
+        },
+        {
+          "pair": "Brian B vs Chris P.",
+          "games": 41,
+          "avg_margin": 27.140325203252033,
+          "playoff_games": 2,
+          "years": 23,
+          "leader": "Brian B",
+          "balance_score": 0.8292682926829268,
+          "rivalry_score": 5.928512361854179
+        },
+        {
+          "pair": "Brian B vs Dave F.",
           "games": 41,
           "avg_margin": 28.461382113821134,
           "playoff_games": 8,
           "years": 22,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.975609756097561,
-          "rivalry_score": 14.817809902198926
-        },
-        {
-          "pair": "Dave F. vs Elissa P.",
-          "games": 40,
-          "avg_margin": 24.619,
-          "playoff_games": 4,
-          "years": 22,
-          "leader": "Dave F.",
-          "balance_score": 1.0,
-          "rivalry_score": 10.819252132172954
-        },
-        {
-          "pair": "Brian B. vs Chris P.",
-          "games": 40,
-          "avg_margin": 26.15983333333333,
-          "playoff_games": 2,
-          "years": 22,
-          "leader": "Brian B.",
-          "balance_score": 0.85,
-          "rivalry_score": 6.130406636600018
+          "rivalry_score": 13.761239258254186
         },
         {
           "pair": "Craig S. vs Dave F.",
@@ -40253,17 +40226,17 @@
           "years": 23,
           "leader": "Dave F.",
           "balance_score": 0.75,
-          "rivalry_score": 8.366079350995058
+          "rivalry_score": 7.7630728792552235
         },
         {
-          "pair": "Brian B. vs Jason P.",
+          "pair": "Brian B vs Jason P.",
           "games": 38,
           "avg_margin": 22.55938596491228,
           "playoff_games": 4,
           "years": 20,
           "leader": "Jason P.",
           "balance_score": 0.9473684210526316,
-          "rivalry_score": 9.014724708402007
+          "rivalry_score": 8.388526190133643
         },
         {
           "pair": "Craig S. vs Elissa P.",
@@ -40273,7 +40246,7 @@
           "years": 22,
           "leader": "Craig S.",
           "balance_score": 0.7894736842105263,
-          "rivalry_score": 4.672462922789664
+          "rivalry_score": 4.339297145139406
         },
         {
           "pair": "Chris P. vs Matt",
@@ -40283,7 +40256,7 @@
           "years": 19,
           "leader": "Chris P.",
           "balance_score": 0.972972972972973,
-          "rivalry_score": 5.859520941579071
+          "rivalry_score": 5.4589305553714444
         },
         {
           "pair": "Elissa P. vs Jason P.",
@@ -40293,7 +40266,7 @@
           "years": 21,
           "leader": "Elissa P.",
           "balance_score": 0.972972972972973,
-          "rivalry_score": 3.125028280175903
+          "rivalry_score": 2.9049083937624336
         },
         {
           "pair": "Jason P. vs Matt",
@@ -40303,7 +40276,7 @@
           "years": 19,
           "leader": "Jason P.",
           "balance_score": 0.8888888888888888,
-          "rivalry_score": 3.5256530274665066
+          "rivalry_score": 3.284619208833837
         }
       ],
       "most_lopsided": [
@@ -40315,7 +40288,7 @@
           "years": 2,
           "leader": "Andrew P.",
           "balance_score": 0.0,
-          "rivalry_score": 0.0047334545210535916
+          "rivalry_score": 0.004712539530256187
         },
         {
           "pair": "Andrew P. vs Liana",
@@ -40325,7 +40298,7 @@
           "years": 4,
           "leader": "Liana",
           "balance_score": 0.2857142857142857,
-          "rivalry_score": 0.029508610359998192
+          "rivalry_score": 0.029059954701859837
         },
         {
           "pair": "Joe P. vs Sean R.",
@@ -40335,7 +40308,7 @@
           "years": 5,
           "leader": "Joe P.",
           "balance_score": 0.2857142857142857,
-          "rivalry_score": 0.06063344690189032
+          "rivalry_score": 0.05932965511305529
         },
         {
           "pair": "Jason P. vs Sean R.",
@@ -40345,7 +40318,7 @@
           "years": 5,
           "leader": "Jason P.",
           "balance_score": 0.2857142857142857,
-          "rivalry_score": 0.038965623936206555
+          "rivalry_score": 0.038127752049802614
         },
         {
           "pair": "Dave F. vs Sean R.",
@@ -40355,7 +40328,7 @@
           "years": 5,
           "leader": "Dave F.",
           "balance_score": 0.2857142857142857,
-          "rivalry_score": 0.03107570354294453
+          "rivalry_score": 0.030407487415018943
         },
         {
           "pair": "Alex M. vs Elissa P.",
@@ -40365,7 +40338,7 @@
           "years": 7,
           "leader": "Alex M.",
           "balance_score": 0.3076923076923077,
-          "rivalry_score": 0.12492332486618835
+          "rivalry_score": 0.12072138039147438
         },
         {
           "pair": "Chris B. vs Jason P.",
@@ -40375,17 +40348,17 @@
           "years": 8,
           "leader": "Chris B.",
           "balance_score": 0.36363636363636365,
-          "rivalry_score": 0.1270631997979883
+          "rivalry_score": 0.12210643164049415
         },
         {
-          "pair": "Brian B. vs Yarp",
+          "pair": "Brian B vs Yarp",
           "games": 14,
           "avg_margin": 20.4047619047619,
           "playoff_games": 1,
           "years": 8,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.4285714285714286,
-          "rivalry_score": 0.26620745864701456
+          "rivalry_score": 0.25582263710618436
         },
         {
           "pair": "Elissa P. vs Sean R.",
@@ -40395,7 +40368,7 @@
           "years": 5,
           "leader": "Elissa P.",
           "balance_score": 0.4444444444444444,
-          "rivalry_score": 0.07814601295508652
+          "rivalry_score": 0.076465651121363
         },
         {
           "pair": "Alex M. vs Jason P.",
@@ -40405,7 +40378,7 @@
           "years": 6,
           "leader": "Alex M.",
           "balance_score": 0.4444444444444444,
-          "rivalry_score": 0.12079171835225318
+          "rivalry_score": 0.1174401302840004
         },
         {
           "pair": "Chris B. vs Joe P.",
@@ -40415,17 +40388,17 @@
           "years": 8,
           "leader": "Chris B.",
           "balance_score": 0.5,
-          "rivalry_score": 0.1408751644839712
+          "rivalry_score": 0.13537958802590883
         },
         {
-          "pair": "Alex M. vs Brian B.",
+          "pair": "Alex M. vs Brian B",
           "games": 12,
           "avg_margin": 37.63666666666667,
           "playoff_games": 2,
           "years": 8,
-          "leader": "Brian B.",
+          "leader": "Brian B",
           "balance_score": 0.5,
-          "rivalry_score": 0.1817421875562432
+          "rivalry_score": 0.17465237800017708
         }
       ]
     },
@@ -40512,7 +40485,23 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
+        "opponent_key": "F3BKASQPBLXLO3NM2MARCY72OU",
+        "opponent_display": "Chris P.",
+        "wins": 24,
+        "losses": 17,
+        "ties": 0,
+        "points_for": 4419.57,
+        "points_against": 4352.043333333333,
+        "games": 41,
+        "avg_margin": 1.646991869918702,
+        "playoff_games": 2,
+        "playoff_wins": 1,
+        "record": "24-17-0"
+      },
+      {
+        "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
+        "manager_display": "Brian B",
         "opponent_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "opponent_display": "Dave F.",
         "wins": 21,
@@ -40527,10 +40516,26 @@
         "record": "21-20-0"
       },
       {
+        "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
+        "manager_display": "Elissa P.",
+        "opponent_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
+        "opponent_display": "Dave F.",
+        "wins": 21,
+        "losses": 20,
+        "ties": 0,
+        "points_for": 4361.913333333333,
+        "points_against": 4430.44,
+        "games": 41,
+        "avg_margin": -1.671382113821139,
+        "playoff_games": 4,
+        "playoff_wins": 2,
+        "record": "21-20-0"
+      },
+      {
         "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "manager_display": "Dave F.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 20,
         "losses": 21,
         "ties": 0,
@@ -40541,6 +40546,38 @@
         "playoff_games": 8,
         "playoff_wins": 6,
         "record": "20-21-0"
+      },
+      {
+        "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
+        "manager_display": "Dave F.",
+        "opponent_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
+        "opponent_display": "Elissa P.",
+        "wins": 20,
+        "losses": 21,
+        "ties": 0,
+        "points_for": 4430.44,
+        "points_against": 4361.913333333333,
+        "games": 41,
+        "avg_margin": 1.671382113821139,
+        "playoff_games": 4,
+        "playoff_wins": 2,
+        "record": "20-21-0"
+      },
+      {
+        "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
+        "manager_display": "Chris P.",
+        "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
+        "opponent_display": "Brian B",
+        "wins": 17,
+        "losses": 24,
+        "ties": 0,
+        "points_for": 4352.043333333333,
+        "points_against": 4419.57,
+        "games": 41,
+        "avg_margin": -1.646991869918702,
+        "playoff_games": 2,
+        "playoff_wins": 1,
+        "record": "17-24-0"
       },
       {
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
@@ -40573,70 +40610,6 @@
         "playoff_games": 5,
         "playoff_wins": 3,
         "record": "25-15-0"
-      },
-      {
-        "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
-        "opponent_key": "F3BKASQPBLXLO3NM2MARCY72OU",
-        "opponent_display": "Chris P.",
-        "wins": 23,
-        "losses": 17,
-        "ties": 0,
-        "points_for": 4241.54,
-        "points_against": 4240.373333333333,
-        "games": 40,
-        "avg_margin": 0.02916666666666945,
-        "playoff_games": 2,
-        "playoff_wins": 1,
-        "record": "23-17-0"
-      },
-      {
-        "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
-        "manager_display": "Dave F.",
-        "opponent_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
-        "opponent_display": "Elissa P.",
-        "wins": 20,
-        "losses": 20,
-        "ties": 0,
-        "points_for": 4305.7699999999995,
-        "points_against": 4213.643333333333,
-        "games": 40,
-        "avg_margin": 2.3031666666666677,
-        "playoff_games": 4,
-        "playoff_wins": 2,
-        "record": "20-20-0"
-      },
-      {
-        "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
-        "manager_display": "Elissa P.",
-        "opponent_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
-        "opponent_display": "Dave F.",
-        "wins": 20,
-        "losses": 20,
-        "ties": 0,
-        "points_for": 4213.643333333333,
-        "points_against": 4305.7699999999995,
-        "games": 40,
-        "avg_margin": -2.3031666666666677,
-        "playoff_games": 4,
-        "playoff_wins": 2,
-        "record": "20-20-0"
-      },
-      {
-        "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
-        "manager_display": "Chris P.",
-        "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
-        "wins": 17,
-        "losses": 23,
-        "ties": 0,
-        "points_for": 4240.373333333333,
-        "points_against": 4241.54,
-        "games": 40,
-        "avg_margin": -0.02916666666666945,
-        "playoff_games": 2,
-        "playoff_wins": 1,
-        "record": "17-23-0"
       },
       {
         "manager_key": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
@@ -40674,7 +40647,7 @@
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "manager_display": "Jason P.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 20,
         "losses": 18,
         "ties": 0,
@@ -40688,7 +40661,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "opponent_display": "Jason P.",
         "wins": 18,
@@ -40800,7 +40773,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
         "opponent_display": "Craig S.",
         "wins": 19,
@@ -40818,7 +40791,7 @@
         "manager_key": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
         "manager_display": "Craig S.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 17,
         "losses": 19,
         "ties": 0,
@@ -40866,7 +40839,7 @@
         "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "manager_display": "Matt",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 18,
         "losses": 17,
         "ties": 0,
@@ -40880,7 +40853,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "opponent_display": "Matt",
         "wins": 17,
@@ -41088,7 +41061,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "AW5BP2KV3DBMTSTPPFLAQGNOPQ",
         "opponent_display": "Joe P.",
         "wins": 16,
@@ -41138,7 +41111,7 @@
         "manager_key": "AW5BP2KV3DBMTSTPPFLAQGNOPQ",
         "manager_display": "Joe P.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 14,
         "losses": 16,
         "ties": 0,
@@ -41264,7 +41237,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "opponent_display": "Elissa P.",
         "wins": 16,
@@ -41282,7 +41255,7 @@
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "manager_display": "Elissa P.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 12,
         "losses": 16,
         "ties": 0,
@@ -41456,7 +41429,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "AFWUOVC7H64SN7TQ2N4IYX27KU",
         "opponent_display": "Andrew P.",
         "wins": 13,
@@ -41474,7 +41447,7 @@
         "manager_key": "AFWUOVC7H64SN7TQ2N4IYX27KU",
         "manager_display": "Andrew P.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 11,
         "losses": 13,
         "ties": 0,
@@ -41599,6 +41572,38 @@
         "record": "12-5-0"
       },
       {
+        "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
+        "manager_display": "Matt",
+        "opponent_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
+        "opponent_display": "Yarp",
+        "wins": 10,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1820.3066666666666,
+        "points_against": 1737.8933333333332,
+        "games": 17,
+        "avg_margin": 4.847843137254906,
+        "playoff_games": 0,
+        "playoff_wins": 0,
+        "record": "10-7-0"
+      },
+      {
+        "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
+        "manager_display": "Yarp",
+        "opponent_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
+        "opponent_display": "Matt",
+        "wins": 7,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 1737.8933333333332,
+        "points_against": 1820.3066666666666,
+        "games": 17,
+        "avg_margin": -4.847843137254906,
+        "playoff_games": 0,
+        "playoff_wins": 0,
+        "record": "7-10-0"
+      },
+      {
         "manager_key": "AFWUOVC7H64SN7TQ2N4IYX27KU",
         "manager_display": "Andrew P.",
         "opponent_key": "AW5BP2KV3DBMTSTPPFLAQGNOPQ",
@@ -41661,38 +41666,6 @@
         "playoff_games": 2,
         "playoff_wins": 1,
         "record": "10-6-0"
-      },
-      {
-        "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
-        "manager_display": "Matt",
-        "opponent_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
-        "opponent_display": "Yarp",
-        "wins": 9,
-        "losses": 7,
-        "ties": 0,
-        "points_for": 1723.9766666666665,
-        "points_against": 1685.8933333333332,
-        "games": 16,
-        "avg_margin": 2.380208333333338,
-        "playoff_games": 0,
-        "playoff_wins": 0,
-        "record": "9-7-0"
-      },
-      {
-        "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
-        "manager_display": "Yarp",
-        "opponent_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
-        "opponent_display": "Matt",
-        "wins": 7,
-        "losses": 9,
-        "ties": 0,
-        "points_for": 1685.8933333333332,
-        "points_against": 1723.9766666666665,
-        "games": 16,
-        "avg_margin": -2.380208333333338,
-        "playoff_games": 0,
-        "playoff_wins": 0,
-        "record": "7-9-0"
       },
       {
         "manager_key": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
@@ -41778,7 +41751,7 @@
         "manager_key": "CHRIS-BARNA",
         "manager_display": "Chris B.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 8,
         "losses": 7,
         "ties": 0,
@@ -41792,7 +41765,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "CHRIS-BARNA",
         "opponent_display": "Chris B.",
         "wins": 7,
@@ -41840,7 +41813,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "opponent_display": "Yarp",
         "wins": 11,
@@ -41986,7 +41959,7 @@
         "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "manager_display": "Yarp",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 3,
         "losses": 11,
         "ties": 0,
@@ -42128,7 +42101,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "RMAVJ532TMVFW64UNVOKS7N7DU",
         "opponent_display": "Alex M.",
         "wins": 9,
@@ -42194,7 +42167,7 @@
         "manager_key": "RMAVJ532TMVFW64UNVOKS7N7DU",
         "manager_display": "Alex M.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 3,
         "losses": 9,
         "ties": 0,
@@ -42335,8 +42308,24 @@
         "record": "7-3-0"
       },
       {
+        "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
+        "manager_display": "Jason P.",
+        "opponent_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
+        "opponent_display": "Liana",
+        "wins": 6,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1176.6599999999999,
+        "points_against": 1077.53,
+        "games": 10,
+        "avg_margin": 9.91299999999999,
+        "playoff_games": 0,
+        "playoff_wins": 0,
+        "record": "6-4-0"
+      },
+      {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "opponent_display": "Liana",
         "wins": 6,
@@ -42417,8 +42406,24 @@
       {
         "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "manager_display": "Liana",
+        "opponent_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
+        "opponent_display": "Jason P.",
+        "wins": 4,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1077.53,
+        "points_against": 1176.6599999999999,
+        "games": 10,
+        "avg_margin": -9.91299999999999,
+        "playoff_games": 0,
+        "playoff_wins": 0,
+        "record": "4-6-0"
+      },
+      {
+        "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
+        "manager_display": "Liana",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 4,
         "losses": 6,
         "ties": 0,
@@ -42477,38 +42482,6 @@
         "playoff_games": 0,
         "playoff_wins": 0,
         "record": "7-2-0"
-      },
-      {
-        "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
-        "manager_display": "Jason P.",
-        "opponent_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
-        "opponent_display": "Liana",
-        "wins": 5,
-        "losses": 4,
-        "ties": 0,
-        "points_for": 990.1299999999999,
-        "points_against": 950.16,
-        "games": 9,
-        "avg_margin": 4.4411111111111,
-        "playoff_games": 0,
-        "playoff_wins": 0,
-        "record": "5-4-0"
-      },
-      {
-        "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
-        "manager_display": "Liana",
-        "opponent_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
-        "opponent_display": "Jason P.",
-        "wins": 4,
-        "losses": 5,
-        "ties": 0,
-        "points_for": 950.16,
-        "points_against": 990.1299999999999,
-        "games": 9,
-        "avg_margin": -4.4411111111111,
-        "playoff_games": 0,
-        "playoff_wins": 0,
-        "record": "4-5-0"
       },
       {
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
@@ -42896,7 +42869,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "SEAN-RILEY",
         "opponent_display": "Sean R.",
         "wins": 3,
@@ -42946,7 +42919,7 @@
         "manager_key": "SEAN-RILEY",
         "manager_display": "Sean R.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 2,
         "losses": 3,
         "ties": 0,
@@ -42976,7 +42949,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "F7FGFKY3HKURAJ7RQ3SLU3TIQ4",
         "opponent_display": "Steve N.",
         "wins": 3,
@@ -43058,7 +43031,7 @@
         "manager_key": "5CMZDD3HM4ZRGH23VTSNIDS32E",
         "manager_display": "Shannon D.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 2,
         "losses": 2,
         "ties": 0,
@@ -43072,7 +43045,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "5CMZDD3HM4ZRGH23VTSNIDS32E",
         "opponent_display": "Shannon D.",
         "wins": 2,
@@ -43186,7 +43159,7 @@
         "manager_key": "F7FGFKY3HKURAJ7RQ3SLU3TIQ4",
         "manager_display": "Steve N.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 1,
         "losses": 3,
         "ties": 0,
@@ -43727,6 +43700,22 @@
         "record": "1-1-0"
       },
       {
+        "manager_key": "--hidden--",
+        "manager_display": "Craig",
+        "opponent_key": "--hidden--",
+        "opponent_display": "Craig",
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "points_for": 213.97000000000003,
+        "points_against": 213.97000000000003,
+        "games": 2,
+        "avg_margin": 0.0,
+        "playoff_games": 0,
+        "playoff_wins": 0,
+        "record": "1-1-0"
+      },
+      {
         "manager_key": "AFWUOVC7H64SN7TQ2N4IYX27KU",
         "manager_display": "Andrew P.",
         "opponent_key": "SEAN-RILEY",
@@ -43872,7 +43861,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "opponent_key": "VLP3HAXSL3ORMMGW3SDXWTLFRE",
         "opponent_display": "Joe D.",
         "wins": 1,
@@ -44210,7 +44199,7 @@
         "manager_key": "VLP3HAXSL3ORMMGW3SDXWTLFRE",
         "manager_display": "Joe D.",
         "opponent_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "opponent_display": "Brian B.",
+        "opponent_display": "Brian B",
         "wins": 0,
         "losses": 1,
         "ties": 0,
@@ -44243,6 +44232,14 @@
   "season_history": {
     "year_rows": [
       {
+        "year": 2026,
+        "champion": "-",
+        "runner_up": "-",
+        "third_place": "-",
+        "points_leader": "Jason P.",
+        "status": "2026 (in progress)"
+      },
+      {
         "year": 2025,
         "champion": "Dave F.",
         "runner_up": "Craig S.",
@@ -44252,17 +44249,17 @@
       },
       {
         "year": 2024,
-        "champion": "Brian B.",
+        "champion": "Brian B",
         "runner_up": "Andrew P.",
         "third_place": "Dave F.",
-        "points_leader": "Brian B.",
+        "points_leader": "Brian B",
         "status": "final"
       },
       {
         "year": 2023,
         "champion": "Elissa P.",
         "runner_up": "Dave F.",
-        "third_place": "Brian B.",
+        "third_place": "Brian B",
         "points_leader": "Yarp",
         "status": "final"
       },
@@ -44276,7 +44273,7 @@
       },
       {
         "year": 2021,
-        "champion": "Brian B.",
+        "champion": "Brian B",
         "runner_up": "Liana",
         "third_place": "Matt",
         "points_leader": "Matt",
@@ -44293,7 +44290,7 @@
       {
         "year": 2019,
         "champion": "Dave F.",
-        "runner_up": "Brian B.",
+        "runner_up": "Brian B",
         "third_place": "Jason P.",
         "points_leader": "Dave F.",
         "status": "final"
@@ -44317,7 +44314,7 @@
       {
         "year": 2016,
         "champion": "Chris B.",
-        "runner_up": "Brian B.",
+        "runner_up": "Brian B",
         "third_place": "Chris P.",
         "points_leader": "Craig S.",
         "status": "final"
@@ -44334,16 +44331,16 @@
         "year": 2014,
         "champion": "Dave F.",
         "runner_up": "Chris B.",
-        "third_place": "Brian B.",
+        "third_place": "Brian B",
         "points_leader": "Chris B.",
         "status": "final"
       },
       {
         "year": 2013,
         "champion": "Craig S.",
-        "runner_up": "Brian B.",
+        "runner_up": "Brian B",
         "third_place": "Andrew P.",
-        "points_leader": "Brian B.",
+        "points_leader": "Brian B",
         "status": "final"
       },
       {
@@ -44389,9 +44386,9 @@
       {
         "year": 2007,
         "champion": "Matt",
-        "runner_up": "Brian B.",
+        "runner_up": "Brian B",
         "third_place": "Chris P.",
-        "points_leader": "Brian B.",
+        "points_leader": "Brian B",
         "status": "final"
       },
       {
@@ -44404,7 +44401,7 @@
       },
       {
         "year": 2005,
-        "champion": "Brian B.",
+        "champion": "Brian B",
         "runner_up": "Jason P.",
         "third_place": "Alex M.",
         "points_leader": "Craig S.",
@@ -44420,7 +44417,7 @@
       },
       {
         "year": 2003,
-        "champion": "Brian B.",
+        "champion": "Brian B",
         "runner_up": "Andrew P.",
         "third_place": "Dave F.",
         "points_leader": "Joe P.",
@@ -44533,7 +44530,7 @@
       {
         "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "manager_display": "Matt",
-        "seasons": 19,
+        "seasons": 20,
         "qualifies_five_seasons": true,
         "years": [
           2005,
@@ -44607,7 +44604,7 @@
       {
         "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
         "manager_display": "Chris P.",
-        "seasons": 23,
+        "seasons": 24,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -44677,7 +44674,7 @@
       {
         "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "manager_display": "Liana",
-        "seasons": 5,
+        "seasons": 6,
         "qualifies_five_seasons": true,
         "years": [
           2021,
@@ -44753,7 +44750,7 @@
       {
         "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "manager_display": "Yarp",
-        "seasons": 9,
+        "seasons": 10,
         "qualifies_five_seasons": true,
         "years": [
           2009,
@@ -44781,7 +44778,7 @@
       {
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "manager_display": "Elissa P.",
-        "seasons": 22,
+        "seasons": 23,
         "qualifies_five_seasons": true,
         "years": [
           2004,
@@ -44881,7 +44878,7 @@
       {
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "manager_display": "Jason P.",
-        "seasons": 21,
+        "seasons": 22,
         "qualifies_five_seasons": true,
         "years": [
           2005,
@@ -44932,8 +44929,8 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
-        "seasons": 22,
+        "manager_display": "Brian B",
+        "seasons": 23,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -44987,7 +44984,7 @@
       {
         "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "manager_display": "Dave F.",
-        "seasons": 23,
+        "seasons": 24,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -45147,7 +45144,7 @@
       {
         "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "manager_display": "Matt",
-        "seasons": 19,
+        "seasons": 20,
         "qualifies_five_seasons": true,
         "years": [
           2005,
@@ -45221,7 +45218,7 @@
       {
         "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
         "manager_display": "Chris P.",
-        "seasons": 23,
+        "seasons": 24,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -45291,7 +45288,7 @@
       {
         "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "manager_display": "Liana",
-        "seasons": 5,
+        "seasons": 6,
         "qualifies_five_seasons": true,
         "years": [
           2021,
@@ -45367,7 +45364,7 @@
       {
         "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "manager_display": "Yarp",
-        "seasons": 9,
+        "seasons": 10,
         "qualifies_five_seasons": true,
         "years": [
           2009,
@@ -45395,7 +45392,7 @@
       {
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "manager_display": "Elissa P.",
-        "seasons": 22,
+        "seasons": 23,
         "qualifies_five_seasons": true,
         "years": [
           2004,
@@ -45495,7 +45492,7 @@
       {
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "manager_display": "Jason P.",
-        "seasons": 21,
+        "seasons": 22,
         "qualifies_five_seasons": true,
         "years": [
           2005,
@@ -45546,8 +45543,8 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
-        "seasons": 22,
+        "manager_display": "Brian B",
+        "seasons": 23,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -45601,7 +45598,7 @@
       {
         "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "manager_display": "Dave F.",
-        "seasons": 23,
+        "seasons": 24,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -45761,7 +45758,7 @@
       {
         "manager_key": "CDYPBSSHHRTEH7ULQQW547QZRE",
         "manager_display": "Matt",
-        "seasons": 19,
+        "seasons": 20,
         "qualifies_five_seasons": true,
         "years": [
           2005,
@@ -45835,7 +45832,7 @@
       {
         "manager_key": "F3BKASQPBLXLO3NM2MARCY72OU",
         "manager_display": "Chris P.",
-        "seasons": 23,
+        "seasons": 24,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -45905,7 +45902,7 @@
       {
         "manager_key": "IKED5CGLQWKVMT2XJZI3ZRH5FA",
         "manager_display": "Liana",
-        "seasons": 5,
+        "seasons": 6,
         "qualifies_five_seasons": true,
         "years": [
           2021,
@@ -45981,7 +45978,7 @@
       {
         "manager_key": "PTR5XJPJXRBDMQY5CALCVRQC64",
         "manager_display": "Yarp",
-        "seasons": 9,
+        "seasons": 10,
         "qualifies_five_seasons": true,
         "years": [
           2009,
@@ -46009,7 +46006,7 @@
       {
         "manager_key": "QZ6VQMPGYBALLYBJ7DT264OB4E",
         "manager_display": "Elissa P.",
-        "seasons": 22,
+        "seasons": 23,
         "qualifies_five_seasons": true,
         "years": [
           2004,
@@ -46109,7 +46106,7 @@
       {
         "manager_key": "VT7BQNHKRRAI3PT63KUSXEBULY",
         "manager_display": "Jason P.",
-        "seasons": 21,
+        "seasons": 22,
         "qualifies_five_seasons": true,
         "years": [
           2005,
@@ -46160,8 +46157,8 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
-        "seasons": 22,
+        "manager_display": "Brian B",
+        "seasons": 23,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -46215,7 +46212,7 @@
       {
         "manager_key": "YWDYVJFPW3FX7AX2J23ZYPPL7A",
         "manager_display": "Dave F.",
-        "seasons": 23,
+        "seasons": 24,
         "qualifies_five_seasons": true,
         "years": [
           2003,
@@ -46454,7 +46451,7 @@
       },
       {
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_points": 35866.86999999998,
         "ideal_points": 39841.82666666665,
         "missed_points": 3974.956666666666,
@@ -46647,7 +46644,7 @@
       {
         "year": 2003,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 0.0,
         "ideal_total": 0.0,
         "missed_points": 0.0,
@@ -46767,7 +46764,7 @@
       {
         "year": 2004,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1852.21,
         "ideal_total": 1534.56,
         "missed_points": -317.6500000000001,
@@ -47007,7 +47004,7 @@
       {
         "year": 2005,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1269.53,
         "ideal_total": 1478.58,
         "missed_points": 209.04999999999995,
@@ -47067,7 +47064,7 @@
       {
         "year": 2006,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1688.71,
         "ideal_total": 1545.63,
         "missed_points": -143.07999999999993,
@@ -47217,7 +47214,7 @@
       {
         "year": 2007,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1662.72,
         "ideal_total": 1594.13,
         "missed_points": -68.58999999999992,
@@ -47367,7 +47364,7 @@
       {
         "year": 2008,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1475.63,
         "ideal_total": 1786.1,
         "missed_points": 310.4699999999998,
@@ -47577,7 +47574,7 @@
       {
         "year": 2009,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1616.1100000000001,
         "ideal_total": 1832.49,
         "missed_points": 216.37999999999988,
@@ -47817,7 +47814,7 @@
       {
         "year": 2011,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1710.0700000000002,
         "ideal_total": 1886.49,
         "missed_points": 176.41999999999985,
@@ -47967,7 +47964,7 @@
       {
         "year": 2012,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1641.06,
         "ideal_total": 1845.96,
         "missed_points": 204.9000000000001,
@@ -48117,7 +48114,7 @@
       {
         "year": 2013,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1890.83,
         "ideal_total": 2077.2200000000003,
         "missed_points": 186.39000000000033,
@@ -48267,7 +48264,7 @@
       {
         "year": 2014,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1707.9166666666652,
         "ideal_total": 1809.966666666665,
         "missed_points": 102.04999999999995,
@@ -48417,7 +48414,7 @@
       {
         "year": 2015,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1636.533333333332,
         "ideal_total": 1884.8499999999985,
         "missed_points": 248.3166666666666,
@@ -48567,7 +48564,7 @@
       {
         "year": 2016,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1539.9166666666652,
         "ideal_total": 1751.0833333333317,
         "missed_points": 211.16666666666652,
@@ -48717,7 +48714,7 @@
       {
         "year": 2017,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1526.2666666666653,
         "ideal_total": 1811.2999999999986,
         "missed_points": 285.0333333333333,
@@ -48867,7 +48864,7 @@
       {
         "year": 2018,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1866.4999999999984,
         "ideal_total": 2029.0333333333317,
         "missed_points": 162.5333333333333,
@@ -49017,7 +49014,7 @@
       {
         "year": 2019,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1776.8999999999985,
         "ideal_total": 2120.166666666665,
         "missed_points": 343.26666666666665,
@@ -49167,7 +49164,7 @@
       {
         "year": 2020,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1683.2999999999988,
         "ideal_total": 1946.5999999999988,
         "missed_points": 263.29999999999995,
@@ -49317,7 +49314,7 @@
       {
         "year": 2021,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1725.8666666666654,
         "ideal_total": 2002.1333333333318,
         "missed_points": 276.2666666666664,
@@ -49467,7 +49464,7 @@
       {
         "year": 2022,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1613.3999999999987,
         "ideal_total": 1931.8999999999985,
         "missed_points": 318.4999999999998,
@@ -49617,7 +49614,7 @@
       {
         "year": 2023,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 1793.5666666666655,
         "ideal_total": 2121.8999999999987,
         "missed_points": 328.33333333333326,
@@ -49767,7 +49764,7 @@
       {
         "year": 2024,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 2165.3999999999987,
         "ideal_total": 2442.3666666666654,
         "missed_points": 276.9666666666667,
@@ -49917,7 +49914,7 @@
       {
         "year": 2025,
         "manager_key": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "manager_display": "Brian B.",
+        "manager_display": "Brian B",
         "actual_total": 2024.433333333332,
         "ideal_total": 2409.3666666666654,
         "missed_points": 384.9333333333334,
@@ -50075,7 +50072,7 @@
       },
       {
         "label": "Suspect matchups",
-        "value": "40",
+        "value": "180",
         "detail": "Flagged for zero/missing scores, hidden managers, or invalid results"
       },
       {
@@ -50085,7 +50082,7 @@
       },
       {
         "label": "Integrity checks",
-        "value": "1 failing",
+        "value": "2 failing",
         "detail": "Sanity checks like championships, podiums, and playoff trips never exceeding seasons"
       },
       {
@@ -50101,7 +50098,7 @@
       "Player-level record sections exclude partial player-data seasons such as 2003."
     ],
     "issue_counts": {
-      "suspect_matchups": 40,
+      "suspect_matchups": 180,
       "suspect_seasons": 1,
       "suspect_player_weeks": 272
     },
@@ -50312,6 +50309,15 @@
         "has_player_stat_detail": true,
         "has_usable_player_scoring": true,
         "coverage_label": "full"
+      },
+      {
+        "year": 2026,
+        "player_rows": 5774,
+        "nonzero_stat_columns": 72,
+        "roster_point_rows": 152,
+        "has_player_stat_detail": true,
+        "has_usable_player_scoring": true,
+        "coverage_label": "full"
       }
     ],
     "issue_rows": [
@@ -50358,7 +50364,7 @@
       {
         "year": 2003,
         "week": 3,
-        "subject": "Brian B.",
+        "subject": "Brian B",
         "counterparty": "-- hidden --",
         "team_score": 98.95,
         "opponent_score": 107.09,
@@ -50369,7 +50375,7 @@
         "year": 2003,
         "week": 3,
         "subject": "-- hidden --",
-        "counterparty": "Brian B.",
+        "counterparty": "Brian B",
         "team_score": 107.09,
         "opponent_score": 98.95,
         "quality_flags": "hidden_manager",
@@ -50564,9 +50570,9 @@
       },
       {
         "check": "One Team Per Manager Per Year",
-        "status": "pass",
-        "violations": 0,
-        "detail": "No violations found."
+        "status": "fail",
+        "violations": 1,
+        "detail": "2026 Craig (2 teams)"
       },
       {
         "check": "One Champion Per Completed Season",
@@ -50637,9 +50643,9 @@
         "regular_season_finish": 1,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 1,
+        "reference_note": "Brian B finished 1 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -50733,9 +50739,9 @@
         "regular_season_finish": 1,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 4,
+        "reference_note": "Brian B finished 4 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -50781,9 +50787,9 @@
         "regular_season_finish": 3,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 1,
+        "reference_note": "Brian B finished 1 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -50865,9 +50871,9 @@
         "regular_season_finish": 5,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 4,
+        "reference_note": "Brian B finished 4 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -50937,9 +50943,9 @@
         "regular_season_finish": 1,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 2,
+        "reference_note": "Brian B finished 2 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -50985,9 +50991,9 @@
         "regular_season_finish": 8,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 9,
+        "reference_note": "Brian B finished 9 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51009,9 +51015,9 @@
         "regular_season_finish": 7,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 7,
+        "reference_note": "Brian B finished 7 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51117,9 +51123,9 @@
         "regular_season_finish": 3,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 4,
+        "reference_note": "Brian B finished 4 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51177,9 +51183,9 @@
         "regular_season_finish": 8,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 8,
+        "reference_note": "Brian B finished 8 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51249,9 +51255,9 @@
         "regular_season_finish": 3,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 2,
+        "reference_note": "Brian B finished 2 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51345,9 +51351,9 @@
         "regular_season_finish": 1,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 3,
+        "reference_note": "Brian B finished 3 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51369,9 +51375,9 @@
         "regular_season_finish": 5,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 6,
+        "reference_note": "Brian B finished 6 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51441,9 +51447,9 @@
         "regular_season_finish": 4,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 2,
+        "reference_note": "Brian B finished 2 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51525,9 +51531,9 @@
         "regular_season_finish": 5,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 6,
+        "reference_note": "Brian B finished 6 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51573,9 +51579,9 @@
         "regular_season_finish": 3,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 4,
+        "reference_note": "Brian B finished 4 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51633,9 +51639,9 @@
         "regular_season_finish": 1,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 2,
+        "reference_note": "Brian B finished 2 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51657,9 +51663,9 @@
         "regular_season_finish": 6,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 7,
+        "reference_note": "Brian B finished 7 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51717,9 +51723,9 @@
         "regular_season_finish": 4,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 1,
+        "reference_note": "Brian B finished 1 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51777,9 +51783,9 @@
         "regular_season_finish": 5,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 8,
+        "reference_note": "Brian B finished 8 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51789,9 +51795,9 @@
         "regular_season_finish": 3,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 3,
+        "reference_note": "Brian B finished 3 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51849,9 +51855,9 @@
         "regular_season_finish": 1,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 1,
+        "reference_note": "Brian B finished 1 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51885,9 +51891,9 @@
         "regular_season_finish": 9,
         "raw_manager": "Brian B",
         "raw_guid": "W554IPDABFWXUHK6DB3CNG54ZE",
-        "resolved_manager": "Brian B.",
-        "final_standing": "-",
-        "reference_note": "-",
+        "resolved_manager": "Brian B",
+        "final_standing": 9,
+        "reference_note": "Brian B finished 9 in Yahoo's final standings",
         "status": "hidden source guid"
       },
       {
@@ -51922,6 +51928,30 @@
         "raw_manager": "Craig",
         "raw_guid": "LJJ4XUXKYJAXSIOUQEQUMFOUZI",
         "resolved_manager": "Craig S.",
+        "final_standing": "-",
+        "reference_note": "-",
+        "status": "hidden source guid"
+      },
+      {
+        "year": 2026,
+        "team_name": "In Purdytory",
+        "record": "0-1-0",
+        "regular_season_finish": 8,
+        "raw_manager": "Chris P.",
+        "raw_guid": "--hidden--",
+        "resolved_manager": "Chris P.",
+        "final_standing": "-",
+        "reference_note": "-",
+        "status": "hidden source guid"
+      },
+      {
+        "year": 2026,
+        "team_name": "Sigma Chi Whiteout",
+        "record": "1-0-0",
+        "regular_season_finish": 2,
+        "raw_manager": "Brian B",
+        "raw_guid": "--hidden--",
+        "resolved_manager": "Brian B",
         "final_standing": "-",
         "reference_note": "-",
         "status": "hidden source guid"

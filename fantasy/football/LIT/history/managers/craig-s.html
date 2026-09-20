@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Craig S. Career Report</title><style>
+body{margin:0;background:#f5f7fa;color:#20242a;font:14px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1120px;margin:auto;padding:20px}a{color:#1b5dbf;font-weight:700;text-decoration:none}h1{margin:8px 0 2px;font-size:32px}h2{font-size:20px;margin:0 0 8px}section{background:#fff;border:1px solid #dde3ea;border-radius:6px;padding:16px;margin-top:14px}.lede{color:#4b5563;margin:0}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:14px}.metric{border:1px solid #dde3ea;padding:10px;border-radius:6px}.metric span{display:block;color:#64748b;font-size:11px;text-transform:uppercase;font-weight:700}.metric strong{font-size:19px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #e5e7eb;text-align:left}th{background:#f8fafc;color:#475569;font-size:12px}.num{text-align:right}
+</style></head><body>
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Craig-S</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../league_history.html">League History</a></li></ul></div></div></div></nav>
+<!-- report-nav:end --><main>
+<p><a href="../league_history.html">League History</a></p><div class="eyebrow">Historical Manager Report</div><h1>Craig S.</h1>
+<p class="lede">Completed-season career history across 23 seasons. The live season contributes to the all-time league standings but does not enter full-season comparisons until complete.</p>
+<div class="metrics">
+<div class="metric"><span>Career Record</span><strong>160-160-0</strong></div>
+<div class="metric"><span>Manager Type</span><strong>Multi-title power</strong></div>
+<div class="metric"><span>Championships</span><strong>3</strong></div>
+<div class="metric"><span>Playoffs</span><strong>9</strong></div>
+<div class="metric"><span>Points Titles</span><strong>4</strong></div>
+<div class="metric"><span>Best Season</span><strong>2009 (#3, 12-4-0, 1839.1 pts)</strong></div>
+</div>
+<section><h2>Season By Season</h2><p class="lede">The career arc by team name, record, scoring, finish, and playoff result.</p><div class="table-wrap"><table><thead><tr><th>Year</th><th>Team</th><th>Record</th><th class="num">Points</th><th class="num">Rank</th><th>Playoff Finish</th></tr></thead><tbody><tr><td>2025</td><td>Nacua-Cola</td><td>10-7-0</td><td class='num'>2076.3</td><td class='num'>2</td><td>Runner Up</td></tr><tr><td>2024</td><td>Nacua-Cola</td><td>9-8-0</td><td class='num'>2159.0</td><td class='num'>3</td><td>-</td></tr><tr><td>2023</td><td>Mark Murray Down For Moore</td><td>8-9-0</td><td class='num'>1822.8</td><td class='num'>5</td><td>-</td></tr><tr><td>2022</td><td>Mark Murray Down For Moore</td><td>8-9-0</td><td class='num'>1819.5</td><td class='num'>6</td><td>-</td></tr><tr><td>2021</td><td>r/WallerStreetBets</td><td>7-10-0</td><td class='num'>1821.3</td><td class='num'>8</td><td>-</td></tr><tr><td>2020</td><td>The Fantasy Team</td><td>9-7-0</td><td class='num'>1751.9</td><td class='num'>6</td><td>-</td></tr><tr><td>2019</td><td>Connerintuitive</td><td>8-8-0</td><td class='num'>1727.1</td><td class='num'>5</td><td>-</td></tr><tr><td>2018</td><td>Truth Isn&#x27;t Truth</td><td>9-7-0</td><td class='num'>1899.4</td><td class='num'>5</td><td>-</td></tr><tr><td>2017</td><td>Blackballed Squad</td><td>7-9-0</td><td class='num'>1603.0</td><td class='num'>8</td><td>-</td></tr><tr><td>2016</td><td>Bosa&#x27;s Pay Day</td><td>8-8-0</td><td class='num'>1691.0</td><td class='num'>7</td><td>-</td></tr><tr><td>2015</td><td>Kelly&#x27;s Master Plan</td><td>9-7-0</td><td class='num'>1683.4</td><td class='num'>1</td><td>-</td></tr><tr><td>2014</td><td>Gordon&#x27;s Dealers</td><td>5-9-0</td><td class='num'>1459.4</td><td class='num'>9</td><td>-</td></tr><tr><td>2013</td><td>UF Arrest Record</td><td>9-7-0</td><td class='num'>1830.7</td><td class='num'>4</td><td>Champion</td></tr><tr><td>2012</td><td>Ochocinco Headbutts</td><td>10-6-0</td><td class='num'>1688.2</td><td class='num'>2</td><td>Runner Up</td></tr><tr><td>2011</td><td>Flabbergasted RBs</td><td>7-9-0</td><td class='num'>1493.8</td><td class='num'>5</td><td>-</td></tr><tr><td>2010</td><td>Eating Dinosaurs</td><td>7-8-0</td><td class='num'>1631.3</td><td class='num'>8</td><td>-</td></tr><tr><td>2009</td><td>Vicks New Dog Pen</td><td>12-4-0</td><td class='num'>1839.1</td><td class='num'>3</td><td>Champion</td></tr><tr><td>2008</td><td>Favre&#x27;s 401K</td><td>8-7-0</td><td class='num'>1538.6</td><td class='num'>4</td><td>-</td></tr><tr><td>2007</td><td>Mexico&#x27;s Dog Pound</td><td>9-7-0</td><td class='num'>1301.6</td><td class='num'>5</td><td>-</td></tr><tr><td>2006</td><td>Diis aliter visum</td><td>4-9-0</td><td class='num'>1473.4</td><td class='num'>9</td><td>-</td></tr><tr><td>2005</td><td>The Wang Hangers</td><td>7-7-0</td><td class='num'>1598.8</td><td class='num'>4</td><td>-</td></tr><tr><td>2004</td><td>Fubar</td><td>11-6-0</td><td class='num'>2787.4</td><td class='num'>4</td><td>Champion</td></tr><tr><td>2003</td><td>Fubar</td><td>5-10-0</td><td class='num'>1628.1</td><td class='num'>11</td><td>-</td></tr></tbody></table></div></section>
+<section><h2>Head-To-Head History</h2><div class="table-wrap"><table><thead><tr><th>Opponent</th><th>Record</th><th class="num">Games</th><th class="num">Avg Margin</th></tr></thead><tbody><tr><td>Chris P.</td><td>21-25-0</td><td class='num'>46</td><td class='num'>-1.5</td></tr><tr><td>Dave F.</td><td>15-25-0</td><td class='num'>40</td><td class='num'>-11.9</td></tr><tr><td>Elissa P.</td><td>23-15-0</td><td class='num'>38</td><td class='num'>+3.7</td></tr><tr><td>Brian B</td><td>17-19-0</td><td class='num'>36</td><td class='num'>-7.3</td></tr><tr><td>Andrew P.</td><td>20-15-0</td><td class='num'>35</td><td class='num'>+3.0</td></tr><tr><td>Jason P.</td><td>18-15-0</td><td class='num'>33</td><td class='num'>+4.3</td></tr><tr><td>Matt</td><td>13-19-0</td><td class='num'>32</td><td class='num'>-4.8</td></tr><tr><td>Joe P.</td><td>13-11-0</td><td class='num'>24</td><td class='num'>+3.4</td></tr></tbody></table></div></section>
+</main></body></html>
