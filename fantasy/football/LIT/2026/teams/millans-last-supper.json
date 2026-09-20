@@ -9,10 +9,10 @@
     "charts": {
       "luck_series": [
         {
-          "grade_letter": "B+",
+          "grade_letter": "B",
           "ideal_score": 142.96666666666658,
           "luck_label": "Normal variance",
-          "manager_score_pct": 89.08836558638376,
+          "manager_score_pct": 86.38180358021812,
           "matchup_href": "../matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html",
           "missed_lineup_points": 15.6,
           "opponent": "Pat Pidgeon",
@@ -39,16 +39,16 @@
           "momentum_delta_points": 0.0,
           "momentum_label": "Not enough pace data",
           "move_process_adjustment": 0.0,
-          "process_score_pct": 89.08836558638376,
+          "process_score_pct": 86.38180358021812,
           "week": 1
         }
       ],
       "schedule_series": [
         {
-          "grade_letter": "B+",
+          "grade_letter": "B",
           "ideal_score": 142.96666666666658,
           "luck_label": "Normal variance",
-          "manager_score_pct": 89.08836558638376,
+          "manager_score_pct": 86.38180358021812,
           "matchup_href": "../matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html",
           "missed_lineup_points": 15.6,
           "opponent": "Pat Pidgeon",
@@ -79,9 +79,9 @@
       "bad_luck_games": [],
       "best_games": [
         {
-          "grade_letter": "B+",
+          "grade_letter": "B",
           "ideal_score": 142.96666666666658,
-          "manager_score_pct": 89.08836558638376,
+          "manager_score_pct": 86.38180358021812,
           "matchup_href": "../matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html",
           "missed_lineup_points": 15.6,
           "opponent": "Pat Pidgeon",
@@ -95,9 +95,9 @@
       ],
       "biggest_lineup_misses": [
         {
-          "grade_letter": "B+",
+          "grade_letter": "B",
           "ideal_score": 142.96666666666658,
-          "manager_score_pct": 89.08836558638376,
+          "manager_score_pct": 86.38180358021812,
           "matchup_href": "../matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html",
           "missed_lineup_points": 15.6,
           "opponent": "Pat Pidgeon",
@@ -228,9 +228,9 @@
       "tough_schedule_games": [],
       "worst_games": [
         {
-          "grade_letter": "B+",
+          "grade_letter": "B",
           "ideal_score": 142.96666666666658,
-          "manager_score_pct": 89.08836558638376,
+          "manager_score_pct": 86.38180358021812,
           "matchup_href": "../matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html",
           "missed_lineup_points": 15.6,
           "opponent": "Pat Pidgeon",
@@ -255,8 +255,9 @@
       "pickup_surprise_points": 0,
       "record": "0-1",
       "score_volatility": 0.0,
-      "season_grade_letter": "B-",
-      "season_grade_pct": 82.75344467931147,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_grade_pct": 75.17996511316632,
       "total_missed_lineup_points": 15.6,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": null
@@ -269,7 +270,7 @@
     }
   },
   "summary": {
-    "average_manager_score_pct": 89.08836558638376,
+    "average_manager_score_pct": 86.38180358021812,
     "average_score": 127.37,
     "best_week": {
       "score": 127.37,
@@ -289,8 +290,9 @@
     "missed_lineup_points": 15.6,
     "move_grade_impact": 0.0,
     "record": "0-1",
-    "season_grade_letter": "B-",
-    "season_grade_pct": 82.75344467931147,
+    "season_confidence_label": "Provisional",
+    "season_grade_letter": "C",
+    "season_grade_pct": 75.17996511316632,
     "team_name": "Millan\u2019s Last Supper",
     "total_points": 127.37
   },
@@ -302,17 +304,65 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
-          "baseline": 85.0,
+          "baseline": 75.0,
+          "component_scores": {
+            "adaptability": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            },
+            "lineup_management": {
+              "available": true,
+              "score_pct": 89.08836558638376,
+              "weight_pct": 40.0
+            },
+            "points_performance": {
+              "available": true,
+              "score_pct": 75.55555555555556,
+              "weight_pct": 20.0
+            },
+            "roster_construction": {
+              "available": true,
+              "score_pct": 63.33333333333333,
+              "weight_pct": 40.0
+            },
+            "transaction_value": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "season_actual_points": 127.37,
-          "season_ideal_points": 149.2666666666666,
-          "season_lineup_efficiency_pct": 85.33050468959361,
-          "trend": "insufficient_data"
+          "raw_score_pct": 76.07979067899794,
+          "season_actual_points": 127.36666666666657,
+          "season_ideal_points": 142.96666666666658,
+          "season_lineup_efficiency_pct": 89.08836558638376,
+          "trend": "insufficient_data",
+          "weeks_completed": 1
         },
         "weekly": {
           "bad_moves_this_week": 0,
-          "baseline": 85.0,
+          "baseline": 75.0,
           "beat_league_median": true,
+          "component_scores": {
+            "competitive_output": {
+              "available": true,
+              "score_pct": 75.55555555555556,
+              "weight_pct": 20.0
+            },
+            "lineup_decisions": {
+              "available": true,
+              "score_pct": 89.08836558638376,
+              "weight_pct": 80.0
+            },
+            "transaction_deployment": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
           "decision_grade_pct": 89.08836558638376,
           "free_agent_missed_points": 0.0,
           "good_moves_this_week": 0,
@@ -328,10 +378,10 @@
           "weekly_rank": 5
         }
       },
-      "grade_letter": "B+",
+      "grade_letter": "B",
       "ideal_score": 142.96666666666658,
       "manager_display": "Liana",
-      "manager_score_pct": 89.08836558638376,
+      "manager_score_pct": 86.38180358021812,
       "matchup_href": "../matchups_week_01/matchup_03_pat-pidgeon_vs_millan-s-last-supper.html",
       "missed_lineup_points": 15.6,
       "move_grade_impact": 0.0,
@@ -340,8 +390,9 @@
       "opponent_score": 186.53,
       "result": "L",
       "score": 127.37,
-      "season_grade_letter": "B-",
-      "season_manager_score_pct": 82.75344467931147,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_manager_score_pct": 75.17996511316632,
       "started_all": [
         {
           "name": "Derrick Henry",

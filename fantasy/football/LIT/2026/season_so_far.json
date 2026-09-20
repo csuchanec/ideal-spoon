@@ -5,7 +5,7 @@
     "is_final": false,
     "completion_basis": "scheduled matchups remain incomplete",
     "year": 2026,
-    "generated_at": "2026-09-20T06:07:10.741257",
+    "generated_at": "2026-09-20T18:16:47.202191",
     "total_teams": 10,
     "weeks_completed": 1,
     "output_dir": "analysis/weekly_report/data/2026"
@@ -768,7 +768,50 @@
         "bad": "Moved-away players did not create meaningful follow-up pressure.",
         "different": "Cleaner move execution could have added +0.0 net points."
       },
-      "team_story": "Ranks 1 through the latest completed week at 1-0. Scored 186.5 counted scoring points at a 94.2% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 1 through the latest completed week at 1-0. Scored 186.5 counted scoring points at a 94.2% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 78.7826990007859,
+      "season_manager_rating_letter": "C+",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 186.53333333333327,
+        "season_ideal_points": 197.93333333333328,
+        "season_lineup_efficiency_pct": 94.24048501178848,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 97.69619400471538,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 94.24048501178848,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 100.0,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 100.0,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Sigma Chi Whiteout": {
       "team_key": "470.l.932349.t.1",
@@ -1150,7 +1193,50 @@
         "bad": "Moved-away players did not create meaningful follow-up pressure.",
         "different": "Cleaner move execution could have added +0.0 net points."
       },
-      "team_story": "Ranks 2 through the latest completed week at 1-0. Scored 178.0 counted scoring points at a 89.5% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 2 through the latest completed week at 1-0. Scored 178.0 counted scoring points at a 89.5% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 78.0910604037237,
+      "season_manager_rating_letter": "C+",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 178.0333333333333,
+        "season_ideal_points": 191.36666666666665,
+        "season_lineup_efficiency_pct": 93.0325727225222,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 93.5463624223422,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 93.0325727225222,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 93.88888888888889,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 93.88888888888889,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Bend & Snap Count": {
       "team_key": "470.l.932349.t.7",
@@ -1489,7 +1575,50 @@
         "bad": "Moved-away players did not create meaningful follow-up pressure.",
         "different": "Cleaner move execution could have added +0.0 net points."
       },
-      "team_story": "Ranks 3 through the latest completed week at 1-0. Scored 148.3 counted scoring points at a 98.0% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 3 through the latest completed week at 1-0. Scored 148.3 counted scoring points at a 98.0% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 77.40050323390997,
+      "season_manager_rating_letter": "C+",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 148.2666666666666,
+        "season_ideal_points": 151.36666666666662,
+        "season_lineup_efficiency_pct": 97.95199295309402,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 89.40301940345982,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 97.95199295309402,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 81.66666666666666,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 87.77777777777777,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "ZSzizzle": {
       "team_key": "470.l.932349.t.8",
@@ -1914,7 +2043,50 @@
         "bad": "Left 29.6 points on the table versus the ideal lineup.",
         "different": "Cleaner move execution could have added +0.0 net points."
       },
-      "team_story": "Ranks 4 through the latest completed week at 1-0. Scored 136.3 counted scoring points at a 81.9% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 4 through the latest completed week at 1-0. Scored 136.3 counted scoring points at a 81.9% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 76.55236989400976,
+      "season_manager_rating_letter": "C+",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 136.2999999999999,
+        "season_ideal_points": 165.8666666666666,
+        "season_lineup_efficiency_pct": 82.17443729903535,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 84.31421936405857,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 82.17443729903535,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 87.77777777777777,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 81.66666666666666,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Love(land) Hurts": {
       "team_key": "470.l.932349.t.2",
@@ -2339,7 +2511,50 @@
         "bad": "Left 49.3 points on the table versus the ideal lineup.",
         "different": "Alternate scoring would place this team 3.0 places worse."
       },
-      "team_story": "Ranks 5 through the latest completed week at 1-0. Scored 96.3 counted scoring points at a 66.1% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 5 through the latest completed week at 1-0. Scored 96.3 counted scoring points at a 66.1% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 73.46819312412688,
+      "season_manager_rating_letter": "C",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 96.33333333333323,
+        "season_ideal_points": 144.93333333333322,
+        "season_lineup_efficiency_pct": 66.46734130634772,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 65.8091587447613,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 66.46734130634772,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 69.44444444444444,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 57.22222222222222,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Millan\u2019s Last Supper": {
       "team_key": "470.l.932349.t.4",
@@ -2764,7 +2979,50 @@
         "bad": "Moved-away players did not create meaningful follow-up pressure.",
         "different": "Alternate scoring would place this team 1.0 places better."
       },
-      "team_story": "Ranks 6 through the latest completed week at 0-1. Scored 127.4 counted scoring points at a 85.3% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 6 through the latest completed week at 0-1. Scored 127.4 counted scoring points at a 85.3% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 75.17996511316632,
+      "season_manager_rating_letter": "C",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 127.36666666666657,
+        "season_ideal_points": 142.96666666666658,
+        "season_lineup_efficiency_pct": 89.08836558638376,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 76.07979067899794,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 89.08836558638376,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 63.33333333333333,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 75.55555555555556,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Two Buck Luck": {
       "team_key": "470.l.932349.t.9",
@@ -3103,7 +3361,50 @@
         "bad": "Left 23.2 points on the table versus the ideal lineup.",
         "different": "Alternate scoring would place this team 1.0 places better."
       },
-      "team_story": "Ranks 7 through the latest completed week at 0-1. Scored 124.7 counted scoring points at a 84.3% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 7 through the latest completed week at 0-1. Scored 124.7 counted scoring points at a 84.3% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 75.47379848845463,
+      "season_manager_rating_letter": "C",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 124.66666666666663,
+        "season_ideal_points": 147.83333333333326,
+        "season_lineup_efficiency_pct": 84.32919954904173,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 77.8427909307278,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 84.32919954904173,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 75.55555555555556,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 69.44444444444444,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "In Purdytory": {
       "team_key": "470.l.932349.t.5",
@@ -3528,7 +3829,50 @@
         "bad": "Left 25.2 points on the table versus the ideal lineup.",
         "different": "Alternate scoring would place this team 1.0 places better."
       },
-      "team_story": "Ranks 8 through the latest completed week at 0-1. Scored 111.7 counted scoring points at a 81.5% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 8 through the latest completed week at 0-1. Scored 111.7 counted scoring points at a 81.5% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 73.95808677143827,
+      "season_manager_rating_letter": "C",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 111.66666666666659,
+        "season_ideal_points": 134.56666666666658,
+        "season_lineup_efficiency_pct": 82.98241268268515,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 68.7485206286296,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 82.98241268268515,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 57.22222222222222,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 63.33333333333333,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Nacua-Cola": {
       "team_key": "470.l.932349.t.6",
@@ -4473,7 +4817,50 @@
         "bad": "Left 31.1 points on the table versus the ideal lineup.",
         "different": "Cleaner move execution could have added +0.0 net points."
       },
-      "team_story": "Ranks 9 through the latest completed week at 0-1. Scored 77.7 counted scoring points at a 70.6% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 9 through the latest completed week at 0-1. Scored 77.7 counted scoring points at a 70.6% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 72.92491303342635,
+      "season_manager_rating_letter": "C",
+      "season_manager_rating_label": "reasonable but costly",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 77.6666666666666,
+        "season_ideal_points": 108.7666666666666,
+        "season_lineup_efficiency_pct": 71.40668096843395,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 62.54947820055809,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 71.40668096843395,
+            "weight_pct": 31.57894736842105,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 51.111111111111114,
+            "weight_pct": 31.57894736842105,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": 75.0,
+            "weight_pct": 21.05263157894737,
+            "available": true
+          },
+          "points_performance": {
+            "score_pct": 51.111111111111114,
+            "weight_pct": 15.789473684210526,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     },
     "Squat": {
       "team_key": "470.l.932349.t.10",
@@ -4941,7 +5328,50 @@
         "bad": "Moved-away players did not create meaningful follow-up pressure.",
         "different": "Cleaner move execution could have added +0.0 net points."
       },
-      "team_story": "Ranks 10 through the latest completed week at 0-1. Scored 52.0 counted scoring points at a 69.3% lineup conversion rate. The season remains in progress, so this profile is provisional."
+      "team_story": "Ranks 10 through the latest completed week at 0-1. Scored 52.0 counted scoring points at a 69.3% lineup conversion rate. The season remains in progress, so this profile is provisional.",
+      "season_manager_rating_pct": 71.88492249882574,
+      "season_manager_rating_letter": "C-",
+      "season_manager_rating_label": "bad decisions",
+      "season_manager_confidence_label": "Provisional",
+      "season_manager_rating_components": {
+        "baseline": 75.0,
+        "season_actual_points": 51.99999999999999,
+        "season_ideal_points": 70.96666666666658,
+        "season_lineup_efficiency_pct": 73.27383748238617,
+        "drop_regret_points_total": 0.0,
+        "trend": "insufficient_data",
+        "weeks_completed": 1,
+        "confidence": 0.16666666666666666,
+        "confidence_label": "Provisional",
+        "raw_score_pct": 56.30953499295447,
+        "component_scores": {
+          "lineup_management": {
+            "score_pct": 73.27383748238617,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "roster_construction": {
+            "score_pct": 45.0,
+            "weight_pct": 40.0,
+            "available": true
+          },
+          "transaction_value": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          },
+          "points_performance": {
+            "score_pct": 45.0,
+            "weight_pct": 20.0,
+            "available": true
+          },
+          "adaptability": {
+            "score_pct": null,
+            "weight_pct": 0.0,
+            "available": false
+          }
+        }
+      }
     }
   },
   "players": {

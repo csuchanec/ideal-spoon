@@ -3,7 +3,7 @@
     "schema_version": "1.1",
     "year": 2025,
     "week": 12,
-    "generated_at": "2026-09-20T06:12:38.835597",
+    "generated_at": "2026-09-20T18:22:57.379741",
     "total_active_players": 327,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
@@ -22,8 +22,8 @@
       "actual_score": 164.63333333333324,
       "ideal_score": 164.63333333333324,
       "optimization_missed": 0.0,
-      "manager_grade_pct": 100.0,
-      "manager_grade_letter": "A+",
+      "manager_grade_pct": 92.83333333333333,
+      "manager_grade_letter": "A-",
       "lineup_grade_pct": 100.0,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -88,7 +88,7 @@
         }
       ],
       "historical_avg": 117.13888888888881,
-      "manager_effectiveness": "creative edge",
+      "manager_effectiveness": "well managed",
       "recommendations": [
         {
           "position": "RB",
@@ -233,7 +233,7 @@
           "point_swing": 11.2,
           "position": "RB"
         },
-        "manager_grade_final_pct": 100.0
+        "manager_grade_final_pct": 92.83333333333333
       },
       "team_story": "Big Fire Knowles Energy is improving with 1 actionable move(s): 0 start/sit and 1 waiver adds, worth a retrospective +11.2 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -258,8 +258,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 100.0,
-      "process_score_letter": "A+",
+      "process_score_pct": 92.83333333333333,
+      "process_score_letter": "A-",
       "hindsight_opportunities": {
         "lineup_decisions": [],
         "available_players": [
@@ -354,6 +354,11 @@
             "Neutral add/start"
           ],
           "drop_regret_points_total": 610.0666666666667,
+          "season_additions_count": 19,
+          "season_added_player_points": 409.8666666666666,
+          "season_added_starter_points": 319.8666666666666,
+          "season_added_starts": 37,
+          "season_transaction_value_points": 18.01929824561403,
           "drops_this_week_count": 1,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. Adds were grade-neutral this week.",
           "dropped_summary": "Moved away this week: Colston Loveland.",
@@ -684,18 +689,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 100.0,
-          "letter": "A+",
-          "label": "creative edge"
+          "score_pct": 92.83333333333333,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 74.30734000484223,
-          "letter": "C",
-          "label": "reasonable but costly"
+          "score_pct": 80.5774335702426,
+          "letter": "B-",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 100.0,
             "decision_grade_pct": 97.67432662263181,
             "roster_missed_points": 0.0,
@@ -712,33 +719,83 @@
             "score_vs_season_average": 46.82277777777776,
             "weekly_rank": 2,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1405.6666666666658,
-            "season_ideal_points": 1652.1333333333323,
-            "season_lineup_efficiency_pct": 85.08191429263175,
+            "baseline": 75.0,
+            "season_actual_points": 1435.6666666666656,
+            "season_ideal_points": 1693.099999999999,
+            "season_lineup_efficiency_pct": 84.79514893784575,
             "drop_regret_points_total": 610.0666666666667,
-            "trend": "improving"
+            "trend": "improving",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 80.5774335702426,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 84.79514893784575,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 81.66666666666666,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 81.66666666666666,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 90.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Big Fire Knowles Energy graded A+ this week and C for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+        "summary": "Big Fire Knowles Energy graded A- this week and B- for the season-to-date (established). Weekly management reads as well managed; season management reads as reasonable but costly."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 100.0,
-          "letter": "A+",
-          "label": "creative edge"
+          "score_pct": 92.83333333333333,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 74.30734000484223,
-          "letter": "C",
-          "label": "reasonable but costly"
+          "score_pct": 80.5774335702426,
+          "letter": "B-",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 100.0,
             "decision_grade_pct": 97.67432662263181,
             "roster_missed_points": 0.0,
@@ -755,26 +812,74 @@
             "score_vs_season_average": 46.82277777777776,
             "weekly_rank": 2,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1405.6666666666658,
-            "season_ideal_points": 1652.1333333333323,
-            "season_lineup_efficiency_pct": 85.08191429263175,
+            "baseline": 75.0,
+            "season_actual_points": 1435.6666666666656,
+            "season_ideal_points": 1693.099999999999,
+            "season_lineup_efficiency_pct": 84.79514893784575,
             "drop_regret_points_total": 610.0666666666667,
-            "trend": "improving"
+            "trend": "improving",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 80.5774335702426,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 84.79514893784575,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 81.66666666666666,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 81.66666666666666,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 90.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Big Fire Knowles Energy graded A+ this week and C for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+        "summary": "Big Fire Knowles Energy graded A- this week and B- for the season-to-date (established). Weekly management reads as well managed; season management reads as reasonable but costly."
       }
     },
     "You aren\u2019t Worthy of Coleman": {
       "actual_score": 87.03333333333322,
       "ideal_score": 110.93333333333322,
       "optimization_missed": 23.9,
-      "manager_grade_pct": 78.45552884615383,
-      "manager_grade_letter": "C+",
+      "manager_grade_pct": 75.98998397435896,
+      "manager_grade_letter": "C",
       "lineup_grade_pct": 78.45552884615383,
       "trend": "unchanged",
       "trend_label": "Unchanged",
@@ -1037,7 +1142,7 @@
           "point_swing": 24.666666666666604,
           "position": "WR"
         },
-        "manager_grade_final_pct": 78.45552884615383
+        "manager_grade_final_pct": 75.98998397435896
       },
       "team_story": "You aren\u2019t Worthy of Coleman is unchanged with 2 actionable move(s): 1 start/sit and 1 waiver adds, worth a retrospective +48.6 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -1062,8 +1167,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 78.45552884615383,
-      "process_score_letter": "C+",
+      "process_score_pct": 75.98998397435896,
+      "process_score_letter": "C",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -1207,6 +1312,11 @@
             "Neutral add/start"
           ],
           "drop_regret_points_total": 78.0,
+          "season_additions_count": 9,
+          "season_added_player_points": 263.53333333333325,
+          "season_added_starter_points": 145.53333333333327,
+          "season_added_starts": 17,
+          "season_transaction_value_points": 19.448148148148142,
           "drops_this_week_count": 2,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. Adds improved the weekly grade by 2.5 pts.",
           "dropped_summary": "Moved away this week: Elic Ayomanor, Terry McLaurin.",
@@ -1368,18 +1478,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 78.45552884615383,
-          "letter": "C+",
+          "score_pct": 75.98998397435896,
+          "letter": "C",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 81.93306034029148,
-          "letter": "B-",
-          "label": "reasonable but costly"
+          "score_pct": 67.9643843657206,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 78.45552884615383,
             "decision_grade_pct": 72.79063284081403,
             "roster_missed_points": 23.9,
@@ -1397,33 +1509,83 @@
             "score_vs_season_average": -30.777222222222264,
             "weekly_rank": 9,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 78.45552884615383,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 85.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "season_actual_points": 1348.499999999999,
-            "season_ideal_points": 1471.0333333333324,
-            "season_lineup_efficiency_pct": 91.67025446964718,
+            "season_ideal_points": 1448.099999999999,
+            "season_lineup_efficiency_pct": 93.12202195980942,
             "drop_regret_points_total": 78.0,
-            "trend": "unchanged"
+            "trend": "unchanged",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 67.9643843657206,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 93.12202195980942,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 45.0,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 75.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "You aren\u2019t Worthy of Coleman graded C+ this week and B- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+        "summary": "You aren\u2019t Worthy of Coleman graded C this week and D+ for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as bad decisions."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 78.45552884615383,
-          "letter": "C+",
+          "score_pct": 75.98998397435896,
+          "letter": "C",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 81.93306034029148,
-          "letter": "B-",
-          "label": "reasonable but costly"
+          "score_pct": 67.9643843657206,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 78.45552884615383,
             "decision_grade_pct": 72.79063284081403,
             "roster_missed_points": 23.9,
@@ -1441,26 +1603,74 @@
             "score_vs_season_average": -30.777222222222264,
             "weekly_rank": 9,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 78.45552884615383,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 85.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "season_actual_points": 1348.499999999999,
-            "season_ideal_points": 1471.0333333333324,
-            "season_lineup_efficiency_pct": 91.67025446964718,
+            "season_ideal_points": 1448.099999999999,
+            "season_lineup_efficiency_pct": 93.12202195980942,
             "drop_regret_points_total": 78.0,
-            "trend": "unchanged"
+            "trend": "unchanged",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 67.9643843657206,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 93.12202195980942,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 45.0,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 75.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "You aren\u2019t Worthy of Coleman graded C+ this week and B- for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+        "summary": "You aren\u2019t Worthy of Coleman graded C this week and D+ for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as bad decisions."
       }
     },
     "Pat Pidgeon": {
       "actual_score": 90.59999999999994,
       "ideal_score": 117.0999999999999,
       "optimization_missed": 26.499999999999957,
-      "manager_grade_pct": 77.36976942783947,
-      "manager_grade_letter": "C+",
+      "manager_grade_pct": 73.340259986716,
+      "manager_grade_letter": "C",
       "lineup_grade_pct": 77.36976942783947,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -1769,7 +1979,7 @@
           "point_swing": 24.666666666666604,
           "position": "WR"
         },
-        "manager_grade_final_pct": 77.36976942783947
+        "manager_grade_final_pct": 73.340259986716
       },
       "team_story": "Pat Pidgeon is declining with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth a retrospective +48.2 points; 3 had high hindsight impact.",
       "boom_bust": [
@@ -1794,8 +2004,8 @@
           "ownership_status": "BENCH"
         }
       ],
-      "process_score_pct": 77.36976942783947,
-      "process_score_letter": "C+",
+      "process_score_pct": 73.340259986716,
+      "process_score_letter": "C",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -1979,6 +2189,11 @@
           "move_grade_impact_labels": {},
           "move_grade_tags": [],
           "drop_regret_points_total": 206.69999999999985,
+          "season_additions_count": 12,
+          "season_added_player_points": 313.0333333333333,
+          "season_added_starter_points": 170.83333333333326,
+          "season_added_starts": 17,
+          "season_transaction_value_points": 17.198611111111106,
           "drops_this_week_count": 0,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
           "dropped_summary": "",
@@ -2158,18 +2373,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 77.36976942783947,
-          "letter": "C+",
-          "label": "reasonable but costly"
-        },
-        "season": {
-          "score_pct": 72.08275259845468,
+          "score_pct": 73.340259986716,
           "letter": "C",
           "label": "reasonable but costly"
         },
+        "season": {
+          "score_pct": 84.94195402298851,
+          "letter": "B",
+          "label": "well managed",
+          "confidence": 1.0,
+          "confidence_label": "Established"
+        },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 77.36976942783947,
             "decision_grade_pct": 72.05726405090141,
             "roster_missed_points": 26.499999999999957,
@@ -2184,33 +2401,83 @@
             "score_vs_season_average": -27.210555555555544,
             "weekly_rank": 8,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 77.36976942783947,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "season_actual_points": 1528.7999999999993,
-            "season_ideal_points": 1701.8999999999992,
-            "season_lineup_efficiency_pct": 89.82901463070687,
+            "season_ideal_points": 1739.999999999999,
+            "season_lineup_efficiency_pct": 87.86206896551725,
             "drop_regret_points_total": 206.69999999999985,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 84.94195402298851,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 87.86206896551725,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Pat Pidgeon graded C+ this week and C for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+        "summary": "Pat Pidgeon graded C this week and B for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as well managed."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 77.36976942783947,
-          "letter": "C+",
-          "label": "reasonable but costly"
-        },
-        "season": {
-          "score_pct": 72.08275259845468,
+          "score_pct": 73.340259986716,
           "letter": "C",
           "label": "reasonable but costly"
         },
+        "season": {
+          "score_pct": 84.94195402298851,
+          "letter": "B",
+          "label": "well managed",
+          "confidence": 1.0,
+          "confidence_label": "Established"
+        },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 77.36976942783947,
             "decision_grade_pct": 72.05726405090141,
             "roster_missed_points": 26.499999999999957,
@@ -2225,26 +2492,74 @@
             "score_vs_season_average": -27.210555555555544,
             "weekly_rank": 8,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 77.36976942783947,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "season_actual_points": 1528.7999999999993,
-            "season_ideal_points": 1701.8999999999992,
-            "season_lineup_efficiency_pct": 89.82901463070687,
+            "season_ideal_points": 1739.999999999999,
+            "season_lineup_efficiency_pct": 87.86206896551725,
             "drop_regret_points_total": 206.69999999999985,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 84.94195402298851,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 87.86206896551725,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Pat Pidgeon graded C+ this week and C for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+        "summary": "Pat Pidgeon graded C this week and B for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as well managed."
       }
     },
     "Reverse Ted Lasso": {
       "actual_score": 82.89999999999989,
       "ideal_score": 94.33333333333321,
       "optimization_missed": 11.433333333333326,
-      "manager_grade_pct": 87.87985865724382,
-      "manager_grade_letter": "B+",
+      "manager_grade_pct": 78.22791519434628,
+      "manager_grade_letter": "C+",
       "lineup_grade_pct": 87.87985865724382,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -2309,7 +2624,7 @@
         }
       ],
       "historical_avg": 106.69999999999989,
-      "manager_effectiveness": "well managed",
+      "manager_effectiveness": "reasonable but costly",
       "recommendations": [
         {
           "position": "WR",
@@ -2507,7 +2822,7 @@
           "point_swing": 24.666666666666604,
           "position": "WR"
         },
-        "manager_grade_final_pct": 87.87985865724382
+        "manager_grade_final_pct": 78.22791519434628
       },
       "team_story": "Reverse Ted Lasso is declining with 2 actionable move(s): 1 start/sit and 1 waiver adds, worth a retrospective +36.1 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -2522,8 +2837,8 @@
           "ownership_status": "BENCH"
         }
       ],
-      "process_score_pct": 87.87985865724382,
-      "process_score_letter": "B+",
+      "process_score_pct": 78.22791519434628,
+      "process_score_letter": "C+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -2665,6 +2980,11 @@
             "Neutral add/start"
           ],
           "drop_regret_points_total": 186.8,
+          "season_additions_count": 5,
+          "season_added_player_points": 121.0,
+          "season_added_starter_points": 121.0,
+          "season_added_starts": 17,
+          "season_transaction_value_points": 24.2,
           "drops_this_week_count": 1,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. Adds were grade-neutral this week.",
           "dropped_summary": "Moved away this week: Los Angeles.",
@@ -2827,18 +3147,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 87.87985865724382,
-          "letter": "B+",
-          "label": "well managed"
+          "score_pct": 78.22791519434628,
+          "letter": "C+",
+          "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.58691737736393,
-          "letter": "C",
-          "label": "reasonable but costly"
+          "score_pct": 67.62275539459785,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 87.87985865724382,
             "decision_grade_pct": 80.51149239236,
             "roster_missed_points": 11.433333333333326,
@@ -2855,33 +3177,83 @@
             "score_vs_season_average": -34.91055555555559,
             "weekly_rank": 10,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 87.87985865724382,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1280.399999999999,
-            "season_ideal_points": 1443.4333333333323,
-            "season_lineup_efficiency_pct": 88.70517054245664,
+            "baseline": 75.0,
+            "season_actual_points": 1298.6999999999987,
+            "season_ideal_points": 1472.6666666666656,
+            "season_lineup_efficiency_pct": 88.18696242643728,
             "drop_regret_points_total": 186.8,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 67.62275539459785,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 88.18696242643728,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 81.66666666666666,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Reverse Ted Lasso graded B+ this week and C for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+        "summary": "Reverse Ted Lasso graded C+ this week and D+ for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as bad decisions."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 87.87985865724382,
-          "letter": "B+",
-          "label": "well managed"
+          "score_pct": 78.22791519434628,
+          "letter": "C+",
+          "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.58691737736393,
-          "letter": "C",
-          "label": "reasonable but costly"
+          "score_pct": 67.62275539459785,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 87.87985865724382,
             "decision_grade_pct": 80.51149239236,
             "roster_missed_points": 11.433333333333326,
@@ -2898,26 +3270,74 @@
             "score_vs_season_average": -34.91055555555559,
             "weekly_rank": 10,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 87.87985865724382,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1280.399999999999,
-            "season_ideal_points": 1443.4333333333323,
-            "season_lineup_efficiency_pct": 88.70517054245664,
+            "baseline": 75.0,
+            "season_actual_points": 1298.6999999999987,
+            "season_ideal_points": 1472.6666666666656,
+            "season_lineup_efficiency_pct": 88.18696242643728,
             "drop_regret_points_total": 186.8,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 67.62275539459785,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 88.18696242643728,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 81.66666666666666,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Reverse Ted Lasso graded B+ this week and C for the season-to-date. Weekly process reads as well managed, season process reads as reasonable but costly."
+        "summary": "Reverse Ted Lasso graded C+ this week and D+ for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as bad decisions."
       }
     },
     "In Purdytory": {
       "actual_score": 121.53333333333325,
       "ideal_score": 121.53333333333325,
       "optimization_missed": 0.0,
-      "manager_grade_pct": 100.0,
-      "manager_grade_letter": "A+",
+      "manager_grade_pct": 90.08333333333333,
+      "manager_grade_letter": "A-",
       "lineup_grade_pct": 100.0,
       "trend": "unchanged",
       "trend_label": "Unchanged",
@@ -2982,7 +3402,7 @@
         }
       ],
       "historical_avg": 116.73611111111103,
-      "manager_effectiveness": "creative edge",
+      "manager_effectiveness": "well managed",
       "recommendations": [],
       "lineup_context": {
         "starter_count": 9,
@@ -3066,7 +3486,7 @@
         "decision_grade_pct": 100.0,
         "top_lineup_swap": null,
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 100.0
+        "manager_grade_final_pct": 90.08333333333333
       },
       "team_story": "In Purdytory had a clean week with minimal lineup leakage (0.0 missed points) and no high-value moves.",
       "boom_bust": [
@@ -3091,8 +3511,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 100.0,
-      "process_score_letter": "A+",
+      "process_score_pct": 90.08333333333333,
+      "process_score_letter": "A-",
       "hindsight_opportunities": {
         "lineup_decisions": [],
         "available_players": [],
@@ -3133,6 +3553,11 @@
             "Neutral add/start"
           ],
           "drop_regret_points_total": 386.033333333333,
+          "season_additions_count": 13,
+          "season_added_player_points": 690.2999999999994,
+          "season_added_starter_points": 402.79999999999956,
+          "season_added_starts": 33,
+          "season_transaction_value_points": 36.5134615384615,
           "drops_this_week_count": 1,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. Adds were grade-neutral this week.",
           "dropped_summary": "Moved away this week: Zach Ertz.",
@@ -3451,18 +3876,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 100.0,
-          "letter": "A+",
-          "label": "creative edge"
+          "score_pct": 90.08333333333333,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 75.0796131772511,
-          "letter": "C",
-          "label": "reasonable but costly"
+          "score_pct": 77.30910963850303,
+          "letter": "C+",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 100.0,
             "decision_grade_pct": 100.0,
             "roster_missed_points": 0.0,
@@ -3479,33 +3906,83 @@
             "score_vs_season_average": 3.7227777777777646,
             "weekly_rank": 5,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1400.8333333333323,
-            "season_ideal_points": 1576.5666666666657,
-            "season_lineup_efficiency_pct": 88.85341565004123,
+            "baseline": 75.0,
+            "season_actual_points": 1406.8333333333323,
+            "season_ideal_points": 1569.399999999999,
+            "season_lineup_efficiency_pct": 89.64147657278791,
             "drop_regret_points_total": 386.033333333333,
-            "trend": "unchanged"
+            "trend": "unchanged",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 77.30910963850303,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 89.64147657278791,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 75.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "In Purdytory graded A+ this week and C for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+        "summary": "In Purdytory graded A- this week and C+ for the season-to-date (established). Weekly management reads as well managed; season management reads as reasonable but costly."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 100.0,
-          "letter": "A+",
-          "label": "creative edge"
+          "score_pct": 90.08333333333333,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 75.0796131772511,
-          "letter": "C",
-          "label": "reasonable but costly"
+          "score_pct": 77.30910963850303,
+          "letter": "C+",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 100.0,
             "decision_grade_pct": 100.0,
             "roster_missed_points": 0.0,
@@ -3522,26 +3999,74 @@
             "score_vs_season_average": 3.7227777777777646,
             "weekly_rank": 5,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1400.8333333333323,
-            "season_ideal_points": 1576.5666666666657,
-            "season_lineup_efficiency_pct": 88.85341565004123,
+            "baseline": 75.0,
+            "season_actual_points": 1406.8333333333323,
+            "season_ideal_points": 1569.399999999999,
+            "season_lineup_efficiency_pct": 89.64147657278791,
             "drop_regret_points_total": 386.033333333333,
-            "trend": "unchanged"
+            "trend": "unchanged",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 77.30910963850303,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 89.64147657278791,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 75.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "In Purdytory graded A+ this week and C for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+        "summary": "In Purdytory graded A- this week and C+ for the season-to-date (established). Weekly management reads as well managed; season management reads as reasonable but costly."
       }
     },
     "Nacua-Cola": {
       "actual_score": 100.26666666666665,
       "ideal_score": 107.66666666666664,
       "optimization_missed": 7.399999999999997,
-      "manager_grade_pct": 93.12693498452013,
-      "manager_grade_letter": "A",
+      "manager_grade_pct": 85.54282765737875,
+      "manager_grade_letter": "B",
       "lineup_grade_pct": 93.12693498452013,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -3606,7 +4131,7 @@
         }
       ],
       "historical_avg": 117.64444444444435,
-      "manager_effectiveness": "creative edge",
+      "manager_effectiveness": "well managed",
       "recommendations": [
         {
           "position": "RB",
@@ -3751,7 +4276,7 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 93.12693498452013
+        "manager_grade_final_pct": 85.54282765737875
       },
       "team_story": "Nacua-Cola is declining with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +7.4 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -3766,8 +4291,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 93.12693498452013,
-      "process_score_letter": "A",
+      "process_score_pct": 85.54282765737875,
+      "process_score_letter": "B",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -3867,6 +4392,11 @@
             "Bench stash"
           ],
           "drop_regret_points_total": 890.0666666666665,
+          "season_additions_count": 29,
+          "season_added_player_points": 447.733333333333,
+          "season_added_starter_points": 190.16666666666669,
+          "season_added_starts": 22,
+          "season_transaction_value_points": 8.777873563218389,
           "drops_this_week_count": 5,
           "move_quality_summary": "Adds classified this week: 3 positive | 0 bad. Adds improved the weekly grade by 0.5 pts.",
           "dropped_summary": "Moved away this week: Atlanta, Isiah Pacheco, Jacory Croskey-Merritt, Joe Flacco, Oronde Gadsden.",
@@ -4370,18 +4900,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 93.12693498452013,
-          "letter": "A",
-          "label": "creative edge"
+          "score_pct": 85.54282765737875,
+          "letter": "B",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 66.44581917162726,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 69.15020478728879,
+          "letter": "C-",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 93.12693498452013,
             "decision_grade_pct": 93.12693498452013,
             "roster_missed_points": 7.399999999999997,
@@ -4400,33 +4932,83 @@
             "score_vs_season_average": -17.54388888888883,
             "weekly_rank": 6,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 93.12693498452013,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 77.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1411.7333333333324,
-            "season_ideal_points": 1635.7333333333322,
-            "season_lineup_efficiency_pct": 86.3058363221389,
+            "baseline": 75.0,
+            "season_actual_points": 1411.7333333333322,
+            "season_ideal_points": 1619.5666666666655,
+            "season_lineup_efficiency_pct": 87.1673492909626,
             "drop_regret_points_total": 890.0666666666665,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 69.15020478728879,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 87.1673492909626,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 45.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Nacua-Cola graded A this week and D+ for the season-to-date. Weekly process reads as creative edge, season process reads as bad decisions."
+        "summary": "Nacua-Cola graded B this week and C- for the season-to-date (established). Weekly management reads as well managed; season management reads as bad decisions."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 93.12693498452013,
-          "letter": "A",
-          "label": "creative edge"
+          "score_pct": 85.54282765737875,
+          "letter": "B",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 66.44581917162726,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 69.15020478728879,
+          "letter": "C-",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 93.12693498452013,
             "decision_grade_pct": 93.12693498452013,
             "roster_missed_points": 7.399999999999997,
@@ -4445,26 +5027,74 @@
             "score_vs_season_average": -17.54388888888883,
             "weekly_rank": 6,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 93.12693498452013,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 77.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1411.7333333333324,
-            "season_ideal_points": 1635.7333333333322,
-            "season_lineup_efficiency_pct": 86.3058363221389,
+            "baseline": 75.0,
+            "season_actual_points": 1411.7333333333322,
+            "season_ideal_points": 1619.5666666666655,
+            "season_lineup_efficiency_pct": 87.1673492909626,
             "drop_regret_points_total": 890.0666666666665,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 69.15020478728879,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 87.1673492909626,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 45.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Nacua-Cola graded A this week and D+ for the season-to-date. Weekly process reads as creative edge, season process reads as bad decisions."
+        "summary": "Nacua-Cola graded B this week and C- for the season-to-date (established). Weekly management reads as well managed; season management reads as bad decisions."
       }
     },
     "Moonbeam Ice Cream": {
       "actual_score": 100.03333333333322,
       "ideal_score": 121.23333333333325,
       "optimization_missed": 21.200000000000035,
-      "manager_grade_pct": 82.51306021446243,
-      "manager_grade_letter": "B-",
+      "manager_grade_pct": 78.6771148382366,
+      "manager_grade_letter": "C+",
       "lineup_grade_pct": 82.51306021446243,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -4773,12 +5403,12 @@
           "point_swing": 12.0,
           "position": "DEF"
         },
-        "manager_grade_final_pct": 82.51306021446243
+        "manager_grade_final_pct": 78.6771148382366
       },
       "team_story": "Moonbeam Ice Cream is declining with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth a retrospective +32.2 points; 2 had high hindsight impact.",
       "boom_bust": [],
-      "process_score_pct": 82.51306021446243,
-      "process_score_letter": "B-",
+      "process_score_pct": 78.6771148382366,
+      "process_score_letter": "C+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -4962,6 +5592,11 @@
           "move_grade_impact_labels": {},
           "move_grade_tags": [],
           "drop_regret_points_total": 93.4,
+          "season_additions_count": 5,
+          "season_added_player_points": 99.56666666666644,
+          "season_added_starter_points": 54.13333333333327,
+          "season_added_starts": 9,
+          "season_transaction_value_points": 13.098333333333311,
           "drops_this_week_count": 0,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
           "dropped_summary": "",
@@ -5071,18 +5706,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 82.51306021446243,
-          "letter": "B-",
+          "score_pct": 78.6771148382366,
+          "letter": "C+",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 67.74532169129793,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 71.7753320318471,
+          "letter": "C-",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 82.51306021446243,
             "decision_grade_pct": 79.75019930906187,
             "roster_missed_points": 21.200000000000035,
@@ -5097,33 +5734,83 @@
             "score_vs_season_average": -17.777222222222264,
             "weekly_rank": 7,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 82.51306021446243,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 63.333333333333336,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1350.4333333333323,
-            "season_ideal_points": 1644.5666666666657,
-            "season_lineup_efficiency_pct": 82.11484281573665,
+            "baseline": 75.0,
+            "season_actual_points": 1350.4333333333325,
+            "season_ideal_points": 1696.0666666666662,
+            "season_lineup_efficiency_pct": 79.62147714319403,
             "drop_regret_points_total": 93.4,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 71.7753320318471,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 79.62147714319403,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Moonbeam Ice Cream graded B- this week and D+ for the season-to-date. Weekly process reads as reasonable but costly, season process reads as bad decisions."
+        "summary": "Moonbeam Ice Cream graded C+ this week and C- for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as bad decisions."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 82.51306021446243,
-          "letter": "B-",
+          "score_pct": 78.6771148382366,
+          "letter": "C+",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 67.74532169129793,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 71.7753320318471,
+          "letter": "C-",
+          "label": "bad decisions",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 82.51306021446243,
             "decision_grade_pct": 79.75019930906187,
             "roster_missed_points": 21.200000000000035,
@@ -5138,25 +5825,73 @@
             "score_vs_season_average": -17.777222222222264,
             "weekly_rank": 7,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 82.51306021446243,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 63.333333333333336,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1350.4333333333323,
-            "season_ideal_points": 1644.5666666666657,
-            "season_lineup_efficiency_pct": 82.11484281573665,
+            "baseline": 75.0,
+            "season_actual_points": 1350.4333333333325,
+            "season_ideal_points": 1696.0666666666662,
+            "season_lineup_efficiency_pct": 79.62147714319403,
             "drop_regret_points_total": 93.4,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 71.7753320318471,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 79.62147714319403,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 51.111111111111114,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Moonbeam Ice Cream graded B- this week and D+ for the season-to-date. Weekly process reads as reasonable but costly, season process reads as bad decisions."
+        "summary": "Moonbeam Ice Cream graded C+ this week and C- for the season-to-date (established). Weekly management reads as reasonable but costly; season management reads as bad decisions."
       }
     },
     "Joe\u2019s Cocksmithing Station": {
       "actual_score": 173.93333333333325,
       "ideal_score": 177.93333333333325,
       "optimization_missed": 4.0,
-      "manager_grade_pct": 97.75196702884975,
+      "manager_grade_pct": 98.2015736230798,
       "manager_grade_letter": "A+",
       "lineup_grade_pct": 97.75196702884975,
       "trend": "unchanged",
@@ -5420,7 +6155,7 @@
           "point_swing": 10.2,
           "position": "RB"
         },
-        "manager_grade_final_pct": 97.75196702884975
+        "manager_grade_final_pct": 98.2015736230798
       },
       "team_story": "Joe\u2019s Cocksmithing Station is unchanged with 2 actionable move(s): 1 start/sit and 1 waiver adds, worth a retrospective +14.2 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -5435,7 +6170,7 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 97.75196702884975,
+      "process_score_pct": 98.2015736230798,
       "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -5574,6 +6309,11 @@
           "move_grade_impact_labels": {},
           "move_grade_tags": [],
           "drop_regret_points_total": 207.73333333333332,
+          "season_additions_count": 8,
+          "season_added_player_points": 271.4,
+          "season_added_starter_points": 208.9,
+          "season_added_starts": 27,
+          "season_transaction_value_points": 28.065625,
           "drops_this_week_count": 0,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
           "dropped_summary": "",
@@ -5744,18 +6484,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 97.75196702884975,
+          "score_pct": 98.2015736230798,
           "letter": "A+",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 78.30101105753113,
-          "letter": "C+",
-          "label": "reasonable but costly"
+          "score_pct": 81.37138020000862,
+          "letter": "B-",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 97.75196702884975,
             "decision_grade_pct": 95.82927769921581,
             "roster_missed_points": 4.0,
@@ -5770,33 +6512,83 @@
             "score_vs_season_average": 56.12277777777777,
             "weekly_rank": 1,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 97.75196702884975,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1419.3999999999994,
-            "season_ideal_points": 1654.9333333333325,
-            "season_lineup_efficiency_pct": 85.76780534966163,
+            "baseline": 75.0,
+            "season_actual_points": 1419.3999999999992,
+            "season_ideal_points": 1633.633333333332,
+            "season_lineup_efficiency_pct": 86.88608214817688,
             "drop_regret_points_total": 207.73333333333332,
-            "trend": "unchanged"
+            "trend": "unchanged",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 81.37138020000862,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 86.88608214817688,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 75.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Joe\u2019s Cocksmithing Station graded A+ this week and C+ for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+        "summary": "Joe\u2019s Cocksmithing Station graded A+ this week and B- for the season-to-date (established). Weekly management reads as creative edge; season management reads as reasonable but costly."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 97.75196702884975,
+          "score_pct": 98.2015736230798,
           "letter": "A+",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 78.30101105753113,
-          "letter": "C+",
-          "label": "reasonable but costly"
+          "score_pct": 81.37138020000862,
+          "letter": "B-",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 97.75196702884975,
             "decision_grade_pct": 95.82927769921581,
             "roster_missed_points": 4.0,
@@ -5811,26 +6603,74 @@
             "score_vs_season_average": 56.12277777777777,
             "weekly_rank": 1,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 97.75196702884975,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1419.3999999999994,
-            "season_ideal_points": 1654.9333333333325,
-            "season_lineup_efficiency_pct": 85.76780534966163,
+            "baseline": 75.0,
+            "season_actual_points": 1419.3999999999992,
+            "season_ideal_points": 1633.633333333332,
+            "season_lineup_efficiency_pct": 86.88608214817688,
             "drop_regret_points_total": 207.73333333333332,
-            "trend": "unchanged"
+            "trend": "unchanged",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 81.37138020000862,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 86.88608214817688,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 75.55555555555556,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 75.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Joe\u2019s Cocksmithing Station graded A+ this week and C+ for the season-to-date. Weekly process reads as creative edge, season process reads as reasonable but costly."
+        "summary": "Joe\u2019s Cocksmithing Station graded A+ this week and B- for the season-to-date (established). Weekly management reads as creative edge; season management reads as reasonable but costly."
       }
     },
     "Two Buck Luck": {
       "actual_score": 161.8666666666666,
       "ideal_score": 164.8666666666666,
       "optimization_missed": 3.0,
-      "manager_grade_pct": 98.18034775576223,
-      "manager_grade_letter": "A+",
+      "manager_grade_pct": 93.32487532012401,
+      "manager_grade_letter": "A",
       "lineup_grade_pct": 98.18034775576223,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -6040,7 +6880,7 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 98.18034775576223
+        "manager_grade_final_pct": 93.32487532012401
       },
       "team_story": "Two Buck Luck is improving with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +3.0 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -6065,8 +6905,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 98.18034775576223,
-      "process_score_letter": "A+",
+      "process_score_pct": 93.32487532012401,
+      "process_score_letter": "A",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -6161,6 +7001,11 @@
             "Non-obvious start hit"
           ],
           "drop_regret_points_total": 758.7333333333327,
+          "season_additions_count": 19,
+          "season_added_player_points": 981.9333333333317,
+          "season_added_starter_points": 539.4999999999993,
+          "season_added_starts": 41,
+          "season_transaction_value_points": 34.21622807017539,
           "drops_this_week_count": 1,
           "move_quality_summary": "Adds classified this week: 0 positive | 0 bad. Adds improved the weekly grade by 2.5 pts.",
           "dropped_summary": "Moved away this week: Baker Mayfield.",
@@ -6513,18 +7358,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 98.18034775576223,
-          "letter": "A+",
+          "score_pct": 93.32487532012401,
+          "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 67.2219066786099,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 91.22852594355557,
+          "letter": "A-",
+          "label": "well managed",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 98.18034775576223,
             "decision_grade_pct": 98.18034775576223,
             "roster_missed_points": 3.0,
@@ -6541,33 +7388,83 @@
             "score_vs_season_average": 44.05611111111111,
             "weekly_rank": 3,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 98.18034775576223,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 85.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "season_actual_points": 1526.5333333333324,
-            "season_ideal_points": 1877.099999999999,
-            "season_lineup_efficiency_pct": 81.32402819952763,
+            "season_ideal_points": 1918.7666666666655,
+            "season_lineup_efficiency_pct": 79.5580494414815,
             "drop_regret_points_total": 758.7333333333327,
-            "trend": "improving"
+            "trend": "improving",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 91.22852594355557,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 79.5580494414815,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 90.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Two Buck Luck graded A+ this week and D+ for the season-to-date. Weekly process reads as creative edge, season process reads as bad decisions."
+        "summary": "Two Buck Luck graded A this week and A- for the season-to-date (established). Weekly management reads as creative edge; season management reads as well managed."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 98.18034775576223,
-          "letter": "A+",
+          "score_pct": 93.32487532012401,
+          "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 67.2219066786099,
-          "letter": "D+",
-          "label": "bad decisions"
+          "score_pct": 91.22852594355557,
+          "letter": "A-",
+          "label": "well managed",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 98.18034775576223,
             "decision_grade_pct": 98.18034775576223,
             "roster_missed_points": 3.0,
@@ -6584,25 +7481,73 @@
             "score_vs_season_average": 44.05611111111111,
             "weekly_rank": 3,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 98.18034775576223,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 85.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "season_actual_points": 1526.5333333333324,
-            "season_ideal_points": 1877.099999999999,
-            "season_lineup_efficiency_pct": 81.32402819952763,
+            "season_ideal_points": 1918.7666666666655,
+            "season_lineup_efficiency_pct": 79.5580494414815,
             "drop_regret_points_total": 758.7333333333327,
-            "trend": "improving"
+            "trend": "improving",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 91.22852594355557,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 79.5580494414815,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 90.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Two Buck Luck graded A+ this week and D+ for the season-to-date. Weekly process reads as creative edge, season process reads as bad decisions."
+        "summary": "Two Buck Luck graded A this week and A- for the season-to-date (established). Weekly management reads as creative edge; season management reads as well managed."
       }
     },
     "Millan Darling Millan": {
       "actual_score": 136.23333333333326,
       "ideal_score": 136.23333333333326,
       "optimization_missed": 0.0,
-      "manager_grade_pct": 100.0,
+      "manager_grade_pct": 97.0,
       "manager_grade_letter": "A+",
       "lineup_grade_pct": 100.0,
       "trend": "declining",
@@ -6752,7 +7697,7 @@
         "decision_grade_pct": 100.0,
         "top_lineup_swap": null,
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 100.0
+        "manager_grade_final_pct": 97.0
       },
       "team_story": "Millan Darling Millan had a clean week with minimal lineup leakage (0.0 missed points) and no high-value moves.",
       "boom_bust": [
@@ -6777,7 +7722,7 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 100.0,
+      "process_score_pct": 97.0,
       "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [],
@@ -6819,6 +7764,11 @@
             "Hidden upside hit"
           ],
           "drop_regret_points_total": 591.0999999999993,
+          "season_additions_count": 17,
+          "season_added_player_points": 367.1333333333328,
+          "season_added_starter_points": 265.7333333333329,
+          "season_added_starts": 28,
+          "season_transaction_value_points": 17.122549019607817,
           "drops_this_week_count": 2,
           "move_quality_summary": "Adds classified this week: 2 positive | 0 bad. Adds improved the weekly grade by 6.0 pts.",
           "dropped_summary": "Moved away this week: J.J. McCarthy, Tyjae Spears.",
@@ -7174,18 +8124,20 @@
       },
       "manager_grades": {
         "weekly": {
-          "score_pct": 100.0,
+          "score_pct": 97.0,
           "letter": "A+",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 71.18547023527228,
-          "letter": "C-",
-          "label": "bad decisions"
+          "score_pct": 73.86402948015972,
+          "letter": "C",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 100.0,
             "decision_grade_pct": 100.0,
             "roster_missed_points": 0.0,
@@ -7202,33 +8154,83 @@
             "score_vs_season_average": 18.42277777777778,
             "weekly_rank": 4,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 99.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 81.66666666666667,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1464.9666666666658,
-            "season_ideal_points": 1616.5666666666657,
-            "season_lineup_efficiency_pct": 90.62210033610326,
+            "baseline": 75.0,
+            "season_actual_points": 1465.9666666666658,
+            "season_ideal_points": 1599.066666666666,
+            "season_lineup_efficiency_pct": 91.67639456349535,
             "drop_regret_points_total": 591.0999999999993,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 73.86402948015972,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 91.67639456349535,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Millan Darling Millan graded A+ this week and C- for the season-to-date. Weekly process reads as creative edge, season process reads as bad decisions."
+        "summary": "Millan Darling Millan graded A+ this week and C for the season-to-date (established). Weekly management reads as creative edge; season management reads as reasonable but costly."
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 100.0,
+          "score_pct": 97.0,
           "letter": "A+",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 71.18547023527228,
-          "letter": "C-",
-          "label": "bad decisions"
+          "score_pct": 73.86402948015972,
+          "letter": "C",
+          "label": "reasonable but costly",
+          "confidence": 1.0,
+          "confidence_label": "Established"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 100.0,
             "decision_grade_pct": 100.0,
             "roster_missed_points": 0.0,
@@ -7245,18 +8247,66 @@
             "score_vs_season_average": 18.42277777777778,
             "weekly_rank": 4,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 60.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 99.0,
+                "weight_pct": 25.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 81.66666666666667,
+                "weight_pct": 15.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 1464.9666666666658,
-            "season_ideal_points": 1616.5666666666657,
-            "season_lineup_efficiency_pct": 90.62210033610326,
+            "baseline": 75.0,
+            "season_actual_points": 1465.9666666666658,
+            "season_ideal_points": 1599.066666666666,
+            "season_lineup_efficiency_pct": 91.67639456349535,
             "drop_regret_points_total": 591.0999999999993,
-            "trend": "declining"
+            "trend": "declining",
+            "weeks_completed": 12,
+            "confidence": 1.0,
+            "confidence_label": "Established",
+            "raw_score_pct": 73.86402948015972,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 91.67639456349535,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 30.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "points_performance": {
+                "score_pct": 87.77777777777777,
+                "weight_pct": 15.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": 55.0,
+                "weight_pct": 5.0,
+                "available": true
+              }
+            }
           }
         },
-        "summary": "Millan Darling Millan graded A+ this week and C- for the season-to-date. Weekly process reads as creative edge, season process reads as bad decisions."
+        "summary": "Millan Darling Millan graded A+ this week and C for the season-to-date (established). Weekly management reads as creative edge; season management reads as reasonable but costly."
       }
     }
   },

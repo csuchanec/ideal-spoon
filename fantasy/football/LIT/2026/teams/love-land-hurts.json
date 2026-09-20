@@ -12,7 +12,7 @@
           "grade_letter": "D+",
           "ideal_score": 144.93333333333322,
           "luck_label": "Normal variance",
-          "manager_score_pct": 66.46734130634772,
+          "manager_score_pct": 64.61831748952261,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -39,7 +39,7 @@
           "momentum_delta_points": 0.0,
           "momentum_label": "Not enough pace data",
           "move_process_adjustment": 0.0,
-          "process_score_pct": 66.46734130634772,
+          "process_score_pct": 64.61831748952261,
           "week": 1
         }
       ],
@@ -48,7 +48,7 @@
           "grade_letter": "D+",
           "ideal_score": 144.93333333333322,
           "luck_label": "Normal variance",
-          "manager_score_pct": 66.46734130634772,
+          "manager_score_pct": 64.61831748952261,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -81,7 +81,7 @@
         {
           "grade_letter": "D+",
           "ideal_score": 144.93333333333322,
-          "manager_score_pct": 66.46734130634772,
+          "manager_score_pct": 64.61831748952261,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -97,7 +97,7 @@
         {
           "grade_letter": "D+",
           "ideal_score": 144.93333333333322,
-          "manager_score_pct": 66.46734130634772,
+          "manager_score_pct": 64.61831748952261,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -230,7 +230,7 @@
         {
           "grade_letter": "D+",
           "ideal_score": 144.93333333333322,
-          "manager_score_pct": 66.46734130634772,
+          "manager_score_pct": 64.61831748952261,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -255,8 +255,9 @@
       "pickup_surprise_points": 0,
       "record": "1-0",
       "score_volatility": 0.0,
-      "season_grade_letter": "D-",
-      "season_grade_pct": 59.66873507481309,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_grade_pct": 73.46819312412688,
       "total_missed_lineup_points": 48.6,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": 96.33
@@ -269,7 +270,7 @@
     }
   },
   "summary": {
-    "average_manager_score_pct": 66.46734130634772,
+    "average_manager_score_pct": 64.61831748952261,
     "average_score": 96.33,
     "best_week": {
       "score": 96.33,
@@ -289,8 +290,9 @@
     "missed_lineup_points": 48.6,
     "move_grade_impact": 0.0,
     "record": "1-0",
-    "season_grade_letter": "D-",
-    "season_grade_pct": 59.66873507481309,
+    "season_confidence_label": "Provisional",
+    "season_grade_letter": "C",
+    "season_grade_pct": 73.46819312412688,
     "team_name": "Love(land) Hurts",
     "total_points": 96.33
   },
@@ -302,17 +304,65 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
-          "baseline": 85.0,
+          "baseline": 75.0,
+          "component_scores": {
+            "adaptability": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            },
+            "lineup_management": {
+              "available": true,
+              "score_pct": 66.46734130634772,
+              "weight_pct": 40.0
+            },
+            "points_performance": {
+              "available": true,
+              "score_pct": 57.22222222222222,
+              "weight_pct": 20.0
+            },
+            "roster_construction": {
+              "available": true,
+              "score_pct": 69.44444444444444,
+              "weight_pct": 40.0
+            },
+            "transaction_value": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "season_actual_points": 96.33,
-          "season_ideal_points": 145.63333333333324,
-          "season_lineup_efficiency_pct": 66.14557106889453,
-          "trend": "insufficient_data"
+          "raw_score_pct": 65.8091587447613,
+          "season_actual_points": 96.33333333333323,
+          "season_ideal_points": 144.93333333333322,
+          "season_lineup_efficiency_pct": 66.46734130634772,
+          "trend": "insufficient_data",
+          "weeks_completed": 1
         },
         "weekly": {
           "bad_moves_this_week": 0,
-          "baseline": 85.0,
+          "baseline": 75.0,
           "beat_league_median": false,
+          "component_scores": {
+            "competitive_output": {
+              "available": true,
+              "score_pct": 57.22222222222222,
+              "weight_pct": 20.0
+            },
+            "lineup_decisions": {
+              "available": true,
+              "score_pct": 66.46734130634772,
+              "weight_pct": 80.0
+            },
+            "transaction_deployment": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
           "decision_grade_pct": 66.46734130634772,
           "free_agent_missed_points": 0.0,
           "good_moves_this_week": 0,
@@ -331,7 +381,7 @@
       "grade_letter": "D+",
       "ideal_score": 144.93333333333322,
       "manager_display": "Matt",
-      "manager_score_pct": 66.46734130634772,
+      "manager_score_pct": 64.61831748952261,
       "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
       "missed_lineup_points": 48.6,
       "move_grade_impact": 0.0,
@@ -340,8 +390,9 @@
       "opponent_score": 52.0,
       "result": "W",
       "score": 96.33,
-      "season_grade_letter": "D-",
-      "season_manager_score_pct": 59.66873507481309,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_manager_score_pct": 73.46819312412688,
       "started_all": [
         {
           "name": "Josh Allen",

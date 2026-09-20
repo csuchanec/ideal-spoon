@@ -4,10 +4,10 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-20T14:50:14.180620",
+    "generated_at": "2026-09-20T18:03:25.953083",
     "page_title": "Sigma Chi Whiteout vs In Purdytory matchup report",
     "matchup_id": "week-01-sigma-chi-whiteout-vs-in-purdytory",
-    "output_dir": "/Users/csuchanec/dev/code/FantasyFootball/analysis/weekly_report/data/2026/matchups_week_01"
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
   },
   "matchup": {
     "matchup_id": "week-01-sigma-chi-whiteout-vs-in-purdytory",
@@ -49,22 +49,24 @@
       "manager_display": "Brian B",
       "actual_score": 178.0333333333333,
       "ideal_score": 191.36666666666665,
-      "manager_grade_pct": 93.0325727225222,
+      "manager_grade_pct": 93.20383595579553,
       "manager_grade_letter": "A",
       "manager_grades": {
         "weekly": {
-          "score_pct": 93.0325727225222,
+          "score_pct": 93.20383595579553,
           "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 86.64225274672205,
-          "letter": "B",
-          "label": "well managed"
+          "score_pct": 78.0910604037237,
+          "letter": "C+",
+          "label": "reasonable but costly",
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 93.0325727225222,
             "decision_grade_pct": 93.0325727225222,
             "roster_missed_points": 13.333333333333336,
@@ -79,35 +81,85 @@
             "score_vs_season_average": 54.14933333333329,
             "weekly_rank": 2,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 93.0325727225222,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 178.03,
-            "season_ideal_points": 198.9666666666666,
-            "season_lineup_efficiency_pct": 89.4772993801307,
+            "baseline": 75.0,
+            "season_actual_points": 178.0333333333333,
+            "season_ideal_points": 191.36666666666665,
+            "season_lineup_efficiency_pct": 93.0325727225222,
             "drop_regret_points_total": 0.0,
-            "trend": "insufficient_data"
+            "trend": "insufficient_data",
+            "weeks_completed": 1,
+            "confidence": 0.16666666666666666,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 93.5463624223422,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 93.0325727225222,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "points_performance": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              }
+            }
           }
         },
-        "summary": "Sigma Chi Whiteout graded A this week and B for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
+        "summary": "Sigma Chi Whiteout graded A this week and C+ for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as reasonable but costly."
       },
-      "process_score_pct": 93.0325727225222,
+      "process_score_pct": 93.20383595579553,
       "process_score_letter": "A",
       "process_scores": {
         "weekly": {
-          "score_pct": 93.0325727225222,
+          "score_pct": 93.20383595579553,
           "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 86.64225274672205,
-          "letter": "B",
-          "label": "well managed"
+          "score_pct": 78.0910604037237,
+          "letter": "C+",
+          "label": "reasonable but costly",
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 93.0325727225222,
             "decision_grade_pct": 93.0325727225222,
             "roster_missed_points": 13.333333333333336,
@@ -122,18 +174,66 @@
             "score_vs_season_average": 54.14933333333329,
             "weekly_rank": 2,
             "league_size": 10,
-            "beat_league_median": true
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 93.0325727225222,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 178.03,
-            "season_ideal_points": 198.9666666666666,
-            "season_lineup_efficiency_pct": 89.4772993801307,
+            "baseline": 75.0,
+            "season_actual_points": 178.0333333333333,
+            "season_ideal_points": 191.36666666666665,
+            "season_lineup_efficiency_pct": 93.0325727225222,
             "drop_regret_points_total": 0.0,
-            "trend": "insufficient_data"
+            "trend": "insufficient_data",
+            "weeks_completed": 1,
+            "confidence": 0.16666666666666666,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 93.5463624223422,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 93.0325727225222,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "points_performance": {
+                "score_pct": 93.88888888888889,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              }
+            }
           }
         },
-        "summary": "Sigma Chi Whiteout graded A this week and B for the season-to-date. Weekly process reads as creative edge, season process reads as well managed."
+        "summary": "Sigma Chi Whiteout graded A this week and C+ for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as reasonable but costly."
       },
       "season_context": {
         "seed": 2,
@@ -669,22 +769,24 @@
       "manager_display": "Chris P.",
       "actual_score": 111.66666666666659,
       "ideal_score": 134.56666666666658,
-      "manager_grade_pct": 82.98241268268515,
-      "manager_grade_letter": "B-",
+      "manager_grade_pct": 79.05259681281478,
+      "manager_grade_letter": "C+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 82.98241268268515,
-          "letter": "B-",
+          "score_pct": 79.05259681281478,
+          "letter": "C+",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.52551562203318,
+          "score_pct": 73.95808677143827,
           "letter": "C",
-          "label": "reasonable but costly"
+          "label": "reasonable but costly",
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 82.98241268268515,
             "decision_grade_pct": 82.98241268268515,
             "roster_missed_points": 22.9,
@@ -699,35 +801,85 @@
             "score_vs_season_average": -12.217333333333428,
             "weekly_rank": 7,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 82.98241268268515,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 63.333333333333336,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 111.67,
-            "season_ideal_points": 137.0666666666666,
-            "season_lineup_efficiency_pct": 81.47130350194556,
+            "baseline": 75.0,
+            "season_actual_points": 111.66666666666659,
+            "season_ideal_points": 134.56666666666658,
+            "season_lineup_efficiency_pct": 82.98241268268515,
             "drop_regret_points_total": 0.0,
-            "trend": "insufficient_data"
+            "trend": "insufficient_data",
+            "weeks_completed": 1,
+            "confidence": 0.16666666666666666,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 68.7485206286296,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 82.98241268268515,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "points_performance": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              }
+            }
           }
         },
-        "summary": "In Purdytory graded B- this week and C for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+        "summary": "In Purdytory graded C+ this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
       },
-      "process_score_pct": 82.98241268268515,
-      "process_score_letter": "B-",
+      "process_score_pct": 79.05259681281478,
+      "process_score_letter": "C+",
       "process_scores": {
         "weekly": {
-          "score_pct": 82.98241268268515,
-          "letter": "B-",
+          "score_pct": 79.05259681281478,
+          "letter": "C+",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.52551562203318,
+          "score_pct": 73.95808677143827,
           "letter": "C",
-          "label": "reasonable but costly"
+          "label": "reasonable but costly",
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional"
         },
         "components": {
           "weekly": {
-            "baseline": 85.0,
+            "baseline": 75.0,
             "lineup_efficiency_pct": 82.98241268268515,
             "decision_grade_pct": 82.98241268268515,
             "roster_missed_points": 22.9,
@@ -742,18 +894,66 @@
             "score_vs_season_average": -12.217333333333428,
             "weekly_rank": 7,
             "league_size": 10,
-            "beat_league_median": false
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 82.98241268268515,
+                "weight_pct": 80.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "competitive_output": {
+                "score_pct": 63.333333333333336,
+                "weight_pct": 20.0,
+                "available": true
+              }
+            }
           },
           "season": {
-            "baseline": 85.0,
-            "season_actual_points": 111.67,
-            "season_ideal_points": 137.0666666666666,
-            "season_lineup_efficiency_pct": 81.47130350194556,
+            "baseline": 75.0,
+            "season_actual_points": 111.66666666666659,
+            "season_ideal_points": 134.56666666666658,
+            "season_lineup_efficiency_pct": 82.98241268268515,
             "drop_regret_points_total": 0.0,
-            "trend": "insufficient_data"
+            "trend": "insufficient_data",
+            "weeks_completed": 1,
+            "confidence": 0.16666666666666666,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 68.7485206286296,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 82.98241268268515,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "roster_construction": {
+                "score_pct": 57.22222222222222,
+                "weight_pct": 40.0,
+                "available": true
+              },
+              "transaction_value": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              },
+              "points_performance": {
+                "score_pct": 63.33333333333333,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "adaptability": {
+                "score_pct": null,
+                "weight_pct": 0.0,
+                "available": false
+              }
+            }
           }
         },
-        "summary": "In Purdytory graded B- this week and C for the season-to-date. Weekly process reads as reasonable but costly, season process reads as reasonable but costly."
+        "summary": "In Purdytory graded C+ this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
       },
       "season_context": {
         "seed": 8,

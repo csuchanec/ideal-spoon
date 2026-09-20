@@ -12,7 +12,7 @@
           "grade_letter": "A",
           "ideal_score": 191.36666666666665,
           "luck_label": "Normal variance",
-          "manager_score_pct": 93.0325727225222,
+          "manager_score_pct": 93.20383595579553,
           "matchup_href": "../matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html",
           "missed_lineup_points": 13.333333333333336,
           "opponent": "In Purdytory",
@@ -39,7 +39,7 @@
           "momentum_delta_points": 0.0,
           "momentum_label": "Not enough pace data",
           "move_process_adjustment": 0.0,
-          "process_score_pct": 93.0325727225222,
+          "process_score_pct": 93.20383595579553,
           "week": 1
         }
       ],
@@ -48,7 +48,7 @@
           "grade_letter": "A",
           "ideal_score": 191.36666666666665,
           "luck_label": "Normal variance",
-          "manager_score_pct": 93.0325727225222,
+          "manager_score_pct": 93.20383595579553,
           "matchup_href": "../matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html",
           "missed_lineup_points": 13.333333333333336,
           "opponent": "In Purdytory",
@@ -81,7 +81,7 @@
         {
           "grade_letter": "A",
           "ideal_score": 191.36666666666665,
-          "manager_score_pct": 93.0325727225222,
+          "manager_score_pct": 93.20383595579553,
           "matchup_href": "../matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html",
           "missed_lineup_points": 13.333333333333336,
           "opponent": "In Purdytory",
@@ -97,7 +97,7 @@
         {
           "grade_letter": "A",
           "ideal_score": 191.36666666666665,
-          "manager_score_pct": 93.0325727225222,
+          "manager_score_pct": 93.20383595579553,
           "matchup_href": "../matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html",
           "missed_lineup_points": 13.333333333333336,
           "opponent": "In Purdytory",
@@ -230,7 +230,7 @@
         {
           "grade_letter": "A",
           "ideal_score": 191.36666666666665,
-          "manager_score_pct": 93.0325727225222,
+          "manager_score_pct": 93.20383595579553,
           "matchup_href": "../matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html",
           "missed_lineup_points": 13.333333333333336,
           "opponent": "In Purdytory",
@@ -255,8 +255,9 @@
       "pickup_surprise_points": 0,
       "record": "1-0",
       "score_volatility": 0.0,
-      "season_grade_letter": "B",
-      "season_grade_pct": 86.64225274672205,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C+",
+      "season_grade_pct": 78.0910604037237,
       "total_missed_lineup_points": 13.333333333333336,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": 178.03
@@ -269,7 +270,7 @@
     }
   },
   "summary": {
-    "average_manager_score_pct": 93.0325727225222,
+    "average_manager_score_pct": 93.20383595579553,
     "average_score": 178.03,
     "best_week": {
       "score": 178.03,
@@ -289,8 +290,9 @@
     "missed_lineup_points": 13.333333333333336,
     "move_grade_impact": 0.0,
     "record": "1-0",
-    "season_grade_letter": "B",
-    "season_grade_pct": 86.64225274672205,
+    "season_confidence_label": "Provisional",
+    "season_grade_letter": "C+",
+    "season_grade_pct": 78.0910604037237,
     "team_name": "Sigma Chi Whiteout",
     "total_points": 178.03
   },
@@ -302,17 +304,65 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
-          "baseline": 85.0,
+          "baseline": 75.0,
+          "component_scores": {
+            "adaptability": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            },
+            "lineup_management": {
+              "available": true,
+              "score_pct": 93.0325727225222,
+              "weight_pct": 40.0
+            },
+            "points_performance": {
+              "available": true,
+              "score_pct": 93.88888888888889,
+              "weight_pct": 20.0
+            },
+            "roster_construction": {
+              "available": true,
+              "score_pct": 93.88888888888889,
+              "weight_pct": 40.0
+            },
+            "transaction_value": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "season_actual_points": 178.03,
-          "season_ideal_points": 198.9666666666666,
-          "season_lineup_efficiency_pct": 89.4772993801307,
-          "trend": "insufficient_data"
+          "raw_score_pct": 93.5463624223422,
+          "season_actual_points": 178.0333333333333,
+          "season_ideal_points": 191.36666666666665,
+          "season_lineup_efficiency_pct": 93.0325727225222,
+          "trend": "insufficient_data",
+          "weeks_completed": 1
         },
         "weekly": {
           "bad_moves_this_week": 0,
-          "baseline": 85.0,
+          "baseline": 75.0,
           "beat_league_median": true,
+          "component_scores": {
+            "competitive_output": {
+              "available": true,
+              "score_pct": 93.88888888888889,
+              "weight_pct": 20.0
+            },
+            "lineup_decisions": {
+              "available": true,
+              "score_pct": 93.0325727225222,
+              "weight_pct": 80.0
+            },
+            "transaction_deployment": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
           "decision_grade_pct": 93.0325727225222,
           "free_agent_missed_points": 0.0,
           "good_moves_this_week": 0,
@@ -331,7 +381,7 @@
       "grade_letter": "A",
       "ideal_score": 191.36666666666665,
       "manager_display": "Brian B",
-      "manager_score_pct": 93.0325727225222,
+      "manager_score_pct": 93.20383595579553,
       "matchup_href": "../matchups_week_01/matchup_01_sigma-chi-whiteout_vs_in-purdytory.html",
       "missed_lineup_points": 13.333333333333336,
       "move_grade_impact": 0.0,
@@ -340,8 +390,9 @@
       "opponent_score": 111.67,
       "result": "W",
       "score": 178.03,
-      "season_grade_letter": "B",
-      "season_manager_score_pct": 86.64225274672205,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C+",
+      "season_manager_score_pct": 78.0910604037237,
       "started_all": [
         {
           "name": "Kenneth Walker",

@@ -12,7 +12,7 @@
           "grade_letter": "C-",
           "ideal_score": 108.7666666666666,
           "luck_label": "Normal variance",
-          "manager_score_pct": 71.40668096843395,
+          "manager_score_pct": 69.26067524772704,
           "matchup_href": "../matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html",
           "missed_lineup_points": 31.1,
           "opponent": "ZSzizzle",
@@ -39,7 +39,7 @@
           "momentum_delta_points": 0.0,
           "momentum_label": "Not enough pace data",
           "move_process_adjustment": 0.0,
-          "process_score_pct": 71.40668096843395,
+          "process_score_pct": 69.26067524772704,
           "week": 1
         }
       ],
@@ -48,7 +48,7 @@
           "grade_letter": "C-",
           "ideal_score": 108.7666666666666,
           "luck_label": "Normal variance",
-          "manager_score_pct": 71.40668096843395,
+          "manager_score_pct": 69.26067524772704,
           "matchup_href": "../matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html",
           "missed_lineup_points": 31.1,
           "opponent": "ZSzizzle",
@@ -81,7 +81,7 @@
         {
           "grade_letter": "C-",
           "ideal_score": 108.7666666666666,
-          "manager_score_pct": 71.40668096843395,
+          "manager_score_pct": 69.26067524772704,
           "matchup_href": "../matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html",
           "missed_lineup_points": 31.1,
           "opponent": "ZSzizzle",
@@ -97,7 +97,7 @@
         {
           "grade_letter": "C-",
           "ideal_score": 108.7666666666666,
-          "manager_score_pct": 71.40668096843395,
+          "manager_score_pct": 69.26067524772704,
           "matchup_href": "../matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html",
           "missed_lineup_points": 31.1,
           "opponent": "ZSzizzle",
@@ -230,7 +230,7 @@
         {
           "grade_letter": "C-",
           "ideal_score": 108.7666666666666,
-          "manager_score_pct": 71.40668096843395,
+          "manager_score_pct": 69.26067524772704,
           "matchup_href": "../matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html",
           "missed_lineup_points": 31.1,
           "opponent": "ZSzizzle",
@@ -255,8 +255,9 @@
       "pickup_surprise_points": 11.199999999999928,
       "record": "0-1",
       "score_volatility": 0.0,
-      "season_grade_letter": "D+",
-      "season_grade_pct": 64.04301610449106,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_grade_pct": 72.92491303342635,
       "total_missed_lineup_points": 31.1,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": null
@@ -325,7 +326,7 @@
     }
   },
   "summary": {
-    "average_manager_score_pct": 71.40668096843395,
+    "average_manager_score_pct": 69.26067524772704,
     "average_score": 77.67,
     "best_week": {
       "score": 77.67,
@@ -345,8 +346,9 @@
     "missed_lineup_points": 31.1,
     "move_grade_impact": 0.0,
     "record": "0-1",
-    "season_grade_letter": "D+",
-    "season_grade_pct": 64.04301610449106,
+    "season_confidence_label": "Provisional",
+    "season_grade_letter": "C",
+    "season_grade_pct": 72.92491303342635,
     "team_name": "Nacua-Cola",
     "total_points": 77.67
   },
@@ -383,17 +385,65 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
-          "baseline": 85.0,
+          "baseline": 75.0,
+          "component_scores": {
+            "adaptability": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            },
+            "lineup_management": {
+              "available": true,
+              "score_pct": 71.40668096843395,
+              "weight_pct": 31.57894736842105
+            },
+            "points_performance": {
+              "available": true,
+              "score_pct": 51.111111111111114,
+              "weight_pct": 15.789473684210526
+            },
+            "roster_construction": {
+              "available": true,
+              "score_pct": 51.111111111111114,
+              "weight_pct": 31.57894736842105
+            },
+            "transaction_value": {
+              "available": true,
+              "score_pct": 75.0,
+              "weight_pct": 21.05263157894737
+            }
+          },
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "season_actual_points": 77.67,
-          "season_ideal_points": 109.9666666666666,
-          "season_lineup_efficiency_pct": 70.63049408911796,
-          "trend": "insufficient_data"
+          "raw_score_pct": 62.54947820055809,
+          "season_actual_points": 77.6666666666666,
+          "season_ideal_points": 108.7666666666666,
+          "season_lineup_efficiency_pct": 71.40668096843395,
+          "trend": "insufficient_data",
+          "weeks_completed": 1
         },
         "weekly": {
           "bad_moves_this_week": 0,
-          "baseline": 85.0,
+          "baseline": 75.0,
           "beat_league_median": false,
+          "component_scores": {
+            "competitive_output": {
+              "available": true,
+              "score_pct": 51.111111111111114,
+              "weight_pct": 15.0
+            },
+            "lineup_decisions": {
+              "available": true,
+              "score_pct": 71.40668096843395,
+              "weight_pct": 60.0
+            },
+            "transaction_deployment": {
+              "available": true,
+              "score_pct": 75.0,
+              "weight_pct": 25.0
+            }
+          },
           "decision_grade_pct": 71.40668096843395,
           "free_agent_missed_points": 0.0,
           "good_moves_this_week": 1,
@@ -414,7 +464,7 @@
       "grade_letter": "C-",
       "ideal_score": 108.7666666666666,
       "manager_display": "Craig",
-      "manager_score_pct": 71.40668096843395,
+      "manager_score_pct": 69.26067524772704,
       "matchup_href": "../matchups_week_01/matchup_04_zszizzle_vs_nacua-cola.html",
       "missed_lineup_points": 31.1,
       "move_grade_impact": 0.0,
@@ -446,8 +496,9 @@
       "opponent_score": 136.3,
       "result": "L",
       "score": 77.67,
-      "season_grade_letter": "D+",
-      "season_manager_score_pct": 64.04301610449106,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_manager_score_pct": 72.92491303342635,
       "started_all": [
         {
           "name": "Ladd McConkey",

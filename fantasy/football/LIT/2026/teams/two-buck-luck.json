@@ -9,10 +9,10 @@
     "charts": {
       "luck_series": [
         {
-          "grade_letter": "B",
+          "grade_letter": "B-",
           "ideal_score": 147.83333333333326,
           "luck_label": "Normal variance",
-          "manager_score_pct": 84.32919954904173,
+          "manager_score_pct": 81.35224852812226,
           "matchup_href": "../matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html",
           "missed_lineup_points": 23.166666666666643,
           "opponent": "Bend & Snap Count",
@@ -39,16 +39,16 @@
           "momentum_delta_points": 0.0,
           "momentum_label": "Not enough pace data",
           "move_process_adjustment": 0.0,
-          "process_score_pct": 84.32919954904173,
+          "process_score_pct": 81.35224852812226,
           "week": 1
         }
       ],
       "schedule_series": [
         {
-          "grade_letter": "B",
+          "grade_letter": "B-",
           "ideal_score": 147.83333333333326,
           "luck_label": "Normal variance",
-          "manager_score_pct": 84.32919954904173,
+          "manager_score_pct": 81.35224852812226,
           "matchup_href": "../matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html",
           "missed_lineup_points": 23.166666666666643,
           "opponent": "Bend & Snap Count",
@@ -79,9 +79,9 @@
       "bad_luck_games": [],
       "best_games": [
         {
-          "grade_letter": "B",
+          "grade_letter": "B-",
           "ideal_score": 147.83333333333326,
-          "manager_score_pct": 84.32919954904173,
+          "manager_score_pct": 81.35224852812226,
           "matchup_href": "../matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html",
           "missed_lineup_points": 23.166666666666643,
           "opponent": "Bend & Snap Count",
@@ -95,9 +95,9 @@
       ],
       "biggest_lineup_misses": [
         {
-          "grade_letter": "B",
+          "grade_letter": "B-",
           "ideal_score": 147.83333333333326,
-          "manager_score_pct": 84.32919954904173,
+          "manager_score_pct": 81.35224852812226,
           "matchup_href": "../matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html",
           "missed_lineup_points": 23.166666666666643,
           "opponent": "Bend & Snap Count",
@@ -228,9 +228,9 @@
       "tough_schedule_games": [],
       "worst_games": [
         {
-          "grade_letter": "B",
+          "grade_letter": "B-",
           "ideal_score": 147.83333333333326,
-          "manager_score_pct": 84.32919954904173,
+          "manager_score_pct": 81.35224852812226,
           "matchup_href": "../matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html",
           "missed_lineup_points": 23.166666666666643,
           "opponent": "Bend & Snap Count",
@@ -255,8 +255,9 @@
       "pickup_surprise_points": 0,
       "record": "0-1",
       "score_volatility": 0.0,
-      "season_grade_letter": "B-",
-      "season_grade_pct": 80.86431792559192,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_grade_pct": 75.47379848845463,
       "total_missed_lineup_points": 23.166666666666643,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": null
@@ -269,7 +270,7 @@
     }
   },
   "summary": {
-    "average_manager_score_pct": 84.32919954904173,
+    "average_manager_score_pct": 81.35224852812226,
     "average_score": 124.67,
     "best_week": {
       "score": 124.67,
@@ -289,8 +290,9 @@
     "missed_lineup_points": 23.166666666666643,
     "move_grade_impact": 0.0,
     "record": "0-1",
-    "season_grade_letter": "B-",
-    "season_grade_pct": 80.86431792559192,
+    "season_confidence_label": "Provisional",
+    "season_grade_letter": "C",
+    "season_grade_pct": 75.47379848845463,
     "team_name": "Two Buck Luck",
     "total_points": 124.67
   },
@@ -302,17 +304,65 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
-          "baseline": 85.0,
+          "baseline": 75.0,
+          "component_scores": {
+            "adaptability": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            },
+            "lineup_management": {
+              "available": true,
+              "score_pct": 84.32919954904173,
+              "weight_pct": 40.0
+            },
+            "points_performance": {
+              "available": true,
+              "score_pct": 69.44444444444444,
+              "weight_pct": 20.0
+            },
+            "roster_construction": {
+              "available": true,
+              "score_pct": 75.55555555555556,
+              "weight_pct": 40.0
+            },
+            "transaction_value": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
+          "confidence": 0.16666666666666666,
+          "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "season_actual_points": 124.67,
+          "raw_score_pct": 77.8427909307278,
+          "season_actual_points": 124.66666666666663,
           "season_ideal_points": 147.83333333333326,
-          "season_lineup_efficiency_pct": 84.33145434047356,
-          "trend": "insufficient_data"
+          "season_lineup_efficiency_pct": 84.32919954904173,
+          "trend": "insufficient_data",
+          "weeks_completed": 1
         },
         "weekly": {
           "bad_moves_this_week": 0,
-          "baseline": 85.0,
+          "baseline": 75.0,
           "beat_league_median": false,
+          "component_scores": {
+            "competitive_output": {
+              "available": true,
+              "score_pct": 69.44444444444444,
+              "weight_pct": 20.0
+            },
+            "lineup_decisions": {
+              "available": true,
+              "score_pct": 84.32919954904173,
+              "weight_pct": 80.0
+            },
+            "transaction_deployment": {
+              "available": false,
+              "score_pct": null,
+              "weight_pct": 0.0
+            }
+          },
           "decision_grade_pct": 84.32919954904173,
           "free_agent_missed_points": 0.0,
           "good_moves_this_week": 0,
@@ -328,10 +378,10 @@
           "weekly_rank": 6
         }
       },
-      "grade_letter": "B",
+      "grade_letter": "B-",
       "ideal_score": 147.83333333333326,
       "manager_display": "Dave F.",
-      "manager_score_pct": 84.32919954904173,
+      "manager_score_pct": 81.35224852812226,
       "matchup_href": "../matchups_week_01/matchup_05_bend-snap-count_vs_two-buck-luck.html",
       "missed_lineup_points": 23.166666666666643,
       "move_grade_impact": 0.0,
@@ -340,8 +390,9 @@
       "opponent_score": 148.27,
       "result": "L",
       "score": 124.67,
-      "season_grade_letter": "B-",
-      "season_manager_score_pct": 80.86431792559192,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_manager_score_pct": 75.47379848845463,
       "started_all": [
         {
           "name": "Javonte Williams",
