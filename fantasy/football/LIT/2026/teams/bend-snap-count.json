@@ -256,8 +256,8 @@
       "record": "1-0",
       "score_volatility": 0.0,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "C+",
-      "season_grade_pct": 77.40050323390997,
+      "season_grade_letter": "A-",
+      "season_grade_pct": 90.83333333333333,
       "total_missed_lineup_points": 3.10000000000003,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": 148.27
@@ -291,8 +291,8 @@
     "move_grade_impact": 0.0,
     "record": "1-0",
     "season_confidence_label": "Provisional",
-    "season_grade_letter": "C+",
-    "season_grade_pct": 77.40050323390997,
+    "season_grade_letter": "A-",
+    "season_grade_pct": 90.83333333333333,
     "team_name": "Bend & Snap Count",
     "total_points": 148.27
   },
@@ -304,30 +304,46 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
+          "adaptability": {
+            "included_in_rating": false,
+            "reason": "Shown as context only; the current trend label is not precise enough to grade.",
+            "trend": "insufficient_data"
+          },
           "baseline": 75.0,
           "component_scores": {
-            "adaptability": {
-              "available": false,
-              "score_pct": null,
-              "weight_pct": 0.0
-            },
             "lineup_management": {
               "available": true,
-              "score_pct": 97.95199295309402,
-              "weight_pct": 40.0
+              "league_rank": 1,
+              "league_size": 10,
+              "raw_unit": "lineup efficiency",
+              "raw_value": 97.95199295309402,
+              "score_pct": 100.0,
+              "weight_pct": 43.75
             },
             "points_performance": {
               "available": true,
+              "league_rank": 3,
+              "league_size": 10,
+              "raw_unit": "actual points per week",
+              "raw_value": 148.2666666666666,
               "score_pct": 87.77777777777777,
-              "weight_pct": 20.0
+              "weight_pct": 18.75
             },
             "roster_construction": {
               "available": true,
+              "league_rank": 4,
+              "league_size": 10,
+              "raw_unit": "ideal points per week",
+              "raw_value": 151.36666666666662,
               "score_pct": 81.66666666666666,
-              "weight_pct": 40.0
+              "weight_pct": 37.5
             },
             "transaction_value": {
               "available": false,
+              "league_rank": null,
+              "league_size": 0,
+              "raw_unit": "realized transaction value",
+              "raw_value": null,
               "score_pct": null,
               "weight_pct": 0.0
             }
@@ -335,7 +351,7 @@
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "raw_score_pct": 89.40301940345982,
+          "raw_score_pct": 90.83333333333333,
           "season_actual_points": 148.2666666666666,
           "season_ideal_points": 151.36666666666662,
           "season_lineup_efficiency_pct": 97.95199295309402,
@@ -368,6 +384,18 @@
           "good_moves_this_week": 0,
           "league_size": 10,
           "lineup_efficiency_pct": 97.95199295309402,
+          "luck": {
+            "actual_win_credit": 1.0,
+            "expected_win_credit": 0.7610687656005328,
+            "league_size": 10,
+            "luck_win_credit": 0.23893123439946717,
+            "opponent_assisted_win": false,
+            "opponent_decisive_bench_points": 0.0,
+            "opponent_lineup_miss_points": 23.163333333333256,
+            "opponent_score_vs_week_average": 0.7859999999999872,
+            "score_vs_winning_baseline": -0.8220000000000027,
+            "weekly_score_rank": 3
+          },
           "move_grade_adjustment_points": 0.0,
           "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
           "move_grade_tags": [],
@@ -391,8 +419,8 @@
       "result": "W",
       "score": 148.27,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "C+",
-      "season_manager_score_pct": 77.40050323390997,
+      "season_grade_letter": "A-",
+      "season_manager_score_pct": 90.83333333333333,
       "started_all": [
         {
           "name": "Justin Jefferson",

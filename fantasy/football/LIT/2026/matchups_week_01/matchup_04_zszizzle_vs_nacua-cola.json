@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-20T18:03:25.979299",
+    "generated_at": "2026-09-21T21:46:36.567270",
     "page_title": "ZSzizzle vs Nacua-Cola matchup report",
     "matchup_id": "week-01-zszizzle-vs-nacua-cola",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -58,8 +58,8 @@
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 76.55236989400976,
-          "letter": "C+",
+          "score_pct": 75.9375,
+          "letter": "C",
           "label": "reasonable but costly",
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional"
@@ -98,6 +98,18 @@
                 "weight_pct": 20.0,
                 "available": true
               }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.6512103572770397,
+              "luck_win_credit": 0.3487896427229603,
+              "weekly_score_rank": 4,
+              "league_size": 10,
+              "score_vs_winning_baseline": -12.792000000000002,
+              "opponent_score_vs_week_average": -46.21400000000001,
+              "opponent_lineup_miss_points": 31.096666666666593,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
             }
           },
           "season": {
@@ -110,37 +122,53 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 84.31421936405857,
+            "raw_score_pct": 75.9375,
             "component_scores": {
               "lineup_management": {
-                "score_pct": 82.17443729903535,
-                "weight_pct": 40.0,
-                "available": true
+                "score_pct": 63.33333333333333,
+                "weight_pct": 43.75,
+                "available": true,
+                "raw_value": 82.17443729903535,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 7,
+                "league_size": 10
               },
               "roster_construction": {
                 "score_pct": 87.77777777777777,
-                "weight_pct": 40.0,
-                "available": true
+                "weight_pct": 37.5,
+                "available": true,
+                "raw_value": 165.8666666666666,
+                "raw_unit": "ideal points per week",
+                "league_rank": 3,
+                "league_size": 10
               },
               "transaction_value": {
                 "score_pct": null,
                 "weight_pct": 0.0,
-                "available": false
+                "available": false,
+                "raw_value": null,
+                "raw_unit": "realized transaction value",
+                "league_rank": null,
+                "league_size": 0
               },
               "points_performance": {
                 "score_pct": 81.66666666666666,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "adaptability": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "weight_pct": 18.75,
+                "available": true,
+                "raw_value": 136.2999999999999,
+                "raw_unit": "actual points per week",
+                "league_rank": 4,
+                "league_size": 10
               }
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "insufficient_data",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
             }
           }
         },
-        "summary": "ZSzizzle graded B- this week and C+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
+        "summary": "ZSzizzle graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
       },
       "process_score_pct": 82.0728831725616,
       "process_score_letter": "B-",
@@ -151,8 +179,8 @@
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 76.55236989400976,
-          "letter": "C+",
+          "score_pct": 75.9375,
+          "letter": "C",
           "label": "reasonable but costly",
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional"
@@ -191,6 +219,18 @@
                 "weight_pct": 20.0,
                 "available": true
               }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.6512103572770397,
+              "luck_win_credit": 0.3487896427229603,
+              "weekly_score_rank": 4,
+              "league_size": 10,
+              "score_vs_winning_baseline": -12.792000000000002,
+              "opponent_score_vs_week_average": -46.21400000000001,
+              "opponent_lineup_miss_points": 31.096666666666593,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
             }
           },
           "season": {
@@ -203,37 +243,53 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 84.31421936405857,
+            "raw_score_pct": 75.9375,
             "component_scores": {
               "lineup_management": {
-                "score_pct": 82.17443729903535,
-                "weight_pct": 40.0,
-                "available": true
+                "score_pct": 63.33333333333333,
+                "weight_pct": 43.75,
+                "available": true,
+                "raw_value": 82.17443729903535,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 7,
+                "league_size": 10
               },
               "roster_construction": {
                 "score_pct": 87.77777777777777,
-                "weight_pct": 40.0,
-                "available": true
+                "weight_pct": 37.5,
+                "available": true,
+                "raw_value": 165.8666666666666,
+                "raw_unit": "ideal points per week",
+                "league_rank": 3,
+                "league_size": 10
               },
               "transaction_value": {
                 "score_pct": null,
                 "weight_pct": 0.0,
-                "available": false
+                "available": false,
+                "raw_value": null,
+                "raw_unit": "realized transaction value",
+                "league_rank": null,
+                "league_size": 0
               },
               "points_performance": {
                 "score_pct": 81.66666666666666,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "adaptability": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "weight_pct": 18.75,
+                "available": true,
+                "raw_value": 136.2999999999999,
+                "raw_unit": "actual points per week",
+                "league_rank": 4,
+                "league_size": 10
               }
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "insufficient_data",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
             }
           }
         },
-        "summary": "ZSzizzle graded B- this week and C+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
+        "summary": "ZSzizzle graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
       },
       "season_context": {
         "seed": 4,
@@ -855,9 +911,9 @@
           "label": "bad decisions"
         },
         "season": {
-          "score_pct": 72.92491303342635,
-          "letter": "C",
-          "label": "reasonable but costly",
+          "score_pct": 55.888888888888886,
+          "letter": "D-",
+          "label": "failing process",
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional"
         },
@@ -897,6 +953,18 @@
                 "weight_pct": 15.0,
                 "available": true
               }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.11516967626751784,
+              "luck_win_credit": -0.11516967626751784,
+              "weekly_score_rank": 9,
+              "league_size": 10,
+              "score_vs_winning_baseline": -71.42200000000001,
+              "opponent_score_vs_week_average": 12.415999999999997,
+              "opponent_lineup_miss_points": 29.566666666666578,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
             }
           },
           "season": {
@@ -909,37 +977,53 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 62.54947820055809,
+            "raw_score_pct": 55.888888888888886,
             "component_scores": {
               "lineup_management": {
-                "score_pct": 71.40668096843395,
-                "weight_pct": 31.57894736842105,
-                "available": true
+                "score_pct": 51.111111111111114,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 71.40668096843395,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 9,
+                "league_size": 10
               },
               "roster_construction": {
                 "score_pct": 51.111111111111114,
-                "weight_pct": 31.57894736842105,
-                "available": true
+                "weight_pct": 30.0,
+                "available": true,
+                "raw_value": 108.7666666666666,
+                "raw_unit": "ideal points per week",
+                "league_rank": 9,
+                "league_size": 10
               },
               "transaction_value": {
                 "score_pct": 75.0,
-                "weight_pct": 21.05263157894737,
-                "available": true
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 2.799999999999982,
+                "raw_unit": "realized transaction value",
+                "league_rank": 1,
+                "league_size": 1
               },
               "points_performance": {
                 "score_pct": 51.111111111111114,
-                "weight_pct": 15.789473684210526,
-                "available": true
-              },
-              "adaptability": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "weight_pct": 15.0,
+                "available": true,
+                "raw_value": 77.6666666666666,
+                "raw_unit": "actual points per week",
+                "league_rank": 9,
+                "league_size": 10
               }
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "insufficient_data",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
             }
           }
         },
-        "summary": "Nacua-Cola graded C- this week and C for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as reasonable but costly."
+        "summary": "Nacua-Cola graded C- this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process."
       },
       "process_score_pct": 69.26067524772704,
       "process_score_letter": "C-",
@@ -950,9 +1034,9 @@
           "label": "bad decisions"
         },
         "season": {
-          "score_pct": 72.92491303342635,
-          "letter": "C",
-          "label": "reasonable but costly",
+          "score_pct": 55.888888888888886,
+          "letter": "D-",
+          "label": "failing process",
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional"
         },
@@ -992,6 +1076,18 @@
                 "weight_pct": 15.0,
                 "available": true
               }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.11516967626751784,
+              "luck_win_credit": -0.11516967626751784,
+              "weekly_score_rank": 9,
+              "league_size": 10,
+              "score_vs_winning_baseline": -71.42200000000001,
+              "opponent_score_vs_week_average": 12.415999999999997,
+              "opponent_lineup_miss_points": 29.566666666666578,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
             }
           },
           "season": {
@@ -1004,37 +1100,53 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 62.54947820055809,
+            "raw_score_pct": 55.888888888888886,
             "component_scores": {
               "lineup_management": {
-                "score_pct": 71.40668096843395,
-                "weight_pct": 31.57894736842105,
-                "available": true
+                "score_pct": 51.111111111111114,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 71.40668096843395,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 9,
+                "league_size": 10
               },
               "roster_construction": {
                 "score_pct": 51.111111111111114,
-                "weight_pct": 31.57894736842105,
-                "available": true
+                "weight_pct": 30.0,
+                "available": true,
+                "raw_value": 108.7666666666666,
+                "raw_unit": "ideal points per week",
+                "league_rank": 9,
+                "league_size": 10
               },
               "transaction_value": {
                 "score_pct": 75.0,
-                "weight_pct": 21.05263157894737,
-                "available": true
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 2.799999999999982,
+                "raw_unit": "realized transaction value",
+                "league_rank": 1,
+                "league_size": 1
               },
               "points_performance": {
                 "score_pct": 51.111111111111114,
-                "weight_pct": 15.789473684210526,
-                "available": true
-              },
-              "adaptability": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "weight_pct": 15.0,
+                "available": true,
+                "raw_value": 77.6666666666666,
+                "raw_unit": "actual points per week",
+                "league_rank": 9,
+                "league_size": 10
               }
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "insufficient_data",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
             }
           }
         },
-        "summary": "Nacua-Cola graded C- this week and C for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as reasonable but costly."
+        "summary": "Nacua-Cola graded C- this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process."
       },
       "season_context": {
         "seed": 9,

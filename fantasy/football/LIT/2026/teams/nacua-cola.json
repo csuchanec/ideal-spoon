@@ -256,8 +256,8 @@
       "record": "0-1",
       "score_volatility": 0.0,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "C",
-      "season_grade_pct": 72.92491303342635,
+      "season_grade_letter": "D-",
+      "season_grade_pct": 55.888888888888886,
       "total_missed_lineup_points": 31.1,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": null
@@ -347,8 +347,8 @@
     "move_grade_impact": 0.0,
     "record": "0-1",
     "season_confidence_label": "Provisional",
-    "season_grade_letter": "C",
-    "season_grade_pct": 72.92491303342635,
+    "season_grade_letter": "D-",
+    "season_grade_pct": 55.888888888888886,
     "team_name": "Nacua-Cola",
     "total_points": 77.67
   },
@@ -385,38 +385,54 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
+          "adaptability": {
+            "included_in_rating": false,
+            "reason": "Shown as context only; the current trend label is not precise enough to grade.",
+            "trend": "insufficient_data"
+          },
           "baseline": 75.0,
           "component_scores": {
-            "adaptability": {
-              "available": false,
-              "score_pct": null,
-              "weight_pct": 0.0
-            },
             "lineup_management": {
               "available": true,
-              "score_pct": 71.40668096843395,
-              "weight_pct": 31.57894736842105
+              "league_rank": 9,
+              "league_size": 10,
+              "raw_unit": "lineup efficiency",
+              "raw_value": 71.40668096843395,
+              "score_pct": 51.111111111111114,
+              "weight_pct": 35.0
             },
             "points_performance": {
               "available": true,
+              "league_rank": 9,
+              "league_size": 10,
+              "raw_unit": "actual points per week",
+              "raw_value": 77.6666666666666,
               "score_pct": 51.111111111111114,
-              "weight_pct": 15.789473684210526
+              "weight_pct": 15.0
             },
             "roster_construction": {
               "available": true,
+              "league_rank": 9,
+              "league_size": 10,
+              "raw_unit": "ideal points per week",
+              "raw_value": 108.7666666666666,
               "score_pct": 51.111111111111114,
-              "weight_pct": 31.57894736842105
+              "weight_pct": 30.0
             },
             "transaction_value": {
               "available": true,
+              "league_rank": 1,
+              "league_size": 1,
+              "raw_unit": "realized transaction value",
+              "raw_value": 2.799999999999982,
               "score_pct": 75.0,
-              "weight_pct": 21.05263157894737
+              "weight_pct": 20.0
             }
           },
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "raw_score_pct": 62.54947820055809,
+          "raw_score_pct": 55.888888888888886,
           "season_actual_points": 77.6666666666666,
           "season_ideal_points": 108.7666666666666,
           "season_lineup_efficiency_pct": 71.40668096843395,
@@ -449,6 +465,18 @@
           "good_moves_this_week": 1,
           "league_size": 10,
           "lineup_efficiency_pct": 71.40668096843395,
+          "luck": {
+            "actual_win_credit": 0.0,
+            "expected_win_credit": 0.11516967626751784,
+            "league_size": 10,
+            "luck_win_credit": -0.11516967626751784,
+            "opponent_assisted_win": false,
+            "opponent_decisive_bench_points": 0.0,
+            "opponent_lineup_miss_points": 29.566666666666578,
+            "opponent_score_vs_week_average": 12.415999999999997,
+            "score_vs_winning_baseline": -71.42200000000001,
+            "weekly_score_rank": 9
+          },
           "move_grade_adjustment_points": 0.0,
           "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
           "move_grade_tags": [
@@ -497,8 +525,8 @@
       "result": "L",
       "score": 77.67,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "C",
-      "season_manager_score_pct": 72.92491303342635,
+      "season_grade_letter": "D-",
+      "season_manager_score_pct": 55.888888888888886,
       "started_all": [
         {
           "name": "Ladd McConkey",

@@ -256,8 +256,8 @@
       "record": "1-0",
       "score_volatility": 0.0,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "C+",
-      "season_grade_pct": 76.55236989400976,
+      "season_grade_letter": "C",
+      "season_grade_pct": 75.9375,
       "total_missed_lineup_points": 29.566666666666684,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": 136.3
@@ -291,8 +291,8 @@
     "move_grade_impact": 0.0,
     "record": "1-0",
     "season_confidence_label": "Provisional",
-    "season_grade_letter": "C+",
-    "season_grade_pct": 76.55236989400976,
+    "season_grade_letter": "C",
+    "season_grade_pct": 75.9375,
     "team_name": "ZSzizzle",
     "total_points": 136.3
   },
@@ -304,30 +304,46 @@
       "form_label": "Too Early",
       "grade_components": {
         "season": {
+          "adaptability": {
+            "included_in_rating": false,
+            "reason": "Shown as context only; the current trend label is not precise enough to grade.",
+            "trend": "insufficient_data"
+          },
           "baseline": 75.0,
           "component_scores": {
-            "adaptability": {
-              "available": false,
-              "score_pct": null,
-              "weight_pct": 0.0
-            },
             "lineup_management": {
               "available": true,
-              "score_pct": 82.17443729903535,
-              "weight_pct": 40.0
+              "league_rank": 7,
+              "league_size": 10,
+              "raw_unit": "lineup efficiency",
+              "raw_value": 82.17443729903535,
+              "score_pct": 63.33333333333333,
+              "weight_pct": 43.75
             },
             "points_performance": {
               "available": true,
+              "league_rank": 4,
+              "league_size": 10,
+              "raw_unit": "actual points per week",
+              "raw_value": 136.2999999999999,
               "score_pct": 81.66666666666666,
-              "weight_pct": 20.0
+              "weight_pct": 18.75
             },
             "roster_construction": {
               "available": true,
+              "league_rank": 3,
+              "league_size": 10,
+              "raw_unit": "ideal points per week",
+              "raw_value": 165.8666666666666,
               "score_pct": 87.77777777777777,
-              "weight_pct": 40.0
+              "weight_pct": 37.5
             },
             "transaction_value": {
               "available": false,
+              "league_rank": null,
+              "league_size": 0,
+              "raw_unit": "realized transaction value",
+              "raw_value": null,
               "score_pct": null,
               "weight_pct": 0.0
             }
@@ -335,7 +351,7 @@
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "raw_score_pct": 84.31421936405857,
+          "raw_score_pct": 75.9375,
           "season_actual_points": 136.2999999999999,
           "season_ideal_points": 165.8666666666666,
           "season_lineup_efficiency_pct": 82.17443729903535,
@@ -368,6 +384,18 @@
           "good_moves_this_week": 0,
           "league_size": 10,
           "lineup_efficiency_pct": 82.17443729903535,
+          "luck": {
+            "actual_win_credit": 1.0,
+            "expected_win_credit": 0.6512103572770397,
+            "league_size": 10,
+            "luck_win_credit": 0.3487896427229603,
+            "opponent_assisted_win": false,
+            "opponent_decisive_bench_points": 0.0,
+            "opponent_lineup_miss_points": 31.096666666666593,
+            "opponent_score_vs_week_average": -46.21400000000001,
+            "score_vs_winning_baseline": -12.792000000000002,
+            "weekly_score_rank": 4
+          },
           "move_grade_adjustment_points": 0.0,
           "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
           "move_grade_tags": [],
@@ -391,8 +419,8 @@
       "result": "W",
       "score": 136.3,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "C+",
-      "season_manager_score_pct": 76.55236989400976,
+      "season_grade_letter": "C",
+      "season_manager_score_pct": 75.9375,
       "started_all": [
         {
           "name": "Bijan Robinson",
