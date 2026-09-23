@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-21T22:42:55.410644",
+    "generated_at": "2026-09-22T22:28:59.822140",
     "page_title": "Bend & Snap Count vs Two Buck Luck matchup report",
     "matchup_id": "week-01-bend-snap-count-vs-two-buck-luck",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -49,17 +49,17 @@
       "manager_display": "Elissa P.",
       "actual_score": 148.2666666666666,
       "ideal_score": 151.36666666666662,
-      "manager_grade_pct": 95.91714991803077,
+      "manager_grade_pct": 93.14300474637564,
       "manager_grade_letter": "A",
       "manager_grades": {
         "weekly": {
-          "score_pct": 95.91714991803077,
+          "score_pct": 93.14300474637564,
           "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 90.83333333333333,
-          "letter": "A-",
+          "score_pct": 88.88056250723369,
+          "letter": "B+",
           "label": "well managed",
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional"
@@ -76,6 +76,8 @@
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
             "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
             "score_vs_historical_avg": 0.0,
             "season_average_score": 123.88400000000001,
             "score_vs_season_average": 24.38266666666658,
@@ -84,18 +86,18 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 97.95199295309402,
-                "weight_pct": 80.0,
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
               },
               "competitive_output": {
-                "score_pct": 87.77777777777777,
-                "weight_pct": 20.0,
+                "score_pct": 93.81001582125214,
+                "weight_pct": 30.0,
                 "available": true
               }
             },
@@ -103,6 +105,9 @@
               "actual_win_credit": 1.0,
               "expected_win_credit": 0.6805555555555556,
               "luck_win_credit": 0.3194444444444444,
+              "all_play_win_pct": 77.77777777777779,
+              "dominant_win": false,
+              "victory_margin_pct": 19.0500791062607,
               "weekly_score_rank": 3,
               "league_size": 10,
               "score_vs_winning_baseline": 0.0,
@@ -122,11 +127,11 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 90.83333333333333,
+            "raw_score_pct": 88.88056250723369,
             "component_scores": {
               "lineup_management": {
                 "score_pct": 100.0,
-                "weight_pct": 43.75,
+                "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 97.95199295309402,
                 "raw_unit": "lineup efficiency",
@@ -134,8 +139,8 @@
                 "league_size": 10
               },
               "roster_construction": {
-                "score_pct": 81.66666666666666,
-                "weight_pct": 37.5,
+                "score_pct": 84.80044396640506,
+                "weight_pct": 25.0,
                 "available": true,
                 "raw_value": 151.36666666666662,
                 "raw_unit": "ideal points per week",
@@ -143,23 +148,33 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false,
-                "raw_value": null,
-                "raw_unit": "realized transaction value",
-                "league_rank": null,
-                "league_size": 0
-              },
-              "points_performance": {
-                "score_pct": 87.77777777777777,
-                "weight_pct": 18.75,
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "raw_value": 148.2666666666666,
-                "raw_unit": "actual points per week",
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 93.37271861609268,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 77.77777777777779,
+                "raw_unit": "all-play win rate",
                 "league_rank": 3,
                 "league_size": 10
               }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 77.77777777777779,
+              "win_pct": 100.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 18.72718616092684
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
             },
             "adaptability": {
               "included_in_rating": false,
@@ -168,19 +183,19 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded A this week and A- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed."
+        "summary": "Bend & Snap Count graded A this week and B+ for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed."
       },
-      "process_score_pct": 95.91714991803077,
+      "process_score_pct": 93.14300474637564,
       "process_score_letter": "A",
       "process_scores": {
         "weekly": {
-          "score_pct": 95.91714991803077,
+          "score_pct": 93.14300474637564,
           "letter": "A",
           "label": "creative edge"
         },
         "season": {
-          "score_pct": 90.83333333333333,
-          "letter": "A-",
+          "score_pct": 88.88056250723369,
+          "letter": "B+",
           "label": "well managed",
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional"
@@ -197,6 +212,8 @@
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
             "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
             "score_vs_historical_avg": 0.0,
             "season_average_score": 123.88400000000001,
             "score_vs_season_average": 24.38266666666658,
@@ -205,18 +222,18 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 97.95199295309402,
-                "weight_pct": 80.0,
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
               },
               "competitive_output": {
-                "score_pct": 87.77777777777777,
-                "weight_pct": 20.0,
+                "score_pct": 93.81001582125214,
+                "weight_pct": 30.0,
                 "available": true
               }
             },
@@ -224,6 +241,9 @@
               "actual_win_credit": 1.0,
               "expected_win_credit": 0.6805555555555556,
               "luck_win_credit": 0.3194444444444444,
+              "all_play_win_pct": 77.77777777777779,
+              "dominant_win": false,
+              "victory_margin_pct": 19.0500791062607,
               "weekly_score_rank": 3,
               "league_size": 10,
               "score_vs_winning_baseline": 0.0,
@@ -243,11 +263,11 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 90.83333333333333,
+            "raw_score_pct": 88.88056250723369,
             "component_scores": {
               "lineup_management": {
                 "score_pct": 100.0,
-                "weight_pct": 43.75,
+                "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 97.95199295309402,
                 "raw_unit": "lineup efficiency",
@@ -255,8 +275,8 @@
                 "league_size": 10
               },
               "roster_construction": {
-                "score_pct": 81.66666666666666,
-                "weight_pct": 37.5,
+                "score_pct": 84.80044396640506,
+                "weight_pct": 25.0,
                 "available": true,
                 "raw_value": 151.36666666666662,
                 "raw_unit": "ideal points per week",
@@ -264,23 +284,33 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false,
-                "raw_value": null,
-                "raw_unit": "realized transaction value",
-                "league_rank": null,
-                "league_size": 0
-              },
-              "points_performance": {
-                "score_pct": 87.77777777777777,
-                "weight_pct": 18.75,
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "raw_value": 148.2666666666666,
-                "raw_unit": "actual points per week",
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 93.37271861609268,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 77.77777777777779,
+                "raw_unit": "all-play win rate",
                 "league_rank": 3,
                 "league_size": 10
               }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 77.77777777777779,
+              "win_pct": 100.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 18.72718616092684
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
             },
             "adaptability": {
               "included_in_rating": false,
@@ -289,7 +319,7 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded A this week and A- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed."
+        "summary": "Bend & Snap Count graded A this week and B+ for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed."
       },
       "season_context": {
         "seed": 3,
@@ -805,16 +835,16 @@
       "manager_display": "Dave F.",
       "actual_score": 124.66666666666663,
       "ideal_score": 147.83333333333326,
-      "manager_grade_pct": 81.35224852812226,
-      "manager_grade_letter": "B-",
+      "manager_grade_pct": 76.69627959413756,
+      "manager_grade_letter": "C+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 81.35224852812226,
-          "letter": "B-",
+          "score_pct": 76.69627959413756,
+          "letter": "C+",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.40972222222223,
+          "score_pct": 74.05304164612788,
           "letter": "C",
           "label": "reasonable but costly",
           "confidence": 0.16666666666666666,
@@ -832,6 +862,8 @@
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
             "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
             "score_vs_historical_avg": 0.0,
             "season_average_score": 123.88400000000001,
             "score_vs_season_average": 0.7826666666666142,
@@ -840,18 +872,18 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 84.32919954904173,
-                "weight_pct": 80.0,
+                "score_pct": 82.79255918827512,
+                "weight_pct": 50.0,
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
               },
               "competitive_output": {
-                "score_pct": 69.44444444444444,
-                "weight_pct": 20.0,
+                "score_pct": 67.66666666666666,
+                "weight_pct": 30.0,
                 "available": true
               }
             },
@@ -859,6 +891,9 @@
               "actual_win_credit": 0.0,
               "expected_win_credit": 0.35888888888888887,
               "luck_win_credit": -0.35888888888888887,
+              "all_play_win_pct": 44.44444444444444,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
               "weekly_score_rank": 6,
               "league_size": 10,
               "score_vs_winning_baseline": -23.60000000000001,
@@ -878,11 +913,11 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 74.40972222222223,
+            "raw_score_pct": 74.05304164612788,
             "component_scores": {
               "lineup_management": {
-                "score_pct": 75.55555555555556,
-                "weight_pct": 43.75,
+                "score_pct": 82.79255918827512,
+                "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 84.32919954904173,
                 "raw_unit": "lineup efficiency",
@@ -890,8 +925,8 @@
                 "league_size": 10
               },
               "roster_construction": {
-                "score_pct": 75.55555555555556,
-                "weight_pct": 37.5,
+                "score_pct": 78.7359544133464,
+                "weight_pct": 25.0,
                 "available": true,
                 "raw_value": 147.83333333333326,
                 "raw_unit": "ideal points per week",
@@ -899,23 +934,33 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false,
-                "raw_value": null,
-                "raw_unit": "realized transaction value",
-                "league_rank": null,
-                "league_size": 0
-              },
-              "points_performance": {
-                "score_pct": 69.44444444444444,
-                "weight_pct": 18.75,
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "raw_value": 124.66666666666663,
-                "raw_unit": "actual points per week",
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 65.17297487181789,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 44.44444444444444,
+                "raw_unit": "all-play win rate",
                 "league_rank": 6,
                 "league_size": 10
               }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 44.44444444444444,
+              "win_pct": 0.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 0.0
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
             },
             "adaptability": {
               "included_in_rating": false,
@@ -924,18 +969,18 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
+        "summary": "Two Buck Luck graded C+ this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
       },
-      "process_score_pct": 81.35224852812226,
-      "process_score_letter": "B-",
+      "process_score_pct": 76.69627959413756,
+      "process_score_letter": "C+",
       "process_scores": {
         "weekly": {
-          "score_pct": 81.35224852812226,
-          "letter": "B-",
+          "score_pct": 76.69627959413756,
+          "letter": "C+",
           "label": "reasonable but costly"
         },
         "season": {
-          "score_pct": 74.40972222222223,
+          "score_pct": 74.05304164612788,
           "letter": "C",
           "label": "reasonable but costly",
           "confidence": 0.16666666666666666,
@@ -953,6 +998,8 @@
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
             "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
             "score_vs_historical_avg": 0.0,
             "season_average_score": 123.88400000000001,
             "score_vs_season_average": 0.7826666666666142,
@@ -961,18 +1008,18 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 84.32919954904173,
-                "weight_pct": 80.0,
+                "score_pct": 82.79255918827512,
+                "weight_pct": 50.0,
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
               },
               "competitive_output": {
-                "score_pct": 69.44444444444444,
-                "weight_pct": 20.0,
+                "score_pct": 67.66666666666666,
+                "weight_pct": 30.0,
                 "available": true
               }
             },
@@ -980,6 +1027,9 @@
               "actual_win_credit": 0.0,
               "expected_win_credit": 0.35888888888888887,
               "luck_win_credit": -0.35888888888888887,
+              "all_play_win_pct": 44.44444444444444,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
               "weekly_score_rank": 6,
               "league_size": 10,
               "score_vs_winning_baseline": -23.60000000000001,
@@ -999,11 +1049,11 @@
             "weeks_completed": 1,
             "confidence": 0.16666666666666666,
             "confidence_label": "Provisional",
-            "raw_score_pct": 74.40972222222223,
+            "raw_score_pct": 74.05304164612788,
             "component_scores": {
               "lineup_management": {
-                "score_pct": 75.55555555555556,
-                "weight_pct": 43.75,
+                "score_pct": 82.79255918827512,
+                "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 84.32919954904173,
                 "raw_unit": "lineup efficiency",
@@ -1011,8 +1061,8 @@
                 "league_size": 10
               },
               "roster_construction": {
-                "score_pct": 75.55555555555556,
-                "weight_pct": 37.5,
+                "score_pct": 78.7359544133464,
+                "weight_pct": 25.0,
                 "available": true,
                 "raw_value": 147.83333333333326,
                 "raw_unit": "ideal points per week",
@@ -1020,23 +1070,33 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": null,
-                "weight_pct": 0.0,
-                "available": false,
-                "raw_value": null,
-                "raw_unit": "realized transaction value",
-                "league_rank": null,
-                "league_size": 0
-              },
-              "points_performance": {
-                "score_pct": 69.44444444444444,
-                "weight_pct": 18.75,
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "raw_value": 124.66666666666663,
-                "raw_unit": "actual points per week",
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 65.17297487181789,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 44.44444444444444,
+                "raw_unit": "all-play win rate",
                 "league_rank": 6,
                 "league_size": 10
               }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 44.44444444444444,
+              "win_pct": 0.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 0.0
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
             },
             "adaptability": {
               "included_in_rating": false,
@@ -1045,7 +1105,7 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
+        "summary": "Two Buck Luck graded C+ this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly."
       },
       "season_context": {
         "seed": 7,

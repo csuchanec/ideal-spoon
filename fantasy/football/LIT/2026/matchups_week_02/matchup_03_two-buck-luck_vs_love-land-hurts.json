@@ -1,0 +1,2331 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2026,
+    "week": 2,
+    "generated_at": "2026-09-22T22:29:31.310460",
+    "page_title": "Two Buck Luck vs Love(land) Hurts matchup report",
+    "matchup_id": "week-02-two-buck-luck-vs-love-land-hurts",
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
+  },
+  "matchup": {
+    "matchup_id": "week-02-two-buck-luck-vs-love-land-hurts",
+    "team_a_name": "Two Buck Luck",
+    "team_b_name": "Love(land) Hurts",
+    "team_a_score": 131.87,
+    "team_b_score": 131.07,
+    "actual_margin": 0.8000000000000114,
+    "final_margin": 0.8000000000000114,
+    "winner_team_name": "Two Buck Luck",
+    "result_text": "Two Buck Luck by 0.8",
+    "margin_text": "Two Buck Luck 131.9 to 131.1",
+    "ideal_margin": -3.3000000000000114,
+    "ideal_winner": "Love(land) Hurts",
+    "winner_changed_under_ideal": true,
+    "team_a_projected_score": 122.58,
+    "team_b_projected_score": 119.22,
+    "team_a_points_over_projected": 9.290000000000006,
+    "team_b_points_over_projected": 11.849999999999994,
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "team_a_weekly_rank": 3,
+    "team_b_weekly_rank": 4,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": true
+  },
+  "summary": {
+    "decision_summary": "Two Buck Luck won by 0.8. Two Buck Luck left 4.5 lineup points on the table, while Love(land) Hurts left 8.6.",
+    "historical_summary": "Two Buck Luck is 18-14 against Love(land) Hurts across 32 meetings between these managers.",
+    "net_ideal_swing": -4.099999999999994,
+    "ideal_summary": "Ideal lineups still favor Love(land) Hurts",
+    "winner_reason": "Two Buck Luck won by 0.8, led by a 19.8-point edge at RB. The leading starters were Brock Purdy (33.6) and Amon-Ra St. Brown (33.2).",
+    "loser_reason": "Love(land) Hurts could not match the opponent's RB production, losing that position battle by 19.8 points. Colston Loveland scored 0.3. Its best legal lineup added 8.6, enough to put the lineup decisions directly in the result."
+  },
+  "teams": [
+    {
+      "team_name": "Two Buck Luck",
+      "manager_display": "Dave F.",
+      "actual_score": 131.86666666666656,
+      "ideal_score": 136.36666666666656,
+      "manager_grade_pct": 92.04068589640355,
+      "manager_grade_letter": "A-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 92.04068589640355,
+          "letter": "A-",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 81.15913268871154,
+          "letter": "B-",
+          "label": "reasonable but costly",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 96.70007333170373,
+            "decision_grade_pct": 96.70007333170373,
+            "roster_missed_points": 4.5,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 3.599999999999966,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 10.936166666666551,
+            "weekly_rank": 3,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 90.13561965467846,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.6805555555555556,
+              "luck_win_credit": 0.3194444444444444,
+              "all_play_win_pct": 77.77777777777779,
+              "dominant_win": false,
+              "victory_margin_pct": 0.678098273392281,
+              "weekly_score_rank": 3,
+              "league_size": 10,
+              "score_vs_winning_baseline": 0.0,
+              "opponent_score_vs_week_average": 13.09299999999999,
+              "opponent_lineup_miss_points": 8.596666666666579,
+              "opponent_assisted_win": true,
+              "opponent_decisive_bench_points": 7.796666666666567
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 256.5333333333332,
+            "season_ideal_points": 284.1999999999998,
+            "season_lineup_efficiency_pct": 90.26507154585973,
+            "drop_regret_points_total": 0.0,
+            "trend": "unchanged",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 81.15913268871154,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 93.47712878254751,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 90.26507154585973,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 78.12923069614989,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 142.0999999999999,
+                "raw_unit": "ideal points per week",
+                "league_rank": 6,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 79.80399788047018,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 61.111111111111114,
+                "raw_unit": "all-play win rate",
+                "league_rank": 5,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 61.111111111111114,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 0.6775928513954275
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "unchanged",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+      },
+      "process_score_pct": 92.04068589640355,
+      "process_score_letter": "A-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 92.04068589640355,
+          "letter": "A-",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 81.15913268871154,
+          "letter": "B-",
+          "label": "reasonable but costly",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 96.70007333170373,
+            "decision_grade_pct": 96.70007333170373,
+            "roster_missed_points": 4.5,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 3.599999999999966,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 10.936166666666551,
+            "weekly_rank": 3,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 90.13561965467846,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.6805555555555556,
+              "luck_win_credit": 0.3194444444444444,
+              "all_play_win_pct": 77.77777777777779,
+              "dominant_win": false,
+              "victory_margin_pct": 0.678098273392281,
+              "weekly_score_rank": 3,
+              "league_size": 10,
+              "score_vs_winning_baseline": 0.0,
+              "opponent_score_vs_week_average": 13.09299999999999,
+              "opponent_lineup_miss_points": 8.596666666666579,
+              "opponent_assisted_win": true,
+              "opponent_decisive_bench_points": 7.796666666666567
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 256.5333333333332,
+            "season_ideal_points": 284.1999999999998,
+            "season_lineup_efficiency_pct": 90.26507154585973,
+            "drop_regret_points_total": 0.0,
+            "trend": "unchanged",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 81.15913268871154,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 93.47712878254751,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 90.26507154585973,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 78.12923069614989,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 142.0999999999999,
+                "raw_unit": "ideal points per week",
+                "league_rank": 6,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 79.80399788047018,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 61.111111111111114,
+                "raw_unit": "all-play win rate",
+                "league_rank": 5,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 61.111111111111114,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 0.6775928513954275
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "unchanged",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 5,
+        "record": "1-1",
+        "points_for": 256.54,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 4.5,
+          "roster_swap_upside_points": 4.5,
+          "waiver_upside_points": 0
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "20/22, 287 pass yds \u00b7 2 pass TD \u00b7 3 rush, 30 yds \u00b7 1 rush TD",
+          "points": 33.56666666666657
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "9 rec, 142 yds \u00b7 2 rec TD",
+          "points": 33.2
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "12 rush, 85 yds \u00b7 2 rec, 12 yds \u00b7 1 rec TD",
+          "points": 17.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New York Jets",
+          "stat_line": "5 rec, 57 yds \u00b7 1 rec TD",
+          "points": 15.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chase Brown",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "20 rush, 80 yds \u00b7 3 rec, 2 yds",
+          "points": 11.2
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Steelers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "14 PA \u00b7 3 sacks \u00b7 1 INT \u00b7 1 FR",
+          "points": 8.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "1 FG \u00b7 1 FG miss",
+          "points": 5.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "12 rush, 30 yds \u00b7 3 rec, 20 yds",
+          "points": 5.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "22/31, 288 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 5 rush, 6 yds",
+          "points": 16.199999999999903,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "14 rush, 64 yds \u00b7 1 rec, 1 yds",
+          "points": 9.5,
+          "differential": 4.5,
+          "starter_replaced": "Javonte Williams",
+          "starter_points": 5.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "10 rush, 36 yds",
+          "points": 4.6,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New York Giants",
+          "stat_line": "1 rec, 1 yds",
+          "points": 0.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Jordan Mason",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "22/31, 288 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 5 rush, 6 yds",
+          "points": 16.199999999999903,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "14 rush, 64 yds \u00b7 1 rec, 1 yds",
+          "points": 9.5,
+          "differential": 4.5,
+          "starter_replaced": "Javonte Williams",
+          "starter_points": 5.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "10 rush, 36 yds",
+          "points": 4.6,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New York Giants",
+          "stat_line": "1 rec, 1 yds",
+          "points": 0.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Jordan Mason",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Tony Pollard",
+          "recommended_points": 9.5,
+          "benched_player": "Javonte Williams",
+          "benched_points": 5.0,
+          "point_swing": 4.5,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Tony Pollard over Javonte Williams for an estimated +4.5 points this week.",
+          "confidence": 0.7125,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Javonte Williams",
+            "points": 5.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1125,
+            "capped_total": 0.7125
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        }
+      ],
+      "top_waiver_swings": [],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "20/22, 287 pass yds \u00b7 2 pass TD \u00b7 3 rush, 30 yds \u00b7 1 rush TD",
+          "points": 33.56666666666657
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "9 rec, 142 yds \u00b7 2 rec TD",
+          "points": 33.2
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "12 rush, 85 yds \u00b7 2 rec, 12 yds \u00b7 1 rec TD",
+          "points": 17.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New York Jets",
+          "stat_line": "5 rec, 57 yds \u00b7 1 rec TD",
+          "points": 15.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chase Brown",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "20 rush, 80 yds \u00b7 3 rec, 2 yds",
+          "points": 11.2
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Steelers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "14 PA \u00b7 3 sacks \u00b7 1 INT \u00b7 1 FR",
+          "points": 8.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "1 FG \u00b7 1 FG miss",
+          "points": 5.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "12 rush, 30 yds \u00b7 3 rec, 20 yds",
+          "points": 5.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "1 rec, 15 yds",
+          "points": 2.5
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "22/31, 288 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 5 rush, 6 yds",
+          "points": 16.199999999999903
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "14 rush, 64 yds \u00b7 1 rec, 1 yds",
+          "points": 9.5
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "10 rush, 36 yds",
+          "points": 4.6
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New York Giants",
+          "stat_line": "1 rec, 1 yds",
+          "points": 0.1
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Jordan Mason",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Marvin Harrison Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "actual_team": "Detroit Lions",
+          "points": 33.2,
+          "season_avg": 15.544444444444444,
+          "type": "BOOM",
+          "z_score": 1.5960119440230538,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Javonte Williams",
+          "position": "RB",
+          "actual_team": "Dallas Cowboys",
+          "points": 5.0,
+          "season_avg": 16.944444444444443,
+          "type": "BUST",
+          "z_score": -1.4656007023994968,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 3,
+        "league_size": 10,
+        "league_average_score": 117.977,
+        "league_median_score": 118.065,
+        "beat_league_median": true,
+        "all_play_record": "7-2",
+        "projected_score": 122.58,
+        "points_over_projected": 9.290000000000006
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 131.86666666666656,
+        "optimal_lineup_points": 136.36666666666656,
+        "bench_points": 30.399999999999903,
+        "points_left_on_bench": 4.5,
+        "lowest_scoring_starter": {
+          "team_name": "Two Buck Luck",
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "1 rec, 15 yds",
+          "points": 2.5
+        },
+        "lineup_landmine": {
+          "name": "Javonte Williams",
+          "position": "RB",
+          "points": 5.0,
+          "season_avg": 16.944444444444443,
+          "z_score": -1.4656007023994968,
+          "reason": "Started player materially underperformed season baseline."
+        },
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Tony Pollard",
+          "recommended_points": 9.5,
+          "benched_player": "Javonte Williams",
+          "benched_points": 5.0,
+          "point_swing": 4.5,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Tony Pollard over Javonte Williams for an estimated +4.5 points this week.",
+          "confidence": 0.7125,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Javonte Williams",
+            "points": 5.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1125,
+            "capped_total": 0.7125
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        "summary": "Two Buck Luck started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 64.05460060667339,
+        "top_2_share_pct": 50.63195146612737,
+        "volatility_std": 11.067169902782918,
+        "structural_integrity_pct": 35.94539939332661,
+        "fragility_score": 50.63195146612737,
+        "label": "Stable Build"
+      }
+    },
+    {
+      "team_name": "Love(land) Hurts",
+      "manager_display": "Matt",
+      "actual_score": 131.06666666666658,
+      "ideal_score": 139.66666666666657,
+      "manager_grade_pct": 89.2582338902148,
+      "manager_grade_letter": "B+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 89.2582338902148,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 73.7503460090069,
+          "letter": "C",
+          "label": "reasonable but costly",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 93.84248210023867,
+            "decision_grade_pct": 93.84248210023867,
+            "roster_missed_points": 8.6,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 17.36666666666666,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 10.136166666666568,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 99.9164677804296,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 81.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.5733333333333334,
+              "luck_win_credit": -0.5733333333333334,
+              "all_play_win_pct": 66.66666666666666,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 4,
+              "league_size": 10,
+              "score_vs_winning_baseline": -0.8000000000000114,
+              "opponent_score_vs_week_average": 13.893,
+              "opponent_lineup_miss_points": 4.496666666666556,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 227.3999999999998,
+            "season_ideal_points": 284.5999999999998,
+            "season_lineup_efficiency_pct": 79.90161630358396,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 73.7503460090069,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 74.82290934645114,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 79.90161630358396,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 6,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 78.48549984561669,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 142.2999999999999,
+                "raw_unit": "ideal points per week",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 69.04111193803575,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 44.44444444444444,
+                "raw_unit": "all-play win rate",
+                "league_rank": 6,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 44.44444444444444,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 35.17695603872401
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+      },
+      "process_score_pct": 89.2582338902148,
+      "process_score_letter": "B+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 89.2582338902148,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 73.7503460090069,
+          "letter": "C",
+          "label": "reasonable but costly",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 93.84248210023867,
+            "decision_grade_pct": 93.84248210023867,
+            "roster_missed_points": 8.6,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 17.36666666666666,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 10.136166666666568,
+            "weekly_rank": 4,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 99.9164677804296,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 81.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.5733333333333334,
+              "luck_win_credit": -0.5733333333333334,
+              "all_play_win_pct": 66.66666666666666,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 4,
+              "league_size": 10,
+              "score_vs_winning_baseline": -0.8000000000000114,
+              "opponent_score_vs_week_average": 13.893,
+              "opponent_lineup_miss_points": 4.496666666666556,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 227.3999999999998,
+            "season_ideal_points": 284.5999999999998,
+            "season_lineup_efficiency_pct": 79.90161630358396,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 73.7503460090069,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 74.82290934645114,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 79.90161630358396,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 6,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 78.48549984561669,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 142.2999999999999,
+                "raw_unit": "ideal points per week",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 69.04111193803575,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 44.44444444444444,
+                "raw_unit": "all-play win rate",
+                "league_rank": 6,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 44.44444444444444,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 35.17695603872401
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+      },
+      "season_context": {
+        "seed": 6,
+        "record": "1-1",
+        "points_for": 227.39999999999998,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 8.599999999999994,
+          "roster_swap_upside_points": 8.6,
+          "waiver_upside_points": 0
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Josh Allen",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "20/31, 248 pass yds \u00b7 3 pass TD \u00b7 14 rush, 69 yds \u00b7 2 rush TD",
+          "points": 53.166666666666586
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "10 rec, 117 yds \u00b7 1 rec TD",
+          "points": 24.700000000000003
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Tee Higgins",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "5 rec, 95 yds",
+          "points": 14.5
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "4 rec, 83 yds",
+          "points": 11.3
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Seahawks",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "7 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 8.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Las Vegas Raiders",
+          "stat_line": "21 rush, 48 yds \u00b7 4 rec, 15 yds",
+          "points": 7.300000000000001
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Cleveland Browns",
+          "stat_line": "12 rush, 21 yds \u00b7 5 rec, 27 yds",
+          "points": 6.800000000000001
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Tyler Loop",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "1 FG \u00b7 1 FG miss \u00b7 2 XP",
+          "points": 5.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "26/37, 264 pass yds \u00b7 2 pass TD \u00b7 2 INT \u00b7 5 rush, 16 yds",
+          "points": 20.399999999999913,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Mark Andrews",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "6 rec, 49 yds",
+          "points": 8.9,
+          "differential": 8.6,
+          "starter_replaced": "Colston Loveland",
+          "starter_points": 0.3
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Broncos",
+          "position": "DEF",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "13 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 8.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rush, 25 yds \u00b7 2 rec, 6 yds",
+          "points": 6.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Chris Rodriguez Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "6 rush, 13 yds",
+          "points": 3.3,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "26/37, 264 pass yds \u00b7 2 pass TD \u00b7 2 INT \u00b7 5 rush, 16 yds",
+          "points": 20.399999999999913,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Mark Andrews",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "6 rec, 49 yds",
+          "points": 8.9,
+          "differential": 8.6,
+          "starter_replaced": "Colston Loveland",
+          "starter_points": 0.3
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Broncos",
+          "position": "DEF",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "13 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 8.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rush, 25 yds \u00b7 2 rec, 6 yds",
+          "points": 6.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Chris Rodriguez Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "6 rush, 13 yds",
+          "points": 3.3,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "TE",
+          "recommended_player": "Mark Andrews",
+          "recommended_points": 8.9,
+          "benched_player": "Colston Loveland",
+          "benched_points": 0.3,
+          "point_swing": 8.6,
+          "source": "ROSTER",
+          "reason": "At TE, swap in Mark Andrews over Colston Loveland for an estimated +8.6 points this week.",
+          "confidence": 0.815,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Colston Loveland",
+            "points": 0.3,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.215,
+            "capped_total": 0.815
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        }
+      ],
+      "top_waiver_swings": [],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Josh Allen",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "20/31, 248 pass yds \u00b7 3 pass TD \u00b7 14 rush, 69 yds \u00b7 2 rush TD",
+          "points": 53.166666666666586
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "10 rec, 117 yds \u00b7 1 rec TD",
+          "points": 24.700000000000003
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Tee Higgins",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "5 rec, 95 yds",
+          "points": 14.5
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "4 rec, 83 yds",
+          "points": 11.3
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Seahawks",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "7 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 8.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Las Vegas Raiders",
+          "stat_line": "21 rush, 48 yds \u00b7 4 rec, 15 yds",
+          "points": 7.300000000000001
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Cleveland Browns",
+          "stat_line": "12 rush, 21 yds \u00b7 5 rec, 27 yds",
+          "points": 6.800000000000001
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Tyler Loop",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "1 FG \u00b7 1 FG miss \u00b7 2 XP",
+          "points": 5.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Colston Loveland",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "1 rec, 3 yds",
+          "points": 0.3
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "26/37, 264 pass yds \u00b7 2 pass TD \u00b7 2 INT \u00b7 5 rush, 16 yds",
+          "points": 20.399999999999913
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Mark Andrews",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "6 rec, 49 yds",
+          "points": 8.9
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Broncos",
+          "position": "DEF",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "13 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 8.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rush, 25 yds \u00b7 2 rec, 6 yds",
+          "points": 6.1
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Chris Rodriguez Jr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "6 rush, 13 yds",
+          "points": 3.3
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Harrison Mevis",
+          "position": "K",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "1 FG miss \u00b7 4 XP",
+          "points": 3.0
+        },
+        {
+          "team_name": "Love(land) Hurts",
+          "name": "Jayden Reed",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "1 rec, 4 yds",
+          "points": 0.4
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "actual_team": "Philadelphia Eagles",
+          "points": 24.700000000000003,
+          "season_avg": 9.32777777777778,
+          "type": "BOOM",
+          "z_score": 2.1882747403601623,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Josh Allen",
+          "position": "QB",
+          "actual_team": "Buffalo Bills",
+          "points": 53.166666666666586,
+          "season_avg": 26.422222222222146,
+          "type": "BOOM",
+          "z_score": 1.9624430392831342,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 4,
+        "league_size": 10,
+        "league_average_score": 117.977,
+        "league_median_score": 118.065,
+        "beat_league_median": true,
+        "all_play_record": "6-3",
+        "projected_score": 119.22,
+        "points_over_projected": 11.849999999999994
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 131.06666666666658,
+        "optimal_lineup_points": 139.66666666666657,
+        "bench_points": 50.099999999999916,
+        "points_left_on_bench": 8.599999999999994,
+        "lowest_scoring_starter": {
+          "team_name": "Love(land) Hurts",
+          "name": "Colston Loveland",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "1 rec, 3 yds",
+          "points": 0.3
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "TE",
+          "recommended_player": "Mark Andrews",
+          "recommended_points": 8.9,
+          "benched_player": "Colston Loveland",
+          "benched_points": 0.3,
+          "point_swing": 8.6,
+          "source": "ROSTER",
+          "reason": "At TE, swap in Mark Andrews over Colston Loveland for an estimated +8.6 points this week.",
+          "confidence": 0.815,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Colston Loveland",
+            "points": 0.3,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.215,
+            "capped_total": 0.815
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        "summary": "Love(land) Hurts started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 70.4730417090539,
+        "top_2_share_pct": 59.40996948118005,
+        "volatility_std": 15.109325420998777,
+        "structural_integrity_pct": 29.526958290946098,
+        "fragility_score": 59.40996948118005,
+        "label": "Boom/Bust Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Josh Allen",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "20/31, 248 pass yds \u00b7 3 pass TD \u00b7 14 rush, 69 yds \u00b7 2 rush TD",
+        "points": 53.166666666666586,
+        "team_score_share_pct": 40.564598168870766,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "53.2 points supplied 41% of Love(land) Hurts's output in a 0.8-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Brock Purdy",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "San Francisco 49ers",
+        "stat_line": "20/22, 287 pass yds \u00b7 2 pass TD \u00b7 3 rush, 30 yds \u00b7 1 rush TD",
+        "points": 33.56666666666657,
+        "team_score_share_pct": 25.45500505561168,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "33.6 points supplied 25% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Detroit Lions",
+        "stat_line": "9 rec, 142 yds \u00b7 2 rec TD",
+        "points": 33.2,
+        "team_score_share_pct": 25.176946410515693,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "33.2 points supplied 25% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "DeVonta Smith",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "nfl_team": "Philadelphia Eagles",
+        "stat_line": "10 rec, 117 yds \u00b7 1 rec TD",
+        "points": 24.700000000000003,
+        "team_score_share_pct": 18.845371312309272,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "24.7 points supplied 19% of Love(land) Hurts's output in a 0.8-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Kyren Williams",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "nfl_team": "Los Angeles Rams",
+        "stat_line": "12 rush, 85 yds \u00b7 2 rec, 12 yds \u00b7 1 rec TD",
+        "points": 17.7,
+        "team_score_share_pct": 13.422649140546017,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "17.7 points supplied 13% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Garrett Wilson",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "New York Jets",
+        "stat_line": "5 rec, 57 yds \u00b7 1 rec TD",
+        "points": 15.7,
+        "team_score_share_pct": 11.905965621840252,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "15.7 points supplied 12% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Tee Higgins",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Cincinnati Bengals",
+        "stat_line": "5 rec, 95 yds",
+        "points": 14.5,
+        "team_score_share_pct": 11.063072227873864,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "14.5 points supplied 11% of Love(land) Hurts's output in a 0.8-point loss."
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Rashee Rice",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Kansas City Chiefs",
+        "stat_line": "4 rec, 83 yds",
+        "points": 11.3,
+        "team_score_share_pct": 8.621566632756874,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "11.3 points supplied 9% of Love(land) Hurts's output in a 0.8-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Chase Brown",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Cincinnati Bengals",
+        "stat_line": "20 rush, 80 yds \u00b7 3 rec, 2 yds",
+        "points": 11.2,
+        "team_score_share_pct": 8.49342770475228,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "11.2 points supplied 8% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Steelers",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Pittsburgh Steelers",
+        "stat_line": "14 PA \u00b7 3 sacks \u00b7 1 INT \u00b7 1 FR",
+        "points": 8.0,
+        "team_score_share_pct": 6.066734074823058,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "8.0 points supplied 6% of Two Buck Luck's output in a 0.8-point win."
+      }
+    ],
+    "bottom_started_players": [
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Colston Loveland",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Chicago Bears",
+        "stat_line": "1 rec, 3 yds",
+        "points": 0.3,
+        "team_score_share_pct": 0.22889114954221784,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "0.3 points supplied 0% of Love(land) Hurts's output in a 0.8-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Kyle Pitts Sr.",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Atlanta Falcons",
+        "stat_line": "1 rec, 15 yds",
+        "points": 2.5,
+        "team_score_share_pct": 1.8958543983822056,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "2.5 points supplied 2% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Chris Boswell",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Pittsburgh Steelers",
+        "stat_line": "1 FG \u00b7 1 FG miss",
+        "points": 5.0,
+        "team_score_share_pct": 3.791708796764411,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "5.0 points supplied 4% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Javonte Williams",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Dallas Cowboys",
+        "stat_line": "12 rush, 30 yds \u00b7 3 rec, 20 yds",
+        "points": 5.0,
+        "team_score_share_pct": 3.791708796764411,
+        "matchup_result": "Won",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "5.0 points supplied 4% of Two Buck Luck's output in a 0.8-point win."
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Tyler Loop",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Baltimore Ravens",
+        "stat_line": "1 FG \u00b7 1 FG miss \u00b7 2 XP",
+        "points": 5.0,
+        "team_score_share_pct": 3.814852492370298,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "5.0 points supplied 4% of Love(land) Hurts's output in a 0.8-point loss."
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Quinshon Judkins",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Cleveland Browns",
+        "stat_line": "12 rush, 21 yds \u00b7 5 rec, 27 yds",
+        "points": 6.800000000000001,
+        "team_score_share_pct": 5.188199389623605,
+        "matchup_result": "Lost",
+        "matchup_margin": 0.799999999999983,
+        "impact_summary": "6.8 points supplied 5% of Love(land) Hurts's output in a 0.8-point loss."
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Mark Andrews",
+        "position": "TE",
+        "roster_position": "BN",
+        "nfl_team": "Baltimore Ravens",
+        "stat_line": "6 rec, 49 yds",
+        "points": 8.9,
+        "differential": 8.6,
+        "starter_replaced": "Colston Loveland",
+        "starter_points": 0.3
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Tony Pollard",
+        "position": "RB",
+        "roster_position": "BN",
+        "nfl_team": "Tennessee Titans",
+        "stat_line": "14 rush, 64 yds \u00b7 1 rec, 1 yds",
+        "points": 9.5,
+        "differential": 4.5,
+        "starter_replaced": "Javonte Williams",
+        "starter_points": 5.0
+      }
+    ],
+    "top_additions_this_week": []
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Two Buck Luck",
+      "loser_team": "Love(land) Hurts",
+      "value": 0.799999999999983,
+      "margin_relative_value": -2.842170943040401e-14,
+      "position": "",
+      "summary": "Two Buck Luck won the raw scoring battle by 0.8 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Two Buck Luck",
+      "loser_team": "Love(land) Hurts",
+      "value": 4.099999999999994,
+      "margin_relative_value": 3.299999999999983,
+      "position": "",
+      "summary": "Two Buck Luck had the cleaner lineup week by 4.1 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Love(land) Hurts",
+      "loser_team": "Two Buck Luck",
+      "value": 8.599999999999994,
+      "margin_relative_value": 7.799999999999983,
+      "position": "",
+      "summary": "Love(land) Hurts carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "YES",
+      "loser_team": "Love(land) Hurts",
+      "value": 8.6,
+      "margin_relative_value": 7.799999999999988,
+      "position": "",
+      "summary": "Love(land) Hurts would have flipped the matchup by starting Mark Andrews over Colston Loveland for a projected +8.6-point swing."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Two Buck Luck",
+      "loser_team": "Love(land) Hurts",
+      "value": 19.799999999999997,
+      "margin_relative_value": 18.999999999999986,
+      "position": "RB",
+      "summary": "Two Buck Luck controlled total RB output by 19.8 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 0.8000000000000114,
+    "margin": 0.8000000000000114,
+    "takeaways": [
+      "Love(land) Hurts left 8.6 lineup points on the table, more than the 0.8-point final margin.",
+      "The clearest unit edge was total RB output: Two Buck Luck by 19.8 points.",
+      "Against projection, Two Buck Luck finished +9.3 while Love(land) Hurts finished +11.8.",
+      "The biggest started performance was Josh Allen for Love(land) Hurts at 53.2 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Love(land) Hurts lineup leakage",
+        "team_name": "Love(land) Hurts",
+        "value": 8.599999999999994,
+        "relative_to_margin": 7.799999999999983
+      },
+      {
+        "label": "Two Buck Luck lineup leakage",
+        "team_name": "Two Buck Luck",
+        "value": 4.5,
+        "relative_to_margin": 3.6999999999999886
+      },
+      {
+        "label": "Two Buck Luck waiver upside",
+        "team_name": "Two Buck Luck",
+        "value": 0.0,
+        "relative_to_margin": -0.8000000000000114
+      },
+      {
+        "label": "Love(land) Hurts waiver upside",
+        "team_name": "Love(land) Hurts",
+        "value": 0.0,
+        "relative_to_margin": -0.8000000000000114
+      }
+    ],
+    "single_swap_flip": {
+      "team_name": "Love(land) Hurts",
+      "recommended_player": "Mark Andrews",
+      "benched_player": "Colston Loveland",
+      "point_swing": 8.6,
+      "position": "TE",
+      "reason": "At TE, swap in Mark Andrews over Colston Loveland for an estimated +8.6 points this week.",
+      "reasonable": true
+    },
+    "would_have_won_summary": "Love(land) Hurts would have flipped the matchup by starting Mark Andrews over Colston Loveland for a projected +8.6-point swing.",
+    "scenario_rows": [
+      {
+        "scenario": "Actual lineups",
+        "winner": "Two Buck Luck",
+        "winner_score": 131.86666666666656,
+        "loser_score": 131.06666666666658,
+        "margin": 0.799999999999983
+      },
+      {
+        "scenario": "Both best legal lineups",
+        "winner": "Love(land) Hurts",
+        "winner_score": 139.66666666666657,
+        "loser_score": 136.36666666666656,
+        "margin": 3.3000000000000114
+      }
+    ]
+  },
+  "skill_luck": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "teams": [
+      {
+        "team_name": "Two Buck Luck",
+        "weekly_rank": 3,
+        "all_play_record": "7-2",
+        "beat_league_median": true,
+        "projected_score": 122.58,
+        "points_over_projected": 9.290000000000006,
+        "opponent_weekly_rank": 4
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 119.22,
+        "points_over_projected": 11.849999999999994,
+        "opponent_weekly_rank": 3
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "teams": [
+      {
+        "team_name": "Two Buck Luck",
+        "weekly_rank": 3,
+        "all_play_record": "7-2",
+        "beat_league_median": true,
+        "projected_score": 122.58,
+        "points_over_projected": 9.290000000000006,
+        "opponent_weekly_rank": 4
+      },
+      {
+        "team_name": "Love(land) Hurts",
+        "weekly_rank": 4,
+        "all_play_record": "6-3",
+        "beat_league_median": true,
+        "projected_score": 119.22,
+        "points_over_projected": 11.849999999999994,
+        "opponent_weekly_rank": 3
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "RB",
+        "team_a_points": 33.9,
+        "team_b_points": 14.100000000000001,
+        "edge_points": 19.799999999999997,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 19.799999999999997
+      },
+      {
+        "position": "QB",
+        "team_a_points": 33.56666666666657,
+        "team_b_points": 53.166666666666586,
+        "edge_points": 19.600000000000016,
+        "edge_team": "Love(land) Hurts",
+        "edge_direction": -19.600000000000016
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.5,
+        "team_b_points": 0.3,
+        "edge_points": 2.2,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 2.2
+      },
+      {
+        "position": "WR",
+        "team_a_points": 48.900000000000006,
+        "team_b_points": 50.5,
+        "edge_points": 1.5999999999999943,
+        "edge_team": "Love(land) Hurts",
+        "edge_direction": -1.5999999999999943
+      },
+      {
+        "position": "K",
+        "team_a_points": 5.0,
+        "team_b_points": 5.0,
+        "edge_points": 0.0,
+        "edge_team": "Tie",
+        "edge_direction": 0.0
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 8.0,
+        "team_b_points": 8.0,
+        "edge_points": 0.0,
+        "edge_team": "Tie",
+        "edge_direction": 0.0
+      }
+    ],
+    "largest_edge": {
+      "position": "RB",
+      "team_a_points": 33.9,
+      "team_b_points": 14.100000000000001,
+      "edge_points": 19.799999999999997,
+      "edge_team": "Two Buck Luck",
+      "edge_direction": 19.799999999999997
+    },
+    "top_wins": [
+      {
+        "position": "RB",
+        "team_a_points": 33.9,
+        "team_b_points": 14.100000000000001,
+        "edge_points": 19.799999999999997,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 19.799999999999997
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.5,
+        "team_b_points": 0.3,
+        "edge_points": 2.2,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": 2.2
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "QB",
+        "team_a_points": 33.56666666666657,
+        "team_b_points": 53.166666666666586,
+        "edge_points": 19.600000000000016,
+        "edge_team": "Love(land) Hurts",
+        "edge_direction": -19.600000000000016
+      },
+      {
+        "position": "WR",
+        "team_a_points": 48.900000000000006,
+        "team_b_points": 50.5,
+        "edge_points": 1.5999999999999943,
+        "edge_team": "Love(land) Hurts",
+        "edge_direction": -1.5999999999999943
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Two Buck Luck",
+      "actual_lineup_points": 131.86666666666656,
+      "optimal_lineup_points": 136.36666666666656,
+      "bench_points": 30.399999999999903,
+      "points_left_on_bench": 4.5,
+      "lowest_scoring_starter": {
+        "team_name": "Two Buck Luck",
+        "name": "Kyle Pitts Sr.",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Atlanta Falcons",
+        "stat_line": "1 rec, 15 yds",
+        "points": 2.5
+      },
+      "lineup_landmine": {
+        "name": "Javonte Williams",
+        "position": "RB",
+        "points": 5.0,
+        "season_avg": 16.944444444444443,
+        "z_score": -1.4656007023994968,
+        "reason": "Started player materially underperformed season baseline."
+      },
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Tony Pollard",
+        "recommended_points": 9.5,
+        "benched_player": "Javonte Williams",
+        "benched_points": 5.0,
+        "point_swing": 4.5,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Tony Pollard over Javonte Williams for an estimated +4.5 points this week.",
+        "confidence": 0.7125,
+        "signal_label": "Medium hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Javonte Williams",
+          "points": 5.0,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.1125,
+          "capped_total": 0.7125
+        },
+        "sample_context": {
+          "recommended_player_weeks": 2,
+          "comparison_player_weeks": 2
+        }
+      },
+      "summary": "Two Buck Luck started 8 of 9 slots optimally"
+    },
+    {
+      "team_name": "Love(land) Hurts",
+      "actual_lineup_points": 131.06666666666658,
+      "optimal_lineup_points": 139.66666666666657,
+      "bench_points": 50.099999999999916,
+      "points_left_on_bench": 8.599999999999994,
+      "lowest_scoring_starter": {
+        "team_name": "Love(land) Hurts",
+        "name": "Colston Loveland",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Chicago Bears",
+        "stat_line": "1 rec, 3 yds",
+        "points": 0.3
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "TE",
+        "recommended_player": "Mark Andrews",
+        "recommended_points": 8.9,
+        "benched_player": "Colston Loveland",
+        "benched_points": 0.3,
+        "point_swing": 8.6,
+        "source": "ROSTER",
+        "reason": "At TE, swap in Mark Andrews over Colston Loveland for an estimated +8.6 points this week.",
+        "confidence": 0.815,
+        "signal_label": "Medium hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Colston Loveland",
+          "points": 0.3,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.215,
+          "capped_total": 0.815
+        },
+        "sample_context": {
+          "recommended_player_weeks": 2,
+          "comparison_player_weeks": 2
+        }
+      },
+      "summary": "Love(land) Hurts started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Two Buck Luck",
+      "top_3_share_pct": 64.05460060667339,
+      "top_2_share_pct": 50.63195146612737,
+      "volatility_std": 11.067169902782918,
+      "structural_integrity_pct": 35.94539939332661,
+      "fragility_score": 50.63195146612737,
+      "label": "Stable Build"
+    },
+    {
+      "team_name": "Love(land) Hurts",
+      "top_3_share_pct": 70.4730417090539,
+      "top_2_share_pct": 59.40996948118005,
+      "volatility_std": 15.109325420998777,
+      "structural_integrity_pct": 29.526958290946098,
+      "fragility_score": 59.40996948118005,
+      "label": "Boom/Bust Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Big Brain",
+      "team_name": "Two Buck Luck",
+      "detail": "Weekly process score cleared the sharp-management threshold."
+    },
+    {
+      "title": "Bench Pain",
+      "team_name": "Love(land) Hurts",
+      "detail": "Love(land) Hurts left 8.6 lineup points on the table, more than the 0.8-point final margin."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Two Buck Luck",
+    "team_b_name": "Love(land) Hurts",
+    "record_for_team_a": "18-14",
+    "games": 32,
+    "playoff_games": 4,
+    "average_margin_for_team_a": 5.309895833333329,
+    "series_summary": "Two Buck Luck is 18-14 against Love(land) Hurts across 32 meetings between these managers.",
+    "average_margin_text": "Average margin from Two Buck Luck's perspective: +5.3.",
+    "current_margin_rank_text": "3rd closest",
+    "current_total_rank_text": "6th highest combined score",
+    "streak_text": "Two Buck Luck carries the current 5-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2026 W2",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 0.8000000000000114,
+        "combined_score": 262.94,
+        "historical_team_a_name": "Two Buck Luck",
+        "historical_team_b_name": "Love(land) Hurts",
+        "report_href": "matchup_03_two-buck-luck_vs_love-land-hurts.html"
+      },
+      {
+        "season_label": "2025 W15",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 17.39999999999995,
+        "combined_score": 273.46666666666647,
+        "historical_team_a_name": "Two Buck Luck",
+        "historical_team_b_name": "You aren\u2019t Worthy of Coleman",
+        "report_href": "../../2025/matchups_week_15/matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html"
+      },
+      {
+        "season_label": "2025 W6",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 8.96666666666664,
+        "combined_score": 215.36666666666656,
+        "historical_team_a_name": "Two Buck Luck",
+        "historical_team_b_name": "You aren\u2019t Worthy of Coleman",
+        "report_href": "../../2025/matchups_week_06/matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html"
+      },
+      {
+        "season_label": "2024 W8",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 14.83999999999999,
+        "combined_score": 258.5,
+        "historical_team_a_name": "Two Buck Luck",
+        "historical_team_b_name": "This Butker goes number Tua"
+      },
+      {
+        "season_label": "2023 W8",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 14.0,
+        "combined_score": 235.46,
+        "historical_team_a_name": "Two Buck Luck",
+        "historical_team_b_name": "Tucker til it Hurts"
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Chase wins all season long with Toyota Gameday Giveaways.",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/932349/recap?week=2&mid1=2&mid2=9",
+    "grade_summary": "Two Buck Luck: B+ | Love(land) Hurts: C"
+  }
+}

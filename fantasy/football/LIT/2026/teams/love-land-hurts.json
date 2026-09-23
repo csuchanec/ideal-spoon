@@ -9,23 +9,42 @@
     "charts": {
       "luck_series": [
         {
-          "grade_letter": "D+",
+          "grade_letter": "D-",
           "ideal_score": 144.93333333333322,
-          "luck_label": "Normal variance",
-          "manager_score_pct": 64.61831748952261,
+          "luck_label": "Soft schedule break",
+          "manager_score_pct": 59.920607175712945,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
-          "opponent_average_score": 52.0,
+          "opponent_average_score": 76.15,
           "opponent_score": 52.0,
-          "opponent_score_vs_average": 0.0,
+          "opponent_score_vs_average": -24.150000000000006,
           "result": "W",
-          "schedule_label": "Normal variance",
+          "schedule_label": "Soft schedule break",
           "score": 96.33,
-          "team_score_vs_average": 0.0,
+          "team_score_vs_average": -17.36999999999999,
           "week": 1,
           "week_href": "../week_01.html",
           "weekly_rank": 8
+        },
+        {
+          "grade_letter": "B+",
+          "ideal_score": 139.66666666666657,
+          "luck_label": "Normal variance",
+          "manager_score_pct": 89.2582338902148,
+          "matchup_href": "../matchups_week_02/matchup_03_two-buck-luck_vs_love-land-hurts.html",
+          "missed_lineup_points": 8.6,
+          "opponent": "Two Buck Luck",
+          "opponent_average_score": 128.27,
+          "opponent_score": 131.87,
+          "opponent_score_vs_average": 3.5999999999999943,
+          "result": "L",
+          "schedule_label": "Normal variance",
+          "score": 131.07,
+          "team_score_vs_average": 17.370000000000005,
+          "week": 2,
+          "week_href": "../week_02.html",
+          "weekly_rank": 4
         }
       ],
       "process_series": [
@@ -39,29 +58,61 @@
           "momentum_delta_points": 0.0,
           "momentum_label": "Not enough pace data",
           "move_process_adjustment": 0.0,
-          "process_score_pct": 64.61831748952261,
+          "process_score_pct": 59.920607175712945,
           "week": 1
+        },
+        {
+          "form_delta_points": 34.73333333333338,
+          "form_label": "Heating Up",
+          "form_prior_avg": 96.33333333333323,
+          "form_recent_avg": 131.0666666666666,
+          "form_threshold_points": 8.0,
+          "missed_lineup_points": 8.6,
+          "momentum_delta_points": 0.0,
+          "momentum_label": "Not enough pace data",
+          "move_process_adjustment": 0.0,
+          "process_score_pct": 89.2582338902148,
+          "week": 2
         }
       ],
       "schedule_series": [
         {
-          "grade_letter": "D+",
+          "grade_letter": "D-",
           "ideal_score": 144.93333333333322,
-          "luck_label": "Normal variance",
-          "manager_score_pct": 64.61831748952261,
+          "luck_label": "Soft schedule break",
+          "manager_score_pct": 59.920607175712945,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
-          "opponent_average_score": 52.0,
+          "opponent_average_score": 76.15,
           "opponent_score": 52.0,
-          "opponent_score_vs_average": 0.0,
+          "opponent_score_vs_average": -24.150000000000006,
           "result": "W",
-          "schedule_label": "Normal variance",
+          "schedule_label": "Soft schedule break",
           "score": 96.33,
-          "team_score_vs_average": 0.0,
+          "team_score_vs_average": -17.36999999999999,
           "week": 1,
           "week_href": "../week_01.html",
           "weekly_rank": 8
+        },
+        {
+          "grade_letter": "B+",
+          "ideal_score": 139.66666666666657,
+          "luck_label": "Normal variance",
+          "manager_score_pct": 89.2582338902148,
+          "matchup_href": "../matchups_week_02/matchup_03_two-buck-luck_vs_love-land-hurts.html",
+          "missed_lineup_points": 8.6,
+          "opponent": "Two Buck Luck",
+          "opponent_average_score": 128.27,
+          "opponent_score": 131.87,
+          "opponent_score_vs_average": 3.5999999999999943,
+          "result": "L",
+          "schedule_label": "Normal variance",
+          "score": 131.07,
+          "team_score_vs_average": 17.370000000000005,
+          "week": 2,
+          "week_href": "../week_02.html",
+          "weekly_rank": 4
         }
       ],
       "score_series": [
@@ -70,8 +121,16 @@
           "missed_lineup_points": 48.6,
           "opponent_score": 52.0,
           "score": 96.33,
-          "team_average_score": 96.33,
+          "team_average_score": 113.69999999999999,
           "week": 1
+        },
+        {
+          "ideal_score": 139.66666666666657,
+          "missed_lineup_points": 8.6,
+          "opponent_score": 131.87,
+          "score": 131.07,
+          "team_average_score": 113.69999999999999,
+          "week": 2
         }
       ]
     },
@@ -79,9 +138,23 @@
       "bad_luck_games": [],
       "best_games": [
         {
-          "grade_letter": "D+",
+          "grade_letter": "B+",
+          "ideal_score": 139.66666666666657,
+          "manager_score_pct": 89.2582338902148,
+          "matchup_href": "../matchups_week_02/matchup_03_two-buck-luck_vs_love-land-hurts.html",
+          "missed_lineup_points": 8.6,
+          "opponent": "Two Buck Luck",
+          "opponent_score": 131.87,
+          "result": "L",
+          "score": 131.07,
+          "week": 2,
+          "week_href": "../week_02.html",
+          "weekly_rank": 4
+        },
+        {
+          "grade_letter": "D-",
           "ideal_score": 144.93333333333322,
-          "manager_score_pct": 64.61831748952261,
+          "manager_score_pct": 59.920607175712945,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -95,9 +168,9 @@
       ],
       "biggest_lineup_misses": [
         {
-          "grade_letter": "D+",
+          "grade_letter": "D-",
           "ideal_score": 144.93333333333322,
-          "manager_score_pct": 64.61831748952261,
+          "manager_score_pct": 59.920607175712945,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -107,17 +180,31 @@
           "week": 1,
           "week_href": "../week_01.html",
           "weekly_rank": 8
+        },
+        {
+          "grade_letter": "B+",
+          "ideal_score": 139.66666666666657,
+          "manager_score_pct": 89.2582338902148,
+          "matchup_href": "../matchups_week_02/matchup_03_two-buck-luck_vs_love-land-hurts.html",
+          "missed_lineup_points": 8.6,
+          "opponent": "Two Buck Luck",
+          "opponent_score": 131.87,
+          "result": "L",
+          "score": 131.07,
+          "week": 2,
+          "week_href": "../week_02.html",
+          "weekly_rank": 4
         }
       ],
       "bottom_performers": [
         {
-          "average_points": 0.0,
-          "best_week": 1,
-          "best_week_points": 0.0,
+          "average_points": 0.15,
+          "best_week": 2,
+          "best_week_points": 0.3,
           "name": "Colston Loveland",
           "position": "TE",
-          "total_points": 0.0,
-          "weeks_started": 1,
+          "total_points": 0.3,
+          "weeks_started": 2,
           "worst_week": 1,
           "worst_week_points": 0.0
         },
@@ -133,94 +220,134 @@
           "worst_week_points": 1.0
         },
         {
-          "average_points": 6.300000000000001,
-          "best_week": 1,
-          "best_week_points": 6.300000000000001,
-          "name": "DeVonta Smith",
-          "position": "WR",
-          "total_points": 6.300000000000001,
+          "average_points": 5.0,
+          "best_week": 2,
+          "best_week_points": 5.0,
+          "name": "Tyler Loop",
+          "position": "K",
+          "total_points": 5.0,
           "weeks_started": 1,
-          "worst_week": 1,
-          "worst_week_points": 6.300000000000001
+          "worst_week": 2,
+          "worst_week_points": 5.0
         },
         {
-          "average_points": 7.0,
+          "average_points": 6.9,
           "best_week": 1,
           "best_week_points": 7.0,
           "name": "Quinshon Judkins",
           "position": "RB",
-          "total_points": 7.0,
-          "weeks_started": 1,
-          "worst_week": 1,
-          "worst_week_points": 7.0
+          "total_points": 13.8,
+          "weeks_started": 2,
+          "worst_week": 2,
+          "worst_week_points": 6.800000000000001
         },
         {
-          "average_points": 8.9,
-          "best_week": 1,
-          "best_week_points": 8.9,
-          "name": "Rashee Rice",
-          "position": "WR",
-          "total_points": 8.9,
+          "average_points": 7.300000000000001,
+          "best_week": 2,
+          "best_week_points": 7.300000000000001,
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "total_points": 7.300000000000001,
           "weeks_started": 1,
-          "worst_week": 1,
-          "worst_week_points": 8.9
+          "worst_week": 2,
+          "worst_week_points": 7.300000000000001
         }
       ],
-      "good_luck_games": [],
-      "soft_schedule_games": [],
+      "good_luck_games": [
+        {
+          "grade_letter": "D-",
+          "ideal_score": 144.93333333333322,
+          "luck_label": "Soft schedule break",
+          "manager_score_pct": 59.920607175712945,
+          "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
+          "missed_lineup_points": 48.6,
+          "opponent": "Squat",
+          "opponent_average_score": 76.15,
+          "opponent_score": 52.0,
+          "opponent_score_vs_average": -24.150000000000006,
+          "result": "W",
+          "schedule_label": "Soft schedule break",
+          "score": 96.33,
+          "team_score_vs_average": -17.36999999999999,
+          "week": 1,
+          "week_href": "../week_01.html",
+          "weekly_rank": 8
+        }
+      ],
+      "soft_schedule_games": [
+        {
+          "grade_letter": "D-",
+          "ideal_score": 144.93333333333322,
+          "luck_label": "Soft schedule break",
+          "manager_score_pct": 59.920607175712945,
+          "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
+          "missed_lineup_points": 48.6,
+          "opponent": "Squat",
+          "opponent_average_score": 76.15,
+          "opponent_score": 52.0,
+          "opponent_score_vs_average": -24.150000000000006,
+          "result": "W",
+          "schedule_label": "Soft schedule break",
+          "score": 96.33,
+          "team_score_vs_average": -17.36999999999999,
+          "week": 1,
+          "week_href": "../week_01.html",
+          "weekly_rank": 8
+        }
+      ],
       "top_performers": [
         {
-          "average_points": 39.43333333333322,
-          "best_week": 1,
-          "best_week_points": 39.43333333333322,
+          "average_points": 46.299999999999905,
+          "best_week": 2,
+          "best_week_points": 53.166666666666586,
           "name": "Josh Allen",
           "position": "QB",
-          "total_points": 39.43333333333322,
-          "weeks_started": 1,
+          "total_points": 92.59999999999981,
+          "weeks_started": 2,
           "worst_week": 1,
           "worst_week_points": 39.43333333333322
         },
         {
-          "average_points": 13.0,
-          "best_week": 1,
-          "best_week_points": 13.0,
-          "name": "Seahawks",
-          "position": "DEF",
-          "total_points": 13.0,
-          "weeks_started": 1,
-          "worst_week": 1,
-          "worst_week_points": 13.0
-        },
-        {
-          "average_points": 11.8,
-          "best_week": 1,
-          "best_week_points": 11.8,
-          "name": "Travis Etienne Jr.",
-          "position": "RB",
-          "total_points": 11.8,
-          "weeks_started": 1,
-          "worst_week": 1,
-          "worst_week_points": 11.8
-        },
-        {
-          "average_points": 8.9,
-          "best_week": 1,
-          "best_week_points": 8.9,
-          "name": "Rashee Rice",
+          "average_points": 15.500000000000002,
+          "best_week": 2,
+          "best_week_points": 24.700000000000003,
+          "name": "DeVonta Smith",
           "position": "WR",
-          "total_points": 8.9,
-          "weeks_started": 1,
+          "total_points": 31.000000000000004,
+          "weeks_started": 2,
+          "worst_week": 1,
+          "worst_week_points": 6.300000000000001
+        },
+        {
+          "average_points": 11.7,
+          "best_week": 2,
+          "best_week_points": 14.5,
+          "name": "Tee Higgins",
+          "position": "WR",
+          "total_points": 23.4,
+          "weeks_started": 2,
           "worst_week": 1,
           "worst_week_points": 8.9
         },
         {
-          "average_points": 8.9,
+          "average_points": 10.5,
           "best_week": 1,
-          "best_week_points": 8.9,
-          "name": "Tee Higgins",
+          "best_week_points": 13.0,
+          "name": "Seahawks",
+          "position": "DEF",
+          "total_points": 21.0,
+          "weeks_started": 2,
+          "worst_week": 2,
+          "worst_week_points": 8.0
+        },
+        {
+          "average_points": 10.100000000000001,
+          "best_week": 2,
+          "best_week_points": 11.3,
+          "name": "Rashee Rice",
           "position": "WR",
-          "total_points": 8.9,
-          "weeks_started": 1,
+          "total_points": 20.200000000000003,
+          "weeks_started": 2,
           "worst_week": 1,
           "worst_week_points": 8.9
         }
@@ -228,9 +355,9 @@
       "tough_schedule_games": [],
       "worst_games": [
         {
-          "grade_letter": "D+",
+          "grade_letter": "D-",
           "ideal_score": 144.93333333333322,
-          "manager_score_pct": 64.61831748952261,
+          "manager_score_pct": 59.920607175712945,
           "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
           "missed_lineup_points": 48.6,
           "opponent": "Squat",
@@ -240,25 +367,39 @@
           "week": 1,
           "week_href": "../week_01.html",
           "weekly_rank": 8
+        },
+        {
+          "grade_letter": "B+",
+          "ideal_score": 139.66666666666657,
+          "manager_score_pct": 89.2582338902148,
+          "matchup_href": "../matchups_week_02/matchup_03_two-buck-luck_vs_love-land-hurts.html",
+          "missed_lineup_points": 8.6,
+          "opponent": "Two Buck Luck",
+          "opponent_score": 131.87,
+          "result": "L",
+          "score": 131.07,
+          "week": 2,
+          "week_href": "../week_02.html",
+          "weekly_rank": 4
         }
       ]
     },
     "overview": {
-      "average_margin": 44.33,
-      "average_score": 96.33,
-      "close_game_record": "0-0",
-      "close_games": 0,
+      "average_margin": 21.764999999999993,
+      "average_score": 113.69999999999999,
+      "close_game_record": "0-1",
+      "close_games": 1,
       "cold_add_surprise_points": 0,
       "former_player_followup_points": 0,
-      "losses_average_score": null,
+      "losses_average_score": 131.07,
       "manager_display": "Matt",
       "pickup_surprise_points": 0,
-      "record": "1-0",
-      "score_volatility": 0.0,
+      "record": "1-1",
+      "score_volatility": 17.369999999999997,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "D-",
-      "season_grade_pct": 56.45833333333333,
-      "total_missed_lineup_points": 48.6,
+      "season_grade_letter": "C",
+      "season_grade_pct": 73.7503460090069,
+      "total_missed_lineup_points": 57.2,
       "total_move_process_adjustment": 0.0,
       "wins_average_score": 96.33
     },
@@ -270,31 +411,31 @@
     }
   },
   "summary": {
-    "average_manager_score_pct": 64.61831748952261,
-    "average_score": 96.33,
+    "average_manager_score_pct": 74.58942053296387,
+    "average_score": 113.69999999999999,
     "best_week": {
-      "score": 96.33,
-      "week": 1
+      "score": 131.07,
+      "week": 2
     },
     "html_filename": "love-land-hurts.html",
     "json_filename": "love-land-hurts.json",
     "latest_form": {
-      "delta_points": 0.0,
-      "label": "Too Early"
+      "delta_points": 34.73333333333338,
+      "label": "Heating Up"
     },
     "low_week": {
       "score": 96.33,
       "week": 1
     },
     "manager_display": "Matt",
-    "missed_lineup_points": 48.6,
+    "missed_lineup_points": 57.2,
     "move_grade_impact": 0.0,
-    "record": "1-0",
+    "record": "1-1",
     "season_confidence_label": "Provisional",
-    "season_grade_letter": "D-",
-    "season_grade_pct": 56.45833333333333,
+    "season_grade_letter": "C",
+    "season_grade_pct": 73.7503460090069,
     "team_name": "Love(land) Hurts",
-    "total_points": 96.33
+    "total_points": 227.39999999999998
   },
   "weeks": [
     {
@@ -310,24 +451,30 @@
             "trend": "insufficient_data"
           },
           "baseline": 75.0,
+          "competitive_strength": {
+            "all_play_win_pct": 22.22222222222222,
+            "dominant_win_rate": 0.0,
+            "victory_margin_pct": 35.17695603872401,
+            "win_pct": 100.0
+          },
           "component_scores": {
+            "competitive_strength": {
+              "available": true,
+              "league_rank": 7,
+              "league_size": 10,
+              "raw_unit": "all-play win rate",
+              "raw_value": 22.22222222222222,
+              "score_pct": 60.138888888888886,
+              "weight_pct": 35.0
+            },
             "lineup_management": {
               "available": true,
               "league_rank": 10,
               "league_size": 10,
               "raw_unit": "lineup efficiency",
               "raw_value": 66.46734130634772,
-              "score_pct": 45.0,
-              "weight_pct": 43.75
-            },
-            "points_performance": {
-              "available": true,
-              "league_rank": 8,
-              "league_size": 10,
-              "raw_unit": "actual points per week",
-              "raw_value": 96.33333333333323,
-              "score_pct": 57.22222222222222,
-              "weight_pct": 18.75
+              "score_pct": 50.641214351425894,
+              "weight_pct": 20.0
             },
             "roster_construction": {
               "available": true,
@@ -335,23 +482,27 @@
               "league_size": 10,
               "raw_unit": "ideal points per week",
               "raw_value": 144.93333333333322,
-              "score_pct": 69.44444444444444,
-              "weight_pct": 37.5
+              "score_pct": 73.75849600659078,
+              "weight_pct": 25.0
             },
             "transaction_value": {
-              "available": false,
-              "league_rank": null,
-              "league_size": 0,
-              "raw_unit": "realized transaction value",
-              "raw_value": null,
-              "score_pct": null,
-              "weight_pct": 0.0
+              "available": true,
+              "league_rank": 1,
+              "league_size": 10,
+              "raw_unit": "post-draft value over replacement",
+              "raw_value": 0.0,
+              "score_pct": 75.0,
+              "weight_pct": 20.0
             }
           },
           "confidence": 0.16666666666666666,
           "confidence_label": "Provisional",
           "drop_regret_points_total": 0.0,
-          "raw_score_pct": 56.45833333333333,
+          "move_impact": {
+            "move_assisted_wins": 0,
+            "post_draft_value_points": 0.0
+          },
+          "raw_score_pct": 64.61647798304398,
           "season_actual_points": 96.33333333333323,
           "season_ideal_points": 144.93333333333322,
           "season_lineup_efficiency_pct": 66.46734130634772,
@@ -365,18 +516,18 @@
           "component_scores": {
             "competitive_output": {
               "available": true,
-              "score_pct": 57.22222222222222,
-              "weight_pct": 20.0
+              "score_pct": 65.33333333333333,
+              "weight_pct": 30.0
             },
             "lineup_decisions": {
               "available": true,
-              "score_pct": 66.46734130634772,
-              "weight_pct": 80.0
+              "score_pct": 50.641214351425894,
+              "weight_pct": 50.0
             },
             "transaction_deployment": {
-              "available": false,
-              "score_pct": null,
-              "weight_pct": 0.0
+              "available": true,
+              "score_pct": 75.0,
+              "weight_pct": 20.0
             }
           },
           "decision_grade_pct": 66.46734130634772,
@@ -386,6 +537,8 @@
           "lineup_efficiency_pct": 66.46734130634772,
           "luck": {
             "actual_win_credit": 1.0,
+            "all_play_win_pct": 22.22222222222222,
+            "dominant_win": false,
             "expected_win_credit": 0.17944444444444443,
             "league_size": 10,
             "luck_win_credit": 0.8205555555555556,
@@ -394,8 +547,10 @@
             "opponent_lineup_miss_points": 18.966666666666583,
             "opponent_score_vs_week_average": -71.88400000000001,
             "score_vs_winning_baseline": -51.94000000000001,
+            "victory_margin_pct": 35.78347486358206,
             "weekly_score_rank": 8
           },
+          "move_assisted_win": false,
           "move_grade_adjustment_points": 0.0,
           "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
           "move_grade_tags": [],
@@ -403,13 +558,14 @@
           "score_vs_historical_avg": 0.0,
           "score_vs_season_average": -27.550666666666785,
           "season_average_score": 123.88400000000001,
+          "transaction_activity_count": 0,
           "weekly_rank": 8
         }
       },
-      "grade_letter": "D+",
+      "grade_letter": "D-",
       "ideal_score": 144.93333333333322,
       "manager_display": "Matt",
-      "manager_score_pct": 64.61831748952261,
+      "manager_score_pct": 59.920607175712945,
       "matchup_href": "../matchups_week_01/matchup_02_love-land-hurts_vs_squat.html",
       "missed_lineup_points": 48.6,
       "move_grade_impact": 0.0,
@@ -419,8 +575,8 @@
       "result": "W",
       "score": 96.33,
       "season_confidence_label": "Provisional",
-      "season_grade_letter": "D-",
-      "season_manager_score_pct": 56.45833333333333,
+      "season_grade_letter": "D+",
+      "season_manager_score_pct": 64.61647798304398,
       "started_all": [
         {
           "name": "Josh Allen",
@@ -508,6 +664,233 @@
       "week": 1,
       "week_href": "../week_01.html",
       "weekly_rank": 8
+    },
+    {
+      "additions": [],
+      "drops": [],
+      "form_delta_points": 34.73333333333338,
+      "form_label": "Heating Up",
+      "grade_components": {
+        "season": {
+          "adaptability": {
+            "included_in_rating": false,
+            "reason": "Shown as context only; the current trend label is not precise enough to grade.",
+            "trend": "improving"
+          },
+          "baseline": 75.0,
+          "competitive_strength": {
+            "all_play_win_pct": 44.44444444444444,
+            "dominant_win_rate": 0.0,
+            "victory_margin_pct": 35.17695603872401,
+            "win_pct": 50.0
+          },
+          "component_scores": {
+            "competitive_strength": {
+              "available": true,
+              "league_rank": 6,
+              "league_size": 10,
+              "raw_unit": "all-play win rate",
+              "raw_value": 44.44444444444444,
+              "score_pct": 69.04111193803575,
+              "weight_pct": 35.0
+            },
+            "lineup_management": {
+              "available": true,
+              "league_rank": 6,
+              "league_size": 10,
+              "raw_unit": "lineup efficiency",
+              "raw_value": 79.90161630358396,
+              "score_pct": 74.82290934645114,
+              "weight_pct": 20.0
+            },
+            "roster_construction": {
+              "available": true,
+              "league_rank": 5,
+              "league_size": 10,
+              "raw_unit": "ideal points per week",
+              "raw_value": 142.2999999999999,
+              "score_pct": 78.48549984561669,
+              "weight_pct": 25.0
+            },
+            "transaction_value": {
+              "available": true,
+              "league_rank": 2,
+              "league_size": 10,
+              "raw_unit": "post-draft value over replacement",
+              "raw_value": 0.0,
+              "score_pct": 75.0,
+              "weight_pct": 20.0
+            }
+          },
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional",
+          "drop_regret_points_total": 0.0,
+          "move_impact": {
+            "move_assisted_wins": 0,
+            "post_draft_value_points": 0.0
+          },
+          "raw_score_pct": 73.7503460090069,
+          "season_actual_points": 227.3999999999998,
+          "season_ideal_points": 284.5999999999998,
+          "season_lineup_efficiency_pct": 79.90161630358396,
+          "trend": "improving",
+          "weeks_completed": 2
+        },
+        "weekly": {
+          "bad_moves_this_week": 0,
+          "baseline": 75.0,
+          "beat_league_median": true,
+          "component_scores": {
+            "competitive_output": {
+              "available": true,
+              "score_pct": 81.0,
+              "weight_pct": 30.0
+            },
+            "lineup_decisions": {
+              "available": true,
+              "score_pct": 99.9164677804296,
+              "weight_pct": 50.0
+            },
+            "transaction_deployment": {
+              "available": true,
+              "score_pct": 75.0,
+              "weight_pct": 20.0
+            }
+          },
+          "decision_grade_pct": 93.84248210023867,
+          "free_agent_missed_points": 0.0,
+          "good_moves_this_week": 0,
+          "league_size": 10,
+          "lineup_efficiency_pct": 93.84248210023867,
+          "luck": {
+            "actual_win_credit": 0.0,
+            "all_play_win_pct": 66.66666666666666,
+            "dominant_win": false,
+            "expected_win_credit": 0.5733333333333334,
+            "league_size": 10,
+            "luck_win_credit": -0.5733333333333334,
+            "opponent_assisted_win": false,
+            "opponent_decisive_bench_points": 0.0,
+            "opponent_lineup_miss_points": 4.496666666666556,
+            "opponent_score_vs_week_average": 13.893,
+            "score_vs_winning_baseline": -0.8000000000000114,
+            "victory_margin_pct": 0.0,
+            "weekly_score_rank": 4
+          },
+          "move_assisted_win": false,
+          "move_grade_adjustment_points": 0.0,
+          "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+          "move_grade_tags": [],
+          "roster_missed_points": 8.6,
+          "score_vs_historical_avg": 17.36666666666666,
+          "score_vs_season_average": 10.136166666666568,
+          "season_average_score": 120.93050000000001,
+          "transaction_activity_count": 0,
+          "weekly_rank": 4
+        }
+      },
+      "grade_letter": "B+",
+      "ideal_score": 139.66666666666657,
+      "manager_display": "Matt",
+      "manager_score_pct": 89.2582338902148,
+      "matchup_href": "../matchups_week_02/matchup_03_two-buck-luck_vs_love-land-hurts.html",
+      "missed_lineup_points": 8.6,
+      "move_grade_impact": 0.0,
+      "notable_add_start": {},
+      "opponent": "Two Buck Luck",
+      "opponent_score": 131.87,
+      "result": "L",
+      "score": 131.07,
+      "season_confidence_label": "Provisional",
+      "season_grade_letter": "C",
+      "season_manager_score_pct": 73.7503460090069,
+      "started_all": [
+        {
+          "name": "Josh Allen",
+          "nfl_team": "Buffalo Bills",
+          "points": 53.166666666666586,
+          "position": "QB",
+          "roster_position": "QB",
+          "stat_line": "20/31, 248 pass yds \u00b7 3 pass TD \u00b7 14 rush, 69 yds \u00b7 2 rush TD",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "DeVonta Smith",
+          "nfl_team": "Philadelphia Eagles",
+          "points": 24.700000000000003,
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "stat_line": "10 rec, 117 yds \u00b7 1 rec TD",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Tee Higgins",
+          "nfl_team": "Cincinnati Bengals",
+          "points": 14.5,
+          "position": "WR",
+          "roster_position": "WR",
+          "stat_line": "5 rec, 95 yds",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Rashee Rice",
+          "nfl_team": "Kansas City Chiefs",
+          "points": 11.3,
+          "position": "WR",
+          "roster_position": "WR",
+          "stat_line": "4 rec, 83 yds",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Seahawks",
+          "nfl_team": "Seattle Seahawks",
+          "points": 8.0,
+          "position": "DEF",
+          "roster_position": "DEF",
+          "stat_line": "7 PA \u00b7 2 sacks \u00b7 1 INT",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Ashton Jeanty",
+          "nfl_team": "Las Vegas Raiders",
+          "points": 7.300000000000001,
+          "position": "RB",
+          "roster_position": "RB",
+          "stat_line": "21 rush, 48 yds \u00b7 4 rec, 15 yds",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Quinshon Judkins",
+          "nfl_team": "Cleveland Browns",
+          "points": 6.800000000000001,
+          "position": "RB",
+          "roster_position": "RB",
+          "stat_line": "12 rush, 21 yds \u00b7 5 rec, 27 yds",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Tyler Loop",
+          "nfl_team": "Baltimore Ravens",
+          "points": 5.0,
+          "position": "K",
+          "roster_position": "K",
+          "stat_line": "1 FG \u00b7 1 FG miss \u00b7 2 XP",
+          "team_name": "Love(land) Hurts"
+        },
+        {
+          "name": "Colston Loveland",
+          "nfl_team": "Chicago Bears",
+          "points": 0.3,
+          "position": "TE",
+          "roster_position": "TE",
+          "stat_line": "1 rec, 3 yds",
+          "team_name": "Love(land) Hurts"
+        }
+      ],
+      "top_drop_follow_up": {},
+      "week": 2,
+      "week_href": "../week_02.html",
+      "weekly_rank": 4
     }
   ]
 }

@@ -1,0 +1,2607 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2026,
+    "week": 2,
+    "generated_at": "2026-09-22T22:29:31.244746",
+    "page_title": "Squat vs ZSzizzle matchup report",
+    "matchup_id": "week-02-squat-vs-zszizzle",
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
+  },
+  "matchup": {
+    "matchup_id": "week-02-squat-vs-zszizzle",
+    "team_a_name": "Squat",
+    "team_b_name": "ZSzizzle",
+    "team_a_score": 100.3,
+    "team_b_score": 77.33,
+    "actual_margin": 22.97,
+    "final_margin": 22.97,
+    "winner_team_name": "Squat",
+    "result_text": "Squat by 23.0",
+    "margin_text": "Squat 100.3 to 77.3",
+    "ideal_margin": 16.999999999999957,
+    "ideal_winner": "Squat",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 118.11,
+    "team_b_projected_score": 126.05,
+    "team_a_points_over_projected": -17.810000000000002,
+    "team_b_points_over_projected": -48.72,
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "team_a_weekly_rank": 7,
+    "team_b_weekly_rank": 9,
+    "league_size": 10,
+    "team_a_beat_league_median": false,
+    "team_b_beat_league_median": false
+  },
+  "summary": {
+    "decision_summary": "Squat won by 23.0. Squat left 22.3 lineup points on the table, while ZSzizzle left 28.3.",
+    "historical_summary": "This is the first recorded meeting between these managers. Squat leads the manager series 1-0.",
+    "net_ideal_swing": -5.966666666666669,
+    "ideal_summary": "Ideal lineups still favor Squat",
+    "winner_reason": "Squat won by 23.0, led by a 19.5-point edge at WR. The leading starters were James Cook III (26.9) and Tyler Shough (25.7).",
+    "loser_reason": "ZSzizzle could not match the opponent's WR production, losing that position battle by 19.5 points. DJ Moore scored -0.1. Its best legal lineup added 28.3, enough to put the lineup decisions directly in the result."
+  },
+  "teams": [
+    {
+      "team_name": "Squat",
+      "manager_display": "Yarp",
+      "actual_score": 100.29999999999988,
+      "ideal_score": 122.63333333333321,
+      "manager_grade_pct": 75.97787034302526,
+      "manager_grade_letter": "C",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 75.97787034302526,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 64.65118639998349,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 81.7885294917097,
+            "decision_grade_pct": 81.7885294917097,
+            "roster_missed_points": 22.33333333333332,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -6.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 6.0 pts.",
+            "move_grade_tags": [
+              "Obvious start miss",
+              "Neutral add/start"
+            ],
+            "move_assisted_win": true,
+            "transaction_activity_count": 4,
+            "score_vs_historical_avg": 24.149999999999935,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": -20.630500000000126,
+            "weekly_rank": 7,
+            "league_size": 10,
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 78.21935308507746,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 81.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 68.8939793349551,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.32166666666666666,
+              "luck_win_credit": 0.6783333333333333,
+              "all_play_win_pct": 33.33333333333333,
+              "dominant_win": false,
+              "victory_margin_pct": 19.46989667477559,
+              "weekly_score_rank": 7,
+              "league_size": 10,
+              "score_vs_winning_baseline": -31.570000000000007,
+              "opponent_score_vs_week_average": -40.647000000000006,
+              "opponent_lineup_miss_points": 28.303333333333256,
+              "opponent_assisted_win": true,
+              "opponent_decisive_bench_points": 5.3333333333332575
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 152.29999999999987,
+            "season_ideal_points": 193.5999999999998,
+            "season_lineup_efficiency_pct": 78.66735537190084,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 64.65118639998349,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 72.60123966942152,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 78.66735537190084,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 8,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 96.7999999999999,
+                "raw_unit": "ideal points per week",
+                "league_rank": 10,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 32.46666666666657,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 53.94553847456909,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 16.666666666666664,
+                "raw_unit": "all-play win rate",
+                "league_rank": 8,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 16.666666666666664,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 19.45538474569093
+            },
+            "move_impact": {
+              "post_draft_value_points": 32.46666666666657,
+              "move_assisted_wins": 1
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Squat graded C this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions."
+      },
+      "process_score_pct": 75.97787034302526,
+      "process_score_letter": "C",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 75.97787034302526,
+          "letter": "C",
+          "label": "reasonable but costly"
+        },
+        "season": {
+          "score_pct": 64.65118639998349,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 81.7885294917097,
+            "decision_grade_pct": 81.7885294917097,
+            "roster_missed_points": 22.33333333333332,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -6.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 6.0 pts.",
+            "move_grade_tags": [
+              "Obvious start miss",
+              "Neutral add/start"
+            ],
+            "move_assisted_win": true,
+            "transaction_activity_count": 4,
+            "score_vs_historical_avg": 24.149999999999935,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": -20.630500000000126,
+            "weekly_rank": 7,
+            "league_size": 10,
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 78.21935308507746,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 81.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 68.8939793349551,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.32166666666666666,
+              "luck_win_credit": 0.6783333333333333,
+              "all_play_win_pct": 33.33333333333333,
+              "dominant_win": false,
+              "victory_margin_pct": 19.46989667477559,
+              "weekly_score_rank": 7,
+              "league_size": 10,
+              "score_vs_winning_baseline": -31.570000000000007,
+              "opponent_score_vs_week_average": -40.647000000000006,
+              "opponent_lineup_miss_points": 28.303333333333256,
+              "opponent_assisted_win": true,
+              "opponent_decisive_bench_points": 5.3333333333332575
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 152.29999999999987,
+            "season_ideal_points": 193.5999999999998,
+            "season_lineup_efficiency_pct": 78.66735537190084,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 64.65118639998349,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 72.60123966942152,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 78.66735537190084,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 8,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 96.7999999999999,
+                "raw_unit": "ideal points per week",
+                "league_rank": 10,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 32.46666666666657,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 53.94553847456909,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 16.666666666666664,
+                "raw_unit": "all-play win rate",
+                "league_rank": 8,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 16.666666666666664,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 19.45538474569093
+            },
+            "move_impact": {
+              "post_draft_value_points": 32.46666666666657,
+              "move_assisted_wins": 1
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Squat graded C this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions."
+      },
+      "season_context": {
+        "seed": 9,
+        "record": "1-1",
+        "points_for": 152.3,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 22.33333333333333,
+          "roster_swap_upside_points": 22.33333333333332,
+          "waiver_upside_points": 0
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 4,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Squat",
+          "name": "James Cook III",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "21 rush, 135 yds \u00b7 1 rec, 4 yds \u00b7 1 rush TD",
+          "points": 26.9
+        },
+        {
+          "team_name": "Squat",
+          "name": "Tyler Shough",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "27/34, 252 pass yds \u00b7 1 pass TD \u00b7 9 rush, 23 yds \u00b7 1 rush TD",
+          "points": 25.69999999999991
+        },
+        {
+          "team_name": "Squat",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "7 rec, 75 yds \u00b7 2 rec TD",
+          "points": 22.5
+        },
+        {
+          "team_name": "Squat",
+          "name": "Jalen Coker",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "8 rec, 66 yds",
+          "points": 11.233333333333318
+        },
+        {
+          "team_name": "Squat",
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "3 rec, 31 yds \u00b7 1 rush, 4 yds",
+          "points": 5.466666666666657
+        },
+        {
+          "team_name": "Squat",
+          "name": "Eagles",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "20 PA \u00b7 2 sacks",
+          "points": 3.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "4 rush, 9 yds \u00b7 1 rec, 11 yds",
+          "points": 3.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "2 rec, 15 yds",
+          "points": 1.5
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Squat",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "22/31, 327 pass yds \u00b7 4 pass TD \u00b7 1 INT \u00b7 4 rush, -1 yds",
+          "points": 32.79999999999989,
+          "differential": 7.09999999999998,
+          "starter_replaced": "Tyler Shough",
+          "starter_points": 25.69999999999991
+        },
+        {
+          "team_name": "Squat",
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "5 rec, 47 yds \u00b7 2 rec TD",
+          "points": 20.7,
+          "differential": 15.233333333333341,
+          "starter_replaced": "Deebo Samuel Sr.",
+          "starter_points": 5.466666666666657
+        },
+        {
+          "team_name": "Squat",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "2 rec, 21 yds",
+          "points": 3.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 rec, 7 yds \u00b7 1 rush, 7 yds",
+          "points": 2.4000000000000004,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Kenyon Sadiq",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New York Jets",
+          "stat_line": "2 rec, 17 yds",
+          "points": 1.7000000000000002,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Squat",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "22/31, 327 pass yds \u00b7 4 pass TD \u00b7 1 INT \u00b7 4 rush, -1 yds",
+          "points": 32.79999999999989,
+          "differential": 7.09999999999998,
+          "starter_replaced": "Tyler Shough",
+          "starter_points": 25.69999999999991
+        },
+        {
+          "team_name": "Squat",
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "5 rec, 47 yds \u00b7 2 rec TD",
+          "points": 20.7,
+          "differential": 15.233333333333341,
+          "starter_replaced": "Deebo Samuel Sr.",
+          "starter_points": 5.466666666666657
+        },
+        {
+          "team_name": "Squat",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "2 rec, 21 yds",
+          "points": 3.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 rec, 7 yds \u00b7 1 rush, 7 yds",
+          "points": 2.4000000000000004,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Kenyon Sadiq",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New York Jets",
+          "stat_line": "2 rec, 17 yds",
+          "points": 1.7000000000000002,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Stefon Diggs",
+          "recommended_points": 20.7,
+          "benched_player": "Deebo Samuel Sr.",
+          "benched_points": 5.466666666666657,
+          "point_swing": 15.233333333333341,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Stefon Diggs over Deebo Samuel Sr. for an estimated +15.2 points this week.",
+          "confidence": 0.9808333333333334,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Deebo Samuel Sr.",
+            "points": 5.466666666666657,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.3808333333333335,
+            "capped_total": 0.9808333333333334
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        {
+          "position": "QB",
+          "recommended_player": "Matthew Stafford",
+          "recommended_points": 32.79999999999989,
+          "benched_player": "Tyler Shough",
+          "benched_points": 25.69999999999991,
+          "point_swing": 7.09999999999998,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Matthew Stafford over Tyler Shough for an estimated +7.1 points this week.",
+          "confidence": 0.7774999999999994,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Tyler Shough",
+            "points": 25.69999999999991,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1774999999999995,
+            "capped_total": 0.7774999999999994
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        }
+      ],
+      "top_waiver_swings": [],
+      "top_additions_this_week": [
+        {
+          "name": "Tyler Shough",
+          "position": "QB",
+          "actual_team": "New Orleans Saints",
+          "started": true,
+          "points": 25.69999999999991,
+          "outscored_team_active_players": 7,
+          "outscored_league_active_players": 78,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 27.46666666666653,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -1.7666666666666195,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Neutral add/start",
+          "tags": [
+            "Neutral add/start",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Tyler Shough (QB, 25.7 pts, started, Neutral add/start) - Neutral"
+        },
+        {
+          "name": "Jalen Coker",
+          "position": "WR",
+          "actual_team": "Carolina Panthers",
+          "started": true,
+          "points": 11.233333333333318,
+          "outscored_team_active_players": 5,
+          "outscored_league_active_players": 49,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 31.8,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -20.566666666666684,
+          "grade_adjustment_points": -3.0,
+          "grade_impact_label": "Obvious start miss",
+          "tags": [
+            "Obvious start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Jalen Coker (WR, 11.2 pts, started, Obvious start miss) - Neutral"
+        },
+        {
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "actual_team": "San Francisco 49ers",
+          "started": true,
+          "points": 5.466666666666657,
+          "outscored_team_active_players": 4,
+          "outscored_league_active_players": 21,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 18.46666666666664,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -12.999999999999982,
+          "grade_adjustment_points": -3.0,
+          "grade_impact_label": "Obvious start miss",
+          "tags": [
+            "Obvious start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Deebo Samuel Sr. (WR, 5.5 pts, started, Obvious start miss) - Neutral"
+        },
+        {
+          "name": "Chad Ryland",
+          "position": "K",
+          "actual_team": "Arizona Cardinals",
+          "started": true,
+          "points": 1.0,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 5,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 16.0,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -15.0,
+          "grade_adjustment_points": -3.0,
+          "grade_impact_label": "Obvious start miss",
+          "tags": [
+            "Obvious start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Chad Ryland (K, 1.0 pts, started, Obvious start miss) - Neutral"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Squat",
+          "name": "James Cook III",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "21 rush, 135 yds \u00b7 1 rec, 4 yds \u00b7 1 rush TD",
+          "points": 26.9
+        },
+        {
+          "team_name": "Squat",
+          "name": "Tyler Shough",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "27/34, 252 pass yds \u00b7 1 pass TD \u00b7 9 rush, 23 yds \u00b7 1 rush TD",
+          "points": 25.69999999999991
+        },
+        {
+          "team_name": "Squat",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "7 rec, 75 yds \u00b7 2 rec TD",
+          "points": 22.5
+        },
+        {
+          "team_name": "Squat",
+          "name": "Jalen Coker",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "8 rec, 66 yds",
+          "points": 11.233333333333318
+        },
+        {
+          "team_name": "Squat",
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "3 rec, 31 yds \u00b7 1 rush, 4 yds",
+          "points": 5.466666666666657
+        },
+        {
+          "team_name": "Squat",
+          "name": "Eagles",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "20 PA \u00b7 2 sacks",
+          "points": 3.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Philadelphia Eagles",
+          "stat_line": "4 rush, 9 yds \u00b7 1 rec, 11 yds",
+          "points": 3.0
+        },
+        {
+          "team_name": "Squat",
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "2 rec, 15 yds",
+          "points": 1.5
+        },
+        {
+          "team_name": "Squat",
+          "name": "Chad Ryland",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "1 XP",
+          "points": 1.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Squat",
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "22/31, 327 pass yds \u00b7 4 pass TD \u00b7 1 INT \u00b7 4 rush, -1 yds",
+          "points": 32.79999999999989
+        },
+        {
+          "team_name": "Squat",
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "5 rec, 47 yds \u00b7 2 rec TD",
+          "points": 20.7
+        },
+        {
+          "team_name": "Squat",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "2 rec, 21 yds",
+          "points": 3.1
+        },
+        {
+          "team_name": "Squat",
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 rec, 7 yds \u00b7 1 rush, 7 yds",
+          "points": 2.4000000000000004
+        },
+        {
+          "team_name": "Squat",
+          "name": "Kenyon Sadiq",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New York Jets",
+          "stat_line": "2 rec, 17 yds",
+          "points": 1.7000000000000002
+        },
+        {
+          "team_name": "Squat",
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "5 rush, 16 yds \u00b7 1 rec, -5 yds",
+          "points": 1.1
+        },
+        {
+          "team_name": "Squat",
+          "name": "RJ Harvey",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "actual_team": "Philadelphia Eagles",
+          "points": 3.0,
+          "season_avg": 14.683333333333334,
+          "type": "BUST",
+          "z_score": -1.3628562078768591,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 7,
+        "league_size": 10,
+        "league_average_score": 117.977,
+        "league_median_score": 118.065,
+        "beat_league_median": false,
+        "all_play_record": "3-6",
+        "projected_score": 118.11,
+        "points_over_projected": -17.810000000000002
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 100.29999999999988,
+        "optimal_lineup_points": 122.63333333333321,
+        "bench_points": 61.79999999999989,
+        "points_left_on_bench": 22.33333333333333,
+        "lowest_scoring_starter": {
+          "team_name": "Squat",
+          "name": "Chad Ryland",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "1 XP",
+          "points": 1.0
+        },
+        "lineup_landmine": {
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "points": 3.0,
+          "season_avg": 14.683333333333334,
+          "z_score": -1.3628562078768591,
+          "reason": "Started player materially underperformed season baseline."
+        },
+        "optimal_start_rate_pct": 77.77777777777779,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Stefon Diggs",
+          "recommended_points": 20.7,
+          "benched_player": "Deebo Samuel Sr.",
+          "benched_points": 5.466666666666657,
+          "point_swing": 15.233333333333341,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Stefon Diggs over Deebo Samuel Sr. for an estimated +15.2 points this week.",
+          "confidence": 0.9808333333333334,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Deebo Samuel Sr.",
+            "points": 5.466666666666657,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.3808333333333335,
+            "capped_total": 0.9808333333333334
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        "summary": "Squat started 7 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 74.8753738783649,
+        "top_2_share_pct": 52.44267198404783,
+        "volatility_std": 10.27339846639769,
+        "structural_integrity_pct": 25.124626121635103,
+        "fragility_score": 52.44267198404783,
+        "label": "Top-Heavy Build"
+      }
+    },
+    {
+      "team_name": "ZSzizzle",
+      "manager_display": "Mike",
+      "actual_score": 77.33333333333326,
+      "ideal_score": 105.63333333333325,
+      "manager_grade_pct": 62.28829283685704,
+      "manager_grade_letter": "D",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 62.28829283685704,
+          "letter": "D",
+          "label": "bad decisions"
+        },
+        "season": {
+          "score_pct": 68.37297993390085,
+          "letter": "C-",
+          "label": "bad decisions",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 73.20921426317449,
+            "decision_grade_pct": 73.20921426317449,
+            "roster_missed_points": 28.3,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": -29.48333333333332,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": -43.59716666666675,
+            "weekly_rank": 9,
+            "league_size": 10,
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 62.77658567371408,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 53.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.07222222222222222,
+              "luck_win_credit": -0.07222222222222222,
+              "all_play_win_pct": 11.11111111111111,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 9,
+              "league_size": 10,
+              "score_vs_winning_baseline": -54.540000000000006,
+              "opponent_score_vs_week_average": -17.677000000000007,
+              "opponent_lineup_miss_points": 22.333333333333215,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 213.63333333333316,
+            "season_ideal_points": 271.49999999999983,
+            "season_lineup_efficiency_pct": 78.68631062001225,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 68.37297993390085,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 72.63535911602204,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 78.68631062001225,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 7,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 66.81768520057955,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 135.74999999999991,
+                "raw_unit": "ideal points per week",
+                "league_rank": 7,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 63.26139088729016,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 38.888888888888886,
+                "raw_unit": "all-play win rate",
+                "league_rank": 7,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 38.888888888888886,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 46.52436121250595
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "declining",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions."
+      },
+      "process_score_pct": 62.28829283685704,
+      "process_score_letter": "D",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 62.28829283685704,
+          "letter": "D",
+          "label": "bad decisions"
+        },
+        "season": {
+          "score_pct": 68.37297993390085,
+          "letter": "C-",
+          "label": "bad decisions",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 73.20921426317449,
+            "decision_grade_pct": 73.20921426317449,
+            "roster_missed_points": 28.3,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": -29.48333333333332,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": -43.59716666666675,
+            "weekly_rank": 9,
+            "league_size": 10,
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 62.77658567371408,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 53.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.07222222222222222,
+              "luck_win_credit": -0.07222222222222222,
+              "all_play_win_pct": 11.11111111111111,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 9,
+              "league_size": 10,
+              "score_vs_winning_baseline": -54.540000000000006,
+              "opponent_score_vs_week_average": -17.677000000000007,
+              "opponent_lineup_miss_points": 22.333333333333215,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 213.63333333333316,
+            "season_ideal_points": 271.49999999999983,
+            "season_lineup_efficiency_pct": 78.68631062001225,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 68.37297993390085,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 72.63535911602204,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 78.68631062001225,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 7,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 66.81768520057955,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 135.74999999999991,
+                "raw_unit": "ideal points per week",
+                "league_rank": 7,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 63.26139088729016,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 38.888888888888886,
+                "raw_unit": "all-play win rate",
+                "league_rank": 7,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 38.888888888888886,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 46.52436121250595
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "declining",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions."
+      },
+      "season_context": {
+        "seed": 7,
+        "record": "1-1",
+        "points_for": 213.63,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 28.299999999999997,
+          "roster_swap_upside_points": 26.1,
+          "waiver_upside_points": 0
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "8 rec, 138 yds",
+          "points": 19.8
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "21/31, 235 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 4 rush, 34 yds",
+          "points": 18.233333333333256
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Rams",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "6 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 11.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "16 rush, 72 yds \u00b7 3 rec, 9 yds",
+          "points": 10.1
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Harold Fannin Jr.",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Cleveland Browns",
+          "stat_line": "5 rec, 54 yds",
+          "points": 8.4
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jeremiyah Love",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "9 rush, 29 yds \u00b7 3 rec, 16 yds",
+          "points": 5.5
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Houston Texans",
+          "stat_line": "6 rush, 10 yds \u00b7 2 rec, 14 yds",
+          "points": 2.4000000000000004
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Cameron Dicker",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 FG miss \u00b7 2 XP",
+          "points": 2.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "ZSzizzle",
+          "name": "Patriots",
+          "position": "DEF",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR \u00b7 1 TD",
+          "points": 21.0,
+          "differential": 10.0,
+          "starter_replaced": "Rams",
+          "starter_points": 11.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "23 rush, 105 yds",
+          "points": 13.5,
+          "differential": 11.1,
+          "starter_replaced": "David Montgomery",
+          "starter_points": 2.4000000000000004
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "15/26, 138 pass yds \u00b7 1 INT \u00b7 5 rush, 42 yds",
+          "points": 9.799999999999956,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "BN",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "1 FG \u00b7 4 XP",
+          "points": 7.0,
+          "differential": 5.0,
+          "starter_replaced": "Cameron Dicker",
+          "starter_points": 2.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Hunter Henry",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 rec, 40 yds",
+          "points": 5.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "ZSzizzle",
+          "name": "Patriots",
+          "position": "DEF",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR \u00b7 1 TD",
+          "points": 21.0,
+          "differential": 10.0,
+          "starter_replaced": "Rams",
+          "starter_points": 11.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "23 rush, 105 yds",
+          "points": 13.5,
+          "differential": 11.1,
+          "starter_replaced": "David Montgomery",
+          "starter_points": 2.4000000000000004
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "15/26, 138 pass yds \u00b7 1 INT \u00b7 5 rush, 42 yds",
+          "points": 9.799999999999956,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "BN",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "1 FG \u00b7 4 XP",
+          "points": 7.0,
+          "differential": 5.0,
+          "starter_replaced": "Cameron Dicker",
+          "starter_points": 2.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Hunter Henry",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 rec, 40 yds",
+          "points": 5.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Aaron Jones Sr.",
+          "recommended_points": 13.5,
+          "benched_player": "David Montgomery",
+          "benched_points": 2.4000000000000004,
+          "point_swing": 11.1,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Aaron Jones Sr. over David Montgomery for an estimated +11.1 points this week.",
+          "confidence": 0.8775,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "David Montgomery",
+            "points": 2.4000000000000004,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.27749999999999997,
+            "capped_total": 0.8775
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        {
+          "position": "DEF",
+          "recommended_player": "Patriots",
+          "recommended_points": 21.0,
+          "benched_player": "Rams",
+          "benched_points": 11.0,
+          "point_swing": 10.0,
+          "source": "ROSTER",
+          "reason": "At DEF, swap in Patriots over Rams for an estimated +10.0 points this week.",
+          "confidence": 0.85,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Rams",
+            "points": 11.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.25,
+            "capped_total": 0.85
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        {
+          "position": "K",
+          "recommended_player": "Jake Bates",
+          "recommended_points": 7.0,
+          "benched_player": "Cameron Dicker",
+          "benched_points": 2.0,
+          "point_swing": 5.0,
+          "source": "ROSTER",
+          "reason": "At K, swap in Jake Bates over Cameron Dicker for an estimated +5.0 points this week.",
+          "confidence": 0.725,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Cameron Dicker",
+            "points": 2.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.125,
+            "capped_total": 0.725
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        }
+      ],
+      "top_waiver_swings": [],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "8 rec, 138 yds",
+          "points": 19.8
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "21/31, 235 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 4 rush, 34 yds",
+          "points": 18.233333333333256
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Rams",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "6 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 11.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "16 rush, 72 yds \u00b7 3 rec, 9 yds",
+          "points": 10.1
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Harold Fannin Jr.",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Cleveland Browns",
+          "stat_line": "5 rec, 54 yds",
+          "points": 8.4
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jeremiyah Love",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "9 rush, 29 yds \u00b7 3 rec, 16 yds",
+          "points": 5.5
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "David Montgomery",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Houston Texans",
+          "stat_line": "6 rush, 10 yds \u00b7 2 rec, 14 yds",
+          "points": 2.4000000000000004
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Cameron Dicker",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 FG miss \u00b7 2 XP",
+          "points": 2.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "DJ Moore",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "1 rush, -1 yds",
+          "points": -0.1
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "ZSzizzle",
+          "name": "Patriots",
+          "position": "DEF",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR \u00b7 1 TD",
+          "points": 21.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "23 rush, 105 yds",
+          "points": 13.5
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "15/26, 138 pass yds \u00b7 1 INT \u00b7 5 rush, 42 yds",
+          "points": 9.799999999999956
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Jake Bates",
+          "position": "K",
+          "roster_position": "BN",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "1 FG \u00b7 4 XP",
+          "points": 7.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Hunter Henry",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 rec, 40 yds",
+          "points": 5.0
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Alec Pierce",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "1 rec, 11 yds",
+          "points": 2.1
+        },
+        {
+          "team_name": "ZSzizzle",
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Patriots",
+          "position": "DEF",
+          "actual_team": "New England Patriots",
+          "points": 21.0,
+          "season_avg": 4.5,
+          "type": "BOOM",
+          "z_score": 3.4631477113291864,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Rams",
+          "position": "DEF",
+          "actual_team": "Los Angeles Rams",
+          "points": 11.0,
+          "season_avg": 4.0,
+          "type": "BOOM",
+          "z_score": 2.25924028528766,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 9,
+        "league_size": 10,
+        "league_average_score": 117.977,
+        "league_median_score": 118.065,
+        "beat_league_median": false,
+        "all_play_record": "1-8",
+        "projected_score": 126.05,
+        "points_over_projected": -48.72
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 77.33333333333326,
+        "optimal_lineup_points": 105.63333333333325,
+        "bench_points": 58.399999999999956,
+        "points_left_on_bench": 28.299999999999997,
+        "lowest_scoring_starter": {
+          "team_name": "ZSzizzle",
+          "name": "DJ Moore",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "1 rush, -1 yds",
+          "points": -0.1
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 66.66666666666666,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Aaron Jones Sr.",
+          "recommended_points": 13.5,
+          "benched_player": "David Montgomery",
+          "benched_points": 2.4000000000000004,
+          "point_swing": 11.1,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Aaron Jones Sr. over David Montgomery for an estimated +11.1 points this week.",
+          "confidence": 0.8775,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "David Montgomery",
+            "points": 2.4000000000000004,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.27749999999999997,
+            "capped_total": 0.8775
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        "summary": "ZSzizzle started 6 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 63.405172413793075,
+        "top_2_share_pct": 49.18103448275858,
+        "volatility_std": 6.613039453180941,
+        "structural_integrity_pct": 36.594827586206925,
+        "fragility_score": 49.18103448275858,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Squat",
+        "name": "James Cook III",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "21 rush, 135 yds \u00b7 1 rec, 4 yds \u00b7 1 rush TD",
+        "points": 26.9,
+        "team_score_share_pct": 26.81954137587241,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "26.9 points supplied 27% of Squat's output in a 23.0-point win."
+      },
+      {
+        "team_name": "Squat",
+        "name": "Tyler Shough",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "New Orleans Saints",
+        "stat_line": "27/34, 252 pass yds \u00b7 1 pass TD \u00b7 9 rush, 23 yds \u00b7 1 rush TD",
+        "points": 25.69999999999991,
+        "team_score_share_pct": 25.623130608175416,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "25.7 points supplied 26% of Squat's output in a 23.0-point win."
+      },
+      {
+        "team_name": "Squat",
+        "name": "Ja'Marr Chase",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Cincinnati Bengals",
+        "stat_line": "7 rec, 75 yds \u00b7 2 rec TD",
+        "points": 22.5,
+        "team_score_share_pct": 22.432701894317077,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "22.5 points supplied 22% of Squat's output in a 23.0-point win."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Jaylen Waddle",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Denver Broncos",
+        "stat_line": "8 rec, 138 yds",
+        "points": 19.8,
+        "team_score_share_pct": 25.603448275862096,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "19.8 points supplied 26% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Lamar Jackson",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "Baltimore Ravens",
+        "stat_line": "21/31, 235 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 4 rush, 34 yds",
+        "points": 18.233333333333256,
+        "team_score_share_pct": 23.577586206896477,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "18.2 points supplied 24% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "Squat",
+        "name": "Jalen Coker",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "nfl_team": "Carolina Panthers",
+        "stat_line": "8 rec, 66 yds",
+        "points": 11.233333333333318,
+        "team_score_share_pct": 11.19973413094051,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "11.2 points supplied 11% of Squat's output in a 23.0-point win."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Rams",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Los Angeles Rams",
+        "stat_line": "6 PA \u00b7 2 sacks \u00b7 1 INT",
+        "points": 11.0,
+        "team_score_share_pct": 14.224137931034498,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "11.0 points supplied 14% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Bijan Robinson",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Atlanta Falcons",
+        "stat_line": "16 rush, 72 yds \u00b7 3 rec, 9 yds",
+        "points": 10.1,
+        "team_score_share_pct": 13.06034482758622,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "10.1 points supplied 13% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Harold Fannin Jr.",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Cleveland Browns",
+        "stat_line": "5 rec, 54 yds",
+        "points": 8.4,
+        "team_score_share_pct": 10.862068965517253,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "8.4 points supplied 11% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Jeremiyah Love",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Arizona Cardinals",
+        "stat_line": "9 rush, 29 yds \u00b7 3 rec, 16 yds",
+        "points": 5.5,
+        "team_score_share_pct": 7.112068965517249,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "5.5 points supplied 7% of ZSzizzle's output in a 23.0-point loss."
+      }
+    ],
+    "bottom_started_players": [
+      {
+        "team_name": "ZSzizzle",
+        "name": "DJ Moore",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "1 rush, -1 yds",
+        "points": -0.1,
+        "team_score_share_pct": -0.12931034482758633,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "-0.1 points supplied -0% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "Squat",
+        "name": "Chad Ryland",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Arizona Cardinals",
+        "stat_line": "1 XP",
+        "points": 1.0,
+        "team_score_share_pct": 0.997008973080759,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "1.0 points supplied 1% of Squat's output in a 23.0-point win."
+      },
+      {
+        "team_name": "Squat",
+        "name": "Tucker Kraft",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Green Bay Packers",
+        "stat_line": "2 rec, 15 yds",
+        "points": 1.5,
+        "team_score_share_pct": 1.4955134596211384,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "1.5 points supplied 1% of Squat's output in a 23.0-point win."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Cameron Dicker",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "1 FG miss \u00b7 2 XP",
+        "points": 2.0,
+        "team_score_share_pct": 2.5862068965517264,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "2.0 points supplied 3% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "David Montgomery",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "nfl_team": "Houston Texans",
+        "stat_line": "6 rush, 10 yds \u00b7 2 rec, 14 yds",
+        "points": 2.4000000000000004,
+        "team_score_share_pct": 3.1034482758620725,
+        "matchup_result": "Lost",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "2.4 points supplied 3% of ZSzizzle's output in a 23.0-point loss."
+      },
+      {
+        "team_name": "Squat",
+        "name": "Eagles",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Philadelphia Eagles",
+        "stat_line": "20 PA \u00b7 2 sacks",
+        "points": 3.0,
+        "team_score_share_pct": 2.9910269192422767,
+        "matchup_result": "Won",
+        "matchup_margin": 22.966666666666626,
+        "impact_summary": "3.0 points supplied 3% of Squat's output in a 23.0-point win."
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Squat",
+        "name": "Stefon Diggs",
+        "position": "WR",
+        "roster_position": "BN",
+        "nfl_team": "Washington Commanders",
+        "stat_line": "5 rec, 47 yds \u00b7 2 rec TD",
+        "points": 20.7,
+        "differential": 15.233333333333341,
+        "starter_replaced": "Deebo Samuel Sr.",
+        "starter_points": 5.466666666666657
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Aaron Jones Sr.",
+        "position": "RB",
+        "roster_position": "BN",
+        "nfl_team": "Minnesota Vikings",
+        "stat_line": "23 rush, 105 yds",
+        "points": 13.5,
+        "differential": 11.1,
+        "starter_replaced": "David Montgomery",
+        "starter_points": 2.4000000000000004
+      },
+      {
+        "team_name": "ZSzizzle",
+        "name": "Patriots",
+        "position": "DEF",
+        "roster_position": "BN",
+        "nfl_team": "New England Patriots",
+        "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR \u00b7 1 TD",
+        "points": 21.0,
+        "differential": 10.0,
+        "starter_replaced": "Rams",
+        "starter_points": 11.0
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Squat",
+        "name": "Tyler Shough",
+        "position": "QB",
+        "actual_team": "New Orleans Saints",
+        "started": true,
+        "points": 25.69999999999991,
+        "outscored_team_active_players": 7,
+        "outscored_league_active_players": 78,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 27.46666666666653,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -1.7666666666666195,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Neutral add/start",
+        "tags": [
+          "Neutral add/start",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Tyler Shough (QB, 25.7 pts, started, Neutral add/start) - Neutral"
+      },
+      {
+        "team_name": "Squat",
+        "name": "Jalen Coker",
+        "position": "WR",
+        "actual_team": "Carolina Panthers",
+        "started": true,
+        "points": 11.233333333333318,
+        "outscored_team_active_players": 5,
+        "outscored_league_active_players": 49,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 31.8,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -20.566666666666684,
+        "grade_adjustment_points": -3.0,
+        "grade_impact_label": "Obvious start miss",
+        "tags": [
+          "Obvious start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Jalen Coker (WR, 11.2 pts, started, Obvious start miss) - Neutral"
+      },
+      {
+        "team_name": "Squat",
+        "name": "Deebo Samuel Sr.",
+        "position": "WR",
+        "actual_team": "San Francisco 49ers",
+        "started": true,
+        "points": 5.466666666666657,
+        "outscored_team_active_players": 4,
+        "outscored_league_active_players": 21,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 18.46666666666664,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -12.999999999999982,
+        "grade_adjustment_points": -3.0,
+        "grade_impact_label": "Obvious start miss",
+        "tags": [
+          "Obvious start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Deebo Samuel Sr. (WR, 5.5 pts, started, Obvious start miss) - Neutral"
+      },
+      {
+        "team_name": "Squat",
+        "name": "Chad Ryland",
+        "position": "K",
+        "actual_team": "Arizona Cardinals",
+        "started": true,
+        "points": 1.0,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 5,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 16.0,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -15.0,
+        "grade_adjustment_points": -3.0,
+        "grade_impact_label": "Obvious start miss",
+        "tags": [
+          "Obvious start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Chad Ryland (K, 1.0 pts, started, Obvious start miss) - Neutral"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Squat",
+      "loser_team": "ZSzizzle",
+      "value": 22.966666666666626,
+      "margin_relative_value": -0.0033333333333729342,
+      "position": "",
+      "summary": "Squat won the raw scoring battle by 23.0 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Squat",
+      "loser_team": "ZSzizzle",
+      "value": 5.966666666666669,
+      "margin_relative_value": -17.00333333333333,
+      "position": "",
+      "summary": "Squat had the cleaner lineup week by 6.0 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "ZSzizzle",
+      "loser_team": "Squat",
+      "value": 28.299999999999997,
+      "margin_relative_value": 5.329999999999998,
+      "position": "",
+      "summary": "ZSzizzle carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "MOSTLY",
+      "loser_team": "ZSzizzle",
+      "value": 28.299999999999997,
+      "margin_relative_value": 5.329999999999998,
+      "position": "",
+      "summary": "Missed opportunities exceeded the 23.0-point margin, but not from one clear swap."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Squat",
+      "loser_team": "ZSzizzle",
+      "value": 19.499999999999975,
+      "margin_relative_value": -3.4700000000000237,
+      "position": "WR",
+      "summary": "Squat controlled total WR output by 19.5 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 22.97,
+    "margin": 22.97,
+    "takeaways": [
+      "ZSzizzle left 28.3 lineup points on the table, more than the 23.0-point final margin.",
+      "The clearest unit edge was total WR output: Squat by 19.5 points.",
+      "Against projection, Squat finished -17.8 while ZSzizzle finished -48.7.",
+      "The biggest started performance was James Cook III for Squat at 26.9 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "ZSzizzle lineup leakage",
+        "team_name": "ZSzizzle",
+        "value": 28.299999999999997,
+        "relative_to_margin": 5.329999999999998
+      },
+      {
+        "label": "Squat lineup leakage",
+        "team_name": "Squat",
+        "value": 22.33333333333333,
+        "relative_to_margin": -0.6366666666666703
+      },
+      {
+        "label": "Squat waiver upside",
+        "team_name": "Squat",
+        "value": 0.0,
+        "relative_to_margin": -22.97
+      },
+      {
+        "label": "ZSzizzle waiver upside",
+        "team_name": "ZSzizzle",
+        "value": 0.0,
+        "relative_to_margin": -22.97
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null,
+    "scenario_rows": [
+      {
+        "scenario": "Actual lineups",
+        "winner": "Squat",
+        "winner_score": 100.29999999999988,
+        "loser_score": 77.33333333333326,
+        "margin": 22.966666666666626
+      },
+      {
+        "scenario": "Both best legal lineups",
+        "winner": "Squat",
+        "winner_score": 122.63333333333321,
+        "loser_score": 105.63333333333325,
+        "margin": 16.999999999999957
+      }
+    ]
+  },
+  "skill_luck": {
+    "primary_label": "Schedule-Fortunate Win",
+    "summary": "The winner secured the result despite finishing below the league median for the week.",
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "teams": [
+      {
+        "team_name": "Squat",
+        "weekly_rank": 7,
+        "all_play_record": "3-6",
+        "beat_league_median": false,
+        "projected_score": 118.11,
+        "points_over_projected": -17.810000000000002,
+        "opponent_weekly_rank": 9
+      },
+      {
+        "team_name": "ZSzizzle",
+        "weekly_rank": 9,
+        "all_play_record": "1-8",
+        "beat_league_median": false,
+        "projected_score": 126.05,
+        "points_over_projected": -48.72,
+        "opponent_weekly_rank": 7
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Schedule-Fortunate Win",
+    "summary": "The winner secured the result despite finishing below the league median for the week.",
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "teams": [
+      {
+        "team_name": "Squat",
+        "weekly_rank": 7,
+        "all_play_record": "3-6",
+        "beat_league_median": false,
+        "projected_score": 118.11,
+        "points_over_projected": -17.810000000000002,
+        "opponent_weekly_rank": 9
+      },
+      {
+        "team_name": "ZSzizzle",
+        "weekly_rank": 9,
+        "all_play_record": "1-8",
+        "beat_league_median": false,
+        "projected_score": 126.05,
+        "points_over_projected": -48.72,
+        "opponent_weekly_rank": 7
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "WR",
+        "team_a_points": 39.199999999999974,
+        "team_b_points": 19.7,
+        "edge_points": 19.499999999999975,
+        "edge_team": "Squat",
+        "edge_direction": 19.499999999999975
+      },
+      {
+        "position": "RB",
+        "team_a_points": 29.9,
+        "team_b_points": 18.0,
+        "edge_points": 11.899999999999999,
+        "edge_team": "Squat",
+        "edge_direction": 11.899999999999999
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 3.0,
+        "team_b_points": 11.0,
+        "edge_points": 8.0,
+        "edge_team": "ZSzizzle",
+        "edge_direction": -8.0
+      },
+      {
+        "position": "QB",
+        "team_a_points": 25.69999999999991,
+        "team_b_points": 18.233333333333256,
+        "edge_points": 7.466666666666654,
+        "edge_team": "Squat",
+        "edge_direction": 7.466666666666654
+      },
+      {
+        "position": "TE",
+        "team_a_points": 1.5,
+        "team_b_points": 8.4,
+        "edge_points": 6.9,
+        "edge_team": "ZSzizzle",
+        "edge_direction": -6.9
+      },
+      {
+        "position": "K",
+        "team_a_points": 1.0,
+        "team_b_points": 2.0,
+        "edge_points": 1.0,
+        "edge_team": "ZSzizzle",
+        "edge_direction": -1.0
+      }
+    ],
+    "largest_edge": {
+      "position": "WR",
+      "team_a_points": 39.199999999999974,
+      "team_b_points": 19.7,
+      "edge_points": 19.499999999999975,
+      "edge_team": "Squat",
+      "edge_direction": 19.499999999999975
+    },
+    "top_wins": [
+      {
+        "position": "WR",
+        "team_a_points": 39.199999999999974,
+        "team_b_points": 19.7,
+        "edge_points": 19.499999999999975,
+        "edge_team": "Squat",
+        "edge_direction": 19.499999999999975
+      },
+      {
+        "position": "RB",
+        "team_a_points": 29.9,
+        "team_b_points": 18.0,
+        "edge_points": 11.899999999999999,
+        "edge_team": "Squat",
+        "edge_direction": 11.899999999999999
+      },
+      {
+        "position": "QB",
+        "team_a_points": 25.69999999999991,
+        "team_b_points": 18.233333333333256,
+        "edge_points": 7.466666666666654,
+        "edge_team": "Squat",
+        "edge_direction": 7.466666666666654
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "DEF",
+        "team_a_points": 3.0,
+        "team_b_points": 11.0,
+        "edge_points": 8.0,
+        "edge_team": "ZSzizzle",
+        "edge_direction": -8.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 1.5,
+        "team_b_points": 8.4,
+        "edge_points": 6.9,
+        "edge_team": "ZSzizzle",
+        "edge_direction": -6.9
+      },
+      {
+        "position": "K",
+        "team_a_points": 1.0,
+        "team_b_points": 2.0,
+        "edge_points": 1.0,
+        "edge_team": "ZSzizzle",
+        "edge_direction": -1.0
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Squat",
+      "actual_lineup_points": 100.29999999999988,
+      "optimal_lineup_points": 122.63333333333321,
+      "bench_points": 61.79999999999989,
+      "points_left_on_bench": 22.33333333333333,
+      "lowest_scoring_starter": {
+        "team_name": "Squat",
+        "name": "Chad Ryland",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Arizona Cardinals",
+        "stat_line": "1 XP",
+        "points": 1.0
+      },
+      "lineup_landmine": {
+        "name": "Saquon Barkley",
+        "position": "RB",
+        "points": 3.0,
+        "season_avg": 14.683333333333334,
+        "z_score": -1.3628562078768591,
+        "reason": "Started player materially underperformed season baseline."
+      },
+      "optimal_start_rate_pct": 77.77777777777779,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Stefon Diggs",
+        "recommended_points": 20.7,
+        "benched_player": "Deebo Samuel Sr.",
+        "benched_points": 5.466666666666657,
+        "point_swing": 15.233333333333341,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Stefon Diggs over Deebo Samuel Sr. for an estimated +15.2 points this week.",
+        "confidence": 0.9808333333333334,
+        "signal_label": "High hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Deebo Samuel Sr.",
+          "points": 5.466666666666657,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.3808333333333335,
+          "capped_total": 0.9808333333333334
+        },
+        "sample_context": {
+          "recommended_player_weeks": 2,
+          "comparison_player_weeks": 2
+        }
+      },
+      "summary": "Squat started 7 of 9 slots optimally"
+    },
+    {
+      "team_name": "ZSzizzle",
+      "actual_lineup_points": 77.33333333333326,
+      "optimal_lineup_points": 105.63333333333325,
+      "bench_points": 58.399999999999956,
+      "points_left_on_bench": 28.299999999999997,
+      "lowest_scoring_starter": {
+        "team_name": "ZSzizzle",
+        "name": "DJ Moore",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "1 rush, -1 yds",
+        "points": -0.1
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 66.66666666666666,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Aaron Jones Sr.",
+        "recommended_points": 13.5,
+        "benched_player": "David Montgomery",
+        "benched_points": 2.4000000000000004,
+        "point_swing": 11.1,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Aaron Jones Sr. over David Montgomery for an estimated +11.1 points this week.",
+        "confidence": 0.8775,
+        "signal_label": "High hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "David Montgomery",
+          "points": 2.4000000000000004,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.27749999999999997,
+          "capped_total": 0.8775
+        },
+        "sample_context": {
+          "recommended_player_weeks": 2,
+          "comparison_player_weeks": 2
+        }
+      },
+      "summary": "ZSzizzle started 6 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Squat",
+      "top_3_share_pct": 74.8753738783649,
+      "top_2_share_pct": 52.44267198404783,
+      "volatility_std": 10.27339846639769,
+      "structural_integrity_pct": 25.124626121635103,
+      "fragility_score": 52.44267198404783,
+      "label": "Top-Heavy Build"
+    },
+    {
+      "team_name": "ZSzizzle",
+      "top_3_share_pct": 63.405172413793075,
+      "top_2_share_pct": 49.18103448275858,
+      "volatility_std": 6.613039453180941,
+      "structural_integrity_pct": 36.594827586206925,
+      "fragility_score": 49.18103448275858,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Bench Pain",
+      "team_name": "ZSzizzle",
+      "detail": "ZSzizzle left 28.3 lineup points on the table, more than the 23.0-point final margin."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Squat",
+    "team_b_name": "ZSzizzle",
+    "record_for_team_a": "1-0",
+    "games": 1,
+    "playoff_games": 0,
+    "average_margin_for_team_a": 22.97,
+    "series_summary": "This is the first recorded meeting between these managers. Squat leads the manager series 1-0.",
+    "average_margin_text": "Average margin from Squat's perspective: +23.0.",
+    "current_margin_rank_text": "1st closest",
+    "current_total_rank_text": "1st highest combined score",
+    "streak_text": "Squat carries the current 1-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2026 W2",
+        "context": "regular season",
+        "winner": "Squat",
+        "margin": 22.97,
+        "combined_score": 177.63,
+        "historical_team_a_name": "Squat",
+        "historical_team_b_name": "ZSzizzle",
+        "report_href": "matchup_02_squat_vs_zszizzle.html"
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Chase wins all season long with Toyota Gameday Giveaways.",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/932349/recap?week=2&mid1=8&mid2=10",
+    "grade_summary": "Squat: B+ | ZSzizzle: D"
+  }
+}

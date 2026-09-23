@@ -1,0 +1,2445 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2026,
+    "week": 2,
+    "generated_at": "2026-09-22T22:29:31.361279",
+    "page_title": "Pat Pidgeon vs Bend & Snap Count matchup report",
+    "matchup_id": "week-02-pat-pidgeon-vs-bend-snap-count",
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
+  },
+  "matchup": {
+    "matchup_id": "week-02-pat-pidgeon-vs-bend-snap-count",
+    "team_a_name": "Pat Pidgeon",
+    "team_b_name": "Bend & Snap Count",
+    "team_a_score": 184.0,
+    "team_b_score": 126.9,
+    "actual_margin": 57.099999999999994,
+    "final_margin": 57.099999999999994,
+    "winner_team_name": "Pat Pidgeon",
+    "result_text": "Pat Pidgeon by 57.1",
+    "margin_text": "Pat Pidgeon 184.0 to 126.9",
+    "ideal_margin": 61.59999999999991,
+    "ideal_winner": "Pat Pidgeon",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 129.32,
+    "team_b_projected_score": 118.66,
+    "team_a_points_over_projected": 54.68000000000001,
+    "team_b_points_over_projected": 8.240000000000009,
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "team_a_weekly_rank": 1,
+    "team_b_weekly_rank": 5,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": true
+  },
+  "summary": {
+    "decision_summary": "Pat Pidgeon won by 57.1. Pat Pidgeon left 16.7 lineup points on the table, while Bend & Snap Count left 12.2.",
+    "historical_summary": "Pat Pidgeon is 19-19 against Bend & Snap Count across 38 meetings between these managers.",
+    "net_ideal_swing": 4.499999999999943,
+    "ideal_summary": "Ideal lineups still favor Pat Pidgeon",
+    "winner_reason": "Pat Pidgeon won by 57.1, led by a 35.0-point edge at RB. The leading starters were Jaxon Smith-Njigba (41.5) and Dak Prescott (37.9).",
+    "loser_reason": "Bend & Snap Count could not match the opponent's RB production, losing that position battle by 35.0 points. Ka'imi Fairbairn scored 7.0. A best legal lineup added 12.2, still short of the 57.1-point margin."
+  },
+  "teams": [
+    {
+      "team_name": "Pat Pidgeon",
+      "manager_display": "Jason P.",
+      "actual_score": 183.9999999999999,
+      "ideal_score": 200.69999999999987,
+      "manager_grade_pct": 89.71121076233185,
+      "manager_grade_letter": "B+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 89.71121076233185,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 94.66232962622293,
+          "letter": "A",
+          "label": "creative edge",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 91.6791230692576,
+            "decision_grade_pct": 91.6791230692576,
+            "roster_missed_points": 16.700000000000003,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -3.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 3.0 pts.",
+            "move_grade_tags": [
+              "Obvious start miss"
+            ],
+            "move_assisted_win": false,
+            "transaction_activity_count": 1,
+            "score_vs_historical_avg": -1.2666666666667084,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 63.06949999999988,
+            "weekly_rank": 1,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 96.02242152466368,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 63.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 97.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.9650000000000001,
+              "luck_win_credit": 0.03499999999999992,
+              "all_play_win_pct": 100.0,
+              "dominant_win": true,
+              "victory_margin_pct": 48.39926426337337,
+              "weekly_score_rank": 1,
+              "league_size": 10,
+              "score_vs_winning_baseline": 52.129999999999995,
+              "opponent_score_vs_week_average": 8.923000000000002,
+              "opponent_lineup_miss_points": 12.19999999999996,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 370.5333333333332,
+            "season_ideal_points": 398.63333333333316,
+            "season_lineup_efficiency_pct": 92.95091562839703,
+            "drop_regret_points_total": 0.0,
+            "trend": "unchanged",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 94.66232962622293,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 98.31164813111465,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 92.95091562839703,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 199.31666666666658,
+                "raw_unit": "ideal points per week",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 100.0,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "all-play win rate",
+                "league_rank": 1,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 100.0,
+              "win_pct": 100.0,
+              "dominant_win_rate": 100.0,
+              "victory_margin_pct": 47.65405957231871
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "unchanged",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Pat Pidgeon graded B+ this week and A for the season-to-date (provisional). Weekly management reads as well managed; season management reads as creative edge."
+      },
+      "process_score_pct": 89.71121076233185,
+      "process_score_letter": "B+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 89.71121076233185,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 94.66232962622293,
+          "letter": "A",
+          "label": "creative edge",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 91.6791230692576,
+            "decision_grade_pct": 91.6791230692576,
+            "roster_missed_points": 16.700000000000003,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": -3.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 3.0 pts.",
+            "move_grade_tags": [
+              "Obvious start miss"
+            ],
+            "move_assisted_win": false,
+            "transaction_activity_count": 1,
+            "score_vs_historical_avg": -1.2666666666667084,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 63.06949999999988,
+            "weekly_rank": 1,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 96.02242152466368,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 63.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 97.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.9650000000000001,
+              "luck_win_credit": 0.03499999999999992,
+              "all_play_win_pct": 100.0,
+              "dominant_win": true,
+              "victory_margin_pct": 48.39926426337337,
+              "weekly_score_rank": 1,
+              "league_size": 10,
+              "score_vs_winning_baseline": 52.129999999999995,
+              "opponent_score_vs_week_average": 8.923000000000002,
+              "opponent_lineup_miss_points": 12.19999999999996,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 370.5333333333332,
+            "season_ideal_points": 398.63333333333316,
+            "season_lineup_efficiency_pct": 92.95091562839703,
+            "drop_regret_points_total": 0.0,
+            "trend": "unchanged",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 94.66232962622293,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 98.31164813111465,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 92.95091562839703,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 199.31666666666658,
+                "raw_unit": "ideal points per week",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 100.0,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "all-play win rate",
+                "league_rank": 1,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 100.0,
+              "win_pct": 100.0,
+              "dominant_win_rate": 100.0,
+              "victory_margin_pct": 47.65405957231871
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "unchanged",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Pat Pidgeon graded B+ this week and A for the season-to-date (provisional). Weekly management reads as well managed; season management reads as creative edge."
+      },
+      "season_context": {
+        "seed": 1,
+        "record": "2-0",
+        "points_for": 370.53,
+        "max_possible_wins": 15
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 16.69999999999999,
+          "roster_swap_upside_points": 16.700000000000003,
+          "waiver_upside_points": 0
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 1,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "9 rec, 155 yds \u00b7 3 rec TD",
+          "points": 41.5
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "26/31, 279 pass yds \u00b7 4 pass TD \u00b7 4 rush, 26 yds",
+          "points": 37.899999999999906
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "16 rush, 52 yds \u00b7 6 rec, 61 yds \u00b7 1 rec TD",
+          "points": 24.3
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "23 rush, 94 yds \u00b7 2 rec, 21 yds \u00b7 1 rush TD",
+          "points": 22.5
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "7 rec, 95 yds \u00b7 1 rec TD",
+          "points": 20.5
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "12 rush, 53 yds \u00b7 2 rec, 11 yds \u00b7 1 rec TD",
+          "points": 17.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Evan McPherson",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "2 FG \u00b7 2 XP",
+          "points": 12.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chargers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "24 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 4.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 86 yds \u00b7 1 rec TD",
+          "points": 20.6,
+          "differential": 16.700000000000003,
+          "starter_replaced": "Caleb Douglas",
+          "starter_points": 3.9
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Malik Willis",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "14/23, 197 pass yds \u00b7 1 pass TD \u00b7 2 rush, 6 yds",
+          "points": 14.1666666666666,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "5 rush, 24 yds \u00b7 1 rec, 15 yds",
+          "points": 6.466666666666651,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "1 rec, 9 yds",
+          "points": 1.9,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "David Njoku",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 rec, 9 yds",
+          "points": 0.9,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 86 yds \u00b7 1 rec TD",
+          "points": 20.6,
+          "differential": 16.700000000000003,
+          "starter_replaced": "Caleb Douglas",
+          "starter_points": 3.9
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Malik Willis",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "14/23, 197 pass yds \u00b7 1 pass TD \u00b7 2 rush, 6 yds",
+          "points": 14.1666666666666,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "5 rush, 24 yds \u00b7 1 rec, 15 yds",
+          "points": 6.466666666666651,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "1 rec, 9 yds",
+          "points": 1.9,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "David Njoku",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 rec, 9 yds",
+          "points": 0.9,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Chris Olave",
+          "recommended_points": 20.6,
+          "benched_player": "Caleb Douglas",
+          "benched_points": 3.9,
+          "point_swing": 16.700000000000003,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Chris Olave over Caleb Douglas for an estimated +16.7 points this week.",
+          "confidence": 1.0,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Caleb Douglas",
+            "points": 3.9,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.4175000000000001,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        }
+      ],
+      "top_waiver_swings": [],
+      "top_additions_this_week": [
+        {
+          "name": "Caleb Douglas",
+          "position": "WR",
+          "actual_team": "Miami Dolphins",
+          "started": true,
+          "points": 3.9,
+          "outscored_team_active_players": 0,
+          "outscored_league_active_players": 14,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 12.4,
+          "prior_scoring_sample_weeks": 1,
+          "surprise_points_vs_prior": -8.5,
+          "grade_adjustment_points": -3.0,
+          "grade_impact_label": "Obvious start miss",
+          "tags": [
+            "Obvious start miss",
+            "Neutral",
+            "Started Add"
+          ],
+          "move_quality": "NEUTRAL",
+          "move_quality_label": "Neutral",
+          "usage_label": "started",
+          "summary": "Caleb Douglas (WR, 3.9 pts, started, Obvious start miss) - Neutral"
+        }
+      ],
+      "started_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "9 rec, 155 yds \u00b7 3 rec TD",
+          "points": 41.5
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "26/31, 279 pass yds \u00b7 4 pass TD \u00b7 4 rush, 26 yds",
+          "points": 37.899999999999906
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "16 rush, 52 yds \u00b7 6 rec, 61 yds \u00b7 1 rec TD",
+          "points": 24.3
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "23 rush, 94 yds \u00b7 2 rec, 21 yds \u00b7 1 rush TD",
+          "points": 22.5
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "7 rec, 95 yds \u00b7 1 rec TD",
+          "points": 20.5
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "12 rush, 53 yds \u00b7 2 rec, 11 yds \u00b7 1 rec TD",
+          "points": 17.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Evan McPherson",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "2 FG \u00b7 2 XP",
+          "points": 12.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chargers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "24 PA \u00b7 2 sacks \u00b7 1 INT",
+          "points": 4.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Caleb Douglas",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "2 rec, 19 yds",
+          "points": 3.9
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 86 yds \u00b7 1 rec TD",
+          "points": 20.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Malik Willis",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "14/23, 197 pass yds \u00b7 1 pass TD \u00b7 2 rush, 6 yds",
+          "points": 14.1666666666666
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "5 rush, 24 yds \u00b7 1 rec, 15 yds",
+          "points": 6.466666666666651
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "1 rec, 9 yds",
+          "points": 1.9
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "David Njoku",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "1 rec, 9 yds",
+          "points": 0.9
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Houston Texans",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "actual_team": "Seattle Seahawks",
+          "points": 41.5,
+          "season_avg": 18.427777777777777,
+          "type": "BOOM",
+          "z_score": 2.776414199485257,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "David Njoku",
+          "position": "TE",
+          "actual_team": "Los Angeles Chargers",
+          "points": 0.9,
+          "season_avg": 6.166666666666667,
+          "type": "BUST",
+          "z_score": -2.304421727457705,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "actual_team": "Dallas Cowboys",
+          "points": 37.899999999999906,
+          "season_avg": 20.912962962962876,
+          "type": "BOOM",
+          "z_score": 1.632478258323765,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "actual_team": "Buffalo Bills",
+          "points": 20.5,
+          "season_avg": 6.877777777777778,
+          "type": "BOOM",
+          "z_score": 1.6277374870949093,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 1,
+        "league_size": 10,
+        "league_average_score": 117.977,
+        "league_median_score": 118.065,
+        "beat_league_median": true,
+        "all_play_record": "9-0",
+        "projected_score": 129.32,
+        "points_over_projected": 54.68000000000001
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 183.9999999999999,
+        "optimal_lineup_points": 200.69999999999987,
+        "bench_points": 44.03333333333325,
+        "points_left_on_bench": 16.69999999999999,
+        "lowest_scoring_starter": {
+          "team_name": "Pat Pidgeon",
+          "name": "Caleb Douglas",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "2 rec, 19 yds",
+          "points": 3.9
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Chris Olave",
+          "recommended_points": 20.6,
+          "benched_player": "Caleb Douglas",
+          "benched_points": 3.9,
+          "point_swing": 16.700000000000003,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Chris Olave over Caleb Douglas for an estimated +16.7 points this week.",
+          "confidence": 1.0,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Caleb Douglas",
+            "points": 3.9,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.4175000000000001,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        "summary": "Pat Pidgeon started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 56.358695652173886,
+        "top_2_share_pct": 43.15217391304345,
+        "volatility_std": 12.435800569423296,
+        "structural_integrity_pct": 43.641304347826114,
+        "fragility_score": 43.15217391304345,
+        "label": "Boom/Bust Build"
+      }
+    },
+    {
+      "team_name": "Bend & Snap Count",
+      "manager_display": "Elissa P.",
+      "actual_score": 126.89999999999992,
+      "ideal_score": 139.09999999999997,
+      "manager_grade_pct": 84.90639827462255,
+      "manager_grade_letter": "B",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 84.90639827462255,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 86.1289800250815,
+          "letter": "B",
+          "label": "well managed",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 91.22933141624728,
+            "decision_grade_pct": 91.22933141624728,
+            "roster_missed_points": 12.20000000000004,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": -10.683333333333337,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 5.969499999999911,
+            "weekly_rank": 5,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 95.2127965492451,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 74.33333333333334,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.5011111111111112,
+              "luck_win_credit": -0.5011111111111112,
+              "all_play_win_pct": 55.55555555555556,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 5,
+              "league_size": 10,
+              "score_vs_winning_baseline": -4.969999999999999,
+              "opponent_score_vs_week_average": 66.023,
+              "opponent_lineup_miss_points": 16.699999999999875,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 275.1666666666665,
+            "season_ideal_points": 290.4666666666666,
+            "season_lineup_efficiency_pct": 94.73261418407158,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 86.1289800250815,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 94.73261418407158,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 83.71078070446295,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 145.2333333333333,
+                "raw_unit": "ideal points per week",
+                "league_rank": 4,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 86.28938528275935,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 66.66666666666667,
+                "raw_unit": "all-play win rate",
+                "league_rank": 4,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 66.66666666666667,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 18.72718616092684
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "declining",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed."
+      },
+      "process_score_pct": 84.90639827462255,
+      "process_score_letter": "B",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 84.90639827462255,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 86.1289800250815,
+          "letter": "B",
+          "label": "well managed",
+          "confidence": 0.3333333333333333,
+          "confidence_label": "Provisional"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 91.22933141624728,
+            "decision_grade_pct": 91.22933141624728,
+            "roster_missed_points": 12.20000000000004,
+            "free_agent_missed_points": 0.0,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": -10.683333333333337,
+            "season_average_score": 120.93050000000001,
+            "score_vs_season_average": 5.969499999999911,
+            "weekly_rank": 5,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 95.2127965492451,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 74.33333333333334,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.5011111111111112,
+              "luck_win_credit": -0.5011111111111112,
+              "all_play_win_pct": 55.55555555555556,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 5,
+              "league_size": 10,
+              "score_vs_winning_baseline": -4.969999999999999,
+              "opponent_score_vs_week_average": 66.023,
+              "opponent_lineup_miss_points": 16.699999999999875,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 275.1666666666665,
+            "season_ideal_points": 290.4666666666666,
+            "season_lineup_efficiency_pct": 94.73261418407158,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining",
+            "weeks_completed": 2,
+            "confidence": 0.3333333333333333,
+            "confidence_label": "Provisional",
+            "raw_score_pct": 86.1289800250815,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 94.73261418407158,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 83.71078070446295,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 145.2333333333333,
+                "raw_unit": "ideal points per week",
+                "league_rank": 4,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 86.28938528275935,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 66.66666666666667,
+                "raw_unit": "all-play win rate",
+                "league_rank": 4,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 66.66666666666667,
+              "win_pct": 50.0,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 18.72718616092684
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "declining",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed."
+      },
+      "season_context": {
+        "seed": 4,
+        "record": "1-1",
+        "points_for": 275.17,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 12.200000000000045,
+          "roster_swap_upside_points": 12.20000000000004,
+          "waiver_upside_points": 0
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "8 rec, 153 yds \u00b7 2 rec TD",
+          "points": 34.3
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Joe Burrow",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "20/31, 207 pass yds \u00b7 2 pass TD \u00b7 1 rush, -1 yds",
+          "points": 18.79999999999993
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Vikings",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR",
+          "points": 17.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Trey McBride",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "8 rec, 41 yds \u00b7 1 rec TD",
+          "points": 13.1
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Bucky Irving",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Tampa Bay Buccaneers",
+          "stat_line": "17 rush, 89 yds \u00b7 4 rec, 1 yds",
+          "points": 12.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "11 rush, 43 yds \u00b7 2 rec, 34 yds",
+          "points": 9.7
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "New York Giants",
+          "stat_line": "12 rush, 36 yds \u00b7 4 rec, 19 yds",
+          "points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "3 rec, 55 yds",
+          "points": 7.5
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "11/17, 96 pass yds \u00b7 1 pass TD \u00b7 7 rush, 69 yds",
+          "points": 21.09999999999997,
+          "differential": 2.30000000000004,
+          "starter_replaced": "Joe Burrow",
+          "starter_points": 18.79999999999993
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Rachaad White",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "7 rush, 43 yds \u00b7 6 rec, 40 yds",
+          "points": 13.3,
+          "differential": 5.800000000000001,
+          "starter_replaced": "Cam Skattebo",
+          "starter_points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 rec, 96 yds",
+          "points": 11.6,
+          "differential": 4.1,
+          "starter_replaced": "Justin Jefferson",
+          "starter_points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "5 rec, 25 yds \u00b7 1 rec TD",
+          "points": 10.5,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "3 rec, 40 yds",
+          "points": 7.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "11/17, 96 pass yds \u00b7 1 pass TD \u00b7 7 rush, 69 yds",
+          "points": 21.09999999999997,
+          "differential": 2.30000000000004,
+          "starter_replaced": "Joe Burrow",
+          "starter_points": 18.79999999999993
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Rachaad White",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "7 rush, 43 yds \u00b7 6 rec, 40 yds",
+          "points": 13.3,
+          "differential": 5.800000000000001,
+          "starter_replaced": "Cam Skattebo",
+          "starter_points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 rec, 96 yds",
+          "points": 11.6,
+          "differential": 4.1,
+          "starter_replaced": "Justin Jefferson",
+          "starter_points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "5 rec, 25 yds \u00b7 1 rec TD",
+          "points": 10.5,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "3 rec, 40 yds",
+          "points": 7.0,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Rachaad White",
+          "recommended_points": 13.3,
+          "benched_player": "Cam Skattebo",
+          "benched_points": 7.5,
+          "point_swing": 5.800000000000001,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Rachaad White over Cam Skattebo for an estimated +5.8 points this week.",
+          "confidence": 0.745,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Cam Skattebo",
+            "points": 7.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.14500000000000002,
+            "capped_total": 0.745
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        {
+          "position": "WR",
+          "recommended_player": "Romeo Doubs",
+          "recommended_points": 11.6,
+          "benched_player": "Justin Jefferson",
+          "benched_points": 7.5,
+          "point_swing": 4.1,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Romeo Doubs over Justin Jefferson for an estimated +4.1 points this week.",
+          "confidence": 0.7025,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Justin Jefferson",
+            "points": 7.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1025,
+            "capped_total": 0.7025
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        {
+          "position": "QB",
+          "recommended_player": "Jayden Daniels",
+          "recommended_points": 21.09999999999997,
+          "benched_player": "Joe Burrow",
+          "benched_points": 18.79999999999993,
+          "point_swing": 2.30000000000004,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Jayden Daniels over Joe Burrow for an estimated +2.3 points this week.",
+          "confidence": 0.657500000000001,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Joe Burrow",
+            "points": 18.79999999999993,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.057500000000000995,
+            "capped_total": 0.657500000000001
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        }
+      ],
+      "top_waiver_swings": [],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "8 rec, 153 yds \u00b7 2 rec TD",
+          "points": 34.3
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Joe Burrow",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "20/31, 207 pass yds \u00b7 2 pass TD \u00b7 1 rush, -1 yds",
+          "points": 18.79999999999993
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Vikings",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR",
+          "points": 17.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Trey McBride",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "8 rec, 41 yds \u00b7 1 rec TD",
+          "points": 13.1
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Bucky Irving",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Tampa Bay Buccaneers",
+          "stat_line": "17 rush, 89 yds \u00b7 4 rec, 1 yds",
+          "points": 12.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "11 rush, 43 yds \u00b7 2 rec, 34 yds",
+          "points": 9.7
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "New York Giants",
+          "stat_line": "12 rush, 36 yds \u00b7 4 rec, 19 yds",
+          "points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "3 rec, 55 yds",
+          "points": 7.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Ka'imi Fairbairn",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Houston Texans",
+          "stat_line": "2 FG \u00b7 1 FG miss",
+          "points": 7.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "11/17, 96 pass yds \u00b7 1 pass TD \u00b7 7 rush, 69 yds",
+          "points": 21.09999999999997
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Rachaad White",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Washington Commanders",
+          "stat_line": "7 rush, 43 yds \u00b7 6 rec, 40 yds",
+          "points": 13.3
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "3 rec, 96 yds",
+          "points": 11.6
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "5 rec, 25 yds \u00b7 1 rec TD",
+          "points": 10.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "3 rec, 40 yds",
+          "points": 7.0
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "3 rec, 25 yds",
+          "points": 3.5
+        },
+        {
+          "team_name": "Bend & Snap Count",
+          "name": "KC Concepcion Jr.",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Cleveland Browns",
+          "stat_line": "6 rec, 28 yds \u00b7 1 rush, -6 yds",
+          "points": 3.2
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "actual_team": "Dallas Cowboys",
+          "points": 34.3,
+          "season_avg": 10.161111111111113,
+          "type": "BOOM",
+          "z_score": 3.220653230345501,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "league_context": {
+        "weekly_rank": 5,
+        "league_size": 10,
+        "league_average_score": 117.977,
+        "league_median_score": 118.065,
+        "beat_league_median": true,
+        "all_play_record": "5-4",
+        "projected_score": 118.66,
+        "points_over_projected": 8.240000000000009
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 126.89999999999992,
+        "optimal_lineup_points": 139.09999999999997,
+        "bench_points": 70.19999999999997,
+        "points_left_on_bench": 12.200000000000045,
+        "lowest_scoring_starter": {
+          "team_name": "Bend & Snap Count",
+          "name": "Ka'imi Fairbairn",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Houston Texans",
+          "stat_line": "2 FG \u00b7 1 FG miss",
+          "points": 7.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 66.66666666666666,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Rachaad White",
+          "recommended_points": 13.3,
+          "benched_player": "Cam Skattebo",
+          "benched_points": 7.5,
+          "point_swing": 5.800000000000001,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Rachaad White over Cam Skattebo for an estimated +5.8 points this week.",
+          "confidence": 0.745,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Cam Skattebo",
+            "points": 7.5,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.14500000000000002,
+            "capped_total": 0.745
+          },
+          "sample_context": {
+            "recommended_player_weeks": 2,
+            "comparison_player_weeks": 2
+          }
+        },
+        "summary": "Bend & Snap Count started 6 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 55.2403467297084,
+        "top_2_share_pct": 41.84397163120564,
+        "volatility_std": 8.170679286326195,
+        "structural_integrity_pct": 44.7596532702916,
+        "fragility_score": 41.84397163120564,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Seattle Seahawks",
+        "stat_line": "9 rec, 155 yds \u00b7 3 rec TD",
+        "points": 41.5,
+        "team_score_share_pct": 22.55434782608697,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "41.5 points supplied 23% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Dak Prescott",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "Dallas Cowboys",
+        "stat_line": "26/31, 279 pass yds \u00b7 4 pass TD \u00b7 4 rush, 26 yds",
+        "points": 37.899999999999906,
+        "team_score_share_pct": 20.597826086956484,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "37.9 points supplied 21% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "CeeDee Lamb",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Dallas Cowboys",
+        "stat_line": "8 rec, 153 yds \u00b7 2 rec TD",
+        "points": 34.3,
+        "team_score_share_pct": 27.029156816390877,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "34.3 points supplied 27% of Bend & Snap Count's output in a 57.1-point loss."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Detroit Lions",
+        "stat_line": "16 rush, 52 yds \u00b7 6 rec, 61 yds \u00b7 1 rec TD",
+        "points": 24.3,
+        "team_score_share_pct": 13.206521739130444,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "24.3 points supplied 13% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Omarion Hampton",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "23 rush, 94 yds \u00b7 2 rec, 21 yds \u00b7 1 rush TD",
+        "points": 22.5,
+        "team_score_share_pct": 12.228260869565224,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "22.5 points supplied 12% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Dalton Kincaid",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "7 rec, 95 yds \u00b7 1 rec TD",
+        "points": 20.5,
+        "team_score_share_pct": 11.141304347826093,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "20.5 points supplied 11% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Joe Burrow",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "Cincinnati Bengals",
+        "stat_line": "20/31, 207 pass yds \u00b7 2 pass TD \u00b7 1 rush, -1 yds",
+        "points": 18.79999999999993,
+        "team_score_share_pct": 14.81481481481477,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "18.8 points supplied 15% of Bend & Snap Count's output in a 57.1-point loss."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chuba Hubbard",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "nfl_team": "Carolina Panthers",
+        "stat_line": "12 rush, 53 yds \u00b7 2 rec, 11 yds \u00b7 1 rec TD",
+        "points": 17.4,
+        "team_score_share_pct": 9.456521739130439,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "17.4 points supplied 9% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Vikings",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Minnesota Vikings",
+        "stat_line": "3 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 1 FR",
+        "points": 17.0,
+        "team_score_share_pct": 13.396375098502766,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "17.0 points supplied 13% of Bend & Snap Count's output in a 57.1-point loss."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Trey McBride",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Arizona Cardinals",
+        "stat_line": "8 rec, 41 yds \u00b7 1 rec TD",
+        "points": 13.1,
+        "team_score_share_pct": 10.323089046493308,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "13.1 points supplied 10% of Bend & Snap Count's output in a 57.1-point loss."
+      }
+    ],
+    "bottom_started_players": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Caleb Douglas",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Miami Dolphins",
+        "stat_line": "2 rec, 19 yds",
+        "points": 3.9,
+        "team_score_share_pct": 2.1195652173913055,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "3.9 points supplied 2% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chargers",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "24 PA \u00b7 2 sacks \u00b7 1 INT",
+        "points": 4.0,
+        "team_score_share_pct": 2.173913043478262,
+        "matchup_result": "Won",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "4.0 points supplied 2% of Pat Pidgeon's output in a 57.1-point win."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Ka'imi Fairbairn",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Houston Texans",
+        "stat_line": "2 FG \u00b7 1 FG miss",
+        "points": 7.0,
+        "team_score_share_pct": 5.516154452324669,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "7.0 points supplied 6% of Bend & Snap Count's output in a 57.1-point loss."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Cam Skattebo",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "New York Giants",
+        "stat_line": "12 rush, 36 yds \u00b7 4 rec, 19 yds",
+        "points": 7.5,
+        "team_score_share_pct": 5.910165484633573,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "7.5 points supplied 6% of Bend & Snap Count's output in a 57.1-point loss."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Justin Jefferson",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Minnesota Vikings",
+        "stat_line": "3 rec, 55 yds",
+        "points": 7.5,
+        "team_score_share_pct": 5.910165484633573,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "7.5 points supplied 6% of Bend & Snap Count's output in a 57.1-point loss."
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Jaylen Warren",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Pittsburgh Steelers",
+        "stat_line": "11 rush, 43 yds \u00b7 2 rec, 34 yds",
+        "points": 9.7,
+        "team_score_share_pct": 7.643814026792755,
+        "matchup_result": "Lost",
+        "matchup_margin": 57.099999999999966,
+        "impact_summary": "9.7 points supplied 8% of Bend & Snap Count's output in a 57.1-point loss."
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Olave",
+        "position": "WR",
+        "roster_position": "BN",
+        "nfl_team": "New Orleans Saints",
+        "stat_line": "8 rec, 86 yds \u00b7 1 rec TD",
+        "points": 20.6,
+        "differential": 16.700000000000003,
+        "starter_replaced": "Caleb Douglas",
+        "starter_points": 3.9
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Rachaad White",
+        "position": "RB",
+        "roster_position": "BN",
+        "nfl_team": "Washington Commanders",
+        "stat_line": "7 rush, 43 yds \u00b7 6 rec, 40 yds",
+        "points": 13.3,
+        "differential": 5.800000000000001,
+        "starter_replaced": "Cam Skattebo",
+        "starter_points": 7.5
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "name": "Romeo Doubs",
+        "position": "WR",
+        "roster_position": "BN",
+        "nfl_team": "New England Patriots",
+        "stat_line": "3 rec, 96 yds",
+        "points": 11.6,
+        "differential": 4.1,
+        "starter_replaced": "Justin Jefferson",
+        "starter_points": 7.5
+      }
+    ],
+    "top_additions_this_week": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Caleb Douglas",
+        "position": "WR",
+        "actual_team": "Miami Dolphins",
+        "started": true,
+        "points": 3.9,
+        "outscored_team_active_players": 0,
+        "outscored_league_active_players": 14,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 12.4,
+        "prior_scoring_sample_weeks": 1,
+        "surprise_points_vs_prior": -8.5,
+        "grade_adjustment_points": -3.0,
+        "grade_impact_label": "Obvious start miss",
+        "tags": [
+          "Obvious start miss",
+          "Neutral",
+          "Started Add"
+        ],
+        "move_quality": "NEUTRAL",
+        "move_quality_label": "Neutral",
+        "usage_label": "started",
+        "summary": "Caleb Douglas (WR, 3.9 pts, started, Obvious start miss) - Neutral"
+      }
+    ]
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Bend & Snap Count",
+      "value": 57.099999999999966,
+      "margin_relative_value": -2.842170943040401e-14,
+      "position": "",
+      "summary": "Pat Pidgeon won the raw scoring battle by 57.1 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Bend & Snap Count",
+      "loser_team": "Pat Pidgeon",
+      "value": 4.499999999999943,
+      "margin_relative_value": -52.60000000000005,
+      "position": "",
+      "summary": "Bend & Snap Count had the cleaner lineup week by 4.5 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Bend & Snap Count",
+      "value": 16.69999999999999,
+      "margin_relative_value": -40.400000000000006,
+      "position": "",
+      "summary": "Pat Pidgeon carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "NO",
+      "loser_team": "Pat Pidgeon",
+      "value": 16.69999999999999,
+      "margin_relative_value": -40.400000000000006,
+      "position": "",
+      "summary": "Raw scoring held because the final margin stayed larger than either team's missed-opportunity total."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Bend & Snap Count",
+      "value": 34.999999999999986,
+      "margin_relative_value": -22.10000000000001,
+      "position": "RB",
+      "summary": "Pat Pidgeon controlled total RB output by 35.0 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 57.099999999999994,
+    "margin": 57.099999999999994,
+    "takeaways": [
+      "The 57.1-point margin was larger than either team's main lineup leak, so the matchup was decided more by raw scoring than one obvious swap.",
+      "The clearest unit edge was total RB output: Pat Pidgeon by 35.0 points.",
+      "Against projection, Pat Pidgeon finished +54.7 while Bend & Snap Count finished +8.2.",
+      "The biggest started performance was Jaxon Smith-Njigba for Pat Pidgeon at 41.5 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Pat Pidgeon lineup leakage",
+        "team_name": "Pat Pidgeon",
+        "value": 16.69999999999999,
+        "relative_to_margin": -40.400000000000006
+      },
+      {
+        "label": "Bend & Snap Count lineup leakage",
+        "team_name": "Bend & Snap Count",
+        "value": 12.200000000000045,
+        "relative_to_margin": -44.89999999999995
+      },
+      {
+        "label": "Pat Pidgeon waiver upside",
+        "team_name": "Pat Pidgeon",
+        "value": 0.0,
+        "relative_to_margin": -57.099999999999994
+      },
+      {
+        "label": "Bend & Snap Count waiver upside",
+        "team_name": "Bend & Snap Count",
+        "value": 0.0,
+        "relative_to_margin": -57.099999999999994
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null,
+    "scenario_rows": [
+      {
+        "scenario": "Actual lineups",
+        "winner": "Pat Pidgeon",
+        "winner_score": 183.9999999999999,
+        "loser_score": 126.89999999999992,
+        "margin": 57.099999999999966
+      },
+      {
+        "scenario": "Both best legal lineups",
+        "winner": "Pat Pidgeon",
+        "winner_score": 200.69999999999987,
+        "loser_score": 139.09999999999997,
+        "margin": 61.59999999999991
+      }
+    ]
+  },
+  "skill_luck": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "teams": [
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 1,
+        "all_play_record": "9-0",
+        "beat_league_median": true,
+        "projected_score": 129.32,
+        "points_over_projected": 54.68000000000001,
+        "opponent_weekly_rank": 5
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "weekly_rank": 5,
+        "all_play_record": "5-4",
+        "beat_league_median": true,
+        "projected_score": 118.66,
+        "points_over_projected": 8.240000000000009,
+        "opponent_weekly_rank": 1
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 117.977,
+    "league_median_score": 118.065,
+    "teams": [
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 1,
+        "all_play_record": "9-0",
+        "beat_league_median": true,
+        "projected_score": 129.32,
+        "points_over_projected": 54.68000000000001,
+        "opponent_weekly_rank": 5
+      },
+      {
+        "team_name": "Bend & Snap Count",
+        "weekly_rank": 5,
+        "all_play_record": "5-4",
+        "beat_league_median": true,
+        "projected_score": 118.66,
+        "points_over_projected": 8.240000000000009,
+        "opponent_weekly_rank": 1
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "RB",
+        "team_a_points": 64.19999999999999,
+        "team_b_points": 29.2,
+        "edge_points": 34.999999999999986,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 34.999999999999986
+      },
+      {
+        "position": "QB",
+        "team_a_points": 37.899999999999906,
+        "team_b_points": 18.79999999999993,
+        "edge_points": 19.099999999999977,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 19.099999999999977
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 4.0,
+        "team_b_points": 17.0,
+        "edge_points": 13.0,
+        "edge_team": "Bend & Snap Count",
+        "edge_direction": -13.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 20.5,
+        "team_b_points": 13.1,
+        "edge_points": 7.4,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 7.4
+      },
+      {
+        "position": "K",
+        "team_a_points": 12.0,
+        "team_b_points": 7.0,
+        "edge_points": 5.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 5.0
+      },
+      {
+        "position": "WR",
+        "team_a_points": 45.4,
+        "team_b_points": 41.8,
+        "edge_points": 3.6000000000000014,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 3.6000000000000014
+      }
+    ],
+    "largest_edge": {
+      "position": "RB",
+      "team_a_points": 64.19999999999999,
+      "team_b_points": 29.2,
+      "edge_points": 34.999999999999986,
+      "edge_team": "Pat Pidgeon",
+      "edge_direction": 34.999999999999986
+    },
+    "top_wins": [
+      {
+        "position": "RB",
+        "team_a_points": 64.19999999999999,
+        "team_b_points": 29.2,
+        "edge_points": 34.999999999999986,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 34.999999999999986
+      },
+      {
+        "position": "QB",
+        "team_a_points": 37.899999999999906,
+        "team_b_points": 18.79999999999993,
+        "edge_points": 19.099999999999977,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 19.099999999999977
+      },
+      {
+        "position": "TE",
+        "team_a_points": 20.5,
+        "team_b_points": 13.1,
+        "edge_points": 7.4,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 7.4
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "DEF",
+        "team_a_points": 4.0,
+        "team_b_points": 17.0,
+        "edge_points": 13.0,
+        "edge_team": "Bend & Snap Count",
+        "edge_direction": -13.0
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Pat Pidgeon",
+      "actual_lineup_points": 183.9999999999999,
+      "optimal_lineup_points": 200.69999999999987,
+      "bench_points": 44.03333333333325,
+      "points_left_on_bench": 16.69999999999999,
+      "lowest_scoring_starter": {
+        "team_name": "Pat Pidgeon",
+        "name": "Caleb Douglas",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Miami Dolphins",
+        "stat_line": "2 rec, 19 yds",
+        "points": 3.9
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Chris Olave",
+        "recommended_points": 20.6,
+        "benched_player": "Caleb Douglas",
+        "benched_points": 3.9,
+        "point_swing": 16.700000000000003,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Chris Olave over Caleb Douglas for an estimated +16.7 points this week.",
+        "confidence": 1.0,
+        "signal_label": "High hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Caleb Douglas",
+          "points": 3.9,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.4175000000000001,
+          "capped_total": 1.0
+        },
+        "sample_context": {
+          "recommended_player_weeks": 2,
+          "comparison_player_weeks": 2
+        }
+      },
+      "summary": "Pat Pidgeon started 8 of 9 slots optimally"
+    },
+    {
+      "team_name": "Bend & Snap Count",
+      "actual_lineup_points": 126.89999999999992,
+      "optimal_lineup_points": 139.09999999999997,
+      "bench_points": 70.19999999999997,
+      "points_left_on_bench": 12.200000000000045,
+      "lowest_scoring_starter": {
+        "team_name": "Bend & Snap Count",
+        "name": "Ka'imi Fairbairn",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Houston Texans",
+        "stat_line": "2 FG \u00b7 1 FG miss",
+        "points": 7.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 66.66666666666666,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Rachaad White",
+        "recommended_points": 13.3,
+        "benched_player": "Cam Skattebo",
+        "benched_points": 7.5,
+        "point_swing": 5.800000000000001,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Rachaad White over Cam Skattebo for an estimated +5.8 points this week.",
+        "confidence": 0.745,
+        "signal_label": "Medium hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Cam Skattebo",
+          "points": 7.5,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.14500000000000002,
+          "capped_total": 0.745
+        },
+        "sample_context": {
+          "recommended_player_weeks": 2,
+          "comparison_player_weeks": 2
+        }
+      },
+      "summary": "Bend & Snap Count started 6 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Pat Pidgeon",
+      "top_3_share_pct": 56.358695652173886,
+      "top_2_share_pct": 43.15217391304345,
+      "volatility_std": 12.435800569423296,
+      "structural_integrity_pct": 43.641304347826114,
+      "fragility_score": 43.15217391304345,
+      "label": "Boom/Bust Build"
+    },
+    {
+      "team_name": "Bend & Snap Count",
+      "top_3_share_pct": 55.2403467297084,
+      "top_2_share_pct": 41.84397163120564,
+      "volatility_std": 8.170679286326195,
+      "structural_integrity_pct": 44.7596532702916,
+      "fragility_score": 41.84397163120564,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Pat Pidgeon",
+    "team_b_name": "Bend & Snap Count",
+    "record_for_team_a": "19-19",
+    "games": 38,
+    "playoff_games": 0,
+    "average_margin_for_team_a": 2.144473684210526,
+    "series_summary": "Pat Pidgeon is 19-19 against Bend & Snap Count across 38 meetings between these managers.",
+    "average_margin_text": "Average margin from Pat Pidgeon's perspective: +2.1.",
+    "current_margin_rank_text": "35th closest",
+    "current_total_rank_text": "1st highest combined score",
+    "streak_text": "Pat Pidgeon carries the current 1-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2026 W2",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 57.099999999999994,
+        "combined_score": 310.9,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Bend & Snap Count",
+        "report_href": "matchup_04_pat-pidgeon_vs_bend-snap-count.html"
+      },
+      {
+        "season_label": "2025 W13",
+        "context": "regular season",
+        "winner": "Bend & Snap Count",
+        "margin": 49.900000000000006,
+        "combined_score": 207.09999999999982,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Moonbeam Ice Cream",
+        "report_href": "../../2025/matchups_week_13/matchup_03_moonbeam-ice-cream_vs_pat-pidgeon.html"
+      },
+      {
+        "season_label": "2025 W4",
+        "context": "regular season",
+        "winner": "Bend & Snap Count",
+        "margin": 22.19999999999996,
+        "combined_score": 226.9999999999999,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Moonbeam Ice Cream",
+        "report_href": "../../2025/matchups_week_04/matchup_03_moonbeam-ice-cream_vs_pat-pidgeon.html"
+      },
+      {
+        "season_label": "2024 W8",
+        "context": "regular season",
+        "winner": "Bend & Snap Count",
+        "margin": 50.33,
+        "combined_score": 218.99,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Pommel Horse Guy"
+      },
+      {
+        "season_label": "2023 W7",
+        "context": "regular season",
+        "winner": "Bend & Snap Count",
+        "margin": 13.72999999999999,
+        "combined_score": 171.53,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "You Had Me At Coach"
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Chase wins all season long with Toyota Gameday Giveaways.",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/932349/recap?week=2&mid1=3&mid2=7",
+    "grade_summary": "Pat Pidgeon: A+ | Bend & Snap Count: D"
+  }
+}

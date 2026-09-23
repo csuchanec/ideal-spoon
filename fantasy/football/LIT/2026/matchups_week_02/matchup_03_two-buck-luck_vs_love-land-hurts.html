@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Buck Luck vs Love(land) Hurts matchup report</title>
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --surface: #ffffff;
+            --surface-muted: #f2f4f7;
+            --text: #111827;
+            --text-muted: #5b6472;
+            --line: #e2e8f0;
+            --line-strong: #cbd5e1;
+            --accent: #1f4f8c;
+            --accent-soft: #e8f0fb;
+            --positive: #1f7a45;
+            --negative: #b42318;
+            --warning: #a15c07;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.38;
+            font-size: 14px;
+        }
+        .page {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 18px 18px 42px;
+        }
+        .section {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .eyebrow {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 1.1;
+            letter-spacing: 0;
+            margin: 0 0 10px;
+        }
+        h2 {
+            font-size: 19px;
+            line-height: 1.2;
+            margin: 0 0 6px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        p { margin: 0 0 10px; }
+        .muted { color: var(--text-muted); }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid .detail-card { grid-column: auto; }
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .meta-chip {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 6px 9px;
+            background: #f8fafc;
+            min-height: 34px;
+        }
+        .section-jump-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .section-jump-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            padding: 5px 9px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            color: var(--text);
+            background: var(--surface-muted);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.2;
+            max-width: 180px;
+            overflow-wrap: anywhere;
+        }
+        .section-jump-link:hover,
+        .section-jump-link:focus {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .meta-chip strong {
+            color: var(--text);
+            margin-right: 6px;
+        }
+        .insight-pair {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .hero-card {
+            border: 1px solid #c9d8ee;
+            border-radius: 8px;
+            padding: 14px;
+            background: linear-gradient(180deg, #f4f8fe 0%, #e8f0fb 100%);
+        }
+        .hero-card .value {
+            font-size: 34px;
+            line-height: 0.95;
+            margin-bottom: 4px;
+        }
+        .hero-card .subvalue {
+            font-size: 15px;
+            color: var(--text);
+        }
+        .hero-sidekick {
+            display: grid;
+            gap: 12px;
+        }
+        .detail-card {
+            grid-column: span 3;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .detail-card.tertiary,
+        .chart-card.tertiary {
+            background: #f8fafc;
+            border-style: dashed;
+        }
+        .detail-card.wide {
+            grid-column: span 6;
+        }
+        .label {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 26px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        .subvalue {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+        .team-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .manager-comparison {
+            margin-bottom: 10px;
+        }
+        .manager-comparison table {
+            min-width: 680px;
+        }
+        .manager-comparison th:not(:first-child),
+        .manager-comparison td:not(:first-child) {
+            text-align: right;
+        }
+        .manager-comparison .manager-heading {
+            color: var(--text);
+            text-transform: none;
+            font-size: 13px;
+        }
+        .manager-comparison .manager-heading span {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+        .manager-comparison .metric-label {
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .lineup-board table {
+            min-width: 920px;
+            table-layout: fixed;
+        }
+        .lineup-board .stats-col { width: 22%; }
+        .lineup-board .player-col { width: 20%; }
+        .lineup-board .points-col { width: 7%; }
+        .lineup-board .slot-col {
+            width: 7%;
+            text-align: center;
+            background: #eef1f5;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+        .lineup-board .right { text-align: right; }
+        .lineup-board .player-name {
+            display: block;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .lineup-board .player-meta,
+        .lineup-board .stat-line {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        .lineup-board .mobile-stat { display: none; }
+        .lineup-board .roster-divider td {
+            background: #e7ebf0;
+            color: var(--text);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .lineup-board .total-row td {
+            background: #f8fafc;
+            font-weight: 700;
+            border-top: 2px solid var(--line-strong);
+        }
+        .rating-evidence {
+            border-left: 3px solid var(--accent);
+        }
+        .team-panel {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px;
+            background: var(--surface-muted);
+        }
+        .team-panel.winner {
+            border-color: #c9d8ee;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .team-panel.loser {
+            border-color: #f1d4cf;
+            background: linear-gradient(180deg, #fff8f6 0%, #fdf1ef 100%);
+        }
+        .team-panel h3 { margin-bottom: 6px; }
+        .panel-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .panel-badge.winner {
+            color: var(--accent);
+            background: #e8f0fb;
+        }
+        .panel-badge.loser {
+            color: var(--negative);
+            background: #fde9e5;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0 12px;
+        }
+        .pill {
+            border: 1px solid var(--line-strong);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background: var(--surface);
+        }
+        .pill.good { color: var(--positive); border-color: #b7e0c4; }
+        .pill.bad { color: var(--negative); border-color: #f1c0ba; }
+        .pill.warn { color: var(--warning); border-color: #f4d39c; }
+        .decision-table-stack {
+            display: grid;
+            gap: 10px;
+        }
+        .decision-table-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
+        }
+        .decision-table-card h3 {
+            margin-bottom: 4px;
+        }
+        .decision-table-card p {
+            margin-bottom: 10px;
+        }
+        .compare-cell {
+            min-width: 220px;
+        }
+        .compare-player {
+            display: block;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .compare-meta {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        .compare-edge {
+            font-weight: 700;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .compare-edge.left {
+            color: var(--accent);
+        }
+        .compare-edge.right {
+            color: var(--negative);
+        }
+        .compare-edge.neutral {
+            color: var(--text-muted);
+        }
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .compact-table {
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+        .compact-table table {
+            min-width: 640px;
+        }
+        .compact-table .table-wrap table {
+            min-width: 0;
+        }
+        th, td {
+            padding: 7px 9px;
+            border-bottom: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: var(--surface-muted);
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        ul.compact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+        ul.compact-list li {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: var(--surface);
+        }
+        .two-up {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+        .compare-table td:first-child,
+        .compare-table th:first-child {
+            white-space: nowrap;
+        }
+        .metric-win {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .chart-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .chart-card.highlight {
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+            border-color: #c9d8ee;
+        }
+        .chart-card + .chart-card {
+            margin-top: 8px;
+        }
+        .chart-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-kicker {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-note {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .legend-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            display: inline-block;
+        }
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .verdict-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px;
+            margin: 8px 0 10px;
+        }
+        .verdict-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .verdict-card .value {
+            font-size: 22px;
+        }
+        .callout {
+            border: 1px solid #f1c0ba;
+            background: #fff5f3;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .takeaway-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .takeaway-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        .takeaway-card li + li {
+            margin-top: 6px;
+        }
+        .award-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .skill-hero {
+            border: 1px solid #d7e4f7;
+            border-radius: 8px;
+            padding: 12px;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .skill-team-list {
+            display: grid;
+            gap: 8px;
+        }
+        .skill-team-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 9px;
+            background: var(--surface-muted);
+        }
+        .award-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 8px 10px;
+            background: #f8fafc;
+            min-width: 220px;
+            flex: 1 1 220px;
+        }
+        details.deep-metrics {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+            padding: 10px;
+        }
+        details.deep-metrics summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .evidence-list {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .evidence-list li + li {
+            margin-top: 6px;
+        }
+        @media (max-width: 900px) {
+            .hub-grid { grid-template-columns: 1fr; }
+            .detail-card,
+            .detail-card.wide {
+                grid-column: span 12;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+            .compare-grid,
+            .verdict-grid,
+            .insight-pair,
+            .takeaway-grid,
+            .team-columns,
+            .two-up {
+                grid-template-columns: 1fr;
+            }
+            .section-jump-link {
+                flex: 1 1 calc(50% - 8px);
+                max-width: none;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 7px 8px;
+            }
+            th {
+                font-size: 11px;
+                letter-spacing: 0.02em;
+                line-height: 1.2;
+            }
+            .chart-card,
+            .decision-table-card {
+                padding: 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .manager-comparison table {
+                min-width: 0;
+                table-layout: fixed;
+            }
+            .manager-comparison th,
+            .manager-comparison td {
+                overflow-wrap: anywhere;
+            }
+            .manager-comparison th:first-child,
+            .manager-comparison td:first-child {
+                width: 28%;
+            }
+            .manager-comparison th:nth-child(2),
+            .manager-comparison td:nth-child(2),
+            .manager-comparison th:nth-child(3),
+            .manager-comparison td:nth-child(3) {
+                width: 36%;
+            }
+            .manager-comparison th:nth-child(4),
+            .manager-comparison td:nth-child(4) {
+                display: none;
+            }
+            .manager-comparison .metric-label {
+                white-space: normal;
+            }
+            .lineup-board table {
+                min-width: 0;
+                table-layout: fixed;
+                font-size: 11px;
+            }
+            .lineup-board th,
+            .lineup-board td { padding: 6px 3px; }
+            .lineup-board .stats-col { display: none; }
+            .lineup-board .player-col { width: 32%; }
+            .lineup-board .points-col { width: 11%; }
+            .lineup-board .slot-col { width: 14%; }
+            .lineup-board .mobile-stat {
+                display: block;
+                color: var(--text-muted);
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+            .lineup-board .total-row td:first-child,
+            .lineup-board .total-row td:last-child {
+                display: table-cell;
+            }
+        }
+        </style>
+</head>
+<body>
+    <main class="page">
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_02.html">Week 2 Report</a></li><li><a href="index.html">Week 2 Matchups</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">This Matchup</span><ul class="report-nav__links"><li><a href="matchup_02_squat_vs_zszizzle.html">Previous Matchup</a></li><li><span class="report-nav-current">Current Matchup</span></li><li><a href="matchup_04_pat-pidgeon_vs_bend-snap-count.html">Next Matchup</a></li></ul></div></div></div></nav>
+<!-- report-nav:end -->
+        <section class="section" id="matchup-header-section">
+            <div class="eyebrow">Weekly Matchup Report</div>
+            <h1>Two Buck Luck vs Love(land) Hurts matchup report</h1>
+            <p class="muted">Season 2026, Week 2 | Score, player production, lineup decisions, and series history for this head-to-head.</p>
+            <nav class="section-jump-nav" aria-label="Matchup report sections">
+                <a class="section-jump-link" href="#matchup-snapshot-section">Snapshot</a>
+                <a class="section-jump-link" href="#difference-makers-section">Players</a>
+                <a class="section-jump-link" href="#what-decided-section">What Decided It</a>
+                <a class="section-jump-link" href="#visual-comparison-section">Visuals</a>
+                <a class="section-jump-link" href="#skill-luck-section">Strength/Context</a>
+                <a class="section-jump-link" href="#decision-breakdown-section">Decisions</a>
+                <a class="section-jump-link" href="#head-to-head-section">History</a>
+                <a class="section-jump-link" href="#deep-metrics-section">Deep Metrics</a>
+            </nav>
+        </section>
+
+        <section class="section" id="matchup-snapshot-section">
+            <h2>Matchup Snapshot</h2>
+            <p class="muted">Start with the scoreline, then move into the lineup and move decisions that shaped it.</p>
+
+        <div class="hero-grid">
+            <div class="hero-card">
+                <div class="label">Result</div>
+                <div class="value">Two Buck Luck by 0.8</div>
+                <div class="subvalue">Two Buck Luck 131.9 to 131.1</div>
+                <p style="margin-top:14px;">Two Buck Luck won by 0.8, led by a 19.8-point edge at RB. The leading starters were Brock Purdy (33.6) and Amon-Ra St. Brown (33.2).</p>
+            </div>
+            <div class="hero-sidekick">
+                <div class="detail-card">
+                    <div class="label">Strength vs Schedule Breaks</div>
+                    <div class="value">Elite-Score Win</div>
+                    <div class="subvalue">The winner paired one of the league&#x27;s best weekly scores with the head-to-head result.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Decision Read</div>
+                    <div class="subvalue" style="margin-top:0;color:var(--text);">Two Buck Luck won by 0.8. Two Buck Luck left 4.5 lineup points on the table, while Love(land) Hurts left 8.6.</div>
+                </div>
+            </div>
+        </div>
+        <div class="verdict-grid">
+
+            <div class="verdict-card">
+                <div class="label">Score Battle</div>
+                <div class="value">Two Buck Luck</div>
+                <div class="subvalue">Two Buck Luck won the raw scoring battle by 0.8 points.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Lineup Battle</div>
+                <div class="value">Two Buck Luck</div>
+                <div class="subvalue">Two Buck Luck had the cleaner lineup week by 4.1 points of leakage.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Process Cost</div>
+                <div class="value">Love(land) Hurts</div>
+                <div class="subvalue">Love(land) Hurts carried the larger combined lineup and waiver miss total.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Did Decisions Matter?</div>
+                <div class="value">YES</div>
+                <div class="subvalue">Love(land) Hurts would have flipped the matchup by starting Mark Andrews over Colston Loveland for a projected +8.6-point swing.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Biggest Unit Edge</div>
+                <div class="value">Two Buck Luck</div>
+                <div class="subvalue">Two Buck Luck controlled total RB output by 19.8 points.</div>
+            </div>
+
+        </div>
+
+            <div class="meta-strip"><div class='meta-chip'><strong>Series:</strong>18-14</div><div class='meta-chip'><strong>Ideal Result:</strong>Love(land) Hurts</div><div class='meta-chip'><strong>Weekly Ranks:</strong>3/4</div><div class='meta-chip'><strong>League Median:</strong>118.1</div></div>
+            <div class="insight-pair">
+                <div class="detail-card wide">
+                    <h3>Why Two Buck Luck Won</h3>
+                    <p>Two Buck Luck won by 0.8, led by a 19.8-point edge at RB. The leading starters were Brock Purdy (33.6) and Amon-Ra St. Brown (33.2).</p>
+                </div>
+                <div class="detail-card wide">
+                    <h3>Why Love(land) Hurts Lost</h3>
+                    <p>Love(land) Hurts could not match the opponent&#x27;s RB production, losing that position battle by 19.8 points. Colston Loveland scored 0.3. Its best legal lineup added 8.6, enough to put the lineup decisions directly in the result.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="difference-makers-section">
+            <h2>Who Came Up Big, Who Came Up Small</h2>
+            <p class="muted">“Came up big” ranks the highest-scoring starters in this matchup. “Came up small” ranks the lowest; it is a raw scoring view, while a bust requires a historical scoring baseline.</p>
+            <p>Largest unit edge: total RB output favored Two Buck Luck by 19.8.</p>
+            <div class="verdict-grid">
+                <div class="verdict-card">
+                    <div class="label">Top Started Performance</div>
+                    <div class="value">Josh Allen</div>
+                    <div class="subvalue">Love(land) Hurts at 53.2 points.</div>
+                </div>
+                <div class="verdict-card">
+                    <div class="label">Most Relevant Bench Miss</div>
+                    <div class="value">Mark Andrews</div>
+                    <div class="subvalue">Love(land) Hurts left 8.9 bench points unused.</div>
+                </div>
+                <div class="verdict-card">
+                    <div class="label">Only Counterpunch</div>
+                    <div class="value">QB</div>
+                    <div class="subvalue">Love(land) Hurts by 19.6.</div>
+                </div>
+            </div>
+            <div class="card-grid">
+                <div class='detail-card wide'><h3>Who Came Up Big</h3><div class='table-wrap'><table><thead><tr><th class=''>Team</th><th class=''>Player</th><th class=''>Pos</th><th class='num'>Points</th><th class='num'>Team Output %</th><th class=''>Matchup Impact</th><th class=''>Stat Line</th></tr></thead><tbody><tr><td class=''>Love(land) Hurts</td><td class=''>Josh Allen</td><td class=''>QB</td><td class='num'>53.2</td><td class='num'>40.6</td><td class=''>53.2 points supplied 41% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>20/31, 248 pass yds · 3 pass TD · 14 rush, 69 yds · 2 rush TD</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Brock Purdy</td><td class=''>QB</td><td class='num'>33.6</td><td class='num'>25.5</td><td class=''>33.6 points supplied 25% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>20/22, 287 pass yds · 2 pass TD · 3 rush, 30 yds · 1 rush TD</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Amon-Ra St. Brown</td><td class=''>WR</td><td class='num'>33.2</td><td class='num'>25.2</td><td class=''>33.2 points supplied 25% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>9 rec, 142 yds · 2 rec TD</td></tr><tr><td class=''>Love(land) Hurts</td><td class=''>DeVonta Smith</td><td class=''>WR</td><td class='num'>24.7</td><td class='num'>18.8</td><td class=''>24.7 points supplied 19% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>10 rec, 117 yds · 1 rec TD</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Kyren Williams</td><td class=''>RB</td><td class='num'>17.7</td><td class='num'>13.4</td><td class=''>17.7 points supplied 13% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>12 rush, 85 yds · 2 rec, 12 yds · 1 rec TD</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Garrett Wilson</td><td class=''>WR</td><td class='num'>15.7</td><td class='num'>11.9</td><td class=''>15.7 points supplied 12% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>5 rec, 57 yds · 1 rec TD</td></tr><tr><td class=''>Love(land) Hurts</td><td class=''>Tee Higgins</td><td class=''>WR</td><td class='num'>14.5</td><td class='num'>11.1</td><td class=''>14.5 points supplied 11% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>5 rec, 95 yds</td></tr><tr><td class=''>Love(land) Hurts</td><td class=''>Rashee Rice</td><td class=''>WR</td><td class='num'>11.3</td><td class='num'>8.6</td><td class=''>11.3 points supplied 9% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>4 rec, 83 yds</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Chase Brown</td><td class=''>RB</td><td class='num'>11.2</td><td class='num'>8.5</td><td class=''>11.2 points supplied 8% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>20 rush, 80 yds · 3 rec, 2 yds</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Steelers</td><td class=''>DEF</td><td class='num'>8.0</td><td class='num'>6.1</td><td class=''>8.0 points supplied 6% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>14 PA · 3 sacks · 1 INT · 1 FR</td></tr></tbody></table></div></div>
+                <div class='detail-card wide'><h3>Who Came Up Small</h3><div class='table-wrap'><table><thead><tr><th class=''>Team</th><th class=''>Player</th><th class=''>Pos</th><th class='num'>Points</th><th class=''>Matchup Context</th><th class=''>Stat Line</th></tr></thead><tbody><tr><td class=''>Love(land) Hurts</td><td class=''>Colston Loveland</td><td class=''>TE</td><td class='num'>0.3</td><td class=''>0.3 points supplied 0% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>1 rec, 3 yds</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Kyle Pitts Sr.</td><td class=''>TE</td><td class='num'>2.5</td><td class=''>2.5 points supplied 2% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>1 rec, 15 yds</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Chris Boswell</td><td class=''>K</td><td class='num'>5.0</td><td class=''>5.0 points supplied 4% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>1 FG · 1 FG miss</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Javonte Williams</td><td class=''>RB</td><td class='num'>5.0</td><td class=''>5.0 points supplied 4% of Two Buck Luck&#x27;s output in a 0.8-point win.</td><td class=''>12 rush, 30 yds · 3 rec, 20 yds</td></tr><tr><td class=''>Love(land) Hurts</td><td class=''>Tyler Loop</td><td class=''>K</td><td class='num'>5.0</td><td class=''>5.0 points supplied 4% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>1 FG · 1 FG miss · 2 XP</td></tr><tr><td class=''>Love(land) Hurts</td><td class=''>Quinshon Judkins</td><td class=''>RB</td><td class='num'>6.8</td><td class=''>6.8 points supplied 5% of Love(land) Hurts&#x27;s output in a 0.8-point loss.</td><td class=''>12 rush, 21 yds · 5 rec, 27 yds</td></tr></tbody></table></div></div>
+                <div class='detail-card wide'><h3>Top Bench Misses</h3><div class='table-wrap'><table><thead><tr><th class=''>Team</th><th class=''>Player</th><th class=''>Pos</th><th class='num'>Bench Points</th><th class=''>Starter Replaced</th><th class='num'>Starter Points</th><th class='num'>Differential</th></tr></thead><tbody><tr><td class=''>Love(land) Hurts</td><td class=''>Mark Andrews</td><td class=''>TE</td><td class='num'>8.9</td><td class=''>Colston Loveland</td><td class='num'>0.3</td><td class='num'>8.6</td></tr><tr><td class=''>Two Buck Luck</td><td class=''>Tony Pollard</td><td class=''>RB</td><td class='num'>9.5</td><td class=''>Javonte Williams</td><td class='num'>5.0</td><td class='num'>4.5</td></tr></tbody></table></div></div>
+                <div class='detail-card wide'><h3>Transaction Impact This Week</h3><p class='muted'>No same-week add impact rows available.</p></div>
+                <div class='detail-card wide'><h3>Position Battles</h3><div class='table-wrap'><table><thead><tr><th class=''>Position</th><th class='num'>Two Buck Luck</th><th class='num'>Love(land) Hurts</th><th class=''>Edge Team</th><th class='num'>Edge</th></tr></thead><tbody><tr><td class=''>RB</td><td class='num'>33.9</td><td class='num'>14.1</td><td class=''>Two Buck Luck</td><td class='num'>19.8</td></tr><tr><td class=''>QB</td><td class='num'>33.6</td><td class='num'>53.2</td><td class=''>Love(land) Hurts</td><td class='num'>19.6</td></tr><tr><td class=''>TE</td><td class='num'>2.5</td><td class='num'>0.3</td><td class=''>Two Buck Luck</td><td class='num'>2.2</td></tr><tr><td class=''>WR</td><td class='num'>48.9</td><td class='num'>50.5</td><td class=''>Love(land) Hurts</td><td class='num'>1.6</td></tr><tr><td class=''>K</td><td class='num'>5.0</td><td class='num'>5.0</td><td class=''>Tie</td><td class='num'>0.0</td></tr><tr><td class=''>DEF</td><td class='num'>8.0</td><td class='num'>8.0</td><td class=''>Tie</td><td class='num'>0.0</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+
+        <section class="section" id="what-decided-section">
+            <h2>What Decided It</h2>
+            <p class="muted">Compare the final score with the best legal lineups to see whether start/sit choices could have changed the winner.</p>
+            <div class="takeaway-grid">
+                <div class="takeaway-card">
+                    <div class="chart-title">Takeaways</div>
+                    <ul><li>Love(land) Hurts left 8.6 lineup points on the table, more than the 0.8-point final margin.</li><li>The clearest unit edge was total RB output: Two Buck Luck by 19.8 points.</li><li>Against projection, Two Buck Luck finished +9.3 while Love(land) Hurts finished +11.8.</li><li>The biggest started performance was Josh Allen for Love(land) Hurts at 53.2 points.</li></ul>
+                    <p><strong>One Decision Away:</strong> Love(land) Hurts would have flipped the matchup by starting Mark Andrews over Colston Loveland for a projected +8.6-point swing.</p><p class='muted'>Reasonable swap: Yes.</p>
+                </div>
+                <div class='detail-card wide'><h3>Actual Result vs Best Legal Lineups</h3><div class='table-wrap'><table><thead><tr><th class=''>Scenario</th><th class=''>Winner</th><th class='num'>High Score</th><th class='num'>Low Score</th><th class='num'>Margin</th></tr></thead><tbody><tr><td class=''>Actual lineups</td><td class=''>Two Buck Luck</td><td class='num'>131.9</td><td class='num'>131.1</td><td class='num'>0.8</td></tr><tr><td class=''>Both best legal lineups</td><td class=''>Love(land) Hurts</td><td class='num'>139.7</td><td class='num'>136.4</td><td class='num'>3.3</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visual-comparison-section">
+            <h2>Visual Comparison</h2>
+            <p class="muted">Use this section to verify the shape of the matchup after the headline verdicts: scoreboard first, then supporting comparison charts and recent history.</p>
+            <div class="compare-grid">
+                <div>
+                    <div class='chart-card'><div class='chart-title'>Quick Comparison Table</div><div class='table-wrap compare-table'><table><thead><tr><th>Metric</th><th class='num'>Two Buck Luck</th><th class='num'>Love(land) Hurts</th></tr></thead><tbody><tr><td>Actual Score</td><td class='num metric-win'>131.9</td><td class='num '>131.1</td></tr><tr><td>Ideal Score</td><td class='num '>136.4</td><td class='num metric-win'>139.7</td></tr><tr><td>Lineup Delta</td><td class='num '>4.5</td><td class='num metric-win'>8.6</td></tr></tbody></table></div><p class='chart-note'>Bold values mark the side that led that matchup-scoped metric.</p></div>
+                    <div class='chart-card'><div class='chart-title'>Recent Series Margins</div><svg viewBox='0 0 420.0 192.0' width='100%' role='img' aria-label='Recent series margins'><line x1='210.0' y1='26' x2='210.0' y2='188.0' stroke='#94a3b8' stroke-width='1'/><text x='202' y='14' text-anchor='end' font-size='10' fill='#1f4f8c'>Two Buck Luck wins</text><text x='218' y='14' font-size='10' fill='#b42318'>Love(land) Hurts wins</text><text x='8' y='44.0' font-size='10' fill='#5b6472'>2026 W2</text><rect x='204.6' y='34.0' width='5.4' height='14' rx='2' fill='#1f4f8c'/><text x='198.6' y='45.0' text-anchor='end' font-size='10' fill='#1f4f8c'>0.8</text><text x='8' y='74.0' font-size='10' fill='#5b6472'>2025 W15</text><rect x='92.0' y='64.0' width='118.0' height='14' rx='2' fill='#1f4f8c'/><text x='86.0' y='75.0' text-anchor='end' font-size='10' fill='#1f4f8c'>17.4</text><text x='8' y='104.0' font-size='10' fill='#5b6472'>2025 W6</text><rect x='149.2' y='94.0' width='60.8' height='14' rx='2' fill='#1f4f8c'/><text x='143.2' y='105.0' text-anchor='end' font-size='10' fill='#1f4f8c'>9.0</text><text x='8' y='134.0' font-size='10' fill='#5b6472'>2024 W8</text><rect x='109.4' y='124.0' width='100.6' height='14' rx='2' fill='#1f4f8c'/><text x='103.4' y='135.0' text-anchor='end' font-size='10' fill='#1f4f8c'>14.8</text><text x='8' y='164.0' font-size='10' fill='#5b6472'>2023 W8</text><rect x='115.1' y='154.0' width='94.9' height='14' rx='2' fill='#1f4f8c'/><text x='109.1' y='165.0' text-anchor='end' font-size='10' fill='#1f4f8c'>14.0</text></svg><p class='chart-note'>Each bar is one of the five most recent meetings. Direction shows the winner; length shows the final margin.</p></div>
+                </div>
+                <div>
+                    <div class='chart-card highlight'><div class='chart-kicker'>Two Buck Luck won the raw scoring battle by 0.8 points.</div><div class='chart-title'>Score Shape</div><svg viewBox='0 0 420.0 136.0' width='100%' role='img' aria-label='Score Shape'><text x='8.0' y='38.0' font-size='12' fill='#5b6472'>Actual score</text><rect x='140.0' y='24.0' width='250.0' height='14' rx='7' fill='#e2e8f0'/><rect x='140.0' y='24.0' width='236.0' height='6' rx='3' fill='#1f4f8c'/><rect x='140.0' y='32.0' width='234.6' height='6' rx='3' fill='#b42318'/><text x='398.0' y='31.0' font-size='11' fill='#1f4f8c'>131.9</text><text x='398.0' y='41.0' font-size='11' fill='#b42318'>131.1</text><text x='8.0' y='90.0' font-size='12' fill='#5b6472'>Ideal score</text><rect x='140.0' y='76.0' width='250.0' height='14' rx='7' fill='#e2e8f0'/><rect x='140.0' y='76.0' width='244.1' height='6' rx='3' fill='#1f4f8c'/><rect x='140.0' y='84.0' width='250.0' height='6' rx='3' fill='#b42318'/><text x='398.0' y='83.0' font-size='11' fill='#1f4f8c'>136.4</text><text x='398.0' y='93.0' font-size='11' fill='#b42318'>139.7</text></svg><div class='legend-row'><span class='legend-chip'><span class='legend-swatch' style='background:#1f4f8c'></span>Two Buck Luck</span><span class='legend-chip'><span class='legend-swatch' style='background:#b42318'></span>Love(land) Hurts</span></div><p class='chart-note'>This separates what happened on the board from what the rosters still had available.</p></div>
+                    <div class='chart-card'><div class='chart-kicker'>Love(land) Hurts carried the larger combined lineup and waiver miss total.</div><div class='chart-title'>Decision Pressure</div><svg viewBox='0 0 420.0 84.0' width='100%' role='img' aria-label='Decision Pressure'><text x='8.0' y='38.0' font-size='12' fill='#5b6472'>Lineup delta</text><rect x='140.0' y='24.0' width='250.0' height='14' rx='7' fill='#e2e8f0'/><rect x='140.0' y='24.0' width='130.8' height='6' rx='3' fill='#1f4f8c'/><rect x='140.0' y='32.0' width='250.0' height='6' rx='3' fill='#b42318'/><text x='398.0' y='31.0' font-size='11' fill='#1f4f8c'>4.5</text><text x='398.0' y='41.0' font-size='11' fill='#b42318'>8.6</text></svg><div class='legend-row'><span class='legend-chip'><span class='legend-swatch' style='background:#1f4f8c'></span>Two Buck Luck</span><span class='legend-chip'><span class='legend-swatch' style='background:#b42318'></span>Love(land) Hurts</span></div><p class='chart-note'>Higher bars mean more matchup-week decision pressure, not season-long missed-value totals.</p></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="skill-luck-section">
+            <h2>Strength vs Schedule Breaks</h2>
+            <p class="muted">This section separates raw weekly strength from matchup context: all-play rank, median result, projection gap, and opponent rank.</p>
+            <div class="skill-grid">
+                <div class="skill-hero">
+                    <div class="label">Matchup Label</div>
+                    <div class="value">Elite-Score Win</div>
+                    <div class="subvalue">The winner paired one of the league&#x27;s best weekly scores with the head-to-head result.</div>
+                    <p style="margin-top:12px;">League average was 118.0, league median was 118.1, and this matchup landed as an elite-score win rather than a coin-flip or fluke result.</p>
+                </div>
+                <div class="skill-team-list">
+
+                <div class="skill-team-card">
+                    <div class="label">Two Buck Luck</div>
+                    <div class="subvalue" style="margin-top:0;color:var(--text);">
+                        Weekly rank 3, 7-2 all-play, Yes on median, 9.3 over projected.
+                    </div>
+                </div>
+
+                <div class="skill-team-card">
+                    <div class="label">Love(land) Hurts</div>
+                    <div class="subvalue" style="margin-top:0;color:var(--text);">
+                        Weekly rank 4, 6-3 all-play, Yes on median, 11.8 over projected.
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <div class="card-grid" style="margin-top:12px;">
+                <div class="detail-card">
+                    <div class="label">League Average</div>
+                    <div class="value">118.0</div>
+                    <div class="subvalue">Useful for raw-strength framing.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">League Median</div>
+                    <div class="value">118.1</div>
+                    <div class="subvalue">Useful for median-win framing.</div>
+                </div>
+                <div class='detail-card wide'><h3>Strength And Schedule Evidence</h3><div class='table-wrap'><table><thead><tr><th class=''>Team</th><th class='num'>Weekly Rank</th><th class=''>All-Play</th><th class=''>Beat Median</th><th class='num'>Projected</th><th class='num'>Over Projected</th><th class='num'>Opponent Rank</th></tr></thead><tbody><tr><td class=''>Two Buck Luck</td><td class='num'>3.0</td><td class=''>7-2</td><td class=''>Yes</td><td class='num'>122.6</td><td class='num'>9.3</td><td class='num'>4.0</td></tr><tr><td class=''>Love(land) Hurts</td><td class='num'>4.0</td><td class=''>6-3</td><td class=''>Yes</td><td class='num'>119.2</td><td class='num'>11.8</td><td class='num'>3.0</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+
+        <section class="section" id="decision-breakdown-section">
+            <h2>Decision Breakdown</h2>
+            <p class="muted">Start with the manager ratings and their evidence, then inspect the complete submitted lineups and the legal alternatives that were available.</p>
+            <div class='decision-table-card manager-comparison rating-evidence'><h3>Manager Ratings &amp; Evidence</h3><p class='muted'>Weekly management measures this week's lineup, transaction deployment, and scoring result. The season rating measures cumulative roster management and is marked provisional while the sample is small. Lineup execution remains visible on its own.</p><div class='table-wrap'><table><thead><tr><th>Measure</th><th class='manager-heading'>Dave F.<span>Two Buck Luck</span></th><th class='manager-heading'>Matt<span>Love(land) Hurts</span></th><th>Difference / context</th></tr></thead><tbody><tr><td class='metric-label'>Manager</td><td>Dave F.</td><td>Matt</td><td class='muted'>-</td></tr><tr><td class='metric-label'>Result</td><td>Winner</td><td>Loser</td><td class='muted'>0.8 pts</td></tr><tr><td class='metric-label'>Score</td><td>131.9</td><td>131.1</td><td class='muted'>+0.8</td></tr><tr><td class='metric-label'>Weekly rank</td><td>3/10</td><td>4/10</td><td class='muted'>Lower is better</td></tr><tr><td class='metric-label'>All-play record</td><td>7-2</td><td>6-3</td><td class='muted'>Vs every team</td></tr><tr><td class='metric-label'>Vs projection</td><td>+9.3</td><td>+11.8</td><td class='muted'>Points</td></tr><tr><td class='metric-label'>Weekly management grade</td><td>92.0% (A-)</td><td>89.3% (B+)</td><td class='muted'>This week&#x27;s decisions</td></tr><tr><td class='metric-label'>Season manager rating</td><td>81.2% (B-, Provisional)</td><td>73.8% (C, Provisional)</td><td class='muted'>Cumulative evidence</td></tr><tr><td class='metric-label'>Lineup execution</td><td>96.7%</td><td>93.8%</td><td class='muted'>Actual / best legal lineup</td></tr><tr><td class='metric-label'>Actual / optimal points</td><td>131.9 / 136.4</td><td>131.1 / 139.7</td><td class='muted'>Lineup evidence</td></tr><tr><td class='metric-label'>Optimal starts</td><td>8/9 (88.9%)</td><td>8/9 (88.9%)</td><td class='muted'>Legal lineup slots</td></tr><tr><td class='metric-label'>Actionable bench miss</td><td>4.5</td><td>8.6</td><td class='muted'>-4.1</td></tr><tr><td class='metric-label'>Best available swap</td><td>Tony Pollard over Javonte Williams (+4.5)</td><td>Mark Andrews over Colston Loveland (+8.6)</td><td class='muted'>Hindsight</td></tr><tr><td class='metric-label'>Season record</td><td>1-1</td><td>1-1</td><td class='muted'>Through this week</td></tr><tr><td class='metric-label'>Expected win credit</td><td>0.68</td><td>0.57</td><td class='muted'>Score strength, 0-1</td></tr><tr><td class='metric-label'>Luck win credit</td><td>+0.32</td><td>-0.57</td><td class='muted'>Actual result minus expectation</td></tr><tr><td class='metric-label'>Opponent-assisted win</td><td>Yes · 7.8 decisive pts</td><td>No</td><td class='muted'>Would opponent&#x27;s best legal lineup reverse it?</td></tr></tbody></table></div></div>
+            <div class="decision-table-stack"><div class='decision-table-card lineup-board' id='full-lineup-board'><h3>Full Matchup Lineups</h3><p class='muted'>Every starter and reserve, aligned by lineup slot. Fantasy points are beside each player; the outer columns show the actual Week 1 stat lines behind those scores.</p><div class='table-wrap'><table><thead><tr><th class='stats-col'>Stats</th><th class='player-col'>Two Buck Luck</th><th class='points-col num'>Pts</th><th class='slot-col'>Pos</th><th class='points-col num'>Pts</th><th class='player-col right'>Love(land) Hurts</th><th class='stats-col right'>Stats</th></tr></thead><tbody><tr><td class='stats-col'><span class='stat-line'>20/22, 287 pass yds · 2 pass TD · 3 rush, 30 yds · 1 rush TD</span></td><td class='player-col'><span class='player-name'>Brock Purdy</span><span class='player-meta'>San Francisco 49ers · QB</span><span class='mobile-stat'>20/22, 287 pass yds · 2 pass TD · 3 rush, 30 yds · 1 rush TD</span></td><td class='points-col num'>33.6</td><td class='slot-col'>QB</td><td class='points-col num'>53.2</td><td class='player-col'><span class='player-name right'>Josh Allen</span><span class='player-meta right'>Buffalo Bills · QB</span><span class='mobile-stat right'>20/31, 248 pass yds · 3 pass TD · 14 rush, 69 yds · 2 rush TD</span></td><td class='stats-col'><span class='stat-line right'>20/31, 248 pass yds · 3 pass TD · 14 rush, 69 yds · 2 rush TD</span></td></tr><tr><td class='stats-col'><span class='stat-line'>20 rush, 80 yds · 3 rec, 2 yds</span></td><td class='player-col'><span class='player-name'>Chase Brown</span><span class='player-meta'>Cincinnati Bengals · RB</span><span class='mobile-stat'>20 rush, 80 yds · 3 rec, 2 yds</span></td><td class='points-col num'>11.2</td><td class='slot-col'>RB1</td><td class='points-col num'>7.3</td><td class='player-col'><span class='player-name right'>Ashton Jeanty</span><span class='player-meta right'>Las Vegas Raiders · RB</span><span class='mobile-stat right'>21 rush, 48 yds · 4 rec, 15 yds</span></td><td class='stats-col'><span class='stat-line right'>21 rush, 48 yds · 4 rec, 15 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>12 rush, 30 yds · 3 rec, 20 yds</span></td><td class='player-col'><span class='player-name'>Javonte Williams</span><span class='player-meta'>Dallas Cowboys · RB</span><span class='mobile-stat'>12 rush, 30 yds · 3 rec, 20 yds</span></td><td class='points-col num'>5.0</td><td class='slot-col'>RB2</td><td class='points-col num'>6.8</td><td class='player-col'><span class='player-name right'>Quinshon Judkins</span><span class='player-meta right'>Cleveland Browns · RB</span><span class='mobile-stat right'>12 rush, 21 yds · 5 rec, 27 yds</span></td><td class='stats-col'><span class='stat-line right'>12 rush, 21 yds · 5 rec, 27 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>9 rec, 142 yds · 2 rec TD</span></td><td class='player-col'><span class='player-name'>Amon-Ra St. Brown</span><span class='player-meta'>Detroit Lions · WR</span><span class='mobile-stat'>9 rec, 142 yds · 2 rec TD</span></td><td class='points-col num'>33.2</td><td class='slot-col'>WR1</td><td class='points-col num'>11.3</td><td class='player-col'><span class='player-name right'>Rashee Rice</span><span class='player-meta right'>Kansas City Chiefs · WR</span><span class='mobile-stat right'>4 rec, 83 yds</span></td><td class='stats-col'><span class='stat-line right'>4 rec, 83 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>5 rec, 57 yds · 1 rec TD</span></td><td class='player-col'><span class='player-name'>Garrett Wilson</span><span class='player-meta'>New York Jets · WR</span><span class='mobile-stat'>5 rec, 57 yds · 1 rec TD</span></td><td class='points-col num'>15.7</td><td class='slot-col'>WR2</td><td class='points-col num'>14.5</td><td class='player-col'><span class='player-name right'>Tee Higgins</span><span class='player-meta right'>Cincinnati Bengals · WR</span><span class='mobile-stat right'>5 rec, 95 yds</span></td><td class='stats-col'><span class='stat-line right'>5 rec, 95 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>1 rec, 15 yds</span></td><td class='player-col'><span class='player-name'>Kyle Pitts Sr.</span><span class='player-meta'>Atlanta Falcons · TE</span><span class='mobile-stat'>1 rec, 15 yds</span></td><td class='points-col num'>2.5</td><td class='slot-col'>TE</td><td class='points-col num'>0.3</td><td class='player-col'><span class='player-name right'>Colston Loveland</span><span class='player-meta right'>Chicago Bears · TE</span><span class='mobile-stat right'>1 rec, 3 yds</span></td><td class='stats-col'><span class='stat-line right'>1 rec, 3 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>12 rush, 85 yds · 2 rec, 12 yds · 1 rec TD</span></td><td class='player-col'><span class='player-name'>Kyren Williams</span><span class='player-meta'>Los Angeles Rams · RB</span><span class='mobile-stat'>12 rush, 85 yds · 2 rec, 12 yds · 1 rec TD</span></td><td class='points-col num'>17.7</td><td class='slot-col'>W/R/T</td><td class='points-col num'>24.7</td><td class='player-col'><span class='player-name right'>DeVonta Smith</span><span class='player-meta right'>Philadelphia Eagles · WR</span><span class='mobile-stat right'>10 rec, 117 yds · 1 rec TD</span></td><td class='stats-col'><span class='stat-line right'>10 rec, 117 yds · 1 rec TD</span></td></tr><tr><td class='stats-col'><span class='stat-line'>1 FG · 1 FG miss</span></td><td class='player-col'><span class='player-name'>Chris Boswell</span><span class='player-meta'>Pittsburgh Steelers · K</span><span class='mobile-stat'>1 FG · 1 FG miss</span></td><td class='points-col num'>5.0</td><td class='slot-col'>K</td><td class='points-col num'>5.0</td><td class='player-col'><span class='player-name right'>Tyler Loop</span><span class='player-meta right'>Baltimore Ravens · K</span><span class='mobile-stat right'>1 FG · 1 FG miss · 2 XP</span></td><td class='stats-col'><span class='stat-line right'>1 FG · 1 FG miss · 2 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>14 PA · 3 sacks · 1 INT · 1 FR</span></td><td class='player-col'><span class='player-name'>Steelers</span><span class='player-meta'>Pittsburgh Steelers · DEF</span><span class='mobile-stat'>14 PA · 3 sacks · 1 INT · 1 FR</span></td><td class='points-col num'>8.0</td><td class='slot-col'>DEF</td><td class='points-col num'>8.0</td><td class='player-col'><span class='player-name right'>Seahawks</span><span class='player-meta right'>Seattle Seahawks · DEF</span><span class='mobile-stat right'>7 PA · 2 sacks · 1 INT</span></td><td class='stats-col'><span class='stat-line right'>7 PA · 2 sacks · 1 INT</span></td></tr><tr class='total-row'><td colspan='2'>Starter total</td><td class='num'>131.9</td><td class='slot-col'>Total</td><td class='num'>131.1</td><td colspan='2' class='right'>Starter total</td></tr><tr class='roster-divider'><td colspan='7'>Bench and reserve players</td></tr><tr><td class='stats-col'><span class='stat-line'>22/31, 288 pass yds · 1 pass TD · 1 INT · 5 rush, 6 yds</span></td><td class='player-col'><span class='player-name'>Bo Nix</span><span class='player-meta'>Denver Broncos · QB</span><span class='mobile-stat'>22/31, 288 pass yds · 1 pass TD · 1 INT · 5 rush, 6 yds</span></td><td class='points-col num'>16.2</td><td class='slot-col'>BN</td><td class='points-col num'>20.4</td><td class='player-col'><span class='player-name right'>Jalen Hurts</span><span class='player-meta right'>Philadelphia Eagles · QB</span><span class='mobile-stat right'>26/37, 264 pass yds · 2 pass TD · 2 INT · 5 rush, 16 yds</span></td><td class='stats-col'><span class='stat-line right'>26/37, 264 pass yds · 2 pass TD · 2 INT · 5 rush, 16 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>14 rush, 64 yds · 1 rec, 1 yds</span></td><td class='player-col'><span class='player-name'>Tony Pollard</span><span class='player-meta'>Tennessee Titans · RB</span><span class='mobile-stat'>14 rush, 64 yds · 1 rec, 1 yds</span></td><td class='points-col num'>9.5</td><td class='slot-col'>BN</td><td class='points-col num'>8.9</td><td class='player-col'><span class='player-name right'>Mark Andrews</span><span class='player-meta right'>Baltimore Ravens · TE</span><span class='mobile-stat right'>6 rec, 49 yds</span></td><td class='stats-col'><span class='stat-line right'>6 rec, 49 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>10 rush, 36 yds</span></td><td class='player-col'><span class='player-name'>J.K. Dobbins</span><span class='player-meta'>Denver Broncos · RB</span><span class='mobile-stat'>10 rush, 36 yds</span></td><td class='points-col num'>4.6</td><td class='slot-col'>BN</td><td class='points-col num'>8.0</td><td class='player-col'><span class='player-name right'>Broncos</span><span class='player-meta right'>Denver Broncos · DEF</span><span class='mobile-stat right'>13 PA · 2 sacks · 1 INT</span></td><td class='stats-col'><span class='stat-line right'>13 PA · 2 sacks · 1 INT</span></td></tr><tr><td class='stats-col'><span class='stat-line'>1 rec, 1 yds</span></td><td class='player-col'><span class='player-name'>Malik Nabers</span><span class='player-meta'>New York Giants · WR</span><span class='mobile-stat'>1 rec, 1 yds</span></td><td class='points-col num'>0.1</td><td class='slot-col'>BN</td><td class='points-col num'>6.1</td><td class='player-col'><span class='player-name right'>Travis Etienne Jr.</span><span class='player-meta right'>New Orleans Saints · RB</span><span class='mobile-stat right'>8 rush, 25 yds · 2 rec, 6 yds</span></td><td class='stats-col'><span class='stat-line right'>8 rush, 25 yds · 2 rec, 6 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>No recorded counting stats</span></td><td class='player-col'><span class='player-name'>Jordan Mason</span><span class='player-meta'>Minnesota Vikings · RB</span><span class='mobile-stat'>No recorded counting stats</span></td><td class='points-col num'>0.0</td><td class='slot-col'>BN</td><td class='points-col num'>3.3</td><td class='player-col'><span class='player-name right'>Chris Rodriguez Jr.</span><span class='player-meta right'>Jacksonville Jaguars · RB</span><span class='mobile-stat right'>6 rush, 13 yds</span></td><td class='stats-col'><span class='stat-line right'>6 rush, 13 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>No recorded counting stats</span></td><td class='player-col'><span class='player-name'>Josh Jacobs</span><span class='player-meta'>Green Bay Packers · RB</span><span class='mobile-stat'>No recorded counting stats</span></td><td class='points-col num'>0.0</td><td class='slot-col'>BN</td><td class='points-col num'>3.0</td><td class='player-col'><span class='player-name right'>Harrison Mevis</span><span class='player-meta right'>Los Angeles Rams · K</span><span class='mobile-stat right'>1 FG miss · 4 XP</span></td><td class='stats-col'><span class='stat-line right'>1 FG miss · 4 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>No recorded counting stats</span></td><td class='player-col'><span class='player-name'>Marvin Harrison Jr.</span><span class='player-meta'>Arizona Cardinals · WR</span><span class='mobile-stat'>No recorded counting stats</span></td><td class='points-col num'>0.0</td><td class='slot-col'>BN</td><td class='points-col num'>0.4</td><td class='player-col'><span class='player-name right'>Jayden Reed</span><span class='player-meta right'>Green Bay Packers · WR</span><span class='mobile-stat right'>1 rec, 4 yds</span></td><td class='stats-col'><span class='stat-line right'>1 rec, 4 yds</span></td></tr></tbody></table></div></div><div class='decision-table-card'><h3>Lineup Opportunities</h3><p class='muted'>These are legal changes the manager could have made using players already on the roster. Each row compares the reserve with the starter occupying the relevant slot.</p><div class='table-wrap'><table><thead><tr><th>Team</th><th>Reserve who could start</th><th class='num'>Pts</th><th>Starter replaced</th><th class='num'>Pts</th><th class='num'>Gain</th></tr></thead><tbody><tr><td>Love(land) Hurts</td><td>Mark Andrews</td><td class='num'>8.9</td><td>Colston Loveland</td><td class='num'>0.3</td><td class='num'><strong>+8.6</strong></td></tr><tr><td>Two Buck Luck</td><td>Tony Pollard</td><td class='num'>9.5</td><td>Javonte Williams</td><td class='num'>5.0</td><td class='num'><strong>+4.5</strong></td></tr></tbody></table></div></div></div>
+        </section>
+
+
+        <section class="section" id="head-to-head-section">
+            <h2>Head-to-Head History</h2>
+            <p class="muted">This compares the current result to the full series between these managers, not just the current season.</p>
+            <div class="card-grid">
+                <div class="detail-card">
+                    <div class="label">Manager Series Record</div>
+                    <div class="value">18-14</div>
+                    <div class="subvalue">Two Buck Luck vs Love(land) Hurts</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Average Margin</div>
+                    <div class="value">5.3</div>
+                    <div class="subvalue">Average margin from Two Buck Luck&#x27;s perspective: +5.3.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Current Margin Rank</div>
+                    <div class="value">3rd closest</div>
+                    <div class="subvalue">6th highest combined score</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Playoff Meetings</div>
+                    <div class="value">4</div>
+                    <div class="subvalue">Two Buck Luck carries the current 5-game streak.</div>
+                </div>
+                <div class='detail-card wide'><h3>Last Five Meetings</h3><div class='table-wrap'><table><thead><tr><th>Season</th><th>Context</th><th>Winner</th><th class='num'>Margin</th><th class='num'>Combined</th></tr></thead><tbody><tr><td><a href="matchup_03_two-buck-luck_vs_love-land-hurts.html">2026 W2</a></td><td>regular season</td><td>Two Buck Luck</td><td class='num'>0.8</td><td class='num'>262.9</td></tr><tr><td><a href="../../2025/matchups_week_15/matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html">2025 W15</a></td><td>regular season</td><td>Two Buck Luck</td><td class='num'>17.4</td><td class='num'>273.5</td></tr><tr><td><a href="../../2025/matchups_week_06/matchup_02_two-buck-luck_vs_you-aren-t-worthy-of-coleman.html">2025 W6</a></td><td>regular season</td><td>Two Buck Luck</td><td class='num'>9.0</td><td class='num'>215.4</td></tr><tr><td>2024 W8</td><td>regular season</td><td>Two Buck Luck</td><td class='num'>14.8</td><td class='num'>258.5</td></tr><tr><td>2023 W8</td><td>regular season</td><td>Two Buck Luck</td><td class='num'>14.0</td><td class='num'>235.5</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <h2>Awards</h2>
+            <p class="muted">This is a lightweight personality layer. It should never outrank the analysis above it.</p>
+            <div class="award-strip"><div class='award-card'><div class='label'>Big Brain</div><div><strong>Two Buck Luck</strong></div><div class='subvalue'>Weekly process score cleared the sharp-management threshold.</div></div><div class='award-card'><div class='label'>Bench Pain</div><div><strong>Love(land) Hurts</strong></div><div class='subvalue'>Love(land) Hurts left 8.6 lineup points on the table, more than the 0.8-point final margin.</div></div></div>
+        </section>
+
+
+        <section class="section" id="deep-metrics-section">
+            <h2>Deep Metrics</h2>
+            <p class="muted">Expandable evidence for people who want the extra analytical layer.</p>
+            <details class="deep-metrics">
+                <summary>Open deep metrics</summary>
+                <div class="card-grid" style="margin-top:12px;">
+                    <div class='detail-card wide'><h3>Lineup Decisions</h3><div class='table-wrap'><table><thead><tr><th class=''>Team</th><th class='num'>Actual</th><th class='num'>Optimal</th><th class='num'>Left on Bench</th><th class='num'>Optimal Start %</th></tr></thead><tbody><tr><td class=''>Two Buck Luck</td><td class='num'>131.9</td><td class='num'>136.4</td><td class='num'>4.5</td><td class='num'>88.9</td></tr><tr><td class=''>Love(land) Hurts</td><td class='num'>131.1</td><td class='num'>139.7</td><td class='num'>8.6</td><td class='num'>88.9</td></tr></tbody></table></div></div>
+                    <div class='detail-card wide'><h3>Team Style</h3><div class='table-wrap'><table><thead><tr><th class=''>Team</th><th class=''>Style</th><th class='num'>Top 3 Share %</th><th class='num'>Structural Integrity</th><th class='num'>Fragility</th><th class='num'>Volatility</th></tr></thead><tbody><tr><td class=''>Two Buck Luck</td><td class=''>Stable Build</td><td class='num'>64.1</td><td class='num'>35.9</td><td class='num'>50.6</td><td class='num'>11.1</td></tr><tr><td class=''>Love(land) Hurts</td><td class=''>Boom/Bust Build</td><td class='num'>70.5</td><td class='num'>29.5</td><td class='num'>59.4</td><td class='num'>15.1</td></tr></tbody></table></div></div>
+                    <div class="detail-card wide">
+                        <h3>Timeline Status</h3>
+                        <p>Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction.</p>
+                        <p class="muted">Status: unavailable</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+    </main>
+</body>
+</html>
