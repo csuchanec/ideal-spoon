@@ -1102,6 +1102,38 @@
             .chip { white-space: normal; }
             .section-jump-link { flex: 1 1 calc(50% - 6px); max-width: none; }
         }
+
+    .source-bars { display: grid; gap: 14px; margin: 12px 0; }
+    .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+    .source-mode { color: var(--text-muted); font-size: 11px; font-weight: 700; margin: 5px 0 3px; }
+    .source-scale { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+    .source-track { display: flex; width: 100%; height: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--surface-muted); }
+    .source-track.absolute { max-width: 100%; }
+    .source-segment { display: block; height: 100%; min-width: 1px; border-right: 1px solid rgba(255,255,255,.75); }
+    .source-segment-label { display: block; overflow: hidden; padding: 3px 4px 0; color: #fff; font-size: 10px; font-weight: 800; line-height: 15px; text-align: center; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 1px rgba(0,0,0,.45); }
+    .source-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 10px 0; color: var(--text-muted); font-size: 12px; }
+    .source-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 2px; }
+    .scoring-sources-section .comparison-board table { min-width: 620px; table-layout: fixed; }
+    .scoring-sources-section .comparison-board th:first-child,
+    .scoring-sources-section .comparison-board td:first-child { text-align: right; }
+    .scoring-sources-section .comparison-board th:nth-child(2),
+    .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; text-align: center; background: #eef1f5; }
+    .scoring-sources-section .comparison-board th:nth-child(3),
+    .scoring-sources-section .comparison-board td:nth-child(3) { text-align: left; }
+    .scoring-sources-section .comparison-key { display: block; color: var(--text); font-weight: 800; }
+    .scoring-sources-section .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+    @media (max-width: 600px) {
+        .scoring-sources-section .comparison-board table { min-width: 0; width: 100%; }
+        .scoring-sources-section .comparison-board th,
+        .scoring-sources-section .comparison-board td { padding: 7px 5px; font-size: 10px; overflow-wrap: anywhere; }
+        .scoring-sources-section .comparison-board th:first-child,
+        .scoring-sources-section .comparison-board td:first-child,
+        .scoring-sources-section .comparison-board th:nth-child(3),
+        .scoring-sources-section .comparison-board td:nth-child(3) { width: 33%; }
+        .scoring-sources-section .comparison-board th:nth-child(2),
+        .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; }
+    }
+
     </style>
 </head>
 <body>
@@ -1296,7 +1328,7 @@
             <p class="subhead">Week 2 Manager Report | Top scorer Josh Allen (53.2 pts) | Rec pipeline 19 final moves</p>
             <div class="meta-strip">
                 <span>League: Fantasy Football | Date Range: Week 2, 2026</span>
-                <span>Generated: 2026-09-22 22:29:30 | Schema v1.1</span>
+                <span>Generated: 2026-09-23 18:46:08 | Schema v1.1</span>
                 <span>Active Players: 381</span>
                 <span>Teams Analyzed: 10</span>
             </div>
@@ -1308,6 +1340,7 @@
                 <a class="section-jump-link" href="#story-section">Story</a>
                 <a class="section-jump-link" href="#actual-results-section">Results</a>
                 <a class="section-jump-link" href="#weekly-players-section">Players</a>
+                <a class="section-jump-link" href="#scoring-sources-section">Point Sources</a>
                 <a class="section-jump-link" href="#matchup-impact-section">Lineup What-Ifs</a>
                 <a class="section-jump-link" href="#team-decision-section">Team Decisions</a>
                 <a class="section-jump-link" href="#grade-methodology-section">Grades</a>
@@ -1439,6 +1472,7 @@
                 </details>
             </section>
 
+        <div id="scoring-sources-section"><section class='section scoring-sources-section'><h2>Where The Points Came From</h2><p class='muted'>The bars attribute counted starter points to the underlying scoring categories. Absolute bars share one scale; percentage bars normalize each team to its own score. Negative categories are called out beside the total.</p><div class='source-bars'><div><div class='source-team-label'><strong>Pat Pidgeon</strong><span>184.0 pts · 2.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:100.000%'><span class='source-segment' style='width:18.098%;background:#2563eb' title='Passing: 33.3 points' aria-label='Passing: 33.3 points'><span class='source-segment-label'>Passing 33.3</span></span><span class='source-segment' style='width:23.098%;background:#15803d' title='Rushing: 42.5 points' aria-label='Rushing: 42.5 points'><span class='source-segment-label'>Rushing 42.5</span></span><span class='source-segment' style='width:51.196%;background:#b45309' title='Receiving: 94.2 points' aria-label='Receiving: 94.2 points'><span class='source-segment-label'>Receiving 94.2</span></span><span class='source-segment' style='width:6.522%;background:#7c3aed' title='Kicking: 12.0 points' aria-label='Kicking: 12.0 points'></span><span class='source-segment' style='width:2.174%;background:#475569' title='Defense: 4.0 points' aria-label='Defense: 4.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:18.098%;background:#2563eb' title='Passing: 33.3 points' aria-label='Passing: 33.3 points'><span class='source-segment-label'>Passing 18%</span></span><span class='source-segment' style='width:23.098%;background:#15803d' title='Rushing: 42.5 points' aria-label='Rushing: 42.5 points'><span class='source-segment-label'>Rushing 23%</span></span><span class='source-segment' style='width:51.196%;background:#b45309' title='Receiving: 94.2 points' aria-label='Receiving: 94.2 points'><span class='source-segment-label'>Receiving 51%</span></span><span class='source-segment' style='width:6.522%;background:#7c3aed' title='Kicking: 12.0 points' aria-label='Kicking: 12.0 points'></span><span class='source-segment' style='width:2.174%;background:#475569' title='Defense: 4.0 points' aria-label='Defense: 4.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Millan’s Last Supper</strong><span>156.5 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:85.054%'><span class='source-segment' style='width:22.300%;background:#2563eb' title='Passing: 34.9 points' aria-label='Passing: 34.9 points'><span class='source-segment-label'>Passing 34.9</span></span><span class='source-segment' style='width:22.109%;background:#15803d' title='Rushing: 34.6 points' aria-label='Rushing: 34.6 points'><span class='source-segment-label'>Rushing 34.6</span></span><span class='source-segment' style='width:51.118%;background:#b45309' title='Receiving: 80.0 points' aria-label='Receiving: 80.0 points'><span class='source-segment-label'>Receiving 80.0</span></span><span class='source-segment' style='width:2.556%;background:#7c3aed' title='Kicking: 4.0 points' aria-label='Kicking: 4.0 points'></span><span class='source-segment' style='width:1.917%;background:#475569' title='Defense: 3.0 points' aria-label='Defense: 3.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:22.300%;background:#2563eb' title='Passing: 34.9 points' aria-label='Passing: 34.9 points'><span class='source-segment-label'>Passing 22%</span></span><span class='source-segment' style='width:22.109%;background:#15803d' title='Rushing: 34.6 points' aria-label='Rushing: 34.6 points'><span class='source-segment-label'>Rushing 22%</span></span><span class='source-segment' style='width:51.118%;background:#b45309' title='Receiving: 80.0 points' aria-label='Receiving: 80.0 points'><span class='source-segment-label'>Receiving 51%</span></span><span class='source-segment' style='width:2.556%;background:#7c3aed' title='Kicking: 4.0 points' aria-label='Kicking: 4.0 points'></span><span class='source-segment' style='width:1.917%;background:#475569' title='Defense: 3.0 points' aria-label='Defense: 3.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Two Buck Luck</strong><span>131.9 pts · 2.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:71.667%'><span class='source-segment' style='width:16.355%;background:#2563eb' title='Passing: 21.6 points' aria-label='Passing: 21.6 points'><span class='source-segment-label'>Passing 21.6</span></span><span class='source-segment' style='width:28.438%;background:#15803d' title='Rushing: 37.5 points' aria-label='Rushing: 37.5 points'><span class='source-segment-label'>Rushing 37.5</span></span><span class='source-segment' style='width:46.866%;background:#b45309' title='Receiving: 61.8 points' aria-label='Receiving: 61.8 points'><span class='source-segment-label'>Receiving 61.8</span></span><span class='source-segment' style='width:3.792%;background:#7c3aed' title='Kicking: 5.0 points' aria-label='Kicking: 5.0 points'></span><span class='source-segment' style='width:6.067%;background:#475569' title='Defense: 8.0 points' aria-label='Defense: 8.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:16.355%;background:#2563eb' title='Passing: 21.6 points' aria-label='Passing: 21.6 points'><span class='source-segment-label'>Passing 16%</span></span><span class='source-segment' style='width:28.438%;background:#15803d' title='Rushing: 37.5 points' aria-label='Rushing: 37.5 points'><span class='source-segment-label'>Rushing 28%</span></span><span class='source-segment' style='width:46.866%;background:#b45309' title='Receiving: 61.8 points' aria-label='Receiving: 61.8 points'><span class='source-segment-label'>Receiving 47%</span></span><span class='source-segment' style='width:3.792%;background:#7c3aed' title='Kicking: 5.0 points' aria-label='Kicking: 5.0 points'></span><span class='source-segment' style='width:6.067%;background:#475569' title='Defense: 8.0 points' aria-label='Defense: 8.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Love(land) Hurts</strong><span>131.1 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:71.232%'><span class='source-segment' style='width:20.041%;background:#2563eb' title='Passing: 26.3 points' aria-label='Passing: 26.3 points'><span class='source-segment-label'>Passing 26.3</span></span><span class='source-segment' style='width:27.314%;background:#15803d' title='Rushing: 35.8 points' aria-label='Rushing: 35.8 points'><span class='source-segment-label'>Rushing 35.8</span></span><span class='source-segment' style='width:42.726%;background:#b45309' title='Receiving: 56.0 points' aria-label='Receiving: 56.0 points'><span class='source-segment-label'>Receiving 56.0</span></span><span class='source-segment' style='width:3.815%;background:#7c3aed' title='Kicking: 5.0 points' aria-label='Kicking: 5.0 points'></span><span class='source-segment' style='width:6.104%;background:#475569' title='Defense: 8.0 points' aria-label='Defense: 8.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:20.041%;background:#2563eb' title='Passing: 26.3 points' aria-label='Passing: 26.3 points'><span class='source-segment-label'>Passing 20%</span></span><span class='source-segment' style='width:27.314%;background:#15803d' title='Rushing: 35.8 points' aria-label='Rushing: 35.8 points'><span class='source-segment-label'>Rushing 27%</span></span><span class='source-segment' style='width:42.726%;background:#b45309' title='Receiving: 56.0 points' aria-label='Receiving: 56.0 points'><span class='source-segment-label'>Receiving 43%</span></span><span class='source-segment' style='width:3.815%;background:#7c3aed' title='Kicking: 5.0 points' aria-label='Kicking: 5.0 points'></span><span class='source-segment' style='width:6.104%;background:#475569' title='Defense: 8.0 points' aria-label='Defense: 8.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Bend &amp; Snap Count</strong><span>126.9 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:68.967%'><span class='source-segment' style='width:14.894%;background:#2563eb' title='Passing: 18.9 points' aria-label='Passing: 18.9 points'><span class='source-segment-label'>18.9</span></span><span class='source-segment' style='width:17.100%;background:#15803d' title='Rushing: 21.7 points' aria-label='Rushing: 21.7 points'><span class='source-segment-label'>Rushing 21.7</span></span><span class='source-segment' style='width:49.094%;background:#b45309' title='Receiving: 62.3 points' aria-label='Receiving: 62.3 points'><span class='source-segment-label'>Receiving 62.3</span></span><span class='source-segment' style='width:5.516%;background:#7c3aed' title='Kicking: 7.0 points' aria-label='Kicking: 7.0 points'></span><span class='source-segment' style='width:13.396%;background:#475569' title='Defense: 17.0 points' aria-label='Defense: 17.0 points'><span class='source-segment-label'>17.0</span></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:14.894%;background:#2563eb' title='Passing: 18.9 points' aria-label='Passing: 18.9 points'><span class='source-segment-label'>15%</span></span><span class='source-segment' style='width:17.100%;background:#15803d' title='Rushing: 21.7 points' aria-label='Rushing: 21.7 points'><span class='source-segment-label'>Rushing 17%</span></span><span class='source-segment' style='width:49.094%;background:#b45309' title='Receiving: 62.3 points' aria-label='Receiving: 62.3 points'><span class='source-segment-label'>Receiving 49%</span></span><span class='source-segment' style='width:5.516%;background:#7c3aed' title='Kicking: 7.0 points' aria-label='Kicking: 7.0 points'></span><span class='source-segment' style='width:13.396%;background:#475569' title='Defense: 17.0 points' aria-label='Defense: 17.0 points'><span class='source-segment-label'>13%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Sigma Chi Whiteout</strong><span>109.2 pts · 2.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:59.366%'><span class='source-segment' style='width:4.516%;background:#2563eb' title='Passing: 4.9 points' aria-label='Passing: 4.9 points'></span><span class='source-segment' style='width:51.083%;background:#15803d' title='Rushing: 55.8 points' aria-label='Rushing: 55.8 points'><span class='source-segment-label'>Rushing 55.8</span></span><span class='source-segment' style='width:36.161%;background:#b45309' title='Receiving: 39.5 points' aria-label='Receiving: 39.5 points'><span class='source-segment-label'>Receiving 39.5</span></span><span class='source-segment' style='width:7.324%;background:#7c3aed' title='Kicking: 8.0 points' aria-label='Kicking: 8.0 points'><span class='source-segment-label'>8.0</span></span><span class='source-segment' style='width:2.746%;background:#475569' title='Defense: 3.0 points' aria-label='Defense: 3.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:4.516%;background:#2563eb' title='Passing: 4.9 points' aria-label='Passing: 4.9 points'></span><span class='source-segment' style='width:51.083%;background:#15803d' title='Rushing: 55.8 points' aria-label='Rushing: 55.8 points'><span class='source-segment-label'>Rushing 51%</span></span><span class='source-segment' style='width:36.161%;background:#b45309' title='Receiving: 39.5 points' aria-label='Receiving: 39.5 points'><span class='source-segment-label'>Receiving 36%</span></span><span class='source-segment' style='width:7.324%;background:#7c3aed' title='Kicking: 8.0 points' aria-label='Kicking: 8.0 points'><span class='source-segment-label'>7%</span></span><span class='source-segment' style='width:2.746%;background:#475569' title='Defense: 3.0 points' aria-label='Defense: 3.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Squat</strong><span>100.3 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:54.511%'><span class='source-segment' style='width:14.357%;background:#2563eb' title='Passing: 14.4 points' aria-label='Passing: 14.4 points'><span class='source-segment-label'>14.4</span></span><span class='source-segment' style='width:38.983%;background:#15803d' title='Rushing: 39.1 points' aria-label='Rushing: 39.1 points'><span class='source-segment-label'>Rushing 39.1</span></span><span class='source-segment' style='width:40.080%;background:#b45309' title='Receiving: 40.2 points' aria-label='Receiving: 40.2 points'><span class='source-segment-label'>Receiving 40.2</span></span><span class='source-segment' style='width:0.997%;background:#7c3aed' title='Kicking: 1.0 points' aria-label='Kicking: 1.0 points'></span><span class='source-segment' style='width:2.991%;background:#475569' title='Defense: 3.0 points' aria-label='Defense: 3.0 points'></span><span class='source-segment' style='width:2.592%;background:#0891b2' title='Returns: 2.6 points' aria-label='Returns: 2.6 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:14.357%;background:#2563eb' title='Passing: 14.4 points' aria-label='Passing: 14.4 points'><span class='source-segment-label'>14%</span></span><span class='source-segment' style='width:38.983%;background:#15803d' title='Rushing: 39.1 points' aria-label='Rushing: 39.1 points'><span class='source-segment-label'>Rushing 39%</span></span><span class='source-segment' style='width:40.080%;background:#b45309' title='Receiving: 40.2 points' aria-label='Receiving: 40.2 points'><span class='source-segment-label'>Receiving 40%</span></span><span class='source-segment' style='width:0.997%;background:#7c3aed' title='Kicking: 1.0 points' aria-label='Kicking: 1.0 points'></span><span class='source-segment' style='width:2.991%;background:#475569' title='Defense: 3.0 points' aria-label='Defense: 3.0 points'></span><span class='source-segment' style='width:2.592%;background:#0891b2' title='Returns: 2.6 points' aria-label='Returns: 2.6 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Nacua-Cola</strong><span>87.4 pts · 4.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:47.500%'><span class='source-segment' style='width:9.611%;background:#2563eb' title='Passing: 8.4 points' aria-label='Passing: 8.4 points'><span class='source-segment-label'>8.4</span></span><span class='source-segment' style='width:37.185%;background:#15803d' title='Rushing: 32.5 points' aria-label='Rushing: 32.5 points'><span class='source-segment-label'>Rushing 32.5</span></span><span class='source-segment' style='width:32.609%;background:#b45309' title='Receiving: 28.5 points' aria-label='Receiving: 28.5 points'><span class='source-segment-label'>Receiving 28.5</span></span><span class='source-segment' style='width:18.307%;background:#7c3aed' title='Kicking: 16.0 points' aria-label='Kicking: 16.0 points'><span class='source-segment-label'>Kicking 16.0</span></span><span class='source-segment' style='width:6.865%;background:#475569' title='Defense: 6.0 points' aria-label='Defense: 6.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:9.611%;background:#2563eb' title='Passing: 8.4 points' aria-label='Passing: 8.4 points'><span class='source-segment-label'>10%</span></span><span class='source-segment' style='width:37.185%;background:#15803d' title='Rushing: 32.5 points' aria-label='Rushing: 32.5 points'><span class='source-segment-label'>Rushing 37%</span></span><span class='source-segment' style='width:32.609%;background:#b45309' title='Receiving: 28.5 points' aria-label='Receiving: 28.5 points'><span class='source-segment-label'>Receiving 33%</span></span><span class='source-segment' style='width:18.307%;background:#7c3aed' title='Kicking: 16.0 points' aria-label='Kicking: 16.0 points'><span class='source-segment-label'>Kicking 18%</span></span><span class='source-segment' style='width:6.865%;background:#475569' title='Defense: 6.0 points' aria-label='Defense: 6.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>ZSzizzle</strong><span>77.3 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:42.029%'><span class='source-segment' style='width:15.302%;background:#2563eb' title='Passing: 11.8 points' aria-label='Passing: 11.8 points'><span class='source-segment-label'>Passing 11.8</span></span><span class='source-segment' style='width:26.379%;background:#15803d' title='Rushing: 20.4 points' aria-label='Rushing: 20.4 points'><span class='source-segment-label'>Rushing 20.4</span></span><span class='source-segment' style='width:41.509%;background:#b45309' title='Receiving: 32.1 points' aria-label='Receiving: 32.1 points'><span class='source-segment-label'>Receiving 32.1</span></span><span class='source-segment' style='width:2.586%;background:#7c3aed' title='Kicking: 2.0 points' aria-label='Kicking: 2.0 points'></span><span class='source-segment' style='width:14.224%;background:#475569' title='Defense: 11.0 points' aria-label='Defense: 11.0 points'><span class='source-segment-label'>11.0</span></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:15.302%;background:#2563eb' title='Passing: 11.8 points' aria-label='Passing: 11.8 points'><span class='source-segment-label'>Passing 15%</span></span><span class='source-segment' style='width:26.379%;background:#15803d' title='Rushing: 20.4 points' aria-label='Rushing: 20.4 points'><span class='source-segment-label'>Rushing 26%</span></span><span class='source-segment' style='width:41.509%;background:#b45309' title='Receiving: 32.1 points' aria-label='Receiving: 32.1 points'><span class='source-segment-label'>Receiving 42%</span></span><span class='source-segment' style='width:2.586%;background:#7c3aed' title='Kicking: 2.0 points' aria-label='Kicking: 2.0 points'></span><span class='source-segment' style='width:14.224%;background:#475569' title='Defense: 11.0 points' aria-label='Defense: 11.0 points'><span class='source-segment-label'>14%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>In Purdytory</strong><span>75.2 pts · 2.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:40.851%'><span class='source-segment' style='width:0.887%;background:#2563eb' title='Passing: 0.7 points' aria-label='Passing: 0.7 points'></span><span class='source-segment' style='width:41.109%;background:#15803d' title='Rushing: 30.9 points' aria-label='Rushing: 30.9 points'><span class='source-segment-label'>Rushing 30.9</span></span><span class='source-segment' style='width:51.353%;background:#b45309' title='Receiving: 38.6 points' aria-label='Receiving: 38.6 points'><span class='source-segment-label'>Receiving 38.6</span></span><span class='source-segment' style='width:9.313%;background:#7c3aed' title='Kicking: 7.0 points' aria-label='Kicking: 7.0 points'><span class='source-segment-label'>7.0</span></span></div><div class='source-scale'><span>0 pts</span><span>184.0 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:0.887%;background:#2563eb' title='Passing: 0.7 points' aria-label='Passing: 0.7 points'></span><span class='source-segment' style='width:41.109%;background:#15803d' title='Rushing: 30.9 points' aria-label='Rushing: 30.9 points'><span class='source-segment-label'>Rushing 41%</span></span><span class='source-segment' style='width:51.353%;background:#b45309' title='Receiving: 38.6 points' aria-label='Receiving: 38.6 points'><span class='source-segment-label'>Receiving 51%</span></span><span class='source-segment' style='width:9.313%;background:#7c3aed' title='Kicking: 7.0 points' aria-label='Kicking: 7.0 points'><span class='source-segment-label'>9%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div></div><div class='source-legend'><span><span class='source-swatch' style='background:#2563eb'></span>Passing</span><span><span class='source-swatch' style='background:#15803d'></span>Rushing</span><span><span class='source-swatch' style='background:#b45309'></span>Receiving</span><span><span class='source-swatch' style='background:#7c3aed'></span>Kicking</span><span><span class='source-swatch' style='background:#475569'></span>Defense</span><span><span class='source-swatch' style='background:#0891b2'></span>Returns</span><span><span class='source-swatch' style='background:#be185d'></span>Miscellaneous</span></div><details><summary>Scoring-stat detail</summary><div class='table-wrap'><table><thead><tr><th>Source</th><th>Scoring stat</th><th class='num'>League stat total</th><th class='num'>Fantasy points</th><th class='num'>Share</th></tr></thead><tbody><tr><td>Receiving</td><td>Receiving Yards</td><td class='num'>2692.0</td><td class='num'>269.2</td><td class='num'>22.8%</td></tr><tr><td>Rushing</td><td>Rushing Yards</td><td class='num'>1778.0</td><td class='num'>177.8</td><td class='num'>15.1%</td></tr><tr><td>Receiving</td><td>Receiving Touchdowns</td><td class='num'>22.0</td><td class='num'>132.0</td><td class='num'>11.2%</td></tr><tr><td>Receiving</td><td>Receiving 1st Downs</td><td class='num'>132.0</td><td class='num'>132.0</td><td class='num'>11.2%</td></tr><tr><td>Passing</td><td>Passing Touchdowns</td><td class='num'>18.0</td><td class='num'>108.0</td><td class='num'>9.2%</td></tr><tr><td>Rushing</td><td>Rushing 1st Downs</td><td class='num'>95.0</td><td class='num'>95.0</td><td class='num'>8.1%</td></tr><tr><td>Rushing</td><td>Rushing Touchdowns</td><td class='num'>13.0</td><td class='num'>78.0</td><td class='num'>6.6%</td></tr><tr><td>Passing</td><td>Passing Yards</td><td class='num'>2255.0</td><td class='num'>75.2</td><td class='num'>6.4%</td></tr><tr><td>Kicking</td><td>Field Goals 50+ Yards</td><td class='num'>5.0</td><td class='num'>25.0</td><td class='num'>2.1%</td></tr><tr><td>Defense</td><td>Team Sack</td><td class='num'>25.0</td><td class='num'>25.0</td><td class='num'>2.1%</td></tr><tr><td>Kicking</td><td>Field Goals 40-49 Yards</td><td class='num'>4.0</td><td class='num'>16.0</td><td class='num'>1.4%</td></tr><tr><td>Kicking</td><td>Point After Attempt Made</td><td class='num'>16.0</td><td class='num'>16.0</td><td class='num'>1.4%</td></tr><tr><td>Defense</td><td>Points Allowed 1-6 points</td><td class='num'>2.0</td><td class='num'>14.0</td><td class='num'>1.2%</td></tr><tr><td>Defense</td><td>Team Interception</td><td class='num'>6.0</td><td class='num'>12.0</td><td class='num'>1.0%</td></tr><tr><td>Miscellaneous</td><td>Fumbles Lost</td><td class='num'>5.0</td><td class='num'>-10.0</td><td class='num'>-0.8%</td></tr><tr><td>Passing</td><td>Interception Thrown</td><td class='num'>4.0</td><td class='num'>-8.0</td><td class='num'>-0.7%</td></tr><tr><td>Kicking</td><td>Field Goals 20-29 Yards</td><td class='num'>2.0</td><td class='num'>6.0</td><td class='num'>0.5%</td></tr><tr><td>Kicking</td><td>Field Goals 30-39 Yards</td><td class='num'>2.0</td><td class='num'>6.0</td><td class='num'>0.5%</td></tr><tr><td>Defense</td><td>Team Fumble Recovery</td><td class='num'>2.0</td><td class='num'>4.0</td><td class='num'>0.3%</td></tr><tr><td>Defense</td><td>Points Allowed 7-13 points</td><td class='num'>1.0</td><td class='num'>4.0</td><td class='num'>0.3%</td></tr><tr><td>Defense</td><td>Points Allowed 14-20 points</td><td class='num'>4.0</td><td class='num'>4.0</td><td class='num'>0.3%</td></tr><tr><td>Defense</td><td>Points Allowed 35+ points</td><td class='num'>1.0</td><td class='num'>-4.0</td><td class='num'>-0.3%</td></tr><tr><td>Returns</td><td>Return Yards</td><td class='num'>78.0</td><td class='num'>2.6</td><td class='num'>0.2%</td></tr><tr><td>Defense</td><td>Team Block Kick</td><td class='num'>1.0</td><td class='num'>2.0</td><td class='num'>0.2%</td></tr><tr><td>Kicking</td><td>Field Goals Missed 20-29 Yards</td><td class='num'>1.0</td><td class='num'>-1.0</td><td class='num'>-0.1%</td></tr><tr><td>Kicking</td><td>Field Goals Missed 40-49 Yards</td><td class='num'>1.0</td><td class='num'>-1.0</td><td class='num'>-0.1%</td></tr></tbody></table></div></details></section></div>
 
             <section class="section" id="matchup-impact-section">
                 <h2 class="section-title">How Lineup Decisions Could Have Changed Results</h2>
@@ -1593,7 +1627,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <tr data-rank="1" data-team="Pat Pidgeon" data-actual="184.000" data-eff="89.711" data-missed="16.700" data-grade="B+" data-trend="unchanged">
+                        <tr data-rank="1" data-team="Pat Pidgeon" data-actual="184.000" data-eff="92.111" data-missed="16.700" data-grade="A-" data-trend="unchanged">
                             <td class="rank">1</td>
                             <td>
                                 <div class="manager-name">Pat Pidgeon</div>
@@ -1601,11 +1635,11 @@
                                 <div class="score-track-label">Actual score share</div>
                             </td>
                             <td class="num">184.0</td>
-                            <td class="num">89.7%</td>
+                            <td class="num">92.1%</td>
                             <td class="num">16.7</td>
-                            <td><span class="grade grade-b">B+</span></td>
+                            <td><span class="grade grade-a">A-</span></td>
                             <td><span class="trend-unchanged">Unchanged</span></td>
-                            <td><span class="chip chip-positive">Top Score</span><span class="chip chip-positive">Season-Pace Smash</span><span class="chip chip-warning">Start Miss</span></td>
+                            <td><span class="chip chip-positive">Top Score</span><span class="chip chip-positive">Season-Pace Smash</span><span class="chip chip-neutral">Neutral Add/Start</span></td>
                         </tr>
                         <tr data-rank="2" data-team="Millan’s Last Supper" data-actual="156.500" data-eff="94.100" data-missed="0.000" data-grade="A" data-trend="improving">
                             <td class="rank">2</td>
@@ -1677,7 +1711,7 @@
                             <td><span class="trend-declining">Cooling Off</span></td>
                             <td><span class="chip chip-neutral">Bench Stash</span><span class="chip chip-neutral">Clean Lineup</span></td>
                         </tr>
-                        <tr data-rank="7" data-team="Squat" data-actual="100.300" data-eff="75.978" data-missed="22.333" data-grade="C" data-trend="improving">
+                        <tr data-rank="7" data-team="Squat" data-actual="100.300" data-eff="79.778" data-missed="22.333" data-grade="C+" data-trend="improving">
                             <td class="rank">7</td>
                             <td>
                                 <div class="manager-name">Squat</div>
@@ -1685,11 +1719,11 @@
                                 <div class="score-track-label">Actual score share</div>
                             </td>
                             <td class="num">100.3</td>
-                            <td class="num">76.0%</td>
+                            <td class="num">79.8%</td>
                             <td class="num">22.3</td>
-                            <td><span class="grade grade-c">C</span></td>
+                            <td><span class="grade grade-c">C+</span></td>
                             <td><span class="trend-improving">Heating Up</span></td>
-                            <td><span class="chip chip-warning">Below Season Pace</span><span class="chip chip-warning">Start Miss</span><span class="chip chip-neutral">Neutral Add/Start</span></td>
+                            <td><span class="chip chip-warning">Below Season Pace</span><span class="chip chip-neutral">Neutral Add/Start</span><span class="chip chip-warning">Bench Burn</span></td>
                         </tr>
                         <tr data-rank="8" data-team="Nacua-Cola" data-actual="87.400" data-eff="71.231" data-missed="20.933" data-grade="C-" data-trend="improving">
                             <td class="rank">8</td>
@@ -1740,10 +1774,10 @@
             <summary>
                 <div class="team-summary-left">
                     <div class="team-summary-title">Pat Pidgeon</div>
-                    <div class="team-summary-sub">Weekly management B+ (89.7%) · Season A (94.7%, provisional)</div>
+                    <div class="team-summary-sub">Weekly management A- (92.1%) · Season A (94.7%, provisional)</div>
                 </div>
                 <div class="team-summary-right">
-                    <span class="chip chip-neutral">Solid</span>
+                    <span class="chip chip-positive">Best</span>
                     <span class="chip chip-positive">Top Score</span><span class="chip chip-positive">Season-Pace Smash</span>
                     <span class="chip chip-accent">Actual 184.0</span>
                     <span class="chip chip-neutral">Missed 16.7</span>
@@ -1755,7 +1789,7 @@
                     <div class="mini-kpi"><div class="mini-kpi-label">Actual Score</div><div class="mini-kpi-value">184.0</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Ideal Score</div><div class="mini-kpi-value">200.7</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Missed</div><div class="mini-kpi-value">16.7</div></div>
-                    <div class="mini-kpi"><div class="mini-kpi-label">Weekly Management</div><div class="mini-kpi-value" style="color: #ffc107;">B+ · 89.7%</div></div>
+                    <div class="mini-kpi"><div class="mini-kpi-label">Weekly Management</div><div class="mini-kpi-value" style="color: #28a745;">A- · 92.1%</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Lineup Execution</div><div class="mini-kpi-value">91.7%</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Season Rating</div><div class="mini-kpi-value">A · 94.7%</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Recent Form</div><div class="mini-kpi-value trend-unchanged">Unchanged</div></div>
@@ -1786,10 +1820,10 @@
                 <div class="decision-scorecard-row">
                     <div class="decision-scorecard-head">
                         <span>Move Outcome</span>
-                        <span class="decision-scorecard-value">-3.0</span>
+                        <span class="decision-scorecard-value">+0.0</span>
                     </div>
                     <div class="decision-meter" aria-label="Move Outcome meter">
-                        <span style="--meter-width:60.0%; --meter-color:var(--negative);"></span>
+                        <span style="--meter-width:3.0%; --meter-color:#94a3b8;"></span>
                     </div>
                     <p class="decision-scorecard-note">Credit or debit from non-obvious add/start outcomes.</p>
                 </div>
@@ -1828,7 +1862,7 @@
                 <div class="deep-grid">
                     <article class="deep-card">
                         <h4>Lineup Decisions</h4>
-                        <p>Some lineup edge left on the bench.</p>
+                        <p>Lineup optimization was strong.</p>
                         <div class="evidence-strip">
                 <div class="evidence-metric">
                     <div class="evidence-label">Lineup Score</div>
@@ -1871,7 +1905,7 @@
                         <div class="stat-list">
                             <div class="stat-row">
                                 <div class="stat-label">Weekly Management</div>
-                                <div class="stat-value"><strong>89.7%</strong> from lineup decisions, same-week transaction deployment, and league-relative scoring.</div>
+                                <div class="stat-value"><strong>92.1%</strong> from lineup decisions, same-week transaction deployment, and league-relative scoring.</div>
                             </div>
                             <div class="stat-row">
                                 <div class="stat-label">Best Swap</div>
@@ -1883,8 +1917,8 @@
             <div class="table-wrap compact-table">
                 <table>
                     <thead><tr><th>Evidence</th><th class="num">Score</th><th class="num">Weight</th><th>What It Means</th></tr></thead>
-                    <tbody><tr><td>Lineup decisions</td><td class='num'>96.0%</td><td class='num'>50%</td><td>91.7% conversion; 16.7 actionable points missed.</td></tr><tr><td>Same-week add/start decisions</td><td class='num'>63.0%</td><td class='num'>20%</td><td>0 positive / 0 negative (-3.0 move signal).</td></tr><tr><td>Competitive output</td><td class='num'>97.0%</td><td class='num'>30%</td><td>League-relative weekly scoring; record and matchup luck are excluded.</td></tr><tr><td>Waiver hindsight</td><td class='num'>0.0 pts</td><td class='num'>Context only</td><td>Completed-score opportunities are not treated as decisions known before kickoff.</td></tr><tr><td>Expected win credit</td><td class='num'>0.97</td><td class='num'>Context only</td><td>Blends weekly score rank with the observed distribution of winning scores.</td></tr><tr><td>Luck win credit</td><td class='num'>+0.03</td><td class='num'>Context only</td><td>Actual result minus expected result; positive is fortunate, negative is unlucky.</td></tr><tr><td>Opponent-assisted win</td><td class='num'>No</td><td class='num'>Context only</td><td>Whether the opponent&#x27;s best legal lineup would have reversed the result.</td></tr></tbody>
-                    <tfoot><tr><th>Weekly Management Grade</th><th class="num">89.7</th><th colspan="2">Unavailable evidence is omitted and the remaining weights are redistributed.</th></tr></tfoot>
+                    <tbody><tr><td>Lineup decisions</td><td class='num'>96.0%</td><td class='num'>50%</td><td>91.7% conversion; 16.7 actionable points missed.</td></tr><tr><td>Same-week add/start decisions</td><td class='num'>75.0%</td><td class='num'>20%</td><td>0 positive / 0 negative (+0.0 move signal).</td></tr><tr><td>Competitive output</td><td class='num'>97.0%</td><td class='num'>30%</td><td>League-relative weekly scoring; record and matchup luck are excluded.</td></tr><tr><td>Waiver hindsight</td><td class='num'>0.0 pts</td><td class='num'>Context only</td><td>Completed-score opportunities are not treated as decisions known before kickoff.</td></tr><tr><td>Expected win credit</td><td class='num'>0.97</td><td class='num'>Context only</td><td>Blends weekly score rank with the observed distribution of winning scores.</td></tr><tr><td>Luck win credit</td><td class='num'>+0.03</td><td class='num'>Context only</td><td>Actual result minus expected result; positive is fortunate, negative is unlucky.</td></tr><tr><td>Opponent-assisted win</td><td class='num'>No</td><td class='num'>Context only</td><td>Whether the opponent&#x27;s best legal lineup would have reversed the result.</td></tr></tbody>
+                    <tfoot><tr><th>Weekly Management Grade</th><th class="num">92.1</th><th colspan="2">Unavailable evidence is omitted and the remaining weights are redistributed.</th></tr></tfoot>
                 </table>
             </div>
 
@@ -1943,7 +1977,7 @@
                 <div class="deep-grid">
                     <article class="deep-card">
                         <h4>Move Outcome Review</h4>
-                        <p>Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 3.0 pts.</p>
+                        <p>Adds classified this week: 0 positive | 0 bad. Adds were grade-neutral this week.</p>
                         <div class="evidence-strip">
                 <div class="evidence-metric">
                     <div class="evidence-label">Good Moves</div>
@@ -1957,7 +1991,7 @@
                 </div>
                 <div class="evidence-metric">
                     <div class="evidence-label">Grade Impact</div>
-                    <div class="evidence-value">-3.0</div>
+                    <div class="evidence-value">+0.0</div>
                     <div class="evidence-note">Move-quality adjustment in the management grade.</div>
                 </div>
                 <div class="evidence-metric">
@@ -1969,7 +2003,7 @@
                     <article class="evidence-card">
                         <div class="evidence-title">
                             <span>Caleb Douglas (WR)</span>
-                            <span class="chip chip-warning">Obvious start miss</span>
+                            <span class="chip chip-neutral">Neutral add/start</span>
                         </div>
                         <div class="evidence-sub">Started: 3.9 pts vs 12.4 prior avg over 1 week(s). Lineup impact: +0.0 pts.</div>
 
@@ -4619,11 +4653,11 @@
             <summary>
                 <div class="team-summary-left">
                     <div class="team-summary-title">Squat</div>
-                    <div class="team-summary-sub">Weekly management C (76.0%) · Season D+ (64.7%, provisional)</div>
+                    <div class="team-summary-sub">Weekly management C+ (79.8%) · Season D+ (64.7%, provisional)</div>
                 </div>
                 <div class="team-summary-right">
                     <span class="chip chip-neutral">Solid</span>
-                    <span class="chip chip-warning">Below Season Pace</span><span class="chip chip-warning">Start Miss</span>
+                    <span class="chip chip-warning">Below Season Pace</span><span class="chip chip-neutral">Neutral Add/Start</span>
                     <span class="chip chip-accent">Actual 100.3</span>
                     <span class="chip chip-neutral">Missed 22.3</span>
                     <span class="chip trend-improving">Heating Up</span>
@@ -4634,7 +4668,7 @@
                     <div class="mini-kpi"><div class="mini-kpi-label">Actual Score</div><div class="mini-kpi-value">100.3</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Ideal Score</div><div class="mini-kpi-value">122.6</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Missed</div><div class="mini-kpi-value">22.3</div></div>
-                    <div class="mini-kpi"><div class="mini-kpi-label">Weekly Management</div><div class="mini-kpi-value" style="color: #dc3545;">C · 76.0%</div></div>
+                    <div class="mini-kpi"><div class="mini-kpi-label">Weekly Management</div><div class="mini-kpi-value" style="color: #dc3545;">C+ · 79.8%</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Lineup Execution</div><div class="mini-kpi-value">81.8%</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Season Rating</div><div class="mini-kpi-value">D+ · 64.7%</div></div>
                     <div class="mini-kpi"><div class="mini-kpi-label">Recent Form</div><div class="mini-kpi-value trend-improving">Heating Up</div></div>
@@ -4665,10 +4699,10 @@
                 <div class="decision-scorecard-row">
                     <div class="decision-scorecard-head">
                         <span>Move Outcome</span>
-                        <span class="decision-scorecard-value">-6.0</span>
+                        <span class="decision-scorecard-value">+0.0</span>
                     </div>
                     <div class="decision-meter" aria-label="Move Outcome meter">
-                        <span style="--meter-width:100.0%; --meter-color:var(--negative);"></span>
+                        <span style="--meter-width:3.0%; --meter-color:#94a3b8;"></span>
                     </div>
                     <p class="decision-scorecard-note">Credit or debit from non-obvious add/start outcomes.</p>
                 </div>
@@ -4750,7 +4784,7 @@
                         <div class="stat-list">
                             <div class="stat-row">
                                 <div class="stat-label">Weekly Management</div>
-                                <div class="stat-value"><strong>76.0%</strong> from lineup decisions, same-week transaction deployment, and league-relative scoring.</div>
+                                <div class="stat-value"><strong>79.8%</strong> from lineup decisions, same-week transaction deployment, and league-relative scoring.</div>
                             </div>
                             <div class="stat-row">
                                 <div class="stat-label">Best Swap</div>
@@ -4762,8 +4796,8 @@
             <div class="table-wrap compact-table">
                 <table>
                     <thead><tr><th>Evidence</th><th class="num">Score</th><th class="num">Weight</th><th>What It Means</th></tr></thead>
-                    <tbody><tr><td>Lineup decisions</td><td class='num'>78.2%</td><td class='num'>50%</td><td>81.8% conversion; 22.3 actionable points missed.</td></tr><tr><td>Same-week add/start decisions</td><td class='num'>81.0%</td><td class='num'>20%</td><td>0 positive / 0 negative (-6.0 move signal).</td></tr><tr><td>Competitive output</td><td class='num'>68.9%</td><td class='num'>30%</td><td>League-relative weekly scoring; record and matchup luck are excluded.</td></tr><tr><td>Waiver hindsight</td><td class='num'>0.0 pts</td><td class='num'>Context only</td><td>Completed-score opportunities are not treated as decisions known before kickoff.</td></tr><tr><td>Expected win credit</td><td class='num'>0.32</td><td class='num'>Context only</td><td>Blends weekly score rank with the observed distribution of winning scores.</td></tr><tr><td>Luck win credit</td><td class='num'>+0.68</td><td class='num'>Context only</td><td>Actual result minus expected result; positive is fortunate, negative is unlucky.</td></tr><tr><td>Opponent-assisted win</td><td class='num'>Yes · 5.3 decisive pts</td><td class='num'>Context only</td><td>Whether the opponent&#x27;s best legal lineup would have reversed the result.</td></tr></tbody>
-                    <tfoot><tr><th>Weekly Management Grade</th><th class="num">76.0</th><th colspan="2">Unavailable evidence is omitted and the remaining weights are redistributed.</th></tr></tfoot>
+                    <tbody><tr><td>Lineup decisions</td><td class='num'>78.2%</td><td class='num'>50%</td><td>81.8% conversion; 22.3 actionable points missed.</td></tr><tr><td>Same-week add/start decisions</td><td class='num'>100.0%</td><td class='num'>20%</td><td>0 positive / 0 negative (+0.0 move signal).</td></tr><tr><td>Competitive output</td><td class='num'>68.9%</td><td class='num'>30%</td><td>League-relative weekly scoring; record and matchup luck are excluded.</td></tr><tr><td>Waiver hindsight</td><td class='num'>0.0 pts</td><td class='num'>Context only</td><td>Completed-score opportunities are not treated as decisions known before kickoff.</td></tr><tr><td>Expected win credit</td><td class='num'>0.32</td><td class='num'>Context only</td><td>Blends weekly score rank with the observed distribution of winning scores.</td></tr><tr><td>Luck win credit</td><td class='num'>+0.68</td><td class='num'>Context only</td><td>Actual result minus expected result; positive is fortunate, negative is unlucky.</td></tr><tr><td>Opponent-assisted win</td><td class='num'>Yes · 5.3 decisive pts</td><td class='num'>Context only</td><td>Whether the opponent&#x27;s best legal lineup would have reversed the result.</td></tr></tbody>
+                    <tfoot><tr><th>Weekly Management Grade</th><th class="num">79.8</th><th colspan="2">Unavailable evidence is omitted and the remaining weights are redistributed.</th></tr></tfoot>
                 </table>
             </div>
 
@@ -4822,7 +4856,7 @@
                 <div class="deep-grid">
                     <article class="deep-card">
                         <h4>Move Outcome Review</h4>
-                        <p>Adds classified this week: 0 positive | 0 bad. Adds reduced the weekly grade by 6.0 pts.</p>
+                        <p>Adds classified this week: 0 positive | 0 bad. Adds were grade-neutral this week.</p>
                         <div class="evidence-strip">
                 <div class="evidence-metric">
                     <div class="evidence-label">Good Moves</div>
@@ -4836,7 +4870,7 @@
                 </div>
                 <div class="evidence-metric">
                     <div class="evidence-label">Grade Impact</div>
-                    <div class="evidence-value">-6.0</div>
+                    <div class="evidence-value">+0.0</div>
                     <div class="evidence-note">Move-quality adjustment in the management grade.</div>
                 </div>
                 <div class="evidence-metric">
@@ -4848,7 +4882,7 @@
                     <article class="evidence-card">
                         <div class="evidence-title">
                             <span>Chad Ryland (K)</span>
-                            <span class="chip chip-warning">Obvious start miss</span>
+                            <span class="chip chip-neutral">Neutral add/start</span>
                         </div>
                         <div class="evidence-sub">Started: 1.0 pts vs 16.0 prior avg over 1 week(s). Lineup impact: +0.0 pts.</div>
 
@@ -4868,7 +4902,7 @@
                     <article class="evidence-card">
                         <div class="evidence-title">
                             <span>Deebo Samuel Sr. (WR)</span>
-                            <span class="chip chip-warning">Obvious start miss</span>
+                            <span class="chip chip-neutral">Neutral add/start</span>
                         </div>
                         <div class="evidence-sub">Started: 5.5 pts vs 18.5 prior avg over 1 week(s). Lineup impact: +0.0 pts.</div>
 
@@ -4888,7 +4922,7 @@
                     <article class="evidence-card">
                         <div class="evidence-title">
                             <span>Jalen Coker (WR)</span>
-                            <span class="chip chip-warning">Obvious start miss</span>
+                            <span class="chip chip-neutral">Neutral add/start</span>
                         </div>
                         <div class="evidence-sub">Started: 11.2 pts vs 31.8 prior avg over 1 week(s). Lineup impact: +0.0 pts.</div>
 

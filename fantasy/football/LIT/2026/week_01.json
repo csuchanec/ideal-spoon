@@ -3,7 +3,7 @@
     "schema_version": "1.1",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-22T22:28:52.726010",
+    "generated_at": "2026-09-23T18:46:02.665035",
     "total_active_players": 368,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
@@ -8061,6 +8061,1596 @@
     ],
     "bust_method": "A bust is a starter at least 1.3 standard deviations below that player's scoring baseline, using at least three prior games.",
     "small_output_method": "Came up small ranks raw starter output and is not an expectation-adjusted bust label."
+  },
+  "scoring_sources": {
+    "categories": [
+      "Passing",
+      "Rushing",
+      "Receiving",
+      "Kicking",
+      "Defense",
+      "Returns",
+      "Miscellaneous"
+    ],
+    "teams": [
+      {
+        "team_key": "470.l.932349.t.3",
+        "team_name": "Pat Pidgeon",
+        "total_points": 186.53333333333327,
+        "contribution_total": 186.53333333333327,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 95.4,
+            "share_pct": 51.14367405289495
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 59.3,
+            "share_pct": 31.79056468906363
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 19.0,
+            "share_pct": 10.185847033595428
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 15.833333333333275,
+            "share_pct": 8.488205861329492
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -4.0,
+            "share_pct": -2.144388849177985
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 1.0,
+            "share_pct": 0.5360972122944963
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 614.0,
+            "fantasy_points": 61.400000000000006,
+            "share_pct": 32.91636883488207
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 22.0,
+            "fantasy_points": 22.0,
+            "share_pct": 11.794138670478917
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 213.0,
+            "fantasy_points": 21.3,
+            "share_pct": 11.41887062187277
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 20.0,
+            "fantasy_points": 20.0,
+            "share_pct": 10.721944245889926
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 9.649749821300931
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 6.433166547533954
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 6.433166547533954
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 50+ Yards",
+            "raw_value": 2.0,
+            "fantasy_points": 10.0,
+            "share_pct": 5.360972122944963
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 175.0,
+            "fantasy_points": 5.833333333333275,
+            "share_pct": 3.12723373838453
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 2.0,
+            "fantasy_points": -4.0,
+            "share_pct": -2.144388849177985
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.6082916368834885
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.6082916368834885
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.6082916368834885
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.0721944245889925
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 1.0,
+            "fantasy_points": 1.0,
+            "share_pct": 0.5360972122944963
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.1",
+        "team_name": "Sigma Chi Whiteout",
+        "total_points": 178.0333333333333,
+        "contribution_total": 178.03333333333327,
+        "reconciliation_delta": -2.842170943040401e-14,
+        "categories": [
+          {
+            "category": "Rushing",
+            "fantasy_points": 105.2,
+            "share_pct": 59.090058041565264
+          },
+          {
+            "category": "Receiving",
+            "fantasy_points": 50.9,
+            "share_pct": 28.59015165699308
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 12.0,
+            "share_pct": 6.740310803220371
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 6.0,
+            "share_pct": 3.3701554016101856
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 5.933333333333273,
+            "share_pct": 3.3327092304811496
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.123385133870062
+          }
+        ],
+        "stats": [
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 442.0,
+            "fantasy_points": 44.2,
+            "share_pct": 24.826811458528372
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 6.0,
+            "fantasy_points": 36.0,
+            "share_pct": 20.220932409661117
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 25.0,
+            "fantasy_points": 25.0,
+            "share_pct": 14.042314173375775
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 219.0,
+            "fantasy_points": 21.9,
+            "share_pct": 12.301067215877177
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 10.110466204830558
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 11.0,
+            "fantasy_points": 11.0,
+            "share_pct": 6.178618236285341
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 2.0,
+            "fantasy_points": 8.0,
+            "share_pct": 4.493540535480248
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 3.3701554016101856
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 3.0,
+            "fantasy_points": -6.0,
+            "share_pct": -3.3701554016101856
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 178.0,
+            "fantasy_points": 5.933333333333274,
+            "share_pct": 3.3327092304811505
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.246770267740124
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.123385133870062
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.123385133870062
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.123385133870062
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.123385133870062
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.7",
+        "team_name": "Bend & Snap Count",
+        "total_points": 148.2666666666666,
+        "contribution_total": 148.26666666666657,
+        "reconciliation_delta": -2.842170943040401e-14,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 73.6,
+            "share_pct": 49.640287769784194
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 47.2,
+            "share_pct": 31.83453237410074
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 12.466666666666582,
+            "share_pct": 8.40827338129491
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 9.0,
+            "share_pct": 6.070143884892089
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 8.0,
+            "share_pct": 5.395683453237413
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.3489208633093532
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 306.0,
+            "fantasy_points": 30.6,
+            "share_pct": 20.638489208633104
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 4.0,
+            "fantasy_points": 24.0,
+            "share_pct": 16.187050359712238
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 192.0,
+            "fantasy_points": 19.2,
+            "share_pct": 12.949640287769789
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 19.0,
+            "fantasy_points": 19.0,
+            "share_pct": 12.814748201438855
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 16.0,
+            "fantasy_points": 16.0,
+            "share_pct": 10.791366906474826
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 8.093525179856119
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 254.0,
+            "fantasy_points": 8.466666666666582,
+            "share_pct": 5.710431654676204
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.0467625899280595
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 50+ Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 5.0,
+            "share_pct": 3.372302158273383
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 2.0,
+            "fantasy_points": -4.0,
+            "share_pct": -2.6978417266187065
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.6978417266187065
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.6978417266187065
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.3489208633093532
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "2-Point Conversions",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.3489208633093532
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.3489208633093532
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.3489208633093532
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.8",
+        "team_name": "ZSzizzle",
+        "total_points": 136.2999999999999,
+        "contribution_total": 136.2999999999999,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Rushing",
+            "fantasy_points": 62.400000000000006,
+            "share_pct": 45.78136463683056
+          },
+          {
+            "category": "Receiving",
+            "fantasy_points": 50.1,
+            "share_pct": 36.75715333822453
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 16.79999999999989,
+            "share_pct": 12.325752017608146
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 7.0,
+            "share_pct": 5.135730007336761
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 2.0,
+            "share_pct": 1.467351430667646
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.467351430667646
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 241.0,
+            "fantasy_points": 24.1,
+            "share_pct": 17.681584739545137
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 4.0,
+            "fantasy_points": 24.0,
+            "share_pct": 17.608217168011752
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 224.0,
+            "fantasy_points": 22.400000000000002,
+            "share_pct": 16.434336023477634
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 13.206162876008815
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 16.0,
+            "fantasy_points": 16.0,
+            "share_pct": 11.738811445341168
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 324.0,
+            "fantasy_points": 10.799999999999892,
+            "share_pct": 7.9236977256052095
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 8.0,
+            "fantasy_points": 8.0,
+            "share_pct": 5.869405722670584
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.402054292002938
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.934702861335292
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.201027146001469
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.467351430667646
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.467351430667646
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.4",
+        "team_name": "Millan\u2019s Last Supper",
+        "total_points": 127.36666666666657,
+        "contribution_total": 127.36666666666659,
+        "reconciliation_delta": 1.4210854715202004e-14,
+        "categories": [
+          {
+            "category": "Rushing",
+            "fantasy_points": 50.3,
+            "share_pct": 39.49227950798223
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 32.166666666666586,
+            "share_pct": 25.255168803977973
+          },
+          {
+            "category": "Receiving",
+            "fantasy_points": 21.900000000000002,
+            "share_pct": 17.194451714210953
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 13.0,
+            "share_pct": 10.206752159120656
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 12.0,
+            "share_pct": 9.421617377649836
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.5702695629416392
+          }
+        ],
+        "stats": [
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 4.0,
+            "fantasy_points": 24.0,
+            "share_pct": 18.843234755299672
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 223.0,
+            "fantasy_points": 22.3,
+            "share_pct": 17.50850562679928
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 14.132426066474753
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 169.0,
+            "fantasy_points": 16.900000000000002,
+            "share_pct": 13.268777806856855
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 10.0,
+            "fantasy_points": 10.0,
+            "share_pct": 7.8513478147081965
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 245.0,
+            "fantasy_points": 8.166666666666584,
+            "share_pct": 6.411934048678296
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 8.0,
+            "fantasy_points": 8.0,
+            "share_pct": 6.281078251766557
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 5.0,
+            "fantasy_points": 5.0,
+            "share_pct": 3.9256739073540983
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 5.0,
+            "fantasy_points": 5.0,
+            "share_pct": 3.9256739073540983
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.1405391258832784
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 7-13 points",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.1405391258832784
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.5702695629416392
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.5702695629416392
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.5702695629416392
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.9",
+        "team_name": "Two Buck Luck",
+        "total_points": 124.66666666666663,
+        "contribution_total": 124.66666666666661,
+        "reconciliation_delta": -1.4210854715202004e-14,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 50.3,
+            "share_pct": 40.34759358288771
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 41.0,
+            "share_pct": 32.88770053475937
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 18.0,
+            "share_pct": 14.438502673796796
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 9.0,
+            "share_pct": 7.219251336898398
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 8.366666666666623,
+            "share_pct": 6.71122994652403
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.6042780748663106
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 223.0,
+            "fantasy_points": 22.3,
+            "share_pct": 17.887700534759365
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 14.438502673796796
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 14.438502673796796
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 140.0,
+            "fantasy_points": 14.000000000000004,
+            "share_pct": 11.229946524064177
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 10.0,
+            "fantasy_points": 10.0,
+            "share_pct": 8.021390374331554
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 9.0,
+            "fantasy_points": 9.0,
+            "share_pct": 7.219251336898398
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.812834224598932
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Defensive Touchdown",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.812834224598932
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 131.0,
+            "fantasy_points": 4.366666666666623,
+            "share_pct": 3.50267379679141
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.208556149732621
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.208556149732621
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.208556149732621
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 7-13 points",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.208556149732621
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.406417112299466
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.6042780748663106
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.6042780748663106
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.6042780748663106
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.5",
+        "team_name": "In Purdytory",
+        "total_points": 111.66666666666659,
+        "contribution_total": 111.66666666666659,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Rushing",
+            "fantasy_points": 38.2,
+            "share_pct": 34.20895522388062
+          },
+          {
+            "category": "Receiving",
+            "fantasy_points": 32.8,
+            "share_pct": 29.37313432835823
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 25.66666666666659,
+            "share_pct": 22.98507462686562
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 10.0,
+            "share_pct": 8.955223880597021
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 7.0,
+            "share_pct": 6.268656716417915
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.7910447761194042
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 228.0,
+            "fantasy_points": 22.8,
+            "share_pct": 20.41791044776121
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 192.0,
+            "fantasy_points": 19.2,
+            "share_pct": 17.194029850746283
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 16.119402985074636
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 13.0,
+            "fantasy_points": 13.0,
+            "share_pct": 11.641791044776127
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 10.0,
+            "fantasy_points": 10.0,
+            "share_pct": 8.955223880597021
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 230.0,
+            "fantasy_points": 7.66666666666659,
+            "share_pct": 6.865671641790981
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.373134328358213
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 5.0,
+            "fantasy_points": 5.0,
+            "share_pct": 4.477611940298511
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.5820895522388083
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.6865671641791065
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.6865671641791065
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.7910447761194042
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.7910447761194042
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 1.0,
+            "fantasy_points": 1.0,
+            "share_pct": 0.8955223880597021
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 28-34 points",
+            "raw_value": 1.0,
+            "fantasy_points": -1.0,
+            "share_pct": -0.8955223880597021
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.2",
+        "team_name": "Love(land) Hurts",
+        "total_points": 96.33333333333323,
+        "contribution_total": 96.33333333333323,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 32.0,
+            "share_pct": 33.217993079584815
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 27.200000000000003,
+            "share_pct": 28.235294117647094
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 23.133333333333226,
+            "share_pct": 24.01384083044974
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 13.0,
+            "share_pct": 13.49480968858133
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 1.0,
+            "share_pct": 1.0380622837370255
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 180.0,
+            "fantasy_points": 18.0,
+            "share_pct": 18.685121107266454
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 12.456747404844304
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 12.456747404844304
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 334.0,
+            "fantasy_points": 11.133333333333225,
+            "share_pct": 11.557093425605435
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 102.0,
+            "fantasy_points": 10.200000000000001,
+            "share_pct": 10.58823529411766
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 8.0,
+            "fantasy_points": 8.0,
+            "share_pct": 8.304498269896204
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 6.228373702422152
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 3.0,
+            "fantasy_points": 6.0,
+            "share_pct": 6.228373702422152
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 5.0,
+            "fantasy_points": 5.0,
+            "share_pct": 5.190311418685126
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 7-13 points",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 4.152249134948102
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 3.114186851211076
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 1.0,
+            "fantasy_points": 1.0,
+            "share_pct": 1.0380622837370255
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.6",
+        "team_name": "Nacua-Cola",
+        "total_points": 77.6666666666666,
+        "contribution_total": 77.6666666666666,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 47.5,
+            "share_pct": 61.15879828326185
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 20.200000000000003,
+            "share_pct": 26.00858369098715
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 10.966666666666598,
+            "share_pct": 14.120171673819664
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": -2.0,
+            "share_pct": -2.5751072961373414
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 1.0,
+            "share_pct": 1.2875536480686707
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 245.0,
+            "fantasy_points": 24.5,
+            "share_pct": 31.54506437768243
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 132.0,
+            "fantasy_points": 13.200000000000003,
+            "share_pct": 16.995708154506456
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 15.450643776824046
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 11.0,
+            "fantasy_points": 11.0,
+            "share_pct": 14.163090128755377
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 7.0,
+            "fantasy_points": 7.0,
+            "share_pct": 9.012875536480694
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 209.0,
+            "fantasy_points": 6.966666666666597,
+            "share_pct": 8.969957081544983
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 7.725321888412023
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 35+ points",
+            "raw_value": 1.0,
+            "fantasy_points": -4.0,
+            "share_pct": -5.150214592274683
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -2.5751072961373414
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 2.5751072961373414
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 2.5751072961373414
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Missed",
+            "raw_value": 1.0,
+            "fantasy_points": -1.0,
+            "share_pct": -1.2875536480686707
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.10",
+        "team_name": "Squat",
+        "total_points": 51.99999999999999,
+        "contribution_total": 51.99999999999999,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 22.1,
+            "share_pct": 42.50000000000001
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 21.3,
+            "share_pct": 40.96153846153847
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 7.0,
+            "share_pct": 13.461538461538463
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 3.0,
+            "share_pct": 5.76923076923077
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": -1.4000000000000061,
+            "share_pct": -2.6923076923077045
+          }
+        ],
+        "stats": [
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 163.0,
+            "fantasy_points": 16.3,
+            "share_pct": 31.34615384615385
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 151.0,
+            "fantasy_points": 15.100000000000001,
+            "share_pct": 29.038461538461547
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 7.0,
+            "fantasy_points": 7.0,
+            "share_pct": 13.461538461538463
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 5.0,
+            "fantasy_points": 5.0,
+            "share_pct": 9.615384615384617
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 7.6923076923076925
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 5.76923076923077
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -3.8461538461538463
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Block Kick",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 3.8461538461538463
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 1.0,
+            "fantasy_points": 1.0,
+            "share_pct": 1.9230769230769231
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 18.0,
+            "fantasy_points": 0.599999999999994,
+            "share_pct": 1.1538461538461424
+          }
+        ]
+      }
+    ],
+    "league": {
+      "total_points": 1238.8333333333326,
+      "contribution_total": 1238.8333333333326,
+      "reconciliation_delta": 0.0,
+      "categories": [
+        {
+          "category": "Receiving",
+          "fantasy_points": 476.6,
+          "share_pct": 38.47168034441009
+        },
+        {
+          "category": "Rushing",
+          "fantasy_points": 472.3,
+          "share_pct": 38.12457957755956
+        },
+        {
+          "category": "Passing",
+          "fantasy_points": 149.93333333333263,
+          "share_pct": 12.102784878245613
+        },
+        {
+          "category": "Kicking",
+          "fantasy_points": 84.0,
+          "share_pct": 6.7805731198708505
+        },
+        {
+          "category": "Defense",
+          "fantasy_points": 72.0,
+          "share_pct": 5.811919817032157
+        },
+        {
+          "category": "Miscellaneous",
+          "fantasy_points": -16.0,
+          "share_pct": -1.2915377371182573
+        }
+      ],
+      "stats": [
+        {
+          "category": "Receiving",
+          "stat": "Receiving Yards",
+          "raw_value": 2576.0,
+          "fantasy_points": 257.6,
+          "share_pct": 20.793757567603944
+        },
+        {
+          "category": "Rushing",
+          "stat": "Rushing Yards",
+          "raw_value": 2023.0,
+          "fantasy_points": 202.3,
+          "share_pct": 16.329880263688963
+        },
+        {
+          "category": "Rushing",
+          "stat": "Rushing Touchdowns",
+          "raw_value": 24.0,
+          "fantasy_points": 144.0,
+          "share_pct": 11.623839634064314
+        },
+        {
+          "category": "Rushing",
+          "stat": "Rushing 1st Downs",
+          "raw_value": 126.0,
+          "fantasy_points": 126.0,
+          "share_pct": 10.170859679806275
+        },
+        {
+          "category": "Receiving",
+          "stat": "Receiving 1st Downs",
+          "raw_value": 111.0,
+          "fantasy_points": 111.0,
+          "share_pct": 8.96004305125791
+        },
+        {
+          "category": "Receiving",
+          "stat": "Receiving Touchdowns",
+          "raw_value": 18.0,
+          "fantasy_points": 108.0,
+          "share_pct": 8.717879725548237
+        },
+        {
+          "category": "Passing",
+          "stat": "Passing Touchdowns",
+          "raw_value": 16.0,
+          "fantasy_points": 96.0,
+          "share_pct": 7.749226422709543
+        },
+        {
+          "category": "Passing",
+          "stat": "Passing Yards",
+          "raw_value": 2098.0,
+          "fantasy_points": 69.93333333333263,
+          "share_pct": 5.645096192654325
+        },
+        {
+          "category": "Kicking",
+          "stat": "Point After Attempt Made",
+          "raw_value": 33.0,
+          "fantasy_points": 33.0,
+          "share_pct": 2.6637965828064054
+        },
+        {
+          "category": "Defense",
+          "stat": "Team Sack",
+          "raw_value": 27.0,
+          "fantasy_points": 27.0,
+          "share_pct": 2.179469931387059
+        },
+        {
+          "category": "Defense",
+          "stat": "Team Interception",
+          "raw_value": 11.0,
+          "fantasy_points": 22.0,
+          "share_pct": 1.7758643885376038
+        },
+        {
+          "category": "Miscellaneous",
+          "stat": "Fumbles Lost",
+          "raw_value": 9.0,
+          "fantasy_points": -18.0,
+          "share_pct": -1.4529799542580393
+        },
+        {
+          "category": "Passing",
+          "stat": "Interception Thrown",
+          "raw_value": 8.0,
+          "fantasy_points": -16.0,
+          "share_pct": -1.2915377371182573
+        },
+        {
+          "category": "Kicking",
+          "stat": "Field Goals 40-49 Yards",
+          "raw_value": 4.0,
+          "fantasy_points": 16.0,
+          "share_pct": 1.2915377371182573
+        },
+        {
+          "category": "Kicking",
+          "stat": "Field Goals 50+ Yards",
+          "raw_value": 3.0,
+          "fantasy_points": 15.0,
+          "share_pct": 1.2108166285483661
+        },
+        {
+          "category": "Kicking",
+          "stat": "Field Goals 20-29 Yards",
+          "raw_value": 4.0,
+          "fantasy_points": 12.0,
+          "share_pct": 0.9686533028386929
+        },
+        {
+          "category": "Defense",
+          "stat": "Points Allowed 7-13 points",
+          "raw_value": 3.0,
+          "fantasy_points": 12.0,
+          "share_pct": 0.9686533028386929
+        },
+        {
+          "category": "Kicking",
+          "stat": "Field Goals 30-39 Yards",
+          "raw_value": 3.0,
+          "fantasy_points": 9.0,
+          "share_pct": 0.7264899771290196
+        },
+        {
+          "category": "Defense",
+          "stat": "Team Fumble Recovery",
+          "raw_value": 4.0,
+          "fantasy_points": 8.0,
+          "share_pct": 0.6457688685591286
+        },
+        {
+          "category": "Defense",
+          "stat": "Team Defensive Touchdown",
+          "raw_value": 1.0,
+          "fantasy_points": 6.0,
+          "share_pct": 0.48432665141934644
+        },
+        {
+          "category": "Defense",
+          "stat": "Points Allowed 35+ points",
+          "raw_value": 1.0,
+          "fantasy_points": -4.0,
+          "share_pct": -0.3228844342795643
+        },
+        {
+          "category": "Miscellaneous",
+          "stat": "2-Point Conversions",
+          "raw_value": 1.0,
+          "fantasy_points": 2.0,
+          "share_pct": 0.16144221713978216
+        },
+        {
+          "category": "Defense",
+          "stat": "Team Block Kick",
+          "raw_value": 1.0,
+          "fantasy_points": 2.0,
+          "share_pct": 0.16144221713978216
+        },
+        {
+          "category": "Kicking",
+          "stat": "Point After Attempt Missed",
+          "raw_value": 1.0,
+          "fantasy_points": -1.0,
+          "share_pct": -0.08072110856989108
+        },
+        {
+          "category": "Defense",
+          "stat": "Points Allowed 28-34 points",
+          "raw_value": 1.0,
+          "fantasy_points": -1.0,
+          "share_pct": -0.08072110856989108
+        }
+      ]
+    },
+    "week": 1,
+    "through_week": 1
   },
   "original_brief": {
     "week": 1,

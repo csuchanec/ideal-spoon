@@ -116,6 +116,82 @@
             border-color: var(--accent);
             color: var(--accent);
         }
+        .lineup-toggle {
+            display: inline-flex;
+            gap: 2px;
+            padding: 2px;
+            margin: 2px 0 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+        }
+        .lineup-toggle button {
+            min-width: 72px;
+            min-height: 32px;
+            border: 0;
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-muted);
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .lineup-toggle button.active {
+            background: var(--surface);
+            color: var(--accent);
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+        }
+        .contribution-chart { margin: 12px 0; }
+        .contribution-team { margin-top: 12px; }
+        .contribution-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 5px;
+        }
+        .contribution-mode-label {
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+            margin: 6px 0 3px;
+        }
+        .contribution-scale {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .contribution-track {
+            display: flex;
+            width: 100%;
+            min-width: 2px;
+            height: 22px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            background: var(--surface-muted);
+        }
+        .contribution-track.absolute { max-width: 100%; }
+        .contribution-segment {
+            display: block;
+            height: 100%;
+            min-width: 1px;
+            border-right: 1px solid rgba(255, 255, 255, 0.7);
+        }
+        .contribution-segment-label {
+            display: block;
+            overflow: hidden;
+            padding: 3px 3px 0;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            line-height: 15px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+        }
         .meta-chip strong {
             color: var(--text);
             margin-right: 6px;
@@ -216,6 +292,22 @@
             font-weight: 700;
             white-space: nowrap;
         }
+        .comparison-board table {
+            min-width: 620px;
+            table-layout: fixed;
+        }
+        .comparison-board th:first-child,
+        .comparison-board td:first-child { text-align: right; }
+        .comparison-board th:nth-child(2),
+        .comparison-board td:nth-child(2) {
+            width: 24%;
+            text-align: center;
+            background: #eef1f5;
+        }
+        .comparison-board th:nth-child(3),
+        .comparison-board td:nth-child(3) { text-align: left; }
+        .comparison-key { display: block; color: var(--text); font-weight: 800; }
+        .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
         .lineup-board table {
             min-width: 920px;
             table-layout: fixed;
@@ -616,6 +708,19 @@
             }
         }
         @media (max-width: 600px) {
+            .comparison-board table { min-width: 0; width: 100%; }
+            .comparison-board th,
+            .comparison-board td {
+                padding: 7px 5px;
+                font-size: 10px;
+                overflow-wrap: anywhere;
+            }
+            .comparison-board th:first-child,
+            .comparison-board td:first-child,
+            .comparison-board th:nth-child(3),
+            .comparison-board td:nth-child(3) { width: 34%; }
+            .comparison-board th:nth-child(2),
+            .comparison-board td:nth-child(2) { width: 32%; }
             .manager-comparison table {
                 min-width: 0;
                 table-layout: fixed;
@@ -623,20 +728,6 @@
             .manager-comparison th,
             .manager-comparison td {
                 overflow-wrap: anywhere;
-            }
-            .manager-comparison th:first-child,
-            .manager-comparison td:first-child {
-                width: 28%;
-            }
-            .manager-comparison th:nth-child(2),
-            .manager-comparison td:nth-child(2),
-            .manager-comparison th:nth-child(3),
-            .manager-comparison td:nth-child(3) {
-                width: 36%;
-            }
-            .manager-comparison th:nth-child(4),
-            .manager-comparison td:nth-child(4) {
-                display: none;
             }
             .manager-comparison .metric-label {
                 white-space: normal;
@@ -664,7 +755,38 @@
                 display: table-cell;
             }
         }
-        </style>
+
+    .source-bars { display: grid; gap: 14px; margin: 12px 0; }
+    .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+    .source-mode { color: var(--text-muted); font-size: 11px; font-weight: 700; margin: 5px 0 3px; }
+    .source-scale { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+    .source-track { display: flex; width: 100%; height: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--surface-muted); }
+    .source-track.absolute { max-width: 100%; }
+    .source-segment { display: block; height: 100%; min-width: 1px; border-right: 1px solid rgba(255,255,255,.75); }
+    .source-segment-label { display: block; overflow: hidden; padding: 3px 4px 0; color: #fff; font-size: 10px; font-weight: 800; line-height: 15px; text-align: center; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 1px rgba(0,0,0,.45); }
+    .source-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 10px 0; color: var(--text-muted); font-size: 12px; }
+    .source-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 2px; }
+    .scoring-sources-section .comparison-board table { min-width: 620px; table-layout: fixed; }
+    .scoring-sources-section .comparison-board th:first-child,
+    .scoring-sources-section .comparison-board td:first-child { text-align: right; }
+    .scoring-sources-section .comparison-board th:nth-child(2),
+    .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; text-align: center; background: #eef1f5; }
+    .scoring-sources-section .comparison-board th:nth-child(3),
+    .scoring-sources-section .comparison-board td:nth-child(3) { text-align: left; }
+    .scoring-sources-section .comparison-key { display: block; color: var(--text); font-weight: 800; }
+    .scoring-sources-section .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+    @media (max-width: 600px) {
+        .scoring-sources-section .comparison-board table { min-width: 0; width: 100%; }
+        .scoring-sources-section .comparison-board th,
+        .scoring-sources-section .comparison-board td { padding: 7px 5px; font-size: 10px; overflow-wrap: anywhere; }
+        .scoring-sources-section .comparison-board th:first-child,
+        .scoring-sources-section .comparison-board td:first-child,
+        .scoring-sources-section .comparison-board th:nth-child(3),
+        .scoring-sources-section .comparison-board td:nth-child(3) { width: 33%; }
+        .scoring-sources-section .comparison-board th:nth-child(2),
+        .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; }
+    }
+    </style>
 </head>
 <body>
     <main class="page">
