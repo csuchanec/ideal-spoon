@@ -63,6 +63,18 @@
             font-size: 16px;
             margin: 0 0 8px;
         }
+        h1, h2, h3 { scroll-margin-top: 16px; }
+        .heading-anchor {
+            margin-left: 7px;
+            color: var(--text-muted);
+            font-size: 0.75em;
+            text-decoration: none;
+            opacity: 0.35;
+        }
+        h1:hover .heading-anchor,
+        h2:hover .heading-anchor,
+        h3:hover .heading-anchor,
+        .heading-anchor:focus { opacity: 1; }
         p { margin: 0 0 10px; }
         .muted { color: var(--text-muted); }
         .card-grid {
@@ -280,13 +292,16 @@
             color: var(--text);
             text-transform: none;
             font-size: 13px;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
         }
         .manager-comparison .manager-heading span {
             display: block;
             color: var(--text-muted);
             font-size: 11px;
             font-weight: 500;
-            margin-top: 2px;
+            line-height: 1.3;
+            margin-top: 5px;
         }
         .manager-comparison .metric-label {
             font-weight: 700;
@@ -386,6 +401,14 @@
             color: var(--negative);
             background: #fde9e5;
         }
+        .rivalry-banner {
+            border: 1px solid #d8b26a;
+            border-left: 4px solid #b7791f;
+            border-radius: 6px;
+            background: #fffaf0;
+            padding: 10px 12px;
+            margin: 10px 0;
+        }
         .pill-row {
             display: flex;
             flex-wrap: wrap;
@@ -420,6 +443,111 @@
         }
         .decision-table-card p {
             margin-bottom: 10px;
+        }
+        .card-grid > .decision-table-card {
+            grid-column: 1 / -1;
+        }
+        .top-grade-table {
+            border-color: #a9c3e8;
+            background: #f8fbff;
+        }
+        .top-grade-table .primary-grade-row td {
+            background: #e8f0fb;
+            border-top: 2px solid #8badd8;
+            border-bottom: 2px solid #8badd8;
+        }
+        .top-grade-table .primary-grade-row td:first-child,
+        .top-grade-table .primary-grade-row td:last-child {
+            color: var(--accent);
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .series-chart-scroll {
+            max-height: 520px;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 4px;
+        }
+        .series-chart-header,
+        .series-chart-row {
+            display: grid;
+            grid-template-columns: 74px minmax(0, 1fr);
+            gap: 8px;
+            align-items: center;
+        }
+        .series-chart-header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            padding: 4px 0 8px;
+            background: var(--surface);
+        }
+        .series-chart-sides {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .series-chart-sides span:first-child { text-align: right; }
+        .series-chart-row {
+            min-height: 25px;
+            border-top: 1px solid var(--line);
+        }
+        .series-chart-label {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-plot {
+            position: relative;
+            height: 16px;
+        }
+        .series-chart-plot::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            bottom: -5px;
+            left: 50%;
+            width: 1px;
+            background: #94a3b8;
+        }
+        .series-chart-bar {
+            position: absolute;
+            top: 2px;
+            min-width: 2px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        .series-chart-bar.left {
+            right: 50%;
+            background: var(--accent);
+        }
+        .series-chart-bar.right {
+            left: 50%;
+            background: var(--negative);
+        }
+        .series-chart-bar.tie {
+            left: calc(50% - 2px);
+            width: 4px !important;
+            background: var(--text-muted);
+        }
+        .series-chart-value {
+            position: absolute;
+            top: 0;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 16px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-value.left { right: calc(50% + 5px); }
+        .series-chart-value.right { left: calc(50% + 5px); }
+        .series-chart-value.tie {
+            left: calc(50% + 5px);
+            color: var(--text-muted);
         }
         .compare-cell {
             min-width: 220px;

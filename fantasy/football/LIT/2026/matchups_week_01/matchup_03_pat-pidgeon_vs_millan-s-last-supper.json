@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-23T18:46:03.841759",
+    "generated_at": "2026-09-24T06:41:26.275821",
     "page_title": "Pat Pidgeon vs Millan\u2019s Last Supper matchup report",
     "matchup_id": "week-01-pat-pidgeon-vs-millan-s-last-supper",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -1004,7 +1004,8 @@
         "beat_league_median": true,
         "all_play_record": "9-0",
         "projected_score": 131.34,
-        "points_over_projected": 55.19
+        "points_over_projected": 55.19,
+        "yahoo_matchup_grade": "A+"
       },
       "lineup_decisions": {
         "actual_lineup_points": 186.53333333333327,
@@ -2046,7 +2047,8 @@
         "beat_league_median": true,
         "all_play_record": "5-4",
         "projected_score": 118.13,
-        "points_over_projected": 9.240000000000007
+        "points_over_projected": 9.240000000000007,
+        "yahoo_matchup_grade": "D"
       },
       "lineup_decisions": {
         "actual_lineup_points": 127.36666666666657,
@@ -3071,6 +3073,11 @@
     "record_for_team_a": "6-4",
     "games": 10,
     "playoff_games": 0,
+    "seasons_met": 6,
+    "series_balance": 0.8,
+    "is_rivalry": false,
+    "rivalry_label": null,
+    "rivalry_summary": null,
     "average_margin_for_team_a": 9.91299999999999,
     "series_summary": "Pat Pidgeon is 6-4 against Millan\u2019s Last Supper across 10 meetings between these managers.",
     "average_margin_text": "Average margin from Pat Pidgeon's perspective: +9.9.",
@@ -3124,6 +3131,98 @@
         "margin": 33.730000000000004,
         "combined_score": 213.87,
         "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      }
+    ],
+    "all_meetings": [
+      {
+        "season_label": "2026 W1",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 59.16,
+        "combined_score": 313.9,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Millan\u2019s Last Supper"
+      },
+      {
+        "season_label": "2025 W14",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 33.39999999999989,
+        "combined_score": 200.1999999999999,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2025 W5",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 37.0,
+        "combined_score": 250.59999999999985,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2024 W7",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 49.06999999999999,
+        "combined_score": 191.19,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2023 W10",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 33.730000000000004,
+        "combined_score": 213.87,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2023 W1",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 24.700000000000003,
+        "combined_score": 209.16000000000003,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2022 W10",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 3.469999999999999,
+        "combined_score": 197.67,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2022 W1",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 4.060000000000002,
+        "combined_score": 243.4,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2021 W14",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 13.300000000000011,
+        "combined_score": 223.56,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Reverse Ted Lasso"
+      },
+      {
+        "season_label": "2021 W5",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 25.89999999999999,
+        "combined_score": 210.64,
+        "historical_team_a_name": "From Millan to Minsk",
         "historical_team_b_name": "Reverse Ted Lasso"
       }
     ]

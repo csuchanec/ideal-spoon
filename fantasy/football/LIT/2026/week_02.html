@@ -1102,6 +1102,18 @@
             .chip { white-space: normal; }
             .section-jump-link { flex: 1 1 calc(50% - 6px); max-width: none; }
         }
+        h1, h2, h3 { scroll-margin-top: 16px; }
+        .heading-anchor {
+            margin-left: 7px;
+            color: var(--text-muted);
+            font-size: 0.75em;
+            text-decoration: none;
+            opacity: 0.35;
+        }
+        h1:hover .heading-anchor,
+        h2:hover .heading-anchor,
+        h3:hover .heading-anchor,
+        .heading-anchor:focus { opacity: 1; }
 
     .source-bars { display: grid; gap: 14px; margin: 12px 0; }
     .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
@@ -1328,7 +1340,7 @@
             <p class="subhead">Week 2 Manager Report | Top scorer Josh Allen (53.2 pts) | Rec pipeline 19 final moves</p>
             <div class="meta-strip">
                 <span>League: Fantasy Football | Date Range: Week 2, 2026</span>
-                <span>Generated: 2026-09-23 18:46:08 | Schema v1.1</span>
+                <span>Generated: 2026-09-24 06:41:31 | Schema v1.1</span>
                 <span>Active Players: 381</span>
                 <span>Teams Analyzed: 10</span>
             </div>
@@ -6925,6 +6937,43 @@
                 });
             }
 
+            function initHeadingAnchors() {
+                const used = new Set();
+                document.querySelectorAll("h1, h2, h3").forEach((heading) => {
+                    let base = (heading.id || heading.textContent || "section")
+                        .trim()
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]+/g, "-")
+                        .replace(/^-|-$/g, "") || "section";
+                    let id = base;
+                    let suffix = 2;
+                    while (used.has(id) || (document.getElementById(id) && document.getElementById(id) !== heading)) {
+                        id = base + "-" + suffix++;
+                    }
+                    heading.id = id;
+                    used.add(id);
+                    if (!heading.querySelector(".heading-anchor")) {
+                        const anchor = document.createElement("a");
+                        anchor.className = "heading-anchor";
+                        anchor.href = "#" + id;
+                        anchor.setAttribute("aria-label", "Link to " + heading.textContent.trim());
+                        anchor.textContent = "#";
+                        heading.appendChild(anchor);
+                    }
+                });
+                const openHashTarget = () => {
+                    const target = document.getElementById(window.location.hash.slice(1));
+                    if (!target) return;
+                    let disclosure = target.closest("details");
+                    while (disclosure) {
+                        disclosure.open = true;
+                        disclosure = disclosure.parentElement ? disclosure.parentElement.closest("details") : null;
+                    }
+                };
+                openHashTarget();
+                window.addEventListener("hashchange", openHashTarget);
+            }
+
             if (table) {
                 table.querySelectorAll("th.sortable").forEach((th) => {
                     th.addEventListener("click", () => {
@@ -6956,6 +7005,7 @@
             initTabs();
             initGridSorters();
             initDetailsToggles();
+            initHeadingAnchors();
         })();
     </script>
 </body>

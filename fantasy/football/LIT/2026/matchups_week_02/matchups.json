@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly_collection",
     "year": 2026,
     "week": 2,
-    "generated_at": "2026-09-23T18:46:08.909792",
+    "generated_at": "2026-09-24T06:41:31.372237",
     "total_matchups": 5,
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
   },
@@ -107,7 +107,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 2,
-        "generated_at": "2026-09-23T18:46:08.873986",
+        "generated_at": "2026-09-24T06:41:31.333244",
         "page_title": "Millan\u2019s Last Supper vs Sigma Chi Whiteout matchup report",
         "matchup_id": "week-02-millan-s-last-supper-vs-sigma-chi-whiteout",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -1075,7 +1075,8 @@
             "beat_league_median": true,
             "all_play_record": "8-1",
             "projected_score": 119.32,
-            "points_over_projected": 37.18000000000001
+            "points_over_projected": 37.18000000000001,
+            "yahoo_matchup_grade": "A+"
           },
           "lineup_decisions": {
             "actual_lineup_points": 156.4999999999999,
@@ -2181,7 +2182,8 @@
             "beat_league_median": false,
             "all_play_record": "4-5",
             "projected_score": 124.39,
-            "points_over_projected": -15.159999999999997
+            "points_over_projected": -15.159999999999997,
+            "yahoo_matchup_grade": "D"
           },
           "lineup_decisions": {
             "actual_lineup_points": 109.23333333333326,
@@ -3199,6 +3201,11 @@
         "record_for_team_a": "5-6",
         "games": 11,
         "playoff_games": 1,
+        "seasons_met": 6,
+        "series_balance": 0.9090909090909091,
+        "is_rivalry": false,
+        "rivalry_label": null,
+        "rivalry_summary": null,
         "average_margin_for_team_a": -7.538484848484848,
         "series_summary": "Millan\u2019s Last Supper is 5-6 against Sigma Chi Whiteout across 11 meetings between these managers.",
         "average_margin_text": "Average margin from Millan\u2019s Last Supper's perspective: -7.5.",
@@ -3254,6 +3261,107 @@
             "historical_team_a_name": "Reverse Ted Lasso",
             "historical_team_b_name": "Big Whiteout Energy"
           }
+        ],
+        "all_meetings": [
+          {
+            "season_label": "2026 W2",
+            "context": "regular season",
+            "winner": "Millan\u2019s Last Supper",
+            "margin": 47.269999999999996,
+            "combined_score": 265.73,
+            "historical_team_a_name": "Millan\u2019s Last Supper",
+            "historical_team_b_name": "Sigma Chi Whiteout"
+          },
+          {
+            "season_label": "2025 W12",
+            "context": "regular season",
+            "winner": "Sigma Chi Whiteout",
+            "margin": 81.73333333333335,
+            "combined_score": 247.53333333333313,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Big Fire Knowles Energy"
+          },
+          {
+            "season_label": "2025 W3",
+            "context": "regular season",
+            "winner": "Millan\u2019s Last Supper",
+            "margin": 1.799999999999983,
+            "combined_score": 232.2666666666665,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Big Fire Knowles Energy"
+          },
+          {
+            "season_label": "2024 W15",
+            "context": "regular season",
+            "winner": "Millan\u2019s Last Supper",
+            "margin": 14.460000000000008,
+            "combined_score": 257.4,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Big Whiteout Energy"
+          },
+          {
+            "season_label": "2024 W6",
+            "context": "regular season",
+            "winner": "Sigma Chi Whiteout",
+            "margin": 20.310000000000002,
+            "combined_score": 323.77,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Big Whiteout Energy"
+          },
+          {
+            "season_label": "2023 W9",
+            "context": "regular season",
+            "winner": "Sigma Chi Whiteout",
+            "margin": 11.199999999999989,
+            "combined_score": 181.06,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "6'-3'' 215 lb"
+          },
+          {
+            "season_label": "2022 W12",
+            "context": "regular season",
+            "winner": "Millan\u2019s Last Supper",
+            "margin": 13.069999999999993,
+            "combined_score": 206.87,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Pickett and Flick It"
+          },
+          {
+            "season_label": "2022 W3",
+            "context": "regular season",
+            "winner": "Sigma Chi Whiteout",
+            "margin": 2.3999999999999915,
+            "combined_score": 160.2,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Pickett and Flick It"
+          },
+          {
+            "season_label": "2021 W17",
+            "context": "playoffs",
+            "winner": "Sigma Chi Whiteout",
+            "margin": 22.47,
+            "combined_score": 190.33,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Super Reliable Inside of 40"
+          },
+          {
+            "season_label": "2021 W12",
+            "context": "regular season",
+            "winner": "Millan\u2019s Last Supper",
+            "margin": 14.430000000000007,
+            "combined_score": 174.03,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Super Reliable Inside of 40"
+          },
+          {
+            "season_label": "2021 W3",
+            "context": "regular season",
+            "winner": "Sigma Chi Whiteout",
+            "margin": 35.83999999999999,
+            "combined_score": 231.3,
+            "historical_team_a_name": "Reverse Ted Lasso",
+            "historical_team_b_name": "Super Reliable Inside of 40"
+          }
         ]
       },
       "yahoo_context": {
@@ -3268,7 +3376,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 2,
-        "generated_at": "2026-09-23T18:46:08.879712",
+        "generated_at": "2026-09-24T06:41:31.338670",
         "page_title": "Squat vs ZSzizzle matchup report",
         "matchup_id": "week-02-squat-vs-zszizzle",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -4363,7 +4471,8 @@
             "beat_league_median": false,
             "all_play_record": "3-6",
             "projected_score": 118.11,
-            "points_over_projected": -17.810000000000002
+            "points_over_projected": -17.810000000000002,
+            "yahoo_matchup_grade": "B+"
           },
           "lineup_decisions": {
             "actual_lineup_points": 100.29999999999988,
@@ -5421,7 +5530,8 @@
             "beat_league_median": false,
             "all_play_record": "1-8",
             "projected_score": 126.05,
-            "points_over_projected": -48.72
+            "points_over_projected": -48.72,
+            "yahoo_matchup_grade": "D"
           },
           "lineup_decisions": {
             "actual_lineup_points": 77.33333333333326,
@@ -6515,6 +6625,11 @@
         "record_for_team_a": "1-0",
         "games": 1,
         "playoff_games": 0,
+        "seasons_met": 1,
+        "series_balance": 0.0,
+        "is_rivalry": false,
+        "rivalry_label": null,
+        "rivalry_summary": null,
         "average_margin_for_team_a": 22.97,
         "series_summary": "This is the first recorded meeting between these managers. Squat leads the manager series 1-0.",
         "average_margin_text": "Average margin from Squat's perspective: +23.0.",
@@ -6532,6 +6647,17 @@
             "historical_team_b_name": "ZSzizzle",
             "report_href": "matchup_02_squat_vs_zszizzle.html"
           }
+        ],
+        "all_meetings": [
+          {
+            "season_label": "2026 W2",
+            "context": "regular season",
+            "winner": "Squat",
+            "margin": 22.97,
+            "combined_score": 177.63,
+            "historical_team_a_name": "Squat",
+            "historical_team_b_name": "ZSzizzle"
+          }
         ]
       },
       "yahoo_context": {
@@ -6546,7 +6672,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 2,
-        "generated_at": "2026-09-23T18:46:08.889298",
+        "generated_at": "2026-09-24T06:41:31.349301",
         "page_title": "Two Buck Luck vs Love(land) Hurts matchup report",
         "matchup_id": "week-02-two-buck-luck-vs-love-land-hurts",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -7529,7 +7655,8 @@
             "beat_league_median": true,
             "all_play_record": "7-2",
             "projected_score": 122.58,
-            "points_over_projected": 9.290000000000006
+            "points_over_projected": 9.290000000000006,
+            "yahoo_matchup_grade": "B+"
           },
           "lineup_decisions": {
             "actual_lineup_points": 131.86666666666656,
@@ -8538,7 +8665,8 @@
             "beat_league_median": true,
             "all_play_record": "6-3",
             "projected_score": 119.22,
-            "points_over_projected": 11.849999999999994
+            "points_over_projected": 11.849999999999994,
+            "yahoo_matchup_grade": "C"
           },
           "lineup_decisions": {
             "actual_lineup_points": 131.06666666666658,
@@ -9551,6 +9679,11 @@
         "record_for_team_a": "18-14",
         "games": 32,
         "playoff_games": 4,
+        "seasons_met": 20,
+        "series_balance": 0.875,
+        "is_rivalry": true,
+        "rivalry_label": "Historic Rivalry",
+        "rivalry_summary": "32 meetings across 20 seasons, including 4 in the playoffs.",
         "average_margin_for_team_a": 5.309895833333329,
         "series_summary": "Two Buck Luck is 18-14 against Love(land) Hurts across 32 meetings between these managers.",
         "average_margin_text": "Average margin from Two Buck Luck's perspective: +5.3.",
@@ -9606,6 +9739,296 @@
             "historical_team_a_name": "Two Buck Luck",
             "historical_team_b_name": "Tucker til it Hurts"
           }
+        ],
+        "all_meetings": [
+          {
+            "season_label": "2026 W2",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 0.8000000000000114,
+            "combined_score": 262.94,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "Love(land) Hurts"
+          },
+          {
+            "season_label": "2025 W15",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 17.39999999999995,
+            "combined_score": 273.46666666666647,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "You aren\u2019t Worthy of Coleman"
+          },
+          {
+            "season_label": "2025 W6",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 8.96666666666664,
+            "combined_score": 215.36666666666656,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "You aren\u2019t Worthy of Coleman"
+          },
+          {
+            "season_label": "2024 W8",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 14.83999999999999,
+            "combined_score": 258.5,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "This Butker goes number Tua"
+          },
+          {
+            "season_label": "2023 W8",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 14.0,
+            "combined_score": 235.46,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "Tucker til it Hurts"
+          },
+          {
+            "season_label": "2022 W11",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 23.66000000000001,
+            "combined_score": 202.8,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "Get your hands off my C Kupp"
+          },
+          {
+            "season_label": "2022 W2",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 1.5999999999999943,
+            "combined_score": 280.79999999999995,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "Get your hands off my C Kupp"
+          },
+          {
+            "season_label": "2021 W9",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 21.930000000000007,
+            "combined_score": 165.47,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "Get your hands off my C Kupp"
+          },
+          {
+            "season_label": "2020 W9",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 1.4000000000000057,
+            "combined_score": 214.06,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "I\u2019ve got A Thielen"
+          },
+          {
+            "season_label": "2019 W11",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 14.960000000000008,
+            "combined_score": 229.5,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "2 KUHL 4 MILLAN"
+          },
+          {
+            "season_label": "2019 W2",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 68.56,
+            "combined_score": 266.7,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "2 KUHL 4 MILLAN"
+          },
+          {
+            "season_label": "2018 W11",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 71.16,
+            "combined_score": 279.29999999999995,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "2 KUHL 4 MILLAN"
+          },
+          {
+            "season_label": "2018 W2",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 7.070000000000007,
+            "combined_score": 222.67000000000002,
+            "historical_team_a_name": "Two Buck Luck",
+            "historical_team_b_name": "2 KUHL 4 MILLAN"
+          },
+          {
+            "season_label": "2017 W15",
+            "context": "playoffs",
+            "winner": "Two Buck Luck",
+            "margin": 79.3,
+            "combined_score": 183.64,
+            "historical_team_a_name": "Almost Jameis",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2017 W11",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 17.53,
+            "combined_score": 296.33000000000004,
+            "historical_team_a_name": "Almost Jameis",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2017 W2",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 0.3299999999999983,
+            "combined_score": 211.07,
+            "historical_team_a_name": "Almost Jameis",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2016 W11",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 0.75,
+            "combined_score": 161.89,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2016 W2",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 46.51,
+            "combined_score": 165.15,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2015 W8",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 15.939999999999998,
+            "combined_score": 229.3,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2014 W9",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 6.889999999999986,
+            "combined_score": 155.25,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 4 SKOOL"
+          },
+          {
+            "season_label": "2013 W12",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 18.14,
+            "combined_score": 225.77999999999997,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 2 MOLEST"
+          },
+          {
+            "season_label": "2013 W3",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 30.38000000000001,
+            "combined_score": 185.3,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 2 MOLEST"
+          },
+          {
+            "season_label": "2012 W15",
+            "context": "playoffs",
+            "winner": "Love(land) Hurts",
+            "margin": 34.85000000000001,
+            "combined_score": 169.82999999999998,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 2 MOLEST"
+          },
+          {
+            "season_label": "2012 W9",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 46.14,
+            "combined_score": 154.54000000000002,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL 2 MOLEST"
+          },
+          {
+            "season_label": "2011 W16",
+            "context": "playoffs",
+            "winner": "Love(land) Hurts",
+            "margin": 6.180000000000007,
+            "combined_score": 213.62,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL"
+          },
+          {
+            "season_label": "2011 W11",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 40.86999999999999,
+            "combined_score": 200.82999999999998,
+            "historical_team_a_name": "Thugs of Pittsburgh",
+            "historical_team_b_name": "2 KUHL"
+          },
+          {
+            "season_label": "2010 W15",
+            "context": "playoffs",
+            "winner": "Love(land) Hurts",
+            "margin": 12.019999999999996,
+            "combined_score": 169.10000000000002,
+            "historical_team_a_name": "Owls of Ga'Hoole",
+            "historical_team_b_name": "2 KUHL"
+          },
+          {
+            "season_label": "2010 W12",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 32.86,
+            "combined_score": 183.56,
+            "historical_team_a_name": "Owls of Ga'Hoole",
+            "historical_team_b_name": "2 KUHL"
+          },
+          {
+            "season_label": "2010 W3",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 4.360000000000014,
+            "combined_score": 260.64,
+            "historical_team_a_name": "Owls of Ga'Hoole",
+            "historical_team_b_name": "2 KUHL"
+          },
+          {
+            "season_label": "2008 W8",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 19.02000000000001,
+            "combined_score": 177.0,
+            "historical_team_a_name": "steelcurt",
+            "historical_team_b_name": "2KUHL2LOSE"
+          },
+          {
+            "season_label": "2007 W6",
+            "context": "regular season",
+            "winner": "Two Buck Luck",
+            "margin": 39.040000000000006,
+            "combined_score": 172.32,
+            "historical_team_a_name": "'Poz'itively Awesome",
+            "historical_team_b_name": "2 KUHL 4 DOGFIGHTS"
+          },
+          {
+            "season_label": "2005 W6",
+            "context": "regular season",
+            "winner": "Love(land) Hurts",
+            "margin": 5.799999999999997,
+            "combined_score": 244.18,
+            "historical_team_a_name": "Thunder Hunter",
+            "historical_team_b_name": "2 KUHL"
+          }
         ]
       },
       "yahoo_context": {
@@ -9620,7 +10043,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 2,
-        "generated_at": "2026-09-23T18:46:08.897987",
+        "generated_at": "2026-09-24T06:41:31.358783",
         "page_title": "Pat Pidgeon vs Bend & Snap Count matchup report",
         "matchup_id": "week-02-pat-pidgeon-vs-bend-snap-count",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -10645,7 +11068,8 @@
             "beat_league_median": true,
             "all_play_record": "9-0",
             "projected_score": 129.32,
-            "points_over_projected": 54.68000000000001
+            "points_over_projected": 54.68000000000001,
+            "yahoo_matchup_grade": "A+"
           },
           "lineup_decisions": {
             "actual_lineup_points": 183.9999999999999,
@@ -11707,7 +12131,8 @@
             "beat_league_median": true,
             "all_play_record": "5-4",
             "projected_score": 118.66,
-            "points_over_projected": 8.240000000000009
+            "points_over_projected": 8.240000000000009,
+            "yahoo_matchup_grade": "D"
           },
           "lineup_decisions": {
             "actual_lineup_points": 126.89999999999992,
@@ -12731,6 +13156,11 @@
         "record_for_team_a": "19-19",
         "games": 38,
         "playoff_games": 0,
+        "seasons_met": 22,
+        "series_balance": 1.0,
+        "is_rivalry": true,
+        "rivalry_label": "Historic Rivalry",
+        "rivalry_summary": "38 meetings across 22 seasons, including 0 in the playoffs.",
         "average_margin_for_team_a": 2.144473684210526,
         "series_summary": "Pat Pidgeon is 19-19 against Bend & Snap Count across 38 meetings between these managers.",
         "average_margin_text": "Average margin from Pat Pidgeon's perspective: +2.1.",
@@ -12786,6 +13216,350 @@
             "historical_team_a_name": "Pat Pidgeon",
             "historical_team_b_name": "You Had Me At Coach"
           }
+        ],
+        "all_meetings": [
+          {
+            "season_label": "2026 W2",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 57.099999999999994,
+            "combined_score": 310.9,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "Bend & Snap Count"
+          },
+          {
+            "season_label": "2025 W13",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 49.900000000000006,
+            "combined_score": 207.09999999999982,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "Moonbeam Ice Cream"
+          },
+          {
+            "season_label": "2025 W4",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 22.19999999999996,
+            "combined_score": 226.9999999999999,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "Moonbeam Ice Cream"
+          },
+          {
+            "season_label": "2024 W8",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 50.33,
+            "combined_score": 218.99,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "Pommel Horse Guy"
+          },
+          {
+            "season_label": "2023 W7",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 13.72999999999999,
+            "combined_score": 171.53,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "You Had Me At Coach"
+          },
+          {
+            "season_label": "2022 W13",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 29.5,
+            "combined_score": 216.76,
+            "historical_team_a_name": "From Millan to Minsk",
+            "historical_team_b_name": "You Had Me At Coach"
+          },
+          {
+            "season_label": "2022 W4",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 14.63000000000001,
+            "combined_score": 196.76999999999998,
+            "historical_team_a_name": "From Millan to Minsk",
+            "historical_team_b_name": "You Had Me At Coach"
+          },
+          {
+            "season_label": "2021 W8",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 1.9699999999999989,
+            "combined_score": 180.43,
+            "historical_team_a_name": "From Millan to Minsk",
+            "historical_team_b_name": "You Had Me At Coach"
+          },
+          {
+            "season_label": "2020 W8",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 11.900000000000006,
+            "combined_score": 203.9,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "FinestMuffins&Bagels"
+          },
+          {
+            "season_label": "2019 W10",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 21.17,
+            "combined_score": 180.76999999999998,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "Lentil's Party Posse"
+          },
+          {
+            "season_label": "2019 W1",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 76.89999999999999,
+            "combined_score": 283.44,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "Lentil's Party Posse"
+          },
+          {
+            "season_label": "2018 W10",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 61.599999999999994,
+            "combined_score": 253.46,
+            "historical_team_a_name": "AntiMillaniteBastard",
+            "historical_team_b_name": "Lentil's Party Posse"
+          },
+          {
+            "season_label": "2018 W1",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 18.16000000000001,
+            "combined_score": 254.5,
+            "historical_team_a_name": "AntiMillaniteBastard",
+            "historical_team_b_name": "Lentil's Party Posse"
+          },
+          {
+            "season_label": "2017 W10",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 8.929999999999993,
+            "combined_score": 191.73000000000002,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "LilSilohuetoOfMillan"
+          },
+          {
+            "season_label": "2017 W1",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 6.900000000000006,
+            "combined_score": 141.44,
+            "historical_team_a_name": "Pat Pidgeon",
+            "historical_team_b_name": "LilSilohuetoOfMillan"
+          },
+          {
+            "season_label": "2016 W10",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 4.1000000000000085,
+            "combined_score": 189.7,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "ShutUpAndFantasy"
+          },
+          {
+            "season_label": "2016 W1",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 0.37999999999999545,
+            "combined_score": 217.78,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "ShutUpAndFantasy"
+          },
+          {
+            "season_label": "2015 W8",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 42.80000000000001,
+            "combined_score": 249.06,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "ShutUpAndFantasy"
+          },
+          {
+            "season_label": "2014 W16",
+            "context": "consolation",
+            "winner": "Pat Pidgeon",
+            "margin": 24.02000000000001,
+            "combined_score": 159.78,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "We Are...Alex Millan"
+          },
+          {
+            "season_label": "2014 W13",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 17.0,
+            "combined_score": 174.14,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "We Are...Alex Millan"
+          },
+          {
+            "season_label": "2014 W4",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 16.239999999999995,
+            "combined_score": 165.10000000000002,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "We Are...Alex Millan"
+          },
+          {
+            "season_label": "2013 W11",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 42.33,
+            "combined_score": 155.43,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "X-Wing @Aliciousness"
+          },
+          {
+            "season_label": "2013 W2",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 10.079999999999998,
+            "combined_score": 235.54000000000002,
+            "historical_team_a_name": "Big Maple",
+            "historical_team_b_name": "X-Wing @Aliciousness"
+          },
+          {
+            "season_label": "2012 W10",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 22.790000000000006,
+            "combined_score": 215.23000000000002,
+            "historical_team_a_name": "JoePa's Last Stand",
+            "historical_team_b_name": "The Fighting Maxys"
+          },
+          {
+            "season_label": "2012 W1",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 53.31000000000002,
+            "combined_score": 214.41000000000003,
+            "historical_team_a_name": "JoePa's Last Stand",
+            "historical_team_b_name": "The Fighting Maxys"
+          },
+          {
+            "season_label": "2011 W16",
+            "context": "consolation",
+            "winner": "Pat Pidgeon",
+            "margin": 34.53999999999999,
+            "combined_score": 237.6,
+            "historical_team_a_name": "JoePa's Last Stand",
+            "historical_team_b_name": "The Fighting Maxys"
+          },
+          {
+            "season_label": "2011 W7",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 22.28,
+            "combined_score": 170.42,
+            "historical_team_a_name": "JoePa's Last Stand",
+            "historical_team_b_name": "The Fighting Maxys"
+          },
+          {
+            "season_label": "2011 W6",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 24.78,
+            "combined_score": 168.82,
+            "historical_team_a_name": "JoePa's Last Stand",
+            "historical_team_b_name": "The Fighting Maxys"
+          },
+          {
+            "season_label": "2010 W13",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 46.120000000000005,
+            "combined_score": 215.86,
+            "historical_team_a_name": "Joe Pa's Last Stand",
+            "historical_team_b_name": "GoStateBeatBama"
+          },
+          {
+            "season_label": "2010 W4",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 13.689999999999998,
+            "combined_score": 161.05,
+            "historical_team_a_name": "Joe Pa's Last Stand",
+            "historical_team_b_name": "GoStateBeatBama"
+          },
+          {
+            "season_label": "2009 W10",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 53.480000000000004,
+            "combined_score": 210.89999999999998,
+            "historical_team_a_name": "Come to Penn Staaate",
+            "historical_team_b_name": "Go Away Brett Favre"
+          },
+          {
+            "season_label": "2009 W1",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 69.11000000000001,
+            "combined_score": 228.93,
+            "historical_team_a_name": "Come to Penn Staaate",
+            "historical_team_b_name": "Go Away Brett Favre"
+          },
+          {
+            "season_label": "2008 W7",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 23.63000000000001,
+            "combined_score": 170.95,
+            "historical_team_a_name": "Joe Pa's Last Stand",
+            "historical_team_b_name": "NotMyGumdropButtons"
+          },
+          {
+            "season_label": "2007 W13",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 21.229999999999997,
+            "combined_score": 136.59,
+            "historical_team_a_name": "JTD's Carbuncle",
+            "historical_team_b_name": "Two TDs to Paradise"
+          },
+          {
+            "season_label": "2007 W4",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 30.800000000000004,
+            "combined_score": 134.0,
+            "historical_team_a_name": "JTD's Carbuncle",
+            "historical_team_b_name": "Two TDs to Paradise"
+          },
+          {
+            "season_label": "2006 W11",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 33.98999999999998,
+            "combined_score": 256.28999999999996,
+            "historical_team_a_name": "X Nady Pirate Savior",
+            "historical_team_b_name": "Fight For Her Honor"
+          },
+          {
+            "season_label": "2006 W2",
+            "context": "regular season",
+            "winner": "Bend & Snap Count",
+            "margin": 40.110000000000014,
+            "combined_score": 245.99,
+            "historical_team_a_name": "X Nady Pirate Savior",
+            "historical_team_b_name": "Fight For Her Honor"
+          },
+          {
+            "season_label": "2005 W8",
+            "context": "regular season",
+            "winner": "Pat Pidgeon",
+            "margin": 56.18,
+            "combined_score": 171.38,
+            "historical_team_a_name": "Vaginal Discharge Me",
+            "historical_team_b_name": "First Pick Bitch"
+          }
         ]
       },
       "yahoo_context": {
@@ -12800,7 +13574,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 2,
-        "generated_at": "2026-09-23T18:46:08.908075",
+        "generated_at": "2026-09-24T06:41:31.369875",
         "page_title": "Nacua-Cola vs In Purdytory matchup report",
         "matchup_id": "week-02-nacua-cola-vs-in-purdytory",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -13875,7 +14649,8 @@
             "beat_league_median": false,
             "all_play_record": "2-7",
             "projected_score": 108.82,
-            "points_over_projected": -21.419999999999987
+            "points_over_projected": -21.419999999999987,
+            "yahoo_matchup_grade": "B-"
           },
           "lineup_decisions": {
             "actual_lineup_points": 87.39999999999993,
@@ -14909,7 +15684,8 @@
             "beat_league_median": false,
             "all_play_record": "0-9",
             "projected_score": 112.33,
-            "points_over_projected": -37.16
+            "points_over_projected": -37.16,
+            "yahoo_matchup_grade": "D"
           },
           "lineup_decisions": {
             "actual_lineup_points": 75.16666666666666,
@@ -15981,6 +16757,11 @@
         "record_for_team_a": "22-25",
         "games": 47,
         "playoff_games": 5,
+        "seasons_met": 24,
+        "series_balance": 0.9361702127659575,
+        "is_rivalry": true,
+        "rivalry_label": "Historic Rivalry",
+        "rivalry_summary": "47 meetings across 24 seasons, including 5 in the playoffs.",
         "average_margin_for_team_a": -1.1592198581560293,
         "series_summary": "Nacua-Cola is 22-25 against In Purdytory across 47 meetings between these managers.",
         "average_margin_text": "Average margin from Nacua-Cola's perspective: -1.2.",
@@ -16036,6 +16817,431 @@
             "combined_score": 232.26999999999998,
             "historical_team_a_name": "Nacua-Cola",
             "historical_team_b_name": "Kamillana"
+          }
+        ],
+        "all_meetings": [
+          {
+            "season_label": "2026 W2",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 12.230000000000004,
+            "combined_score": 162.57,
+            "historical_team_a_name": "Nacua-Cola",
+            "historical_team_b_name": "In Purdytory"
+          },
+          {
+            "season_label": "2025 W16",
+            "context": "playoffs",
+            "winner": "Nacua-Cola",
+            "margin": 72.69999999999992,
+            "combined_score": 236.4999999999999,
+            "historical_team_a_name": "Nacua-Cola",
+            "historical_team_b_name": "In Purdytory"
+          },
+          {
+            "season_label": "2025 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 12.23333333333332,
+            "combined_score": 166.43333333333325,
+            "historical_team_a_name": "Nacua-Cola",
+            "historical_team_b_name": "In Purdytory"
+          },
+          {
+            "season_label": "2025 W2",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 22.09999999999998,
+            "combined_score": 227.6333333333332,
+            "historical_team_a_name": "Nacua-Cola",
+            "historical_team_b_name": "In Purdytory"
+          },
+          {
+            "season_label": "2024 W12",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 26.730000000000004,
+            "combined_score": 232.26999999999998,
+            "historical_team_a_name": "Nacua-Cola",
+            "historical_team_b_name": "Kamillana"
+          },
+          {
+            "season_label": "2024 W3",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 55.989999999999995,
+            "combined_score": 207.46999999999997,
+            "historical_team_a_name": "Nacua-Cola",
+            "historical_team_b_name": "Kamillana"
+          },
+          {
+            "season_label": "2023 W10",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 26.200000000000003,
+            "combined_score": 186.54000000000002,
+            "historical_team_a_name": "Mark Murray Down For Moore",
+            "historical_team_b_name": "Gritty NickSingletonBerry"
+          },
+          {
+            "season_label": "2023 W1",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 11.27000000000001,
+            "combined_score": 197.53,
+            "historical_team_a_name": "Mark Murray Down For Moore",
+            "historical_team_b_name": "Gritty NickSingletonBerry"
+          },
+          {
+            "season_label": "2022 W16",
+            "context": "consolation",
+            "winner": "In Purdytory",
+            "margin": 59.7,
+            "combined_score": 231.04000000000002,
+            "historical_team_a_name": "Mark Murray Down For Moore",
+            "historical_team_b_name": "Gritty McCringleberry"
+          },
+          {
+            "season_label": "2022 W12",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 10.16000000000001,
+            "combined_score": 170.3,
+            "historical_team_a_name": "Mark Murray Down For Moore",
+            "historical_team_b_name": "Gritty McCringleberry"
+          },
+          {
+            "season_label": "2022 W3",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 24.5,
+            "combined_score": 197.44,
+            "historical_team_a_name": "Mark Murray Down For Moore",
+            "historical_team_b_name": "Gritty McCringleberry"
+          },
+          {
+            "season_label": "2021 W9",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 60.74,
+            "combined_score": 182.0,
+            "historical_team_a_name": "r/WallerStreetBets",
+            "historical_team_b_name": "Millanaire Matchmaker"
+          },
+          {
+            "season_label": "2020 W9",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 52.36999999999999,
+            "combined_score": 219.76999999999998,
+            "historical_team_a_name": "The Fantasy Team",
+            "historical_team_b_name": "GrittyMcCringleberry"
+          },
+          {
+            "season_label": "2019 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 41.730000000000004,
+            "combined_score": 190.67000000000002,
+            "historical_team_a_name": "Connerintuitive",
+            "historical_team_b_name": "GrittyMcCringleberry"
+          },
+          {
+            "season_label": "2019 W2",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 12.400000000000006,
+            "combined_score": 249.34,
+            "historical_team_a_name": "Connerintuitive",
+            "historical_team_b_name": "GrittyMcCringleberry"
+          },
+          {
+            "season_label": "2018 W15",
+            "context": "consolation",
+            "winner": "Nacua-Cola",
+            "margin": 4.700000000000003,
+            "combined_score": 252.10000000000002,
+            "historical_team_a_name": "Truth Isn't Truth",
+            "historical_team_b_name": "GrittyMcCringleberry"
+          },
+          {
+            "season_label": "2018 W11",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 36.0,
+            "combined_score": 202.2,
+            "historical_team_a_name": "Truth Isn't Truth",
+            "historical_team_b_name": "GrittyMcCringleberry"
+          },
+          {
+            "season_label": "2018 W2",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 1.9899999999999949,
+            "combined_score": 220.26999999999998,
+            "historical_team_a_name": "Truth Isn't Truth",
+            "historical_team_b_name": "GrittyMcCringleberry"
+          },
+          {
+            "season_label": "2017 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 12.959999999999994,
+            "combined_score": 224.7,
+            "historical_team_a_name": "Blackballed Squad",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2017 W2",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 24.269999999999996,
+            "combined_score": 183.13,
+            "historical_team_a_name": "Blackballed Squad",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2016 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 0.3500000000000085,
+            "combined_score": 231.61,
+            "historical_team_a_name": "Bosa's Pay Day",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2016 W2",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 31.760000000000005,
+            "combined_score": 190.3,
+            "historical_team_a_name": "Bosa's Pay Day",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2015 W15",
+            "context": "playoffs",
+            "winner": "In Purdytory",
+            "margin": 12.819999999999993,
+            "combined_score": 209.68,
+            "historical_team_a_name": "Kelly's Master Plan",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2015 W11",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 20.430000000000007,
+            "combined_score": 152.47,
+            "historical_team_a_name": "Kelly's Master Plan",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2015 W2",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 15.280000000000001,
+            "combined_score": 181.98,
+            "historical_team_a_name": "Kelly's Master Plan",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2014 W6",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 9.900000000000006,
+            "combined_score": 180.46,
+            "historical_team_a_name": "Gordon's Dealers",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2013 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 16.92,
+            "combined_score": 237.12,
+            "historical_team_a_name": "UF Arrest Record",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2013 W2",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 23.330000000000013,
+            "combined_score": 239.47,
+            "historical_team_a_name": "UF Arrest Record",
+            "historical_team_b_name": "HingleMcCringleberry"
+          },
+          {
+            "season_label": "2012 W14",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 4.02000000000001,
+            "combined_score": 213.06,
+            "historical_team_a_name": "Ochocinco Headbutts",
+            "historical_team_b_name": "ScarletKnittanyLions"
+          },
+          {
+            "season_label": "2012 W5",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 27.38000000000001,
+            "combined_score": 179.51999999999998,
+            "historical_team_a_name": "Ochocinco Headbutts",
+            "historical_team_b_name": "ScarletKnittanyLions"
+          },
+          {
+            "season_label": "2011 W7",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 14.780000000000001,
+            "combined_score": 178.92,
+            "historical_team_a_name": "Flabbergasted RBs",
+            "historical_team_b_name": "TalentsToSouthPhilly"
+          },
+          {
+            "season_label": "2010 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 6.6299999999999955,
+            "combined_score": 215.91,
+            "historical_team_a_name": "Eating Dinosaurs",
+            "historical_team_b_name": "Corn on the Kolb"
+          },
+          {
+            "season_label": "2010 W2",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 17.35000000000001,
+            "combined_score": 226.67000000000002,
+            "historical_team_a_name": "Eating Dinosaurs",
+            "historical_team_b_name": "Corn on the Kolb"
+          },
+          {
+            "season_label": "2009 W12",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 43.75999999999999,
+            "combined_score": 232.62,
+            "historical_team_a_name": "Vicks New Dog Pen",
+            "historical_team_b_name": "Vick?!? Seriously?!?"
+          },
+          {
+            "season_label": "2009 W3",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 28.25,
+            "combined_score": 213.41,
+            "historical_team_a_name": "Vicks New Dog Pen",
+            "historical_team_b_name": "Vick?!? Seriously?!?"
+          },
+          {
+            "season_label": "2008 W14",
+            "context": "playoffs",
+            "winner": "In Purdytory",
+            "margin": 51.010000000000005,
+            "combined_score": 190.29000000000002,
+            "historical_team_a_name": "Favre's 401K",
+            "historical_team_b_name": "Golf Carts Hate Me"
+          },
+          {
+            "season_label": "2008 W10",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 61.98000000000002,
+            "combined_score": 197.24,
+            "historical_team_a_name": "Favre's 401K",
+            "historical_team_b_name": "Golf Carts Hate Me"
+          },
+          {
+            "season_label": "2008 W1",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 14.530000000000001,
+            "combined_score": 181.17,
+            "historical_team_a_name": "Favre's 401K",
+            "historical_team_b_name": "Golf Carts Hate Me"
+          },
+          {
+            "season_label": "2007 W16",
+            "context": "playoffs",
+            "winner": "In Purdytory",
+            "margin": 16.08,
+            "combined_score": 187.12,
+            "historical_team_a_name": "Mexico's Dog Pound",
+            "historical_team_b_name": "Deeeaaad Pocket"
+          },
+          {
+            "season_label": "2007 W11",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 34.95,
+            "combined_score": 188.17000000000002,
+            "historical_team_a_name": "Mexico's Dog Pound",
+            "historical_team_b_name": "Deeeaaad Pocket"
+          },
+          {
+            "season_label": "2007 W2",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 20.980000000000004,
+            "combined_score": 223.51999999999998,
+            "historical_team_a_name": "Mexico's Dog Pound",
+            "historical_team_b_name": "Deeeaaad Pocket"
+          },
+          {
+            "season_label": "2006 W13",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 30.30000000000001,
+            "combined_score": 242.12,
+            "historical_team_a_name": "Diis aliter visum",
+            "historical_team_b_name": "Drexel Liar School"
+          },
+          {
+            "season_label": "2006 W4",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 42.109999999999985,
+            "combined_score": 268.35,
+            "historical_team_a_name": "Diis aliter visum",
+            "historical_team_b_name": "Drexel Liar School"
+          },
+          {
+            "season_label": "2005 W6",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 8.680000000000007,
+            "combined_score": 173.56,
+            "historical_team_a_name": "The Wang Hangers",
+            "historical_team_b_name": "Pretzels and Boobies"
+          },
+          {
+            "season_label": "2004 W15",
+            "context": "playoffs",
+            "winner": "Nacua-Cola",
+            "margin": 23.829999999999984,
+            "combined_score": 320.31,
+            "historical_team_a_name": "Fubar",
+            "historical_team_b_name": "Foosball's the Devil"
+          },
+          {
+            "season_label": "2004 W11",
+            "context": "regular season",
+            "winner": "Nacua-Cola",
+            "margin": 11.640000000000015,
+            "combined_score": 320.15999999999997,
+            "historical_team_a_name": "Fubar",
+            "historical_team_b_name": "Foosball's the Devil"
+          },
+          {
+            "season_label": "2003 W5",
+            "context": "regular season",
+            "winner": "In Purdytory",
+            "margin": 53.27999999999999,
+            "combined_score": 268.12,
+            "historical_team_a_name": "Fubar",
+            "historical_team_b_name": "Superbowl Shuffle"
           }
         ]
       },

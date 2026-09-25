@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-23T18:46:03.847549",
+    "generated_at": "2026-09-24T06:41:26.281404",
     "page_title": "ZSzizzle vs Nacua-Cola matchup report",
     "matchup_id": "week-01-zszizzle-vs-nacua-cola",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -1073,7 +1073,8 @@
         "beat_league_median": true,
         "all_play_record": "6-3",
         "projected_score": 116.83,
-        "points_over_projected": 19.470000000000013
+        "points_over_projected": 19.470000000000013,
+        "yahoo_matchup_grade": "A+"
       },
       "lineup_decisions": {
         "actual_lineup_points": 136.2999999999999,
@@ -2152,7 +2153,8 @@
         "beat_league_median": false,
         "all_play_record": "1-8",
         "projected_score": 107.07,
-        "points_over_projected": -29.39999999999999
+        "points_over_projected": -29.39999999999999,
+        "yahoo_matchup_grade": "D-"
       },
       "lineup_decisions": {
         "actual_lineup_points": 77.6666666666666,
@@ -3178,6 +3180,11 @@
     "record_for_team_a": "1-0",
     "games": 1,
     "playoff_games": 0,
+    "seasons_met": 1,
+    "series_balance": 0.0,
+    "is_rivalry": false,
+    "rivalry_label": null,
+    "rivalry_summary": null,
     "average_margin_for_team_a": 58.63000000000001,
     "series_summary": "This is the first recorded meeting between these managers. ZSzizzle leads the manager series 1-0.",
     "average_margin_text": "Average margin from ZSzizzle's perspective: +58.6.",
@@ -3194,6 +3201,17 @@
         "historical_team_a_name": "ZSzizzle",
         "historical_team_b_name": "Nacua-Cola",
         "report_href": "matchup_04_zszizzle_vs_nacua-cola.html"
+      }
+    ],
+    "all_meetings": [
+      {
+        "season_label": "2026 W1",
+        "context": "regular season",
+        "winner": "ZSzizzle",
+        "margin": 58.63000000000001,
+        "combined_score": 213.97000000000003,
+        "historical_team_a_name": "ZSzizzle",
+        "historical_team_b_name": "Nacua-Cola"
       }
     ]
   },
