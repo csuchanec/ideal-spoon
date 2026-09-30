@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-29T22:04:08.269873",
+    "generated_at": "2026-09-29T22:44:35.645432",
     "page_title": "Love(land) Hurts vs Squat matchup report",
     "matchup_id": "week-01-love-land-hurts-vs-squat",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -49,11 +49,11 @@
       "manager_display": "Matt",
       "actual_score": 96.33333333333323,
       "ideal_score": 144.93333333333322,
-      "manager_grade_pct": 59.920607175712945,
+      "manager_grade_pct": 56.28922620872942,
       "manager_grade_letter": "D-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 59.920607175712945,
+          "score_pct": 56.28922620872942,
           "letter": "D-",
           "label": "failing process"
         },
@@ -86,19 +86,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 50.641214351425894,
+                "score_pct": 66.46734130634772,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 46.111111111111114,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 47.22222222222222,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -27.550000000000026,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 65.33333333333333,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -188,7 +194,7 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.920607175712945,
+              "weekly_score_pct": 56.28922620872942,
               "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
@@ -220,11 +226,11 @@
           "previous_score_pct": null
         }
       },
-      "process_score_pct": 59.920607175712945,
+      "process_score_pct": 56.28922620872942,
       "process_score_letter": "D-",
       "process_scores": {
         "weekly": {
-          "score_pct": 59.920607175712945,
+          "score_pct": 56.28922620872942,
           "letter": "D-",
           "label": "failing process"
         },
@@ -257,19 +263,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 50.641214351425894,
+                "score_pct": 66.46734130634772,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 46.111111111111114,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 47.22222222222222,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -27.550000000000026,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 65.33333333333333,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -359,7 +371,7 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.920607175712945,
+              "weekly_score_pct": 56.28922620872942,
               "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
@@ -1168,13 +1180,13 @@
       "manager_display": "Yarp",
       "actual_score": 51.99999999999999,
       "ideal_score": 70.96666666666658,
-      "manager_grade_pct": 62.34645373414755,
-      "manager_grade_letter": "D",
+      "manager_grade_pct": 59.136918741193085,
+      "manager_grade_letter": "D-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 62.34645373414755,
-          "letter": "D",
-          "label": "bad decisions"
+          "score_pct": 59.136918741193085,
+          "letter": "D-",
+          "label": "failing process"
         },
         "season": {
           "score_pct": 55.45358149365902,
@@ -1205,19 +1217,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 62.89290746829511,
+                "score_pct": 73.27383748238617,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -71.88333333333327,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1302,13 +1320,13 @@
             }
           }
         },
-        "summary": "Squat graded D this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "summary": "Squat graded D- this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 62.34645373414755,
-              "weekly_letter": "D",
+              "weekly_score_pct": 59.136918741193085,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -1339,13 +1357,13 @@
           "previous_score_pct": null
         }
       },
-      "process_score_pct": 62.34645373414755,
-      "process_score_letter": "D",
+      "process_score_pct": 59.136918741193085,
+      "process_score_letter": "D-",
       "process_scores": {
         "weekly": {
-          "score_pct": 62.34645373414755,
-          "letter": "D",
-          "label": "bad decisions"
+          "score_pct": 59.136918741193085,
+          "letter": "D-",
+          "label": "failing process"
         },
         "season": {
           "score_pct": 55.45358149365902,
@@ -1376,19 +1394,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 62.89290746829511,
+                "score_pct": 73.27383748238617,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -71.88333333333327,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1473,13 +1497,13 @@
             }
           }
         },
-        "summary": "Squat graded D this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "summary": "Squat graded D- this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 62.34645373414755,
-              "weekly_letter": "D",
+              "weekly_score_pct": 59.136918741193085,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",

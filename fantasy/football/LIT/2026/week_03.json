@@ -3,16 +3,16 @@
     "schema_version": "1.1",
     "year": 2026,
     "week": 3,
-    "generated_at": "2026-09-29T22:05:10.361724",
+    "generated_at": "2026-09-29T22:46:27.296107",
     "total_active_players": 373,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
     "image_policy": "disabled",
-    "output_dir": "analysis/weekly_report/data/2026",
+    "output_dir": "/Users/csuchanec/dev/code/FantasyFootball/analysis/weekly_report/data/2026",
     "data_quality": {
       "boom_bust_missing_team_count": 0,
       "recommendations_generated": 47,
-      "recommendations_deduped": 30,
+      "recommendations_deduped": 39,
       "free_agent_recommendations_filtered": 18,
       "trend_week_causal": true
     }
@@ -22,8 +22,8 @@
       "actual_score": 93.03333333333326,
       "ideal_score": 102.66666666666657,
       "optimization_missed": 9.633333333333317,
-      "manager_grade_pct": 77.95519480519482,
-      "manager_grade_letter": "C+",
+      "manager_grade_pct": 67.80844155844156,
+      "manager_grade_letter": "D+",
       "lineup_grade_pct": 90.61688311688313,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -52,7 +52,7 @@
         }
       ],
       "historical_avg": 126.7666666666666,
-      "manager_effectiveness": "reasonable but costly",
+      "manager_effectiveness": "bad decisions",
       "recommendations": [
         {
           "position": "WR",
@@ -158,6 +158,41 @@
             "recommended_player_weeks": 3,
             "comparison_player_weeks": 3
           }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Woody Marks",
+          "recommended_points": 11.833333333333316,
+          "benched_player": "Jonathan Taylor",
+          "benched_points": 10.2,
+          "point_swing": 1.6333333333333169,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Woody Marks over Jonathan Taylor for an estimated +1.6 points this week.",
+          "confidence": 0.6408333333333329,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jonathan Taylor",
+            "points": 10.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.04083333333333292,
+            "capped_total": 0.6408333333333329
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
         }
       ],
       "lineup_context": {
@@ -212,14 +247,14 @@
         ]
       },
       "recommendation_summary": {
-        "total": 3,
-        "roster_swaps": 1,
+        "total": 4,
+        "roster_swaps": 2,
         "waiver_moves": 2,
-        "total_upside_points": 27.299999999999994,
+        "total_upside_points": 28.93333333333331,
         "strong_signal_count": 1,
         "high_confidence_count": 1,
-        "diagnostic_summary": "3 qualifying recommendation(s): 1 start/sit, 2 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 27.3 pts. High-impact hindsight rows: 1.",
+        "diagnostic_summary": "4 qualifying recommendation(s): 2 start/sit, 2 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 28.9 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Kalif Raymond",
           "benched_player": "Emeka Egbuka",
@@ -296,9 +331,9 @@
           "point_swing": 11.299999999999994,
           "position": "WR"
         },
-        "manager_grade_final_pct": 77.95519480519482
+        "manager_grade_final_pct": 67.80844155844156
       },
-      "team_story": "Sigma Chi Whiteout is declining with 3 actionable move(s): 1 start/sit and 2 waiver adds, worth a retrospective +27.3 points; 1 had high hindsight impact.",
+      "team_story": "Sigma Chi Whiteout is declining with 4 actionable move(s): 2 start/sit and 2 waiver adds, worth a retrospective +28.9 points; 1 had high hindsight impact.",
       "boom_bust": [
         {
           "name": "Matthew Golden",
@@ -321,8 +356,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 77.95519480519482,
-      "process_score_letter": "C+",
+      "process_score_pct": 67.80844155844156,
+      "process_score_letter": "D+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -354,6 +389,41 @@
               "base": 0.6,
               "swing_bonus": 0.2,
               "capped_total": 0.8
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          },
+          {
+            "position": "RB",
+            "recommended_player": "Woody Marks",
+            "recommended_points": 11.833333333333316,
+            "benched_player": "Jonathan Taylor",
+            "benched_points": 10.2,
+            "point_swing": 1.6333333333333169,
+            "source": "ROSTER",
+            "reason": "At RB, swap in Woody Marks over Jonathan Taylor for an estimated +1.6 points this week.",
+            "confidence": 0.6408333333333329,
+            "signal_label": "Low hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Jonathan Taylor",
+              "points": 10.2,
+              "role": "STARTER"
+            },
+            "swing_tier": "LOW",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.04083333333333292,
+              "capped_total": 0.6408333333333329
             },
             "sample_context": {
               "recommended_player_weeks": 3,
@@ -434,14 +504,14 @@
           }
         ],
         "summary": {
-          "total": 3,
-          "roster_swaps": 1,
+          "total": 4,
+          "roster_swaps": 2,
           "waiver_moves": 2,
-          "total_upside_points": 27.299999999999994,
+          "total_upside_points": 28.93333333333331,
           "strong_signal_count": 1,
           "high_confidence_count": 1,
-          "diagnostic_summary": "3 qualifying recommendation(s): 1 start/sit, 2 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 27.3 pts. High-impact hindsight rows: 1.",
+          "diagnostic_summary": "4 qualifying recommendation(s): 2 start/sit, 2 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 28.9 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Kalif Raymond",
             "benched_player": "Emeka Egbuka",
@@ -560,9 +630,9 @@
       "team_key": "470.l.932349.t.1",
       "manager_grades": {
         "weekly": {
-          "score_pct": 77.95519480519482,
-          "letter": "C+",
-          "label": "reasonable but costly"
+          "score_pct": 67.80844155844156,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 73.4705000702609,
@@ -593,19 +663,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 94.11038961038963,
+                "score_pct": 90.61688311688313,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -33.99666666666664,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -690,12 +766,12 @@
             }
           }
         },
-        "summary": "Sigma Chi Whiteout graded C+ this week and C for the season-to-date (developing). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.",
+        "summary": "Sigma Chi Whiteout graded D+ this week and C for the season-to-date (developing). Weekly management reads as bad decisions; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 93.32931545026997,
+              "weekly_score_pct": 96.51628636126111,
               "weekly_letter": "A",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 94.69172618010799,
@@ -709,13 +785,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 81.55848849945235,
-              "weekly_letter": "B-",
-              "weekly_delta_points": -11.770826950817622,
+              "weekly_score_pct": 76.34501931425733,
+              "weekly_letter": "C+",
+              "weekly_delta_points": -20.17126704700378,
               "cumulative_score_pct": 91.75053630363035,
               "cumulative_letter": "A-",
               "cumulative_delta_points": -2.9411898764776367,
-              "trend_delta_points": -11.770826950817622,
+              "trend_delta_points": -20.17126704700378,
               "trend_label": "Trending Down",
               "score": 109.23333333333326,
               "opponent_score": null,
@@ -723,13 +799,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 77.95519480519482,
-              "weekly_letter": "C+",
-              "weekly_delta_points": -3.6032936942575304,
+              "weekly_score_pct": 67.80844155844156,
+              "weekly_letter": "D+",
+              "weekly_delta_points": -8.53657775581577,
               "cumulative_score_pct": 73.4705000702609,
               "cumulative_letter": "C",
               "cumulative_delta_points": -18.280036233369458,
-              "trend_delta_points": -3.6032936942575304,
+              "trend_delta_points": -8.53657775581577,
               "trend_label": "Trending Down",
               "score": 93.03333333333326,
               "opponent_score": null,
@@ -739,7 +815,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -3.6032936942575304,
+            "trend_delta_points": -8.53657775581577,
             "current_score_pct": 73.4705000702609,
             "current_letter": "C",
             "previous_score_pct": 91.75053630363035,
@@ -750,16 +826,16 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -18.280036233369458,
-          "trend_delta_points": -3.6032936942575304,
+          "trend_delta_points": -8.53657775581577,
           "current_score_pct": 73.4705000702609,
           "previous_score_pct": 91.75053630363035
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 77.95519480519482,
-          "letter": "C+",
-          "label": "reasonable but costly"
+          "score_pct": 67.80844155844156,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 73.4705000702609,
@@ -790,19 +866,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 94.11038961038963,
+                "score_pct": 90.61688311688313,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -33.99666666666664,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -887,12 +969,12 @@
             }
           }
         },
-        "summary": "Sigma Chi Whiteout graded C+ this week and C for the season-to-date (developing). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.",
+        "summary": "Sigma Chi Whiteout graded D+ this week and C for the season-to-date (developing). Weekly management reads as bad decisions; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 93.32931545026997,
+              "weekly_score_pct": 96.51628636126111,
               "weekly_letter": "A",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 94.69172618010799,
@@ -906,13 +988,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 81.55848849945235,
-              "weekly_letter": "B-",
-              "weekly_delta_points": -11.770826950817622,
+              "weekly_score_pct": 76.34501931425733,
+              "weekly_letter": "C+",
+              "weekly_delta_points": -20.17126704700378,
               "cumulative_score_pct": 91.75053630363035,
               "cumulative_letter": "A-",
               "cumulative_delta_points": -2.9411898764776367,
-              "trend_delta_points": -11.770826950817622,
+              "trend_delta_points": -20.17126704700378,
               "trend_label": "Trending Down",
               "score": 109.23333333333326,
               "opponent_score": null,
@@ -920,13 +1002,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 77.95519480519482,
-              "weekly_letter": "C+",
-              "weekly_delta_points": -3.6032936942575304,
+              "weekly_score_pct": 67.80844155844156,
+              "weekly_letter": "D+",
+              "weekly_delta_points": -8.53657775581577,
               "cumulative_score_pct": 73.4705000702609,
               "cumulative_letter": "C",
               "cumulative_delta_points": -18.280036233369458,
-              "trend_delta_points": -3.6032936942575304,
+              "trend_delta_points": -8.53657775581577,
               "trend_label": "Trending Down",
               "score": 93.03333333333326,
               "opponent_score": null,
@@ -936,7 +1018,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -3.6032936942575304,
+            "trend_delta_points": -8.53657775581577,
             "current_score_pct": 73.4705000702609,
             "current_letter": "C",
             "previous_score_pct": 91.75053630363035,
@@ -947,7 +1029,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -18.280036233369458,
-          "trend_delta_points": -3.6032936942575304,
+          "trend_delta_points": -8.53657775581577,
           "current_score_pct": 73.4705000702609,
           "previous_score_pct": 91.75053630363035
         }
@@ -956,7 +1038,7 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 93.32931545026997,
+            "weekly_score_pct": 96.51628636126111,
             "weekly_letter": "A",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 94.69172618010799,
@@ -970,13 +1052,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 81.55848849945235,
-            "weekly_letter": "B-",
-            "weekly_delta_points": -11.770826950817622,
+            "weekly_score_pct": 76.34501931425733,
+            "weekly_letter": "C+",
+            "weekly_delta_points": -20.17126704700378,
             "cumulative_score_pct": 91.75053630363035,
             "cumulative_letter": "A-",
             "cumulative_delta_points": -2.9411898764776367,
-            "trend_delta_points": -11.770826950817622,
+            "trend_delta_points": -20.17126704700378,
             "trend_label": "Trending Down",
             "score": 109.23333333333326,
             "opponent_score": null,
@@ -984,13 +1066,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 77.95519480519482,
-            "weekly_letter": "C+",
-            "weekly_delta_points": -3.6032936942575304,
+            "weekly_score_pct": 67.80844155844156,
+            "weekly_letter": "D+",
+            "weekly_delta_points": -8.53657775581577,
             "cumulative_score_pct": 73.4705000702609,
             "cumulative_letter": "C",
             "cumulative_delta_points": -18.280036233369458,
-            "trend_delta_points": -3.6032936942575304,
+            "trend_delta_points": -8.53657775581577,
             "trend_label": "Trending Down",
             "score": 93.03333333333326,
             "opponent_score": null,
@@ -1000,7 +1082,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -3.6032936942575304,
+          "trend_delta_points": -8.53657775581577,
           "current_score_pct": 73.4705000702609,
           "current_letter": "C",
           "previous_score_pct": 91.75053630363035,
@@ -1011,7 +1093,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -3.6032936942575304,
+        "trend_delta_points": -8.53657775581577,
         "current_score_pct": 73.4705000702609,
         "current_letter": "C",
         "previous_score_pct": 91.75053630363035,
@@ -1023,7 +1105,7 @@
       "actual_score": 132.73333333333323,
       "ideal_score": 147.93333333333322,
       "optimization_missed": 15.2,
-      "manager_grade_pct": 86.85259125732313,
+      "manager_grade_pct": 86.55753526033988,
       "manager_grade_letter": "B",
       "lineup_grade_pct": 89.72510139702568,
       "trend": "improving",
@@ -1297,7 +1379,7 @@
           "point_swing": 12.0,
           "position": "DEF"
         },
-        "manager_grade_final_pct": 86.85259125732313
+        "manager_grade_final_pct": 86.55753526033988
       },
       "team_story": "Squat is improving with 3 actionable move(s): 1 start/sit and 2 waiver adds, worth a retrospective +38.7 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -1322,7 +1404,7 @@
           "ownership_status": "BENCH"
         }
       ],
-      "process_score_pct": 86.85259125732313,
+      "process_score_pct": 86.55753526033988,
       "process_score_letter": "B",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -1579,7 +1661,7 @@
       "team_key": "470.l.932349.t.10",
       "manager_grades": {
         "weekly": {
-          "score_pct": 86.85259125732313,
+          "score_pct": 86.55753526033988,
           "letter": "B",
           "label": "well managed"
         },
@@ -1612,19 +1694,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 92.50518251464624,
+                "score_pct": 89.72510139702568,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 83.38996912365408,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 80.55555555555556,
+                  "scoring_pct": 86.22438269175262
+                },
+                "raw_value": 5.703333333333333,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 85.33333333333334,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1714,8 +1802,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 62.34645373414755,
-              "weekly_letter": "D",
+              "weekly_score_pct": 59.136918741193085,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -1728,13 +1816,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 79.77787034302526,
-              "weekly_letter": "C+",
-              "weekly_delta_points": 17.431416608877704,
+              "weekly_score_pct": 66.72759807918818,
+              "weekly_letter": "D+",
+              "weekly_delta_points": 7.590679337995098,
               "cumulative_score_pct": 64.65118639998349,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 9.197604906324464,
-              "trend_delta_points": 17.431416608877704,
+              "trend_delta_points": 7.590679337995098,
               "trend_label": "Trending Up",
               "score": 100.29999999999988,
               "opponent_score": null,
@@ -1742,13 +1830,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 86.85259125732313,
+              "weekly_score_pct": 86.55753526033988,
               "weekly_letter": "B",
-              "weekly_delta_points": 7.07472091429787,
+              "weekly_delta_points": 19.829937181151692,
               "cumulative_score_pct": 69.14265332089849,
               "cumulative_letter": "C-",
               "cumulative_delta_points": 4.491466920915002,
-              "trend_delta_points": 7.07472091429787,
+              "trend_delta_points": 19.829937181151692,
               "trend_label": "Trending Up",
               "score": 132.73333333333323,
               "opponent_score": null,
@@ -1758,7 +1846,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 7.07472091429787,
+            "trend_delta_points": 19.829937181151692,
             "current_score_pct": 69.14265332089849,
             "current_letter": "C-",
             "previous_score_pct": 64.65118639998349,
@@ -1769,14 +1857,14 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 4.491466920915002,
-          "trend_delta_points": 7.07472091429787,
+          "trend_delta_points": 19.829937181151692,
           "current_score_pct": 69.14265332089849,
           "previous_score_pct": 64.65118639998349
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 86.85259125732313,
+          "score_pct": 86.55753526033988,
           "letter": "B",
           "label": "well managed"
         },
@@ -1809,19 +1897,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 92.50518251464624,
+                "score_pct": 89.72510139702568,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 83.38996912365408,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 80.55555555555556,
+                  "scoring_pct": 86.22438269175262
+                },
+                "raw_value": 5.703333333333333,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 85.33333333333334,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1911,8 +2005,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 62.34645373414755,
-              "weekly_letter": "D",
+              "weekly_score_pct": 59.136918741193085,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -1925,13 +2019,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 79.77787034302526,
-              "weekly_letter": "C+",
-              "weekly_delta_points": 17.431416608877704,
+              "weekly_score_pct": 66.72759807918818,
+              "weekly_letter": "D+",
+              "weekly_delta_points": 7.590679337995098,
               "cumulative_score_pct": 64.65118639998349,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 9.197604906324464,
-              "trend_delta_points": 17.431416608877704,
+              "trend_delta_points": 7.590679337995098,
               "trend_label": "Trending Up",
               "score": 100.29999999999988,
               "opponent_score": null,
@@ -1939,13 +2033,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 86.85259125732313,
+              "weekly_score_pct": 86.55753526033988,
               "weekly_letter": "B",
-              "weekly_delta_points": 7.07472091429787,
+              "weekly_delta_points": 19.829937181151692,
               "cumulative_score_pct": 69.14265332089849,
               "cumulative_letter": "C-",
               "cumulative_delta_points": 4.491466920915002,
-              "trend_delta_points": 7.07472091429787,
+              "trend_delta_points": 19.829937181151692,
               "trend_label": "Trending Up",
               "score": 132.73333333333323,
               "opponent_score": null,
@@ -1955,7 +2049,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 7.07472091429787,
+            "trend_delta_points": 19.829937181151692,
             "current_score_pct": 69.14265332089849,
             "current_letter": "C-",
             "previous_score_pct": 64.65118639998349,
@@ -1966,7 +2060,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 4.491466920915002,
-          "trend_delta_points": 7.07472091429787,
+          "trend_delta_points": 19.829937181151692,
           "current_score_pct": 69.14265332089849,
           "previous_score_pct": 64.65118639998349
         }
@@ -1975,8 +2069,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 62.34645373414755,
-            "weekly_letter": "D",
+            "weekly_score_pct": 59.136918741193085,
+            "weekly_letter": "D-",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 55.45358149365902,
             "cumulative_letter": "D-",
@@ -1989,13 +2083,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 79.77787034302526,
-            "weekly_letter": "C+",
-            "weekly_delta_points": 17.431416608877704,
+            "weekly_score_pct": 66.72759807918818,
+            "weekly_letter": "D+",
+            "weekly_delta_points": 7.590679337995098,
             "cumulative_score_pct": 64.65118639998349,
             "cumulative_letter": "D+",
             "cumulative_delta_points": 9.197604906324464,
-            "trend_delta_points": 17.431416608877704,
+            "trend_delta_points": 7.590679337995098,
             "trend_label": "Trending Up",
             "score": 100.29999999999988,
             "opponent_score": null,
@@ -2003,13 +2097,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 86.85259125732313,
+            "weekly_score_pct": 86.55753526033988,
             "weekly_letter": "B",
-            "weekly_delta_points": 7.07472091429787,
+            "weekly_delta_points": 19.829937181151692,
             "cumulative_score_pct": 69.14265332089849,
             "cumulative_letter": "C-",
             "cumulative_delta_points": 4.491466920915002,
-            "trend_delta_points": 7.07472091429787,
+            "trend_delta_points": 19.829937181151692,
             "trend_label": "Trending Up",
             "score": 132.73333333333323,
             "opponent_score": null,
@@ -2019,7 +2113,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 7.07472091429787,
+          "trend_delta_points": 19.829937181151692,
           "current_score_pct": 69.14265332089849,
           "current_letter": "C-",
           "previous_score_pct": 64.65118639998349,
@@ -2030,7 +2124,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 7.07472091429787,
+        "trend_delta_points": 19.829937181151692,
         "current_score_pct": 69.14265332089849,
         "current_letter": "C-",
         "previous_score_pct": 64.65118639998349,
@@ -2042,8 +2136,8 @@
       "actual_score": 95.99999999999994,
       "ideal_score": 117.49999999999994,
       "optimization_missed": 21.5,
-      "manager_grade_pct": 70.33191489361701,
-      "manager_grade_letter": "C-",
+      "manager_grade_pct": 63.906619385342786,
+      "manager_grade_letter": "D",
       "lineup_grade_pct": 81.70212765957446,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -2178,6 +2272,76 @@
             "recommended_player_weeks": 3,
             "comparison_player_weeks": 3
           }
+        },
+        {
+          "position": "K",
+          "recommended_player": "Harrison Mevis",
+          "recommended_points": 16.0,
+          "benched_player": "Tyler Loop",
+          "benched_points": 12.0,
+          "point_swing": 4.0,
+          "source": "ROSTER",
+          "reason": "At K, swap in Harrison Mevis over Tyler Loop for an estimated +4.0 points this week.",
+          "confidence": 0.7,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Tyler Loop",
+            "points": 12.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1,
+            "capped_total": 0.7
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Chris Rodriguez Jr.",
+          "recommended_points": 12.7,
+          "benched_player": "Quinshon Judkins",
+          "benched_points": 9.9,
+          "point_swing": 2.799999999999999,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Chris Rodriguez Jr. over Quinshon Judkins for an estimated +2.8 points this week.",
+          "confidence": 0.6699999999999999,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Quinshon Judkins",
+            "points": 9.9,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.06999999999999998,
+            "capped_total": 0.6699999999999999
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
         }
       ],
       "lineup_context": {
@@ -2232,14 +2396,14 @@
         ]
       },
       "recommendation_summary": {
-        "total": 3,
-        "roster_swaps": 1,
+        "total": 5,
+        "roster_swaps": 3,
         "waiver_moves": 2,
-        "total_upside_points": 40.699999999999996,
+        "total_upside_points": 47.49999999999999,
         "strong_signal_count": 3,
         "high_confidence_count": 3,
-        "diagnostic_summary": "3 qualifying recommendation(s): 1 start/sit, 2 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 40.7 pts. High-impact hindsight rows: 3.",
+        "diagnostic_summary": "5 qualifying recommendation(s): 3 start/sit, 2 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 47.5 pts. High-impact hindsight rows: 3.",
         "top_call": {
           "recommended_player": "Kenyon Sadiq",
           "benched_player": "Colston Loveland",
@@ -2316,9 +2480,9 @@
           "point_swing": 14.4,
           "position": "TE"
         },
-        "manager_grade_final_pct": 70.33191489361701
+        "manager_grade_final_pct": 63.906619385342786
       },
-      "team_story": "Love(land) Hurts is declining with 3 actionable move(s): 1 start/sit and 2 waiver adds, worth a retrospective +40.7 points; 3 had high hindsight impact.",
+      "team_story": "Love(land) Hurts is declining with 5 actionable move(s): 3 start/sit and 2 waiver adds, worth a retrospective +47.5 points; 3 had high hindsight impact.",
       "boom_bust": [
         {
           "name": "Chris Rodriguez Jr.",
@@ -2341,8 +2505,8 @@
           "ownership_status": "BENCH"
         }
       ],
-      "process_score_pct": 70.33191489361701,
-      "process_score_letter": "C-",
+      "process_score_pct": 63.906619385342786,
+      "process_score_letter": "D",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -2374,6 +2538,76 @@
               "base": 0.6,
               "swing_bonus": 0.3,
               "capped_total": 0.8999999999999999
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          },
+          {
+            "position": "K",
+            "recommended_player": "Harrison Mevis",
+            "recommended_points": 16.0,
+            "benched_player": "Tyler Loop",
+            "benched_points": 12.0,
+            "point_swing": 4.0,
+            "source": "ROSTER",
+            "reason": "At K, swap in Harrison Mevis over Tyler Loop for an estimated +4.0 points this week.",
+            "confidence": 0.7,
+            "signal_label": "Medium hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Tyler Loop",
+              "points": 12.0,
+              "role": "STARTER"
+            },
+            "swing_tier": "MEDIUM",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.1,
+              "capped_total": 0.7
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          },
+          {
+            "position": "RB",
+            "recommended_player": "Chris Rodriguez Jr.",
+            "recommended_points": 12.7,
+            "benched_player": "Quinshon Judkins",
+            "benched_points": 9.9,
+            "point_swing": 2.799999999999999,
+            "source": "ROSTER",
+            "reason": "At RB, swap in Chris Rodriguez Jr. over Quinshon Judkins for an estimated +2.8 points this week.",
+            "confidence": 0.6699999999999999,
+            "signal_label": "Low hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Quinshon Judkins",
+              "points": 9.9,
+              "role": "STARTER"
+            },
+            "swing_tier": "LOW",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.06999999999999998,
+              "capped_total": 0.6699999999999999
             },
             "sample_context": {
               "recommended_player_weeks": 3,
@@ -2454,14 +2688,14 @@
           }
         ],
         "summary": {
-          "total": 3,
-          "roster_swaps": 1,
+          "total": 5,
+          "roster_swaps": 3,
           "waiver_moves": 2,
-          "total_upside_points": 40.699999999999996,
+          "total_upside_points": 47.49999999999999,
           "strong_signal_count": 3,
           "high_confidence_count": 3,
-          "diagnostic_summary": "3 qualifying recommendation(s): 1 start/sit, 2 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 40.7 pts. High-impact hindsight rows: 3.",
+          "diagnostic_summary": "5 qualifying recommendation(s): 3 start/sit, 2 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 47.5 pts. High-impact hindsight rows: 3.",
           "top_call": {
             "recommended_player": "Kenyon Sadiq",
             "benched_player": "Colston Loveland",
@@ -2561,8 +2795,8 @@
       "team_key": "470.l.932349.t.2",
       "manager_grades": {
         "weekly": {
-          "score_pct": 70.33191489361701,
-          "letter": "C-",
+          "score_pct": 63.906619385342786,
+          "letter": "D",
           "label": "bad decisions"
         },
         "season": {
@@ -2594,19 +2828,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 78.06382978723403,
+                "score_pct": 81.70212765957446,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 46.111111111111114,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 47.22222222222222,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -31.02999999999996,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 54.33333333333333,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -2691,12 +2931,12 @@
             }
           }
         },
-        "summary": "Love(land) Hurts graded C- this week and D+ for the season-to-date (developing). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "summary": "Love(land) Hurts graded D this week and D+ for the season-to-date (developing). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.920607175712945,
+              "weekly_score_pct": 56.28922620872942,
               "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
@@ -2710,13 +2950,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 89.2582338902148,
-              "weekly_letter": "B+",
-              "weekly_delta_points": 29.33762671450185,
+              "weekly_score_pct": 94.83790771678599,
+              "weekly_letter": "A",
+              "weekly_delta_points": 38.548681508056575,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 29.33762671450185,
+              "trend_delta_points": 38.548681508056575,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -2724,13 +2964,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 70.33191489361701,
-              "weekly_letter": "C-",
-              "weekly_delta_points": -18.926318996597786,
+              "weekly_score_pct": 63.906619385342786,
+              "weekly_letter": "D",
+              "weekly_delta_points": -30.931288331443206,
               "cumulative_score_pct": 66.86510107643517,
               "cumulative_letter": "D+",
               "cumulative_delta_points": -6.885244932571737,
-              "trend_delta_points": -18.926318996597786,
+              "trend_delta_points": -30.931288331443206,
               "trend_label": "Trending Down",
               "score": 95.99999999999994,
               "opponent_score": null,
@@ -2740,7 +2980,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -18.926318996597786,
+            "trend_delta_points": -30.931288331443206,
             "current_score_pct": 66.86510107643517,
             "current_letter": "D+",
             "previous_score_pct": 73.7503460090069,
@@ -2751,15 +2991,15 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -6.885244932571737,
-          "trend_delta_points": -18.926318996597786,
+          "trend_delta_points": -30.931288331443206,
           "current_score_pct": 66.86510107643517,
           "previous_score_pct": 73.7503460090069
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 70.33191489361701,
-          "letter": "C-",
+          "score_pct": 63.906619385342786,
+          "letter": "D",
           "label": "bad decisions"
         },
         "season": {
@@ -2791,19 +3031,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 78.06382978723403,
+                "score_pct": 81.70212765957446,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 46.111111111111114,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 47.22222222222222,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -31.02999999999996,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 54.33333333333333,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -2888,12 +3134,12 @@
             }
           }
         },
-        "summary": "Love(land) Hurts graded C- this week and D+ for the season-to-date (developing). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "summary": "Love(land) Hurts graded D this week and D+ for the season-to-date (developing). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.920607175712945,
+              "weekly_score_pct": 56.28922620872942,
               "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
@@ -2907,13 +3153,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 89.2582338902148,
-              "weekly_letter": "B+",
-              "weekly_delta_points": 29.33762671450185,
+              "weekly_score_pct": 94.83790771678599,
+              "weekly_letter": "A",
+              "weekly_delta_points": 38.548681508056575,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 29.33762671450185,
+              "trend_delta_points": 38.548681508056575,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -2921,13 +3167,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 70.33191489361701,
-              "weekly_letter": "C-",
-              "weekly_delta_points": -18.926318996597786,
+              "weekly_score_pct": 63.906619385342786,
+              "weekly_letter": "D",
+              "weekly_delta_points": -30.931288331443206,
               "cumulative_score_pct": 66.86510107643517,
               "cumulative_letter": "D+",
               "cumulative_delta_points": -6.885244932571737,
-              "trend_delta_points": -18.926318996597786,
+              "trend_delta_points": -30.931288331443206,
               "trend_label": "Trending Down",
               "score": 95.99999999999994,
               "opponent_score": null,
@@ -2937,7 +3183,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -18.926318996597786,
+            "trend_delta_points": -30.931288331443206,
             "current_score_pct": 66.86510107643517,
             "current_letter": "D+",
             "previous_score_pct": 73.7503460090069,
@@ -2948,7 +3194,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -6.885244932571737,
-          "trend_delta_points": -18.926318996597786,
+          "trend_delta_points": -30.931288331443206,
           "current_score_pct": 66.86510107643517,
           "previous_score_pct": 73.7503460090069
         }
@@ -2957,7 +3203,7 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 59.920607175712945,
+            "weekly_score_pct": 56.28922620872942,
             "weekly_letter": "D-",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 64.61647798304398,
@@ -2971,13 +3217,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 89.2582338902148,
-            "weekly_letter": "B+",
-            "weekly_delta_points": 29.33762671450185,
+            "weekly_score_pct": 94.83790771678599,
+            "weekly_letter": "A",
+            "weekly_delta_points": 38.548681508056575,
             "cumulative_score_pct": 73.7503460090069,
             "cumulative_letter": "C",
             "cumulative_delta_points": 9.133868025962926,
-            "trend_delta_points": 29.33762671450185,
+            "trend_delta_points": 38.548681508056575,
             "trend_label": "Trending Up",
             "score": 131.06666666666658,
             "opponent_score": null,
@@ -2985,13 +3231,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 70.33191489361701,
-            "weekly_letter": "C-",
-            "weekly_delta_points": -18.926318996597786,
+            "weekly_score_pct": 63.906619385342786,
+            "weekly_letter": "D",
+            "weekly_delta_points": -30.931288331443206,
             "cumulative_score_pct": 66.86510107643517,
             "cumulative_letter": "D+",
             "cumulative_delta_points": -6.885244932571737,
-            "trend_delta_points": -18.926318996597786,
+            "trend_delta_points": -30.931288331443206,
             "trend_label": "Trending Down",
             "score": 95.99999999999994,
             "opponent_score": null,
@@ -3001,7 +3247,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -18.926318996597786,
+          "trend_delta_points": -30.931288331443206,
           "current_score_pct": 66.86510107643517,
           "current_letter": "D+",
           "previous_score_pct": 73.7503460090069,
@@ -3012,7 +3258,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -18.926318996597786,
+        "trend_delta_points": -30.931288331443206,
         "current_score_pct": 66.86510107643517,
         "current_letter": "D+",
         "previous_score_pct": 73.7503460090069,
@@ -3024,8 +3270,8 @@
       "actual_score": 167.8666666666666,
       "ideal_score": 192.1999999999999,
       "optimization_missed": 24.333333333333314,
-      "manager_grade_pct": 87.64886090063857,
-      "manager_grade_letter": "B+",
+      "manager_grade_pct": 93.66978841484564,
+      "manager_grade_letter": "A",
       "lineup_grade_pct": 87.3395768296913,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -3054,7 +3300,7 @@
         }
       ],
       "historical_avg": 179.46666666666658,
-      "manager_effectiveness": "well managed",
+      "manager_effectiveness": "creative edge",
       "recommendations": [
         {
           "position": "WR",
@@ -3298,7 +3544,7 @@
           "point_swing": 19.499999999999993,
           "position": "WR"
         },
-        "manager_grade_final_pct": 87.64886090063857
+        "manager_grade_final_pct": 93.66978841484564
       },
       "team_story": "Pat Pidgeon is declining with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth a retrospective +43.8 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -3323,8 +3569,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 87.64886090063857,
-      "process_score_letter": "B+",
+      "process_score_pct": 93.66978841484564,
+      "process_score_letter": "A",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -3543,9 +3789,9 @@
       "team_key": "470.l.932349.t.3",
       "manager_grades": {
         "weekly": {
-          "score_pct": 87.64886090063857,
-          "letter": "B+",
-          "label": "well managed"
+          "score_pct": 93.66978841484564,
+          "letter": "A",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 94.0051904090268,
@@ -3576,19 +3822,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 88.21123829344434,
+                "score_pct": 87.3395768296913,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 40.83666666666669,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 95.14413917972132,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -3673,13 +3925,13 @@
             }
           }
         },
-        "summary": "Pat Pidgeon graded B+ this week and A for the season-to-date (developing). Weekly management reads as well managed; season management reads as creative edge.",
+        "summary": "Pat Pidgeon graded A this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 94.1,
-              "weekly_letter": "A",
+              "weekly_score_pct": 97.12024250589424,
+              "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 95.0,
               "cumulative_letter": "A",
@@ -3692,27 +3944,27 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 92.11121076233184,
-              "weekly_letter": "A-",
-              "weekly_delta_points": -1.9887892376681577,
+              "weekly_score_pct": 95.8395615346288,
+              "weekly_letter": "A",
+              "weekly_delta_points": -1.28068097126544,
               "cumulative_score_pct": 94.66232962622293,
               "cumulative_letter": "A",
               "cumulative_delta_points": -0.33767037377707254,
-              "trend_delta_points": -1.9887892376681577,
-              "trend_label": "Trending Down",
+              "trend_delta_points": -1.28068097126544,
+              "trend_label": "Stable",
               "score": 183.9999999999999,
               "opponent_score": null,
               "result": null
             },
             {
               "week": 3,
-              "weekly_score_pct": 87.64886090063857,
-              "weekly_letter": "B+",
-              "weekly_delta_points": -4.462349861693269,
+              "weekly_score_pct": 93.66978841484564,
+              "weekly_letter": "A",
+              "weekly_delta_points": -2.1697731197831587,
               "cumulative_score_pct": 94.0051904090268,
               "cumulative_letter": "A",
               "cumulative_delta_points": -0.6571392171961321,
-              "trend_delta_points": -4.462349861693269,
+              "trend_delta_points": -2.1697731197831587,
               "trend_label": "Trending Down",
               "score": 167.8666666666666,
               "opponent_score": null,
@@ -3722,7 +3974,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -4.462349861693269,
+            "trend_delta_points": -2.1697731197831587,
             "current_score_pct": 94.0051904090268,
             "current_letter": "A",
             "previous_score_pct": 94.66232962622293,
@@ -3733,16 +3985,16 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -0.6571392171961321,
-          "trend_delta_points": -4.462349861693269,
+          "trend_delta_points": -2.1697731197831587,
           "current_score_pct": 94.0051904090268,
           "previous_score_pct": 94.66232962622293
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 87.64886090063857,
-          "letter": "B+",
-          "label": "well managed"
+          "score_pct": 93.66978841484564,
+          "letter": "A",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 94.0051904090268,
@@ -3773,19 +4025,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 88.21123829344434,
+                "score_pct": 87.3395768296913,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 40.83666666666669,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 95.14413917972132,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -3870,13 +4128,13 @@
             }
           }
         },
-        "summary": "Pat Pidgeon graded B+ this week and A for the season-to-date (developing). Weekly management reads as well managed; season management reads as creative edge.",
+        "summary": "Pat Pidgeon graded A this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 94.1,
-              "weekly_letter": "A",
+              "weekly_score_pct": 97.12024250589424,
+              "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 95.0,
               "cumulative_letter": "A",
@@ -3889,27 +4147,27 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 92.11121076233184,
-              "weekly_letter": "A-",
-              "weekly_delta_points": -1.9887892376681577,
+              "weekly_score_pct": 95.8395615346288,
+              "weekly_letter": "A",
+              "weekly_delta_points": -1.28068097126544,
               "cumulative_score_pct": 94.66232962622293,
               "cumulative_letter": "A",
               "cumulative_delta_points": -0.33767037377707254,
-              "trend_delta_points": -1.9887892376681577,
-              "trend_label": "Trending Down",
+              "trend_delta_points": -1.28068097126544,
+              "trend_label": "Stable",
               "score": 183.9999999999999,
               "opponent_score": null,
               "result": null
             },
             {
               "week": 3,
-              "weekly_score_pct": 87.64886090063857,
-              "weekly_letter": "B+",
-              "weekly_delta_points": -4.462349861693269,
+              "weekly_score_pct": 93.66978841484564,
+              "weekly_letter": "A",
+              "weekly_delta_points": -2.1697731197831587,
               "cumulative_score_pct": 94.0051904090268,
               "cumulative_letter": "A",
               "cumulative_delta_points": -0.6571392171961321,
-              "trend_delta_points": -4.462349861693269,
+              "trend_delta_points": -2.1697731197831587,
               "trend_label": "Trending Down",
               "score": 167.8666666666666,
               "opponent_score": null,
@@ -3919,7 +4177,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -4.462349861693269,
+            "trend_delta_points": -2.1697731197831587,
             "current_score_pct": 94.0051904090268,
             "current_letter": "A",
             "previous_score_pct": 94.66232962622293,
@@ -3930,7 +4188,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -0.6571392171961321,
-          "trend_delta_points": -4.462349861693269,
+          "trend_delta_points": -2.1697731197831587,
           "current_score_pct": 94.0051904090268,
           "previous_score_pct": 94.66232962622293
         }
@@ -3939,8 +4197,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 94.1,
-            "weekly_letter": "A",
+            "weekly_score_pct": 97.12024250589424,
+            "weekly_letter": "A+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 95.0,
             "cumulative_letter": "A",
@@ -3953,27 +4211,27 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 92.11121076233184,
-            "weekly_letter": "A-",
-            "weekly_delta_points": -1.9887892376681577,
+            "weekly_score_pct": 95.8395615346288,
+            "weekly_letter": "A",
+            "weekly_delta_points": -1.28068097126544,
             "cumulative_score_pct": 94.66232962622293,
             "cumulative_letter": "A",
             "cumulative_delta_points": -0.33767037377707254,
-            "trend_delta_points": -1.9887892376681577,
-            "trend_label": "Trending Down",
+            "trend_delta_points": -1.28068097126544,
+            "trend_label": "Stable",
             "score": 183.9999999999999,
             "opponent_score": null,
             "result": null
           },
           {
             "week": 3,
-            "weekly_score_pct": 87.64886090063857,
-            "weekly_letter": "B+",
-            "weekly_delta_points": -4.462349861693269,
+            "weekly_score_pct": 93.66978841484564,
+            "weekly_letter": "A",
+            "weekly_delta_points": -2.1697731197831587,
             "cumulative_score_pct": 94.0051904090268,
             "cumulative_letter": "A",
             "cumulative_delta_points": -0.6571392171961321,
-            "trend_delta_points": -4.462349861693269,
+            "trend_delta_points": -2.1697731197831587,
             "trend_label": "Trending Down",
             "score": 167.8666666666666,
             "opponent_score": null,
@@ -3983,7 +4241,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -4.462349861693269,
+          "trend_delta_points": -2.1697731197831587,
           "current_score_pct": 94.0051904090268,
           "current_letter": "A",
           "previous_score_pct": 94.66232962622293,
@@ -3994,7 +4252,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -4.462349861693269,
+        "trend_delta_points": -2.1697731197831587,
         "current_score_pct": 94.0051904090268,
         "current_letter": "A",
         "previous_score_pct": 94.66232962622293,
@@ -4006,8 +4264,8 @@
       "actual_score": 181.16666666666657,
       "ideal_score": 192.2666666666666,
       "optimization_missed": 11.10000000000003,
-      "manager_grade_pct": 94.1,
-      "manager_grade_letter": "A",
+      "manager_grade_pct": 97.1133841886269,
+      "manager_grade_letter": "A+",
       "lineup_grade_pct": 94.2267683772538,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -4142,6 +4400,41 @@
             "recommended_player_weeks": 3,
             "comparison_player_weeks": 3
           }
+        },
+        {
+          "position": "QB",
+          "recommended_player": "Trevor Lawrence",
+          "recommended_points": 26.56666666666661,
+          "benched_player": "Jared Goff",
+          "benched_points": 21.566666666666578,
+          "point_swing": 5.000000000000032,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Trevor Lawrence over Jared Goff for an estimated +5.0 points this week.",
+          "confidence": 0.7250000000000008,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jared Goff",
+            "points": 21.566666666666578,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1250000000000008,
+            "capped_total": 0.7250000000000008
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
         }
       ],
       "lineup_context": {
@@ -4196,14 +4489,14 @@
         ]
       },
       "recommendation_summary": {
-        "total": 3,
-        "roster_swaps": 1,
+        "total": 4,
+        "roster_swaps": 2,
         "waiver_moves": 2,
-        "total_upside_points": 33.966666666666654,
+        "total_upside_points": 38.96666666666668,
         "strong_signal_count": 1,
         "high_confidence_count": 1,
-        "diagnostic_summary": "3 qualifying recommendation(s): 1 start/sit, 2 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 34.0 pts. High-impact hindsight rows: 1.",
+        "diagnostic_summary": "4 qualifying recommendation(s): 2 start/sit, 2 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 39.0 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Ollie Gordon II",
           "benched_player": "Rico Dowdle",
@@ -4280,9 +4573,9 @@
           "point_swing": 17.166666666666664,
           "position": "RB"
         },
-        "manager_grade_final_pct": 94.1
+        "manager_grade_final_pct": 97.1133841886269
       },
-      "team_story": "Millan\u2019s Last Supper is improving with 3 actionable move(s): 1 start/sit and 2 waiver adds, worth a retrospective +34.0 points; 1 had high hindsight impact.",
+      "team_story": "Millan\u2019s Last Supper is improving with 4 actionable move(s): 2 start/sit and 2 waiver adds, worth a retrospective +39.0 points; 1 had high hindsight impact.",
       "boom_bust": [
         {
           "name": "George Kittle",
@@ -4315,8 +4608,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 94.1,
-      "process_score_letter": "A",
+      "process_score_pct": 97.1133841886269,
+      "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -4348,6 +4641,41 @@
               "base": 0.6,
               "swing_bonus": 0.15249999999999994,
               "capped_total": 0.7525
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          },
+          {
+            "position": "QB",
+            "recommended_player": "Trevor Lawrence",
+            "recommended_points": 26.56666666666661,
+            "benched_player": "Jared Goff",
+            "benched_points": 21.566666666666578,
+            "point_swing": 5.000000000000032,
+            "source": "ROSTER",
+            "reason": "At QB, swap in Trevor Lawrence over Jared Goff for an estimated +5.0 points this week.",
+            "confidence": 0.7250000000000008,
+            "signal_label": "Medium hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Jared Goff",
+              "points": 21.566666666666578,
+              "role": "STARTER"
+            },
+            "swing_tier": "MEDIUM",
+            "leverage_label": "Useful point swing",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Useful point swing",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.1250000000000008,
+              "capped_total": 0.7250000000000008
             },
             "sample_context": {
               "recommended_player_weeks": 3,
@@ -4428,14 +4756,14 @@
           }
         ],
         "summary": {
-          "total": 3,
-          "roster_swaps": 1,
+          "total": 4,
+          "roster_swaps": 2,
           "waiver_moves": 2,
-          "total_upside_points": 33.966666666666654,
+          "total_upside_points": 38.96666666666668,
           "strong_signal_count": 1,
           "high_confidence_count": 1,
-          "diagnostic_summary": "3 qualifying recommendation(s): 1 start/sit, 2 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 34.0 pts. High-impact hindsight rows: 1.",
+          "diagnostic_summary": "4 qualifying recommendation(s): 2 start/sit, 2 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 39.0 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Ollie Gordon II",
             "benched_player": "Rico Dowdle",
@@ -4535,8 +4863,8 @@
       "team_key": "470.l.932349.t.4",
       "manager_grades": {
         "weekly": {
-          "score_pct": 94.1,
-          "letter": "A",
+          "score_pct": 97.1133841886269,
+          "letter": "A+",
           "label": "creative edge"
         },
         "season": {
@@ -4568,19 +4896,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 94.2267683772538,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 54.13666666666667,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 97.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -4665,13 +4999,13 @@
             }
           }
         },
-        "summary": "Millan\u2019s Last Supper graded A this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
+        "summary": "Millan\u2019s Last Supper graded A+ this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.97952902774539,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 85.19043748323777,
+              "weekly_letter": "B",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 75.71041197840393,
               "cumulative_letter": "C",
@@ -4684,13 +5018,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 94.1,
-              "weekly_letter": "A",
-              "weekly_delta_points": 11.120470972254608,
+              "weekly_score_pct": 100.0,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 14.809562516762227,
               "cumulative_score_pct": 91.23032025297749,
               "cumulative_letter": "A-",
               "cumulative_delta_points": 15.519908274573567,
-              "trend_delta_points": 11.120470972254608,
+              "trend_delta_points": 14.809562516762227,
               "trend_label": "Trending Up",
               "score": 156.4999999999999,
               "opponent_score": null,
@@ -4698,14 +5032,14 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 94.1,
-              "weekly_letter": "A",
-              "weekly_delta_points": 0.0,
+              "weekly_score_pct": 97.1133841886269,
+              "weekly_letter": "A+",
+              "weekly_delta_points": -2.8866158113731046,
               "cumulative_score_pct": 94.5625,
               "cumulative_letter": "A",
               "cumulative_delta_points": 3.332179747022508,
-              "trend_delta_points": 0.0,
-              "trend_label": "Stable",
+              "trend_delta_points": -2.8866158113731046,
+              "trend_label": "Trending Down",
               "score": 181.16666666666657,
               "opponent_score": null,
               "result": null
@@ -4713,8 +5047,8 @@
           ],
           "summary": {
             "status": "available",
-            "trend_label": "Stable",
-            "trend_delta_points": 0.0,
+            "trend_label": "Trending Down",
+            "trend_delta_points": -2.8866158113731046,
             "current_score_pct": 94.5625,
             "current_letter": "A",
             "previous_score_pct": 91.23032025297749,
@@ -4723,17 +5057,17 @@
           }
         },
         "trend": {
-          "label": "Stable",
+          "label": "Trending Down",
           "delta_points": 3.332179747022508,
-          "trend_delta_points": 0.0,
+          "trend_delta_points": -2.8866158113731046,
           "current_score_pct": 94.5625,
           "previous_score_pct": 91.23032025297749
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 94.1,
-          "letter": "A",
+          "score_pct": 97.1133841886269,
+          "letter": "A+",
           "label": "creative edge"
         },
         "season": {
@@ -4765,19 +5099,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 94.2267683772538,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 54.13666666666667,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 97.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -4862,13 +5202,13 @@
             }
           }
         },
-        "summary": "Millan\u2019s Last Supper graded A this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
+        "summary": "Millan\u2019s Last Supper graded A+ this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.97952902774539,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 85.19043748323777,
+              "weekly_letter": "B",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 75.71041197840393,
               "cumulative_letter": "C",
@@ -4881,13 +5221,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 94.1,
-              "weekly_letter": "A",
-              "weekly_delta_points": 11.120470972254608,
+              "weekly_score_pct": 100.0,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 14.809562516762227,
               "cumulative_score_pct": 91.23032025297749,
               "cumulative_letter": "A-",
               "cumulative_delta_points": 15.519908274573567,
-              "trend_delta_points": 11.120470972254608,
+              "trend_delta_points": 14.809562516762227,
               "trend_label": "Trending Up",
               "score": 156.4999999999999,
               "opponent_score": null,
@@ -4895,14 +5235,14 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 94.1,
-              "weekly_letter": "A",
-              "weekly_delta_points": 0.0,
+              "weekly_score_pct": 97.1133841886269,
+              "weekly_letter": "A+",
+              "weekly_delta_points": -2.8866158113731046,
               "cumulative_score_pct": 94.5625,
               "cumulative_letter": "A",
               "cumulative_delta_points": 3.332179747022508,
-              "trend_delta_points": 0.0,
-              "trend_label": "Stable",
+              "trend_delta_points": -2.8866158113731046,
+              "trend_label": "Trending Down",
               "score": 181.16666666666657,
               "opponent_score": null,
               "result": null
@@ -4910,8 +5250,8 @@
           ],
           "summary": {
             "status": "available",
-            "trend_label": "Stable",
-            "trend_delta_points": 0.0,
+            "trend_label": "Trending Down",
+            "trend_delta_points": -2.8866158113731046,
             "current_score_pct": 94.5625,
             "current_letter": "A",
             "previous_score_pct": 91.23032025297749,
@@ -4920,9 +5260,9 @@
           }
         },
         "trend": {
-          "label": "Stable",
+          "label": "Trending Down",
           "delta_points": 3.332179747022508,
-          "trend_delta_points": 0.0,
+          "trend_delta_points": -2.8866158113731046,
           "current_score_pct": 94.5625,
           "previous_score_pct": 91.23032025297749
         }
@@ -4931,8 +5271,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 82.97952902774539,
-            "weekly_letter": "B-",
+            "weekly_score_pct": 85.19043748323777,
+            "weekly_letter": "B",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 75.71041197840393,
             "cumulative_letter": "C",
@@ -4945,13 +5285,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 94.1,
-            "weekly_letter": "A",
-            "weekly_delta_points": 11.120470972254608,
+            "weekly_score_pct": 100.0,
+            "weekly_letter": "A+",
+            "weekly_delta_points": 14.809562516762227,
             "cumulative_score_pct": 91.23032025297749,
             "cumulative_letter": "A-",
             "cumulative_delta_points": 15.519908274573567,
-            "trend_delta_points": 11.120470972254608,
+            "trend_delta_points": 14.809562516762227,
             "trend_label": "Trending Up",
             "score": 156.4999999999999,
             "opponent_score": null,
@@ -4959,14 +5299,14 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 94.1,
-            "weekly_letter": "A",
-            "weekly_delta_points": 0.0,
+            "weekly_score_pct": 97.1133841886269,
+            "weekly_letter": "A+",
+            "weekly_delta_points": -2.8866158113731046,
             "cumulative_score_pct": 94.5625,
             "cumulative_letter": "A",
             "cumulative_delta_points": 3.332179747022508,
-            "trend_delta_points": 0.0,
-            "trend_label": "Stable",
+            "trend_delta_points": -2.8866158113731046,
+            "trend_label": "Trending Down",
             "score": 181.16666666666657,
             "opponent_score": null,
             "result": null
@@ -4974,8 +5314,8 @@
         ],
         "summary": {
           "status": "available",
-          "trend_label": "Stable",
-          "trend_delta_points": 0.0,
+          "trend_label": "Trending Down",
+          "trend_delta_points": -2.8866158113731046,
           "current_score_pct": 94.5625,
           "current_letter": "A",
           "previous_score_pct": 91.23032025297749,
@@ -4985,8 +5325,8 @@
       },
       "manager_grade_trend": {
         "status": "available",
-        "trend_label": "Stable",
-        "trend_delta_points": 0.0,
+        "trend_label": "Trending Down",
+        "trend_delta_points": -2.8866158113731046,
         "current_score_pct": 94.5625,
         "current_letter": "A",
         "previous_score_pct": 91.23032025297749,
@@ -4998,7 +5338,7 @@
       "actual_score": 65.39999999999992,
       "ideal_score": 101.63333333333324,
       "optimization_missed": 36.23333333333333,
-      "manager_grade_pct": 54.31407018694652,
+      "manager_grade_pct": 54.674483437192514,
       "manager_grade_letter": "F",
       "lineup_grade_pct": 64.34896687438503,
       "trend": "declining",
@@ -5134,6 +5474,41 @@
             "recommended_player_weeks": 3,
             "comparison_player_weeks": 3
           }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Emmett Johnson",
+          "recommended_points": 3.733333333333323,
+          "benched_player": "De'Von Achane",
+          "benched_points": 2.7,
+          "point_swing": 1.033333333333323,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Emmett Johnson over De'Von Achane for an estimated +1.0 points this week.",
+          "confidence": 0.625833333333333,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "De'Von Achane",
+            "points": 2.7,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.025833333333333076,
+            "capped_total": 0.625833333333333
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
         }
       ],
       "lineup_context": {
@@ -5188,14 +5563,14 @@
         ]
       },
       "recommendation_summary": {
-        "total": 3,
-        "roster_swaps": 2,
+        "total": 4,
+        "roster_swaps": 3,
         "waiver_moves": 1,
-        "total_upside_points": 52.199999999999996,
+        "total_upside_points": 53.23333333333332,
         "strong_signal_count": 3,
         "high_confidence_count": 3,
-        "diagnostic_summary": "3 qualifying recommendation(s): 2 start/sit, 1 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 52.2 pts. High-impact hindsight rows: 3.",
+        "diagnostic_summary": "4 qualifying recommendation(s): 3 start/sit, 1 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 53.2 pts. High-impact hindsight rows: 3.",
         "top_call": {
           "recommended_player": "Brock Bowers",
           "benched_player": "Sam LaPorta",
@@ -5272,9 +5647,9 @@
           "point_swing": 16.999999999999993,
           "position": "WR"
         },
-        "manager_grade_final_pct": 54.31407018694652
+        "manager_grade_final_pct": 54.674483437192514
       },
-      "team_story": "In Purdytory is declining with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth a retrospective +52.2 points; 3 had high hindsight impact.",
+      "team_story": "In Purdytory is declining with 4 actionable move(s): 3 start/sit and 1 waiver adds, worth a retrospective +53.2 points; 3 had high hindsight impact.",
       "boom_bust": [
         {
           "name": "Terry McLaurin",
@@ -5307,7 +5682,7 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 54.31407018694652,
+      "process_score_pct": 54.674483437192514,
       "process_score_letter": "F",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -5380,6 +5755,41 @@
               "recommended_player_weeks": 3,
               "comparison_player_weeks": 3
             }
+          },
+          {
+            "position": "RB",
+            "recommended_player": "Emmett Johnson",
+            "recommended_points": 3.733333333333323,
+            "benched_player": "De'Von Achane",
+            "benched_points": 2.7,
+            "point_swing": 1.033333333333323,
+            "source": "ROSTER",
+            "reason": "At RB, swap in Emmett Johnson over De'Von Achane for an estimated +1.0 points this week.",
+            "confidence": 0.625833333333333,
+            "signal_label": "Low hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "De'Von Achane",
+              "points": 2.7,
+              "role": "STARTER"
+            },
+            "swing_tier": "LOW",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.025833333333333076,
+              "capped_total": 0.625833333333333
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
           }
         ],
         "available_players": [
@@ -5420,14 +5830,14 @@
           }
         ],
         "summary": {
-          "total": 3,
-          "roster_swaps": 2,
+          "total": 4,
+          "roster_swaps": 3,
           "waiver_moves": 1,
-          "total_upside_points": 52.199999999999996,
+          "total_upside_points": 53.23333333333332,
           "strong_signal_count": 3,
           "high_confidence_count": 3,
-          "diagnostic_summary": "3 qualifying recommendation(s): 2 start/sit, 1 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 52.2 pts. High-impact hindsight rows: 3.",
+          "diagnostic_summary": "4 qualifying recommendation(s): 3 start/sit, 1 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 53.2 pts. High-impact hindsight rows: 3.",
           "top_call": {
             "recommended_player": "Brock Bowers",
             "benched_player": "Sam LaPorta",
@@ -5527,7 +5937,7 @@
       "team_key": "470.l.932349.t.5",
       "manager_grades": {
         "weekly": {
-          "score_pct": 54.31407018694652,
+          "score_pct": 54.674483437192514,
           "letter": "F",
           "label": "failing process"
         },
@@ -5560,19 +5970,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 46.82814037389305,
+                "score_pct": 64.34896687438503,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -61.62999999999998,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -5662,8 +6078,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 73.48417141441664,
-              "weekly_letter": "C",
+              "weekly_score_pct": 68.66114669741235,
+              "weekly_letter": "C-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.02452581703591,
               "cumulative_letter": "D+",
@@ -5676,13 +6092,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 53.4,
+              "weekly_score_pct": 53.91543605461134,
               "weekly_letter": "F",
-              "weekly_delta_points": -20.084171414416637,
+              "weekly_delta_points": -14.745710642801008,
               "cumulative_score_pct": 57.13674184537478,
               "cumulative_letter": "D-",
               "cumulative_delta_points": -6.887783971661129,
-              "trend_delta_points": -20.084171414416637,
+              "trend_delta_points": -14.745710642801008,
               "trend_label": "Trending Down",
               "score": 75.16666666666666,
               "opponent_score": null,
@@ -5690,13 +6106,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 54.31407018694652,
+              "weekly_score_pct": 54.674483437192514,
               "weekly_letter": "F",
-              "weekly_delta_points": 0.9140701869465246,
+              "weekly_delta_points": 0.7590473825811728,
               "cumulative_score_pct": 54.59368852459017,
               "cumulative_letter": "F",
               "cumulative_delta_points": -2.543053320784608,
-              "trend_delta_points": 0.9140701869465246,
+              "trend_delta_points": 0.7590473825811728,
               "trend_label": "Stable",
               "score": 65.39999999999992,
               "opponent_score": null,
@@ -5706,7 +6122,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Stable",
-            "trend_delta_points": 0.9140701869465246,
+            "trend_delta_points": 0.7590473825811728,
             "current_score_pct": 54.59368852459017,
             "current_letter": "F",
             "previous_score_pct": 57.13674184537478,
@@ -5717,14 +6133,14 @@
         "trend": {
           "label": "Stable",
           "delta_points": -2.543053320784608,
-          "trend_delta_points": 0.9140701869465246,
+          "trend_delta_points": 0.7590473825811728,
           "current_score_pct": 54.59368852459017,
           "previous_score_pct": 57.13674184537478
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 54.31407018694652,
+          "score_pct": 54.674483437192514,
           "letter": "F",
           "label": "failing process"
         },
@@ -5757,19 +6173,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 46.82814037389305,
+                "score_pct": 64.34896687438503,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -61.62999999999998,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -5859,8 +6281,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 73.48417141441664,
-              "weekly_letter": "C",
+              "weekly_score_pct": 68.66114669741235,
+              "weekly_letter": "C-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.02452581703591,
               "cumulative_letter": "D+",
@@ -5873,13 +6295,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 53.4,
+              "weekly_score_pct": 53.91543605461134,
               "weekly_letter": "F",
-              "weekly_delta_points": -20.084171414416637,
+              "weekly_delta_points": -14.745710642801008,
               "cumulative_score_pct": 57.13674184537478,
               "cumulative_letter": "D-",
               "cumulative_delta_points": -6.887783971661129,
-              "trend_delta_points": -20.084171414416637,
+              "trend_delta_points": -14.745710642801008,
               "trend_label": "Trending Down",
               "score": 75.16666666666666,
               "opponent_score": null,
@@ -5887,13 +6309,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 54.31407018694652,
+              "weekly_score_pct": 54.674483437192514,
               "weekly_letter": "F",
-              "weekly_delta_points": 0.9140701869465246,
+              "weekly_delta_points": 0.7590473825811728,
               "cumulative_score_pct": 54.59368852459017,
               "cumulative_letter": "F",
               "cumulative_delta_points": -2.543053320784608,
-              "trend_delta_points": 0.9140701869465246,
+              "trend_delta_points": 0.7590473825811728,
               "trend_label": "Stable",
               "score": 65.39999999999992,
               "opponent_score": null,
@@ -5903,7 +6325,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Stable",
-            "trend_delta_points": 0.9140701869465246,
+            "trend_delta_points": 0.7590473825811728,
             "current_score_pct": 54.59368852459017,
             "current_letter": "F",
             "previous_score_pct": 57.13674184537478,
@@ -5914,7 +6336,7 @@
         "trend": {
           "label": "Stable",
           "delta_points": -2.543053320784608,
-          "trend_delta_points": 0.9140701869465246,
+          "trend_delta_points": 0.7590473825811728,
           "current_score_pct": 54.59368852459017,
           "previous_score_pct": 57.13674184537478
         }
@@ -5923,8 +6345,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 73.48417141441664,
-            "weekly_letter": "C",
+            "weekly_score_pct": 68.66114669741235,
+            "weekly_letter": "C-",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 64.02452581703591,
             "cumulative_letter": "D+",
@@ -5937,13 +6359,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 53.4,
+            "weekly_score_pct": 53.91543605461134,
             "weekly_letter": "F",
-            "weekly_delta_points": -20.084171414416637,
+            "weekly_delta_points": -14.745710642801008,
             "cumulative_score_pct": 57.13674184537478,
             "cumulative_letter": "D-",
             "cumulative_delta_points": -6.887783971661129,
-            "trend_delta_points": -20.084171414416637,
+            "trend_delta_points": -14.745710642801008,
             "trend_label": "Trending Down",
             "score": 75.16666666666666,
             "opponent_score": null,
@@ -5951,13 +6373,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 54.31407018694652,
+            "weekly_score_pct": 54.674483437192514,
             "weekly_letter": "F",
-            "weekly_delta_points": 0.9140701869465246,
+            "weekly_delta_points": 0.7590473825811728,
             "cumulative_score_pct": 54.59368852459017,
             "cumulative_letter": "F",
             "cumulative_delta_points": -2.543053320784608,
-            "trend_delta_points": 0.9140701869465246,
+            "trend_delta_points": 0.7590473825811728,
             "trend_label": "Stable",
             "score": 65.39999999999992,
             "opponent_score": null,
@@ -5967,7 +6389,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Stable",
-          "trend_delta_points": 0.9140701869465246,
+          "trend_delta_points": 0.7590473825811728,
           "current_score_pct": 54.59368852459017,
           "current_letter": "F",
           "previous_score_pct": 57.13674184537478,
@@ -5978,7 +6400,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Stable",
-        "trend_delta_points": 0.9140701869465246,
+        "trend_delta_points": 0.7590473825811728,
         "current_score_pct": 54.59368852459017,
         "current_letter": "F",
         "previous_score_pct": 57.13674184537478,
@@ -5990,8 +6412,8 @@
       "actual_score": 109.7999999999999,
       "ideal_score": 116.46666666666653,
       "optimization_missed": 6.666666666666632,
-      "manager_grade_pct": 83.3,
-      "manager_grade_letter": "B",
+      "manager_grade_pct": 72.97128410608664,
+      "manager_grade_letter": "C",
       "lineup_grade_pct": 94.27590154550661,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -6020,7 +6442,7 @@
         }
       ],
       "historical_avg": 91.62222222222215,
-      "manager_effectiveness": "well managed",
+      "manager_effectiveness": "reasonable but costly",
       "recommendations": [
         {
           "position": "WR",
@@ -6126,6 +6548,76 @@
             "recommended_player_weeks": 3,
             "comparison_player_weeks": 3
           }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Kenny Gainwell",
+          "recommended_points": 7.33333333333328,
+          "benched_player": "Jadarian Price",
+          "benched_points": 2.2,
+          "point_swing": 5.13333333333328,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Kenny Gainwell over Jadarian Price for an estimated +5.1 points this week.",
+          "confidence": 0.728333333333332,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jadarian Price",
+            "points": 2.2,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.128333333333332,
+            "capped_total": 0.728333333333332
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "QB",
+          "recommended_player": "Justin Herbert",
+          "recommended_points": 15.233333333333256,
+          "benched_player": "Bryce Young",
+          "benched_points": 13.699999999999903,
+          "point_swing": 1.5333333333333528,
+          "source": "ROSTER",
+          "reason": "At QB, swap in Justin Herbert over Bryce Young for an estimated +1.5 points this week.",
+          "confidence": 0.6383333333333338,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Bryce Young",
+            "points": 13.699999999999903,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.038333333333333816,
+            "capped_total": 0.6383333333333338
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
         }
       ],
       "lineup_context": {
@@ -6180,14 +6672,14 @@
         ]
       },
       "recommendation_summary": {
-        "total": 3,
-        "roster_swaps": 0,
+        "total": 5,
+        "roster_swaps": 2,
         "waiver_moves": 3,
-        "total_upside_points": 41.13333333333338,
+        "total_upside_points": 47.80000000000001,
         "strong_signal_count": 1,
         "high_confidence_count": 1,
-        "diagnostic_summary": "3 qualifying recommendation(s): 0 start/sit, 3 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 41.1 pts. High-impact hindsight rows: 1.",
+        "diagnostic_summary": "5 qualifying recommendation(s): 2 start/sit, 3 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 47.8 pts. High-impact hindsight rows: 1.",
         "top_call": {
           "recommended_player": "Kalif Raymond",
           "benched_player": "Puka Nacua",
@@ -6248,7 +6740,14 @@
         "blended_ideal_score": 130.8633333333332,
         "lineup_grade_pct": 94.27590154550661,
         "decision_grade_pct": 83.90432767008839,
-        "top_lineup_swap": null,
+        "top_lineup_swap": {
+          "recommended_player": "Kenny Gainwell",
+          "starter_replaced": "Jadarian Price",
+          "recommended_points": 7.33333333333328,
+          "starter_points": 2.2,
+          "point_swing": 5.13333333333328,
+          "position": "RB"
+        },
         "top_waiver_opportunity": {
           "recommended_player": "Kalif Raymond",
           "compared_player": "Puka Nacua",
@@ -6257,9 +6756,9 @@
           "point_swing": 19.499999999999993,
           "position": "WR"
         },
-        "manager_grade_final_pct": 83.3
+        "manager_grade_final_pct": 72.97128410608664
       },
-      "team_story": "Nacua-Cola is improving with 3 actionable move(s): 0 start/sit and 3 waiver adds, worth a retrospective +41.1 points; 1 had high hindsight impact.",
+      "team_story": "Nacua-Cola is improving with 5 actionable move(s): 2 start/sit and 3 waiver adds, worth a retrospective +47.8 points; 1 had high hindsight impact.",
       "boom_bust": [
         {
           "name": "Bhayshul Tuten",
@@ -6272,10 +6771,81 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 83.3,
-      "process_score_letter": "B",
+      "process_score_pct": 72.97128410608664,
+      "process_score_letter": "C",
       "hindsight_opportunities": {
-        "lineup_decisions": [],
+        "lineup_decisions": [
+          {
+            "position": "RB",
+            "recommended_player": "Kenny Gainwell",
+            "recommended_points": 7.33333333333328,
+            "benched_player": "Jadarian Price",
+            "benched_points": 2.2,
+            "point_swing": 5.13333333333328,
+            "source": "ROSTER",
+            "reason": "At RB, swap in Kenny Gainwell over Jadarian Price for an estimated +5.1 points this week.",
+            "confidence": 0.728333333333332,
+            "signal_label": "Medium hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Jadarian Price",
+              "points": 2.2,
+              "role": "STARTER"
+            },
+            "swing_tier": "MEDIUM",
+            "leverage_label": "Useful point swing",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Useful point swing",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.128333333333332,
+              "capped_total": 0.728333333333332
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          },
+          {
+            "position": "QB",
+            "recommended_player": "Justin Herbert",
+            "recommended_points": 15.233333333333256,
+            "benched_player": "Bryce Young",
+            "benched_points": 13.699999999999903,
+            "point_swing": 1.5333333333333528,
+            "source": "ROSTER",
+            "reason": "At QB, swap in Justin Herbert over Bryce Young for an estimated +1.5 points this week.",
+            "confidence": 0.6383333333333338,
+            "signal_label": "Low hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Bryce Young",
+              "points": 13.699999999999903,
+              "role": "STARTER"
+            },
+            "swing_tier": "LOW",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.038333333333333816,
+              "capped_total": 0.6383333333333338
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          }
+        ],
         "available_players": [
           {
             "position": "WR",
@@ -6384,14 +6954,14 @@
           }
         ],
         "summary": {
-          "total": 3,
-          "roster_swaps": 0,
+          "total": 5,
+          "roster_swaps": 2,
           "waiver_moves": 3,
-          "total_upside_points": 41.13333333333338,
+          "total_upside_points": 47.80000000000001,
           "strong_signal_count": 1,
           "high_confidence_count": 1,
-          "diagnostic_summary": "3 qualifying recommendation(s): 0 start/sit, 3 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 41.1 pts. High-impact hindsight rows: 1.",
+          "diagnostic_summary": "5 qualifying recommendation(s): 2 start/sit, 3 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 47.8 pts. High-impact hindsight rows: 1.",
           "top_call": {
             "recommended_player": "Kalif Raymond",
             "benched_player": "Puka Nacua",
@@ -6501,9 +7071,9 @@
       "team_key": "470.l.932349.t.6",
       "manager_grades": {
         "weekly": {
-          "score_pct": 83.3,
-          "letter": "B",
-          "label": "well managed"
+          "score_pct": 72.97128410608664,
+          "letter": "C",
+          "label": "reasonable but costly"
         },
         "season": {
           "score_pct": 65.11350025192984,
@@ -6534,19 +7104,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 94.27590154550661,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 51.666666666666664,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 58.33333333333333,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -17.230000000000004,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 60.99999999999999,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -6631,13 +7207,13 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded B this week and D+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as bad decisions.",
+        "summary": "Nacua-Cola graded C this week and D+ for the season-to-date (developing). Weekly management reads as reasonable but costly; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 60.666012871590546,
-              "weekly_letter": "D",
+              "weekly_score_pct": 58.20334048421697,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 54.781405148636225,
               "cumulative_letter": "F",
@@ -6650,13 +7226,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 71.23121641049981,
-              "weekly_letter": "C-",
-              "weekly_delta_points": 10.565203538909266,
+              "weekly_score_pct": 63.39401709401709,
+              "weekly_letter": "D",
+              "weekly_delta_points": 5.190676609800114,
               "cumulative_score_pct": 58.384272627306785,
               "cumulative_letter": "D-",
               "cumulative_delta_points": 3.602867478670561,
-              "trend_delta_points": 10.565203538909266,
+              "trend_delta_points": 5.190676609800114,
               "trend_label": "Trending Up",
               "score": 87.39999999999993,
               "opponent_score": null,
@@ -6664,13 +7240,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 83.3,
-              "weekly_letter": "B",
-              "weekly_delta_points": 12.068783589500185,
+              "weekly_score_pct": 72.97128410608664,
+              "weekly_letter": "C",
+              "weekly_delta_points": 9.577267012069555,
               "cumulative_score_pct": 65.11350025192984,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 6.72922762462305,
-              "trend_delta_points": 12.068783589500185,
+              "trend_delta_points": 9.577267012069555,
               "trend_label": "Trending Up",
               "score": 109.7999999999999,
               "opponent_score": null,
@@ -6680,7 +7256,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 12.068783589500185,
+            "trend_delta_points": 9.577267012069555,
             "current_score_pct": 65.11350025192984,
             "current_letter": "D+",
             "previous_score_pct": 58.384272627306785,
@@ -6691,16 +7267,16 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 6.72922762462305,
-          "trend_delta_points": 12.068783589500185,
+          "trend_delta_points": 9.577267012069555,
           "current_score_pct": 65.11350025192984,
           "previous_score_pct": 58.384272627306785
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 83.3,
-          "letter": "B",
-          "label": "well managed"
+          "score_pct": 72.97128410608664,
+          "letter": "C",
+          "label": "reasonable but costly"
         },
         "season": {
           "score_pct": 65.11350025192984,
@@ -6731,19 +7307,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 94.27590154550661,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 51.666666666666664,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 58.33333333333333,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -17.230000000000004,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 60.99999999999999,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -6828,13 +7410,13 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded B this week and D+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as bad decisions.",
+        "summary": "Nacua-Cola graded C this week and D+ for the season-to-date (developing). Weekly management reads as reasonable but costly; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 60.666012871590546,
-              "weekly_letter": "D",
+              "weekly_score_pct": 58.20334048421697,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 54.781405148636225,
               "cumulative_letter": "F",
@@ -6847,13 +7429,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 71.23121641049981,
-              "weekly_letter": "C-",
-              "weekly_delta_points": 10.565203538909266,
+              "weekly_score_pct": 63.39401709401709,
+              "weekly_letter": "D",
+              "weekly_delta_points": 5.190676609800114,
               "cumulative_score_pct": 58.384272627306785,
               "cumulative_letter": "D-",
               "cumulative_delta_points": 3.602867478670561,
-              "trend_delta_points": 10.565203538909266,
+              "trend_delta_points": 5.190676609800114,
               "trend_label": "Trending Up",
               "score": 87.39999999999993,
               "opponent_score": null,
@@ -6861,13 +7443,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 83.3,
-              "weekly_letter": "B",
-              "weekly_delta_points": 12.068783589500185,
+              "weekly_score_pct": 72.97128410608664,
+              "weekly_letter": "C",
+              "weekly_delta_points": 9.577267012069555,
               "cumulative_score_pct": 65.11350025192984,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 6.72922762462305,
-              "trend_delta_points": 12.068783589500185,
+              "trend_delta_points": 9.577267012069555,
               "trend_label": "Trending Up",
               "score": 109.7999999999999,
               "opponent_score": null,
@@ -6877,7 +7459,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 12.068783589500185,
+            "trend_delta_points": 9.577267012069555,
             "current_score_pct": 65.11350025192984,
             "current_letter": "D+",
             "previous_score_pct": 58.384272627306785,
@@ -6888,7 +7470,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 6.72922762462305,
-          "trend_delta_points": 12.068783589500185,
+          "trend_delta_points": 9.577267012069555,
           "current_score_pct": 65.11350025192984,
           "previous_score_pct": 58.384272627306785
         }
@@ -6897,8 +7479,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 60.666012871590546,
-            "weekly_letter": "D",
+            "weekly_score_pct": 58.20334048421697,
+            "weekly_letter": "D-",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 54.781405148636225,
             "cumulative_letter": "F",
@@ -6911,13 +7493,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 71.23121641049981,
-            "weekly_letter": "C-",
-            "weekly_delta_points": 10.565203538909266,
+            "weekly_score_pct": 63.39401709401709,
+            "weekly_letter": "D",
+            "weekly_delta_points": 5.190676609800114,
             "cumulative_score_pct": 58.384272627306785,
             "cumulative_letter": "D-",
             "cumulative_delta_points": 3.602867478670561,
-            "trend_delta_points": 10.565203538909266,
+            "trend_delta_points": 5.190676609800114,
             "trend_label": "Trending Up",
             "score": 87.39999999999993,
             "opponent_score": null,
@@ -6925,13 +7507,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 83.3,
-            "weekly_letter": "B",
-            "weekly_delta_points": 12.068783589500185,
+            "weekly_score_pct": 72.97128410608664,
+            "weekly_letter": "C",
+            "weekly_delta_points": 9.577267012069555,
             "cumulative_score_pct": 65.11350025192984,
             "cumulative_letter": "D+",
             "cumulative_delta_points": 6.72922762462305,
-            "trend_delta_points": 12.068783589500185,
+            "trend_delta_points": 9.577267012069555,
             "trend_label": "Trending Up",
             "score": 109.7999999999999,
             "opponent_score": null,
@@ -6941,7 +7523,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 12.068783589500185,
+          "trend_delta_points": 9.577267012069555,
           "current_score_pct": 65.11350025192984,
           "current_letter": "D+",
           "previous_score_pct": 58.384272627306785,
@@ -6952,7 +7534,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 12.068783589500185,
+        "trend_delta_points": 9.577267012069555,
         "current_score_pct": 65.11350025192984,
         "current_letter": "D+",
         "previous_score_pct": 58.384272627306785,
@@ -6964,8 +7546,8 @@
       "actual_score": 128.99999999999991,
       "ideal_score": 137.96666666666655,
       "optimization_missed": 8.96666666666665,
-      "manager_grade_pct": 87.8497298009345,
-      "manager_grade_letter": "B+",
+      "manager_grade_pct": 83.83079314865566,
+      "manager_grade_letter": "B",
       "lineup_grade_pct": 93.50084561488283,
       "trend": "unchanged",
       "trend_label": "Unchanged",
@@ -7238,12 +7820,12 @@
           "point_swing": 18.699999999999992,
           "position": "WR"
         },
-        "manager_grade_final_pct": 87.8497298009345
+        "manager_grade_final_pct": 83.83079314865566
       },
       "team_story": "Bend & Snap Count is unchanged with 3 actionable move(s): 2 start/sit and 1 waiver adds, worth a retrospective +27.7 points; 1 had high hindsight impact.",
       "boom_bust": [],
-      "process_score_pct": 87.8497298009345,
-      "process_score_letter": "B+",
+      "process_score_pct": 83.83079314865566,
+      "process_score_letter": "B",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -7462,8 +8044,8 @@
       "team_key": "470.l.932349.t.7",
       "manager_grades": {
         "weekly": {
-          "score_pct": 87.8497298009345,
-          "letter": "B+",
+          "score_pct": 83.83079314865566,
+          "letter": "B",
           "label": "well managed"
         },
         "season": {
@@ -7495,19 +8077,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 99.30152210678911,
+                "score_pct": 93.50084561488283,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 74.1607406824285,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 69.44444444444444,
+                  "scoring_pct": 78.87703692041254
+                },
+                "raw_value": 1.970000000000013,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 77.32989582513316,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -7592,13 +8180,13 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded B+ this week and B for the season-to-date (developing). Weekly management reads as well managed; season management reads as well managed.",
+        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (developing). Weekly management reads as well managed; season management reads as well managed.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 93.14300474637564,
-              "weekly_letter": "A",
+              "weekly_score_pct": 98.97599647654701,
+              "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 88.88056250723369,
               "cumulative_letter": "B+",
@@ -7611,13 +8199,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 84.90639827462255,
-              "weekly_letter": "B",
-              "weekly_delta_points": -8.236606471753092,
+              "weekly_score_pct": 89.23083117712724,
+              "weekly_letter": "B+",
+              "weekly_delta_points": -9.745165299419767,
               "cumulative_score_pct": 86.1289800250815,
               "cumulative_letter": "B",
               "cumulative_delta_points": -2.7515824821521875,
-              "trend_delta_points": -8.236606471753092,
+              "trend_delta_points": -9.745165299419767,
               "trend_label": "Trending Down",
               "score": 126.89999999999992,
               "opponent_score": null,
@@ -7625,14 +8213,14 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 87.8497298009345,
-              "weekly_letter": "B+",
-              "weekly_delta_points": 2.943331526311951,
+              "weekly_score_pct": 83.83079314865566,
+              "weekly_letter": "B",
+              "weekly_delta_points": -5.4000380284715845,
               "cumulative_score_pct": 84.77117059287838,
               "cumulative_letter": "B",
               "cumulative_delta_points": -1.3578094322031262,
-              "trend_delta_points": 2.943331526311951,
-              "trend_label": "Trending Up",
+              "trend_delta_points": -5.4000380284715845,
+              "trend_label": "Trending Down",
               "score": 128.99999999999991,
               "opponent_score": null,
               "result": null
@@ -7640,8 +8228,8 @@
           ],
           "summary": {
             "status": "available",
-            "trend_label": "Trending Up",
-            "trend_delta_points": 2.943331526311951,
+            "trend_label": "Trending Down",
+            "trend_delta_points": -5.4000380284715845,
             "current_score_pct": 84.77117059287838,
             "current_letter": "B",
             "previous_score_pct": 86.1289800250815,
@@ -7650,17 +8238,17 @@
           }
         },
         "trend": {
-          "label": "Trending Up",
+          "label": "Trending Down",
           "delta_points": -1.3578094322031262,
-          "trend_delta_points": 2.943331526311951,
+          "trend_delta_points": -5.4000380284715845,
           "current_score_pct": 84.77117059287838,
           "previous_score_pct": 86.1289800250815
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 87.8497298009345,
-          "letter": "B+",
+          "score_pct": 83.83079314865566,
+          "letter": "B",
           "label": "well managed"
         },
         "season": {
@@ -7692,19 +8280,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 99.30152210678911,
+                "score_pct": 93.50084561488283,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 74.1607406824285,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 69.44444444444444,
+                  "scoring_pct": 78.87703692041254
+                },
+                "raw_value": 1.970000000000013,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 77.32989582513316,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -7789,13 +8383,13 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded B+ this week and B for the season-to-date (developing). Weekly management reads as well managed; season management reads as well managed.",
+        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (developing). Weekly management reads as well managed; season management reads as well managed.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 93.14300474637564,
-              "weekly_letter": "A",
+              "weekly_score_pct": 98.97599647654701,
+              "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 88.88056250723369,
               "cumulative_letter": "B+",
@@ -7808,13 +8402,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 84.90639827462255,
-              "weekly_letter": "B",
-              "weekly_delta_points": -8.236606471753092,
+              "weekly_score_pct": 89.23083117712724,
+              "weekly_letter": "B+",
+              "weekly_delta_points": -9.745165299419767,
               "cumulative_score_pct": 86.1289800250815,
               "cumulative_letter": "B",
               "cumulative_delta_points": -2.7515824821521875,
-              "trend_delta_points": -8.236606471753092,
+              "trend_delta_points": -9.745165299419767,
               "trend_label": "Trending Down",
               "score": 126.89999999999992,
               "opponent_score": null,
@@ -7822,14 +8416,14 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 87.8497298009345,
-              "weekly_letter": "B+",
-              "weekly_delta_points": 2.943331526311951,
+              "weekly_score_pct": 83.83079314865566,
+              "weekly_letter": "B",
+              "weekly_delta_points": -5.4000380284715845,
               "cumulative_score_pct": 84.77117059287838,
               "cumulative_letter": "B",
               "cumulative_delta_points": -1.3578094322031262,
-              "trend_delta_points": 2.943331526311951,
-              "trend_label": "Trending Up",
+              "trend_delta_points": -5.4000380284715845,
+              "trend_label": "Trending Down",
               "score": 128.99999999999991,
               "opponent_score": null,
               "result": null
@@ -7837,8 +8431,8 @@
           ],
           "summary": {
             "status": "available",
-            "trend_label": "Trending Up",
-            "trend_delta_points": 2.943331526311951,
+            "trend_label": "Trending Down",
+            "trend_delta_points": -5.4000380284715845,
             "current_score_pct": 84.77117059287838,
             "current_letter": "B",
             "previous_score_pct": 86.1289800250815,
@@ -7847,9 +8441,9 @@
           }
         },
         "trend": {
-          "label": "Trending Up",
+          "label": "Trending Down",
           "delta_points": -1.3578094322031262,
-          "trend_delta_points": 2.943331526311951,
+          "trend_delta_points": -5.4000380284715845,
           "current_score_pct": 84.77117059287838,
           "previous_score_pct": 86.1289800250815
         }
@@ -7858,8 +8452,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 93.14300474637564,
-            "weekly_letter": "A",
+            "weekly_score_pct": 98.97599647654701,
+            "weekly_letter": "A+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 88.88056250723369,
             "cumulative_letter": "B+",
@@ -7872,13 +8466,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 84.90639827462255,
-            "weekly_letter": "B",
-            "weekly_delta_points": -8.236606471753092,
+            "weekly_score_pct": 89.23083117712724,
+            "weekly_letter": "B+",
+            "weekly_delta_points": -9.745165299419767,
             "cumulative_score_pct": 86.1289800250815,
             "cumulative_letter": "B",
             "cumulative_delta_points": -2.7515824821521875,
-            "trend_delta_points": -8.236606471753092,
+            "trend_delta_points": -9.745165299419767,
             "trend_label": "Trending Down",
             "score": 126.89999999999992,
             "opponent_score": null,
@@ -7886,14 +8480,14 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 87.8497298009345,
-            "weekly_letter": "B+",
-            "weekly_delta_points": 2.943331526311951,
+            "weekly_score_pct": 83.83079314865566,
+            "weekly_letter": "B",
+            "weekly_delta_points": -5.4000380284715845,
             "cumulative_score_pct": 84.77117059287838,
             "cumulative_letter": "B",
             "cumulative_delta_points": -1.3578094322031262,
-            "trend_delta_points": 2.943331526311951,
-            "trend_label": "Trending Up",
+            "trend_delta_points": -5.4000380284715845,
+            "trend_label": "Trending Down",
             "score": 128.99999999999991,
             "opponent_score": null,
             "result": null
@@ -7901,8 +8495,8 @@
         ],
         "summary": {
           "status": "available",
-          "trend_label": "Trending Up",
-          "trend_delta_points": 2.943331526311951,
+          "trend_label": "Trending Down",
+          "trend_delta_points": -5.4000380284715845,
           "current_score_pct": 84.77117059287838,
           "current_letter": "B",
           "previous_score_pct": 86.1289800250815,
@@ -7912,8 +8506,8 @@
       },
       "manager_grade_trend": {
         "status": "available",
-        "trend_label": "Trending Up",
-        "trend_delta_points": 2.943331526311951,
+        "trend_label": "Trending Down",
+        "trend_delta_points": -5.4000380284715845,
         "current_score_pct": 84.77117059287838,
         "current_letter": "B",
         "previous_score_pct": 86.1289800250815,
@@ -7925,8 +8519,8 @@
       "actual_score": 147.39999999999995,
       "ideal_score": 155.79999999999995,
       "optimization_missed": 8.399999999999999,
-      "manager_grade_pct": 92.6,
-      "manager_grade_letter": "A-",
+      "manager_grade_pct": 95.22090286692341,
+      "manager_grade_letter": "A",
       "lineup_grade_pct": 94.60847240051348,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -7955,7 +8549,7 @@
         }
       ],
       "historical_avg": 120.34444444444436,
-      "manager_effectiveness": "well managed",
+      "manager_effectiveness": "creative edge",
       "recommendations": [
         {
           "position": "TE",
@@ -8061,6 +8655,76 @@
             "recommended_player_weeks": 3,
             "comparison_player_weeks": 3
           }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Aaron Jones Sr.",
+          "recommended_points": 13.2,
+          "benched_player": "David Montgomery",
+          "benched_points": 6.800000000000001,
+          "point_swing": 6.399999999999999,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Aaron Jones Sr. over David Montgomery for an estimated +6.4 points this week.",
+          "confidence": 0.76,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "David Montgomery",
+            "points": 6.800000000000001,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.15999999999999998,
+            "capped_total": 0.76
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "K",
+          "recommended_player": "Cameron Dicker",
+          "recommended_points": 9.0,
+          "benched_player": "Jake Bates",
+          "benched_points": 7.0,
+          "point_swing": 2.0,
+          "source": "ROSTER",
+          "reason": "At K, swap in Cameron Dicker over Jake Bates for an estimated +2.0 points this week.",
+          "confidence": 0.65,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Jake Bates",
+            "points": 7.0,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.05,
+            "capped_total": 0.65
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
         }
       ],
       "lineup_context": {
@@ -8115,14 +8779,14 @@
         ]
       },
       "recommendation_summary": {
-        "total": 3,
-        "roster_swaps": 0,
+        "total": 5,
+        "roster_swaps": 2,
         "waiver_moves": 3,
-        "total_upside_points": 52.49999999999999,
+        "total_upside_points": 60.89999999999999,
         "strong_signal_count": 3,
         "high_confidence_count": 3,
-        "diagnostic_summary": "3 qualifying recommendation(s): 0 start/sit, 3 waiver.",
-        "diagnostic_upside": "Combined upside if followed perfectly: 52.5 pts. High-impact hindsight rows: 3.",
+        "diagnostic_summary": "5 qualifying recommendation(s): 2 start/sit, 3 waiver.",
+        "diagnostic_upside": "Combined upside if followed perfectly: 60.9 pts. High-impact hindsight rows: 3.",
         "top_call": {
           "recommended_player": "Kenyon Sadiq",
           "benched_player": "Hunter Henry",
@@ -8183,7 +8847,14 @@
         "blended_ideal_score": 176.97499999999997,
         "lineup_grade_pct": 94.60847240051348,
         "decision_grade_pct": 83.28860008475772,
-        "top_lineup_swap": null,
+        "top_lineup_swap": {
+          "recommended_player": "Aaron Jones Sr.",
+          "starter_replaced": "David Montgomery",
+          "recommended_points": 13.2,
+          "starter_points": 6.800000000000001,
+          "point_swing": 6.399999999999999,
+          "position": "RB"
+        },
         "top_waiver_opportunity": {
           "recommended_player": "Kenyon Sadiq",
           "compared_player": "Hunter Henry",
@@ -8192,9 +8863,9 @@
           "point_swing": 20.0,
           "position": "TE"
         },
-        "manager_grade_final_pct": 92.6
+        "manager_grade_final_pct": 95.22090286692341
       },
-      "team_story": "ZSzizzle is improving with 3 actionable move(s): 0 start/sit and 3 waiver adds, worth a retrospective +52.5 points; 3 had high hindsight impact.",
+      "team_story": "ZSzizzle is improving with 5 actionable move(s): 2 start/sit and 3 waiver adds, worth a retrospective +60.9 points; 3 had high hindsight impact.",
       "boom_bust": [
         {
           "name": "Harold Fannin Jr.",
@@ -8217,10 +8888,81 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 92.6,
-      "process_score_letter": "A-",
+      "process_score_pct": 95.22090286692341,
+      "process_score_letter": "A",
       "hindsight_opportunities": {
-        "lineup_decisions": [],
+        "lineup_decisions": [
+          {
+            "position": "RB",
+            "recommended_player": "Aaron Jones Sr.",
+            "recommended_points": 13.2,
+            "benched_player": "David Montgomery",
+            "benched_points": 6.800000000000001,
+            "point_swing": 6.399999999999999,
+            "source": "ROSTER",
+            "reason": "At RB, swap in Aaron Jones Sr. over David Montgomery for an estimated +6.4 points this week.",
+            "confidence": 0.76,
+            "signal_label": "Medium hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "David Montgomery",
+              "points": 6.800000000000001,
+              "role": "STARTER"
+            },
+            "swing_tier": "MEDIUM",
+            "leverage_label": "Useful point swing",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Useful point swing",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.15999999999999998,
+              "capped_total": 0.76
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          },
+          {
+            "position": "K",
+            "recommended_player": "Cameron Dicker",
+            "recommended_points": 9.0,
+            "benched_player": "Jake Bates",
+            "benched_points": 7.0,
+            "point_swing": 2.0,
+            "source": "ROSTER",
+            "reason": "At K, swap in Cameron Dicker over Jake Bates for an estimated +2.0 points this week.",
+            "confidence": 0.65,
+            "signal_label": "Low hindsight impact",
+            "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+            "decision_type": "START_SIT",
+            "decision_type_label": "Start/Sit",
+            "comparison_target": {
+              "name": "Jake Bates",
+              "points": 7.0,
+              "role": "STARTER"
+            },
+            "swing_tier": "LOW",
+            "leverage_label": "Close point edge",
+            "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "edge_label": "Close point edge",
+            "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+            "comparison_label": "Current starter",
+            "confidence_breakdown": {
+              "base": 0.6,
+              "swing_bonus": 0.05,
+              "capped_total": 0.65
+            },
+            "sample_context": {
+              "recommended_player_weeks": 3,
+              "comparison_player_weeks": 3
+            }
+          }
+        ],
         "available_players": [
           {
             "position": "TE",
@@ -8329,14 +9071,14 @@
           }
         ],
         "summary": {
-          "total": 3,
-          "roster_swaps": 0,
+          "total": 5,
+          "roster_swaps": 2,
           "waiver_moves": 3,
-          "total_upside_points": 52.49999999999999,
+          "total_upside_points": 60.89999999999999,
           "strong_signal_count": 3,
           "high_confidence_count": 3,
-          "diagnostic_summary": "3 qualifying recommendation(s): 0 start/sit, 3 waiver.",
-          "diagnostic_upside": "Combined upside if followed perfectly: 52.5 pts. High-impact hindsight rows: 3.",
+          "diagnostic_summary": "5 qualifying recommendation(s): 2 start/sit, 3 waiver.",
+          "diagnostic_upside": "Combined upside if followed perfectly: 60.9 pts. High-impact hindsight rows: 3.",
           "top_call": {
             "recommended_player": "Kenyon Sadiq",
             "benched_player": "Hunter Henry",
@@ -8436,9 +9178,9 @@
       "team_key": "470.l.932349.t.8",
       "manager_grades": {
         "weekly": {
-          "score_pct": 92.6,
-          "letter": "A-",
-          "label": "well managed"
+          "score_pct": 95.22090286692341,
+          "letter": "A",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 77.52335359202469,
@@ -8469,19 +9211,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 94.60847240051348,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 95.83333333333333,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 91.66666666666666,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 20.370000000000047,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 92.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -8566,13 +9314,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "ZSzizzle graded A this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.0569935691318,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 89.00388531618434,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -8585,13 +9333,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 62.28829283685704,
-              "weekly_letter": "D",
-              "weekly_delta_points": -19.768700732274766,
+              "weekly_score_pct": 59.104607131587244,
+              "weekly_letter": "D-",
+              "weekly_delta_points": -29.899278184597094,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -19.768700732274766,
+              "trend_delta_points": -29.899278184597094,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -8599,13 +9347,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 92.6,
-              "weekly_letter": "A-",
-              "weekly_delta_points": 30.311707163142955,
+              "weekly_score_pct": 95.22090286692341,
+              "weekly_letter": "A",
+              "weekly_delta_points": 36.116295735336166,
               "cumulative_score_pct": 77.52335359202469,
               "cumulative_letter": "C+",
               "cumulative_delta_points": 9.15037365812384,
-              "trend_delta_points": 30.311707163142955,
+              "trend_delta_points": 36.116295735336166,
               "trend_label": "Trending Up",
               "score": 147.39999999999995,
               "opponent_score": null,
@@ -8615,7 +9363,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 30.311707163142955,
+            "trend_delta_points": 36.116295735336166,
             "current_score_pct": 77.52335359202469,
             "current_letter": "C+",
             "previous_score_pct": 68.37297993390085,
@@ -8626,16 +9374,16 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.15037365812384,
-          "trend_delta_points": 30.311707163142955,
+          "trend_delta_points": 36.116295735336166,
           "current_score_pct": 77.52335359202469,
           "previous_score_pct": 68.37297993390085
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 92.6,
-          "letter": "A-",
-          "label": "well managed"
+          "score_pct": 95.22090286692341,
+          "letter": "A",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 77.52335359202469,
@@ -8666,19 +9414,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 94.60847240051348,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 95.83333333333333,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 91.66666666666666,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 20.370000000000047,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 92.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -8763,13 +9517,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "ZSzizzle graded A this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.0569935691318,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 89.00388531618434,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -8782,13 +9536,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 62.28829283685704,
-              "weekly_letter": "D",
-              "weekly_delta_points": -19.768700732274766,
+              "weekly_score_pct": 59.104607131587244,
+              "weekly_letter": "D-",
+              "weekly_delta_points": -29.899278184597094,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -19.768700732274766,
+              "trend_delta_points": -29.899278184597094,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -8796,13 +9550,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 92.6,
-              "weekly_letter": "A-",
-              "weekly_delta_points": 30.311707163142955,
+              "weekly_score_pct": 95.22090286692341,
+              "weekly_letter": "A",
+              "weekly_delta_points": 36.116295735336166,
               "cumulative_score_pct": 77.52335359202469,
               "cumulative_letter": "C+",
               "cumulative_delta_points": 9.15037365812384,
-              "trend_delta_points": 30.311707163142955,
+              "trend_delta_points": 36.116295735336166,
               "trend_label": "Trending Up",
               "score": 147.39999999999995,
               "opponent_score": null,
@@ -8812,7 +9566,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 30.311707163142955,
+            "trend_delta_points": 36.116295735336166,
             "current_score_pct": 77.52335359202469,
             "current_letter": "C+",
             "previous_score_pct": 68.37297993390085,
@@ -8823,7 +9577,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.15037365812384,
-          "trend_delta_points": 30.311707163142955,
+          "trend_delta_points": 36.116295735336166,
           "current_score_pct": 77.52335359202469,
           "previous_score_pct": 68.37297993390085
         }
@@ -8832,8 +9586,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 82.0569935691318,
-            "weekly_letter": "B-",
+            "weekly_score_pct": 89.00388531618434,
+            "weekly_letter": "B+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 87.86613076098605,
             "cumulative_letter": "B+",
@@ -8846,13 +9600,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 62.28829283685704,
-            "weekly_letter": "D",
-            "weekly_delta_points": -19.768700732274766,
+            "weekly_score_pct": 59.104607131587244,
+            "weekly_letter": "D-",
+            "weekly_delta_points": -29.899278184597094,
             "cumulative_score_pct": 68.37297993390085,
             "cumulative_letter": "C-",
             "cumulative_delta_points": -19.493150827085202,
-            "trend_delta_points": -19.768700732274766,
+            "trend_delta_points": -29.899278184597094,
             "trend_label": "Trending Down",
             "score": 77.33333333333326,
             "opponent_score": null,
@@ -8860,13 +9614,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 92.6,
-            "weekly_letter": "A-",
-            "weekly_delta_points": 30.311707163142955,
+            "weekly_score_pct": 95.22090286692341,
+            "weekly_letter": "A",
+            "weekly_delta_points": 36.116295735336166,
             "cumulative_score_pct": 77.52335359202469,
             "cumulative_letter": "C+",
             "cumulative_delta_points": 9.15037365812384,
-            "trend_delta_points": 30.311707163142955,
+            "trend_delta_points": 36.116295735336166,
             "trend_label": "Trending Up",
             "score": 147.39999999999995,
             "opponent_score": null,
@@ -8876,7 +9630,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 30.311707163142955,
+          "trend_delta_points": 36.116295735336166,
           "current_score_pct": 77.52335359202469,
           "current_letter": "C+",
           "previous_score_pct": 68.37297993390085,
@@ -8887,7 +9641,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 30.311707163142955,
+        "trend_delta_points": 36.116295735336166,
         "current_score_pct": 77.52335359202469,
         "current_letter": "C+",
         "previous_score_pct": 68.37297993390085,
@@ -8899,8 +9653,8 @@
       "actual_score": 147.8999999999999,
       "ideal_score": 150.59999999999988,
       "optimization_missed": 2.6999999999999993,
-      "manager_grade_pct": 90.8,
-      "manager_grade_letter": "A-",
+      "manager_grade_pct": 99.10358565737052,
+      "manager_grade_letter": "A+",
       "lineup_grade_pct": 98.20717131474103,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -8929,7 +9683,7 @@
         }
       ],
       "historical_avg": 134.81111111111102,
-      "manager_effectiveness": "well managed",
+      "manager_effectiveness": "creative edge",
       "recommendations": [
         {
           "position": "RB",
@@ -9173,7 +9927,7 @@
           "point_swing": 17.166666666666664,
           "position": "RB"
         },
-        "manager_grade_final_pct": 90.8
+        "manager_grade_final_pct": 99.10358565737052
       },
       "team_story": "Two Buck Luck is improving with 3 actionable move(s): 1 start/sit and 2 waiver adds, worth a retrospective +34.8 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -9188,8 +9942,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 90.8,
-      "process_score_letter": "A-",
+      "process_score_pct": 99.10358565737052,
+      "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -9408,9 +10162,9 @@
       "team_key": "470.l.932349.t.9",
       "manager_grades": {
         "weekly": {
-          "score_pct": 90.8,
-          "letter": "A-",
-          "label": "well managed"
+          "score_pct": 99.10358565737052,
+          "letter": "A+",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 77.91724657078468,
@@ -9441,19 +10195,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 98.20717131474103,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 20.86999999999999,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 86.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -9538,12 +10298,12 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "Two Buck Luck graded A+ this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 76.69627959413756,
+              "weekly_score_pct": 78.67090797967208,
               "weekly_letter": "C+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
@@ -9557,13 +10317,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 92.04068589640355,
-              "weekly_letter": "A-",
-              "weekly_delta_points": 15.34440630226598,
+              "weekly_score_pct": 98.35003666585186,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 19.67912868617978,
               "cumulative_score_pct": 81.15913268871154,
               "cumulative_letter": "B-",
               "cumulative_delta_points": 7.106091042583657,
-              "trend_delta_points": 15.34440630226598,
+              "trend_delta_points": 19.67912868617978,
               "trend_label": "Trending Up",
               "score": 131.86666666666656,
               "opponent_score": null,
@@ -9571,13 +10331,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 90.8,
-              "weekly_letter": "A-",
-              "weekly_delta_points": -1.2406858964035479,
+              "weekly_score_pct": 99.10358565737052,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 0.753548991518656,
               "cumulative_score_pct": 77.91724657078468,
               "cumulative_letter": "C+",
               "cumulative_delta_points": -3.241886117926853,
-              "trend_delta_points": -1.2406858964035479,
+              "trend_delta_points": 0.753548991518656,
               "trend_label": "Stable",
               "score": 147.8999999999999,
               "opponent_score": null,
@@ -9587,7 +10347,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Stable",
-            "trend_delta_points": -1.2406858964035479,
+            "trend_delta_points": 0.753548991518656,
             "current_score_pct": 77.91724657078468,
             "current_letter": "C+",
             "previous_score_pct": 81.15913268871154,
@@ -9598,16 +10358,16 @@
         "trend": {
           "label": "Stable",
           "delta_points": -3.241886117926853,
-          "trend_delta_points": -1.2406858964035479,
+          "trend_delta_points": 0.753548991518656,
           "current_score_pct": 77.91724657078468,
           "previous_score_pct": 81.15913268871154
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 90.8,
-          "letter": "A-",
-          "label": "well managed"
+          "score_pct": 99.10358565737052,
+          "letter": "A+",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 77.91724657078468,
@@ -9638,19 +10398,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 98.20717131474103,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 20.86999999999999,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 86.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -9735,12 +10501,12 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "Two Buck Luck graded A+ this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 76.69627959413756,
+              "weekly_score_pct": 78.67090797967208,
               "weekly_letter": "C+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
@@ -9754,13 +10520,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 92.04068589640355,
-              "weekly_letter": "A-",
-              "weekly_delta_points": 15.34440630226598,
+              "weekly_score_pct": 98.35003666585186,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 19.67912868617978,
               "cumulative_score_pct": 81.15913268871154,
               "cumulative_letter": "B-",
               "cumulative_delta_points": 7.106091042583657,
-              "trend_delta_points": 15.34440630226598,
+              "trend_delta_points": 19.67912868617978,
               "trend_label": "Trending Up",
               "score": 131.86666666666656,
               "opponent_score": null,
@@ -9768,13 +10534,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 90.8,
-              "weekly_letter": "A-",
-              "weekly_delta_points": -1.2406858964035479,
+              "weekly_score_pct": 99.10358565737052,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 0.753548991518656,
               "cumulative_score_pct": 77.91724657078468,
               "cumulative_letter": "C+",
               "cumulative_delta_points": -3.241886117926853,
-              "trend_delta_points": -1.2406858964035479,
+              "trend_delta_points": 0.753548991518656,
               "trend_label": "Stable",
               "score": 147.8999999999999,
               "opponent_score": null,
@@ -9784,7 +10550,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Stable",
-            "trend_delta_points": -1.2406858964035479,
+            "trend_delta_points": 0.753548991518656,
             "current_score_pct": 77.91724657078468,
             "current_letter": "C+",
             "previous_score_pct": 81.15913268871154,
@@ -9795,7 +10561,7 @@
         "trend": {
           "label": "Stable",
           "delta_points": -3.241886117926853,
-          "trend_delta_points": -1.2406858964035479,
+          "trend_delta_points": 0.753548991518656,
           "current_score_pct": 77.91724657078468,
           "previous_score_pct": 81.15913268871154
         }
@@ -9804,7 +10570,7 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 76.69627959413756,
+            "weekly_score_pct": 78.67090797967208,
             "weekly_letter": "C+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 74.05304164612788,
@@ -9818,13 +10584,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 92.04068589640355,
-            "weekly_letter": "A-",
-            "weekly_delta_points": 15.34440630226598,
+            "weekly_score_pct": 98.35003666585186,
+            "weekly_letter": "A+",
+            "weekly_delta_points": 19.67912868617978,
             "cumulative_score_pct": 81.15913268871154,
             "cumulative_letter": "B-",
             "cumulative_delta_points": 7.106091042583657,
-            "trend_delta_points": 15.34440630226598,
+            "trend_delta_points": 19.67912868617978,
             "trend_label": "Trending Up",
             "score": 131.86666666666656,
             "opponent_score": null,
@@ -9832,13 +10598,13 @@
           },
           {
             "week": 3,
-            "weekly_score_pct": 90.8,
-            "weekly_letter": "A-",
-            "weekly_delta_points": -1.2406858964035479,
+            "weekly_score_pct": 99.10358565737052,
+            "weekly_letter": "A+",
+            "weekly_delta_points": 0.753548991518656,
             "cumulative_score_pct": 77.91724657078468,
             "cumulative_letter": "C+",
             "cumulative_delta_points": -3.241886117926853,
-            "trend_delta_points": -1.2406858964035479,
+            "trend_delta_points": 0.753548991518656,
             "trend_label": "Stable",
             "score": 147.8999999999999,
             "opponent_score": null,
@@ -9848,7 +10614,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Stable",
-          "trend_delta_points": -1.2406858964035479,
+          "trend_delta_points": 0.753548991518656,
           "current_score_pct": 77.91724657078468,
           "current_letter": "C+",
           "previous_score_pct": 81.15913268871154,
@@ -9859,7 +10625,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Stable",
-        "trend_delta_points": -1.2406858964035479,
+        "trend_delta_points": 0.753548991518656,
         "current_score_pct": 77.91724657078468,
         "current_letter": "C+",
         "previous_score_pct": 81.15913268871154,
@@ -18239,8 +19005,7 @@
         "ideal_margin": 37.09999999999998,
         "actual_winner": "Squat",
         "ideal_winner": "Squat",
-        "winner_changed": false,
-        "matchup_report_href": "matchups_week_03/matchup_02_squat_vs_in-purdytory.html"
+        "winner_changed": false
       },
       {
         "teamName": "Sigma Chi Whiteout",
@@ -18253,8 +19018,7 @@
         "ideal_margin": -34.699999999999974,
         "actual_winner": "Bend & Snap Count",
         "ideal_winner": "Bend & Snap Count",
-        "winner_changed": false,
-        "matchup_report_href": "matchups_week_03/matchup_01_bend-snap-count_vs_sigma-chi-whiteout.html"
+        "winner_changed": false
       },
       {
         "teamName": "Love(land) Hurts",
@@ -18267,8 +19031,7 @@
         "ideal_margin": -34.79999999999998,
         "actual_winner": "ZSzizzle",
         "ideal_winner": "ZSzizzle",
-        "winner_changed": false,
-        "matchup_report_href": "matchups_week_03/matchup_03_zszizzle_vs_love-land-hurts.html"
+        "winner_changed": false
       },
       {
         "teamName": "Pat Pidgeon",
@@ -18281,8 +19044,7 @@
         "ideal_margin": 43.56666666666666,
         "actual_winner": "Pat Pidgeon",
         "ideal_winner": "Pat Pidgeon",
-        "winner_changed": false,
-        "matchup_report_href": "matchups_week_03/matchup_04_pat-pidgeon_vs_two-buck-luck.html"
+        "winner_changed": false
       },
       {
         "teamName": "Millan\u2019s Last Supper",
@@ -18295,8 +19057,7 @@
         "ideal_margin": 73.90000000000013,
         "actual_winner": "Millan\u2019s Last Supper",
         "ideal_winner": "Millan\u2019s Last Supper",
-        "winner_changed": false,
-        "matchup_report_href": "matchups_week_03/matchup_05_millan-s-last-supper_vs_nacua-cola.html"
+        "winner_changed": false
       }
     ],
     "biggest_bench_miss": {
@@ -19088,8 +19849,7 @@
           "ideal_margin": 37.09999999999998,
           "actual_winner": "Squat",
           "ideal_winner": "Squat",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_02_squat_vs_in-purdytory.html"
+          "winner_changed": false
         },
         {
           "teamName": "Sigma Chi Whiteout",
@@ -19102,8 +19862,7 @@
           "ideal_margin": -34.699999999999974,
           "actual_winner": "Bend & Snap Count",
           "ideal_winner": "Bend & Snap Count",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_01_bend-snap-count_vs_sigma-chi-whiteout.html"
+          "winner_changed": false
         },
         {
           "teamName": "Love(land) Hurts",
@@ -19116,8 +19875,7 @@
           "ideal_margin": -34.79999999999998,
           "actual_winner": "ZSzizzle",
           "ideal_winner": "ZSzizzle",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_03_zszizzle_vs_love-land-hurts.html"
+          "winner_changed": false
         },
         {
           "teamName": "Pat Pidgeon",
@@ -19130,8 +19888,7 @@
           "ideal_margin": 43.56666666666666,
           "actual_winner": "Pat Pidgeon",
           "ideal_winner": "Pat Pidgeon",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_04_pat-pidgeon_vs_two-buck-luck.html"
+          "winner_changed": false
         },
         {
           "teamName": "Millan\u2019s Last Supper",
@@ -19144,8 +19901,7 @@
           "ideal_margin": 73.90000000000013,
           "actual_winner": "Millan\u2019s Last Supper",
           "ideal_winner": "Millan\u2019s Last Supper",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_05_millan-s-last-supper_vs_nacua-cola.html"
+          "winner_changed": false
         }
       ],
       "ideal_outcome_changes": [],
@@ -19161,8 +19917,7 @@
           "ideal_margin": 37.09999999999998,
           "actual_winner": "Squat",
           "ideal_winner": "Squat",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_02_squat_vs_in-purdytory.html"
+          "winner_changed": false
         },
         {
           "teamName": "Sigma Chi Whiteout",
@@ -19175,8 +19930,7 @@
           "ideal_margin": -34.699999999999974,
           "actual_winner": "Bend & Snap Count",
           "ideal_winner": "Bend & Snap Count",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_01_bend-snap-count_vs_sigma-chi-whiteout.html"
+          "winner_changed": false
         },
         {
           "teamName": "Love(land) Hurts",
@@ -19189,8 +19943,7 @@
           "ideal_margin": -34.79999999999998,
           "actual_winner": "ZSzizzle",
           "ideal_winner": "ZSzizzle",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_03_zszizzle_vs_love-land-hurts.html"
+          "winner_changed": false
         },
         {
           "teamName": "Pat Pidgeon",
@@ -19203,8 +19956,7 @@
           "ideal_margin": 43.56666666666666,
           "actual_winner": "Pat Pidgeon",
           "ideal_winner": "Pat Pidgeon",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_04_pat-pidgeon_vs_two-buck-luck.html"
+          "winner_changed": false
         },
         {
           "teamName": "Millan\u2019s Last Supper",
@@ -19217,8 +19969,7 @@
           "ideal_margin": 73.90000000000013,
           "actual_winner": "Millan\u2019s Last Supper",
           "ideal_winner": "Millan\u2019s Last Supper",
-          "winner_changed": false,
-          "matchup_report_href": "matchups_week_03/matchup_05_millan-s-last-supper_vs_nacua-cola.html"
+          "winner_changed": false
         }
       ]
     },

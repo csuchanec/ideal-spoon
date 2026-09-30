@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 2,
-    "generated_at": "2026-09-29T22:04:39.275199",
+    "generated_at": "2026-09-29T22:45:06.306631",
     "page_title": "Squat vs ZSzizzle matchup report",
     "matchup_id": "week-02-squat-vs-zszizzle",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -49,13 +49,13 @@
       "manager_display": "Yarp",
       "actual_score": 100.29999999999988,
       "ideal_score": 122.63333333333321,
-      "manager_grade_pct": 79.77787034302526,
-      "manager_grade_letter": "C+",
+      "manager_grade_pct": 66.72759807918818,
+      "manager_grade_letter": "D+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 79.77787034302526,
-          "letter": "C+",
-          "label": "reasonable but costly"
+          "score_pct": 66.72759807918818,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 64.65118639998349,
@@ -88,18 +88,24 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 78.21935308507746,
+                "score_pct": 81.7885294917097,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 51.666666666666664,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 58.33333333333333,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -17.67666666666669,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 68.8939793349551,
-                "weight_pct": 30.0,
+                "weight_pct": 0.0,
                 "available": true
               }
             },
@@ -185,13 +191,13 @@
             }
           }
         },
-        "summary": "Squat graded C+ this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions.",
+        "summary": "Squat graded D+ this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 62.34645373414755,
-              "weekly_letter": "D",
+              "weekly_score_pct": 59.136918741193085,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -204,13 +210,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 79.77787034302526,
-              "weekly_letter": "C+",
-              "weekly_delta_points": 17.431416608877704,
+              "weekly_score_pct": 66.72759807918818,
+              "weekly_letter": "D+",
+              "weekly_delta_points": 7.590679337995098,
               "cumulative_score_pct": 64.65118639998349,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 9.197604906324464,
-              "trend_delta_points": 17.431416608877704,
+              "trend_delta_points": 7.590679337995098,
               "trend_label": "Trending Up",
               "score": 100.29999999999988,
               "opponent_score": null,
@@ -220,7 +226,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 17.431416608877704,
+            "trend_delta_points": 7.590679337995098,
             "current_score_pct": 64.65118639998349,
             "current_letter": "D+",
             "previous_score_pct": 55.45358149365902,
@@ -231,18 +237,18 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.197604906324464,
-          "trend_delta_points": 17.431416608877704,
+          "trend_delta_points": 7.590679337995098,
           "current_score_pct": 64.65118639998349,
           "previous_score_pct": 55.45358149365902
         }
       },
-      "process_score_pct": 79.77787034302526,
-      "process_score_letter": "C+",
+      "process_score_pct": 66.72759807918818,
+      "process_score_letter": "D+",
       "process_scores": {
         "weekly": {
-          "score_pct": 79.77787034302526,
-          "letter": "C+",
-          "label": "reasonable but costly"
+          "score_pct": 66.72759807918818,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 64.65118639998349,
@@ -275,18 +281,24 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 78.21935308507746,
+                "score_pct": 81.7885294917097,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 51.666666666666664,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 58.33333333333333,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -17.67666666666669,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 68.8939793349551,
-                "weight_pct": 30.0,
+                "weight_pct": 0.0,
                 "available": true
               }
             },
@@ -372,13 +384,13 @@
             }
           }
         },
-        "summary": "Squat graded C+ this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions.",
+        "summary": "Squat graded D+ this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 62.34645373414755,
-              "weekly_letter": "D",
+              "weekly_score_pct": 59.136918741193085,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -391,13 +403,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 79.77787034302526,
-              "weekly_letter": "C+",
-              "weekly_delta_points": 17.431416608877704,
+              "weekly_score_pct": 66.72759807918818,
+              "weekly_letter": "D+",
+              "weekly_delta_points": 7.590679337995098,
               "cumulative_score_pct": 64.65118639998349,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 9.197604906324464,
-              "trend_delta_points": 17.431416608877704,
+              "trend_delta_points": 7.590679337995098,
               "trend_label": "Trending Up",
               "score": 100.29999999999988,
               "opponent_score": null,
@@ -407,7 +419,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 17.431416608877704,
+            "trend_delta_points": 7.590679337995098,
             "current_score_pct": 64.65118639998349,
             "current_letter": "D+",
             "previous_score_pct": 55.45358149365902,
@@ -418,7 +430,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.197604906324464,
-          "trend_delta_points": 17.431416608877704,
+          "trend_delta_points": 7.590679337995098,
           "current_score_pct": 64.65118639998349,
           "previous_score_pct": 55.45358149365902
         }
@@ -1274,13 +1286,13 @@
       "manager_display": "Mike",
       "actual_score": 77.33333333333326,
       "ideal_score": 105.63333333333325,
-      "manager_grade_pct": 62.28829283685704,
-      "manager_grade_letter": "D",
+      "manager_grade_pct": 59.104607131587244,
+      "manager_grade_letter": "D-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 62.28829283685704,
-          "letter": "D",
-          "label": "bad decisions"
+          "score_pct": 59.104607131587244,
+          "letter": "D-",
+          "label": "failing process"
         },
         "season": {
           "score_pct": 68.37297993390085,
@@ -1311,19 +1323,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 62.77658567371408,
+                "score_pct": 73.20921426317449,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -40.64333333333332,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1408,13 +1426,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "summary": "ZSzizzle graded D- this week and C- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.0569935691318,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 89.00388531618434,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -1427,13 +1445,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 62.28829283685704,
-              "weekly_letter": "D",
-              "weekly_delta_points": -19.768700732274766,
+              "weekly_score_pct": 59.104607131587244,
+              "weekly_letter": "D-",
+              "weekly_delta_points": -29.899278184597094,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -19.768700732274766,
+              "trend_delta_points": -29.899278184597094,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -1443,7 +1461,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -19.768700732274766,
+            "trend_delta_points": -29.899278184597094,
             "current_score_pct": 68.37297993390085,
             "current_letter": "C-",
             "previous_score_pct": 87.86613076098605,
@@ -1454,18 +1472,18 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -19.493150827085202,
-          "trend_delta_points": -19.768700732274766,
+          "trend_delta_points": -29.899278184597094,
           "current_score_pct": 68.37297993390085,
           "previous_score_pct": 87.86613076098605
         }
       },
-      "process_score_pct": 62.28829283685704,
-      "process_score_letter": "D",
+      "process_score_pct": 59.104607131587244,
+      "process_score_letter": "D-",
       "process_scores": {
         "weekly": {
-          "score_pct": 62.28829283685704,
-          "letter": "D",
-          "label": "bad decisions"
+          "score_pct": 59.104607131587244,
+          "letter": "D-",
+          "label": "failing process"
         },
         "season": {
           "score_pct": 68.37297993390085,
@@ -1496,19 +1514,25 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 62.77658567371408,
+                "score_pct": 73.20921426317449,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -40.64333333333332,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1593,13 +1617,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "summary": "ZSzizzle graded D- this week and C- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.0569935691318,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 89.00388531618434,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -1612,13 +1636,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 62.28829283685704,
-              "weekly_letter": "D",
-              "weekly_delta_points": -19.768700732274766,
+              "weekly_score_pct": 59.104607131587244,
+              "weekly_letter": "D-",
+              "weekly_delta_points": -29.899278184597094,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -19.768700732274766,
+              "trend_delta_points": -29.899278184597094,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -1628,7 +1652,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -19.768700732274766,
+            "trend_delta_points": -29.899278184597094,
             "current_score_pct": 68.37297993390085,
             "current_letter": "C-",
             "previous_score_pct": 87.86613076098605,
@@ -1639,7 +1663,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -19.493150827085202,
-          "trend_delta_points": -19.768700732274766,
+          "trend_delta_points": -29.899278184597094,
           "current_score_pct": 68.37297993390085,
           "previous_score_pct": 87.86613076098605
         }

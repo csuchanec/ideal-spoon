@@ -204,6 +204,15 @@
             white-space: nowrap;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
         }
+        .contribution-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+            gap: 4px 12px;
+            margin-top: 8px;
+            color: var(--text-muted);
+            font-size: 11px;
+        }
+        .contribution-legend strong { color: var(--text); }
         .meta-chip strong {
             color: var(--text);
             margin-right: 6px;

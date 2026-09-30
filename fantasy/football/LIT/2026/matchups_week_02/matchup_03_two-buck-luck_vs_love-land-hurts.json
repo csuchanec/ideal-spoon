@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 2,
-    "generated_at": "2026-09-29T22:04:39.329225",
+    "generated_at": "2026-09-29T22:45:06.357505",
     "page_title": "Two Buck Luck vs Love(land) Hurts matchup report",
     "matchup_id": "week-02-two-buck-luck-vs-love-land-hurts",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
@@ -49,13 +49,13 @@
       "manager_display": "Dave F.",
       "actual_score": 131.86666666666656,
       "ideal_score": 136.36666666666656,
-      "manager_grade_pct": 92.04068589640355,
-      "manager_grade_letter": "A-",
+      "manager_grade_pct": 98.35003666585186,
+      "manager_grade_letter": "A+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 92.04068589640355,
-          "letter": "A-",
-          "label": "well managed"
+          "score_pct": 98.35003666585186,
+          "letter": "A+",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 81.15913268871154,
@@ -86,19 +86,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 96.70007333170373,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 13.889999999999986,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 90.13561965467846,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -183,12 +189,12 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "Two Buck Luck graded A+ this week and B- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 76.69627959413756,
+              "weekly_score_pct": 78.67090797967208,
               "weekly_letter": "C+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
@@ -202,13 +208,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 92.04068589640355,
-              "weekly_letter": "A-",
-              "weekly_delta_points": 15.34440630226598,
+              "weekly_score_pct": 98.35003666585186,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 19.67912868617978,
               "cumulative_score_pct": 81.15913268871154,
               "cumulative_letter": "B-",
               "cumulative_delta_points": 7.106091042583657,
-              "trend_delta_points": 15.34440630226598,
+              "trend_delta_points": 19.67912868617978,
               "trend_label": "Trending Up",
               "score": 131.86666666666656,
               "opponent_score": null,
@@ -218,7 +224,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 15.34440630226598,
+            "trend_delta_points": 19.67912868617978,
             "current_score_pct": 81.15913268871154,
             "current_letter": "B-",
             "previous_score_pct": 74.05304164612788,
@@ -229,18 +235,18 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 7.106091042583657,
-          "trend_delta_points": 15.34440630226598,
+          "trend_delta_points": 19.67912868617978,
           "current_score_pct": 81.15913268871154,
           "previous_score_pct": 74.05304164612788
         }
       },
-      "process_score_pct": 92.04068589640355,
-      "process_score_letter": "A-",
+      "process_score_pct": 98.35003666585186,
+      "process_score_letter": "A+",
       "process_scores": {
         "weekly": {
-          "score_pct": 92.04068589640355,
-          "letter": "A-",
-          "label": "well managed"
+          "score_pct": 98.35003666585186,
+          "letter": "A+",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 81.15913268871154,
@@ -271,19 +277,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 100.0,
+                "score_pct": 96.70007333170373,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 100.0,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 13.889999999999986,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 90.13561965467846,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -368,12 +380,12 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "Two Buck Luck graded A+ this week and B- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 76.69627959413756,
+              "weekly_score_pct": 78.67090797967208,
               "weekly_letter": "C+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
@@ -387,13 +399,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 92.04068589640355,
-              "weekly_letter": "A-",
-              "weekly_delta_points": 15.34440630226598,
+              "weekly_score_pct": 98.35003666585186,
+              "weekly_letter": "A+",
+              "weekly_delta_points": 19.67912868617978,
               "cumulative_score_pct": 81.15913268871154,
               "cumulative_letter": "B-",
               "cumulative_delta_points": 7.106091042583657,
-              "trend_delta_points": 15.34440630226598,
+              "trend_delta_points": 19.67912868617978,
               "trend_label": "Trending Up",
               "score": 131.86666666666656,
               "opponent_score": null,
@@ -403,7 +415,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 15.34440630226598,
+            "trend_delta_points": 19.67912868617978,
             "current_score_pct": 81.15913268871154,
             "current_letter": "B-",
             "previous_score_pct": 74.05304164612788,
@@ -414,7 +426,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 7.106091042583657,
-          "trend_delta_points": 15.34440630226598,
+          "trend_delta_points": 19.67912868617978,
           "current_score_pct": 81.15913268871154,
           "previous_score_pct": 74.05304164612788
         }
@@ -1162,13 +1174,13 @@
       "manager_display": "Matt",
       "actual_score": 131.06666666666658,
       "ideal_score": 139.66666666666657,
-      "manager_grade_pct": 89.2582338902148,
-      "manager_grade_letter": "B+",
+      "manager_grade_pct": 94.83790771678599,
+      "manager_grade_letter": "A",
       "manager_grades": {
         "weekly": {
-          "score_pct": 89.2582338902148,
-          "letter": "B+",
-          "label": "well managed"
+          "score_pct": 94.83790771678599,
+          "letter": "A",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 73.7503460090069,
@@ -1199,19 +1211,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 99.9164677804296,
+                "score_pct": 93.84248210023867,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 95.83333333333333,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 91.66666666666666,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 13.090000000000003,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 81.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1296,12 +1314,12 @@
             }
           }
         },
-        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "Love(land) Hurts graded A this week and C for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.920607175712945,
+              "weekly_score_pct": 56.28922620872942,
               "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
@@ -1315,13 +1333,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 89.2582338902148,
-              "weekly_letter": "B+",
-              "weekly_delta_points": 29.33762671450185,
+              "weekly_score_pct": 94.83790771678599,
+              "weekly_letter": "A",
+              "weekly_delta_points": 38.548681508056575,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 29.33762671450185,
+              "trend_delta_points": 38.548681508056575,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -1331,7 +1349,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 29.33762671450185,
+            "trend_delta_points": 38.548681508056575,
             "current_score_pct": 73.7503460090069,
             "current_letter": "C",
             "previous_score_pct": 64.61647798304398,
@@ -1342,18 +1360,18 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.133868025962926,
-          "trend_delta_points": 29.33762671450185,
+          "trend_delta_points": 38.548681508056575,
           "current_score_pct": 73.7503460090069,
           "previous_score_pct": 64.61647798304398
         }
       },
-      "process_score_pct": 89.2582338902148,
-      "process_score_letter": "B+",
+      "process_score_pct": 94.83790771678599,
+      "process_score_letter": "A",
       "process_scores": {
         "weekly": {
-          "score_pct": 89.2582338902148,
-          "letter": "B+",
-          "label": "well managed"
+          "score_pct": 94.83790771678599,
+          "letter": "A",
+          "label": "creative edge"
         },
         "season": {
           "score_pct": 73.7503460090069,
@@ -1384,19 +1402,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 99.9164677804296,
+                "score_pct": 93.84248210023867,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 95.83333333333333,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 91.66666666666666,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 13.090000000000003,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 81.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -1481,12 +1505,12 @@
             }
           }
         },
-        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "summary": "Love(land) Hurts graded A this week and C for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.920607175712945,
+              "weekly_score_pct": 56.28922620872942,
               "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
@@ -1500,13 +1524,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 89.2582338902148,
-              "weekly_letter": "B+",
-              "weekly_delta_points": 29.33762671450185,
+              "weekly_score_pct": 94.83790771678599,
+              "weekly_letter": "A",
+              "weekly_delta_points": 38.548681508056575,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 29.33762671450185,
+              "trend_delta_points": 38.548681508056575,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -1516,7 +1540,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 29.33762671450185,
+            "trend_delta_points": 38.548681508056575,
             "current_score_pct": 73.7503460090069,
             "current_letter": "C",
             "previous_score_pct": 64.61647798304398,
@@ -1527,7 +1551,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.133868025962926,
-          "trend_delta_points": 29.33762671450185,
+          "trend_delta_points": 38.548681508056575,
           "current_score_pct": 73.7503460090069,
           "previous_score_pct": 64.61647798304398
         }
@@ -3189,6 +3213,11 @@
     {
       "title": "Big Brain",
       "team_name": "Two Buck Luck",
+      "detail": "Weekly process score cleared the sharp-management threshold."
+    },
+    {
+      "title": "Big Brain",
+      "team_name": "Love(land) Hurts",
       "detail": "Weekly process score cleared the sharp-management threshold."
     },
     {

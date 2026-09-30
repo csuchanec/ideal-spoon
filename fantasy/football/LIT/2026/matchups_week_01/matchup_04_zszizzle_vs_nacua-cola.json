@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-29T22:04:08.348677",
+    "generated_at": "2026-09-29T22:44:35.724670",
     "page_title": "ZSzizzle vs Nacua-Cola matchup report",
     "matchup_id": "week-01-zszizzle-vs-nacua-cola",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -49,13 +49,13 @@
       "manager_display": "Mike",
       "actual_score": 136.2999999999999,
       "ideal_score": 165.8666666666666,
-      "manager_grade_pct": 82.0569935691318,
-      "manager_grade_letter": "B-",
+      "manager_grade_pct": 89.00388531618434,
+      "manager_grade_letter": "B+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 82.0569935691318,
-          "letter": "B-",
-          "label": "reasonable but costly"
+          "score_pct": 89.00388531618434,
+          "letter": "B+",
+          "label": "well managed"
         },
         "season": {
           "score_pct": 87.86613076098605,
@@ -86,19 +86,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 78.91398713826362,
+                "score_pct": 82.17443729903535,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 95.83333333333333,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 91.66666666666666,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 12.416666666666643,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 92.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -183,13 +189,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded B- this week and B+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as well managed.",
+        "summary": "ZSzizzle graded B+ this week and B+ for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.0569935691318,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 89.00388531618434,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -220,13 +226,13 @@
           "previous_score_pct": null
         }
       },
-      "process_score_pct": 82.0569935691318,
-      "process_score_letter": "B-",
+      "process_score_pct": 89.00388531618434,
+      "process_score_letter": "B+",
       "process_scores": {
         "weekly": {
-          "score_pct": 82.0569935691318,
-          "letter": "B-",
-          "label": "reasonable but costly"
+          "score_pct": 89.00388531618434,
+          "letter": "B+",
+          "label": "well managed"
         },
         "season": {
           "score_pct": 87.86613076098605,
@@ -257,19 +263,25 @@
             "beat_league_median": true,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 78.91398713826362,
+                "score_pct": 82.17443729903535,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 95.83333333333333,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 91.66666666666666,
+                  "scoring_pct": 100.0
+                },
+                "raw_value": 12.416666666666643,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 92.0,
-                "weight_pct": 30.0,
-                "available": true
+                "weight_pct": 0.0,
+                "available": false
               }
             },
             "luck": {
@@ -354,13 +366,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded B- this week and B+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as well managed.",
+        "summary": "ZSzizzle graded B+ this week and B+ for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 82.0569935691318,
-              "weekly_letter": "B-",
+              "weekly_score_pct": 89.00388531618434,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -1220,13 +1232,13 @@
       "manager_display": "Craig",
       "actual_score": 77.6666666666666,
       "ideal_score": 108.7666666666666,
-      "manager_grade_pct": 60.666012871590546,
-      "manager_grade_letter": "D",
+      "manager_grade_pct": 58.20334048421697,
+      "manager_grade_letter": "D-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 60.666012871590546,
-          "letter": "D",
-          "label": "bad decisions"
+          "score_pct": 58.20334048421697,
+          "letter": "D-",
+          "label": "failing process"
         },
         "season": {
           "score_pct": 54.781405148636225,
@@ -1259,18 +1271,24 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 59.5320257431811,
+                "score_pct": 71.40668096843395,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -46.216666666666654,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
+                "weight_pct": 0.0,
                 "available": true
               }
             },
@@ -1356,13 +1374,13 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded D this week and F for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "summary": "Nacua-Cola graded D- this week and F for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 60.666012871590546,
-              "weekly_letter": "D",
+              "weekly_score_pct": 58.20334048421697,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 54.781405148636225,
               "cumulative_letter": "F",
@@ -1393,13 +1411,13 @@
           "previous_score_pct": null
         }
       },
-      "process_score_pct": 60.666012871590546,
-      "process_score_letter": "D",
+      "process_score_pct": 58.20334048421697,
+      "process_score_letter": "D-",
       "process_scores": {
         "weekly": {
-          "score_pct": 60.666012871590546,
-          "letter": "D",
-          "label": "bad decisions"
+          "score_pct": 58.20334048421697,
+          "letter": "D-",
+          "label": "failing process"
         },
         "season": {
           "score_pct": 54.781405148636225,
@@ -1432,18 +1450,24 @@
             "beat_league_median": false,
             "component_scores": {
               "lineup_decisions": {
-                "score_pct": 59.5320257431811,
+                "score_pct": 71.40668096843395,
                 "weight_pct": 50.0,
                 "available": true
               },
+              "competitive_output": {
+                "score_pct": 45.0,
+                "weight_pct": 50.0,
+                "available": true,
+                "subscores": {
+                  "position_pct": 45.0,
+                  "scoring_pct": 45.0
+                },
+                "raw_value": -46.216666666666654,
+                "raw_unit": "points versus weekly league average"
+              },
               "transaction_deployment": {
                 "score_pct": 75.0,
-                "weight_pct": 20.0,
-                "available": true
-              },
-              "competitive_output": {
-                "score_pct": 53.0,
-                "weight_pct": 30.0,
+                "weight_pct": 0.0,
                 "available": true
               }
             },
@@ -1529,13 +1553,13 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded D this week and F for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "summary": "Nacua-Cola graded D- this week and F for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 60.666012871590546,
-              "weekly_letter": "D",
+              "weekly_score_pct": 58.20334048421697,
+              "weekly_letter": "D-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 54.781405148636225,
               "cumulative_letter": "F",
