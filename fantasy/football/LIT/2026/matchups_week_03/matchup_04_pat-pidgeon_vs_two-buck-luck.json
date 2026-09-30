@@ -1,0 +1,3787 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2026,
+    "week": 3,
+    "generated_at": "2026-09-29T22:05:11.354330",
+    "page_title": "Pat Pidgeon vs Two Buck Luck matchup report",
+    "matchup_id": "week-03-pat-pidgeon-vs-two-buck-luck",
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_03"
+  },
+  "matchup": {
+    "matchup_id": "week-03-pat-pidgeon-vs-two-buck-luck",
+    "team_a_name": "Pat Pidgeon",
+    "team_b_name": "Two Buck Luck",
+    "team_a_score": 167.87,
+    "team_b_score": 147.9,
+    "actual_margin": 19.97,
+    "final_margin": 19.97,
+    "winner_team_name": "Pat Pidgeon",
+    "result_text": "Pat Pidgeon by 20.0",
+    "margin_text": "Pat Pidgeon 167.9 to 147.9",
+    "ideal_margin": 41.60000000000002,
+    "ideal_winner": "Pat Pidgeon",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 138.69,
+    "team_b_projected_score": 126.7,
+    "team_a_points_over_projected": 29.180000000000007,
+    "team_b_points_over_projected": 21.200000000000003,
+    "league_average_score": 127.03000000000002,
+    "league_median_score": 130.865,
+    "team_a_weekly_rank": 2,
+    "team_b_weekly_rank": 3,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": true
+  },
+  "summary": {
+    "decision_summary": "Pat Pidgeon won by 20.0. Pat Pidgeon left 24.3 lineup points on the table, while Two Buck Luck left 2.7.",
+    "historical_summary": "Pat Pidgeon is 16-19 against Two Buck Luck across 35 meetings between these managers.",
+    "net_ideal_swing": 21.633333333333326,
+    "ideal_summary": "Ideal lineups still favor Pat Pidgeon",
+    "winner_reason": "Pat Pidgeon won by 20.0, led by a 19.4-point edge at WR. The leading starters were Jahmyr Gibbs (45.4) and Jaxon Smith-Njigba (34.3).",
+    "loser_reason": "Two Buck Luck could not match the opponent's WR production, losing that position battle by 19.4 points. 49ers scored 1.0. A best legal lineup added 2.7, still short of the 20.0-point margin."
+  },
+  "teams": [
+    {
+      "team_name": "Pat Pidgeon",
+      "manager_display": "Jason P.",
+      "actual_score": 167.8666666666666,
+      "ideal_score": 192.1999999999999,
+      "manager_grade_pct": 87.64886090063857,
+      "manager_grade_letter": "B+",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 87.64886090063857,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 94.0051904090268,
+          "letter": "A",
+          "label": "creative edge",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 87.3395768296913,
+            "decision_grade_pct": 84.34451283339615,
+            "roster_missed_points": 24.333333333333314,
+            "free_agent_missed_points": 19.499999999999993,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": -11.599999999999994,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": 44.902999999999906,
+            "weekly_rank": 2,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 88.21123829344434,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 95.14413917972132,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.8227777777777777,
+              "luck_win_credit": 0.17722222222222228,
+              "all_play_win_pct": 88.88888888888889,
+              "dominant_win": true,
+              "victory_margin_pct": 15.720695898606627,
+              "weekly_score_rank": 2,
+              "league_size": 10,
+              "score_vs_winning_baseline": 20.47,
+              "opponent_score_vs_week_average": 20.86999999999999,
+              "opponent_lineup_miss_points": 2.699999999999875,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 538.3999999999997,
+            "season_ideal_points": 590.833333333333,
+            "season_lineup_efficiency_pct": 91.12552891396334,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 94.0051904090268,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 95.025952045134,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 91.12552891396334,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 196.94444444444434,
+                "raw_unit": "ideal points per week",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 100.0,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 96.29629629629629,
+                "raw_unit": "all-play win rate",
+                "league_rank": 1,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 96.29629629629629,
+              "win_pct": 100.0,
+              "dominant_win_rate": 100.0,
+              "victory_margin_pct": 36.856039969594555
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "declining",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Pat Pidgeon graded B+ this week and A for the season-to-date (developing). Weekly management reads as well managed; season management reads as creative edge.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 95.0,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 186.53333333333327,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.11121076233184,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -1.9887892376681577,
+              "cumulative_score_pct": 94.66232962622293,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": -0.33767037377707254,
+              "trend_delta_points": -1.9887892376681577,
+              "trend_label": "Trending Down",
+              "score": 183.9999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 87.64886090063857,
+              "weekly_letter": "B+",
+              "weekly_delta_points": -4.462349861693269,
+              "cumulative_score_pct": 94.0051904090268,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": -0.6571392171961321,
+              "trend_delta_points": -4.462349861693269,
+              "trend_label": "Trending Down",
+              "score": 167.8666666666666,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -4.462349861693269,
+            "current_score_pct": 94.0051904090268,
+            "current_letter": "A",
+            "previous_score_pct": 94.66232962622293,
+            "delta_points": -0.6571392171961321,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -0.6571392171961321,
+          "trend_delta_points": -4.462349861693269,
+          "current_score_pct": 94.0051904090268,
+          "previous_score_pct": 94.66232962622293
+        }
+      },
+      "process_score_pct": 87.64886090063857,
+      "process_score_letter": "B+",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 87.64886090063857,
+          "letter": "B+",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 94.0051904090268,
+          "letter": "A",
+          "label": "creative edge",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 87.3395768296913,
+            "decision_grade_pct": 84.34451283339615,
+            "roster_missed_points": 24.333333333333314,
+            "free_agent_missed_points": 19.499999999999993,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": -11.599999999999994,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": 44.902999999999906,
+            "weekly_rank": 2,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 88.21123829344434,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 95.14413917972132,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.8227777777777777,
+              "luck_win_credit": 0.17722222222222228,
+              "all_play_win_pct": 88.88888888888889,
+              "dominant_win": true,
+              "victory_margin_pct": 15.720695898606627,
+              "weekly_score_rank": 2,
+              "league_size": 10,
+              "score_vs_winning_baseline": 20.47,
+              "opponent_score_vs_week_average": 20.86999999999999,
+              "opponent_lineup_miss_points": 2.699999999999875,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 538.3999999999997,
+            "season_ideal_points": 590.833333333333,
+            "season_lineup_efficiency_pct": 91.12552891396334,
+            "drop_regret_points_total": 0.0,
+            "trend": "declining",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 94.0051904090268,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 95.025952045134,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 91.12552891396334,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 196.94444444444434,
+                "raw_unit": "ideal points per week",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 100.0,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 96.29629629629629,
+                "raw_unit": "all-play win rate",
+                "league_rank": 1,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 96.29629629629629,
+              "win_pct": 100.0,
+              "dominant_win_rate": 100.0,
+              "victory_margin_pct": 36.856039969594555
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "declining",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Pat Pidgeon graded B+ this week and A for the season-to-date (developing). Weekly management reads as well managed; season management reads as creative edge.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 95.0,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 186.53333333333327,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.11121076233184,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -1.9887892376681577,
+              "cumulative_score_pct": 94.66232962622293,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": -0.33767037377707254,
+              "trend_delta_points": -1.9887892376681577,
+              "trend_label": "Trending Down",
+              "score": 183.9999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 87.64886090063857,
+              "weekly_letter": "B+",
+              "weekly_delta_points": -4.462349861693269,
+              "cumulative_score_pct": 94.0051904090268,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": -0.6571392171961321,
+              "trend_delta_points": -4.462349861693269,
+              "trend_label": "Trending Down",
+              "score": 167.8666666666666,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -4.462349861693269,
+            "current_score_pct": 94.0051904090268,
+            "current_letter": "A",
+            "previous_score_pct": 94.66232962622293,
+            "delta_points": -0.6571392171961321,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -0.6571392171961321,
+          "trend_delta_points": -4.462349861693269,
+          "current_score_pct": 94.0051904090268,
+          "previous_score_pct": 94.66232962622293
+        }
+      },
+      "season_context": {
+        "seed": 1,
+        "record": "3-0",
+        "points_for": 538.4,
+        "max_possible_wins": 15
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 24.333333333333314,
+          "roster_swap_upside_points": 24.333333333333314,
+          "waiver_upside_points": 19.499999999999993
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "20 rush, 99 yds \u00b7 7 rec, 65 yds \u00b7 2 rush TD \u00b7 1 rec TD \u00b7 7 rush 1D \u00b7 4 rec 1D",
+          "points": 45.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "10 rec, 128 yds \u00b7 2 rec TD \u00b7 9 rec 1D",
+          "points": 34.266666666666666
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "25/40, 276 pass yds \u00b7 1 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 19 yds \u00b7 1 rush 1D \u00b7 1 2PT",
+          "points": 20.09999999999991
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "9 rec, 107 yds \u00b7 7 rec 1D",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "19 rush, 82 yds \u00b7 4 rec, 28 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 15.000000000000002
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chargers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "24 PA \u00b7 4 sacks \u00b7 2 INT \u00b7 3 FR",
+          "points": 14.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Evan McPherson",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "2 FG (1 from 30-39, 1 from 50+) \u00b7 3 XP",
+          "points": 11.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "15 rush, 56 yds \u00b7 2 rush 1D",
+          "points": 7.6
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 53 yds \u00b7 2 rec TD \u00b7 5 rec 1D \u00b7 1 fumble lost",
+          "points": 20.3,
+          "differential": 17.5,
+          "starter_replaced": "Dalton Kincaid",
+          "starter_points": 2.8000000000000003
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "5 rec, 84 yds \u00b7 1 rush, 20 yds \u00b7 1 rush 1D \u00b7 5 rec 1D",
+          "points": 16.4,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "8 rush, 52 yds \u00b7 3 rec, -5 yds \u00b7 1 rec TD \u00b7 1 rush 1D \u00b7 1 rec 1D",
+          "points": 14.433333333333316,
+          "differential": 6.833333333333316,
+          "starter_replaced": "Omarion Hampton",
+          "starter_points": 7.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Josh Downs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "5 rec, 77 yds \u00b7 4 rec 1D",
+          "points": 11.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Malik Willis",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "20/36, 210 pass yds \u00b7 1 INT \u00b7 9 pass 1D \u00b7 9 rush, 56 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+          "points": 10.59999999999993,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 53 yds \u00b7 2 rec TD \u00b7 5 rec 1D \u00b7 1 fumble lost",
+          "points": 20.3,
+          "differential": 17.5,
+          "starter_replaced": "Dalton Kincaid",
+          "starter_points": 2.8000000000000003
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "5 rec, 84 yds \u00b7 1 rush, 20 yds \u00b7 1 rush 1D \u00b7 5 rec 1D",
+          "points": 16.4,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "8 rush, 52 yds \u00b7 3 rec, -5 yds \u00b7 1 rec TD \u00b7 1 rush 1D \u00b7 1 rec 1D",
+          "points": 14.433333333333316,
+          "differential": 6.833333333333316,
+          "starter_replaced": "Omarion Hampton",
+          "starter_points": 7.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Josh Downs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "5 rec, 77 yds \u00b7 4 rec 1D",
+          "points": 11.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Malik Willis",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "20/36, 210 pass yds \u00b7 1 INT \u00b7 9 pass 1D \u00b7 9 rush, 56 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+          "points": 10.59999999999993,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "TE",
+          "recommended_player": "Juwan Johnson",
+          "recommended_points": 20.3,
+          "benched_player": "Dalton Kincaid",
+          "benched_points": 2.8000000000000003,
+          "point_swing": 17.5,
+          "source": "ROSTER",
+          "reason": "At TE, swap in Juwan Johnson over Dalton Kincaid for an estimated +17.5 points this week.",
+          "confidence": 1.0,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Dalton Kincaid",
+            "points": 2.8000000000000003,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.4375,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Keaton Mitchell",
+          "recommended_points": 14.433333333333316,
+          "benched_player": "Omarion Hampton",
+          "benched_points": 7.6,
+          "point_swing": 6.833333333333316,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Keaton Mitchell over Omarion Hampton for an estimated +6.8 points this week.",
+          "confidence": 0.7708333333333328,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Omarion Hampton",
+            "points": 7.6,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.1708333333333329,
+            "capped_total": 0.7708333333333328
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Kalif Raymond",
+          "recommended_points": 19.499999999999993,
+          "benched_player": "Caleb Douglas",
+          "benched_points": 0.0,
+          "point_swing": 19.499999999999993,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Kalif Raymond instead of holding Caleb Douglas for an estimated +19.5 points this week.",
+          "confidence": 0.9874999999999998,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Caleb Douglas",
+            "points": 0.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.4874999999999998,
+            "capped_total": 0.9874999999999998
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "20 rush, 99 yds \u00b7 7 rec, 65 yds \u00b7 2 rush TD \u00b7 1 rec TD \u00b7 7 rush 1D \u00b7 4 rec 1D",
+          "points": 45.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "10 rec, 128 yds \u00b7 2 rec TD \u00b7 9 rec 1D",
+          "points": 34.266666666666666
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "25/40, 276 pass yds \u00b7 1 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 19 yds \u00b7 1 rush 1D \u00b7 1 2PT",
+          "points": 20.09999999999991
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "9 rec, 107 yds \u00b7 7 rec 1D",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "19 rush, 82 yds \u00b7 4 rec, 28 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 15.000000000000002
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chargers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "24 PA \u00b7 4 sacks \u00b7 2 INT \u00b7 3 FR",
+          "points": 14.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Evan McPherson",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "2 FG (1 from 30-39, 1 from 50+) \u00b7 3 XP",
+          "points": 11.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "15 rush, 56 yds \u00b7 2 rush 1D",
+          "points": 7.6
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "2 rec, 38 yds \u00b7 1 rec 1D \u00b7 1 fumble lost",
+          "points": 2.8000000000000003
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 53 yds \u00b7 2 rec TD \u00b7 5 rec 1D \u00b7 1 fumble lost",
+          "points": 20.3
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "5 rec, 84 yds \u00b7 1 rush, 20 yds \u00b7 1 rush 1D \u00b7 5 rec 1D",
+          "points": 16.4
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "8 rush, 52 yds \u00b7 3 rec, -5 yds \u00b7 1 rec TD \u00b7 1 rush 1D \u00b7 1 rec 1D",
+          "points": 14.433333333333316
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Josh Downs",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "5 rec, 77 yds \u00b7 4 rec 1D",
+          "points": 11.7
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Malik Willis",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "20/36, 210 pass yds \u00b7 1 INT \u00b7 9 pass 1D \u00b7 9 rush, 56 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+          "points": 10.59999999999993
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Caleb Douglas",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Miami Dolphins",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Nico Collins",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Houston Texans",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "ideal_all": [
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "20 rush, 99 yds \u00b7 7 rec, 65 yds \u00b7 2 rush TD \u00b7 1 rec TD \u00b7 7 rush 1D \u00b7 4 rec 1D",
+          "points": 45.4,
+          "actual_roster_position": "RB"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "10 rec, 128 yds \u00b7 2 rec TD \u00b7 9 rec 1D",
+          "points": 34.266666666666666,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "8 rec, 53 yds \u00b7 2 rec TD \u00b7 5 rec 1D \u00b7 1 fumble lost",
+          "points": 20.3,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "25/40, 276 pass yds \u00b7 1 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 19 yds \u00b7 1 rush 1D \u00b7 1 2PT",
+          "points": 20.09999999999991,
+          "actual_roster_position": "QB"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chris Olave",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New Orleans Saints",
+          "stat_line": "9 rec, 107 yds \u00b7 7 rec 1D",
+          "points": 17.700000000000003,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "5 rec, 84 yds \u00b7 1 rush, 20 yds \u00b7 1 rush 1D \u00b7 5 rec 1D",
+          "points": 16.4,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "19 rush, 82 yds \u00b7 4 rec, 28 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 15.000000000000002,
+          "actual_roster_position": "W/R/T"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Chargers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "24 PA \u00b7 4 sacks \u00b7 2 INT \u00b7 3 FR",
+          "points": 14.0,
+          "actual_roster_position": "DEF"
+        },
+        {
+          "team_name": "Pat Pidgeon",
+          "name": "Evan McPherson",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "2 FG (1 from 30-39, 1 from 50+) \u00b7 3 XP",
+          "points": 11.0,
+          "actual_roster_position": "K"
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "actual_team": "New Orleans Saints",
+          "points": 20.3,
+          "season_avg": 7.144444444444446,
+          "type": "BOOM",
+          "z_score": 3.793293921982266,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "actual_team": "Seattle Seahawks",
+          "points": 34.266666666666666,
+          "season_avg": 19.642105263157895,
+          "type": "BOOM",
+          "z_score": 1.5145585816810876,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "scoring_sources": {
+        "team_key": "470.l.932349.t.3",
+        "team_name": "Pat Pidgeon",
+        "total_points": 167.8666666666666,
+        "contribution_total": 167.86666666666656,
+        "reconciliation_delta": -2.842170943040401e-14,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 76.6,
+            "share_pct": 45.63145353455125
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 50.6,
+            "share_pct": 30.14297061159652
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 15.66666666666657,
+            "share_pct": 9.332803812549589
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 14.0,
+            "share_pct": 8.339952343129472
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 11.0,
+            "share_pct": 6.552819698173157
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 366.0,
+            "fantasy_points": 36.6,
+            "share_pct": 21.80301826846705
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 256.0,
+            "fantasy_points": 25.6,
+            "share_pct": 15.250198570293891
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 22.0,
+            "fantasy_points": 22.0,
+            "share_pct": 13.105639396346314
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 10.722795869737892
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 13.0,
+            "fantasy_points": 13.0,
+            "share_pct": 7.744241461477366
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 7.148530579825262
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 290.0,
+            "fantasy_points": 9.66666666666657,
+            "share_pct": 5.758538522636958
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 3.574265289912631
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 3.0,
+            "fantasy_points": 6.0,
+            "share_pct": 3.574265289912631
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 50+ Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 5.0,
+            "share_pct": 2.9785544082605258
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.3828435266084207
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.3828435266084207
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.7871326449563154
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.7871326449563154
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "2-Point Conversions",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.1914217633042103
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.1914217633042103
+          }
+        ]
+      },
+      "league_context": {
+        "weekly_rank": 2,
+        "league_size": 10,
+        "league_average_score": 127.03000000000002,
+        "league_median_score": 130.865,
+        "beat_league_median": true,
+        "all_play_record": "8-1",
+        "projected_score": 138.69,
+        "points_over_projected": 29.180000000000007,
+        "yahoo_matchup_grade": "A+"
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 167.8666666666666,
+        "optimal_lineup_points": 192.1999999999999,
+        "bench_points": 73.43333333333325,
+        "points_left_on_bench": 24.333333333333314,
+        "lowest_scoring_starter": {
+          "team_name": "Pat Pidgeon",
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Buffalo Bills",
+          "stat_line": "2 rec, 38 yds \u00b7 1 rec 1D \u00b7 1 fumble lost",
+          "points": 2.8000000000000003
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 77.77777777777779,
+        "best_swap": {
+          "position": "TE",
+          "recommended_player": "Juwan Johnson",
+          "recommended_points": 20.3,
+          "benched_player": "Dalton Kincaid",
+          "benched_points": 2.8000000000000003,
+          "point_swing": 17.5,
+          "source": "ROSTER",
+          "reason": "At TE, swap in Juwan Johnson over Dalton Kincaid for an estimated +17.5 points this week.",
+          "confidence": 1.0,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Dalton Kincaid",
+            "points": 2.8000000000000003,
+            "role": "STARTER"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.4375,
+            "capped_total": 1.0
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        "summary": "Pat Pidgeon started 7 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 59.43208895949162,
+        "top_2_share_pct": 47.458300238284366,
+        "volatility_std": 12.601764633545837,
+        "structural_integrity_pct": 40.56791104050838,
+        "fragility_score": 47.458300238284366,
+        "label": "Boom/Bust Build"
+      }
+    },
+    {
+      "team_name": "Two Buck Luck",
+      "manager_display": "Dave F.",
+      "actual_score": 147.8999999999999,
+      "ideal_score": 150.59999999999988,
+      "manager_grade_pct": 90.8,
+      "manager_grade_letter": "A-",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 90.8,
+          "letter": "A-",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 77.91724657078468,
+          "letter": "C+",
+          "label": "reasonable but costly",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 98.20717131474103,
+            "decision_grade_pct": 91.39596679506458,
+            "roster_missed_points": 2.6999999999999993,
+            "free_agent_missed_points": 32.066666666666656,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 13.088888888888874,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": 24.93633333333321,
+            "weekly_rank": 3,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 86.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.7155555555555555,
+              "luck_win_credit": -0.7155555555555555,
+              "all_play_win_pct": 77.77777777777779,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 3,
+              "league_size": 10,
+              "score_vs_winning_baseline": 0.5,
+              "opponent_score_vs_week_average": 40.83999999999999,
+              "opponent_lineup_miss_points": 24.3299999999999,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 404.43333333333305,
+            "season_ideal_points": 434.7999999999997,
+            "season_lineup_efficiency_pct": 93.0159460288255,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 77.91724657078468,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 98.4287028518859,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 93.0159460288255,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 82.4670172197352,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 144.93333333333325,
+                "raw_unit": "ideal points per week",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 45.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 5.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 81.75643341563914,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 66.66666666666666,
+                "raw_unit": "all-play win rate",
+                "league_rank": 4,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 66.66666666666666,
+              "win_pct": 33.33333333333333,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 0.6775928513954275
+            },
+            "move_impact": {
+              "post_draft_value_points": 5.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Two Buck Luck graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 76.69627959413756,
+              "weekly_letter": "C+",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 74.05304164612788,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 124.66666666666663,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.04068589640355,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 15.34440630226598,
+              "cumulative_score_pct": 81.15913268871154,
+              "cumulative_letter": "B-",
+              "cumulative_delta_points": 7.106091042583657,
+              "trend_delta_points": 15.34440630226598,
+              "trend_label": "Trending Up",
+              "score": 131.86666666666656,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 90.8,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -1.2406858964035479,
+              "cumulative_score_pct": 77.91724657078468,
+              "cumulative_letter": "C+",
+              "cumulative_delta_points": -3.241886117926853,
+              "trend_delta_points": -1.2406858964035479,
+              "trend_label": "Stable",
+              "score": 147.8999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Stable",
+            "trend_delta_points": -1.2406858964035479,
+            "current_score_pct": 77.91724657078468,
+            "current_letter": "C+",
+            "previous_score_pct": 81.15913268871154,
+            "delta_points": -3.241886117926853,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Stable",
+          "delta_points": -3.241886117926853,
+          "trend_delta_points": -1.2406858964035479,
+          "current_score_pct": 77.91724657078468,
+          "previous_score_pct": 81.15913268871154
+        }
+      },
+      "process_score_pct": 90.8,
+      "process_score_letter": "A-",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 90.8,
+          "letter": "A-",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 77.91724657078468,
+          "letter": "C+",
+          "label": "reasonable but costly",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 98.20717131474103,
+            "decision_grade_pct": 91.39596679506458,
+            "roster_missed_points": 2.6999999999999993,
+            "free_agent_missed_points": 32.066666666666656,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 13.088888888888874,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": 24.93633333333321,
+            "weekly_rank": 3,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 86.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.7155555555555555,
+              "luck_win_credit": -0.7155555555555555,
+              "all_play_win_pct": 77.77777777777779,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 3,
+              "league_size": 10,
+              "score_vs_winning_baseline": 0.5,
+              "opponent_score_vs_week_average": 40.83999999999999,
+              "opponent_lineup_miss_points": 24.3299999999999,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 404.43333333333305,
+            "season_ideal_points": 434.7999999999997,
+            "season_lineup_efficiency_pct": 93.0159460288255,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 77.91724657078468,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 98.4287028518859,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 93.0159460288255,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 82.4670172197352,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 144.93333333333325,
+                "raw_unit": "ideal points per week",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 45.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 5.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 3,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 81.75643341563914,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 66.66666666666666,
+                "raw_unit": "all-play win rate",
+                "league_rank": 4,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 66.66666666666666,
+              "win_pct": 33.33333333333333,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 0.6775928513954275
+            },
+            "move_impact": {
+              "post_draft_value_points": 5.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Two Buck Luck graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 76.69627959413756,
+              "weekly_letter": "C+",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 74.05304164612788,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 124.66666666666663,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.04068589640355,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 15.34440630226598,
+              "cumulative_score_pct": 81.15913268871154,
+              "cumulative_letter": "B-",
+              "cumulative_delta_points": 7.106091042583657,
+              "trend_delta_points": 15.34440630226598,
+              "trend_label": "Trending Up",
+              "score": 131.86666666666656,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 90.8,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -1.2406858964035479,
+              "cumulative_score_pct": 77.91724657078468,
+              "cumulative_letter": "C+",
+              "cumulative_delta_points": -3.241886117926853,
+              "trend_delta_points": -1.2406858964035479,
+              "trend_label": "Stable",
+              "score": 147.8999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Stable",
+            "trend_delta_points": -1.2406858964035479,
+            "current_score_pct": 77.91724657078468,
+            "current_letter": "C+",
+            "previous_score_pct": 81.15913268871154,
+            "delta_points": -3.241886117926853,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Stable",
+          "delta_points": -3.241886117926853,
+          "trend_delta_points": -1.2406858964035479,
+          "current_score_pct": 77.91724657078468,
+          "previous_score_pct": 81.15913268871154
+        }
+      },
+      "season_context": {
+        "seed": 6,
+        "record": "1-2",
+        "points_for": 404.44000000000005,
+        "max_possible_wins": 13
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 2.6999999999999886,
+          "roster_swap_upside_points": 2.6999999999999993,
+          "waiver_upside_points": 32.066666666666656
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "15/27, 297 pass yds \u00b7 4 pass TD \u00b7 14 pass 1D \u00b7 2 rush, 34 yds \u00b7 1 rush 1D",
+          "points": 38.2999999999999
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "19 rush, 98 yds \u00b7 2 rec, 5 yds \u00b7 1 rush TD \u00b7 7 rush 1D \u00b7 1 rec 1D",
+          "points": 24.3
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "15 rush, 88 yds \u00b7 6 rec, 70 yds \u00b7 4 rush 1D \u00b7 4 rec 1D",
+          "points": 23.8
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New York Jets",
+          "stat_line": "10 rec, 107 yds \u00b7 1 rec TD \u00b7 6 rec 1D",
+          "points": 22.700000000000003
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "3 FG (2 from 30-39, 1 from 40-49) \u00b7 3 XP",
+          "points": 13.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chase Brown",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "13 rush, 61 yds \u00b7 2 rec, 8 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 10.9
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "4 rec, 19 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+          "points": 9.9
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Houston Texans",
+          "stat_line": "3 rec, 30 yds \u00b7 1 rec 1D",
+          "points": 4.0
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "17/34, 186 pass yds \u00b7 2 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 7 yds \u00b7 1 rush TD \u00b7 2 rush 1D \u00b7 2 2PT",
+          "points": 28.899999999999935,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "17 rush, 74 yds \u00b7 4 rec, 22 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 13.6,
+          "differential": 2.6999999999999993,
+          "starter_replaced": "Chase Brown",
+          "starter_points": 10.9
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "17 rush, 49 yds \u00b7 1 rec, 4 yds \u00b7 2 rush 1D",
+          "points": 7.300000000000001,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New York Giants",
+          "stat_line": "5 rec, 26 yds \u00b7 2 rec 1D",
+          "points": 4.6,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kaelon Black",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "4 rush, 17 yds \u00b7 1 rush 1D",
+          "points": 2.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "17/34, 186 pass yds \u00b7 2 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 7 yds \u00b7 1 rush TD \u00b7 2 rush 1D \u00b7 2 2PT",
+          "points": 28.899999999999935,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "17 rush, 74 yds \u00b7 4 rec, 22 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 13.6,
+          "differential": 2.6999999999999993,
+          "starter_replaced": "Chase Brown",
+          "starter_points": 10.9
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "17 rush, 49 yds \u00b7 1 rec, 4 yds \u00b7 2 rush 1D",
+          "points": 7.300000000000001,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New York Giants",
+          "stat_line": "5 rec, 26 yds \u00b7 2 rec 1D",
+          "points": 4.6,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kaelon Black",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "4 rush, 17 yds \u00b7 1 rush 1D",
+          "points": 2.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Tony Pollard",
+          "recommended_points": 13.6,
+          "benched_player": "Chase Brown",
+          "benched_points": 10.9,
+          "point_swing": 2.6999999999999993,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Tony Pollard over Chase Brown for an estimated +2.7 points this week.",
+          "confidence": 0.6675,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Chase Brown",
+            "points": 10.9,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.06749999999999998,
+            "capped_total": 0.6675
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Ollie Gordon II",
+          "recommended_points": 17.166666666666664,
+          "benched_player": "Jordan Mason",
+          "benched_points": 0.0,
+          "point_swing": 17.166666666666664,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Ollie Gordon II instead of holding Jordan Mason for an estimated +17.2 points this week.",
+          "confidence": 0.9291666666666666,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Jordan Mason",
+            "points": 0.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.4291666666666666,
+            "capped_total": 0.9291666666666666
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "WR",
+          "recommended_player": "Kalif Raymond",
+          "recommended_points": 19.499999999999993,
+          "benched_player": "Malik Nabers",
+          "benched_points": 4.6,
+          "point_swing": 14.899999999999993,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Kalif Raymond instead of holding Malik Nabers for an estimated +14.9 points this week.",
+          "confidence": 0.8724999999999998,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Malik Nabers",
+            "points": 4.6,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.37249999999999983,
+            "capped_total": 0.8724999999999998
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "15/27, 297 pass yds \u00b7 4 pass TD \u00b7 14 pass 1D \u00b7 2 rush, 34 yds \u00b7 1 rush 1D",
+          "points": 38.2999999999999
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "19 rush, 98 yds \u00b7 2 rec, 5 yds \u00b7 1 rush TD \u00b7 7 rush 1D \u00b7 1 rec 1D",
+          "points": 24.3
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "15 rush, 88 yds \u00b7 6 rec, 70 yds \u00b7 4 rush 1D \u00b7 4 rec 1D",
+          "points": 23.8
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New York Jets",
+          "stat_line": "10 rec, 107 yds \u00b7 1 rec TD \u00b7 6 rec 1D",
+          "points": 22.700000000000003
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "3 FG (2 from 30-39, 1 from 40-49) \u00b7 3 XP",
+          "points": 13.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chase Brown",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Cincinnati Bengals",
+          "stat_line": "13 rush, 61 yds \u00b7 2 rec, 8 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 10.9
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "4 rec, 19 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+          "points": 9.9
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Houston Texans",
+          "stat_line": "3 rec, 30 yds \u00b7 1 rec 1D",
+          "points": 4.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "49ers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "30 PA \u00b7 2 sacks",
+          "points": 1.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Bo Nix",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "17/34, 186 pass yds \u00b7 2 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 7 yds \u00b7 1 rush TD \u00b7 2 rush 1D \u00b7 2 2PT",
+          "points": 28.899999999999935
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "17 rush, 74 yds \u00b7 4 rec, 22 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 13.6
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Denver Broncos",
+          "stat_line": "17 rush, 49 yds \u00b7 1 rec, 4 yds \u00b7 2 rush 1D",
+          "points": 7.300000000000001
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New York Giants",
+          "stat_line": "5 rec, 26 yds \u00b7 2 rec 1D",
+          "points": 4.6
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kaelon Black",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "4 rush, 17 yds \u00b7 1 rush 1D",
+          "points": 2.7
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Jordan Mason",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Minnesota Vikings",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "ideal_all": [
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "15/27, 297 pass yds \u00b7 4 pass TD \u00b7 14 pass 1D \u00b7 2 rush, 34 yds \u00b7 1 rush 1D",
+          "points": 38.2999999999999,
+          "actual_roster_position": "QB"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "19 rush, 98 yds \u00b7 2 rec, 5 yds \u00b7 1 rush TD \u00b7 7 rush 1D \u00b7 1 rec 1D",
+          "points": 24.3,
+          "actual_roster_position": "RB"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "15 rush, 88 yds \u00b7 6 rec, 70 yds \u00b7 4 rush 1D \u00b7 4 rec 1D",
+          "points": 23.8,
+          "actual_roster_position": "W/R/T"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "New York Jets",
+          "stat_line": "10 rec, 107 yds \u00b7 1 rec TD \u00b7 6 rec 1D",
+          "points": 22.700000000000003,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "17 rush, 74 yds \u00b7 4 rec, 22 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+          "points": 13.6,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Chris Boswell",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "3 FG (2 from 30-39, 1 from 40-49) \u00b7 3 XP",
+          "points": 13.0,
+          "actual_roster_position": "K"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "4 rec, 19 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+          "points": 9.9,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Houston Texans",
+          "stat_line": "3 rec, 30 yds \u00b7 1 rec 1D",
+          "points": 4.0,
+          "actual_roster_position": "TE"
+        },
+        {
+          "team_name": "Two Buck Luck",
+          "name": "49ers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "30 PA \u00b7 2 sacks",
+          "points": 1.0,
+          "actual_roster_position": "DEF"
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "actual_team": "New York Jets",
+          "points": 22.700000000000003,
+          "season_avg": 6.005555555555556,
+          "type": "BOOM",
+          "z_score": 2.066720855406581,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "scoring_sources": {
+        "team_key": "470.l.932349.t.9",
+        "team_name": "Two Buck Luck",
+        "total_points": 147.8999999999999,
+        "contribution_total": 147.8999999999999,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 50.9,
+            "share_pct": 34.41514536849225
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 49.1,
+            "share_pct": 33.19810682893849
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 33.8999999999999,
+            "share_pct": 22.920892494928953
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 13.0,
+            "share_pct": 8.789722785665997
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 1.0,
+            "share_pct": 0.6761325219743075
+          }
+        ],
+        "stats": [
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 281.0,
+            "fantasy_points": 28.1,
+            "share_pct": 18.99932386747804
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 4.0,
+            "fantasy_points": 24.0,
+            "share_pct": 16.22718052738338
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 239.0,
+            "fantasy_points": 23.9,
+            "share_pct": 16.159567275185946
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 15.0,
+            "fantasy_points": 15.0,
+            "share_pct": 10.141987829614612
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 15.0,
+            "fantasy_points": 15.0,
+            "share_pct": 10.141987829614612
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 8.11359026369169
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 297.0,
+            "fantasy_points": 9.8999999999999,
+            "share_pct": 6.6937119675455765
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.056795131845845
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 2.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.056795131845845
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.70453008789723
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.0283975659229223
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.352265043948615
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 28-34 points",
+            "raw_value": 1.0,
+            "fantasy_points": -1.0,
+            "share_pct": -0.6761325219743075
+          }
+        ]
+      },
+      "league_context": {
+        "weekly_rank": 3,
+        "league_size": 10,
+        "league_average_score": 127.03000000000002,
+        "league_median_score": 130.865,
+        "beat_league_median": true,
+        "all_play_record": "7-2",
+        "projected_score": 126.7,
+        "points_over_projected": 21.200000000000003,
+        "yahoo_matchup_grade": "C"
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 147.8999999999999,
+        "optimal_lineup_points": 150.59999999999988,
+        "bench_points": 57.09999999999994,
+        "points_left_on_bench": 2.6999999999999886,
+        "lowest_scoring_starter": {
+          "team_name": "Two Buck Luck",
+          "name": "49ers",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "30 PA \u00b7 2 sacks",
+          "points": 1.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "RB",
+          "recommended_player": "Tony Pollard",
+          "recommended_points": 13.6,
+          "benched_player": "Chase Brown",
+          "benched_points": 10.9,
+          "point_swing": 2.6999999999999993,
+          "source": "ROSTER",
+          "reason": "At RB, swap in Tony Pollard over Chase Brown for an estimated +2.7 points this week.",
+          "confidence": 0.6675,
+          "signal_label": "Low hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Chase Brown",
+            "points": 10.9,
+            "role": "STARTER"
+          },
+          "swing_tier": "LOW",
+          "leverage_label": "Close point edge",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Close point edge",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.06749999999999998,
+            "capped_total": 0.6675
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        "summary": "Two Buck Luck started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 58.41784989858009,
+        "top_2_share_pct": 42.32589587559158,
+        "volatility_std": 11.11275543388465,
+        "structural_integrity_pct": 41.58215010141991,
+        "fragility_score": 42.32589587559158,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "scoring_sources": {
+    "categories": [
+      "Passing",
+      "Rushing",
+      "Receiving",
+      "Kicking",
+      "Defense",
+      "Returns",
+      "Miscellaneous"
+    ],
+    "teams": [
+      {
+        "team_key": "470.l.932349.t.3",
+        "team_name": "Pat Pidgeon",
+        "total_points": 167.8666666666666,
+        "contribution_total": 167.86666666666656,
+        "reconciliation_delta": -2.842170943040401e-14,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 76.6,
+            "share_pct": 45.63145353455125
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 50.6,
+            "share_pct": 30.14297061159652
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 15.66666666666657,
+            "share_pct": 9.332803812549589
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 14.0,
+            "share_pct": 8.339952343129472
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 11.0,
+            "share_pct": 6.552819698173157
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 366.0,
+            "fantasy_points": 36.6,
+            "share_pct": 21.80301826846705
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 256.0,
+            "fantasy_points": 25.6,
+            "share_pct": 15.250198570293891
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 22.0,
+            "fantasy_points": 22.0,
+            "share_pct": 13.105639396346314
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 10.722795869737892
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 13.0,
+            "fantasy_points": 13.0,
+            "share_pct": 7.744241461477366
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 7.148530579825262
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 290.0,
+            "fantasy_points": 9.66666666666657,
+            "share_pct": 5.758538522636958
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 3.574265289912631
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 3.0,
+            "fantasy_points": 6.0,
+            "share_pct": 3.574265289912631
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 50+ Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 5.0,
+            "share_pct": 2.9785544082605258
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.3828435266084207
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.3828435266084207
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.7871326449563154
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.7871326449563154
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "2-Point Conversions",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.1914217633042103
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.1914217633042103
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.9",
+        "team_name": "Two Buck Luck",
+        "total_points": 147.8999999999999,
+        "contribution_total": 147.8999999999999,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 50.9,
+            "share_pct": 34.41514536849225
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 49.1,
+            "share_pct": 33.19810682893849
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 33.8999999999999,
+            "share_pct": 22.920892494928953
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 13.0,
+            "share_pct": 8.789722785665997
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 1.0,
+            "share_pct": 0.6761325219743075
+          }
+        ],
+        "stats": [
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 281.0,
+            "fantasy_points": 28.1,
+            "share_pct": 18.99932386747804
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 4.0,
+            "fantasy_points": 24.0,
+            "share_pct": 16.22718052738338
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 239.0,
+            "fantasy_points": 23.9,
+            "share_pct": 16.159567275185946
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 15.0,
+            "fantasy_points": 15.0,
+            "share_pct": 10.141987829614612
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 15.0,
+            "fantasy_points": 15.0,
+            "share_pct": 10.141987829614612
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 8.11359026369169
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 297.0,
+            "fantasy_points": 9.8999999999999,
+            "share_pct": 6.6937119675455765
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.056795131845845
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 2.0,
+            "fantasy_points": 6.0,
+            "share_pct": 4.056795131845845
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.70453008789723
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.0283975659229223
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.352265043948615
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 28-34 points",
+            "raw_value": 1.0,
+            "fantasy_points": -1.0,
+            "share_pct": -0.6761325219743075
+          }
+        ]
+      }
+    ]
+  },
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Detroit Lions",
+        "stat_line": "20 rush, 99 yds \u00b7 7 rec, 65 yds \u00b7 2 rush TD \u00b7 1 rec TD \u00b7 7 rush 1D \u00b7 4 rec 1D",
+        "points": 45.4,
+        "team_score_share_pct": 27.045274027005572,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "45.4 points supplied 27% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Brock Purdy",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "San Francisco 49ers",
+        "stat_line": "15/27, 297 pass yds \u00b7 4 pass TD \u00b7 14 pass 1D \u00b7 2 rush, 34 yds \u00b7 1 rush 1D",
+        "points": 38.2999999999999,
+        "team_score_share_pct": 25.89587559161591,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "38.3 points supplied 26% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Seattle Seahawks",
+        "stat_line": "10 rec, 128 yds \u00b7 2 rec TD \u00b7 9 rec 1D",
+        "points": 34.266666666666666,
+        "team_score_share_pct": 20.4130262112788,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "34.3 points supplied 20% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Javonte Williams",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Dallas Cowboys",
+        "stat_line": "19 rush, 98 yds \u00b7 2 rec, 5 yds \u00b7 1 rush TD \u00b7 7 rush 1D \u00b7 1 rec 1D",
+        "points": 24.3,
+        "team_score_share_pct": 16.430020283975672,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "24.3 points supplied 16% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Kyren Williams",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "nfl_team": "Los Angeles Rams",
+        "stat_line": "15 rush, 88 yds \u00b7 6 rec, 70 yds \u00b7 4 rush 1D \u00b7 4 rec 1D",
+        "points": 23.8,
+        "team_score_share_pct": 16.091954022988517,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "23.8 points supplied 16% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Garrett Wilson",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "New York Jets",
+        "stat_line": "10 rec, 107 yds \u00b7 1 rec TD \u00b7 6 rec 1D",
+        "points": 22.700000000000003,
+        "team_score_share_pct": 15.34820824881678,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "22.7 points supplied 15% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Dak Prescott",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "Dallas Cowboys",
+        "stat_line": "25/40, 276 pass yds \u00b7 1 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 19 yds \u00b7 1 rush 1D \u00b7 1 2PT",
+        "points": 20.09999999999991,
+        "team_score_share_pct": 11.973788721207258,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "20.1 points supplied 12% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chris Olave",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "New Orleans Saints",
+        "stat_line": "9 rec, 107 yds \u00b7 7 rec 1D",
+        "points": 17.700000000000003,
+        "team_score_share_pct": 10.544082605242263,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "17.7 points supplied 11% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chuba Hubbard",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "nfl_team": "Carolina Panthers",
+        "stat_line": "19 rush, 82 yds \u00b7 4 rec, 28 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+        "points": 15.000000000000002,
+        "team_score_share_pct": 8.935663224781578,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "15.0 points supplied 9% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Chargers",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "24 PA \u00b7 4 sacks \u00b7 2 INT \u00b7 3 FR",
+        "points": 14.0,
+        "team_score_share_pct": 8.339952343129472,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "14.0 points supplied 8% of Pat Pidgeon's output in a 20.0-point win."
+      }
+    ],
+    "bottom_started_players": [
+      {
+        "team_name": "Two Buck Luck",
+        "name": "49ers",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "San Francisco 49ers",
+        "stat_line": "30 PA \u00b7 2 sacks",
+        "points": 1.0,
+        "team_score_share_pct": 0.6761325219743075,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "1.0 points supplied 1% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Dalton Kincaid",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "2 rec, 38 yds \u00b7 1 rec 1D \u00b7 1 fumble lost",
+        "points": 2.8000000000000003,
+        "team_score_share_pct": 1.6679904686258944,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "2.8 points supplied 2% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Houston Texans",
+        "stat_line": "3 rec, 30 yds \u00b7 1 rec 1D",
+        "points": 4.0,
+        "team_score_share_pct": 2.70453008789723,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "4.0 points supplied 3% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Omarion Hampton",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "15 rush, 56 yds \u00b7 2 rush 1D",
+        "points": 7.6,
+        "team_score_share_pct": 4.5274027005559985,
+        "matchup_result": "Won",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "7.6 points supplied 5% of Pat Pidgeon's output in a 20.0-point win."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Detroit Lions",
+        "stat_line": "4 rec, 19 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+        "points": 9.9,
+        "team_score_share_pct": 6.693711967545644,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "9.9 points supplied 7% of Two Buck Luck's output in a 20.0-point loss."
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Chase Brown",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Cincinnati Bengals",
+        "stat_line": "13 rush, 61 yds \u00b7 2 rec, 8 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+        "points": 10.9,
+        "team_score_share_pct": 7.369844489519951,
+        "matchup_result": "Lost",
+        "matchup_margin": 19.966666666666697,
+        "impact_summary": "10.9 points supplied 7% of Two Buck Luck's output in a 20.0-point loss."
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Juwan Johnson",
+        "position": "TE",
+        "roster_position": "BN",
+        "nfl_team": "New Orleans Saints",
+        "stat_line": "8 rec, 53 yds \u00b7 2 rec TD \u00b7 5 rec 1D \u00b7 1 fumble lost",
+        "points": 20.3,
+        "differential": 17.5,
+        "starter_replaced": "Dalton Kincaid",
+        "starter_points": 2.8000000000000003
+      },
+      {
+        "team_name": "Pat Pidgeon",
+        "name": "Keaton Mitchell",
+        "position": "RB",
+        "roster_position": "BN",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "8 rush, 52 yds \u00b7 3 rec, -5 yds \u00b7 1 rec TD \u00b7 1 rush 1D \u00b7 1 rec 1D",
+        "points": 14.433333333333316,
+        "differential": 6.833333333333316,
+        "starter_replaced": "Omarion Hampton",
+        "starter_points": 7.6
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "name": "Tony Pollard",
+        "position": "RB",
+        "roster_position": "BN",
+        "nfl_team": "Tennessee Titans",
+        "stat_line": "17 rush, 74 yds \u00b7 4 rec, 22 yds \u00b7 3 rush 1D \u00b7 1 rec 1D",
+        "points": 13.6,
+        "differential": 2.6999999999999993,
+        "starter_replaced": "Chase Brown",
+        "starter_points": 10.9
+      }
+    ],
+    "top_additions_this_week": []
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Two Buck Luck",
+      "value": 19.966666666666697,
+      "margin_relative_value": -0.00333333333330188,
+      "position": "",
+      "summary": "Pat Pidgeon won the raw scoring battle by 20.0 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Two Buck Luck",
+      "loser_team": "Pat Pidgeon",
+      "value": 21.633333333333326,
+      "margin_relative_value": 1.663333333333327,
+      "position": "",
+      "summary": "Two Buck Luck had the cleaner lineup week by 21.6 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Two Buck Luck",
+      "value": 43.83333333333331,
+      "margin_relative_value": 23.86333333333331,
+      "position": "",
+      "summary": "Pat Pidgeon carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "MOSTLY",
+      "loser_team": "Pat Pidgeon",
+      "value": 43.83333333333331,
+      "margin_relative_value": 23.86333333333331,
+      "position": "",
+      "summary": "Missed opportunities exceeded the 20.0-point margin, but not from one clear swap."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Pat Pidgeon",
+      "loser_team": "Two Buck Luck",
+      "value": 19.366666666666667,
+      "margin_relative_value": -0.6033333333333317,
+      "position": "WR",
+      "summary": "Pat Pidgeon controlled total WR output by 19.4 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 19.97,
+    "margin": 19.97,
+    "takeaways": [
+      "Pat Pidgeon still won despite leaving 24.3 lineup points on the table, which exceeded the final margin.",
+      "The clearest unit edge was total WR output: Pat Pidgeon by 19.4 points.",
+      "Against projection, Pat Pidgeon finished +29.2 while Two Buck Luck finished +21.2.",
+      "The biggest started performance was Jahmyr Gibbs for Pat Pidgeon at 45.4 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Two Buck Luck waiver upside",
+        "team_name": "Two Buck Luck",
+        "value": 32.066666666666656,
+        "relative_to_margin": 12.096666666666657
+      },
+      {
+        "label": "Pat Pidgeon lineup leakage",
+        "team_name": "Pat Pidgeon",
+        "value": 24.333333333333314,
+        "relative_to_margin": 4.3633333333333155
+      },
+      {
+        "label": "Pat Pidgeon waiver upside",
+        "team_name": "Pat Pidgeon",
+        "value": 19.499999999999993,
+        "relative_to_margin": -0.47000000000000597
+      },
+      {
+        "label": "Two Buck Luck lineup leakage",
+        "team_name": "Two Buck Luck",
+        "value": 2.6999999999999886,
+        "relative_to_margin": -17.27000000000001
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null,
+    "scenario_rows": [
+      {
+        "scenario": "Actual lineups",
+        "winner": "Pat Pidgeon",
+        "winner_score": 167.8666666666666,
+        "loser_score": 147.8999999999999,
+        "margin": 19.966666666666697
+      },
+      {
+        "scenario": "Both best legal lineups",
+        "winner": "Pat Pidgeon",
+        "winner_score": 192.1999999999999,
+        "loser_score": 150.59999999999988,
+        "margin": 41.60000000000002
+      }
+    ]
+  },
+  "skill_luck": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 127.03000000000002,
+    "league_median_score": 130.865,
+    "teams": [
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 2,
+        "all_play_record": "8-1",
+        "beat_league_median": true,
+        "projected_score": 138.69,
+        "points_over_projected": 29.180000000000007,
+        "opponent_weekly_rank": 3
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "weekly_rank": 3,
+        "all_play_record": "7-2",
+        "beat_league_median": true,
+        "projected_score": 126.7,
+        "points_over_projected": 21.200000000000003,
+        "opponent_weekly_rank": 2
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 127.03000000000002,
+    "league_median_score": 130.865,
+    "teams": [
+      {
+        "team_name": "Pat Pidgeon",
+        "weekly_rank": 2,
+        "all_play_record": "8-1",
+        "beat_league_median": true,
+        "projected_score": 138.69,
+        "points_over_projected": 29.180000000000007,
+        "opponent_weekly_rank": 3
+      },
+      {
+        "team_name": "Two Buck Luck",
+        "weekly_rank": 3,
+        "all_play_record": "7-2",
+        "beat_league_median": true,
+        "projected_score": 126.7,
+        "points_over_projected": 21.200000000000003,
+        "opponent_weekly_rank": 2
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "WR",
+        "team_a_points": 51.96666666666667,
+        "team_b_points": 32.6,
+        "edge_points": 19.366666666666667,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 19.366666666666667
+      },
+      {
+        "position": "QB",
+        "team_a_points": 20.09999999999991,
+        "team_b_points": 38.2999999999999,
+        "edge_points": 18.19999999999999,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": -18.19999999999999
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 14.0,
+        "team_b_points": 1.0,
+        "edge_points": 13.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 13.0
+      },
+      {
+        "position": "RB",
+        "team_a_points": 68.0,
+        "team_b_points": 59.0,
+        "edge_points": 9.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 9.0
+      },
+      {
+        "position": "K",
+        "team_a_points": 11.0,
+        "team_b_points": 13.0,
+        "edge_points": 2.0,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": -2.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.8000000000000003,
+        "team_b_points": 4.0,
+        "edge_points": 1.1999999999999997,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": -1.1999999999999997
+      }
+    ],
+    "largest_edge": {
+      "position": "WR",
+      "team_a_points": 51.96666666666667,
+      "team_b_points": 32.6,
+      "edge_points": 19.366666666666667,
+      "edge_team": "Pat Pidgeon",
+      "edge_direction": 19.366666666666667
+    },
+    "top_wins": [
+      {
+        "position": "WR",
+        "team_a_points": 51.96666666666667,
+        "team_b_points": 32.6,
+        "edge_points": 19.366666666666667,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 19.366666666666667
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 14.0,
+        "team_b_points": 1.0,
+        "edge_points": 13.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 13.0
+      },
+      {
+        "position": "RB",
+        "team_a_points": 68.0,
+        "team_b_points": 59.0,
+        "edge_points": 9.0,
+        "edge_team": "Pat Pidgeon",
+        "edge_direction": 9.0
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "QB",
+        "team_a_points": 20.09999999999991,
+        "team_b_points": 38.2999999999999,
+        "edge_points": 18.19999999999999,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": -18.19999999999999
+      },
+      {
+        "position": "K",
+        "team_a_points": 11.0,
+        "team_b_points": 13.0,
+        "edge_points": 2.0,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": -2.0
+      },
+      {
+        "position": "TE",
+        "team_a_points": 2.8000000000000003,
+        "team_b_points": 4.0,
+        "edge_points": 1.1999999999999997,
+        "edge_team": "Two Buck Luck",
+        "edge_direction": -1.1999999999999997
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Pat Pidgeon",
+      "actual_lineup_points": 167.8666666666666,
+      "optimal_lineup_points": 192.1999999999999,
+      "bench_points": 73.43333333333325,
+      "points_left_on_bench": 24.333333333333314,
+      "lowest_scoring_starter": {
+        "team_name": "Pat Pidgeon",
+        "name": "Dalton Kincaid",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "Buffalo Bills",
+        "stat_line": "2 rec, 38 yds \u00b7 1 rec 1D \u00b7 1 fumble lost",
+        "points": 2.8000000000000003
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 77.77777777777779,
+      "best_swap": {
+        "position": "TE",
+        "recommended_player": "Juwan Johnson",
+        "recommended_points": 20.3,
+        "benched_player": "Dalton Kincaid",
+        "benched_points": 2.8000000000000003,
+        "point_swing": 17.5,
+        "source": "ROSTER",
+        "reason": "At TE, swap in Juwan Johnson over Dalton Kincaid for an estimated +17.5 points this week.",
+        "confidence": 1.0,
+        "signal_label": "High hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Dalton Kincaid",
+          "points": 2.8000000000000003,
+          "role": "STARTER"
+        },
+        "swing_tier": "HIGH",
+        "leverage_label": "Major point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Major point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.4375,
+          "capped_total": 1.0
+        },
+        "sample_context": {
+          "recommended_player_weeks": 3,
+          "comparison_player_weeks": 3
+        }
+      },
+      "summary": "Pat Pidgeon started 7 of 9 slots optimally"
+    },
+    {
+      "team_name": "Two Buck Luck",
+      "actual_lineup_points": 147.8999999999999,
+      "optimal_lineup_points": 150.59999999999988,
+      "bench_points": 57.09999999999994,
+      "points_left_on_bench": 2.6999999999999886,
+      "lowest_scoring_starter": {
+        "team_name": "Two Buck Luck",
+        "name": "49ers",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "San Francisco 49ers",
+        "stat_line": "30 PA \u00b7 2 sacks",
+        "points": 1.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "RB",
+        "recommended_player": "Tony Pollard",
+        "recommended_points": 13.6,
+        "benched_player": "Chase Brown",
+        "benched_points": 10.9,
+        "point_swing": 2.6999999999999993,
+        "source": "ROSTER",
+        "reason": "At RB, swap in Tony Pollard over Chase Brown for an estimated +2.7 points this week.",
+        "confidence": 0.6675,
+        "signal_label": "Low hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Chase Brown",
+          "points": 10.9,
+          "role": "STARTER"
+        },
+        "swing_tier": "LOW",
+        "leverage_label": "Close point edge",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Close point edge",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.06749999999999998,
+          "capped_total": 0.6675
+        },
+        "sample_context": {
+          "recommended_player_weeks": 3,
+          "comparison_player_weeks": 3
+        }
+      },
+      "summary": "Two Buck Luck started 8 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Pat Pidgeon",
+      "top_3_share_pct": 59.43208895949162,
+      "top_2_share_pct": 47.458300238284366,
+      "volatility_std": 12.601764633545837,
+      "structural_integrity_pct": 40.56791104050838,
+      "fragility_score": 47.458300238284366,
+      "label": "Boom/Bust Build"
+    },
+    {
+      "team_name": "Two Buck Luck",
+      "top_3_share_pct": 58.41784989858009,
+      "top_2_share_pct": 42.32589587559158,
+      "volatility_std": 11.11275543388465,
+      "structural_integrity_pct": 41.58215010141991,
+      "fragility_score": 42.32589587559158,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Big Brain",
+      "team_name": "Two Buck Luck",
+      "detail": "Weekly process score cleared the sharp-management threshold."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Pat Pidgeon",
+    "team_b_name": "Two Buck Luck",
+    "record_for_team_a": "16-19",
+    "games": 35,
+    "playoff_games": 2,
+    "seasons_met": 22,
+    "series_balance": 0.9142857142857143,
+    "is_rivalry": true,
+    "rivalry_label": "Historic Rivalry",
+    "rivalry_summary": "35 meetings across 22 seasons, including 2 in the playoffs.",
+    "average_margin_for_team_a": -2.3041904761904766,
+    "series_summary": "Pat Pidgeon is 16-19 against Two Buck Luck across 35 meetings between these managers.",
+    "average_margin_text": "Average margin from Pat Pidgeon's perspective: -2.3.",
+    "current_margin_rank_text": "18th closest",
+    "current_total_rank_text": "2nd highest combined score",
+    "streak_text": "Pat Pidgeon carries the current 1-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2026 W3",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 19.97,
+        "combined_score": 315.77,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck",
+        "report_href": "matchup_04_pat-pidgeon_vs_two-buck-luck.html"
+      },
+      {
+        "season_label": "2025 W12",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 71.26666666666665,
+        "combined_score": 252.46666666666653,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck",
+        "report_href": "../../2025/matchups_week_12/matchup_03_two-buck-luck_vs_pat-pidgeon.html"
+      },
+      {
+        "season_label": "2025 W3",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 35.999999999999986,
+        "combined_score": 224.3999999999998,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck",
+        "report_href": "../../2025/matchups_week_03/matchup_03_pat-pidgeon_vs_two-buck-luck.html"
+      },
+      {
+        "season_label": "2024 W13",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 55.230000000000004,
+        "combined_score": 236.63,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2024 W4",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 42.29999999999998,
+        "combined_score": 235.04,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      }
+    ],
+    "all_meetings": [
+      {
+        "season_label": "2026 W3",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 19.97,
+        "combined_score": 315.77,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2025 W12",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 71.26666666666665,
+        "combined_score": 252.46666666666653,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2025 W3",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 35.999999999999986,
+        "combined_score": 224.3999999999998,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2024 W13",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 55.230000000000004,
+        "combined_score": 236.63,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2024 W4",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 42.29999999999998,
+        "combined_score": 235.04,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2023 W11",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 6.239999999999995,
+        "combined_score": 208.3,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2023 W2",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 15.329999999999998,
+        "combined_score": 209.87,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2022 W16",
+        "context": "playoffs",
+        "winner": "Pat Pidgeon",
+        "margin": 35.07000000000001,
+        "combined_score": 194.73000000000002,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2022 W12",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 10.77000000000001,
+        "combined_score": 179.97,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2022 W3",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 2.799999999999997,
+        "combined_score": 189.33999999999997,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2021 W10",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 14.929999999999993,
+        "combined_score": 198.32999999999998,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2021 W1",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 50.370000000000005,
+        "combined_score": 222.43,
+        "historical_team_a_name": "From Millan to Minsk",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2020 W10",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 66.47,
+        "combined_score": 226.67,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2020 W1",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 1.0,
+        "combined_score": 235.0,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2019 W6",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 1.0,
+        "combined_score": 229.06,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2018 W6",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 15.659999999999997,
+        "combined_score": 348.79999999999995,
+        "historical_team_a_name": "AntiMillaniteBastard",
+        "historical_team_b_name": "Two Buck Luck"
+      },
+      {
+        "season_label": "2017 W6",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 25.03,
+        "combined_score": 223.63,
+        "historical_team_a_name": "Pat Pidgeon",
+        "historical_team_b_name": "Almost Jameis"
+      },
+      {
+        "season_label": "2016 W6",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 23.64999999999999,
+        "combined_score": 251.75,
+        "historical_team_a_name": "Big Maple",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2015 W14",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 21.099999999999994,
+        "combined_score": 198.96,
+        "historical_team_a_name": "Big Maple",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2015 W5",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 10.600000000000009,
+        "combined_score": 202.74,
+        "historical_team_a_name": "Big Maple",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2014 W7",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 18.230000000000004,
+        "combined_score": 169.93,
+        "historical_team_a_name": "Big Maple",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2013 W6",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 17.799999999999997,
+        "combined_score": 174.16000000000003,
+        "historical_team_a_name": "Big Maple",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2012 W16",
+        "context": "playoffs",
+        "winner": "Two Buck Luck",
+        "margin": 33.16999999999999,
+        "combined_score": 229.67,
+        "historical_team_a_name": "JoePa's Last Stand",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2012 W14",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 23.11,
+        "combined_score": 215.47000000000003,
+        "historical_team_a_name": "JoePa's Last Stand",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2012 W5",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 11.590000000000003,
+        "combined_score": 219.87,
+        "historical_team_a_name": "JoePa's Last Stand",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2011 W13",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 7.570000000000007,
+        "combined_score": 194.70999999999998,
+        "historical_team_a_name": "JoePa's Last Stand",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2011 W4",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 6.489999999999995,
+        "combined_score": 212.39,
+        "historical_team_a_name": "JoePa's Last Stand",
+        "historical_team_b_name": "Thugs of Pittsburgh"
+      },
+      {
+        "season_label": "2010 W6",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 41.14,
+        "combined_score": 189.89999999999998,
+        "historical_team_a_name": "Joe Pa's Last Stand",
+        "historical_team_b_name": "Owls of Ga'Hoole"
+      },
+      {
+        "season_label": "2009 W5",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 55.249999999999986,
+        "combined_score": 204.32999999999998,
+        "historical_team_a_name": "Come to Penn Staaate",
+        "historical_team_b_name": "steelcurt"
+      },
+      {
+        "season_label": "2008 W6",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 38.63999999999999,
+        "combined_score": 119.62,
+        "historical_team_a_name": "Joe Pa's Last Stand",
+        "historical_team_b_name": "steelcurt"
+      },
+      {
+        "season_label": "2007 W11",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 14.010000000000005,
+        "combined_score": 181.95,
+        "historical_team_a_name": "JTD's Carbuncle",
+        "historical_team_b_name": "'Poz'itively Awesome"
+      },
+      {
+        "season_label": "2007 W2",
+        "context": "regular season",
+        "winner": "Two Buck Luck",
+        "margin": 1.1699999999999875,
+        "combined_score": 150.25,
+        "historical_team_a_name": "JTD's Carbuncle",
+        "historical_team_b_name": "'Poz'itively Awesome"
+      },
+      {
+        "season_label": "2006 W5",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 22.340000000000003,
+        "combined_score": 143.66,
+        "historical_team_a_name": "X Nady Pirate Savior",
+        "historical_team_b_name": "Benedict Chad"
+      },
+      {
+        "season_label": "2005 W13",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 53.19,
+        "combined_score": 187.37,
+        "historical_team_a_name": "Vaginal Discharge Me",
+        "historical_team_b_name": "Thunder Hunter"
+      },
+      {
+        "season_label": "2005 W4",
+        "context": "regular season",
+        "winner": "Pat Pidgeon",
+        "margin": 0.45999999999997954,
+        "combined_score": 269.32,
+        "historical_team_a_name": "Vaginal Discharge Me",
+        "historical_team_b_name": "Thunder Hunter"
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Chase wins all season long with Toyota Gameday Giveaways.",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/932349/recap?week=3&mid1=3&mid2=9",
+    "grade_summary": "Pat Pidgeon: A+ | Two Buck Luck: C"
+  }
+}

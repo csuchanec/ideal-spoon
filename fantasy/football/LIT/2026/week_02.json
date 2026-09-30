@@ -3,7 +3,7 @@
     "schema_version": "1.1",
     "year": 2026,
     "week": 2,
-    "generated_at": "2026-09-24T06:41:31.201956",
+    "generated_at": "2026-09-29T22:04:38.489581",
     "total_active_players": 381,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
@@ -592,6 +592,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.1",
       "manager_grades": {
         "weekly": {
           "score_pct": 81.55848849945235,
@@ -726,7 +727,56 @@
             }
           }
         },
-        "summary": "Sigma Chi Whiteout graded B- this week and A- for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as well managed."
+        "summary": "Sigma Chi Whiteout graded B- this week and A- for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as well managed.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 93.32931545026997,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 94.69172618010799,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 178.0333333333333,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 81.55848849945235,
+              "weekly_letter": "B-",
+              "weekly_delta_points": -11.770826950817622,
+              "cumulative_score_pct": 91.75053630363035,
+              "cumulative_letter": "A-",
+              "cumulative_delta_points": -2.9411898764776367,
+              "trend_delta_points": -11.770826950817622,
+              "trend_label": "Trending Down",
+              "score": 109.23333333333326,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -11.770826950817622,
+            "current_score_pct": 91.75053630363035,
+            "current_letter": "A-",
+            "previous_score_pct": 94.69172618010799,
+            "delta_points": -2.9411898764776367,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -2.9411898764776367,
+          "trend_delta_points": -11.770826950817622,
+          "current_score_pct": 91.75053630363035,
+          "previous_score_pct": 94.69172618010799
+        }
       },
       "process_scores": {
         "weekly": {
@@ -862,7 +912,108 @@
             }
           }
         },
-        "summary": "Sigma Chi Whiteout graded B- this week and A- for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as well managed."
+        "summary": "Sigma Chi Whiteout graded B- this week and A- for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as well managed.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 93.32931545026997,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 94.69172618010799,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 178.0333333333333,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 81.55848849945235,
+              "weekly_letter": "B-",
+              "weekly_delta_points": -11.770826950817622,
+              "cumulative_score_pct": 91.75053630363035,
+              "cumulative_letter": "A-",
+              "cumulative_delta_points": -2.9411898764776367,
+              "trend_delta_points": -11.770826950817622,
+              "trend_label": "Trending Down",
+              "score": 109.23333333333326,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -11.770826950817622,
+            "current_score_pct": 91.75053630363035,
+            "current_letter": "A-",
+            "previous_score_pct": 94.69172618010799,
+            "delta_points": -2.9411898764776367,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -2.9411898764776367,
+          "trend_delta_points": -11.770826950817622,
+          "current_score_pct": 91.75053630363035,
+          "previous_score_pct": 94.69172618010799
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 93.32931545026997,
+            "weekly_letter": "A",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 94.69172618010799,
+            "cumulative_letter": "A",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 178.0333333333333,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 81.55848849945235,
+            "weekly_letter": "B-",
+            "weekly_delta_points": -11.770826950817622,
+            "cumulative_score_pct": 91.75053630363035,
+            "cumulative_letter": "A-",
+            "cumulative_delta_points": -2.9411898764776367,
+            "trend_delta_points": -11.770826950817622,
+            "trend_label": "Trending Down",
+            "score": 109.23333333333326,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Down",
+          "trend_delta_points": -11.770826950817622,
+          "current_score_pct": 91.75053630363035,
+          "current_letter": "A-",
+          "previous_score_pct": 94.69172618010799,
+          "delta_points": -2.9411898764776367,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Down",
+        "trend_delta_points": -11.770826950817622,
+        "current_score_pct": 91.75053630363035,
+        "current_letter": "A-",
+        "previous_score_pct": 94.69172618010799,
+        "delta_points": -2.9411898764776367,
+        "weeks": 2
       }
     },
     "Squat": {
@@ -1377,6 +1528,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.10",
       "manager_grades": {
         "weekly": {
           "score_pct": 79.77787034302526,
@@ -1511,7 +1663,56 @@
             }
           }
         },
-        "summary": "Squat graded C+ this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions."
+        "summary": "Squat graded C+ this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 62.34645373414755,
+              "weekly_letter": "D",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 55.45358149365902,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 51.99999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 79.77787034302526,
+              "weekly_letter": "C+",
+              "weekly_delta_points": 17.431416608877704,
+              "cumulative_score_pct": 64.65118639998349,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 9.197604906324464,
+              "trend_delta_points": 17.431416608877704,
+              "trend_label": "Trending Up",
+              "score": 100.29999999999988,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 17.431416608877704,
+            "current_score_pct": 64.65118639998349,
+            "current_letter": "D+",
+            "previous_score_pct": 55.45358149365902,
+            "delta_points": 9.197604906324464,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 9.197604906324464,
+          "trend_delta_points": 17.431416608877704,
+          "current_score_pct": 64.65118639998349,
+          "previous_score_pct": 55.45358149365902
+        }
       },
       "process_scores": {
         "weekly": {
@@ -1647,7 +1848,108 @@
             }
           }
         },
-        "summary": "Squat graded C+ this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions."
+        "summary": "Squat graded C+ this week and D+ for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as bad decisions.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 62.34645373414755,
+              "weekly_letter": "D",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 55.45358149365902,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 51.99999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 79.77787034302526,
+              "weekly_letter": "C+",
+              "weekly_delta_points": 17.431416608877704,
+              "cumulative_score_pct": 64.65118639998349,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 9.197604906324464,
+              "trend_delta_points": 17.431416608877704,
+              "trend_label": "Trending Up",
+              "score": 100.29999999999988,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 17.431416608877704,
+            "current_score_pct": 64.65118639998349,
+            "current_letter": "D+",
+            "previous_score_pct": 55.45358149365902,
+            "delta_points": 9.197604906324464,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 9.197604906324464,
+          "trend_delta_points": 17.431416608877704,
+          "current_score_pct": 64.65118639998349,
+          "previous_score_pct": 55.45358149365902
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 62.34645373414755,
+            "weekly_letter": "D",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 55.45358149365902,
+            "cumulative_letter": "D-",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 51.99999999999999,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 79.77787034302526,
+            "weekly_letter": "C+",
+            "weekly_delta_points": 17.431416608877704,
+            "cumulative_score_pct": 64.65118639998349,
+            "cumulative_letter": "D+",
+            "cumulative_delta_points": 9.197604906324464,
+            "trend_delta_points": 17.431416608877704,
+            "trend_label": "Trending Up",
+            "score": 100.29999999999988,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Up",
+          "trend_delta_points": 17.431416608877704,
+          "current_score_pct": 64.65118639998349,
+          "current_letter": "D+",
+          "previous_score_pct": 55.45358149365902,
+          "delta_points": 9.197604906324464,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Up",
+        "trend_delta_points": 17.431416608877704,
+        "current_score_pct": 64.65118639998349,
+        "current_letter": "D+",
+        "previous_score_pct": 55.45358149365902,
+        "delta_points": 9.197604906324464,
+        "weeks": 2
       }
     },
     "Love(land) Hurts": {
@@ -1974,6 +2276,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.2",
       "manager_grades": {
         "weekly": {
           "score_pct": 89.2582338902148,
@@ -2106,7 +2409,56 @@
             }
           }
         },
-        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 59.920607175712945,
+              "weekly_letter": "D-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 64.61647798304398,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 96.33333333333323,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 89.2582338902148,
+              "weekly_letter": "B+",
+              "weekly_delta_points": 29.33762671450185,
+              "cumulative_score_pct": 73.7503460090069,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 9.133868025962926,
+              "trend_delta_points": 29.33762671450185,
+              "trend_label": "Trending Up",
+              "score": 131.06666666666658,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 29.33762671450185,
+            "current_score_pct": 73.7503460090069,
+            "current_letter": "C",
+            "previous_score_pct": 64.61647798304398,
+            "delta_points": 9.133868025962926,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 9.133868025962926,
+          "trend_delta_points": 29.33762671450185,
+          "current_score_pct": 73.7503460090069,
+          "previous_score_pct": 64.61647798304398
+        }
       },
       "process_scores": {
         "weekly": {
@@ -2240,7 +2592,108 @@
             }
           }
         },
-        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+        "summary": "Love(land) Hurts graded B+ this week and C for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 59.920607175712945,
+              "weekly_letter": "D-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 64.61647798304398,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 96.33333333333323,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 89.2582338902148,
+              "weekly_letter": "B+",
+              "weekly_delta_points": 29.33762671450185,
+              "cumulative_score_pct": 73.7503460090069,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 9.133868025962926,
+              "trend_delta_points": 29.33762671450185,
+              "trend_label": "Trending Up",
+              "score": 131.06666666666658,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 29.33762671450185,
+            "current_score_pct": 73.7503460090069,
+            "current_letter": "C",
+            "previous_score_pct": 64.61647798304398,
+            "delta_points": 9.133868025962926,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 9.133868025962926,
+          "trend_delta_points": 29.33762671450185,
+          "current_score_pct": 73.7503460090069,
+          "previous_score_pct": 64.61647798304398
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 59.920607175712945,
+            "weekly_letter": "D-",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 64.61647798304398,
+            "cumulative_letter": "D+",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 96.33333333333323,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 89.2582338902148,
+            "weekly_letter": "B+",
+            "weekly_delta_points": 29.33762671450185,
+            "cumulative_score_pct": 73.7503460090069,
+            "cumulative_letter": "C",
+            "cumulative_delta_points": 9.133868025962926,
+            "trend_delta_points": 29.33762671450185,
+            "trend_label": "Trending Up",
+            "score": 131.06666666666658,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Up",
+          "trend_delta_points": 29.33762671450185,
+          "current_score_pct": 73.7503460090069,
+          "current_letter": "C",
+          "previous_score_pct": 64.61647798304398,
+          "delta_points": 9.133868025962926,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Up",
+        "trend_delta_points": 29.33762671450185,
+        "current_score_pct": 73.7503460090069,
+        "current_letter": "C",
+        "previous_score_pct": 64.61647798304398,
+        "delta_points": 9.133868025962926,
+        "weeks": 2
       }
     },
     "Pat Pidgeon": {
@@ -2618,6 +3071,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.3",
       "manager_grades": {
         "weekly": {
           "score_pct": 92.11121076233184,
@@ -2752,7 +3206,56 @@
             }
           }
         },
-        "summary": "Pat Pidgeon graded A- this week and A for the season-to-date (provisional). Weekly management reads as well managed; season management reads as creative edge."
+        "summary": "Pat Pidgeon graded A- this week and A for the season-to-date (provisional). Weekly management reads as well managed; season management reads as creative edge.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 95.0,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 186.53333333333327,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.11121076233184,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -1.9887892376681577,
+              "cumulative_score_pct": 94.66232962622293,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": -0.33767037377707254,
+              "trend_delta_points": -1.9887892376681577,
+              "trend_label": "Trending Down",
+              "score": 183.9999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -1.9887892376681577,
+            "current_score_pct": 94.66232962622293,
+            "current_letter": "A",
+            "previous_score_pct": 95.0,
+            "delta_points": -0.33767037377707254,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -0.33767037377707254,
+          "trend_delta_points": -1.9887892376681577,
+          "current_score_pct": 94.66232962622293,
+          "previous_score_pct": 95.0
+        }
       },
       "process_scores": {
         "weekly": {
@@ -2888,7 +3391,108 @@
             }
           }
         },
-        "summary": "Pat Pidgeon graded A- this week and A for the season-to-date (provisional). Weekly management reads as well managed; season management reads as creative edge."
+        "summary": "Pat Pidgeon graded A- this week and A for the season-to-date (provisional). Weekly management reads as well managed; season management reads as creative edge.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 95.0,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 186.53333333333327,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.11121076233184,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -1.9887892376681577,
+              "cumulative_score_pct": 94.66232962622293,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": -0.33767037377707254,
+              "trend_delta_points": -1.9887892376681577,
+              "trend_label": "Trending Down",
+              "score": 183.9999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -1.9887892376681577,
+            "current_score_pct": 94.66232962622293,
+            "current_letter": "A",
+            "previous_score_pct": 95.0,
+            "delta_points": -0.33767037377707254,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -0.33767037377707254,
+          "trend_delta_points": -1.9887892376681577,
+          "current_score_pct": 94.66232962622293,
+          "previous_score_pct": 95.0
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 94.1,
+            "weekly_letter": "A",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 95.0,
+            "cumulative_letter": "A",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 186.53333333333327,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 92.11121076233184,
+            "weekly_letter": "A-",
+            "weekly_delta_points": -1.9887892376681577,
+            "cumulative_score_pct": 94.66232962622293,
+            "cumulative_letter": "A",
+            "cumulative_delta_points": -0.33767037377707254,
+            "trend_delta_points": -1.9887892376681577,
+            "trend_label": "Trending Down",
+            "score": 183.9999999999999,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Down",
+          "trend_delta_points": -1.9887892376681577,
+          "current_score_pct": 94.66232962622293,
+          "current_letter": "A",
+          "previous_score_pct": 95.0,
+          "delta_points": -0.33767037377707254,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Down",
+        "trend_delta_points": -1.9887892376681577,
+        "current_score_pct": 94.66232962622293,
+        "current_letter": "A",
+        "previous_score_pct": 95.0,
+        "delta_points": -0.33767037377707254,
+        "weeks": 2
       }
     },
     "Millan\u2019s Last Supper": {
@@ -3140,6 +3744,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.4",
       "manager_grades": {
         "weekly": {
           "score_pct": 94.1,
@@ -3272,7 +3877,56 @@
             }
           }
         },
-        "summary": "Millan\u2019s Last Supper graded A this week and A- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed."
+        "summary": "Millan\u2019s Last Supper graded A this week and A- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 82.97952902774539,
+              "weekly_letter": "B-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 75.71041197840393,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 127.36666666666657,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 11.120470972254608,
+              "cumulative_score_pct": 91.23032025297749,
+              "cumulative_letter": "A-",
+              "cumulative_delta_points": 15.519908274573567,
+              "trend_delta_points": 11.120470972254608,
+              "trend_label": "Trending Up",
+              "score": 156.4999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 11.120470972254608,
+            "current_score_pct": 91.23032025297749,
+            "current_letter": "A-",
+            "previous_score_pct": 75.71041197840393,
+            "delta_points": 15.519908274573567,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 15.519908274573567,
+          "trend_delta_points": 11.120470972254608,
+          "current_score_pct": 91.23032025297749,
+          "previous_score_pct": 75.71041197840393
+        }
       },
       "process_scores": {
         "weekly": {
@@ -3406,7 +4060,108 @@
             }
           }
         },
-        "summary": "Millan\u2019s Last Supper graded A this week and A- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed."
+        "summary": "Millan\u2019s Last Supper graded A this week and A- for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 82.97952902774539,
+              "weekly_letter": "B-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 75.71041197840393,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 127.36666666666657,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 11.120470972254608,
+              "cumulative_score_pct": 91.23032025297749,
+              "cumulative_letter": "A-",
+              "cumulative_delta_points": 15.519908274573567,
+              "trend_delta_points": 11.120470972254608,
+              "trend_label": "Trending Up",
+              "score": 156.4999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 11.120470972254608,
+            "current_score_pct": 91.23032025297749,
+            "current_letter": "A-",
+            "previous_score_pct": 75.71041197840393,
+            "delta_points": 15.519908274573567,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 15.519908274573567,
+          "trend_delta_points": 11.120470972254608,
+          "current_score_pct": 91.23032025297749,
+          "previous_score_pct": 75.71041197840393
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 82.97952902774539,
+            "weekly_letter": "B-",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 75.71041197840393,
+            "cumulative_letter": "C",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 127.36666666666657,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 94.1,
+            "weekly_letter": "A",
+            "weekly_delta_points": 11.120470972254608,
+            "cumulative_score_pct": 91.23032025297749,
+            "cumulative_letter": "A-",
+            "cumulative_delta_points": 15.519908274573567,
+            "trend_delta_points": 11.120470972254608,
+            "trend_label": "Trending Up",
+            "score": 156.4999999999999,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Up",
+          "trend_delta_points": 11.120470972254608,
+          "current_score_pct": 91.23032025297749,
+          "current_letter": "A-",
+          "previous_score_pct": 75.71041197840393,
+          "delta_points": 15.519908274573567,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Up",
+        "trend_delta_points": 11.120470972254608,
+        "current_score_pct": 91.23032025297749,
+        "current_letter": "A-",
+        "previous_score_pct": 75.71041197840393,
+        "delta_points": 15.519908274573567,
+        "weeks": 2
       }
     },
     "In Purdytory": {
@@ -3907,6 +4662,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.5",
       "manager_grades": {
         "weekly": {
           "score_pct": 53.4,
@@ -4039,7 +4795,56 @@
             }
           }
         },
-        "summary": "In Purdytory graded F this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process."
+        "summary": "In Purdytory graded F this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 73.48417141441664,
+              "weekly_letter": "C",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 64.02452581703591,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 111.66666666666659,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 53.4,
+              "weekly_letter": "F",
+              "weekly_delta_points": -20.084171414416637,
+              "cumulative_score_pct": 57.13674184537478,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": -6.887783971661129,
+              "trend_delta_points": -20.084171414416637,
+              "trend_label": "Trending Down",
+              "score": 75.16666666666666,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -20.084171414416637,
+            "current_score_pct": 57.13674184537478,
+            "current_letter": "D-",
+            "previous_score_pct": 64.02452581703591,
+            "delta_points": -6.887783971661129,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -6.887783971661129,
+          "trend_delta_points": -20.084171414416637,
+          "current_score_pct": 57.13674184537478,
+          "previous_score_pct": 64.02452581703591
+        }
       },
       "process_scores": {
         "weekly": {
@@ -4173,7 +4978,108 @@
             }
           }
         },
-        "summary": "In Purdytory graded F this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process."
+        "summary": "In Purdytory graded F this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 73.48417141441664,
+              "weekly_letter": "C",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 64.02452581703591,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 111.66666666666659,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 53.4,
+              "weekly_letter": "F",
+              "weekly_delta_points": -20.084171414416637,
+              "cumulative_score_pct": 57.13674184537478,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": -6.887783971661129,
+              "trend_delta_points": -20.084171414416637,
+              "trend_label": "Trending Down",
+              "score": 75.16666666666666,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -20.084171414416637,
+            "current_score_pct": 57.13674184537478,
+            "current_letter": "D-",
+            "previous_score_pct": 64.02452581703591,
+            "delta_points": -6.887783971661129,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -6.887783971661129,
+          "trend_delta_points": -20.084171414416637,
+          "current_score_pct": 57.13674184537478,
+          "previous_score_pct": 64.02452581703591
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 73.48417141441664,
+            "weekly_letter": "C",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 64.02452581703591,
+            "cumulative_letter": "D+",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 111.66666666666659,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 53.4,
+            "weekly_letter": "F",
+            "weekly_delta_points": -20.084171414416637,
+            "cumulative_score_pct": 57.13674184537478,
+            "cumulative_letter": "D-",
+            "cumulative_delta_points": -6.887783971661129,
+            "trend_delta_points": -20.084171414416637,
+            "trend_label": "Trending Down",
+            "score": 75.16666666666666,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Down",
+          "trend_delta_points": -20.084171414416637,
+          "current_score_pct": 57.13674184537478,
+          "current_letter": "D-",
+          "previous_score_pct": 64.02452581703591,
+          "delta_points": -6.887783971661129,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Down",
+        "trend_delta_points": -20.084171414416637,
+        "current_score_pct": 57.13674184537478,
+        "current_letter": "D-",
+        "previous_score_pct": 64.02452581703591,
+        "delta_points": -6.887783971661129,
+        "weeks": 2
       }
     },
     "Nacua-Cola": {
@@ -4638,6 +5544,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.6",
       "manager_grades": {
         "weekly": {
           "score_pct": 71.23121641049981,
@@ -4772,7 +5679,56 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded C- this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process."
+        "summary": "Nacua-Cola graded C- this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 60.666012871590546,
+              "weekly_letter": "D",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 54.781405148636225,
+              "cumulative_letter": "F",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 77.6666666666666,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 71.23121641049981,
+              "weekly_letter": "C-",
+              "weekly_delta_points": 10.565203538909266,
+              "cumulative_score_pct": 58.384272627306785,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": 3.602867478670561,
+              "trend_delta_points": 10.565203538909266,
+              "trend_label": "Trending Up",
+              "score": 87.39999999999993,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 10.565203538909266,
+            "current_score_pct": 58.384272627306785,
+            "current_letter": "D-",
+            "previous_score_pct": 54.781405148636225,
+            "delta_points": 3.602867478670561,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 3.602867478670561,
+          "trend_delta_points": 10.565203538909266,
+          "current_score_pct": 58.384272627306785,
+          "previous_score_pct": 54.781405148636225
+        }
       },
       "process_scores": {
         "weekly": {
@@ -4908,7 +5864,108 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded C- this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process."
+        "summary": "Nacua-Cola graded C- this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 60.666012871590546,
+              "weekly_letter": "D",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 54.781405148636225,
+              "cumulative_letter": "F",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 77.6666666666666,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 71.23121641049981,
+              "weekly_letter": "C-",
+              "weekly_delta_points": 10.565203538909266,
+              "cumulative_score_pct": 58.384272627306785,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": 3.602867478670561,
+              "trend_delta_points": 10.565203538909266,
+              "trend_label": "Trending Up",
+              "score": 87.39999999999993,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 10.565203538909266,
+            "current_score_pct": 58.384272627306785,
+            "current_letter": "D-",
+            "previous_score_pct": 54.781405148636225,
+            "delta_points": 3.602867478670561,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 3.602867478670561,
+          "trend_delta_points": 10.565203538909266,
+          "current_score_pct": 58.384272627306785,
+          "previous_score_pct": 54.781405148636225
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 60.666012871590546,
+            "weekly_letter": "D",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 54.781405148636225,
+            "cumulative_letter": "F",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 77.6666666666666,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 71.23121641049981,
+            "weekly_letter": "C-",
+            "weekly_delta_points": 10.565203538909266,
+            "cumulative_score_pct": 58.384272627306785,
+            "cumulative_letter": "D-",
+            "cumulative_delta_points": 3.602867478670561,
+            "trend_delta_points": 10.565203538909266,
+            "trend_label": "Trending Up",
+            "score": 87.39999999999993,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Up",
+          "trend_delta_points": 10.565203538909266,
+          "current_score_pct": 58.384272627306785,
+          "current_letter": "D-",
+          "previous_score_pct": 54.781405148636225,
+          "delta_points": 3.602867478670561,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Up",
+        "trend_delta_points": 10.565203538909266,
+        "current_score_pct": 58.384272627306785,
+        "current_letter": "D-",
+        "previous_score_pct": 54.781405148636225,
+        "delta_points": 3.602867478670561,
+        "weeks": 2
       }
     },
     "Bend & Snap Count": {
@@ -5409,6 +6466,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.7",
       "manager_grades": {
         "weekly": {
           "score_pct": 84.90639827462255,
@@ -5541,7 +6599,56 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed."
+        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 93.14300474637564,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 88.88056250723369,
+              "cumulative_letter": "B+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 148.2666666666666,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 84.90639827462255,
+              "weekly_letter": "B",
+              "weekly_delta_points": -8.236606471753092,
+              "cumulative_score_pct": 86.1289800250815,
+              "cumulative_letter": "B",
+              "cumulative_delta_points": -2.7515824821521875,
+              "trend_delta_points": -8.236606471753092,
+              "trend_label": "Trending Down",
+              "score": 126.89999999999992,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -8.236606471753092,
+            "current_score_pct": 86.1289800250815,
+            "current_letter": "B",
+            "previous_score_pct": 88.88056250723369,
+            "delta_points": -2.7515824821521875,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -2.7515824821521875,
+          "trend_delta_points": -8.236606471753092,
+          "current_score_pct": 86.1289800250815,
+          "previous_score_pct": 88.88056250723369
+        }
       },
       "process_scores": {
         "weekly": {
@@ -5675,7 +6782,108 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed."
+        "summary": "Bend & Snap Count graded B this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 93.14300474637564,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 88.88056250723369,
+              "cumulative_letter": "B+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 148.2666666666666,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 84.90639827462255,
+              "weekly_letter": "B",
+              "weekly_delta_points": -8.236606471753092,
+              "cumulative_score_pct": 86.1289800250815,
+              "cumulative_letter": "B",
+              "cumulative_delta_points": -2.7515824821521875,
+              "trend_delta_points": -8.236606471753092,
+              "trend_label": "Trending Down",
+              "score": 126.89999999999992,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -8.236606471753092,
+            "current_score_pct": 86.1289800250815,
+            "current_letter": "B",
+            "previous_score_pct": 88.88056250723369,
+            "delta_points": -2.7515824821521875,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -2.7515824821521875,
+          "trend_delta_points": -8.236606471753092,
+          "current_score_pct": 86.1289800250815,
+          "previous_score_pct": 88.88056250723369
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 93.14300474637564,
+            "weekly_letter": "A",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 88.88056250723369,
+            "cumulative_letter": "B+",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 148.2666666666666,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 84.90639827462255,
+            "weekly_letter": "B",
+            "weekly_delta_points": -8.236606471753092,
+            "cumulative_score_pct": 86.1289800250815,
+            "cumulative_letter": "B",
+            "cumulative_delta_points": -2.7515824821521875,
+            "trend_delta_points": -8.236606471753092,
+            "trend_label": "Trending Down",
+            "score": 126.89999999999992,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Down",
+          "trend_delta_points": -8.236606471753092,
+          "current_score_pct": 86.1289800250815,
+          "current_letter": "B",
+          "previous_score_pct": 88.88056250723369,
+          "delta_points": -2.7515824821521875,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Down",
+        "trend_delta_points": -8.236606471753092,
+        "current_score_pct": 86.1289800250815,
+        "current_letter": "B",
+        "previous_score_pct": 88.88056250723369,
+        "delta_points": -2.7515824821521875,
+        "weeks": 2
       }
     },
     "ZSzizzle": {
@@ -6186,6 +7394,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.8",
       "manager_grades": {
         "weekly": {
           "score_pct": 62.28829283685704,
@@ -6318,7 +7527,56 @@
             }
           }
         },
-        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions."
+        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 82.0569935691318,
+              "weekly_letter": "B-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 87.86613076098605,
+              "cumulative_letter": "B+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 136.2999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 62.28829283685704,
+              "weekly_letter": "D",
+              "weekly_delta_points": -19.768700732274766,
+              "cumulative_score_pct": 68.37297993390085,
+              "cumulative_letter": "C-",
+              "cumulative_delta_points": -19.493150827085202,
+              "trend_delta_points": -19.768700732274766,
+              "trend_label": "Trending Down",
+              "score": 77.33333333333326,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -19.768700732274766,
+            "current_score_pct": 68.37297993390085,
+            "current_letter": "C-",
+            "previous_score_pct": 87.86613076098605,
+            "delta_points": -19.493150827085202,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -19.493150827085202,
+          "trend_delta_points": -19.768700732274766,
+          "current_score_pct": 68.37297993390085,
+          "previous_score_pct": 87.86613076098605
+        }
       },
       "process_scores": {
         "weekly": {
@@ -6452,7 +7710,108 @@
             }
           }
         },
-        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions."
+        "summary": "ZSzizzle graded D this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 82.0569935691318,
+              "weekly_letter": "B-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 87.86613076098605,
+              "cumulative_letter": "B+",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 136.2999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 62.28829283685704,
+              "weekly_letter": "D",
+              "weekly_delta_points": -19.768700732274766,
+              "cumulative_score_pct": 68.37297993390085,
+              "cumulative_letter": "C-",
+              "cumulative_delta_points": -19.493150827085202,
+              "trend_delta_points": -19.768700732274766,
+              "trend_label": "Trending Down",
+              "score": 77.33333333333326,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Down",
+            "trend_delta_points": -19.768700732274766,
+            "current_score_pct": 68.37297993390085,
+            "current_letter": "C-",
+            "previous_score_pct": 87.86613076098605,
+            "delta_points": -19.493150827085202,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Down",
+          "delta_points": -19.493150827085202,
+          "trend_delta_points": -19.768700732274766,
+          "current_score_pct": 68.37297993390085,
+          "previous_score_pct": 87.86613076098605
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 82.0569935691318,
+            "weekly_letter": "B-",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 87.86613076098605,
+            "cumulative_letter": "B+",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 136.2999999999999,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 62.28829283685704,
+            "weekly_letter": "D",
+            "weekly_delta_points": -19.768700732274766,
+            "cumulative_score_pct": 68.37297993390085,
+            "cumulative_letter": "C-",
+            "cumulative_delta_points": -19.493150827085202,
+            "trend_delta_points": -19.768700732274766,
+            "trend_label": "Trending Down",
+            "score": 77.33333333333326,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Down",
+          "trend_delta_points": -19.768700732274766,
+          "current_score_pct": 68.37297993390085,
+          "current_letter": "C-",
+          "previous_score_pct": 87.86613076098605,
+          "delta_points": -19.493150827085202,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Down",
+        "trend_delta_points": -19.768700732274766,
+        "current_score_pct": 68.37297993390085,
+        "current_letter": "C-",
+        "previous_score_pct": 87.86613076098605,
+        "delta_points": -19.493150827085202,
+        "weeks": 2
       }
     },
     "Two Buck Luck": {
@@ -6779,6 +8138,7 @@
           }
         }
       },
+      "team_key": "470.l.932349.t.9",
       "manager_grades": {
         "weekly": {
           "score_pct": 92.04068589640355,
@@ -6911,7 +8271,56 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 76.69627959413756,
+              "weekly_letter": "C+",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 74.05304164612788,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 124.66666666666663,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.04068589640355,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 15.34440630226598,
+              "cumulative_score_pct": 81.15913268871154,
+              "cumulative_letter": "B-",
+              "cumulative_delta_points": 7.106091042583657,
+              "trend_delta_points": 15.34440630226598,
+              "trend_label": "Trending Up",
+              "score": 131.86666666666656,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 15.34440630226598,
+            "current_score_pct": 81.15913268871154,
+            "current_letter": "B-",
+            "previous_score_pct": 74.05304164612788,
+            "delta_points": 7.106091042583657,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 7.106091042583657,
+          "trend_delta_points": 15.34440630226598,
+          "current_score_pct": 81.15913268871154,
+          "previous_score_pct": 74.05304164612788
+        }
       },
       "process_scores": {
         "weekly": {
@@ -7045,7 +8454,108 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly."
+        "summary": "Two Buck Luck graded A- this week and B- for the season-to-date (provisional). Weekly management reads as well managed; season management reads as reasonable but costly.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 76.69627959413756,
+              "weekly_letter": "C+",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 74.05304164612788,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 124.66666666666663,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 92.04068589640355,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 15.34440630226598,
+              "cumulative_score_pct": 81.15913268871154,
+              "cumulative_letter": "B-",
+              "cumulative_delta_points": 7.106091042583657,
+              "trend_delta_points": 15.34440630226598,
+              "trend_label": "Trending Up",
+              "score": 131.86666666666656,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 15.34440630226598,
+            "current_score_pct": 81.15913268871154,
+            "current_letter": "B-",
+            "previous_score_pct": 74.05304164612788,
+            "delta_points": 7.106091042583657,
+            "weeks": 2
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 7.106091042583657,
+          "trend_delta_points": 15.34440630226598,
+          "current_score_pct": 81.15913268871154,
+          "previous_score_pct": 74.05304164612788
+        }
+      },
+      "manager_grade_series": {
+        "weekly": [
+          {
+            "week": 1,
+            "weekly_score_pct": 76.69627959413756,
+            "weekly_letter": "C+",
+            "weekly_delta_points": 0.0,
+            "cumulative_score_pct": 74.05304164612788,
+            "cumulative_letter": "C",
+            "cumulative_delta_points": 0.0,
+            "trend_delta_points": 0.0,
+            "trend_label": "Stable",
+            "score": 124.66666666666663,
+            "opponent_score": null,
+            "result": null
+          },
+          {
+            "week": 2,
+            "weekly_score_pct": 92.04068589640355,
+            "weekly_letter": "A-",
+            "weekly_delta_points": 15.34440630226598,
+            "cumulative_score_pct": 81.15913268871154,
+            "cumulative_letter": "B-",
+            "cumulative_delta_points": 7.106091042583657,
+            "trend_delta_points": 15.34440630226598,
+            "trend_label": "Trending Up",
+            "score": 131.86666666666656,
+            "opponent_score": null,
+            "result": null
+          }
+        ],
+        "summary": {
+          "status": "available",
+          "trend_label": "Trending Up",
+          "trend_delta_points": 15.34440630226598,
+          "current_score_pct": 81.15913268871154,
+          "current_letter": "B-",
+          "previous_score_pct": 74.05304164612788,
+          "delta_points": 7.106091042583657,
+          "weeks": 2
+        }
+      },
+      "manager_grade_trend": {
+        "status": "available",
+        "trend_label": "Trending Up",
+        "trend_delta_points": 15.34440630226598,
+        "current_score_pct": 81.15913268871154,
+        "current_letter": "B-",
+        "previous_score_pct": 74.05304164612788,
+        "delta_points": 7.106091042583657,
+        "weeks": 2
       }
     }
   },
@@ -17225,36 +18735,36 @@
           "ownership_status": "ACTIVE"
         },
         {
-          "name": "Bengals",
+          "name": "Jets",
           "position": "OFF",
           "points": 0.0,
-          "season_avg": 9.0,
+          "season_avg": 4.5,
           "games_played": 2.0,
-          "diff": -9.0,
+          "diff": -4.5,
           "diff_pct": -1.0,
           "weighted_diff": -0.0,
           "fantasy_team": null,
           "ownership_status": null
         },
         {
-          "name": "Jerry Jeudy",
-          "position": "WR",
+          "name": "Theo Johnson",
+          "position": "TE",
           "points": 0.0,
-          "season_avg": 3.6,
+          "season_avg": 0.9,
           "games_played": 1.0,
-          "diff": -3.6,
+          "diff": -0.9,
           "diff_pct": -1.0,
           "weighted_diff": -0.0,
           "fantasy_team": null,
           "ownership_status": null
         },
         {
-          "name": "Saints",
+          "name": "Giants",
           "position": "OFF",
           "points": 0.0,
-          "season_avg": 1.0,
+          "season_avg": 1.5,
           "games_played": 2.0,
-          "diff": -1.0,
+          "diff": -1.5,
           "diff_pct": -1.0,
           "weighted_diff": -0.0,
           "fantasy_team": null,

@@ -1,0 +1,3524 @@
+{
+  "metadata": {
+    "schema_version": "1.1",
+    "report_type": "matchup_weekly",
+    "year": 2026,
+    "week": 3,
+    "generated_at": "2026-09-29T22:05:11.405456",
+    "page_title": "Millan\u2019s Last Supper vs Nacua-Cola matchup report",
+    "matchup_id": "week-03-millan-s-last-supper-vs-nacua-cola",
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_03"
+  },
+  "matchup": {
+    "matchup_id": "week-03-millan-s-last-supper-vs-nacua-cola",
+    "team_a_name": "Millan\u2019s Last Supper",
+    "team_b_name": "Nacua-Cola",
+    "team_a_score": 181.17,
+    "team_b_score": 109.8,
+    "actual_margin": 71.36999999999999,
+    "final_margin": 71.36999999999999,
+    "winner_team_name": "Millan\u2019s Last Supper",
+    "result_text": "Millan\u2019s Last Supper by 71.4",
+    "margin_text": "Millan\u2019s Last Supper 181.2 to 109.8",
+    "ideal_margin": 75.80000000000007,
+    "ideal_winner": "Millan\u2019s Last Supper",
+    "winner_changed_under_ideal": false,
+    "team_a_projected_score": 125.82,
+    "team_b_projected_score": 107.2,
+    "team_a_points_over_projected": 55.349999999999994,
+    "team_b_points_over_projected": 2.5999999999999943,
+    "league_average_score": 127.03000000000002,
+    "league_median_score": 130.865,
+    "team_a_weekly_rank": 1,
+    "team_b_weekly_rank": 7,
+    "league_size": 10,
+    "team_a_beat_league_median": true,
+    "team_b_beat_league_median": false
+  },
+  "summary": {
+    "decision_summary": "Millan\u2019s Last Supper won by 71.4. Millan\u2019s Last Supper left 11.1 lineup points on the table, while Nacua-Cola left 6.7.",
+    "historical_summary": "Millan\u2019s Last Supper is 4-7 against Nacua-Cola across 11 meetings between these managers.",
+    "net_ideal_swing": 4.433333333333394,
+    "ideal_summary": "Ideal lineups still favor Millan\u2019s Last Supper",
+    "winner_reason": "Millan\u2019s Last Supper won by 71.4, led by a 27.7-point edge at WR. The leading starters were George Kittle (26.2) and Derrick Henry (24.9).",
+    "loser_reason": "Nacua-Cola could not match the opponent's WR production, losing that position battle by 27.7 points. Jadarian Price scored 2.2. A best legal lineup added 6.7, still short of the 71.4-point margin."
+  },
+  "teams": [
+    {
+      "team_name": "Millan\u2019s Last Supper",
+      "manager_display": "Liana",
+      "actual_score": 181.16666666666657,
+      "ideal_score": 192.2666666666666,
+      "manager_grade_pct": 94.1,
+      "manager_grade_letter": "A",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 94.1,
+          "letter": "A",
+          "label": "creative edge"
+        },
+        "season": {
+          "score_pct": 94.5625,
+          "letter": "A",
+          "label": "creative edge",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 94.2267683772538,
+            "decision_grade_pct": 89.67758967758967,
+            "roster_missed_points": 11.10000000000003,
+            "free_agent_missed_points": 27.866666666666656,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 26.155555555555566,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": 58.20299999999989,
+            "weekly_rank": 1,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 97.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.9650000000000001,
+              "luck_win_credit": 0.03499999999999992,
+              "all_play_win_pct": 100.0,
+              "dominant_win": true,
+              "victory_margin_pct": 56.18357868220104,
+              "weekly_score_rank": 1,
+              "league_size": 10,
+              "score_vs_winning_baseline": 33.76999999999998,
+              "opponent_score_vs_week_average": -17.230000000000018,
+              "opponent_lineup_miss_points": 6.666666666666529,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 465.033333333333,
+            "season_ideal_points": 491.73333333333306,
+            "season_lineup_efficiency_pct": 94.57022776572667,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 94.5625,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 94.57022776572667,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 163.911111111111,
+                "raw_unit": "ideal points per week",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 98.75,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 81.4814814814815,
+                "raw_unit": "all-play win rate",
+                "league_rank": 2,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 81.4814814814815,
+              "win_pct": 66.66666666666666,
+              "dominant_win_rate": 100.0,
+              "victory_margin_pct": 47.287193005644674
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Millan\u2019s Last Supper graded A this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 82.97952902774539,
+              "weekly_letter": "B-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 75.71041197840393,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 127.36666666666657,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 11.120470972254608,
+              "cumulative_score_pct": 91.23032025297749,
+              "cumulative_letter": "A-",
+              "cumulative_delta_points": 15.519908274573567,
+              "trend_delta_points": 11.120470972254608,
+              "trend_label": "Trending Up",
+              "score": 156.4999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 94.5625,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 3.332179747022508,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 181.16666666666657,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Stable",
+            "trend_delta_points": 0.0,
+            "current_score_pct": 94.5625,
+            "current_letter": "A",
+            "previous_score_pct": 91.23032025297749,
+            "delta_points": 3.332179747022508,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Stable",
+          "delta_points": 3.332179747022508,
+          "trend_delta_points": 0.0,
+          "current_score_pct": 94.5625,
+          "previous_score_pct": 91.23032025297749
+        }
+      },
+      "process_score_pct": 94.1,
+      "process_score_letter": "A",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 94.1,
+          "letter": "A",
+          "label": "creative edge"
+        },
+        "season": {
+          "score_pct": 94.5625,
+          "letter": "A",
+          "label": "creative edge",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 94.2267683772538,
+            "decision_grade_pct": 89.67758967758967,
+            "roster_missed_points": 11.10000000000003,
+            "free_agent_missed_points": 27.866666666666656,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 26.155555555555566,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": 58.20299999999989,
+            "weekly_rank": 1,
+            "league_size": 10,
+            "beat_league_median": true,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 97.0,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 1.0,
+              "expected_win_credit": 0.9650000000000001,
+              "luck_win_credit": 0.03499999999999992,
+              "all_play_win_pct": 100.0,
+              "dominant_win": true,
+              "victory_margin_pct": 56.18357868220104,
+              "weekly_score_rank": 1,
+              "league_size": 10,
+              "score_vs_winning_baseline": 33.76999999999998,
+              "opponent_score_vs_week_average": -17.230000000000018,
+              "opponent_lineup_miss_points": 6.666666666666529,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 465.033333333333,
+            "season_ideal_points": 491.73333333333306,
+            "season_lineup_efficiency_pct": 94.57022776572667,
+            "drop_regret_points_total": 0.0,
+            "trend": "improving",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 94.5625,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 94.57022776572667,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 1,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 163.911111111111,
+                "raw_unit": "ideal points per week",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 0.0,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 5,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 98.75,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 81.4814814814815,
+                "raw_unit": "all-play win rate",
+                "league_rank": 2,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 81.4814814814815,
+              "win_pct": 66.66666666666666,
+              "dominant_win_rate": 100.0,
+              "victory_margin_pct": 47.287193005644674
+            },
+            "move_impact": {
+              "post_draft_value_points": 0.0,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Millan\u2019s Last Supper graded A this week and A for the season-to-date (developing). Weekly management reads as creative edge; season management reads as creative edge.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 82.97952902774539,
+              "weekly_letter": "B-",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 75.71041197840393,
+              "cumulative_letter": "C",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 127.36666666666657,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 11.120470972254608,
+              "cumulative_score_pct": 91.23032025297749,
+              "cumulative_letter": "A-",
+              "cumulative_delta_points": 15.519908274573567,
+              "trend_delta_points": 11.120470972254608,
+              "trend_label": "Trending Up",
+              "score": 156.4999999999999,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 94.1,
+              "weekly_letter": "A",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 94.5625,
+              "cumulative_letter": "A",
+              "cumulative_delta_points": 3.332179747022508,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 181.16666666666657,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Stable",
+            "trend_delta_points": 0.0,
+            "current_score_pct": 94.5625,
+            "current_letter": "A",
+            "previous_score_pct": 91.23032025297749,
+            "delta_points": 3.332179747022508,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Stable",
+          "delta_points": 3.332179747022508,
+          "trend_delta_points": 0.0,
+          "current_score_pct": 94.5625,
+          "previous_score_pct": 91.23032025297749
+        }
+      },
+      "season_context": {
+        "seed": 2,
+        "record": "2-1",
+        "points_for": 465.03999999999996,
+        "max_possible_wins": 14
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 11.100000000000023,
+          "roster_swap_upside_points": 6.099999999999998,
+          "waiver_upside_points": 27.866666666666656
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 0.0,
+          "former_player_followup_points": 0.0
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "George Kittle",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "6 rec, 82 yds \u00b7 2 rec TD \u00b7 6 rec 1D",
+          "points": 26.200000000000003
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "26 rush, 89 yds \u00b7 1 rec, 0 yds \u00b7 2 rush TD \u00b7 4 rush 1D",
+          "points": 24.9
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "15 rush, 75 yds \u00b7 4 rec, 41 yds \u00b7 1 rush TD \u00b7 4 rush 1D \u00b7 3 rec 1D",
+          "points": 24.6
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Drake London",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "9 rec, 194 yds \u00b7 5 rec 1D",
+          "points": 24.4
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Jared Goff",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "25/32, 269 pass yds \u00b7 2 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 6 yds",
+          "points": 21.566666666666578
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Davante Adams",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "7 rec, 137 yds \u00b7 4 rec 1D",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Jaguars",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "6 PA \u00b7 3 sacks \u00b7 2 INT \u00b7 1 FR",
+          "points": 16.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Luther Burden III",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "7 rec, 61 yds \u00b7 1 rush, 7 yds \u00b7 1 rec TD \u00b7 3 rec 1D",
+          "points": 15.8
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "19/29, 182 pass yds \u00b7 3 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 25 yds \u00b7 2 rush 1D",
+          "points": 26.56666666666661,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Michael Wilson",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "11 rec, 89 yds \u00b7 1 rec TD \u00b7 7 rec 1D",
+          "points": 21.9,
+          "differential": 6.099999999999998,
+          "starter_replaced": "Luther Burden III",
+          "starter_points": 15.8
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Brian Robinson",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "10 rush, 50 yds \u00b7 1 rush TD \u00b7 4 rush 1D",
+          "points": 16.799999999999983,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Carnell Tate",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "6 rec, 58 yds \u00b7 3 rec 1D",
+          "points": 8.8,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "10 rush, 31 yds \u00b7 3 rush 1D",
+          "points": 6.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "19/29, 182 pass yds \u00b7 3 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 25 yds \u00b7 2 rush 1D",
+          "points": 26.56666666666661,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Michael Wilson",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "11 rec, 89 yds \u00b7 1 rec TD \u00b7 7 rec 1D",
+          "points": 21.9,
+          "differential": 6.099999999999998,
+          "starter_replaced": "Luther Burden III",
+          "starter_points": 15.8
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Brian Robinson",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "10 rush, 50 yds \u00b7 1 rush TD \u00b7 4 rush 1D",
+          "points": 16.799999999999983,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Carnell Tate",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "6 rec, 58 yds \u00b7 3 rec 1D",
+          "points": 8.8,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "10 rush, 31 yds \u00b7 3 rush 1D",
+          "points": 6.1,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Michael Wilson",
+          "recommended_points": 21.9,
+          "benched_player": "Luther Burden III",
+          "benched_points": 15.8,
+          "point_swing": 6.099999999999998,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Michael Wilson over Luther Burden III for an estimated +6.1 points this week.",
+          "confidence": 0.7525,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Luther Burden III",
+            "points": 15.8,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.15249999999999994,
+            "capped_total": 0.7525
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_waiver_swings": [
+        {
+          "position": "RB",
+          "recommended_player": "Ollie Gordon II",
+          "recommended_points": 17.166666666666664,
+          "benched_player": "Rico Dowdle",
+          "benched_points": 0.0,
+          "point_swing": 17.166666666666664,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Ollie Gordon II instead of holding Rico Dowdle for an estimated +17.2 points this week.",
+          "confidence": 0.9291666666666666,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Rico Dowdle",
+            "points": 0.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.4291666666666666,
+            "capped_total": 0.9291666666666666
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "WR",
+          "recommended_player": "Kalif Raymond",
+          "recommended_points": 19.499999999999993,
+          "benched_player": "Carnell Tate",
+          "benched_points": 8.8,
+          "point_swing": 10.699999999999992,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Kalif Raymond instead of holding Carnell Tate for an estimated +10.7 points this week.",
+          "confidence": 0.7674999999999998,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Carnell Tate",
+            "points": 8.8,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.2674999999999998,
+            "capped_total": 0.7674999999999998
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "George Kittle",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "6 rec, 82 yds \u00b7 2 rec TD \u00b7 6 rec 1D",
+          "points": 26.200000000000003
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "26 rush, 89 yds \u00b7 1 rec, 0 yds \u00b7 2 rush TD \u00b7 4 rush 1D",
+          "points": 24.9
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "15 rush, 75 yds \u00b7 4 rec, 41 yds \u00b7 1 rush TD \u00b7 4 rush 1D \u00b7 3 rec 1D",
+          "points": 24.6
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Drake London",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "9 rec, 194 yds \u00b7 5 rec 1D",
+          "points": 24.4
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Jared Goff",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Detroit Lions",
+          "stat_line": "25/32, 269 pass yds \u00b7 2 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 6 yds",
+          "points": 21.566666666666578
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Davante Adams",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "7 rec, 137 yds \u00b7 4 rec 1D",
+          "points": 17.700000000000003
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Jaguars",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "6 PA \u00b7 3 sacks \u00b7 2 INT \u00b7 1 FR",
+          "points": 16.0
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Luther Burden III",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "7 rec, 61 yds \u00b7 1 rush, 7 yds \u00b7 1 rec TD \u00b7 3 rec 1D",
+          "points": 15.8
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Cairo Santos",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "2 FG (1 from 20-29, 1 from 40-49) \u00b7 3 XP",
+          "points": 10.0
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "19/29, 182 pass yds \u00b7 3 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 25 yds \u00b7 2 rush 1D",
+          "points": 26.56666666666661
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Michael Wilson",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "11 rec, 89 yds \u00b7 1 rec TD \u00b7 7 rec 1D",
+          "points": 21.9
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Brian Robinson",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "10 rush, 50 yds \u00b7 1 rush TD \u00b7 4 rush 1D",
+          "points": 16.799999999999983
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Carnell Tate",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Tennessee Titans",
+          "stat_line": "6 rec, 58 yds \u00b7 3 rec 1D",
+          "points": 8.8
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "10 rush, 31 yds \u00b7 3 rush 1D",
+          "points": 6.1
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "MarShawn Lloyd",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "4 rush, 11 yds \u00b7 2 rec, 7 yds \u00b7 1 rush 1D",
+          "points": 2.8000000000000003
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Pittsburgh Steelers",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "ideal_all": [
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "19/29, 182 pass yds \u00b7 3 pass TD \u00b7 1 INT \u00b7 10 pass 1D \u00b7 4 rush, 25 yds \u00b7 2 rush 1D",
+          "points": 26.56666666666661,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "George Kittle",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "6 rec, 82 yds \u00b7 2 rec TD \u00b7 6 rec 1D",
+          "points": 26.200000000000003,
+          "actual_roster_position": "TE"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "26 rush, 89 yds \u00b7 1 rec, 0 yds \u00b7 2 rush TD \u00b7 4 rush 1D",
+          "points": 24.9,
+          "actual_roster_position": "RB"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "San Francisco 49ers",
+          "stat_line": "15 rush, 75 yds \u00b7 4 rec, 41 yds \u00b7 1 rush TD \u00b7 4 rush 1D \u00b7 3 rec 1D",
+          "points": 24.6,
+          "actual_roster_position": "RB"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Drake London",
+          "position": "WR",
+          "roster_position": "W/R/T",
+          "nfl_team": "Atlanta Falcons",
+          "stat_line": "9 rec, 194 yds \u00b7 5 rec 1D",
+          "points": 24.4,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Michael Wilson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Arizona Cardinals",
+          "stat_line": "11 rec, 89 yds \u00b7 1 rec TD \u00b7 7 rec 1D",
+          "points": 21.9,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Davante Adams",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "7 rec, 137 yds \u00b7 4 rec 1D",
+          "points": 17.700000000000003,
+          "actual_roster_position": "W/R/T"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Jaguars",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "6 PA \u00b7 3 sacks \u00b7 2 INT \u00b7 1 FR",
+          "points": 16.0,
+          "actual_roster_position": "DEF"
+        },
+        {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Cairo Santos",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "2 FG (1 from 20-29, 1 from 40-49) \u00b7 3 XP",
+          "points": 10.0,
+          "actual_roster_position": "K"
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "George Kittle",
+          "position": "TE",
+          "actual_team": "San Francisco 49ers",
+          "points": 26.200000000000003,
+          "season_avg": 8.147368421052631,
+          "type": "BOOM",
+          "z_score": 2.002658759699456,
+          "ownership_status": "ACTIVE"
+        },
+        {
+          "name": "Michael Wilson",
+          "position": "WR",
+          "actual_team": "Arizona Cardinals",
+          "points": 21.9,
+          "season_avg": 11.58,
+          "type": "BOOM",
+          "z_score": 1.6845303633441109,
+          "ownership_status": "BENCH"
+        },
+        {
+          "name": "Jaguars",
+          "position": "DEF",
+          "actual_team": "Jacksonville Jaguars",
+          "points": 16.0,
+          "season_avg": 8.833333333333334,
+          "type": "BOOM",
+          "z_score": 1.6814330570624163,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "scoring_sources": {
+        "team_key": "470.l.932349.t.4",
+        "team_name": "Millan\u2019s Last Supper",
+        "total_points": 181.16666666666657,
+        "contribution_total": 181.16666666666657,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 90.5,
+            "share_pct": 49.954001839926434
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 43.7,
+            "share_pct": 24.12143514259431
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 20.966666666666576,
+            "share_pct": 11.573137074516977
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 16.0,
+            "share_pct": 8.83164673413064
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 10.0,
+            "share_pct": 5.5197792088316495
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 515.0,
+            "fantasy_points": 51.5,
+            "share_pct": 28.426862925482993
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 21.0,
+            "fantasy_points": 21.0,
+            "share_pct": 11.591536338546463
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 9.935602575896969
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 9.935602575896969
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 177.0,
+            "fantasy_points": 17.7,
+            "share_pct": 9.77000919963202
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 6.62373505059798
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 269.0,
+            "fantasy_points": 8.966666666666576,
+            "share_pct": 4.949402023918996
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 8.0,
+            "fantasy_points": 8.0,
+            "share_pct": 4.41582336706532
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 1-6 points",
+            "raw_value": 1.0,
+            "fantasy_points": 7.0,
+            "share_pct": 3.8638454461821548
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.20791168353266
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.20791168353266
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.655933762649495
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.655933762649495
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.655933762649495
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.10395584176633
+          }
+        ]
+      },
+      "league_context": {
+        "weekly_rank": 1,
+        "league_size": 10,
+        "league_average_score": 127.03000000000002,
+        "league_median_score": 130.865,
+        "beat_league_median": true,
+        "all_play_record": "9-0",
+        "projected_score": 125.82,
+        "points_over_projected": 55.349999999999994,
+        "yahoo_matchup_grade": "A+"
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 181.16666666666657,
+        "optimal_lineup_points": 192.2666666666666,
+        "bench_points": 82.9666666666666,
+        "points_left_on_bench": 11.100000000000023,
+        "lowest_scoring_starter": {
+          "team_name": "Millan\u2019s Last Supper",
+          "name": "Cairo Santos",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "2 FG (1 from 20-29, 1 from 40-49) \u00b7 3 XP",
+          "points": 10.0
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 88.88888888888889,
+        "best_swap": {
+          "position": "WR",
+          "recommended_player": "Michael Wilson",
+          "recommended_points": 21.9,
+          "benched_player": "Luther Burden III",
+          "benched_points": 15.8,
+          "point_swing": 6.099999999999998,
+          "source": "ROSTER",
+          "reason": "At WR, swap in Michael Wilson over Luther Burden III for an estimated +6.1 points this week.",
+          "confidence": 0.7525,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "START_SIT",
+          "decision_type_label": "Start/Sit",
+          "comparison_target": {
+            "name": "Luther Burden III",
+            "points": 15.8,
+            "role": "STARTER"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Current starter",
+          "confidence_breakdown": {
+            "base": 0.6,
+            "swing_bonus": 0.15249999999999994,
+            "capped_total": 0.7525
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        "summary": "Millan\u2019s Last Supper started 8 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 41.78472861085559,
+        "top_2_share_pct": 28.20607175712973,
+        "volatility_std": 5.209000862572644,
+        "structural_integrity_pct": 58.21527138914441,
+        "fragility_score": 28.20607175712973,
+        "label": "Stable Build"
+      }
+    },
+    {
+      "team_name": "Nacua-Cola",
+      "manager_display": "Craig",
+      "actual_score": 109.7999999999999,
+      "ideal_score": 116.46666666666653,
+      "manager_grade_pct": 83.3,
+      "manager_grade_letter": "B",
+      "manager_grades": {
+        "weekly": {
+          "score_pct": 83.3,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 65.11350025192984,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 94.27590154550661,
+            "decision_grade_pct": 83.90432767008839,
+            "roster_missed_points": 6.666666666666632,
+            "free_agent_missed_points": 41.13333333333338,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 18.17777777777775,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": -13.163666666666785,
+            "weekly_rank": 7,
+            "league_size": 10,
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 60.99999999999999,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.21666666666666667,
+              "luck_win_credit": -0.21666666666666667,
+              "all_play_win_pct": 33.33333333333333,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 7,
+              "league_size": 10,
+              "score_vs_winning_baseline": -37.60000000000001,
+              "opponent_score_vs_week_average": 54.13999999999997,
+              "opponent_lineup_miss_points": 11.096666666666607,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 274.86666666666645,
+            "season_ideal_points": 333.5666666666664,
+            "season_lineup_efficiency_pct": 82.40231837713601,
+            "drop_regret_points_total": 12.83333333333326,
+            "trend": "improving",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 65.11350025192984,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 79.32417307884482,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 82.40231837713601,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 8,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 111.1888888888888,
+                "raw_unit": "ideal points per week",
+                "league_rank": 10,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 13.699999999999903,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 51.424758960459634,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 22.22222222222222,
+                "raw_unit": "all-play win rate",
+                "league_rank": 9,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 22.22222222222222,
+              "win_pct": 33.33333333333333,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 10.358700715707453
+            },
+            "move_impact": {
+              "post_draft_value_points": 13.699999999999903,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Nacua-Cola graded B this week and D+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as bad decisions.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 60.666012871590546,
+              "weekly_letter": "D",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 54.781405148636225,
+              "cumulative_letter": "F",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 77.6666666666666,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 71.23121641049981,
+              "weekly_letter": "C-",
+              "weekly_delta_points": 10.565203538909266,
+              "cumulative_score_pct": 58.384272627306785,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": 3.602867478670561,
+              "trend_delta_points": 10.565203538909266,
+              "trend_label": "Trending Up",
+              "score": 87.39999999999993,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 83.3,
+              "weekly_letter": "B",
+              "weekly_delta_points": 12.068783589500185,
+              "cumulative_score_pct": 65.11350025192984,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 6.72922762462305,
+              "trend_delta_points": 12.068783589500185,
+              "trend_label": "Trending Up",
+              "score": 109.7999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 12.068783589500185,
+            "current_score_pct": 65.11350025192984,
+            "current_letter": "D+",
+            "previous_score_pct": 58.384272627306785,
+            "delta_points": 6.72922762462305,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 6.72922762462305,
+          "trend_delta_points": 12.068783589500185,
+          "current_score_pct": 65.11350025192984,
+          "previous_score_pct": 58.384272627306785
+        }
+      },
+      "process_score_pct": 83.3,
+      "process_score_letter": "B",
+      "process_scores": {
+        "weekly": {
+          "score_pct": 83.3,
+          "letter": "B",
+          "label": "well managed"
+        },
+        "season": {
+          "score_pct": 65.11350025192984,
+          "letter": "D+",
+          "label": "bad decisions",
+          "confidence": 0.5,
+          "confidence_label": "Developing"
+        },
+        "components": {
+          "weekly": {
+            "baseline": 75.0,
+            "lineup_efficiency_pct": 94.27590154550661,
+            "decision_grade_pct": 83.90432767008839,
+            "roster_missed_points": 6.666666666666632,
+            "free_agent_missed_points": 41.13333333333338,
+            "good_moves_this_week": 0,
+            "bad_moves_this_week": 0,
+            "move_grade_adjustment_points": 0.0,
+            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
+            "move_grade_tags": [],
+            "move_assisted_win": false,
+            "transaction_activity_count": 0,
+            "score_vs_historical_avg": 18.17777777777775,
+            "season_average_score": 122.96366666666668,
+            "score_vs_season_average": -13.163666666666785,
+            "weekly_rank": 7,
+            "league_size": 10,
+            "beat_league_median": false,
+            "component_scores": {
+              "lineup_decisions": {
+                "score_pct": 100.0,
+                "weight_pct": 50.0,
+                "available": true
+              },
+              "transaction_deployment": {
+                "score_pct": 75.0,
+                "weight_pct": 20.0,
+                "available": true
+              },
+              "competitive_output": {
+                "score_pct": 60.99999999999999,
+                "weight_pct": 30.0,
+                "available": true
+              }
+            },
+            "luck": {
+              "actual_win_credit": 0.0,
+              "expected_win_credit": 0.21666666666666667,
+              "luck_win_credit": -0.21666666666666667,
+              "all_play_win_pct": 33.33333333333333,
+              "dominant_win": false,
+              "victory_margin_pct": 0.0,
+              "weekly_score_rank": 7,
+              "league_size": 10,
+              "score_vs_winning_baseline": -37.60000000000001,
+              "opponent_score_vs_week_average": 54.13999999999997,
+              "opponent_lineup_miss_points": 11.096666666666607,
+              "opponent_assisted_win": false,
+              "opponent_decisive_bench_points": 0.0
+            }
+          },
+          "season": {
+            "baseline": 75.0,
+            "season_actual_points": 274.86666666666645,
+            "season_ideal_points": 333.5666666666664,
+            "season_lineup_efficiency_pct": 82.40231837713601,
+            "drop_regret_points_total": 12.83333333333326,
+            "trend": "improving",
+            "weeks_completed": 3,
+            "confidence": 0.5,
+            "confidence_label": "Developing",
+            "raw_score_pct": 65.11350025192984,
+            "component_scores": {
+              "lineup_management": {
+                "score_pct": 79.32417307884482,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 82.40231837713601,
+                "raw_unit": "lineup efficiency",
+                "league_rank": 8,
+                "league_size": 10
+              },
+              "roster_construction": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 111.1888888888888,
+                "raw_unit": "ideal points per week",
+                "league_rank": 10,
+                "league_size": 10
+              },
+              "transaction_value": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 13.699999999999903,
+                "raw_unit": "post-draft value over replacement",
+                "league_rank": 2,
+                "league_size": 10
+              },
+              "competitive_strength": {
+                "score_pct": 51.424758960459634,
+                "weight_pct": 35.0,
+                "available": true,
+                "raw_value": 22.22222222222222,
+                "raw_unit": "all-play win rate",
+                "league_rank": 9,
+                "league_size": 10
+              }
+            },
+            "competitive_strength": {
+              "all_play_win_pct": 22.22222222222222,
+              "win_pct": 33.33333333333333,
+              "dominant_win_rate": 0.0,
+              "victory_margin_pct": 10.358700715707453
+            },
+            "move_impact": {
+              "post_draft_value_points": 13.699999999999903,
+              "move_assisted_wins": 0
+            },
+            "adaptability": {
+              "included_in_rating": false,
+              "trend": "improving",
+              "reason": "Shown as context only; the current trend label is not precise enough to grade."
+            }
+          }
+        },
+        "summary": "Nacua-Cola graded B this week and D+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as bad decisions.",
+        "series": {
+          "weekly": [
+            {
+              "week": 1,
+              "weekly_score_pct": 60.666012871590546,
+              "weekly_letter": "D",
+              "weekly_delta_points": 0.0,
+              "cumulative_score_pct": 54.781405148636225,
+              "cumulative_letter": "F",
+              "cumulative_delta_points": 0.0,
+              "trend_delta_points": 0.0,
+              "trend_label": "Stable",
+              "score": 77.6666666666666,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 2,
+              "weekly_score_pct": 71.23121641049981,
+              "weekly_letter": "C-",
+              "weekly_delta_points": 10.565203538909266,
+              "cumulative_score_pct": 58.384272627306785,
+              "cumulative_letter": "D-",
+              "cumulative_delta_points": 3.602867478670561,
+              "trend_delta_points": 10.565203538909266,
+              "trend_label": "Trending Up",
+              "score": 87.39999999999993,
+              "opponent_score": null,
+              "result": null
+            },
+            {
+              "week": 3,
+              "weekly_score_pct": 83.3,
+              "weekly_letter": "B",
+              "weekly_delta_points": 12.068783589500185,
+              "cumulative_score_pct": 65.11350025192984,
+              "cumulative_letter": "D+",
+              "cumulative_delta_points": 6.72922762462305,
+              "trend_delta_points": 12.068783589500185,
+              "trend_label": "Trending Up",
+              "score": 109.7999999999999,
+              "opponent_score": null,
+              "result": null
+            }
+          ],
+          "summary": {
+            "status": "available",
+            "trend_label": "Trending Up",
+            "trend_delta_points": 12.068783589500185,
+            "current_score_pct": 65.11350025192984,
+            "current_letter": "D+",
+            "previous_score_pct": 58.384272627306785,
+            "delta_points": 6.72922762462305,
+            "weeks": 3
+          }
+        },
+        "trend": {
+          "label": "Trending Up",
+          "delta_points": 6.72922762462305,
+          "trend_delta_points": 12.068783589500185,
+          "current_score_pct": 65.11350025192984,
+          "previous_score_pct": 58.384272627306785
+        }
+      },
+      "season_context": {
+        "seed": 9,
+        "record": "1-2",
+        "points_for": 274.87,
+        "max_possible_wins": 13
+      },
+      "decision_breakdown": {
+        "lineup": {
+          "lineup_delta_points": 6.666666666666629,
+          "roster_swap_upside_points": 0,
+          "waiver_upside_points": 41.13333333333338
+        },
+        "moves": {
+          "good_moves_this_week": 0,
+          "bad_moves_this_week": 0,
+          "neutral_moves_this_week": 0,
+          "drop_regret_points_total": 12.83333333333326,
+          "former_player_followup_points": 12.83333333333326
+        }
+      },
+      "started_players_top": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "15 rush, 73 yds \u00b7 2 rec, 17 yds \u00b7 1 rush TD \u00b7 5 rush 1D \u00b7 1 rec 1D",
+          "points": 21.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Christian Watson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "7 rec, 96 yds \u00b7 1 rec TD \u00b7 5 rec 1D",
+          "points": 20.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Travis Kelce",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "2 rec, 59 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+          "points": 13.9
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bryce Young",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "26/48, 291 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 17 pass 1D",
+          "points": 13.699999999999903
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "3 FG (2 from 20-29, 1 from 30-39) \u00b7 1 FG miss \u00b7 2 XP",
+          "points": 11.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Texans",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Houston Texans",
+          "stat_line": "19 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 2 FR",
+          "points": 11.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "4 rec, 66 yds \u00b7 3 rec 1D",
+          "points": 9.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "New England Patriots",
+          "stat_line": "7 rush, 22 yds \u00b7 3 rec, 16 yds \u00b7 3 rush 1D",
+          "points": 6.800000000000001
+        }
+      ],
+      "bench_regrets_top": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "20/34, 226 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 11 pass 1D \u00b7 4 rush, 17 yds \u00b7 2 rush 1D",
+          "points": 15.233333333333256,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "9 rec, 55 yds \u00b7 1 rush, 2 yds \u00b7 1 rush 1D \u00b7 2 rec 1D",
+          "points": 8.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenny Gainwell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tampa Bay Buccaneers",
+          "stat_line": "3 rush, -4 yds \u00b7 2 rec, 14 yds \u00b7 1 rec 1D",
+          "points": 7.33333333333328,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rome Odunze",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "3 rec, 44 yds \u00b7 2 rec 1D",
+          "points": 6.4,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rashod Bateman",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "2 rec, 37 yds \u00b7 1 rec 1D",
+          "points": 4.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "bench_points_left_top": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "20/34, 226 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 11 pass 1D \u00b7 4 rush, 17 yds \u00b7 2 rush 1D",
+          "points": 15.233333333333256,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "9 rec, 55 yds \u00b7 1 rush, 2 yds \u00b7 1 rush 1D \u00b7 2 rec 1D",
+          "points": 8.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenny Gainwell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tampa Bay Buccaneers",
+          "stat_line": "3 rush, -4 yds \u00b7 2 rec, 14 yds \u00b7 1 rec 1D",
+          "points": 7.33333333333328,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rome Odunze",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "3 rec, 44 yds \u00b7 2 rec 1D",
+          "points": 6.4,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rashod Bateman",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "2 rec, 37 yds \u00b7 1 rec 1D",
+          "points": 4.7,
+          "differential": 0.0,
+          "starter_replaced": null,
+          "starter_points": 0.0
+        }
+      ],
+      "top_lineup_swings": [],
+      "top_waiver_swings": [
+        {
+          "position": "WR",
+          "recommended_player": "Kalif Raymond",
+          "recommended_points": 19.499999999999993,
+          "benched_player": "Puka Nacua",
+          "benched_points": 0.0,
+          "point_swing": 19.499999999999993,
+          "source": "FREE_AGENT",
+          "reason": "At WR, consider adding Kalif Raymond instead of holding Puka Nacua for an estimated +19.5 points this week.",
+          "confidence": 0.9874999999999998,
+          "signal_label": "High hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Puka Nacua",
+            "points": 0.0,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Major point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Major point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.4874999999999998,
+            "capped_total": 0.9874999999999998
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "TE",
+          "recommended_player": "Kenyon Sadiq",
+          "recommended_points": 20.5,
+          "benched_player": "Tyler Warren",
+          "benched_points": 8.7,
+          "point_swing": 11.8,
+          "source": "FREE_AGENT",
+          "reason": "At TE, consider adding Kenyon Sadiq instead of holding Tyler Warren for an estimated +11.8 points this week.",
+          "confidence": 0.795,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Tyler Warren",
+            "points": 8.7,
+            "role": "BENCH"
+          },
+          "swing_tier": "HIGH",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.29500000000000004,
+            "capped_total": 0.795
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        },
+        {
+          "position": "RB",
+          "recommended_player": "Ollie Gordon II",
+          "recommended_points": 17.166666666666664,
+          "benched_player": "Kenny Gainwell",
+          "benched_points": 7.33333333333328,
+          "point_swing": 9.833333333333385,
+          "source": "FREE_AGENT",
+          "reason": "At RB, consider adding Ollie Gordon II instead of holding Kenny Gainwell for an estimated +9.8 points this week.",
+          "confidence": 0.7458333333333347,
+          "signal_label": "Medium hindsight impact",
+          "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+          "decision_type": "WAIVER_ADD",
+          "decision_type_label": "Waiver Add",
+          "comparison_target": {
+            "name": "Kenny Gainwell",
+            "points": 7.33333333333328,
+            "role": "BENCH"
+          },
+          "swing_tier": "MEDIUM",
+          "leverage_label": "Useful point swing",
+          "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "edge_label": "Useful point swing",
+          "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+          "comparison_label": "Bench/roster candidate",
+          "confidence_breakdown": {
+            "base": 0.5,
+            "swing_bonus": 0.24583333333333462,
+            "capped_total": 0.7458333333333347
+          },
+          "sample_context": {
+            "recommended_player_weeks": 3,
+            "comparison_player_weeks": 3
+          }
+        }
+      ],
+      "top_additions_this_week": [],
+      "started_all": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "W/R/T",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "15 rush, 73 yds \u00b7 2 rec, 17 yds \u00b7 1 rush TD \u00b7 5 rush 1D \u00b7 1 rec 1D",
+          "points": 21.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Christian Watson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "7 rec, 96 yds \u00b7 1 rec TD \u00b7 5 rec 1D",
+          "points": 20.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Travis Kelce",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "2 rec, 59 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+          "points": 13.9
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bryce Young",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Carolina Panthers",
+          "stat_line": "26/48, 291 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 17 pass 1D",
+          "points": 13.699999999999903
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "3 FG (2 from 20-29, 1 from 30-39) \u00b7 1 FG miss \u00b7 2 XP",
+          "points": 11.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Texans",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Houston Texans",
+          "stat_line": "19 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 2 FR",
+          "points": 11.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "4 rec, 66 yds \u00b7 3 rec 1D",
+          "points": 9.6
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "New England Patriots",
+          "stat_line": "7 rush, 22 yds \u00b7 3 rec, 16 yds \u00b7 3 rush 1D",
+          "points": 6.800000000000001
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Jadarian Price",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "5 rush, 15 yds \u00b7 1 rec, 7 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+          "points": 2.2
+        }
+      ],
+      "bench_all": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "20/34, 226 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 11 pass 1D \u00b7 4 rush, 17 yds \u00b7 2 rush 1D",
+          "points": 15.233333333333256
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "roster_position": "BN",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "9 rec, 55 yds \u00b7 1 rush, 2 yds \u00b7 1 rush 1D \u00b7 2 rec 1D",
+          "points": 8.7
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenny Gainwell",
+          "position": "RB",
+          "roster_position": "BN",
+          "nfl_team": "Tampa Bay Buccaneers",
+          "stat_line": "3 rush, -4 yds \u00b7 2 rec, 14 yds \u00b7 1 rec 1D",
+          "points": 7.33333333333328
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rome Odunze",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Chicago Bears",
+          "stat_line": "3 rec, 44 yds \u00b7 2 rec 1D",
+          "points": 6.4
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Rashod Bateman",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Baltimore Ravens",
+          "stat_line": "2 rec, 37 yds \u00b7 1 rec 1D",
+          "points": 4.7
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "New England Patriots",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Puka Nacua",
+          "position": "WR",
+          "roster_position": "BN",
+          "nfl_team": "Los Angeles Rams",
+          "stat_line": "No recorded counting stats",
+          "points": 0.0
+        }
+      ],
+      "ideal_all": [
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Jacksonville Jaguars",
+          "stat_line": "15 rush, 73 yds \u00b7 2 rec, 17 yds \u00b7 1 rush TD \u00b7 5 rush 1D \u00b7 1 rec 1D",
+          "points": 21.0,
+          "actual_roster_position": "W/R/T"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Christian Watson",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Green Bay Packers",
+          "stat_line": "7 rec, 96 yds \u00b7 1 rec TD \u00b7 5 rec 1D",
+          "points": 20.6,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Justin Herbert",
+          "position": "QB",
+          "roster_position": "QB",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "20/34, 226 pass yds \u00b7 1 pass TD \u00b7 1 INT \u00b7 11 pass 1D \u00b7 4 rush, 17 yds \u00b7 2 rush 1D",
+          "points": 15.233333333333256,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Travis Kelce",
+          "position": "TE",
+          "roster_position": "W/R/T",
+          "nfl_team": "Kansas City Chiefs",
+          "stat_line": "2 rec, 59 yds \u00b7 1 rec TD \u00b7 2 rec 1D",
+          "points": 13.9,
+          "actual_roster_position": "TE"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "roster_position": "K",
+          "nfl_team": "Dallas Cowboys",
+          "stat_line": "3 FG (2 from 20-29, 1 from 30-39) \u00b7 1 FG miss \u00b7 2 XP",
+          "points": 11.0,
+          "actual_roster_position": "K"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Texans",
+          "position": "DEF",
+          "roster_position": "DEF",
+          "nfl_team": "Houston Texans",
+          "stat_line": "19 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 2 FR",
+          "points": 11.0,
+          "actual_roster_position": "DEF"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "roster_position": "WR",
+          "nfl_team": "Los Angeles Chargers",
+          "stat_line": "4 rec, 66 yds \u00b7 3 rec 1D",
+          "points": 9.6,
+          "actual_roster_position": "WR"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "roster_position": "TE",
+          "nfl_team": "Indianapolis Colts",
+          "stat_line": "9 rec, 55 yds \u00b7 1 rush, 2 yds \u00b7 1 rush 1D \u00b7 2 rec 1D",
+          "points": 8.7,
+          "actual_roster_position": "BN"
+        },
+        {
+          "team_name": "Nacua-Cola",
+          "name": "Kenny Gainwell",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Tampa Bay Buccaneers",
+          "stat_line": "3 rush, -4 yds \u00b7 2 rec, 14 yds \u00b7 1 rec 1D",
+          "points": 7.33333333333328,
+          "actual_roster_position": "BN"
+        }
+      ],
+      "boom_bust": [
+        {
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "actual_team": "Jacksonville Jaguars",
+          "points": 21.0,
+          "season_avg": 7.4877192982456044,
+          "type": "BOOM",
+          "z_score": 2.0355935842772506,
+          "ownership_status": "ACTIVE"
+        }
+      ],
+      "scoring_sources": {
+        "team_key": "470.l.932349.t.6",
+        "team_name": "Nacua-Cola",
+        "total_points": 109.7999999999999,
+        "contribution_total": 109.7999999999999,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 49.099999999999994,
+            "share_pct": 44.71766848816033
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 27.0,
+            "share_pct": 24.59016393442625
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 13.699999999999903,
+            "share_pct": 12.47723132969027
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.8214936247723148
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 261.0,
+            "fantasy_points": 26.099999999999998,
+            "share_pct": 23.77049180327871
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 10.92896174863389
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 110.0,
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 11.0,
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 10.0,
+            "fantasy_points": 10.0,
+            "share_pct": 9.107468123861574
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 291.0,
+            "fantasy_points": 9.699999999999903,
+            "share_pct": 8.83424408014564
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.464480874316945
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.464480874316945
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 2.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.464480874316945
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.6429872495446296
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.6429872495446296
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.7322404371584725
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.8214936247723148
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.8214936247723148
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.8214936247723148
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.8214936247723148
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 14-20 points",
+            "raw_value": 1.0,
+            "fantasy_points": 1.0,
+            "share_pct": 0.9107468123861574
+          }
+        ]
+      },
+      "league_context": {
+        "weekly_rank": 7,
+        "league_size": 10,
+        "league_average_score": 127.03000000000002,
+        "league_median_score": 130.865,
+        "beat_league_median": false,
+        "all_play_record": "3-6",
+        "projected_score": 107.2,
+        "points_over_projected": 2.5999999999999943,
+        "yahoo_matchup_grade": "D"
+      },
+      "lineup_decisions": {
+        "actual_lineup_points": 109.7999999999999,
+        "optimal_lineup_points": 116.46666666666653,
+        "bench_points": 42.36666666666653,
+        "points_left_on_bench": 6.666666666666629,
+        "lowest_scoring_starter": {
+          "team_name": "Nacua-Cola",
+          "name": "Jadarian Price",
+          "position": "RB",
+          "roster_position": "RB",
+          "nfl_team": "Seattle Seahawks",
+          "stat_line": "5 rush, 15 yds \u00b7 1 rec, 7 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+          "points": 2.2
+        },
+        "lineup_landmine": null,
+        "optimal_start_rate_pct": 100.0,
+        "best_swap": null,
+        "summary": "Nacua-Cola started 9 of 9 slots optimally"
+      },
+      "team_style": {
+        "top_3_share_pct": 50.54644808743174,
+        "top_2_share_pct": 37.88706739526415,
+        "volatility_std": 5.695417261077344,
+        "structural_integrity_pct": 49.45355191256826,
+        "fragility_score": 37.88706739526415,
+        "label": "Stable Build"
+      }
+    }
+  ],
+  "scoring_sources": {
+    "categories": [
+      "Passing",
+      "Rushing",
+      "Receiving",
+      "Kicking",
+      "Defense",
+      "Returns",
+      "Miscellaneous"
+    ],
+    "teams": [
+      {
+        "team_key": "470.l.932349.t.4",
+        "team_name": "Millan\u2019s Last Supper",
+        "total_points": 181.16666666666657,
+        "contribution_total": 181.16666666666657,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 90.5,
+            "share_pct": 49.954001839926434
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 43.7,
+            "share_pct": 24.12143514259431
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 20.966666666666576,
+            "share_pct": 11.573137074516977
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 16.0,
+            "share_pct": 8.83164673413064
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 10.0,
+            "share_pct": 5.5197792088316495
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 515.0,
+            "fantasy_points": 51.5,
+            "share_pct": 28.426862925482993
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 21.0,
+            "fantasy_points": 21.0,
+            "share_pct": 11.591536338546463
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 9.935602575896969
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 3.0,
+            "fantasy_points": 18.0,
+            "share_pct": 9.935602575896969
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 177.0,
+            "fantasy_points": 17.7,
+            "share_pct": 9.77000919963202
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 6.62373505059798
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 269.0,
+            "fantasy_points": 8.966666666666576,
+            "share_pct": 4.949402023918996
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 8.0,
+            "fantasy_points": 8.0,
+            "share_pct": 4.41582336706532
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 1-6 points",
+            "raw_value": 1.0,
+            "fantasy_points": 7.0,
+            "share_pct": 3.8638454461821548
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 40-49 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.20791168353266
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 2.20791168353266
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.655933762649495
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.655933762649495
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 3.0,
+            "fantasy_points": 3.0,
+            "share_pct": 1.655933762649495
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.10395584176633
+          }
+        ]
+      },
+      {
+        "team_key": "470.l.932349.t.6",
+        "team_name": "Nacua-Cola",
+        "total_points": 109.7999999999999,
+        "contribution_total": 109.7999999999999,
+        "reconciliation_delta": 0.0,
+        "categories": [
+          {
+            "category": "Receiving",
+            "fantasy_points": 49.099999999999994,
+            "share_pct": 44.71766848816033
+          },
+          {
+            "category": "Rushing",
+            "fantasy_points": 27.0,
+            "share_pct": 24.59016393442625
+          },
+          {
+            "category": "Passing",
+            "fantasy_points": 13.699999999999903,
+            "share_pct": 12.47723132969027
+          },
+          {
+            "category": "Kicking",
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Defense",
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Miscellaneous",
+            "fantasy_points": -2.0,
+            "share_pct": -1.8214936247723148
+          }
+        ],
+        "stats": [
+          {
+            "category": "Receiving",
+            "stat": "Receiving Yards",
+            "raw_value": 261.0,
+            "fantasy_points": 26.099999999999998,
+            "share_pct": 23.77049180327871
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving Touchdowns",
+            "raw_value": 2.0,
+            "fantasy_points": 12.0,
+            "share_pct": 10.92896174863389
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Yards",
+            "raw_value": 110.0,
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Receiving",
+            "stat": "Receiving 1st Downs",
+            "raw_value": 11.0,
+            "fantasy_points": 11.0,
+            "share_pct": 10.018214936247732
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing 1st Downs",
+            "raw_value": 10.0,
+            "fantasy_points": 10.0,
+            "share_pct": 9.107468123861574
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Yards",
+            "raw_value": 291.0,
+            "fantasy_points": 9.699999999999903,
+            "share_pct": 8.83424408014564
+          },
+          {
+            "category": "Passing",
+            "stat": "Passing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.464480874316945
+          },
+          {
+            "category": "Rushing",
+            "stat": "Rushing Touchdowns",
+            "raw_value": 1.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.464480874316945
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 20-29 Yards",
+            "raw_value": 2.0,
+            "fantasy_points": 6.0,
+            "share_pct": 5.464480874316945
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Sack",
+            "raw_value": 4.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.6429872495446296
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Fumble Recovery",
+            "raw_value": 2.0,
+            "fantasy_points": 4.0,
+            "share_pct": 3.6429872495446296
+          },
+          {
+            "category": "Kicking",
+            "stat": "Field Goals 30-39 Yards",
+            "raw_value": 1.0,
+            "fantasy_points": 3.0,
+            "share_pct": 2.7322404371584725
+          },
+          {
+            "category": "Passing",
+            "stat": "Interception Thrown",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.8214936247723148
+          },
+          {
+            "category": "Miscellaneous",
+            "stat": "Fumbles Lost",
+            "raw_value": 1.0,
+            "fantasy_points": -2.0,
+            "share_pct": -1.8214936247723148
+          },
+          {
+            "category": "Kicking",
+            "stat": "Point After Attempt Made",
+            "raw_value": 2.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.8214936247723148
+          },
+          {
+            "category": "Defense",
+            "stat": "Team Interception",
+            "raw_value": 1.0,
+            "fantasy_points": 2.0,
+            "share_pct": 1.8214936247723148
+          },
+          {
+            "category": "Defense",
+            "stat": "Points Allowed 14-20 points",
+            "raw_value": 1.0,
+            "fantasy_points": 1.0,
+            "share_pct": 0.9107468123861574
+          }
+        ]
+      }
+    ]
+  },
+  "difference_makers": {
+    "top_started_players": [
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "George Kittle",
+        "position": "TE",
+        "roster_position": "TE",
+        "nfl_team": "San Francisco 49ers",
+        "stat_line": "6 rec, 82 yds \u00b7 2 rec TD \u00b7 6 rec 1D",
+        "points": 26.200000000000003,
+        "team_score_share_pct": 14.461821527138923,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "26.2 points supplied 14% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Derrick Henry",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Baltimore Ravens",
+        "stat_line": "26 rush, 89 yds \u00b7 1 rec, 0 yds \u00b7 2 rush TD \u00b7 4 rush 1D",
+        "points": 24.9,
+        "team_score_share_pct": 13.744250229990806,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "24.9 points supplied 14% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Christian McCaffrey",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "San Francisco 49ers",
+        "stat_line": "15 rush, 75 yds \u00b7 4 rec, 41 yds \u00b7 1 rush TD \u00b7 4 rush 1D \u00b7 3 rec 1D",
+        "points": 24.6,
+        "team_score_share_pct": 13.57865685372586,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "24.6 points supplied 14% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Drake London",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Atlanta Falcons",
+        "stat_line": "9 rec, 194 yds \u00b7 5 rec 1D",
+        "points": 24.4,
+        "team_score_share_pct": 13.468261269549226,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "24.4 points supplied 13% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Jared Goff",
+        "position": "QB",
+        "roster_position": "QB",
+        "nfl_team": "Detroit Lions",
+        "stat_line": "25/32, 269 pass yds \u00b7 2 pass TD \u00b7 14 pass 1D \u00b7 4 rush, 6 yds",
+        "points": 21.566666666666578,
+        "team_score_share_pct": 11.904323827046875,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "21.6 points supplied 12% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Bhayshul Tuten",
+        "position": "RB",
+        "roster_position": "W/R/T",
+        "nfl_team": "Jacksonville Jaguars",
+        "stat_line": "15 rush, 73 yds \u00b7 2 rec, 17 yds \u00b7 1 rush TD \u00b7 5 rush 1D \u00b7 1 rec 1D",
+        "points": 21.0,
+        "team_score_share_pct": 19.125683060109306,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "21.0 points supplied 19% of Nacua-Cola's output in a 71.4-point loss."
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Christian Watson",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Green Bay Packers",
+        "stat_line": "7 rec, 96 yds \u00b7 1 rec TD \u00b7 5 rec 1D",
+        "points": 20.6,
+        "team_score_share_pct": 18.761384335154847,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "20.6 points supplied 19% of Nacua-Cola's output in a 71.4-point loss."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Davante Adams",
+        "position": "WR",
+        "roster_position": "W/R/T",
+        "nfl_team": "Los Angeles Rams",
+        "stat_line": "7 rec, 137 yds \u00b7 4 rec 1D",
+        "points": 17.700000000000003,
+        "team_score_share_pct": 9.770009199632021,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "17.7 points supplied 10% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Jaguars",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Jacksonville Jaguars",
+        "stat_line": "6 PA \u00b7 3 sacks \u00b7 2 INT \u00b7 1 FR",
+        "points": 16.0,
+        "team_score_share_pct": 8.83164673413064,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "16.0 points supplied 9% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Luther Burden III",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Chicago Bears",
+        "stat_line": "7 rec, 61 yds \u00b7 1 rush, 7 yds \u00b7 1 rec TD \u00b7 3 rec 1D",
+        "points": 15.8,
+        "team_score_share_pct": 8.721251149954007,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "15.8 points supplied 9% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      }
+    ],
+    "bottom_started_players": [
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Jadarian Price",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Seattle Seahawks",
+        "stat_line": "5 rush, 15 yds \u00b7 1 rec, 7 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+        "points": 2.2,
+        "team_score_share_pct": 2.0036429872495467,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "2.2 points supplied 2% of Nacua-Cola's output in a 71.4-point loss."
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Rhamondre Stevenson",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "New England Patriots",
+        "stat_line": "7 rush, 22 yds \u00b7 3 rec, 16 yds \u00b7 3 rush 1D",
+        "points": 6.800000000000001,
+        "team_score_share_pct": 6.193078324225872,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "6.8 points supplied 6% of Nacua-Cola's output in a 71.4-point loss."
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "roster_position": "WR",
+        "nfl_team": "Los Angeles Chargers",
+        "stat_line": "4 rec, 66 yds \u00b7 3 rec 1D",
+        "points": 9.6,
+        "team_score_share_pct": 8.743169398907112,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "9.6 points supplied 9% of Nacua-Cola's output in a 71.4-point loss."
+      },
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Cairo Santos",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Chicago Bears",
+        "stat_line": "2 FG (1 from 20-29, 1 from 40-49) \u00b7 3 XP",
+        "points": 10.0,
+        "team_score_share_pct": 5.5197792088316495,
+        "matchup_result": "Won",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "10.0 points supplied 6% of Millan\u2019s Last Supper's output in a 71.4-point win."
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Brandon Aubrey",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Dallas Cowboys",
+        "stat_line": "3 FG (2 from 20-29, 1 from 30-39) \u00b7 1 FG miss \u00b7 2 XP",
+        "points": 11.0,
+        "team_score_share_pct": 10.018214936247732,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "11.0 points supplied 10% of Nacua-Cola's output in a 71.4-point loss."
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "name": "Texans",
+        "position": "DEF",
+        "roster_position": "DEF",
+        "nfl_team": "Houston Texans",
+        "stat_line": "19 PA \u00b7 4 sacks \u00b7 1 INT \u00b7 2 FR",
+        "points": 11.0,
+        "team_score_share_pct": 10.018214936247732,
+        "matchup_result": "Lost",
+        "matchup_margin": 71.36666666666667,
+        "impact_summary": "11.0 points supplied 10% of Nacua-Cola's output in a 71.4-point loss."
+      }
+    ],
+    "top_bench_regrets": [
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Michael Wilson",
+        "position": "WR",
+        "roster_position": "BN",
+        "nfl_team": "Arizona Cardinals",
+        "stat_line": "11 rec, 89 yds \u00b7 1 rec TD \u00b7 7 rec 1D",
+        "points": 21.9,
+        "differential": 6.099999999999998,
+        "starter_replaced": "Luther Burden III",
+        "starter_points": 15.8
+      }
+    ],
+    "top_additions_this_week": []
+  },
+  "comparison_summary": [
+    {
+      "comparison_type": "score_battle",
+      "label": "Score Battle",
+      "winner_team": "Millan\u2019s Last Supper",
+      "loser_team": "Nacua-Cola",
+      "value": 71.36666666666667,
+      "margin_relative_value": -0.003333333333316091,
+      "position": "",
+      "summary": "Millan\u2019s Last Supper won the raw scoring battle by 71.4 points."
+    },
+    {
+      "comparison_type": "lineup_battle",
+      "label": "Lineup Battle",
+      "winner_team": "Nacua-Cola",
+      "loser_team": "Millan\u2019s Last Supper",
+      "value": 4.433333333333394,
+      "margin_relative_value": -66.9366666666666,
+      "position": "",
+      "summary": "Nacua-Cola had the cleaner lineup week by 4.4 points of leakage."
+    },
+    {
+      "comparison_type": "process_cost",
+      "label": "Process Cost",
+      "winner_team": "Nacua-Cola",
+      "loser_team": "Millan\u2019s Last Supper",
+      "value": 47.80000000000001,
+      "margin_relative_value": -23.56999999999998,
+      "position": "",
+      "summary": "Nacua-Cola carried the larger combined lineup and waiver miss total."
+    },
+    {
+      "comparison_type": "decisions_relative_to_margin",
+      "label": "Did Decisions Matter?",
+      "winner_team": "NO",
+      "loser_team": "Millan\u2019s Last Supper",
+      "value": 47.80000000000001,
+      "margin_relative_value": -23.56999999999998,
+      "position": "",
+      "summary": "Raw scoring held because the final margin stayed larger than either team's missed-opportunity total."
+    },
+    {
+      "comparison_type": "biggest_unit_edge",
+      "label": "Biggest Unit Edge",
+      "winner_team": "Millan\u2019s Last Supper",
+      "loser_team": "Nacua-Cola",
+      "value": 27.700000000000003,
+      "margin_relative_value": -43.66999999999999,
+      "position": "WR",
+      "summary": "Millan\u2019s Last Supper controlled total WR output by 27.7 points."
+    }
+  ],
+  "margin_story": {
+    "final_margin": 71.36999999999999,
+    "margin": 71.36999999999999,
+    "takeaways": [
+      "The 71.4-point margin was larger than either team's main lineup leak, so the matchup was decided more by raw scoring than one obvious swap.",
+      "The clearest unit edge was total WR output: Millan\u2019s Last Supper by 27.7 points.",
+      "Against projection, Millan\u2019s Last Supper finished +55.3 while Nacua-Cola finished +2.6.",
+      "The biggest started performance was George Kittle for Millan\u2019s Last Supper at 26.2 points."
+    ],
+    "swing_rows": [
+      {
+        "label": "Nacua-Cola waiver upside",
+        "team_name": "Nacua-Cola",
+        "value": 41.13333333333338,
+        "relative_to_margin": -30.236666666666608
+      },
+      {
+        "label": "Millan\u2019s Last Supper waiver upside",
+        "team_name": "Millan\u2019s Last Supper",
+        "value": 27.866666666666656,
+        "relative_to_margin": -43.50333333333333
+      },
+      {
+        "label": "Millan\u2019s Last Supper lineup leakage",
+        "team_name": "Millan\u2019s Last Supper",
+        "value": 11.100000000000023,
+        "relative_to_margin": -60.26999999999997
+      },
+      {
+        "label": "Nacua-Cola lineup leakage",
+        "team_name": "Nacua-Cola",
+        "value": 6.666666666666629,
+        "relative_to_margin": -64.70333333333336
+      }
+    ],
+    "single_swap_flip": null,
+    "would_have_won_summary": null,
+    "scenario_rows": [
+      {
+        "scenario": "Actual lineups",
+        "winner": "Millan\u2019s Last Supper",
+        "winner_score": 181.16666666666657,
+        "loser_score": 109.7999999999999,
+        "margin": 71.36666666666667
+      },
+      {
+        "scenario": "Both best legal lineups",
+        "winner": "Millan\u2019s Last Supper",
+        "winner_score": 192.2666666666666,
+        "loser_score": 116.46666666666653,
+        "margin": 75.80000000000007
+      }
+    ]
+  },
+  "skill_luck": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 127.03000000000002,
+    "league_median_score": 130.865,
+    "teams": [
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "weekly_rank": 1,
+        "all_play_record": "9-0",
+        "beat_league_median": true,
+        "projected_score": 125.82,
+        "points_over_projected": 55.349999999999994,
+        "opponent_weekly_rank": 7
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "weekly_rank": 7,
+        "all_play_record": "3-6",
+        "beat_league_median": false,
+        "projected_score": 107.2,
+        "points_over_projected": 2.5999999999999943,
+        "opponent_weekly_rank": 1
+      }
+    ]
+  },
+  "matchup_story": {
+    "primary_label": "Elite-Score Win",
+    "summary": "The winner paired one of the league's best weekly scores with the head-to-head result.",
+    "league_average_score": 127.03000000000002,
+    "league_median_score": 130.865,
+    "teams": [
+      {
+        "team_name": "Millan\u2019s Last Supper",
+        "weekly_rank": 1,
+        "all_play_record": "9-0",
+        "beat_league_median": true,
+        "projected_score": 125.82,
+        "points_over_projected": 55.349999999999994,
+        "opponent_weekly_rank": 7
+      },
+      {
+        "team_name": "Nacua-Cola",
+        "weekly_rank": 7,
+        "all_play_record": "3-6",
+        "beat_league_median": false,
+        "projected_score": 107.2,
+        "points_over_projected": 2.5999999999999943,
+        "opponent_weekly_rank": 1
+      }
+    ]
+  },
+  "position_battles": {
+    "rows": [
+      {
+        "position": "WR",
+        "team_a_points": 57.900000000000006,
+        "team_b_points": 30.200000000000003,
+        "edge_points": 27.700000000000003,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 27.700000000000003
+      },
+      {
+        "position": "RB",
+        "team_a_points": 49.5,
+        "team_b_points": 30.0,
+        "edge_points": 19.5,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 19.5
+      },
+      {
+        "position": "TE",
+        "team_a_points": 26.200000000000003,
+        "team_b_points": 13.9,
+        "edge_points": 12.300000000000002,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 12.300000000000002
+      },
+      {
+        "position": "QB",
+        "team_a_points": 21.566666666666578,
+        "team_b_points": 13.699999999999903,
+        "edge_points": 7.866666666666674,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 7.866666666666674
+      },
+      {
+        "position": "DEF",
+        "team_a_points": 16.0,
+        "team_b_points": 11.0,
+        "edge_points": 5.0,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 5.0
+      },
+      {
+        "position": "K",
+        "team_a_points": 10.0,
+        "team_b_points": 11.0,
+        "edge_points": 1.0,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": -1.0
+      }
+    ],
+    "largest_edge": {
+      "position": "WR",
+      "team_a_points": 57.900000000000006,
+      "team_b_points": 30.200000000000003,
+      "edge_points": 27.700000000000003,
+      "edge_team": "Millan\u2019s Last Supper",
+      "edge_direction": 27.700000000000003
+    },
+    "top_wins": [
+      {
+        "position": "WR",
+        "team_a_points": 57.900000000000006,
+        "team_b_points": 30.200000000000003,
+        "edge_points": 27.700000000000003,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 27.700000000000003
+      },
+      {
+        "position": "RB",
+        "team_a_points": 49.5,
+        "team_b_points": 30.0,
+        "edge_points": 19.5,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 19.5
+      },
+      {
+        "position": "TE",
+        "team_a_points": 26.200000000000003,
+        "team_b_points": 13.9,
+        "edge_points": 12.300000000000002,
+        "edge_team": "Millan\u2019s Last Supper",
+        "edge_direction": 12.300000000000002
+      }
+    ],
+    "top_losses": [
+      {
+        "position": "K",
+        "team_a_points": 10.0,
+        "team_b_points": 11.0,
+        "edge_points": 1.0,
+        "edge_team": "Nacua-Cola",
+        "edge_direction": -1.0
+      }
+    ]
+  },
+  "lineup_decisions": [
+    {
+      "team_name": "Millan\u2019s Last Supper",
+      "actual_lineup_points": 181.16666666666657,
+      "optimal_lineup_points": 192.2666666666666,
+      "bench_points": 82.9666666666666,
+      "points_left_on_bench": 11.100000000000023,
+      "lowest_scoring_starter": {
+        "team_name": "Millan\u2019s Last Supper",
+        "name": "Cairo Santos",
+        "position": "K",
+        "roster_position": "K",
+        "nfl_team": "Chicago Bears",
+        "stat_line": "2 FG (1 from 20-29, 1 from 40-49) \u00b7 3 XP",
+        "points": 10.0
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 88.88888888888889,
+      "best_swap": {
+        "position": "WR",
+        "recommended_player": "Michael Wilson",
+        "recommended_points": 21.9,
+        "benched_player": "Luther Burden III",
+        "benched_points": 15.8,
+        "point_swing": 6.099999999999998,
+        "source": "ROSTER",
+        "reason": "At WR, swap in Michael Wilson over Luther Burden III for an estimated +6.1 points this week.",
+        "confidence": 0.7525,
+        "signal_label": "Medium hindsight impact",
+        "signal_explanation": "Signal strength is a relative evidence tier based on the decision type, point edge, and available scoring sample.",
+        "decision_type": "START_SIT",
+        "decision_type_label": "Start/Sit",
+        "comparison_target": {
+          "name": "Luther Burden III",
+          "points": 15.8,
+          "role": "STARTER"
+        },
+        "swing_tier": "MEDIUM",
+        "leverage_label": "Useful point swing",
+        "leverage_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "edge_label": "Useful point swing",
+        "edge_explanation": "Point edge is the estimated difference between the recommended player and the compared lineup or roster option.",
+        "comparison_label": "Current starter",
+        "confidence_breakdown": {
+          "base": 0.6,
+          "swing_bonus": 0.15249999999999994,
+          "capped_total": 0.7525
+        },
+        "sample_context": {
+          "recommended_player_weeks": 3,
+          "comparison_player_weeks": 3
+        }
+      },
+      "summary": "Millan\u2019s Last Supper started 8 of 9 slots optimally"
+    },
+    {
+      "team_name": "Nacua-Cola",
+      "actual_lineup_points": 109.7999999999999,
+      "optimal_lineup_points": 116.46666666666653,
+      "bench_points": 42.36666666666653,
+      "points_left_on_bench": 6.666666666666629,
+      "lowest_scoring_starter": {
+        "team_name": "Nacua-Cola",
+        "name": "Jadarian Price",
+        "position": "RB",
+        "roster_position": "RB",
+        "nfl_team": "Seattle Seahawks",
+        "stat_line": "5 rush, 15 yds \u00b7 1 rec, 7 yds \u00b7 2 rush 1D \u00b7 1 fumble lost",
+        "points": 2.2
+      },
+      "lineup_landmine": null,
+      "optimal_start_rate_pct": 100.0,
+      "best_swap": null,
+      "summary": "Nacua-Cola started 9 of 9 slots optimally"
+    }
+  ],
+  "team_style": [
+    {
+      "team_name": "Millan\u2019s Last Supper",
+      "top_3_share_pct": 41.78472861085559,
+      "top_2_share_pct": 28.20607175712973,
+      "volatility_std": 5.209000862572644,
+      "structural_integrity_pct": 58.21527138914441,
+      "fragility_score": 28.20607175712973,
+      "label": "Stable Build"
+    },
+    {
+      "team_name": "Nacua-Cola",
+      "top_3_share_pct": 50.54644808743174,
+      "top_2_share_pct": 37.88706739526415,
+      "volatility_std": 5.695417261077344,
+      "structural_integrity_pct": 49.45355191256826,
+      "fragility_score": 37.88706739526415,
+      "label": "Stable Build"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Big Brain",
+      "team_name": "Millan\u2019s Last Supper",
+      "detail": "Weekly process score cleared the sharp-management threshold."
+    }
+  ],
+  "timeline_context": {
+    "status": "unavailable",
+    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+  },
+  "historical_context": {
+    "team_a_name": "Millan\u2019s Last Supper",
+    "team_b_name": "Nacua-Cola",
+    "record_for_team_a": "4-7",
+    "games": 11,
+    "playoff_games": 0,
+    "seasons_met": 6,
+    "series_balance": 0.7272727272727273,
+    "is_rivalry": false,
+    "rivalry_label": null,
+    "rivalry_summary": null,
+    "average_margin_for_team_a": 3.642727272727268,
+    "series_summary": "Millan\u2019s Last Supper is 4-7 against Nacua-Cola across 11 meetings between these managers.",
+    "average_margin_text": "Average margin from Millan\u2019s Last Supper's perspective: +3.6.",
+    "current_margin_rank_text": "11th closest",
+    "current_total_rank_text": "2nd highest combined score",
+    "streak_text": "Millan\u2019s Last Supper carries the current 2-game streak.",
+    "last_five_meetings": [
+      {
+        "season_label": "2026 W3",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 71.36999999999999,
+        "combined_score": 290.96999999999997,
+        "historical_team_a_name": "Millan\u2019s Last Supper",
+        "historical_team_b_name": "Nacua-Cola",
+        "report_href": "matchup_05_millan-s-last-supper_vs_nacua-cola.html"
+      },
+      {
+        "season_label": "2025 W10",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 17.033333333333317,
+        "combined_score": 226.83333333333314,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola",
+        "report_href": "../../2025/matchups_week_10/matchup_04_reverse-ted-lasso_vs_nacua-cola.html"
+      },
+      {
+        "season_label": "2025 W1",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 14.233333333333348,
+        "combined_score": 177.5666666666665,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola",
+        "report_href": "../../2025/matchups_week_01/matchup_04_nacua-cola_vs_reverse-ted-lasso.html"
+      },
+      {
+        "season_label": "2024 W13",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 5.469999999999999,
+        "combined_score": 292.27,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola"
+      },
+      {
+        "season_label": "2024 W4",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 40.22999999999999,
+        "combined_score": 247.23,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola"
+      }
+    ],
+    "all_meetings": [
+      {
+        "season_label": "2026 W3",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 71.36999999999999,
+        "combined_score": 290.96999999999997,
+        "historical_team_a_name": "Millan\u2019s Last Supper",
+        "historical_team_b_name": "Nacua-Cola"
+      },
+      {
+        "season_label": "2025 W10",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 17.033333333333317,
+        "combined_score": 226.83333333333314,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola"
+      },
+      {
+        "season_label": "2025 W1",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 14.233333333333348,
+        "combined_score": 177.5666666666665,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola"
+      },
+      {
+        "season_label": "2024 W13",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 5.469999999999999,
+        "combined_score": 292.27,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola"
+      },
+      {
+        "season_label": "2024 W4",
+        "context": "regular season",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 40.22999999999999,
+        "combined_score": 247.23,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Nacua-Cola"
+      },
+      {
+        "season_label": "2023 W16",
+        "context": "consolation",
+        "winner": "Millan\u2019s Last Supper",
+        "margin": 21.299999999999997,
+        "combined_score": 182.83999999999997,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Mark Murray Down For Moore"
+      },
+      {
+        "season_label": "2023 W11",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 8.5,
+        "combined_score": 212.76,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Mark Murray Down For Moore"
+      },
+      {
+        "season_label": "2023 W2",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 6.1299999999999955,
+        "combined_score": 205.93,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Mark Murray Down For Moore"
+      },
+      {
+        "season_label": "2022 W13",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 56.60000000000001,
+        "combined_score": 184.74,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Mark Murray Down For Moore"
+      },
+      {
+        "season_label": "2022 W4",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 5.730000000000004,
+        "combined_score": 191.87,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "Mark Murray Down For Moore"
+      },
+      {
+        "season_label": "2021 W8",
+        "context": "regular season",
+        "winner": "Nacua-Cola",
+        "margin": 13.199999999999989,
+        "combined_score": 216.06,
+        "historical_team_a_name": "Reverse Ted Lasso",
+        "historical_team_b_name": "r/WallerStreetBets"
+      }
+    ]
+  },
+  "yahoo_context": {
+    "recap_title": "Chase wins all season long with Toyota Gameday Giveaways.",
+    "recap_url": "https://football.fantasysports.yahoo.com/f1/932349/recap?week=3&mid1=4&mid2=6",
+    "grade_summary": "Millan\u2019s Last Supper: A+ | Nacua-Cola: D"
+  }
+}
