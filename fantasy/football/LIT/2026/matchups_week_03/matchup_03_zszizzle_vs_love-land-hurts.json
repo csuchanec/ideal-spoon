@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 3,
-    "generated_at": "2026-09-30T20:31:57.500186",
+    "generated_at": "2026-09-30T20:54:21.062044",
     "page_title": "ZSzizzle vs Love(land) Hurts matchup report",
     "matchup_id": "week-03-zszizzle-vs-love-land-hurts",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_03"
@@ -49,16 +49,16 @@
       "manager_display": "Mike",
       "actual_score": 147.39999999999995,
       "ideal_score": 155.79999999999995,
-      "manager_grade_pct": 93.31999360622024,
-      "manager_grade_letter": "A",
+      "manager_grade_pct": 92.83015628141283,
+      "manager_grade_letter": "A-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 93.31999360622024,
-          "letter": "A",
-          "label": "creative edge"
+          "score_pct": 92.83015628141283,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 77.52335359202469,
+          "score_pct": 77.03351626721727,
           "letter": "C+",
           "label": "reasonable but costly",
           "confidence": 0.5,
@@ -92,12 +92,15 @@
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": 85.1039260969977,
+                "score_pct": 82.6547394729606,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 85.1039260969977,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 85.1039260969977,
+                "crowd_decision_score": 68.87703343990727,
+                "crowd_adjustment_points": -2.449186624037094
               },
               "positional_performance": {
                 "score_pct": 91.66666666666666,
@@ -113,6 +116,101 @@
                 "raw_value": 20.370000000000047,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 3,
+              "correlation": 0.5900332021958333,
+              "coverage_players": 14,
+              "roster_players": 16,
+              "pairs": [
+                {
+                  "started_player": "Jake Bates",
+                  "benched_player": "Cameron Dicker",
+                  "slot": "K",
+                  "started_pct": 52.0,
+                  "benched_started_pct": 93.0,
+                  "started_owned_pct": 57.0,
+                  "benched_owned_pct": 96.0,
+                  "started_points": 7.0,
+                  "benched_points": 9.0,
+                  "realized_edge_points": -2.0,
+                  "contrarian": true,
+                  "weight": 0.3936,
+                  "weighted_outcome": -0.09639998552209991,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Harold Fannin Jr.",
+                  "benched_player": "Hunter Henry",
+                  "slot": "TE",
+                  "started_pct": 62.0,
+                  "benched_started_pct": 19.0,
+                  "started_owned_pct": 94.0,
+                  "benched_owned_pct": 55.0,
+                  "started_points": 20.1,
+                  "benched_points": 0.5,
+                  "realized_edge_points": 19.6,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Rams",
+                  "benched_player": "Patriots",
+                  "slot": "DEF",
+                  "started_pct": 73.0,
+                  "benched_started_pct": 63.0,
+                  "started_owned_pct": 91.0,
+                  "benched_owned_pct": 71.0,
+                  "started_points": 3.0,
+                  "benched_points": -1.0,
+                  "realized_edge_points": 4.0,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Jeremiyah Love",
+                  "benched_player": "Aaron Jones Sr.",
+                  "slot": "RB",
+                  "started_pct": 74.0,
+                  "benched_started_pct": 46.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 84.0,
+                  "started_points": 21.9,
+                  "benched_points": 13.2,
+                  "realized_edge_points": 8.7,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Jaylen Waddle",
+                  "benched_player": "Michael Pittman Jr.",
+                  "slot": "WR",
+                  "started_pct": 80.0,
+                  "benched_started_pct": 2.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 76.0,
+                  "started_points": 6.4,
+                  "benched_points": 2.6,
+                  "realized_edge_points": 3.8000000000000003,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                }
+              ],
+              "decision_pairs": 5,
+              "crowd_alignment_pct": 80.0,
+              "contrarian_decisions": 1,
+              "contrarian_value_points": -2.0,
+              "total_weight": 0.3936,
+              "weighted_outcome": -0.09639998552209991,
+              "score_pct": 68.87703343990727
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -140,7 +238,7 @@
             "weeks_completed": 3,
             "confidence": 0.5,
             "confidence_label": "Developing",
-            "raw_score_pct": 77.52335359202469,
+            "raw_score_pct": 77.03351626721727,
             "component_scores": {
               "lineup_management": {
                 "score_pct": 83.0851860519541,
@@ -161,7 +259,7 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": 75.0,
+                "score_pct": 72.5508133759629,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 0.0,
@@ -178,6 +276,235 @@
                 "league_rank": 6,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": 68.87703343990727,
+              "contrarian_decisions": 1,
+              "contrarian_value_points": -2.0,
+              "mean_weekly_correlation": 0.6687505474924473,
+              "weeks_with_correlation": 2,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                },
+                {
+                  "week": 2,
+                  "correlation": 0.7474678927890613,
+                  "coverage_players": 15,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "DJ Moore",
+                      "benched_player": "Alec Pierce",
+                      "slot": "WR",
+                      "started_pct": 66.0,
+                      "benched_started_pct": 19.0,
+                      "started_owned_pct": 97.0,
+                      "benched_owned_pct": 89.0,
+                      "started_points": -0.1,
+                      "benched_points": 2.1,
+                      "realized_edge_points": -2.2,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Jeremiyah Love",
+                      "benched_player": "Aaron Jones Sr.",
+                      "slot": "RB",
+                      "started_pct": 71.0,
+                      "benched_started_pct": 8.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 70.0,
+                      "started_points": 5.5,
+                      "benched_points": 13.5,
+                      "realized_edge_points": -8.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "David Montgomery",
+                      "benched_player": "Hunter Henry",
+                      "slot": "W/R/T",
+                      "started_pct": 81.0,
+                      "benched_started_pct": 14.0,
+                      "started_owned_pct": 97.0,
+                      "benched_owned_pct": 54.0,
+                      "started_points": 2.4000000000000004,
+                      "benched_points": 5.0,
+                      "realized_edge_points": -2.5999999999999996,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Rams",
+                      "benched_player": "Patriots",
+                      "slot": "DEF",
+                      "started_pct": 89.0,
+                      "benched_started_pct": 61.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 74.0,
+                      "started_points": 11.0,
+                      "benched_points": 21.0,
+                      "realized_edge_points": -10.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Cameron Dicker",
+                      "benched_player": "Jake Bates",
+                      "slot": "K",
+                      "started_pct": 95.0,
+                      "benched_started_pct": 62.0,
+                      "started_owned_pct": 98.0,
+                      "benched_owned_pct": 66.0,
+                      "started_points": 2.0,
+                      "benched_points": 7.0,
+                      "realized_edge_points": -5.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Lamar Jackson",
+                      "benched_player": "Caleb Williams",
+                      "slot": "QB",
+                      "started_pct": 96.0,
+                      "benched_started_pct": 80.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 98.0,
+                      "started_points": 18.233333333333256,
+                      "benched_points": 9.799999999999956,
+                      "realized_edge_points": 8.4333333333333,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    }
+                  ],
+                  "decision_pairs": 6,
+                  "crowd_alignment_pct": 100.0,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "score_pct": null
+                },
+                {
+                  "week": 3,
+                  "correlation": 0.5900332021958333,
+                  "coverage_players": 14,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "Jake Bates",
+                      "benched_player": "Cameron Dicker",
+                      "slot": "K",
+                      "started_pct": 52.0,
+                      "benched_started_pct": 93.0,
+                      "started_owned_pct": 57.0,
+                      "benched_owned_pct": 96.0,
+                      "started_points": 7.0,
+                      "benched_points": 9.0,
+                      "realized_edge_points": -2.0,
+                      "contrarian": true,
+                      "weight": 0.3936,
+                      "weighted_outcome": -0.09639998552209991,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Harold Fannin Jr.",
+                      "benched_player": "Hunter Henry",
+                      "slot": "TE",
+                      "started_pct": 62.0,
+                      "benched_started_pct": 19.0,
+                      "started_owned_pct": 94.0,
+                      "benched_owned_pct": 55.0,
+                      "started_points": 20.1,
+                      "benched_points": 0.5,
+                      "realized_edge_points": 19.6,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Rams",
+                      "benched_player": "Patriots",
+                      "slot": "DEF",
+                      "started_pct": 73.0,
+                      "benched_started_pct": 63.0,
+                      "started_owned_pct": 91.0,
+                      "benched_owned_pct": 71.0,
+                      "started_points": 3.0,
+                      "benched_points": -1.0,
+                      "realized_edge_points": 4.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Jeremiyah Love",
+                      "benched_player": "Aaron Jones Sr.",
+                      "slot": "RB",
+                      "started_pct": 74.0,
+                      "benched_started_pct": 46.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 84.0,
+                      "started_points": 21.9,
+                      "benched_points": 13.2,
+                      "realized_edge_points": 8.7,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Jaylen Waddle",
+                      "benched_player": "Michael Pittman Jr.",
+                      "slot": "WR",
+                      "started_pct": 80.0,
+                      "benched_started_pct": 2.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 76.0,
+                      "started_points": 6.4,
+                      "benched_points": 2.6,
+                      "realized_edge_points": 3.8000000000000003,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    }
+                  ],
+                  "decision_pairs": 5,
+                  "crowd_alignment_pct": 80.0,
+                  "contrarian_decisions": 1,
+                  "contrarian_value_points": -2.0,
+                  "total_weight": 0.3936,
+                  "weighted_outcome": -0.09639998552209991,
+                  "score_pct": 68.87703343990727
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 48.14814814814814,
@@ -196,7 +523,7 @@
             }
           }
         },
-        "summary": "ZSzizzle graded A this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
+        "summary": "ZSzizzle graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
@@ -229,13 +556,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 93.31999360622024,
-              "weekly_letter": "A",
-              "weekly_delta_points": 28.857229327267888,
-              "cumulative_score_pct": 77.52335359202469,
+              "weekly_score_pct": 92.83015628141283,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 28.367392002460477,
+              "cumulative_score_pct": 77.03351626721727,
               "cumulative_letter": "C+",
-              "cumulative_delta_points": 9.15037365812384,
-              "trend_delta_points": 28.857229327267888,
+              "cumulative_delta_points": 8.660536333316415,
+              "trend_delta_points": 28.367392002460477,
               "trend_label": "Trending Up",
               "score": 147.39999999999995,
               "opponent_score": null,
@@ -245,32 +572,32 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 28.857229327267888,
-            "current_score_pct": 77.52335359202469,
+            "trend_delta_points": 28.367392002460477,
+            "current_score_pct": 77.03351626721727,
             "current_letter": "C+",
             "previous_score_pct": 68.37297993390085,
-            "delta_points": 9.15037365812384,
+            "delta_points": 8.660536333316415,
             "weeks": 3
           }
         },
         "trend": {
           "label": "Trending Up",
-          "delta_points": 9.15037365812384,
-          "trend_delta_points": 28.857229327267888,
-          "current_score_pct": 77.52335359202469,
+          "delta_points": 8.660536333316415,
+          "trend_delta_points": 28.367392002460477,
+          "current_score_pct": 77.03351626721727,
           "previous_score_pct": 68.37297993390085
         }
       },
-      "process_score_pct": 93.31999360622024,
-      "process_score_letter": "A",
+      "process_score_pct": 92.83015628141283,
+      "process_score_letter": "A-",
       "process_scores": {
         "weekly": {
-          "score_pct": 93.31999360622024,
-          "letter": "A",
-          "label": "creative edge"
+          "score_pct": 92.83015628141283,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
-          "score_pct": 77.52335359202469,
+          "score_pct": 77.03351626721727,
           "letter": "C+",
           "label": "reasonable but costly",
           "confidence": 0.5,
@@ -304,12 +631,15 @@
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": 85.1039260969977,
+                "score_pct": 82.6547394729606,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 85.1039260969977,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 85.1039260969977,
+                "crowd_decision_score": 68.87703343990727,
+                "crowd_adjustment_points": -2.449186624037094
               },
               "positional_performance": {
                 "score_pct": 91.66666666666666,
@@ -325,6 +655,101 @@
                 "raw_value": 20.370000000000047,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 3,
+              "correlation": 0.5900332021958333,
+              "coverage_players": 14,
+              "roster_players": 16,
+              "pairs": [
+                {
+                  "started_player": "Jake Bates",
+                  "benched_player": "Cameron Dicker",
+                  "slot": "K",
+                  "started_pct": 52.0,
+                  "benched_started_pct": 93.0,
+                  "started_owned_pct": 57.0,
+                  "benched_owned_pct": 96.0,
+                  "started_points": 7.0,
+                  "benched_points": 9.0,
+                  "realized_edge_points": -2.0,
+                  "contrarian": true,
+                  "weight": 0.3936,
+                  "weighted_outcome": -0.09639998552209991,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Harold Fannin Jr.",
+                  "benched_player": "Hunter Henry",
+                  "slot": "TE",
+                  "started_pct": 62.0,
+                  "benched_started_pct": 19.0,
+                  "started_owned_pct": 94.0,
+                  "benched_owned_pct": 55.0,
+                  "started_points": 20.1,
+                  "benched_points": 0.5,
+                  "realized_edge_points": 19.6,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Rams",
+                  "benched_player": "Patriots",
+                  "slot": "DEF",
+                  "started_pct": 73.0,
+                  "benched_started_pct": 63.0,
+                  "started_owned_pct": 91.0,
+                  "benched_owned_pct": 71.0,
+                  "started_points": 3.0,
+                  "benched_points": -1.0,
+                  "realized_edge_points": 4.0,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Jeremiyah Love",
+                  "benched_player": "Aaron Jones Sr.",
+                  "slot": "RB",
+                  "started_pct": 74.0,
+                  "benched_started_pct": 46.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 84.0,
+                  "started_points": 21.9,
+                  "benched_points": 13.2,
+                  "realized_edge_points": 8.7,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Jaylen Waddle",
+                  "benched_player": "Michael Pittman Jr.",
+                  "slot": "WR",
+                  "started_pct": 80.0,
+                  "benched_started_pct": 2.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 76.0,
+                  "started_points": 6.4,
+                  "benched_points": 2.6,
+                  "realized_edge_points": 3.8000000000000003,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                }
+              ],
+              "decision_pairs": 5,
+              "crowd_alignment_pct": 80.0,
+              "contrarian_decisions": 1,
+              "contrarian_value_points": -2.0,
+              "total_weight": 0.3936,
+              "weighted_outcome": -0.09639998552209991,
+              "score_pct": 68.87703343990727
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -352,7 +777,7 @@
             "weeks_completed": 3,
             "confidence": 0.5,
             "confidence_label": "Developing",
-            "raw_score_pct": 77.52335359202469,
+            "raw_score_pct": 77.03351626721727,
             "component_scores": {
               "lineup_management": {
                 "score_pct": 83.0851860519541,
@@ -373,7 +798,7 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": 75.0,
+                "score_pct": 72.5508133759629,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 0.0,
@@ -390,6 +815,235 @@
                 "league_rank": 6,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": 68.87703343990727,
+              "contrarian_decisions": 1,
+              "contrarian_value_points": -2.0,
+              "mean_weekly_correlation": 0.6687505474924473,
+              "weeks_with_correlation": 2,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                },
+                {
+                  "week": 2,
+                  "correlation": 0.7474678927890613,
+                  "coverage_players": 15,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "DJ Moore",
+                      "benched_player": "Alec Pierce",
+                      "slot": "WR",
+                      "started_pct": 66.0,
+                      "benched_started_pct": 19.0,
+                      "started_owned_pct": 97.0,
+                      "benched_owned_pct": 89.0,
+                      "started_points": -0.1,
+                      "benched_points": 2.1,
+                      "realized_edge_points": -2.2,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Jeremiyah Love",
+                      "benched_player": "Aaron Jones Sr.",
+                      "slot": "RB",
+                      "started_pct": 71.0,
+                      "benched_started_pct": 8.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 70.0,
+                      "started_points": 5.5,
+                      "benched_points": 13.5,
+                      "realized_edge_points": -8.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "David Montgomery",
+                      "benched_player": "Hunter Henry",
+                      "slot": "W/R/T",
+                      "started_pct": 81.0,
+                      "benched_started_pct": 14.0,
+                      "started_owned_pct": 97.0,
+                      "benched_owned_pct": 54.0,
+                      "started_points": 2.4000000000000004,
+                      "benched_points": 5.0,
+                      "realized_edge_points": -2.5999999999999996,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Rams",
+                      "benched_player": "Patriots",
+                      "slot": "DEF",
+                      "started_pct": 89.0,
+                      "benched_started_pct": 61.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 74.0,
+                      "started_points": 11.0,
+                      "benched_points": 21.0,
+                      "realized_edge_points": -10.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Cameron Dicker",
+                      "benched_player": "Jake Bates",
+                      "slot": "K",
+                      "started_pct": 95.0,
+                      "benched_started_pct": 62.0,
+                      "started_owned_pct": 98.0,
+                      "benched_owned_pct": 66.0,
+                      "started_points": 2.0,
+                      "benched_points": 7.0,
+                      "realized_edge_points": -5.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Lamar Jackson",
+                      "benched_player": "Caleb Williams",
+                      "slot": "QB",
+                      "started_pct": 96.0,
+                      "benched_started_pct": 80.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 98.0,
+                      "started_points": 18.233333333333256,
+                      "benched_points": 9.799999999999956,
+                      "realized_edge_points": 8.4333333333333,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    }
+                  ],
+                  "decision_pairs": 6,
+                  "crowd_alignment_pct": 100.0,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "score_pct": null
+                },
+                {
+                  "week": 3,
+                  "correlation": 0.5900332021958333,
+                  "coverage_players": 14,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "Jake Bates",
+                      "benched_player": "Cameron Dicker",
+                      "slot": "K",
+                      "started_pct": 52.0,
+                      "benched_started_pct": 93.0,
+                      "started_owned_pct": 57.0,
+                      "benched_owned_pct": 96.0,
+                      "started_points": 7.0,
+                      "benched_points": 9.0,
+                      "realized_edge_points": -2.0,
+                      "contrarian": true,
+                      "weight": 0.3936,
+                      "weighted_outcome": -0.09639998552209991,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Harold Fannin Jr.",
+                      "benched_player": "Hunter Henry",
+                      "slot": "TE",
+                      "started_pct": 62.0,
+                      "benched_started_pct": 19.0,
+                      "started_owned_pct": 94.0,
+                      "benched_owned_pct": 55.0,
+                      "started_points": 20.1,
+                      "benched_points": 0.5,
+                      "realized_edge_points": 19.6,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Rams",
+                      "benched_player": "Patriots",
+                      "slot": "DEF",
+                      "started_pct": 73.0,
+                      "benched_started_pct": 63.0,
+                      "started_owned_pct": 91.0,
+                      "benched_owned_pct": 71.0,
+                      "started_points": 3.0,
+                      "benched_points": -1.0,
+                      "realized_edge_points": 4.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Jeremiyah Love",
+                      "benched_player": "Aaron Jones Sr.",
+                      "slot": "RB",
+                      "started_pct": 74.0,
+                      "benched_started_pct": 46.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 84.0,
+                      "started_points": 21.9,
+                      "benched_points": 13.2,
+                      "realized_edge_points": 8.7,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Jaylen Waddle",
+                      "benched_player": "Michael Pittman Jr.",
+                      "slot": "WR",
+                      "started_pct": 80.0,
+                      "benched_started_pct": 2.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 76.0,
+                      "started_points": 6.4,
+                      "benched_points": 2.6,
+                      "realized_edge_points": 3.8000000000000003,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    }
+                  ],
+                  "decision_pairs": 5,
+                  "crowd_alignment_pct": 80.0,
+                  "contrarian_decisions": 1,
+                  "contrarian_value_points": -2.0,
+                  "total_weight": 0.3936,
+                  "weighted_outcome": -0.09639998552209991,
+                  "score_pct": 68.87703343990727
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 48.14814814814814,
@@ -408,7 +1062,7 @@
             }
           }
         },
-        "summary": "ZSzizzle graded A this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
+        "summary": "ZSzizzle graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
@@ -441,13 +1095,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 93.31999360622024,
-              "weekly_letter": "A",
-              "weekly_delta_points": 28.857229327267888,
-              "cumulative_score_pct": 77.52335359202469,
+              "weekly_score_pct": 92.83015628141283,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 28.367392002460477,
+              "cumulative_score_pct": 77.03351626721727,
               "cumulative_letter": "C+",
-              "cumulative_delta_points": 9.15037365812384,
-              "trend_delta_points": 28.857229327267888,
+              "cumulative_delta_points": 8.660536333316415,
+              "trend_delta_points": 28.367392002460477,
               "trend_label": "Trending Up",
               "score": 147.39999999999995,
               "opponent_score": null,
@@ -457,19 +1111,19 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 28.857229327267888,
-            "current_score_pct": 77.52335359202469,
+            "trend_delta_points": 28.367392002460477,
+            "current_score_pct": 77.03351626721727,
             "current_letter": "C+",
             "previous_score_pct": 68.37297993390085,
-            "delta_points": 9.15037365812384,
+            "delta_points": 8.660536333316415,
             "weeks": 3
           }
         },
         "trend": {
           "label": "Trending Up",
-          "delta_points": 9.15037365812384,
-          "trend_delta_points": 28.857229327267888,
-          "current_score_pct": 77.52335359202469,
+          "delta_points": 8.660536333316415,
+          "trend_delta_points": 28.367392002460477,
+          "current_score_pct": 77.03351626721727,
           "previous_score_pct": 68.37297993390085
         }
       },
@@ -1343,16 +1997,16 @@
       "manager_display": "Matt",
       "actual_score": 95.99999999999994,
       "ideal_score": 117.49999999999994,
-      "manager_grade_pct": 64.95749820125398,
+      "manager_grade_pct": 64.30701085257365,
       "manager_grade_letter": "D+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 64.95749820125398,
+          "score_pct": 64.30701085257365,
           "letter": "D+",
           "label": "bad decisions"
         },
         "season": {
-          "score_pct": 66.86510107643517,
+          "score_pct": 66.46462648461201,
           "letter": "D+",
           "label": "bad decisions",
           "confidence": 0.5,
@@ -1388,12 +2042,15 @@
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": 86.95652173913042,
+                "score_pct": 83.70408499572878,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 86.95652173913042,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 1
+                "activity_count": 1,
+                "opportunity_management_score": 86.95652173913042,
+                "crowd_decision_score": 66.86890814149588,
+                "crowd_adjustment_points": -3.2524367434016486
               },
               "positional_performance": {
                 "score_pct": 47.22222222222222,
@@ -1409,6 +2066,133 @@
                 "raw_value": -31.02999999999996,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 3,
+              "correlation": 0.4551438594738413,
+              "coverage_players": 16,
+              "roster_players": 16,
+              "pairs": [
+                {
+                  "started_player": "Mark Andrews",
+                  "benched_player": "Colston Loveland",
+                  "slot": "TE",
+                  "started_pct": 44.0,
+                  "benched_started_pct": 90.0,
+                  "started_owned_pct": 88.0,
+                  "benched_owned_pct": 99.0,
+                  "started_points": 3.4000000000000004,
+                  "benched_points": 6.1,
+                  "realized_edge_points": -2.6999999999999993,
+                  "contrarian": true,
+                  "weight": 0.45539999999999997,
+                  "weighted_outcome": -0.1481159692945111,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Quinshon Judkins",
+                  "benched_player": "Travis Etienne Jr.",
+                  "slot": "RB",
+                  "started_pct": 65.0,
+                  "benched_started_pct": 74.0,
+                  "started_owned_pct": 96.0,
+                  "benched_owned_pct": 98.0,
+                  "started_points": 9.9,
+                  "benched_points": 12.0,
+                  "realized_edge_points": -2.0999999999999996,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Tyler Loop",
+                  "benched_player": "Harrison Mevis",
+                  "slot": "K",
+                  "started_pct": 85.0,
+                  "benched_started_pct": 60.0,
+                  "started_owned_pct": 88.0,
+                  "benched_owned_pct": 63.0,
+                  "started_points": 12.0,
+                  "benched_points": 16.0,
+                  "realized_edge_points": -4.0,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Rashee Rice",
+                  "benched_player": "Dontayvion Wicks",
+                  "slot": "WR",
+                  "started_pct": 89.0,
+                  "benched_started_pct": 6.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 28.0,
+                  "started_points": 10.8,
+                  "benched_points": 5.2,
+                  "realized_edge_points": 5.6000000000000005,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "DeVonta Smith",
+                  "benched_player": "Chris Rodriguez Jr.",
+                  "slot": "W/R/T",
+                  "started_pct": 94.0,
+                  "benched_started_pct": 2.0,
+                  "started_owned_pct": 100.0,
+                  "benched_owned_pct": 50.0,
+                  "started_points": 8.5,
+                  "benched_points": 12.7,
+                  "realized_edge_points": -4.199999999999999,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Seahawks",
+                  "benched_player": "Broncos",
+                  "slot": "DEF",
+                  "started_pct": 95.0,
+                  "benched_started_pct": 76.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 91.0,
+                  "started_points": 2.0,
+                  "benched_points": 14.0,
+                  "realized_edge_points": -12.0,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Josh Allen",
+                  "benched_player": "Jalen Hurts",
+                  "slot": "QB",
+                  "started_pct": 99.0,
+                  "benched_started_pct": 91.0,
+                  "started_owned_pct": 100.0,
+                  "benched_owned_pct": 100.0,
+                  "started_points": 18.099999999999937,
+                  "benched_points": 14.599999999999948,
+                  "realized_edge_points": 3.4999999999999893,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                }
+              ],
+              "decision_pairs": 7,
+              "crowd_alignment_pct": 71.42857142857143,
+              "contrarian_decisions": 1,
+              "contrarian_value_points": -2.6999999999999993,
+              "total_weight": 0.45539999999999997,
+              "weighted_outcome": -0.1481159692945111,
+              "score_pct": 66.86890814149588
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -1436,7 +2220,7 @@
             "weeks_completed": 3,
             "confidence": 0.5,
             "confidence_label": "Developing",
-            "raw_score_pct": 66.86510107643517,
+            "raw_score_pct": 66.46462648461201,
             "component_scores": {
               "lineup_management": {
                 "score_pct": 75.76995772195968,
@@ -1457,7 +2241,7 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": 75.0,
+                "score_pct": 72.99762704088418,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 0.0,
@@ -1474,6 +2258,283 @@
                 "league_rank": 8,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": 69.99406760221045,
+              "contrarian_decisions": 2,
+              "contrarian_value_points": -1.9999999999999982,
+              "mean_weekly_correlation": 0.5154770818936532,
+              "weeks_with_correlation": 2,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                },
+                {
+                  "week": 2,
+                  "correlation": 0.575810304313465,
+                  "coverage_players": 16,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "Quinshon Judkins",
+                      "benched_player": "Travis Etienne Jr.",
+                      "slot": "RB",
+                      "started_pct": 71.0,
+                      "benched_started_pct": 91.0,
+                      "started_owned_pct": 97.0,
+                      "benched_owned_pct": 99.0,
+                      "started_points": 6.800000000000001,
+                      "benched_points": 6.1,
+                      "realized_edge_points": 0.7000000000000011,
+                      "contrarian": true,
+                      "weight": 0.198,
+                      "weighted_outcome": 0.017280920145883255,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Tyler Loop",
+                      "benched_player": "Harrison Mevis",
+                      "slot": "K",
+                      "started_pct": 82.0,
+                      "benched_started_pct": 65.0,
+                      "started_owned_pct": 85.0,
+                      "benched_owned_pct": 68.0,
+                      "started_points": 5.0,
+                      "benched_points": 3.0,
+                      "realized_edge_points": 2.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Rashee Rice",
+                      "benched_player": "Jayden Reed",
+                      "slot": "WR",
+                      "started_pct": 89.0,
+                      "benched_started_pct": 20.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 86.0,
+                      "started_points": 11.3,
+                      "benched_points": 0.4,
+                      "realized_edge_points": 10.9,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Seahawks",
+                      "benched_player": "Broncos",
+                      "slot": "DEF",
+                      "started_pct": 94.0,
+                      "benched_started_pct": 89.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 99.0,
+                      "started_points": 8.0,
+                      "benched_points": 8.0,
+                      "realized_edge_points": 0.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "DeVonta Smith",
+                      "benched_player": "Mark Andrews",
+                      "slot": "W/R/T",
+                      "started_pct": 95.0,
+                      "benched_started_pct": 39.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 88.0,
+                      "started_points": 24.700000000000003,
+                      "benched_points": 8.9,
+                      "realized_edge_points": 15.800000000000002,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Ashton Jeanty",
+                      "benched_player": "Chris Rodriguez Jr.",
+                      "slot": "RB",
+                      "started_pct": 96.0,
+                      "benched_started_pct": 3.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 60.0,
+                      "started_points": 7.300000000000001,
+                      "benched_points": 3.3,
+                      "realized_edge_points": 4.000000000000001,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Josh Allen",
+                      "benched_player": "Jalen Hurts",
+                      "slot": "QB",
+                      "started_pct": 96.0,
+                      "benched_started_pct": 93.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 100.0,
+                      "started_points": 53.166666666666586,
+                      "benched_points": 20.399999999999913,
+                      "realized_edge_points": 32.76666666666667,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    }
+                  ],
+                  "decision_pairs": 7,
+                  "crowd_alignment_pct": 85.71428571428571,
+                  "contrarian_decisions": 1,
+                  "contrarian_value_points": 0.7000000000000011,
+                  "total_weight": 0.198,
+                  "weighted_outcome": 0.017280920145883255,
+                  "score_pct": 77.18193436185395
+                },
+                {
+                  "week": 3,
+                  "correlation": 0.4551438594738413,
+                  "coverage_players": 16,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "Mark Andrews",
+                      "benched_player": "Colston Loveland",
+                      "slot": "TE",
+                      "started_pct": 44.0,
+                      "benched_started_pct": 90.0,
+                      "started_owned_pct": 88.0,
+                      "benched_owned_pct": 99.0,
+                      "started_points": 3.4000000000000004,
+                      "benched_points": 6.1,
+                      "realized_edge_points": -2.6999999999999993,
+                      "contrarian": true,
+                      "weight": 0.45539999999999997,
+                      "weighted_outcome": -0.1481159692945111,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Quinshon Judkins",
+                      "benched_player": "Travis Etienne Jr.",
+                      "slot": "RB",
+                      "started_pct": 65.0,
+                      "benched_started_pct": 74.0,
+                      "started_owned_pct": 96.0,
+                      "benched_owned_pct": 98.0,
+                      "started_points": 9.9,
+                      "benched_points": 12.0,
+                      "realized_edge_points": -2.0999999999999996,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Tyler Loop",
+                      "benched_player": "Harrison Mevis",
+                      "slot": "K",
+                      "started_pct": 85.0,
+                      "benched_started_pct": 60.0,
+                      "started_owned_pct": 88.0,
+                      "benched_owned_pct": 63.0,
+                      "started_points": 12.0,
+                      "benched_points": 16.0,
+                      "realized_edge_points": -4.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Rashee Rice",
+                      "benched_player": "Dontayvion Wicks",
+                      "slot": "WR",
+                      "started_pct": 89.0,
+                      "benched_started_pct": 6.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 28.0,
+                      "started_points": 10.8,
+                      "benched_points": 5.2,
+                      "realized_edge_points": 5.6000000000000005,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "DeVonta Smith",
+                      "benched_player": "Chris Rodriguez Jr.",
+                      "slot": "W/R/T",
+                      "started_pct": 94.0,
+                      "benched_started_pct": 2.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 50.0,
+                      "started_points": 8.5,
+                      "benched_points": 12.7,
+                      "realized_edge_points": -4.199999999999999,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Seahawks",
+                      "benched_player": "Broncos",
+                      "slot": "DEF",
+                      "started_pct": 95.0,
+                      "benched_started_pct": 76.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 91.0,
+                      "started_points": 2.0,
+                      "benched_points": 14.0,
+                      "realized_edge_points": -12.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Josh Allen",
+                      "benched_player": "Jalen Hurts",
+                      "slot": "QB",
+                      "started_pct": 99.0,
+                      "benched_started_pct": 91.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 100.0,
+                      "started_points": 18.099999999999937,
+                      "benched_points": 14.599999999999948,
+                      "realized_edge_points": 3.4999999999999893,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    }
+                  ],
+                  "decision_pairs": 7,
+                  "crowd_alignment_pct": 71.42857142857143,
+                  "contrarian_decisions": 1,
+                  "contrarian_value_points": -2.6999999999999993,
+                  "total_weight": 0.45539999999999997,
+                  "weighted_outcome": -0.1481159692945111,
+                  "score_pct": 66.86890814149588
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 37.03703703703704,
@@ -1514,9 +2575,9 @@
               "weekly_score_pct": 96.06941129673825,
               "weekly_letter": "A",
               "weekly_delta_points": 33.07365334927838,
-              "cumulative_score_pct": 73.7503460090069,
+              "cumulative_score_pct": 73.92490075795523,
               "cumulative_letter": "C",
-              "cumulative_delta_points": 9.133868025962926,
+              "cumulative_delta_points": 9.30842277491125,
               "trend_delta_points": 33.07365334927838,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
@@ -1525,13 +2586,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 64.95749820125398,
+              "weekly_score_pct": 64.30701085257365,
               "weekly_letter": "D+",
-              "weekly_delta_points": -31.11191309548427,
-              "cumulative_score_pct": 66.86510107643517,
+              "weekly_delta_points": -31.762400444164598,
+              "cumulative_score_pct": 66.46462648461201,
               "cumulative_letter": "D+",
-              "cumulative_delta_points": -6.885244932571737,
-              "trend_delta_points": -31.11191309548427,
+              "cumulative_delta_points": -7.460274273343217,
+              "trend_delta_points": -31.762400444164598,
               "trend_label": "Trending Down",
               "score": 95.99999999999994,
               "opponent_score": null,
@@ -1541,32 +2602,32 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -31.11191309548427,
-            "current_score_pct": 66.86510107643517,
+            "trend_delta_points": -31.762400444164598,
+            "current_score_pct": 66.46462648461201,
             "current_letter": "D+",
-            "previous_score_pct": 73.7503460090069,
-            "delta_points": -6.885244932571737,
+            "previous_score_pct": 73.92490075795523,
+            "delta_points": -7.460274273343217,
             "weeks": 3
           }
         },
         "trend": {
           "label": "Trending Down",
-          "delta_points": -6.885244932571737,
-          "trend_delta_points": -31.11191309548427,
-          "current_score_pct": 66.86510107643517,
-          "previous_score_pct": 73.7503460090069
+          "delta_points": -7.460274273343217,
+          "trend_delta_points": -31.762400444164598,
+          "current_score_pct": 66.46462648461201,
+          "previous_score_pct": 73.92490075795523
         }
       },
-      "process_score_pct": 64.95749820125398,
+      "process_score_pct": 64.30701085257365,
       "process_score_letter": "D+",
       "process_scores": {
         "weekly": {
-          "score_pct": 64.95749820125398,
+          "score_pct": 64.30701085257365,
           "letter": "D+",
           "label": "bad decisions"
         },
         "season": {
-          "score_pct": 66.86510107643517,
+          "score_pct": 66.46462648461201,
           "letter": "D+",
           "label": "bad decisions",
           "confidence": 0.5,
@@ -1602,12 +2663,15 @@
                 "available": true
               },
               "transaction_deployment": {
-                "score_pct": 86.95652173913042,
+                "score_pct": 83.70408499572878,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 86.95652173913042,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 1
+                "activity_count": 1,
+                "opportunity_management_score": 86.95652173913042,
+                "crowd_decision_score": 66.86890814149588,
+                "crowd_adjustment_points": -3.2524367434016486
               },
               "positional_performance": {
                 "score_pct": 47.22222222222222,
@@ -1623,6 +2687,133 @@
                 "raw_value": -31.02999999999996,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 3,
+              "correlation": 0.4551438594738413,
+              "coverage_players": 16,
+              "roster_players": 16,
+              "pairs": [
+                {
+                  "started_player": "Mark Andrews",
+                  "benched_player": "Colston Loveland",
+                  "slot": "TE",
+                  "started_pct": 44.0,
+                  "benched_started_pct": 90.0,
+                  "started_owned_pct": 88.0,
+                  "benched_owned_pct": 99.0,
+                  "started_points": 3.4000000000000004,
+                  "benched_points": 6.1,
+                  "realized_edge_points": -2.6999999999999993,
+                  "contrarian": true,
+                  "weight": 0.45539999999999997,
+                  "weighted_outcome": -0.1481159692945111,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Quinshon Judkins",
+                  "benched_player": "Travis Etienne Jr.",
+                  "slot": "RB",
+                  "started_pct": 65.0,
+                  "benched_started_pct": 74.0,
+                  "started_owned_pct": 96.0,
+                  "benched_owned_pct": 98.0,
+                  "started_points": 9.9,
+                  "benched_points": 12.0,
+                  "realized_edge_points": -2.0999999999999996,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Tyler Loop",
+                  "benched_player": "Harrison Mevis",
+                  "slot": "K",
+                  "started_pct": 85.0,
+                  "benched_started_pct": 60.0,
+                  "started_owned_pct": 88.0,
+                  "benched_owned_pct": 63.0,
+                  "started_points": 12.0,
+                  "benched_points": 16.0,
+                  "realized_edge_points": -4.0,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Rashee Rice",
+                  "benched_player": "Dontayvion Wicks",
+                  "slot": "WR",
+                  "started_pct": 89.0,
+                  "benched_started_pct": 6.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 28.0,
+                  "started_points": 10.8,
+                  "benched_points": 5.2,
+                  "realized_edge_points": 5.6000000000000005,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "DeVonta Smith",
+                  "benched_player": "Chris Rodriguez Jr.",
+                  "slot": "W/R/T",
+                  "started_pct": 94.0,
+                  "benched_started_pct": 2.0,
+                  "started_owned_pct": 100.0,
+                  "benched_owned_pct": 50.0,
+                  "started_points": 8.5,
+                  "benched_points": 12.7,
+                  "realized_edge_points": -4.199999999999999,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Seahawks",
+                  "benched_player": "Broncos",
+                  "slot": "DEF",
+                  "started_pct": 95.0,
+                  "benched_started_pct": 76.0,
+                  "started_owned_pct": 99.0,
+                  "benched_owned_pct": 91.0,
+                  "started_points": 2.0,
+                  "benched_points": 14.0,
+                  "realized_edge_points": -12.0,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": -0.0,
+                  "expectation_week": 2
+                },
+                {
+                  "started_player": "Josh Allen",
+                  "benched_player": "Jalen Hurts",
+                  "slot": "QB",
+                  "started_pct": 99.0,
+                  "benched_started_pct": 91.0,
+                  "started_owned_pct": 100.0,
+                  "benched_owned_pct": 100.0,
+                  "started_points": 18.099999999999937,
+                  "benched_points": 14.599999999999948,
+                  "realized_edge_points": 3.4999999999999893,
+                  "contrarian": false,
+                  "weight": 0.0,
+                  "weighted_outcome": 0.0,
+                  "expectation_week": 2
+                }
+              ],
+              "decision_pairs": 7,
+              "crowd_alignment_pct": 71.42857142857143,
+              "contrarian_decisions": 1,
+              "contrarian_value_points": -2.6999999999999993,
+              "total_weight": 0.45539999999999997,
+              "weighted_outcome": -0.1481159692945111,
+              "score_pct": 66.86890814149588
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -1650,7 +2841,7 @@
             "weeks_completed": 3,
             "confidence": 0.5,
             "confidence_label": "Developing",
-            "raw_score_pct": 66.86510107643517,
+            "raw_score_pct": 66.46462648461201,
             "component_scores": {
               "lineup_management": {
                 "score_pct": 75.76995772195968,
@@ -1671,7 +2862,7 @@
                 "league_size": 10
               },
               "transaction_value": {
-                "score_pct": 75.0,
+                "score_pct": 72.99762704088418,
                 "weight_pct": 20.0,
                 "available": true,
                 "raw_value": 0.0,
@@ -1688,6 +2879,283 @@
                 "league_rank": 8,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": 69.99406760221045,
+              "contrarian_decisions": 2,
+              "contrarian_value_points": -1.9999999999999982,
+              "mean_weekly_correlation": 0.5154770818936532,
+              "weeks_with_correlation": 2,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                },
+                {
+                  "week": 2,
+                  "correlation": 0.575810304313465,
+                  "coverage_players": 16,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "Quinshon Judkins",
+                      "benched_player": "Travis Etienne Jr.",
+                      "slot": "RB",
+                      "started_pct": 71.0,
+                      "benched_started_pct": 91.0,
+                      "started_owned_pct": 97.0,
+                      "benched_owned_pct": 99.0,
+                      "started_points": 6.800000000000001,
+                      "benched_points": 6.1,
+                      "realized_edge_points": 0.7000000000000011,
+                      "contrarian": true,
+                      "weight": 0.198,
+                      "weighted_outcome": 0.017280920145883255,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Tyler Loop",
+                      "benched_player": "Harrison Mevis",
+                      "slot": "K",
+                      "started_pct": 82.0,
+                      "benched_started_pct": 65.0,
+                      "started_owned_pct": 85.0,
+                      "benched_owned_pct": 68.0,
+                      "started_points": 5.0,
+                      "benched_points": 3.0,
+                      "realized_edge_points": 2.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Rashee Rice",
+                      "benched_player": "Jayden Reed",
+                      "slot": "WR",
+                      "started_pct": 89.0,
+                      "benched_started_pct": 20.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 86.0,
+                      "started_points": 11.3,
+                      "benched_points": 0.4,
+                      "realized_edge_points": 10.9,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Seahawks",
+                      "benched_player": "Broncos",
+                      "slot": "DEF",
+                      "started_pct": 94.0,
+                      "benched_started_pct": 89.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 99.0,
+                      "started_points": 8.0,
+                      "benched_points": 8.0,
+                      "realized_edge_points": 0.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "DeVonta Smith",
+                      "benched_player": "Mark Andrews",
+                      "slot": "W/R/T",
+                      "started_pct": 95.0,
+                      "benched_started_pct": 39.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 88.0,
+                      "started_points": 24.700000000000003,
+                      "benched_points": 8.9,
+                      "realized_edge_points": 15.800000000000002,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Ashton Jeanty",
+                      "benched_player": "Chris Rodriguez Jr.",
+                      "slot": "RB",
+                      "started_pct": 96.0,
+                      "benched_started_pct": 3.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 60.0,
+                      "started_points": 7.300000000000001,
+                      "benched_points": 3.3,
+                      "realized_edge_points": 4.000000000000001,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    },
+                    {
+                      "started_player": "Josh Allen",
+                      "benched_player": "Jalen Hurts",
+                      "slot": "QB",
+                      "started_pct": 96.0,
+                      "benched_started_pct": 93.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 100.0,
+                      "started_points": 53.166666666666586,
+                      "benched_points": 20.399999999999913,
+                      "realized_edge_points": 32.76666666666667,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 1
+                    }
+                  ],
+                  "decision_pairs": 7,
+                  "crowd_alignment_pct": 85.71428571428571,
+                  "contrarian_decisions": 1,
+                  "contrarian_value_points": 0.7000000000000011,
+                  "total_weight": 0.198,
+                  "weighted_outcome": 0.017280920145883255,
+                  "score_pct": 77.18193436185395
+                },
+                {
+                  "week": 3,
+                  "correlation": 0.4551438594738413,
+                  "coverage_players": 16,
+                  "roster_players": 16,
+                  "pairs": [
+                    {
+                      "started_player": "Mark Andrews",
+                      "benched_player": "Colston Loveland",
+                      "slot": "TE",
+                      "started_pct": 44.0,
+                      "benched_started_pct": 90.0,
+                      "started_owned_pct": 88.0,
+                      "benched_owned_pct": 99.0,
+                      "started_points": 3.4000000000000004,
+                      "benched_points": 6.1,
+                      "realized_edge_points": -2.6999999999999993,
+                      "contrarian": true,
+                      "weight": 0.45539999999999997,
+                      "weighted_outcome": -0.1481159692945111,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Quinshon Judkins",
+                      "benched_player": "Travis Etienne Jr.",
+                      "slot": "RB",
+                      "started_pct": 65.0,
+                      "benched_started_pct": 74.0,
+                      "started_owned_pct": 96.0,
+                      "benched_owned_pct": 98.0,
+                      "started_points": 9.9,
+                      "benched_points": 12.0,
+                      "realized_edge_points": -2.0999999999999996,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Tyler Loop",
+                      "benched_player": "Harrison Mevis",
+                      "slot": "K",
+                      "started_pct": 85.0,
+                      "benched_started_pct": 60.0,
+                      "started_owned_pct": 88.0,
+                      "benched_owned_pct": 63.0,
+                      "started_points": 12.0,
+                      "benched_points": 16.0,
+                      "realized_edge_points": -4.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Rashee Rice",
+                      "benched_player": "Dontayvion Wicks",
+                      "slot": "WR",
+                      "started_pct": 89.0,
+                      "benched_started_pct": 6.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 28.0,
+                      "started_points": 10.8,
+                      "benched_points": 5.2,
+                      "realized_edge_points": 5.6000000000000005,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "DeVonta Smith",
+                      "benched_player": "Chris Rodriguez Jr.",
+                      "slot": "W/R/T",
+                      "started_pct": 94.0,
+                      "benched_started_pct": 2.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 50.0,
+                      "started_points": 8.5,
+                      "benched_points": 12.7,
+                      "realized_edge_points": -4.199999999999999,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Seahawks",
+                      "benched_player": "Broncos",
+                      "slot": "DEF",
+                      "started_pct": 95.0,
+                      "benched_started_pct": 76.0,
+                      "started_owned_pct": 99.0,
+                      "benched_owned_pct": 91.0,
+                      "started_points": 2.0,
+                      "benched_points": 14.0,
+                      "realized_edge_points": -12.0,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": -0.0,
+                      "expectation_week": 2
+                    },
+                    {
+                      "started_player": "Josh Allen",
+                      "benched_player": "Jalen Hurts",
+                      "slot": "QB",
+                      "started_pct": 99.0,
+                      "benched_started_pct": 91.0,
+                      "started_owned_pct": 100.0,
+                      "benched_owned_pct": 100.0,
+                      "started_points": 18.099999999999937,
+                      "benched_points": 14.599999999999948,
+                      "realized_edge_points": 3.4999999999999893,
+                      "contrarian": false,
+                      "weight": 0.0,
+                      "weighted_outcome": 0.0,
+                      "expectation_week": 2
+                    }
+                  ],
+                  "decision_pairs": 7,
+                  "crowd_alignment_pct": 71.42857142857143,
+                  "contrarian_decisions": 1,
+                  "contrarian_value_points": -2.6999999999999993,
+                  "total_weight": 0.45539999999999997,
+                  "weighted_outcome": -0.1481159692945111,
+                  "score_pct": 66.86890814149588
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 37.03703703703704,
@@ -1728,9 +3196,9 @@
               "weekly_score_pct": 96.06941129673825,
               "weekly_letter": "A",
               "weekly_delta_points": 33.07365334927838,
-              "cumulative_score_pct": 73.7503460090069,
+              "cumulative_score_pct": 73.92490075795523,
               "cumulative_letter": "C",
-              "cumulative_delta_points": 9.133868025962926,
+              "cumulative_delta_points": 9.30842277491125,
               "trend_delta_points": 33.07365334927838,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
@@ -1739,13 +3207,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 64.95749820125398,
+              "weekly_score_pct": 64.30701085257365,
               "weekly_letter": "D+",
-              "weekly_delta_points": -31.11191309548427,
-              "cumulative_score_pct": 66.86510107643517,
+              "weekly_delta_points": -31.762400444164598,
+              "cumulative_score_pct": 66.46462648461201,
               "cumulative_letter": "D+",
-              "cumulative_delta_points": -6.885244932571737,
-              "trend_delta_points": -31.11191309548427,
+              "cumulative_delta_points": -7.460274273343217,
+              "trend_delta_points": -31.762400444164598,
               "trend_label": "Trending Down",
               "score": 95.99999999999994,
               "opponent_score": null,
@@ -1755,20 +3223,20 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -31.11191309548427,
-            "current_score_pct": 66.86510107643517,
+            "trend_delta_points": -31.762400444164598,
+            "current_score_pct": 66.46462648461201,
             "current_letter": "D+",
-            "previous_score_pct": 73.7503460090069,
-            "delta_points": -6.885244932571737,
+            "previous_score_pct": 73.92490075795523,
+            "delta_points": -7.460274273343217,
             "weeks": 3
           }
         },
         "trend": {
           "label": "Trending Down",
-          "delta_points": -6.885244932571737,
-          "trend_delta_points": -31.11191309548427,
-          "current_score_pct": 66.86510107643517,
-          "previous_score_pct": 73.7503460090069
+          "delta_points": -7.460274273343217,
+          "trend_delta_points": -31.762400444164598,
+          "current_score_pct": 66.46462648461201,
+          "previous_score_pct": 73.92490075795523
         }
       },
       "season_context": {
@@ -3577,14 +5045,277 @@
   ],
   "awards": [
     {
-      "title": "Big Brain",
-      "team_name": "ZSzizzle",
-      "detail": "Weekly process score cleared the sharp-management threshold."
+      "title": "The Scoreboard Showstopper",
+      "team_name": "Millan\u2019s Last Supper",
+      "detail": "Highest league score this week: 181.2 points.",
+      "scope": "League \u00b7 this week",
+      "evidence": {
+        "points": 181.16666666666657
+      }
+    },
+    {
+      "title": "The Basement Bureau",
+      "team_name": "In Purdytory",
+      "detail": "Lowest league score this week: 65.4 points.",
+      "scope": "League \u00b7 this week",
+      "evidence": {
+        "points": 65.39999999999992
+      }
+    },
+    {
+      "title": "The Season High-Water Mark",
+      "team_name": "Pat Pidgeon",
+      "detail": "Season-to-date scoring record: 186.5 points (Week 1).",
+      "scope": "League \u00b7 Weeks 1\u20133",
+      "evidence": {
+        "points": 186.53333333333327,
+        "records": [
+          {
+            "teamKey": "470.l.932349.t.3",
+            "week": 1,
+            "Total": 186.53333333333327
+          }
+        ]
+      }
+    },
+    {
+      "title": "The Bench Was a Gold Mine",
+      "team_name": "In Purdytory",
+      "detail": "League's largest legal lineup gap: 36.2 points left unused. This measures start/sit cost, not injured bench holds.",
+      "scope": "League \u00b7 this week",
+      "evidence": {
+        "missed_points": 36.23333333333333
+      }
+    },
+    {
+      "title": "The Who-Is-This-Guy Game?",
+      "team_name": "Konata Mumpfield",
+      "detail": "Breakout of the week: 18.3 points versus 1.1 across 2 prior played games (+17.2); prior-week Yahoo ownership 1%, starts 3%. Zero-game injury/bye rows are excluded.",
+      "scope": "NFL player pool \u00b7 this week",
+      "evidence": {
+        "name": "Konata Mumpfield",
+        "points": 18.3,
+        "prior_avg": 1.1,
+        "prior_games": 2,
+        "z": 4.3,
+        "expectation_note": "; prior-week Yahoo ownership 1%, starts 3%",
+        "ownership": {
+          "owned_pct": 1.0,
+          "started_pct": 3.0,
+          "source_week": 2
+        },
+        "previous_high": 2.2
+      }
+    },
+    {
+      "title": "The Vanishing Act",
+      "team_name": "Jonathan Taylor",
+      "detail": "Bust of the week: 10.2 points versus 31.7 across 2 prior played games (-21.5); prior-week Yahoo ownership 100%, starts 100%; draft ADP 5.8. Zero-game injury/bye rows are excluded.",
+      "scope": "NFL player pool \u00b7 this week",
+      "evidence": {
+        "name": "Jonathan Taylor",
+        "points": 10.2,
+        "prior_avg": 31.650000000000002,
+        "prior_games": 2,
+        "z": -5.362500000000001,
+        "expectation_note": "; prior-week Yahoo ownership 100%, starts 100%; draft ADP 5.8",
+        "ownership": {
+          "owned_pct": 100.0,
+          "started_pct": 100.0,
+          "source_week": 2
+        },
+        "previous_high": 34.2
+      }
     }
   ],
   "timeline_context": {
-    "status": "unavailable",
-    "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+    "status": "available",
+    "detail": "Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.",
+    "source_url": "https://github.com/nflverse/nfldata/blob/master/data/games.csv",
+    "timezone": "America/New_York",
+    "windows": [
+      {
+        "kickoff": "2026-09-24 20:15",
+        "label": "Thu Sep 24 \u00b7 08:15 PM ET",
+        "points": [
+          45.3,
+          0
+        ],
+        "cumulative_points": [
+          45.3,
+          0.0
+        ],
+        "players": [
+          [
+            {
+              "name": "Bijan Robinson",
+              "points": 45.3
+            }
+          ],
+          []
+        ]
+      },
+      {
+        "kickoff": "2026-09-27 13:00",
+        "label": "Sun Sep 27 \u00b7 01:00 PM ET",
+        "points": [
+          44.6,
+          59.79999999999994
+        ],
+        "cumulative_points": [
+          89.9,
+          59.79999999999994
+        ],
+        "players": [
+          [
+            {
+              "name": "Harold Fannin Jr.",
+              "points": 20.1
+            },
+            {
+              "name": "DJ Moore",
+              "points": 10.7
+            },
+            {
+              "name": "Jake Bates",
+              "points": 7.0
+            },
+            {
+              "name": "David Montgomery",
+              "points": 6.800000000000001
+            }
+          ],
+          [
+            {
+              "name": "Tee Higgins",
+              "points": 19.0
+            },
+            {
+              "name": "Josh Allen",
+              "points": 18.099999999999937
+            },
+            {
+              "name": "Rashee Rice",
+              "points": 10.8
+            },
+            {
+              "name": "Quinshon Judkins",
+              "points": 9.9
+            },
+            {
+              "name": "Seahawks",
+              "points": 2.0
+            }
+          ]
+        ]
+      },
+      {
+        "kickoff": "2026-09-27 16:05",
+        "label": "Sun Sep 27 \u00b7 04:05 PM ET",
+        "points": [
+          21.9,
+          0
+        ],
+        "cumulative_points": [
+          111.80000000000001,
+          59.79999999999994
+        ],
+        "players": [
+          [
+            {
+              "name": "Jeremiyah Love",
+              "points": 21.9
+            }
+          ],
+          []
+        ]
+      },
+      {
+        "kickoff": "2026-09-27 16:25",
+        "label": "Sun Sep 27 \u00b7 04:25 PM ET",
+        "points": [
+          26.19999999999994,
+          27.700000000000003
+        ],
+        "cumulative_points": [
+          137.99999999999994,
+          87.49999999999994
+        ],
+        "players": [
+          [
+            {
+              "name": "Lamar Jackson",
+              "points": 26.19999999999994
+            }
+          ],
+          [
+            {
+              "name": "Ashton Jeanty",
+              "points": 12.3
+            },
+            {
+              "name": "Tyler Loop",
+              "points": 12.0
+            },
+            {
+              "name": "Mark Andrews",
+              "points": 3.4000000000000004
+            }
+          ]
+        ]
+      },
+      {
+        "kickoff": "2026-09-27 20:20",
+        "label": "Sun Sep 27 \u00b7 08:20 PM ET",
+        "points": [
+          9.4,
+          0
+        ],
+        "cumulative_points": [
+          147.39999999999995,
+          87.49999999999994
+        ],
+        "players": [
+          [
+            {
+              "name": "Jaylen Waddle",
+              "points": 6.4
+            },
+            {
+              "name": "Rams",
+              "points": 3.0
+            }
+          ],
+          []
+        ]
+      },
+      {
+        "kickoff": "2026-09-28 20:15",
+        "label": "Mon Sep 28 \u00b7 08:15 PM ET",
+        "points": [
+          0,
+          8.5
+        ],
+        "cumulative_points": [
+          147.39999999999995,
+          95.99999999999994
+        ],
+        "players": [
+          [],
+          [
+            {
+              "name": "DeVonta Smith",
+              "points": 8.5
+            }
+          ]
+        ]
+      }
+    ],
+    "unassigned_players": [],
+    "team_names": [
+      "ZSzizzle",
+      "Love(land) Hurts"
+    ]
   },
   "historical_context": {
     "team_a_name": "ZSzizzle",

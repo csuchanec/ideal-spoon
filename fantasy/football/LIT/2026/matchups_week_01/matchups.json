@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly_collection",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-30T20:31:46.857822",
+    "generated_at": "2026-09-30T20:54:06.169448",
     "total_matchups": 5,
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
   },
@@ -107,7 +107,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 1,
-        "generated_at": "2026-09-30T20:31:46.817749",
+        "generated_at": "2026-09-30T20:54:04.807219",
         "page_title": "Sigma Chi Whiteout vs In Purdytory matchup report",
         "matchup_id": "week-01-sigma-chi-whiteout-vs-in-purdytory",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -200,7 +200,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 100.0,
@@ -216,6 +219,20 @@
                     "raw_value": 54.15000000000005,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -281,6 +298,29 @@
                     "league_rank": 1,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 88.88888888888889,
@@ -384,7 +424,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 100.0,
@@ -400,6 +443,20 @@
                     "raw_value": 54.15000000000005,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -465,6 +522,29 @@
                     "league_rank": 1,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 88.88888888888889,
@@ -1341,7 +1421,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 58.33333333333333,
@@ -1357,6 +1440,20 @@
                     "raw_value": -12.216666666666669,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -1422,6 +1519,29 @@
                     "league_rank": 8,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 33.33333333333333,
@@ -1525,7 +1645,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 58.33333333333333,
@@ -1541,6 +1664,20 @@
                     "raw_value": -12.216666666666669,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -1606,6 +1743,29 @@
                     "league_rank": 8,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 33.33333333333333,
@@ -3374,14 +3534,222 @@
       ],
       "awards": [
         {
-          "title": "Big Brain",
-          "team_name": "Sigma Chi Whiteout",
-          "detail": "Weekly process score cleared the sharp-management threshold."
+          "title": "The Scoreboard Showstopper",
+          "team_name": "Pat Pidgeon",
+          "detail": "Highest league score this week: 186.5 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 186.53333333333327
+          }
+        },
+        {
+          "title": "The Basement Bureau",
+          "team_name": "Squat",
+          "detail": "Lowest league score this week: 52.0 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 51.99999999999999
+          }
+        },
+        {
+          "title": "The Season High-Water Mark",
+          "team_name": "Pat Pidgeon",
+          "detail": "Season-to-date scoring record: 186.5 points (Week 1).",
+          "scope": "League \u00b7 Weeks 1\u20131",
+          "evidence": {
+            "points": 186.53333333333327,
+            "records": [
+              {
+                "teamKey": "470.l.932349.t.3",
+                "week": 1,
+                "Total": 186.53333333333327
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Bench Was a Gold Mine",
+          "team_name": "Love(land) Hurts",
+          "detail": "League's largest legal lineup gap: 48.6 points left unused. This measures start/sit cost, not injured bench holds.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "missed_points": 48.6
+          }
         }
       ],
       "timeline_context": {
-        "status": "unavailable",
-        "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+        "status": "available",
+        "detail": "Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.",
+        "source_url": "https://github.com/nflverse/nfldata/blob/master/data/games.csv",
+        "timezone": "America/New_York",
+        "windows": [
+          {
+            "kickoff": "2026-09-09 20:20",
+            "label": "Wed Sep 09 \u00b7 08:20 PM ET",
+            "points": [
+              15.633333333333272,
+              7.0
+            ],
+            "cumulative_points": [
+              15.633333333333272,
+              7.0
+            ],
+            "players": [
+              [
+                {
+                  "name": "Drake Maye",
+                  "points": 15.633333333333272
+                }
+              ],
+              [
+                {
+                  "name": "Jason Myers",
+                  "points": 7.0
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 13:00",
+            "label": "Sun Sep 13 \u00b7 01:00 PM ET",
+            "points": [
+              93.8,
+              57.60000000000001
+            ],
+            "cumulative_points": [
+              109.43333333333327,
+              64.60000000000001
+            ],
+            "players": [
+              [
+                {
+                  "name": "D'Andre Swift",
+                  "points": 37.4
+                },
+                {
+                  "name": "Jonathan Taylor",
+                  "points": 29.1
+                },
+                {
+                  "name": "Cam Little",
+                  "points": 12.0
+                },
+                {
+                  "name": "Emeka Egbuka",
+                  "points": 9.3
+                },
+                {
+                  "name": "Ravens",
+                  "points": 6.0
+                }
+              ],
+              [
+                {
+                  "name": "Breece Hall",
+                  "points": 24.800000000000004
+                },
+                {
+                  "name": "Lions",
+                  "points": 10.0
+                },
+                {
+                  "name": "Tetairoa McMillan",
+                  "points": 9.5
+                },
+                {
+                  "name": "Sam LaPorta",
+                  "points": 6.800000000000001
+                },
+                {
+                  "name": "Jameson Williams",
+                  "points": 6.5
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 16:25",
+            "label": "Sun Sep 13 \u00b7 04:25 PM ET",
+            "points": [
+              22.7,
+              12.0
+            ],
+            "cumulative_points": [
+              132.13333333333327,
+              76.60000000000001
+            ],
+            "players": [
+              [
+                {
+                  "name": "Dallas Goedert",
+                  "points": 22.7
+                }
+              ],
+              [
+                {
+                  "name": "De'Von Achane",
+                  "points": 9.6
+                },
+                {
+                  "name": "Terry McLaurin",
+                  "points": 2.4000000000000004
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 20:20",
+            "label": "Sun Sep 13 \u00b7 08:20 PM ET",
+            "points": [
+              4.800000000000001,
+              35.06666666666659
+            ],
+            "cumulative_points": [
+              136.93333333333328,
+              111.6666666666666
+            ],
+            "players": [
+              [
+                {
+                  "name": "George Pickens",
+                  "points": 4.800000000000001
+                }
+              ],
+              [
+                {
+                  "name": "Jaxson Dart",
+                  "points": 35.06666666666659
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-14 20:15",
+            "label": "Mon Sep 14 \u00b7 08:15 PM ET",
+            "points": [
+              41.1,
+              0
+            ],
+            "cumulative_points": [
+              178.03333333333327,
+              111.6666666666666
+            ],
+            "players": [
+              [
+                {
+                  "name": "Kenneth Walker",
+                  "points": 41.1
+                }
+              ],
+              []
+            ]
+          }
+        ],
+        "unassigned_players": [],
+        "team_names": [
+          "Sigma Chi Whiteout",
+          "In Purdytory"
+        ]
       },
       "historical_context": {
         "team_a_name": "Sigma Chi Whiteout",
@@ -3834,7 +4202,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 1,
-        "generated_at": "2026-09-30T20:31:46.828084",
+        "generated_at": "2026-09-30T20:54:05.143435",
         "page_title": "Love(land) Hurts vs Squat matchup report",
         "matchup_id": "week-01-love-land-hurts-vs-squat",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -3927,7 +4295,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 47.22222222222222,
@@ -3943,6 +4314,20 @@
                     "raw_value": -27.550000000000026,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -4008,6 +4393,29 @@
                     "league_rank": 7,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 22.22222222222222,
@@ -4111,7 +4519,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 47.22222222222222,
@@ -4127,6 +4538,20 @@
                     "raw_value": -27.550000000000026,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -4192,6 +4617,29 @@
                     "league_rank": 7,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 22.22222222222222,
@@ -5072,7 +5520,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 45.0,
@@ -5088,6 +5539,20 @@
                     "raw_value": -71.88333333333327,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -5153,6 +5618,29 @@
                     "league_rank": 9,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 0.0,
@@ -5256,7 +5744,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 45.0,
@@ -5272,6 +5763,20 @@
                     "raw_value": -71.88333333333327,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -5337,6 +5842,29 @@
                     "league_rank": 9,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 0.0,
@@ -7067,10 +7595,222 @@
           "label": "Stable Build"
         }
       ],
-      "awards": [],
+      "awards": [
+        {
+          "title": "The Scoreboard Showstopper",
+          "team_name": "Pat Pidgeon",
+          "detail": "Highest league score this week: 186.5 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 186.53333333333327
+          }
+        },
+        {
+          "title": "The Basement Bureau",
+          "team_name": "Squat",
+          "detail": "Lowest league score this week: 52.0 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 51.99999999999999
+          }
+        },
+        {
+          "title": "The Season High-Water Mark",
+          "team_name": "Pat Pidgeon",
+          "detail": "Season-to-date scoring record: 186.5 points (Week 1).",
+          "scope": "League \u00b7 Weeks 1\u20131",
+          "evidence": {
+            "points": 186.53333333333327,
+            "records": [
+              {
+                "teamKey": "470.l.932349.t.3",
+                "week": 1,
+                "Total": 186.53333333333327
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Bench Was a Gold Mine",
+          "team_name": "Love(land) Hurts",
+          "detail": "League's largest legal lineup gap: 48.6 points left unused. This measures start/sit cost, not injured bench holds.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "missed_points": 48.6
+          }
+        }
+      ],
       "timeline_context": {
-        "status": "unavailable",
-        "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+        "status": "available",
+        "detail": "Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.",
+        "source_url": "https://github.com/nflverse/nfldata/blob/master/data/games.csv",
+        "timezone": "America/New_York",
+        "windows": [
+          {
+            "kickoff": "2026-09-09 20:20",
+            "label": "Wed Sep 09 \u00b7 08:20 PM ET",
+            "points": [
+              13.0,
+              0
+            ],
+            "cumulative_points": [
+              13.0,
+              0.0
+            ],
+            "players": [
+              [
+                {
+                  "name": "Seahawks",
+                  "points": 13.0
+                }
+              ],
+              []
+            ]
+          },
+          {
+            "kickoff": "2026-09-10 20:35",
+            "label": "Thu Sep 10 \u00b7 08:35 PM ET",
+            "points": [
+              1.0,
+              0
+            ],
+            "cumulative_points": [
+              14.0,
+              0.0
+            ],
+            "players": [
+              [
+                {
+                  "name": "Harrison Mevis",
+                  "points": 1.0
+                }
+              ],
+              []
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 13:00",
+            "label": "Sun Sep 13 \u00b7 01:00 PM ET",
+            "points": [
+              67.13333333333323,
+              21.3
+            ],
+            "cumulative_points": [
+              81.13333333333323,
+              21.3
+            ],
+            "players": [
+              [
+                {
+                  "name": "Josh Allen",
+                  "points": 39.43333333333322
+                },
+                {
+                  "name": "Travis Etienne Jr.",
+                  "points": 11.8
+                },
+                {
+                  "name": "Tee Higgins",
+                  "points": 8.9
+                },
+                {
+                  "name": "Quinshon Judkins",
+                  "points": 7.0
+                },
+                {
+                  "name": "Colston Loveland",
+                  "points": 0.0
+                }
+              ],
+              [
+                {
+                  "name": "James Cook III",
+                  "points": 11.9
+                },
+                {
+                  "name": "Jonathon Brooks",
+                  "points": 7.200000000000001
+                },
+                {
+                  "name": "Ja'Marr Chase",
+                  "points": 2.2
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 16:25",
+            "label": "Sun Sep 13 \u00b7 04:25 PM ET",
+            "points": [
+              6.300000000000001,
+              30.699999999999996
+            ],
+            "cumulative_points": [
+              87.43333333333322,
+              52.0
+            ],
+            "players": [
+              [
+                {
+                  "name": "DeVonta Smith",
+                  "points": 6.300000000000001
+                }
+              ],
+              [
+                {
+                  "name": "Saquon Barkley",
+                  "points": 10.0
+                },
+                {
+                  "name": "Tucker Kraft",
+                  "points": 9.5
+                },
+                {
+                  "name": "Will Reichard",
+                  "points": 7.0
+                },
+                {
+                  "name": "Eagles",
+                  "points": 3.0
+                },
+                {
+                  "name": "Quentin Johnston",
+                  "points": 1.7000000000000002
+                },
+                {
+                  "name": "Kyler Murray",
+                  "points": -0.5000000000000061
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-14 20:15",
+            "label": "Mon Sep 14 \u00b7 08:15 PM ET",
+            "points": [
+              8.9,
+              0
+            ],
+            "cumulative_points": [
+              96.33333333333323,
+              52.0
+            ],
+            "players": [
+              [
+                {
+                  "name": "Rashee Rice",
+                  "points": 8.9
+                }
+              ],
+              []
+            ]
+          }
+        ],
+        "unassigned_players": [],
+        "team_names": [
+          "Love(land) Hurts",
+          "Squat"
+        ]
       },
       "historical_context": {
         "team_a_name": "Love(land) Hurts",
@@ -7307,7 +8047,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 1,
-        "generated_at": "2026-09-30T20:31:46.838421",
+        "generated_at": "2026-09-30T20:54:05.486333",
         "page_title": "Pat Pidgeon vs Millan\u2019s Last Supper matchup report",
         "matchup_id": "week-01-pat-pidgeon-vs-millan-s-last-supper",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -7400,7 +8140,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 100.0,
@@ -7416,6 +8159,20 @@
                     "raw_value": 62.65000000000002,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -7481,6 +8238,29 @@
                     "league_rank": 1,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 100.0,
@@ -7584,7 +8364,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 100.0,
@@ -7600,6 +8383,20 @@
                     "raw_value": 62.65000000000002,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -7665,6 +8462,29 @@
                     "league_rank": 1,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 100.0,
@@ -8521,7 +9341,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 80.55555555555556,
@@ -8537,6 +9360,20 @@
                     "raw_value": 3.48333333333332,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -8602,6 +9439,29 @@
                     "league_rank": 5,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 55.55555555555556,
@@ -8705,7 +9565,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 80.55555555555556,
@@ -8721,6 +9584,20 @@
                     "raw_value": 3.48333333333332,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -8786,6 +9663,29 @@
                     "league_rank": 5,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 55.55555555555556,
@@ -10553,14 +11453,219 @@
       ],
       "awards": [
         {
-          "title": "Big Brain",
+          "title": "The Scoreboard Showstopper",
           "team_name": "Pat Pidgeon",
-          "detail": "Weekly process score cleared the sharp-management threshold."
+          "detail": "Highest league score this week: 186.5 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 186.53333333333327
+          }
+        },
+        {
+          "title": "The Basement Bureau",
+          "team_name": "Squat",
+          "detail": "Lowest league score this week: 52.0 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 51.99999999999999
+          }
+        },
+        {
+          "title": "The Season High-Water Mark",
+          "team_name": "Pat Pidgeon",
+          "detail": "Season-to-date scoring record: 186.5 points (Week 1).",
+          "scope": "League \u00b7 Weeks 1\u20131",
+          "evidence": {
+            "points": 186.53333333333327,
+            "records": [
+              {
+                "teamKey": "470.l.932349.t.3",
+                "week": 1,
+                "Total": 186.53333333333327
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Bench Was a Gold Mine",
+          "team_name": "Love(land) Hurts",
+          "detail": "League's largest legal lineup gap: 48.6 points left unused. This measures start/sit cost, not injured bench holds.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "missed_points": 48.6
+          }
         }
       ],
       "timeline_context": {
-        "status": "unavailable",
-        "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+        "status": "available",
+        "detail": "Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.",
+        "source_url": "https://github.com/nflverse/nfldata/blob/master/data/games.csv",
+        "timezone": "America/New_York",
+        "windows": [
+          {
+            "kickoff": "2026-09-09 20:20",
+            "label": "Wed Sep 09 \u00b7 08:20 PM ET",
+            "points": [
+              23.200000000000003,
+              0
+            ],
+            "cumulative_points": [
+              23.200000000000003,
+              0.0
+            ],
+            "players": [
+              [
+                {
+                  "name": "Jaxon Smith-Njigba",
+                  "points": 23.200000000000003
+                }
+              ],
+              []
+            ]
+          },
+          {
+            "kickoff": "2026-09-10 20:35",
+            "label": "Thu Sep 10 \u00b7 08:35 PM ET",
+            "points": [
+              0,
+              15.600000000000001
+            ],
+            "cumulative_points": [
+              23.200000000000003,
+              15.600000000000001
+            ],
+            "players": [
+              [],
+              [
+                {
+                  "name": "Christian McCaffrey",
+                  "points": 10.8
+                },
+                {
+                  "name": "Davante Adams",
+                  "points": 3.6
+                },
+                {
+                  "name": "George Kittle",
+                  "points": 1.2000000000000002
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 13:00",
+            "label": "Sun Sep 13 \u00b7 01:00 PM ET",
+            "points": [
+              130.8,
+              111.76666666666658
+            ],
+            "cumulative_points": [
+              154.0,
+              127.36666666666659
+            ],
+            "players": [
+              [
+                {
+                  "name": "Jahmyr Gibbs",
+                  "points": 43.6
+                },
+                {
+                  "name": "Zay Flowers",
+                  "points": 26.0
+                },
+                {
+                  "name": "Chris Olave",
+                  "points": 25.2
+                },
+                {
+                  "name": "Evan McPherson",
+                  "points": 19.0
+                },
+                {
+                  "name": "Dalton Kincaid",
+                  "points": 17.0
+                }
+              ],
+              [
+                {
+                  "name": "Derrick Henry",
+                  "points": 42.3
+                },
+                {
+                  "name": "Trevor Lawrence",
+                  "points": 33.46666666666658
+                },
+                {
+                  "name": "Jaguars",
+                  "points": 13.0
+                },
+                {
+                  "name": "Cairo Santos",
+                  "points": 12.0
+                },
+                {
+                  "name": "Luther Burden III",
+                  "points": 6.500000000000001
+                },
+                {
+                  "name": "Drake London",
+                  "points": 4.5
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 16:25",
+            "label": "Sun Sep 13 \u00b7 04:25 PM ET",
+            "points": [
+              14.3,
+              0
+            ],
+            "cumulative_points": [
+              168.3,
+              127.36666666666659
+            ],
+            "players": [
+              [
+                {
+                  "name": "Omarion Hampton",
+                  "points": 13.3
+                },
+                {
+                  "name": "Chargers",
+                  "points": 1.0
+                }
+              ],
+              []
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 20:20",
+            "label": "Sun Sep 13 \u00b7 08:20 PM ET",
+            "points": [
+              18.23333333333327,
+              0
+            ],
+            "cumulative_points": [
+              186.53333333333327,
+              127.36666666666659
+            ],
+            "players": [
+              [
+                {
+                  "name": "Dak Prescott",
+                  "points": 18.23333333333327
+                }
+              ],
+              []
+            ]
+          }
+        ],
+        "unassigned_players": [],
+        "team_names": [
+          "Pat Pidgeon",
+          "Millan\u2019s Last Supper"
+        ]
       },
       "historical_context": {
         "team_a_name": "Pat Pidgeon",
@@ -10734,7 +11839,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 1,
-        "generated_at": "2026-09-30T20:31:46.844676",
+        "generated_at": "2026-09-30T20:54:05.824722",
         "page_title": "ZSzizzle vs Nacua-Cola matchup report",
         "matchup_id": "week-01-zszizzle-vs-nacua-cola",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -10827,7 +11932,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 91.66666666666666,
@@ -10843,6 +11951,20 @@
                     "raw_value": 12.416666666666643,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -10908,6 +12030,29 @@
                     "league_rank": 4,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 66.66666666666666,
@@ -11011,7 +12156,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 91.66666666666666,
@@ -11027,6 +12175,20 @@
                     "raw_value": 12.416666666666643,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -11092,6 +12254,29 @@
                     "league_rank": 4,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 66.66666666666666,
@@ -12026,7 +13211,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 1
+                    "activity_count": 1,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 45.0,
@@ -12042,6 +13230,20 @@
                     "raw_value": -46.216666666666654,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -12107,6 +13309,29 @@
                     "league_rank": 9,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 11.11111111111111,
@@ -12212,7 +13437,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 1
+                    "activity_count": 1,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 45.0,
@@ -12228,6 +13456,20 @@
                     "raw_value": -46.216666666666654,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -12293,6 +13535,29 @@
                     "league_rank": 9,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 11.11111111111111,
@@ -14093,14 +15358,238 @@
       ],
       "awards": [
         {
-          "title": "Big Brain",
-          "team_name": "ZSzizzle",
-          "detail": "Weekly process score cleared the sharp-management threshold."
+          "title": "The Scoreboard Showstopper",
+          "team_name": "Pat Pidgeon",
+          "detail": "Highest league score this week: 186.5 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 186.53333333333327
+          }
+        },
+        {
+          "title": "The Basement Bureau",
+          "team_name": "Squat",
+          "detail": "Lowest league score this week: 52.0 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 51.99999999999999
+          }
+        },
+        {
+          "title": "The Season High-Water Mark",
+          "team_name": "Pat Pidgeon",
+          "detail": "Season-to-date scoring record: 186.5 points (Week 1).",
+          "scope": "League \u00b7 Weeks 1\u20131",
+          "evidence": {
+            "points": 186.53333333333327,
+            "records": [
+              {
+                "teamKey": "470.l.932349.t.3",
+                "week": 1,
+                "Total": 186.53333333333327
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Bench Was a Gold Mine",
+          "team_name": "Love(land) Hurts",
+          "detail": "League's largest legal lineup gap: 48.6 points left unused. This measures start/sit cost, not injured bench holds.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "missed_points": 48.6
+          }
         }
       ],
       "timeline_context": {
-        "status": "unavailable",
-        "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+        "status": "available",
+        "detail": "Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.",
+        "source_url": "https://github.com/nflverse/nfldata/blob/master/data/games.csv",
+        "timezone": "America/New_York",
+        "windows": [
+          {
+            "kickoff": "2026-09-09 20:20",
+            "label": "Wed Sep 09 \u00b7 08:20 PM ET",
+            "points": [
+              0,
+              26.9
+            ],
+            "cumulative_points": [
+              0.0,
+              26.9
+            ],
+            "players": [
+              [],
+              [
+                {
+                  "name": "Rhamondre Stevenson",
+                  "points": 12.5
+                },
+                {
+                  "name": "Jadarian Price",
+                  "points": 9.8
+                },
+                {
+                  "name": "A.J. Brown",
+                  "points": 4.6
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-10 20:35",
+            "label": "Thu Sep 10 \u00b7 08:35 PM ET",
+            "points": [
+              2.0,
+              9.4
+            ],
+            "cumulative_points": [
+              2.0,
+              36.3
+            ],
+            "players": [
+              [
+                {
+                  "name": "Rams",
+                  "points": 2.0
+                }
+              ],
+              [
+                {
+                  "name": "Puka Nacua",
+                  "points": 9.4
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 13:00",
+            "label": "Sun Sep 13 \u00b7 01:00 PM ET",
+            "points": [
+              121.09999999999988,
+              6.300000000000001
+            ],
+            "cumulative_points": [
+              123.09999999999988,
+              42.599999999999994
+            ],
+            "players": [
+              [
+                {
+                  "name": "Bijan Robinson",
+                  "points": 32.3
+                },
+                {
+                  "name": "David Montgomery",
+                  "points": 30.9
+                },
+                {
+                  "name": "Lamar Jackson",
+                  "points": 27.79999999999989
+                },
+                {
+                  "name": "DJ Moore",
+                  "points": 20.0
+                },
+                {
+                  "name": "Jake Bates",
+                  "points": 7.0
+                },
+                {
+                  "name": "Harold Fannin Jr.",
+                  "points": 3.1
+                }
+              ],
+              [
+                {
+                  "name": "Tyler Warren",
+                  "points": 8.3
+                },
+                {
+                  "name": "Texans",
+                  "points": -2.0
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 16:25",
+            "label": "Sun Sep 13 \u00b7 04:25 PM ET",
+            "points": [
+              13.000000000000002,
+              34.0666666666666
+            ],
+            "cumulative_points": [
+              136.09999999999988,
+              76.6666666666666
+            ],
+            "players": [
+              [
+                {
+                  "name": "Jeremiyah Love",
+                  "points": 13.000000000000002
+                }
+              ],
+              [
+                {
+                  "name": "Ladd McConkey",
+                  "points": 19.200000000000003
+                },
+                {
+                  "name": "Justin Herbert",
+                  "points": 14.866666666666598
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 20:20",
+            "label": "Sun Sep 13 \u00b7 08:20 PM ET",
+            "points": [
+              0,
+              1.0
+            ],
+            "cumulative_points": [
+              136.09999999999988,
+              77.6666666666666
+            ],
+            "players": [
+              [],
+              [
+                {
+                  "name": "Brandon Aubrey",
+                  "points": 1.0
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-14 20:15",
+            "label": "Mon Sep 14 \u00b7 08:15 PM ET",
+            "points": [
+              0.2,
+              0
+            ],
+            "cumulative_points": [
+              136.29999999999987,
+              77.6666666666666
+            ],
+            "players": [
+              [
+                {
+                  "name": "Jaylen Waddle",
+                  "points": 0.2
+                }
+              ],
+              []
+            ]
+          }
+        ],
+        "unassigned_players": [],
+        "team_names": [
+          "ZSzizzle",
+          "Nacua-Cola"
+        ]
       },
       "historical_context": {
         "team_a_name": "ZSzizzle",
@@ -14155,7 +15644,7 @@
         "report_type": "matchup_weekly",
         "year": 2026,
         "week": 1,
-        "generated_at": "2026-09-30T20:31:46.854986",
+        "generated_at": "2026-09-30T20:54:06.166253",
         "page_title": "Bend & Snap Count vs Two Buck Luck matchup report",
         "matchup_id": "week-01-bend-snap-count-vs-two-buck-luck",
         "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -14248,7 +15737,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 100.0,
@@ -14264,6 +15756,20 @@
                     "raw_value": 24.38333333333334,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -14329,6 +15835,29 @@
                     "league_rank": 3,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 77.77777777777779,
@@ -14432,7 +15961,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 100.0,
@@ -14448,6 +15980,20 @@
                     "raw_value": 24.38333333333334,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 1.0,
@@ -14513,6 +16059,29 @@
                     "league_rank": 3,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 77.77777777777779,
@@ -15376,7 +16945,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 69.44444444444444,
@@ -15392,6 +16964,20 @@
                     "raw_value": 0.7833333333333741,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -15457,6 +17043,29 @@
                     "league_rank": 6,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 44.44444444444444,
@@ -15560,7 +17169,10 @@
                     "available": true,
                     "raw_value": 100.0,
                     "raw_unit": "qualified waiver opportunity capture",
-                    "activity_count": 0
+                    "activity_count": 0,
+                    "opportunity_management_score": 100.0,
+                    "crowd_decision_score": null,
+                    "crowd_adjustment_points": 0.0
                   },
                   "positional_performance": {
                     "score_pct": 69.44444444444444,
@@ -15576,6 +17188,20 @@
                     "raw_value": 0.7833333333333741,
                     "raw_unit": "points versus weekly league average"
                   }
+                },
+                "crowd_decisions": {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
                 },
                 "luck": {
                   "actual_win_credit": 0.0,
@@ -15641,6 +17267,29 @@
                     "league_rank": 6,
                     "league_size": 10
                   }
+                },
+                "crowd_decisions": {
+                  "score_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "mean_weekly_correlation": null,
+                  "weeks_with_correlation": 0,
+                  "weeks": [
+                    {
+                      "week": 1,
+                      "correlation": null,
+                      "coverage_players": 0,
+                      "roster_players": 16,
+                      "pairs": [],
+                      "decision_pairs": 0,
+                      "crowd_alignment_pct": null,
+                      "contrarian_decisions": 0,
+                      "contrarian_value_points": 0,
+                      "total_weight": 0,
+                      "weighted_outcome": 0,
+                      "score_pct": null
+                    }
+                  ]
                 },
                 "competitive_strength": {
                   "all_play_win_pct": 44.44444444444444,
@@ -17400,14 +19049,220 @@
       ],
       "awards": [
         {
-          "title": "Big Brain",
-          "team_name": "Bend & Snap Count",
-          "detail": "Weekly process score cleared the sharp-management threshold."
+          "title": "The Scoreboard Showstopper",
+          "team_name": "Pat Pidgeon",
+          "detail": "Highest league score this week: 186.5 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 186.53333333333327
+          }
+        },
+        {
+          "title": "The Basement Bureau",
+          "team_name": "Squat",
+          "detail": "Lowest league score this week: 52.0 points.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "points": 51.99999999999999
+          }
+        },
+        {
+          "title": "The Season High-Water Mark",
+          "team_name": "Pat Pidgeon",
+          "detail": "Season-to-date scoring record: 186.5 points (Week 1).",
+          "scope": "League \u00b7 Weeks 1\u20131",
+          "evidence": {
+            "points": 186.53333333333327,
+            "records": [
+              {
+                "teamKey": "470.l.932349.t.3",
+                "week": 1,
+                "Total": 186.53333333333327
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Bench Was a Gold Mine",
+          "team_name": "Love(land) Hurts",
+          "detail": "League's largest legal lineup gap: 48.6 points left unused. This measures start/sit cost, not injured bench holds.",
+          "scope": "League \u00b7 this week",
+          "evidence": {
+            "missed_points": 48.6
+          }
         }
       ],
       "timeline_context": {
-        "status": "unavailable",
-        "detail": "Current Yahoo inputs do not support a reliable lead-change or time-ahead reconstruction."
+        "status": "available",
+        "detail": "Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.",
+        "source_url": "https://github.com/nflverse/nfldata/blob/master/data/games.csv",
+        "timezone": "America/New_York",
+        "windows": [
+          {
+            "kickoff": "2026-09-10 20:35",
+            "label": "Thu Sep 10 \u00b7 08:35 PM ET",
+            "points": [
+              0,
+              16.5
+            ],
+            "cumulative_points": [
+              0.0,
+              16.5
+            ],
+            "players": [
+              [],
+              [
+                {
+                  "name": "Kyren Williams",
+                  "points": 16.5
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 13:00",
+            "label": "Sun Sep 13 \u00b7 01:00 PM ET",
+            "points": [
+              55.066666666666585,
+              78.4
+            ],
+            "cumulative_points": [
+              55.066666666666585,
+              94.9
+            ],
+            "players": [
+              [
+                {
+                  "name": "Joe Burrow",
+                  "points": 18.466666666666583
+                },
+                {
+                  "name": "Bucky Irving",
+                  "points": 18.3
+                },
+                {
+                  "name": "Jaylen Warren",
+                  "points": 9.3
+                },
+                {
+                  "name": "Ka'imi Fairbairn",
+                  "points": 9.0
+                }
+              ],
+              [
+                {
+                  "name": "Amon-Ra St. Brown",
+                  "points": 22.7
+                },
+                {
+                  "name": "Steelers",
+                  "points": 18.0
+                },
+                {
+                  "name": "Chase Brown",
+                  "points": 17.8
+                },
+                {
+                  "name": "Garrett Wilson",
+                  "points": 10.9
+                },
+                {
+                  "name": "Chris Boswell",
+                  "points": 9.0
+                },
+                {
+                  "name": "Kyle Pitts Sr.",
+                  "points": 0.0
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 16:25",
+            "label": "Sun Sep 13 \u00b7 04:25 PM ET",
+            "points": [
+              57.7,
+              0
+            ],
+            "cumulative_points": [
+              112.7666666666666,
+              94.9
+            ],
+            "players": [
+              [
+                {
+                  "name": "Justin Jefferson",
+                  "points": 28.200000000000003
+                },
+                {
+                  "name": "Trey McBride",
+                  "points": 21.5
+                },
+                {
+                  "name": "Vikings",
+                  "points": 8.0
+                }
+              ],
+              []
+            ]
+          },
+          {
+            "kickoff": "2026-09-13 20:20",
+            "label": "Sun Sep 13 \u00b7 08:20 PM ET",
+            "points": [
+              35.5,
+              23.200000000000003
+            ],
+            "cumulative_points": [
+              148.2666666666666,
+              118.10000000000001
+            ],
+            "players": [
+              [
+                {
+                  "name": "Cam Skattebo",
+                  "points": 20.1
+                },
+                {
+                  "name": "CeeDee Lamb",
+                  "points": 15.4
+                }
+              ],
+              [
+                {
+                  "name": "Javonte Williams",
+                  "points": 23.200000000000003
+                }
+              ]
+            ]
+          },
+          {
+            "kickoff": "2026-09-14 20:15",
+            "label": "Mon Sep 14 \u00b7 08:15 PM ET",
+            "points": [
+              0,
+              6.566666666666622
+            ],
+            "cumulative_points": [
+              148.2666666666666,
+              124.66666666666663
+            ],
+            "players": [
+              [],
+              [
+                {
+                  "name": "Bo Nix",
+                  "points": 6.566666666666622
+                }
+              ]
+            ]
+          }
+        ],
+        "unassigned_players": [],
+        "team_names": [
+          "Bend & Snap Count",
+          "Two Buck Luck"
+        ]
       },
       "historical_context": {
         "team_a_name": "Bend & Snap Count",

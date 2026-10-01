@@ -3,7 +3,7 @@
     "schema_version": "1.1",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-30T20:31:45.621192",
+    "generated_at": "2026-09-30T20:54:03.264259",
     "total_active_players": 368,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
@@ -415,7 +415,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 100.0,
@@ -431,6 +434,20 @@
                 "raw_value": 54.15000000000005,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -496,6 +513,29 @@
                 "league_rank": 1,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 88.88888888888889,
@@ -597,7 +637,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 100.0,
@@ -613,6 +656,20 @@
                 "raw_value": 54.15000000000005,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -678,6 +735,29 @@
                 "league_rank": 1,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 88.88888888888889,
@@ -1323,7 +1403,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 45.0,
@@ -1339,6 +1422,20 @@
                 "raw_value": -71.88333333333327,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -1404,6 +1501,29 @@
                 "league_rank": 9,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 0.0,
@@ -1505,7 +1625,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 45.0,
@@ -1521,6 +1644,20 @@
                 "raw_value": -71.88333333333327,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -1586,6 +1723,29 @@
                 "league_rank": 9,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 0.0,
@@ -2221,7 +2381,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 47.22222222222222,
@@ -2237,6 +2400,20 @@
                 "raw_value": -27.550000000000026,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -2302,6 +2479,29 @@
                 "league_rank": 7,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 22.22222222222222,
@@ -2403,7 +2603,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 47.22222222222222,
@@ -2419,6 +2622,20 @@
                 "raw_value": -27.550000000000026,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -2484,6 +2701,29 @@
                 "league_rank": 7,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 22.22222222222222,
@@ -2955,7 +3195,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 100.0,
@@ -2971,6 +3214,20 @@
                 "raw_value": 62.65000000000002,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -3036,6 +3293,29 @@
                 "league_rank": 1,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 100.0,
@@ -3137,7 +3417,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 100.0,
@@ -3153,6 +3436,20 @@
                 "raw_value": 62.65000000000002,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -3218,6 +3515,29 @@
                 "league_rank": 1,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 100.0,
@@ -3771,7 +4091,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 80.55555555555556,
@@ -3787,6 +4110,20 @@
                 "raw_value": 3.48333333333332,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -3852,6 +4189,29 @@
                 "league_rank": 5,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 55.55555555555556,
@@ -3953,7 +4313,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 80.55555555555556,
@@ -3969,6 +4332,20 @@
                 "raw_value": 3.48333333333332,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -4034,6 +4411,29 @@
                 "league_rank": 5,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 55.55555555555556,
@@ -4566,7 +4966,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 58.33333333333333,
@@ -4582,6 +4985,20 @@
                 "raw_value": -12.216666666666669,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -4647,6 +5064,29 @@
                 "league_rank": 8,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 33.33333333333333,
@@ -4748,7 +5188,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 58.33333333333333,
@@ -4764,6 +5207,20 @@
                 "raw_value": -12.216666666666669,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -4829,6 +5286,29 @@
                 "league_rank": 8,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 33.33333333333333,
@@ -5435,7 +5915,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 1
+                "activity_count": 1,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 45.0,
@@ -5451,6 +5934,20 @@
                 "raw_value": -46.216666666666654,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -5516,6 +6013,29 @@
                 "league_rank": 9,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 11.11111111111111,
@@ -5619,7 +6139,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 1
+                "activity_count": 1,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 45.0,
@@ -5635,6 +6158,20 @@
                 "raw_value": -46.216666666666654,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -5700,6 +6237,29 @@
                 "league_rank": 9,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 11.11111111111111,
@@ -6171,7 +6731,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 100.0,
@@ -6187,6 +6750,20 @@
                 "raw_value": 24.38333333333334,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -6252,6 +6829,29 @@
                 "league_rank": 3,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 77.77777777777779,
@@ -6353,7 +6953,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 100.0,
@@ -6369,6 +6972,20 @@
                 "raw_value": 24.38333333333334,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -6434,6 +7051,29 @@
                 "league_rank": 3,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 77.77777777777779,
@@ -7109,7 +7749,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 91.66666666666666,
@@ -7125,6 +7768,20 @@
                 "raw_value": 12.416666666666643,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -7190,6 +7847,29 @@
                 "league_rank": 4,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 66.66666666666666,
@@ -7291,7 +7971,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 91.66666666666666,
@@ -7307,6 +7990,20 @@
                 "raw_value": 12.416666666666643,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 1.0,
@@ -7372,6 +8069,29 @@
                 "league_rank": 4,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 66.66666666666666,
@@ -7823,7 +8543,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 69.44444444444444,
@@ -7839,6 +8562,20 @@
                 "raw_value": 0.7833333333333741,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -7904,6 +8641,29 @@
                 "league_rank": 6,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 44.44444444444444,
@@ -8005,7 +8765,10 @@
                 "available": true,
                 "raw_value": 100.0,
                 "raw_unit": "qualified waiver opportunity capture",
-                "activity_count": 0
+                "activity_count": 0,
+                "opportunity_management_score": 100.0,
+                "crowd_decision_score": null,
+                "crowd_adjustment_points": 0.0
               },
               "positional_performance": {
                 "score_pct": 69.44444444444444,
@@ -8021,6 +8784,20 @@
                 "raw_value": 0.7833333333333741,
                 "raw_unit": "points versus weekly league average"
               }
+            },
+            "crowd_decisions": {
+              "week": 1,
+              "correlation": null,
+              "coverage_players": 0,
+              "roster_players": 16,
+              "pairs": [],
+              "decision_pairs": 0,
+              "crowd_alignment_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "total_weight": 0,
+              "weighted_outcome": 0,
+              "score_pct": null
             },
             "luck": {
               "actual_win_credit": 0.0,
@@ -8086,6 +8863,29 @@
                 "league_rank": 6,
                 "league_size": 10
               }
+            },
+            "crowd_decisions": {
+              "score_pct": null,
+              "contrarian_decisions": 0,
+              "contrarian_value_points": 0,
+              "mean_weekly_correlation": null,
+              "weeks_with_correlation": 0,
+              "weeks": [
+                {
+                  "week": 1,
+                  "correlation": null,
+                  "coverage_players": 0,
+                  "roster_players": 16,
+                  "pairs": [],
+                  "decision_pairs": 0,
+                  "crowd_alignment_pct": null,
+                  "contrarian_decisions": 0,
+                  "contrarian_value_points": 0,
+                  "total_weight": 0,
+                  "weighted_outcome": 0,
+                  "score_pct": null
+                }
+              ]
             },
             "competitive_strength": {
               "all_play_win_pct": 44.44444444444444,

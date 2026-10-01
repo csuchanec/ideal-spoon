@@ -182,7 +182,13 @@
 </style>
 <nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_01.html">Week 1 Report</a></li><li><a href="index.html">Week 1 Matchups</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">This Matchup</span><ul class="report-nav__links"><li><a href="matchup_05_bend-snap-count_vs_two-buck-luck.html">Previous Matchup</a></li><li><span class="report-nav-current">Current Matchup</span></li></ul></div></div></div></nav>
 <!-- report-nav:end -->
-<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Grade math</title><style>body{font:15px/1.6 system-ui;max-width:1150px;margin:30px auto;padding:20px;color:#182536}section{margin:30px 0}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{display:block;overflow:auto}</style><a href='matchup_05_bend-snap-count_vs_two-buck-luck.html'>← Back to matchup</a><h1>Grade formulas and evidence</h1><p>Component scores are grade points on a 0–100 scale, not probability or capture percentages. clamp(x, 45, 100) bounds x to that range. All-play rate counts wins against every other league team, with ties worth half a win. A neutral 50% rate maps to 75 grade points. Scoring maps the weekly league-average score to 75, with a 1% difference worth 2.5 grade points before clipping.</p><p>Roster and waiver management uses actual score divided by actual score plus qualified market gains, then applies bounded move evidence (−6 to +6, multiplied by 3) and 10 points for a move-assisted win. Market gains compare an available player's completed points with the best same-position roster option; the displayed alternative targets a starter. Qualification requires at least 3 scoring samples, a heuristic score of at least 0.65, and an average at least as high as the starter's. The heuristic is min(1, 0.5 + min(gain, 20) ÷ 40); it is not a probability. A strong bench alternative removes the same gain from the market penalty. No upgrade means standing pat earns full opportunity capture.</p><details><summary>Move adjustment rules</summary><p>Rules apply in order. A benched bad stash gets −0.5; other bench adds get 0. With no prior sample, a started add scoring at least 12 and providing positive lineup impact gets +1.5; a started add scoring at most 3 gets −1; otherwise 0. With a sample: prior average below 8, score at least 12, positive impact and surprise at least 6 gives +3.5; prior average below 10, score at least 10 and surprise at least 4 gives +2.5; prior average at least 10, score within 2 below that average and positive impact gives +1; at least 3 samples, prior average at least 10 and surprise at most −6 gives −3; prior average below 8 and score at most 4 gives −1.5; a remaining bad started add gives −2; otherwise 0. Sum additions and clamp to −6…+6. Surprise is completed points minus prior average. These thresholds are modeling choices. Lineup impact currently uses a broad roster alternative; its positional precision remains a limitation.</p></details><p>Limits: this is retrospective outcome analysis. Weekly exports do not provide historical injury designations or explicit bye status; zero points alone never establish injury. Bench and injured-reserve players are not waiver replacement targets, and no drop action is inferred. Waiver ownership reflects weekly snapshots rather than exact kickoff availability. The current scoring curve, component weights, 45-point floor and move bonuses are modeling choices, not empirically calibrated probabilities.</p><section><h2>Bend &amp; Snap Count</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 148.267 ÷ 151.367</td><td>97.952</td><td>30%</td><td>29.386</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(100 × 148.267 ÷ (148.267 + 0.000) + 3 × 0.000 + 0.0, 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 77.778, 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 148.267 ÷ 123.883 − 100), 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr></tbody></table><p>Final weekly grade: 99.386 / 100. League rank: 3; all-play rate: 77.78%; weekly league average: 123.883 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
+<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Grade math</title><style>body{font:15px/1.6 system-ui;max-width:1150px;margin:30px auto;padding:20px;color:#182536}section{margin:30px 0}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{display:block;overflow:auto}</style><a href='matchup_05_bend-snap-count_vs_two-buck-luck.html'>← Back to matchup</a><h1>Grade formulas and evidence</h1><p>Component scores are grade points on a 0–100 scale, not probability or capture percentages. clamp(x, 45, 100) bounds x to that range. All-play rate counts wins against every other league team, with ties worth half a win. A neutral 50% rate maps to 75 grade points. Scoring maps the weekly league-average score to 75, with a 1% difference worth 2.5 grade points before clipping.</p><p>Roster and waiver management uses actual score divided by actual score plus qualified market gains, then applies bounded move evidence (−6 to +6, multiplied by 3) and 10 points for a move-assisted win. Market gains compare an available player's completed points with the best same-position roster option; the displayed alternative targets a starter. Qualification requires at least 3 scoring samples, a heuristic score of at least 0.65, and an average at least as high as the starter's. The heuristic is min(1, 0.5 + min(gain, 20) ÷ 40); it is not a probability. A strong bench alternative removes the same gain from the market penalty. No upgrade means standing pat earns full opportunity capture.</p><details><summary>Move adjustment rules</summary><p>Rules apply in order. A benched bad stash gets −0.5; other bench adds get 0. With no prior sample, a started add scoring at least 12 and providing positive lineup impact gets +1.5; a started add scoring at most 3 gets −1; otherwise 0. With a sample: prior average below 8, score at least 12, positive impact and surprise at least 6 gives +3.5; prior average below 10, score at least 10 and surprise at least 4 gives +2.5; prior average at least 10, score within 2 below that average and positive impact gives +1; at least 3 samples, prior average at least 10 and surprise at most −6 gives −3; prior average below 8 and score at most 4 gives −1.5; a remaining bad started add gives −2; otherwise 0. Sum additions and clamp to −6…+6. Surprise is completed points minus prior average. These thresholds are modeling choices. Lineup impact currently uses a broad roster alternative; its positional precision remains a limitation.</p></details><p>Limits: this is retrospective outcome analysis. Weekly exports do not provide historical injury designations; bye-week metadata is available, but zero points alone never establish injury. Bench and injured-reserve players are not waiver replacement targets, and no drop action is inferred. Waiver ownership reflects weekly snapshots rather than exact kickoff availability. The current scoring curve, component weights, 45-point floor and move bonuses are modeling choices, not empirically calibrated probabilities.</p><section><h2>Crowd decision model</h2><p>Expectations use the latest Yahoo ownership and starting percentages strictly before the evaluated week. Missing rates are not zero. Players with no recorded game, reserve slots, and known bye weeks are excluded from this outcome comparison; this is not a historical injury-status feed.</p><p>Alignment is Pearson correlation between the binary start/bench decision and prior-week percent started, across covered roster players. It is undefined without variation. Positive alignment is not inherently good: quality is evaluated separately against legal bench alternatives.</p><p>Reference pairs are deterministic and independent of points: starters ordered by ascending start rate (then name) are matched to the highest-start-rate unused eligible bench player. Each bench player is used once. Flex accepts RB/WR/TE; fixed slots accept the starter’s position. This is a legal reference lineup, not the globally optimal crowd lineup. A decision is contrarian when the bench alternative’s starting rate exceeds the starter’s by at least 10 percentage points.</p><pre>gap = (bench starting % − starter starting %) / 100
+weight = gap × max(starter ownership %, bench ownership %) / 100
+edge = actual starter points − bench alternative points
+weighted outcome = weight × tanh(edge / 8)
+crowd score = 75 + 25 × sum(weighted outcomes) / sum(weights)
+roster adjustment = 0.4 × (crowd score − 75)
+final roster component = clamp(base opportunity component + adjustment, 45, 100)</pre><p>Only contrarian pairs enter the weighted outcome. No covered contrarian choice means no adjustment, not a zero grade or zero component weight. Successful disagreement earns a positive adjustment; harmful disagreement a negative one. Ownership scales the evidence weight, and tanh bounds extreme outcomes. The adjustment ranges from −10 to +10 roster-component points (at most ±2 final weekly grade points before clipping). The existing lineup component still measures every legal missed opportunity, including mistakes made while following the crowd.</p><p>Season quality pools all covered weekly weights and outcomes through the report week, rather than averaging weekly grades, and applies the same signed adjustment to the season transaction component. Season alignment is the mean of defined weekly correlations; coverage is disclosed. The 10-point gap, 8-point outcome scale and 0.4 adjustment factor are transparent modeling choices, not empirically calibrated or causal estimates. Prior-week snapshots reduce hindsight leakage but are not exact kickoff snapshots. No history is invented when earlier ownership data is missing.</p></section><section><h2>Bend &amp; Snap Count</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 148.267 ÷ 151.367</td><td>97.952</td><td>30%</td><td>29.386</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(clamp(100 × 148.267 ÷ (148.267 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.000), 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 77.778, 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 148.267 ÷ 123.883 − 100), 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr></tbody></table><p>Final weekly grade: 99.386 / 100. League rank: 3; all-play rate: 77.78%; weekly league average: 123.883 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
   &quot;grades&quot;: {
     &quot;weekly&quot;: {
       &quot;score_pct&quot;: 99.3855978859282,
@@ -229,7 +235,10 @@
             &quot;available&quot;: true,
             &quot;raw_value&quot;: 100.0,
             &quot;raw_unit&quot;: &quot;qualified waiver opportunity capture&quot;,
-            &quot;activity_count&quot;: 0
+            &quot;activity_count&quot;: 0,
+            &quot;opportunity_management_score&quot;: 100.0,
+            &quot;crowd_decision_score&quot;: null,
+            &quot;crowd_adjustment_points&quot;: 0.0
           },
           &quot;positional_performance&quot;: {
             &quot;score_pct&quot;: 100.0,
@@ -245,6 +254,20 @@
             &quot;raw_value&quot;: 24.38333333333334,
             &quot;raw_unit&quot;: &quot;points versus weekly league average&quot;
           }
+        },
+        &quot;crowd_decisions&quot;: {
+          &quot;week&quot;: 1,
+          &quot;correlation&quot;: null,
+          &quot;coverage_players&quot;: 0,
+          &quot;roster_players&quot;: 16,
+          &quot;pairs&quot;: [],
+          &quot;decision_pairs&quot;: 0,
+          &quot;crowd_alignment_pct&quot;: null,
+          &quot;contrarian_decisions&quot;: 0,
+          &quot;contrarian_value_points&quot;: 0,
+          &quot;total_weight&quot;: 0,
+          &quot;weighted_outcome&quot;: 0,
+          &quot;score_pct&quot;: null
         },
         &quot;luck&quot;: {
           &quot;actual_win_credit&quot;: 1.0,
@@ -311,6 +334,29 @@
             &quot;league_size&quot;: 10
           }
         },
+        &quot;crowd_decisions&quot;: {
+          &quot;score_pct&quot;: null,
+          &quot;contrarian_decisions&quot;: 0,
+          &quot;contrarian_value_points&quot;: 0,
+          &quot;mean_weekly_correlation&quot;: null,
+          &quot;weeks_with_correlation&quot;: 0,
+          &quot;weeks&quot;: [
+            {
+              &quot;week&quot;: 1,
+              &quot;correlation&quot;: null,
+              &quot;coverage_players&quot;: 0,
+              &quot;roster_players&quot;: 16,
+              &quot;pairs&quot;: [],
+              &quot;decision_pairs&quot;: 0,
+              &quot;crowd_alignment_pct&quot;: null,
+              &quot;contrarian_decisions&quot;: 0,
+              &quot;contrarian_value_points&quot;: 0,
+              &quot;total_weight&quot;: 0,
+              &quot;weighted_outcome&quot;: 0,
+              &quot;score_pct&quot;: null
+            }
+          ]
+        },
         &quot;competitive_strength&quot;: {
           &quot;all_play_win_pct&quot;: 77.77777777777779,
           &quot;win_pct&quot;: 100.0,
@@ -373,7 +419,7 @@
     &quot;former_player_followup_points&quot;: 0.0
   },
   &quot;additions&quot;: []
-}</pre></details></section><section><h2>Two Buck Luck</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 124.667 ÷ 147.833</td><td>84.329</td><td>30%</td><td>25.299</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(100 × 124.667 ÷ (124.667 + 0.000) + 3 × 0.000 + 0.0, 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 44.444, 45, 100)</td><td>69.444</td><td>25%</td><td>17.361</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 124.667 ÷ 123.883 − 100), 45, 100)</td><td>76.581</td><td>25%</td><td>19.145</td></tr></tbody></table><p>Final weekly grade: 81.805 / 100. League rank: 6; all-play rate: 44.44%; weekly league average: 123.883 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
+}</pre></details></section><section><h2>Two Buck Luck</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 124.667 ÷ 147.833</td><td>84.329</td><td>30%</td><td>25.299</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(clamp(100 × 124.667 ÷ (124.667 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.000), 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 44.444, 45, 100)</td><td>69.444</td><td>25%</td><td>17.361</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 124.667 ÷ 123.883 − 100), 45, 100)</td><td>76.581</td><td>25%</td><td>19.145</td></tr></tbody></table><p>Final weekly grade: 81.805 / 100. League rank: 6; all-play rate: 44.44%; weekly league average: 123.883 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
   &quot;grades&quot;: {
     &quot;weekly&quot;: {
       &quot;score_pct&quot;: 81.80506806986375,
@@ -420,7 +466,10 @@
             &quot;available&quot;: true,
             &quot;raw_value&quot;: 100.0,
             &quot;raw_unit&quot;: &quot;qualified waiver opportunity capture&quot;,
-            &quot;activity_count&quot;: 0
+            &quot;activity_count&quot;: 0,
+            &quot;opportunity_management_score&quot;: 100.0,
+            &quot;crowd_decision_score&quot;: null,
+            &quot;crowd_adjustment_points&quot;: 0.0
           },
           &quot;positional_performance&quot;: {
             &quot;score_pct&quot;: 69.44444444444444,
@@ -436,6 +485,20 @@
             &quot;raw_value&quot;: 0.7833333333333741,
             &quot;raw_unit&quot;: &quot;points versus weekly league average&quot;
           }
+        },
+        &quot;crowd_decisions&quot;: {
+          &quot;week&quot;: 1,
+          &quot;correlation&quot;: null,
+          &quot;coverage_players&quot;: 0,
+          &quot;roster_players&quot;: 16,
+          &quot;pairs&quot;: [],
+          &quot;decision_pairs&quot;: 0,
+          &quot;crowd_alignment_pct&quot;: null,
+          &quot;contrarian_decisions&quot;: 0,
+          &quot;contrarian_value_points&quot;: 0,
+          &quot;total_weight&quot;: 0,
+          &quot;weighted_outcome&quot;: 0,
+          &quot;score_pct&quot;: null
         },
         &quot;luck&quot;: {
           &quot;actual_win_credit&quot;: 0.0,
@@ -501,6 +564,29 @@
             &quot;league_rank&quot;: 6,
             &quot;league_size&quot;: 10
           }
+        },
+        &quot;crowd_decisions&quot;: {
+          &quot;score_pct&quot;: null,
+          &quot;contrarian_decisions&quot;: 0,
+          &quot;contrarian_value_points&quot;: 0,
+          &quot;mean_weekly_correlation&quot;: null,
+          &quot;weeks_with_correlation&quot;: 0,
+          &quot;weeks&quot;: [
+            {
+              &quot;week&quot;: 1,
+              &quot;correlation&quot;: null,
+              &quot;coverage_players&quot;: 0,
+              &quot;roster_players&quot;: 16,
+              &quot;pairs&quot;: [],
+              &quot;decision_pairs&quot;: 0,
+              &quot;crowd_alignment_pct&quot;: null,
+              &quot;contrarian_decisions&quot;: 0,
+              &quot;contrarian_value_points&quot;: 0,
+              &quot;total_weight&quot;: 0,
+              &quot;weighted_outcome&quot;: 0,
+              &quot;score_pct&quot;: null
+            }
+          ]
         },
         &quot;competitive_strength&quot;: {
           &quot;all_play_win_pct&quot;: 44.44444444444444,
