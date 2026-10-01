@@ -1,0 +1,567 @@
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_01.html">Week 1 Report</a></li><li><a href="index.html">Week 1 Matchups</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">This Matchup</span><ul class="report-nav__links"><li><a href="matchup_02_love-land-hurts_vs_squat.html">Previous Matchup</a></li><li><span class="report-nav-current">Current Matchup</span></li><li><a href="matchup_03_pat-pidgeon_vs_millan-s-last-supper.html">Next Matchup</a></li></ul></div></div></div></nav>
+<!-- report-nav:end -->
+<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Grade math</title><style>body{font:15px/1.6 system-ui;max-width:1150px;margin:30px auto;padding:20px;color:#182536}section{margin:30px 0}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{display:block;overflow:auto}</style><a href='matchup_02_love-land-hurts_vs_squat.html'>← Back to matchup</a><h1>Grade formulas and evidence</h1><p>Component scores are grade points on a 0–100 scale, not probability or capture percentages. clamp(x, 45, 100) bounds x to that range. All-play rate counts wins against every other league team, with ties worth half a win. A neutral 50% rate maps to 75 grade points. Scoring maps the weekly league-average score to 75, with a 1% difference worth 2.5 grade points before clipping.</p><p>Roster and waiver management uses actual score divided by actual score plus qualified market gains, then applies bounded move evidence (−6 to +6, multiplied by 3) and 10 points for a move-assisted win. Market gains compare an available player's completed points with the best same-position roster option; the displayed alternative targets a starter. Qualification requires at least 3 scoring samples, a heuristic score of at least 0.65, and an average at least as high as the starter's. The heuristic is min(1, 0.5 + min(gain, 20) ÷ 40); it is not a probability. A strong bench alternative removes the same gain from the market penalty. No upgrade means standing pat earns full opportunity capture.</p><details><summary>Move adjustment rules</summary><p>Rules apply in order. A benched bad stash gets −0.5; other bench adds get 0. With no prior sample, a started add scoring at least 12 and providing positive lineup impact gets +1.5; a started add scoring at most 3 gets −1; otherwise 0. With a sample: prior average below 8, score at least 12, positive impact and surprise at least 6 gives +3.5; prior average below 10, score at least 10 and surprise at least 4 gives +2.5; prior average at least 10, score within 2 below that average and positive impact gives +1; at least 3 samples, prior average at least 10 and surprise at most −6 gives −3; prior average below 8 and score at most 4 gives −1.5; a remaining bad started add gives −2; otherwise 0. Sum additions and clamp to −6…+6. Surprise is completed points minus prior average. These thresholds are modeling choices. Lineup impact currently uses a broad roster alternative; its positional precision remains a limitation.</p></details><p>Limits: this is retrospective outcome analysis. Weekly exports do not provide historical injury designations or explicit bye status; zero points alone never establish injury. Bench and injured-reserve players are not waiver replacement targets, and no drop action is inferred. Waiver ownership reflects weekly snapshots rather than exact kickoff availability. The current scoring curve, component weights, 45-point floor and move bonuses are modeling choices, not empirically calibrated probabilities.</p><section><h2>Love(land) Hurts</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 96.333 ÷ 144.933</td><td>66.467</td><td>30%</td><td>19.940</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(100 × 96.333 ÷ (96.333 + 0.000) + 3 × 0.000 + 0.0, 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 22.222, 45, 100)</td><td>47.222</td><td>25%</td><td>11.806</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 96.333 ÷ 123.883 − 100), 45, 100)</td><td>45.000</td><td>25%</td><td>11.250</td></tr></tbody></table><p>Final weekly grade: 62.996 / 100. League rank: 8; all-play rate: 22.22%; weekly league average: 123.883 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
+  &quot;grades&quot;: {
+    &quot;weekly&quot;: {
+      &quot;score_pct&quot;: 62.99575794745987,
+      &quot;letter&quot;: &quot;D&quot;,
+      &quot;label&quot;: &quot;bad decisions&quot;
+    },
+    &quot;season&quot;: {
+      &quot;score_pct&quot;: 64.61647798304398,
+      &quot;letter&quot;: &quot;D+&quot;,
+      &quot;label&quot;: &quot;bad decisions&quot;,
+      &quot;confidence&quot;: 0.16666666666666666,
+      &quot;confidence_label&quot;: &quot;Provisional&quot;
+    },
+    &quot;components&quot;: {
+      &quot;weekly&quot;: {
+        &quot;baseline&quot;: 75.0,
+        &quot;lineup_efficiency_pct&quot;: 66.46734130634772,
+        &quot;decision_grade_pct&quot;: 66.46734130634772,
+        &quot;roster_missed_points&quot;: 48.6,
+        &quot;free_agent_missed_points&quot;: 0.0,
+        &quot;market_opportunity_capture_pct&quot;: 100.0,
+        &quot;good_moves_this_week&quot;: 0,
+        &quot;bad_moves_this_week&quot;: 0,
+        &quot;move_grade_adjustment_points&quot;: 0.0,
+        &quot;move_grade_summary&quot;: &quot;Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.&quot;,
+        &quot;move_grade_tags&quot;: [],
+        &quot;move_assisted_win&quot;: false,
+        &quot;transaction_activity_count&quot;: 0,
+        &quot;score_vs_historical_avg&quot;: 0.0,
+        &quot;season_average_score&quot;: 123.88400000000001,
+        &quot;score_vs_season_average&quot;: -27.550666666666785,
+        &quot;weekly_rank&quot;: 8,
+        &quot;league_size&quot;: 10,
+        &quot;beat_league_median&quot;: false,
+        &quot;component_scores&quot;: {
+          &quot;lineup_decisions&quot;: {
+            &quot;score_pct&quot;: 66.46734130634772,
+            &quot;weight_pct&quot;: 30.0,
+            &quot;available&quot;: true
+          },
+          &quot;transaction_deployment&quot;: {
+            &quot;score_pct&quot;: 100.0,
+            &quot;weight_pct&quot;: 20.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 100.0,
+            &quot;raw_unit&quot;: &quot;qualified waiver opportunity capture&quot;,
+            &quot;activity_count&quot;: 0
+          },
+          &quot;positional_performance&quot;: {
+            &quot;score_pct&quot;: 47.22222222222222,
+            &quot;weight_pct&quot;: 25.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 8,
+            &quot;raw_unit&quot;: &quot;weekly league rank&quot;
+          },
+          &quot;scoring_performance&quot;: {
+            &quot;score_pct&quot;: 45.0,
+            &quot;weight_pct&quot;: 25.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: -27.550000000000026,
+            &quot;raw_unit&quot;: &quot;points versus weekly league average&quot;
+          }
+        },
+        &quot;luck&quot;: {
+          &quot;actual_win_credit&quot;: 1.0,
+          &quot;expected_win_credit&quot;: 0.17944444444444443,
+          &quot;luck_win_credit&quot;: 0.8205555555555556,
+          &quot;all_play_win_pct&quot;: 22.22222222222222,
+          &quot;dominant_win&quot;: false,
+          &quot;victory_margin_pct&quot;: 35.78347486358206,
+          &quot;weekly_score_rank&quot;: 8,
+          &quot;league_size&quot;: 10,
+          &quot;score_vs_winning_baseline&quot;: -51.94000000000001,
+          &quot;opponent_score_vs_week_average&quot;: -71.88400000000001,
+          &quot;opponent_lineup_miss_points&quot;: 18.966666666666583,
+          &quot;opponent_assisted_win&quot;: false,
+          &quot;opponent_decisive_bench_points&quot;: 0.0
+        }
+      },
+      &quot;season&quot;: {
+        &quot;baseline&quot;: 75.0,
+        &quot;season_actual_points&quot;: 96.33333333333323,
+        &quot;season_ideal_points&quot;: 144.93333333333322,
+        &quot;season_lineup_efficiency_pct&quot;: 66.46734130634772,
+        &quot;drop_regret_points_total&quot;: 0.0,
+        &quot;trend&quot;: &quot;insufficient_data&quot;,
+        &quot;weeks_completed&quot;: 1,
+        &quot;confidence&quot;: 0.16666666666666666,
+        &quot;confidence_label&quot;: &quot;Provisional&quot;,
+        &quot;raw_score_pct&quot;: 64.61647798304398,
+        &quot;component_scores&quot;: {
+          &quot;lineup_management&quot;: {
+            &quot;score_pct&quot;: 50.641214351425894,
+            &quot;weight_pct&quot;: 20.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 66.46734130634772,
+            &quot;raw_unit&quot;: &quot;lineup efficiency&quot;,
+            &quot;league_rank&quot;: 10,
+            &quot;league_size&quot;: 10
+          },
+          &quot;roster_construction&quot;: {
+            &quot;score_pct&quot;: 73.75849600659078,
+            &quot;weight_pct&quot;: 25.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 144.93333333333322,
+            &quot;raw_unit&quot;: &quot;ideal points per week&quot;,
+            &quot;league_rank&quot;: 6,
+            &quot;league_size&quot;: 10
+          },
+          &quot;transaction_value&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;weight_pct&quot;: 20.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 0.0,
+            &quot;raw_unit&quot;: &quot;post-draft value over replacement&quot;,
+            &quot;league_rank&quot;: 1,
+            &quot;league_size&quot;: 10
+          },
+          &quot;competitive_strength&quot;: {
+            &quot;score_pct&quot;: 60.138888888888886,
+            &quot;weight_pct&quot;: 35.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 22.22222222222222,
+            &quot;raw_unit&quot;: &quot;all-play win rate&quot;,
+            &quot;league_rank&quot;: 7,
+            &quot;league_size&quot;: 10
+          }
+        },
+        &quot;competitive_strength&quot;: {
+          &quot;all_play_win_pct&quot;: 22.22222222222222,
+          &quot;win_pct&quot;: 100.0,
+          &quot;dominant_win_rate&quot;: 0.0,
+          &quot;victory_margin_pct&quot;: 35.17695603872401
+        },
+        &quot;move_impact&quot;: {
+          &quot;post_draft_value_points&quot;: 0.0,
+          &quot;move_assisted_wins&quot;: 0
+        },
+        &quot;adaptability&quot;: {
+          &quot;included_in_rating&quot;: false,
+          &quot;trend&quot;: &quot;insufficient_data&quot;,
+          &quot;reason&quot;: &quot;Shown as context only; the current trend label is not precise enough to grade.&quot;
+        }
+      }
+    },
+    &quot;summary&quot;: &quot;Love(land) Hurts graded D this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.&quot;,
+    &quot;series&quot;: {
+      &quot;weekly&quot;: [
+        {
+          &quot;week&quot;: 1,
+          &quot;weekly_score_pct&quot;: 62.99575794745987,
+          &quot;weekly_letter&quot;: &quot;D&quot;,
+          &quot;weekly_delta_points&quot;: 0.0,
+          &quot;cumulative_score_pct&quot;: 64.61647798304398,
+          &quot;cumulative_letter&quot;: &quot;D+&quot;,
+          &quot;cumulative_delta_points&quot;: 0.0,
+          &quot;trend_delta_points&quot;: 0.0,
+          &quot;trend_label&quot;: &quot;Stable&quot;,
+          &quot;score&quot;: 96.33333333333323,
+          &quot;opponent_score&quot;: null,
+          &quot;result&quot;: null
+        }
+      ],
+      &quot;summary&quot;: {
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;trend_label&quot;: &quot;Stable&quot;,
+        &quot;trend_delta_points&quot;: 0.0,
+        &quot;current_score_pct&quot;: 64.61647798304398,
+        &quot;current_letter&quot;: &quot;D+&quot;,
+        &quot;previous_score_pct&quot;: null,
+        &quot;delta_points&quot;: 0.0,
+        &quot;weeks&quot;: 1
+      }
+    },
+    &quot;trend&quot;: {
+      &quot;label&quot;: &quot;Stable&quot;,
+      &quot;delta_points&quot;: 0.0,
+      &quot;trend_delta_points&quot;: 0.0,
+      &quot;current_score_pct&quot;: 64.61647798304398,
+      &quot;previous_score_pct&quot;: null
+    }
+  },
+  &quot;moves&quot;: {
+    &quot;good_moves_this_week&quot;: 0,
+    &quot;bad_moves_this_week&quot;: 0,
+    &quot;neutral_moves_this_week&quot;: 0,
+    &quot;drop_regret_points_total&quot;: 0.0,
+    &quot;former_player_followup_points&quot;: 0.0
+  },
+  &quot;additions&quot;: []
+}</pre></details></section><section><h2>Squat</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 52.000 ÷ 70.967</td><td>73.274</td><td>30%</td><td>21.982</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(100 × 52.000 ÷ (52.000 + 0.000) + 3 × 0.000 + 0.0, 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 0.000, 45, 100)</td><td>45.000</td><td>25%</td><td>11.250</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 52.000 ÷ 123.883 − 100), 45, 100)</td><td>45.000</td><td>25%</td><td>11.250</td></tr></tbody></table><p>Final weekly grade: 64.482 / 100. League rank: 10; all-play rate: 0.00%; weekly league average: 123.883 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
+  &quot;grades&quot;: {
+    &quot;weekly&quot;: {
+      &quot;score_pct&quot;: 64.48215124471585,
+      &quot;letter&quot;: &quot;D+&quot;,
+      &quot;label&quot;: &quot;bad decisions&quot;
+    },
+    &quot;season&quot;: {
+      &quot;score_pct&quot;: 55.45358149365902,
+      &quot;letter&quot;: &quot;D-&quot;,
+      &quot;label&quot;: &quot;failing process&quot;,
+      &quot;confidence&quot;: 0.16666666666666666,
+      &quot;confidence_label&quot;: &quot;Provisional&quot;
+    },
+    &quot;components&quot;: {
+      &quot;weekly&quot;: {
+        &quot;baseline&quot;: 75.0,
+        &quot;lineup_efficiency_pct&quot;: 73.27383748238617,
+        &quot;decision_grade_pct&quot;: 73.27383748238617,
+        &quot;roster_missed_points&quot;: 18.966666666666583,
+        &quot;free_agent_missed_points&quot;: 0.0,
+        &quot;market_opportunity_capture_pct&quot;: 100.0,
+        &quot;good_moves_this_week&quot;: 0,
+        &quot;bad_moves_this_week&quot;: 0,
+        &quot;move_grade_adjustment_points&quot;: 0.0,
+        &quot;move_grade_summary&quot;: &quot;Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.&quot;,
+        &quot;move_grade_tags&quot;: [],
+        &quot;move_assisted_win&quot;: false,
+        &quot;transaction_activity_count&quot;: 0,
+        &quot;score_vs_historical_avg&quot;: -7.105427357601002e-15,
+        &quot;season_average_score&quot;: 123.88400000000001,
+        &quot;score_vs_season_average&quot;: -71.88400000000001,
+        &quot;weekly_rank&quot;: 10,
+        &quot;league_size&quot;: 10,
+        &quot;beat_league_median&quot;: false,
+        &quot;component_scores&quot;: {
+          &quot;lineup_decisions&quot;: {
+            &quot;score_pct&quot;: 73.27383748238617,
+            &quot;weight_pct&quot;: 30.0,
+            &quot;available&quot;: true
+          },
+          &quot;transaction_deployment&quot;: {
+            &quot;score_pct&quot;: 100.0,
+            &quot;weight_pct&quot;: 20.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 100.0,
+            &quot;raw_unit&quot;: &quot;qualified waiver opportunity capture&quot;,
+            &quot;activity_count&quot;: 0
+          },
+          &quot;positional_performance&quot;: {
+            &quot;score_pct&quot;: 45.0,
+            &quot;weight_pct&quot;: 25.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 10,
+            &quot;raw_unit&quot;: &quot;weekly league rank&quot;
+          },
+          &quot;scoring_performance&quot;: {
+            &quot;score_pct&quot;: 45.0,
+            &quot;weight_pct&quot;: 25.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: -71.88333333333327,
+            &quot;raw_unit&quot;: &quot;points versus weekly league average&quot;
+          }
+        },
+        &quot;luck&quot;: {
+          &quot;actual_win_credit&quot;: 0.0,
+          &quot;expected_win_credit&quot;: 0.0,
+          &quot;luck_win_credit&quot;: 0.0,
+          &quot;all_play_win_pct&quot;: 0.0,
+          &quot;dominant_win&quot;: false,
+          &quot;victory_margin_pct&quot;: 0.0,
+          &quot;weekly_score_rank&quot;: 10,
+          &quot;league_size&quot;: 10,
+          &quot;score_vs_winning_baseline&quot;: -96.27000000000001,
+          &quot;opponent_score_vs_week_average&quot;: -27.554000000000016,
+          &quot;opponent_lineup_miss_points&quot;: 48.603333333333225,
+          &quot;opponent_assisted_win&quot;: false,
+          &quot;opponent_decisive_bench_points&quot;: 0.0
+        }
+      },
+      &quot;season&quot;: {
+        &quot;baseline&quot;: 75.0,
+        &quot;season_actual_points&quot;: 51.99999999999999,
+        &quot;season_ideal_points&quot;: 70.96666666666658,
+        &quot;season_lineup_efficiency_pct&quot;: 73.27383748238617,
+        &quot;drop_regret_points_total&quot;: 0.0,
+        &quot;trend&quot;: &quot;insufficient_data&quot;,
+        &quot;weeks_completed&quot;: 1,
+        &quot;confidence&quot;: 0.16666666666666666,
+        &quot;confidence_label&quot;: &quot;Provisional&quot;,
+        &quot;raw_score_pct&quot;: 55.45358149365902,
+        &quot;component_scores&quot;: {
+          &quot;lineup_management&quot;: {
+            &quot;score_pct&quot;: 62.89290746829511,
+            &quot;weight_pct&quot;: 20.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 73.27383748238617,
+            &quot;raw_unit&quot;: &quot;lineup efficiency&quot;,
+            &quot;league_rank&quot;: 8,
+            &quot;league_size&quot;: 10
+          },
+          &quot;roster_construction&quot;: {
+            &quot;score_pct&quot;: 45.0,
+            &quot;weight_pct&quot;: 25.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 70.96666666666658,
+            &quot;raw_unit&quot;: &quot;ideal points per week&quot;,
+            &quot;league_rank&quot;: 10,
+            &quot;league_size&quot;: 10
+          },
+          &quot;transaction_value&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;weight_pct&quot;: 20.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 0.0,
+            &quot;raw_unit&quot;: &quot;post-draft value over replacement&quot;,
+            &quot;league_rank&quot;: 1,
+            &quot;league_size&quot;: 10
+          },
+          &quot;competitive_strength&quot;: {
+            &quot;score_pct&quot;: 47.5,
+            &quot;weight_pct&quot;: 35.0,
+            &quot;available&quot;: true,
+            &quot;raw_value&quot;: 0.0,
+            &quot;raw_unit&quot;: &quot;all-play win rate&quot;,
+            &quot;league_rank&quot;: 9,
+            &quot;league_size&quot;: 10
+          }
+        },
+        &quot;competitive_strength&quot;: {
+          &quot;all_play_win_pct&quot;: 0.0,
+          &quot;win_pct&quot;: 0.0,
+          &quot;dominant_win_rate&quot;: 0.0,
+          &quot;victory_margin_pct&quot;: 0.0
+        },
+        &quot;move_impact&quot;: {
+          &quot;post_draft_value_points&quot;: 0.0,
+          &quot;move_assisted_wins&quot;: 0
+        },
+        &quot;adaptability&quot;: {
+          &quot;included_in_rating&quot;: false,
+          &quot;trend&quot;: &quot;insufficient_data&quot;,
+          &quot;reason&quot;: &quot;Shown as context only; the current trend label is not precise enough to grade.&quot;
+        }
+      }
+    },
+    &quot;summary&quot;: &quot;Squat graded D+ this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.&quot;,
+    &quot;series&quot;: {
+      &quot;weekly&quot;: [
+        {
+          &quot;week&quot;: 1,
+          &quot;weekly_score_pct&quot;: 64.48215124471585,
+          &quot;weekly_letter&quot;: &quot;D+&quot;,
+          &quot;weekly_delta_points&quot;: 0.0,
+          &quot;cumulative_score_pct&quot;: 55.45358149365902,
+          &quot;cumulative_letter&quot;: &quot;D-&quot;,
+          &quot;cumulative_delta_points&quot;: 0.0,
+          &quot;trend_delta_points&quot;: 0.0,
+          &quot;trend_label&quot;: &quot;Stable&quot;,
+          &quot;score&quot;: 51.99999999999999,
+          &quot;opponent_score&quot;: null,
+          &quot;result&quot;: null
+        }
+      ],
+      &quot;summary&quot;: {
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;trend_label&quot;: &quot;Stable&quot;,
+        &quot;trend_delta_points&quot;: 0.0,
+        &quot;current_score_pct&quot;: 55.45358149365902,
+        &quot;current_letter&quot;: &quot;D-&quot;,
+        &quot;previous_score_pct&quot;: null,
+        &quot;delta_points&quot;: 0.0,
+        &quot;weeks&quot;: 1
+      }
+    },
+    &quot;trend&quot;: {
+      &quot;label&quot;: &quot;Stable&quot;,
+      &quot;delta_points&quot;: 0.0,
+      &quot;trend_delta_points&quot;: 0.0,
+      &quot;current_score_pct&quot;: 55.45358149365902,
+      &quot;previous_score_pct&quot;: null
+    }
+  },
+  &quot;moves&quot;: {
+    &quot;good_moves_this_week&quot;: 0,
+    &quot;bad_moves_this_week&quot;: 0,
+    &quot;neutral_moves_this_week&quot;: 0,
+    &quot;drop_regret_points_total&quot;: 0.0,
+    &quot;former_player_followup_points&quot;: 0.0
+  },
+  &quot;additions&quot;: []
+}</pre></details></section></html>
