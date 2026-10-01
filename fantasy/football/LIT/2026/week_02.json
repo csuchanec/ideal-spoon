@@ -3,7 +3,7 @@
     "schema_version": "1.1",
     "year": 2026,
     "week": 2,
-    "generated_at": "2026-09-29T22:45:05.542262",
+    "generated_at": "2026-09-30T20:09:16.927150",
     "total_active_players": 381,
     "total_teams": 10,
     "recommendation_min_swing": 1.0,
@@ -22,7 +22,7 @@
       "actual_score": 109.23333333333326,
       "ideal_score": 121.73333333333326,
       "optimization_missed": 12.499999999999996,
-      "manager_grade_pct": 76.34501931425733,
+      "manager_grade_pct": 78.39868853660124,
       "manager_grade_letter": "C+",
       "lineup_grade_pct": 89.73165388828039,
       "trend": "declining",
@@ -285,7 +285,7 @@
           "position": "WR"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 76.34501931425733
+        "manager_grade_final_pct": 78.39868853660124
       },
       "team_story": "Sigma Chi Whiteout is declining with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +12.5 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -320,7 +320,7 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 76.34501931425733,
+      "process_score_pct": 78.39868853660124,
       "process_score_letter": "C+",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -496,29 +496,55 @@
       },
       "roster_moves": {
         "summary": {
-          "source_of_truth": "TRANSACTIONS",
+          "source_of_truth": "TRANSACTIONS+ROSTER_DIFF",
           "good_moves_this_week": 2,
-          "neutral_moves_this_week": 0,
+          "neutral_moves_this_week": 1,
           "bad_moves_this_week": 0,
           "move_grade_adjustment_points": 0.0,
           "move_grade_impact_labels": {
+            "Unknown starter": 1,
             "Bench stash": 2
           },
           "move_grade_tags": [
-            "Bench stash"
+            "Bench stash",
+            "Unknown starter"
           ],
           "drop_regret_points_total": 0.0,
-          "season_additions_count": 2,
-          "season_added_player_points": 12.23333333333332,
-          "season_added_starter_points": 0.0,
-          "season_added_starts": 0,
-          "season_transaction_value_points": 1.529166666666665,
-          "drops_this_week_count": 2,
+          "season_additions_count": 3,
+          "season_added_player_points": 39.033333333333324,
+          "season_added_starter_points": 26.8,
+          "season_added_starts": 1,
+          "season_transaction_value_points": 9.952777777777778,
+          "drops_this_week_count": 3,
           "move_quality_summary": "Adds classified this week: 2 positive | 0 bad. Adds were grade-neutral this week.",
-          "dropped_summary": "Moved away this week: Makai Lemon, Mike Washington Jr..",
+          "dropped_summary": "Moved away this week: Kenneth Walker, Makai Lemon, Mike Washington Jr..",
           "top_drop_regret_summary": ""
         },
         "additions_this_week": [
+          {
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "actual_team": "Kansas City Chiefs",
+            "started": true,
+            "points": 26.8,
+            "outscored_team_active_players": 7,
+            "outscored_league_active_players": 79,
+            "lineup_impact_points": 0.0,
+            "prior_scoring_avg": 0.0,
+            "prior_scoring_sample_weeks": 0,
+            "surprise_points_vs_prior": 26.8,
+            "grade_adjustment_points": 0.0,
+            "grade_impact_label": "Unknown starter",
+            "tags": [
+              "Unknown starter",
+              "Neutral",
+              "Started Add"
+            ],
+            "move_quality": "NEUTRAL",
+            "move_quality_label": "Neutral",
+            "usage_label": "started",
+            "summary": "Kenneth Walker III (RB, 26.8 pts, started, Unknown starter) - Neutral"
+          },
           {
             "name": "Pat Freiermuth",
             "position": "TE",
@@ -569,6 +595,7 @@
           }
         ],
         "drops_this_week": [
+          "Kenneth Walker",
           "Makai Lemon",
           "Mike Washington Jr."
         ],
@@ -595,7 +622,7 @@
       "team_key": "470.l.932349.t.1",
       "manager_grades": {
         "weekly": {
-          "score_pct": 76.34501931425733,
+          "score_pct": 78.39868853660124,
           "letter": "C+",
           "label": "reasonable but costly"
         },
@@ -613,15 +640,17 @@
             "decision_grade_pct": 89.73165388828039,
             "roster_missed_points": 12.499999999999996,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 2,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 2 positive | 0 bad. Adds were grade-neutral this week.",
             "move_grade_tags": [
-              "Bench stash"
+              "Bench stash",
+              "Unknown starter"
             ],
             "move_assisted_win": false,
-            "transaction_activity_count": 2,
+            "transaction_activity_count": 3,
             "score_vs_historical_avg": -34.400000000000006,
             "season_average_score": 120.93050000000001,
             "score_vs_season_average": -11.697166666666746,
@@ -631,24 +660,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 89.73165388828039,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 62.95838474023427,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 69.44444444444444,
-                  "scoring_pct": 56.4723250360241
-                },
-                "raw_value": -8.743333333333311,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": true
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 3
+              },
+              "positional_performance": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 6,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 56.4723250360241,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": -8.743333333333311,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -738,8 +773,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 96.51628636126111,
-              "weekly_letter": "A",
+              "weekly_score_pct": 97.90977181675666,
+              "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 94.69172618010799,
               "cumulative_letter": "A",
@@ -752,13 +787,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 76.34501931425733,
+              "weekly_score_pct": 78.39868853660124,
               "weekly_letter": "C+",
-              "weekly_delta_points": -20.17126704700378,
+              "weekly_delta_points": -19.511083280155418,
               "cumulative_score_pct": 91.75053630363035,
               "cumulative_letter": "A-",
               "cumulative_delta_points": -2.9411898764776367,
-              "trend_delta_points": -20.17126704700378,
+              "trend_delta_points": -19.511083280155418,
               "trend_label": "Trending Down",
               "score": 109.23333333333326,
               "opponent_score": null,
@@ -768,7 +803,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -20.17126704700378,
+            "trend_delta_points": -19.511083280155418,
             "current_score_pct": 91.75053630363035,
             "current_letter": "A-",
             "previous_score_pct": 94.69172618010799,
@@ -779,14 +814,14 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -2.9411898764776367,
-          "trend_delta_points": -20.17126704700378,
+          "trend_delta_points": -19.511083280155418,
           "current_score_pct": 91.75053630363035,
           "previous_score_pct": 94.69172618010799
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 76.34501931425733,
+          "score_pct": 78.39868853660124,
           "letter": "C+",
           "label": "reasonable but costly"
         },
@@ -804,15 +839,17 @@
             "decision_grade_pct": 89.73165388828039,
             "roster_missed_points": 12.499999999999996,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 2,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
             "move_grade_summary": "Adds classified this week: 2 positive | 0 bad. Adds were grade-neutral this week.",
             "move_grade_tags": [
-              "Bench stash"
+              "Bench stash",
+              "Unknown starter"
             ],
             "move_assisted_win": false,
-            "transaction_activity_count": 2,
+            "transaction_activity_count": 3,
             "score_vs_historical_avg": -34.400000000000006,
             "season_average_score": 120.93050000000001,
             "score_vs_season_average": -11.697166666666746,
@@ -822,24 +859,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 89.73165388828039,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 62.95838474023427,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 69.44444444444444,
-                  "scoring_pct": 56.4723250360241
-                },
-                "raw_value": -8.743333333333311,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": true
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 3
+              },
+              "positional_performance": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 6,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 56.4723250360241,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": -8.743333333333311,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -929,8 +972,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 96.51628636126111,
-              "weekly_letter": "A",
+              "weekly_score_pct": 97.90977181675666,
+              "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 94.69172618010799,
               "cumulative_letter": "A",
@@ -943,13 +986,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 76.34501931425733,
+              "weekly_score_pct": 78.39868853660124,
               "weekly_letter": "C+",
-              "weekly_delta_points": -20.17126704700378,
+              "weekly_delta_points": -19.511083280155418,
               "cumulative_score_pct": 91.75053630363035,
               "cumulative_letter": "A-",
               "cumulative_delta_points": -2.9411898764776367,
-              "trend_delta_points": -20.17126704700378,
+              "trend_delta_points": -19.511083280155418,
               "trend_label": "Trending Down",
               "score": 109.23333333333326,
               "opponent_score": null,
@@ -959,7 +1002,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -20.17126704700378,
+            "trend_delta_points": -19.511083280155418,
             "current_score_pct": 91.75053630363035,
             "current_letter": "A-",
             "previous_score_pct": 94.69172618010799,
@@ -970,7 +1013,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -2.9411898764776367,
-          "trend_delta_points": -20.17126704700378,
+          "trend_delta_points": -19.511083280155418,
           "current_score_pct": 91.75053630363035,
           "previous_score_pct": 94.69172618010799
         }
@@ -979,8 +1022,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 96.51628636126111,
-            "weekly_letter": "A",
+            "weekly_score_pct": 97.90977181675666,
+            "weekly_letter": "A+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 94.69172618010799,
             "cumulative_letter": "A",
@@ -993,13 +1036,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 76.34501931425733,
+            "weekly_score_pct": 78.39868853660124,
             "weekly_letter": "C+",
-            "weekly_delta_points": -20.17126704700378,
+            "weekly_delta_points": -19.511083280155418,
             "cumulative_score_pct": 91.75053630363035,
             "cumulative_letter": "A-",
             "cumulative_delta_points": -2.9411898764776367,
-            "trend_delta_points": -20.17126704700378,
+            "trend_delta_points": -19.511083280155418,
             "trend_label": "Trending Down",
             "score": 109.23333333333326,
             "opponent_score": null,
@@ -1009,7 +1052,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -20.17126704700378,
+          "trend_delta_points": -19.511083280155418,
           "current_score_pct": 91.75053630363035,
           "current_letter": "A-",
           "previous_score_pct": 94.69172618010799,
@@ -1020,7 +1063,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -20.17126704700378,
+        "trend_delta_points": -19.511083280155418,
         "current_score_pct": 91.75053630363035,
         "current_letter": "A-",
         "previous_score_pct": 94.69172618010799,
@@ -1032,8 +1075,8 @@
       "actual_score": 100.29999999999988,
       "ideal_score": 122.63333333333321,
       "optimization_missed": 22.33333333333332,
-      "manager_grade_pct": 66.72759807918818,
-      "manager_grade_letter": "D+",
+      "manager_grade_pct": 70.36989218084624,
+      "manager_grade_letter": "C-",
       "lineup_grade_pct": 81.7885294917097,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -1249,7 +1292,7 @@
           "position": "WR"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 66.72759807918818
+        "manager_grade_final_pct": 70.36989218084624
       },
       "team_story": "Squat is improving with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth a retrospective +22.3 points; 1 had high hindsight impact.",
       "boom_bust": [
@@ -1264,8 +1307,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 66.72759807918818,
-      "process_score_letter": "D+",
+      "process_score_pct": 70.36989218084624,
+      "process_score_letter": "C-",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -1543,8 +1586,8 @@
       "team_key": "470.l.932349.t.10",
       "manager_grades": {
         "weekly": {
-          "score_pct": 66.72759807918818,
-          "letter": "D+",
+          "score_pct": 70.36989218084624,
+          "letter": "C-",
           "label": "bad decisions"
         },
         "season": {
@@ -1561,6 +1604,7 @@
             "decision_grade_pct": 81.7885294917097,
             "roster_missed_points": 22.33333333333332,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -1579,24 +1623,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 81.7885294917097,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 51.666666666666664,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 58.33333333333333,
-                  "scoring_pct": 45.0
-                },
-                "raw_value": -17.67666666666669,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 0.0,
-                "available": true
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 4
+              },
+              "positional_performance": {
+                "score_pct": 58.33333333333333,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 7,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": -17.67666666666669,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -1681,13 +1731,13 @@
             }
           }
         },
-        "summary": "Squat graded D+ this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "summary": "Squat graded C- this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.136918741193085,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 64.48215124471585,
+              "weekly_letter": "D+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -1700,13 +1750,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 66.72759807918818,
-              "weekly_letter": "D+",
-              "weekly_delta_points": 7.590679337995098,
+              "weekly_score_pct": 70.36989218084624,
+              "weekly_letter": "C-",
+              "weekly_delta_points": 5.887740936130385,
               "cumulative_score_pct": 64.65118639998349,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 9.197604906324464,
-              "trend_delta_points": 7.590679337995098,
+              "trend_delta_points": 5.887740936130385,
               "trend_label": "Trending Up",
               "score": 100.29999999999988,
               "opponent_score": null,
@@ -1716,7 +1766,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 7.590679337995098,
+            "trend_delta_points": 5.887740936130385,
             "current_score_pct": 64.65118639998349,
             "current_letter": "D+",
             "previous_score_pct": 55.45358149365902,
@@ -1727,15 +1777,15 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.197604906324464,
-          "trend_delta_points": 7.590679337995098,
+          "trend_delta_points": 5.887740936130385,
           "current_score_pct": 64.65118639998349,
           "previous_score_pct": 55.45358149365902
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 66.72759807918818,
-          "letter": "D+",
+          "score_pct": 70.36989218084624,
+          "letter": "C-",
           "label": "bad decisions"
         },
         "season": {
@@ -1752,6 +1802,7 @@
             "decision_grade_pct": 81.7885294917097,
             "roster_missed_points": 22.33333333333332,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -1770,24 +1821,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 81.7885294917097,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 51.666666666666664,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 58.33333333333333,
-                  "scoring_pct": 45.0
-                },
-                "raw_value": -17.67666666666669,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 0.0,
-                "available": true
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 4
+              },
+              "positional_performance": {
+                "score_pct": 58.33333333333333,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 7,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": -17.67666666666669,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -1872,13 +1929,13 @@
             }
           }
         },
-        "summary": "Squat graded D+ this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
+        "summary": "Squat graded C- this week and D+ for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 59.136918741193085,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 64.48215124471585,
+              "weekly_letter": "D+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 55.45358149365902,
               "cumulative_letter": "D-",
@@ -1891,13 +1948,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 66.72759807918818,
-              "weekly_letter": "D+",
-              "weekly_delta_points": 7.590679337995098,
+              "weekly_score_pct": 70.36989218084624,
+              "weekly_letter": "C-",
+              "weekly_delta_points": 5.887740936130385,
               "cumulative_score_pct": 64.65118639998349,
               "cumulative_letter": "D+",
               "cumulative_delta_points": 9.197604906324464,
-              "trend_delta_points": 7.590679337995098,
+              "trend_delta_points": 5.887740936130385,
               "trend_label": "Trending Up",
               "score": 100.29999999999988,
               "opponent_score": null,
@@ -1907,7 +1964,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 7.590679337995098,
+            "trend_delta_points": 5.887740936130385,
             "current_score_pct": 64.65118639998349,
             "current_letter": "D+",
             "previous_score_pct": 55.45358149365902,
@@ -1918,7 +1975,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.197604906324464,
-          "trend_delta_points": 7.590679337995098,
+          "trend_delta_points": 5.887740936130385,
           "current_score_pct": 64.65118639998349,
           "previous_score_pct": 55.45358149365902
         }
@@ -1927,8 +1984,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 59.136918741193085,
-            "weekly_letter": "D-",
+            "weekly_score_pct": 64.48215124471585,
+            "weekly_letter": "D+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 55.45358149365902,
             "cumulative_letter": "D-",
@@ -1941,13 +1998,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 66.72759807918818,
-            "weekly_letter": "D+",
-            "weekly_delta_points": 7.590679337995098,
+            "weekly_score_pct": 70.36989218084624,
+            "weekly_letter": "C-",
+            "weekly_delta_points": 5.887740936130385,
             "cumulative_score_pct": 64.65118639998349,
             "cumulative_letter": "D+",
             "cumulative_delta_points": 9.197604906324464,
-            "trend_delta_points": 7.590679337995098,
+            "trend_delta_points": 5.887740936130385,
             "trend_label": "Trending Up",
             "score": 100.29999999999988,
             "opponent_score": null,
@@ -1957,7 +2014,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 7.590679337995098,
+          "trend_delta_points": 5.887740936130385,
           "current_score_pct": 64.65118639998349,
           "current_letter": "D+",
           "previous_score_pct": 55.45358149365902,
@@ -1968,7 +2025,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 7.590679337995098,
+        "trend_delta_points": 5.887740936130385,
         "current_score_pct": 64.65118639998349,
         "current_letter": "D+",
         "previous_score_pct": 55.45358149365902,
@@ -1980,7 +2037,7 @@
       "actual_score": 131.06666666666658,
       "ideal_score": 139.66666666666657,
       "optimization_missed": 8.6,
-      "manager_grade_pct": 94.83790771678599,
+      "manager_grade_pct": 96.06941129673825,
       "manager_grade_letter": "A",
       "lineup_grade_pct": 93.84248210023867,
       "trend": "improving",
@@ -2151,7 +2208,7 @@
           "position": "TE"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 94.83790771678599
+        "manager_grade_final_pct": 96.06941129673825
       },
       "team_story": "Love(land) Hurts is improving with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +8.6 points; 1 had high hindsight impact.",
       "boom_bust": [
@@ -2176,7 +2233,7 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 94.83790771678599,
+      "process_score_pct": 96.06941129673825,
       "process_score_letter": "A",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -2303,7 +2360,7 @@
       "team_key": "470.l.932349.t.2",
       "manager_grades": {
         "weekly": {
-          "score_pct": 94.83790771678599,
+          "score_pct": 96.06941129673825,
           "letter": "A",
           "label": "creative edge"
         },
@@ -2321,6 +2378,7 @@
             "decision_grade_pct": 93.84248210023867,
             "roster_missed_points": 8.6,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -2337,24 +2395,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 93.84248210023867,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 95.83333333333333,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 91.66666666666666,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 91.66666666666666,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 4,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 13.090000000000003,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -2444,8 +2508,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 56.28922620872942,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 62.99575794745987,
+              "weekly_letter": "D",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
               "cumulative_letter": "D+",
@@ -2458,13 +2522,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 94.83790771678599,
+              "weekly_score_pct": 96.06941129673825,
               "weekly_letter": "A",
-              "weekly_delta_points": 38.548681508056575,
+              "weekly_delta_points": 33.07365334927838,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 38.548681508056575,
+              "trend_delta_points": 33.07365334927838,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -2474,7 +2538,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 38.548681508056575,
+            "trend_delta_points": 33.07365334927838,
             "current_score_pct": 73.7503460090069,
             "current_letter": "C",
             "previous_score_pct": 64.61647798304398,
@@ -2485,14 +2549,14 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.133868025962926,
-          "trend_delta_points": 38.548681508056575,
+          "trend_delta_points": 33.07365334927838,
           "current_score_pct": 73.7503460090069,
           "previous_score_pct": 64.61647798304398
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 94.83790771678599,
+          "score_pct": 96.06941129673825,
           "letter": "A",
           "label": "creative edge"
         },
@@ -2510,6 +2574,7 @@
             "decision_grade_pct": 93.84248210023867,
             "roster_missed_points": 8.6,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -2526,24 +2591,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 93.84248210023867,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 95.83333333333333,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 91.66666666666666,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 91.66666666666666,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 4,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 13.090000000000003,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -2633,8 +2704,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 56.28922620872942,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 62.99575794745987,
+              "weekly_letter": "D",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
               "cumulative_letter": "D+",
@@ -2647,13 +2718,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 94.83790771678599,
+              "weekly_score_pct": 96.06941129673825,
               "weekly_letter": "A",
-              "weekly_delta_points": 38.548681508056575,
+              "weekly_delta_points": 33.07365334927838,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 38.548681508056575,
+              "trend_delta_points": 33.07365334927838,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -2663,7 +2734,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 38.548681508056575,
+            "trend_delta_points": 33.07365334927838,
             "current_score_pct": 73.7503460090069,
             "current_letter": "C",
             "previous_score_pct": 64.61647798304398,
@@ -2674,7 +2745,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.133868025962926,
-          "trend_delta_points": 38.548681508056575,
+          "trend_delta_points": 33.07365334927838,
           "current_score_pct": 73.7503460090069,
           "previous_score_pct": 64.61647798304398
         }
@@ -2683,8 +2754,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 56.28922620872942,
-            "weekly_letter": "D-",
+            "weekly_score_pct": 62.99575794745987,
+            "weekly_letter": "D",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 64.61647798304398,
             "cumulative_letter": "D+",
@@ -2697,13 +2768,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 94.83790771678599,
+            "weekly_score_pct": 96.06941129673825,
             "weekly_letter": "A",
-            "weekly_delta_points": 38.548681508056575,
+            "weekly_delta_points": 33.07365334927838,
             "cumulative_score_pct": 73.7503460090069,
             "cumulative_letter": "C",
             "cumulative_delta_points": 9.133868025962926,
-            "trend_delta_points": 38.548681508056575,
+            "trend_delta_points": 33.07365334927838,
             "trend_label": "Trending Up",
             "score": 131.06666666666658,
             "opponent_score": null,
@@ -2713,7 +2784,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 38.548681508056575,
+          "trend_delta_points": 33.07365334927838,
           "current_score_pct": 73.7503460090069,
           "current_letter": "C",
           "previous_score_pct": 64.61647798304398,
@@ -2724,7 +2795,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 38.548681508056575,
+        "trend_delta_points": 33.07365334927838,
         "current_score_pct": 73.7503460090069,
         "current_letter": "C",
         "previous_score_pct": 64.61647798304398,
@@ -2736,8 +2807,8 @@
       "actual_score": 183.9999999999999,
       "ideal_score": 200.69999999999987,
       "optimization_missed": 16.700000000000003,
-      "manager_grade_pct": 95.8395615346288,
-      "manager_grade_letter": "A",
+      "manager_grade_pct": 97.50373692077727,
+      "manager_grade_letter": "A+",
       "lineup_grade_pct": 91.6791230692576,
       "trend": "unchanged",
       "trend_label": "Unchanged",
@@ -2907,7 +2978,7 @@
           "position": "WR"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 95.8395615346288
+        "manager_grade_final_pct": 97.50373692077727
       },
       "team_story": "Pat Pidgeon is unchanged with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +16.7 points; 1 had high hindsight impact.",
       "boom_bust": [
@@ -2952,8 +3023,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 95.8395615346288,
-      "process_score_letter": "A",
+      "process_score_pct": 97.50373692077727,
+      "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -3110,8 +3181,8 @@
       "team_key": "470.l.932349.t.3",
       "manager_grades": {
         "weekly": {
-          "score_pct": 95.8395615346288,
-          "letter": "A",
+          "score_pct": 97.50373692077727,
+          "letter": "A+",
           "label": "creative edge"
         },
         "season": {
@@ -3128,6 +3199,7 @@
             "decision_grade_pct": 91.6791230692576,
             "roster_missed_points": 16.700000000000003,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -3146,24 +3218,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 91.6791230692576,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 100.0,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
-                "raw_value": 66.02333333333331,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": true
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 1
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 1,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 66.02333333333331,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -3248,12 +3326,12 @@
             }
           }
         },
-        "summary": "Pat Pidgeon graded A this week and A for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as creative edge.",
+        "summary": "Pat Pidgeon graded A+ this week and A for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as creative edge.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 97.12024250589424,
+              "weekly_score_pct": 98.27214550353654,
               "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 95.0,
@@ -3267,13 +3345,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 95.8395615346288,
-              "weekly_letter": "A",
-              "weekly_delta_points": -1.28068097126544,
+              "weekly_score_pct": 97.50373692077727,
+              "weekly_letter": "A+",
+              "weekly_delta_points": -0.7684085827592639,
               "cumulative_score_pct": 94.66232962622293,
               "cumulative_letter": "A",
               "cumulative_delta_points": -0.33767037377707254,
-              "trend_delta_points": -1.28068097126544,
+              "trend_delta_points": -0.7684085827592639,
               "trend_label": "Stable",
               "score": 183.9999999999999,
               "opponent_score": null,
@@ -3283,7 +3361,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Stable",
-            "trend_delta_points": -1.28068097126544,
+            "trend_delta_points": -0.7684085827592639,
             "current_score_pct": 94.66232962622293,
             "current_letter": "A",
             "previous_score_pct": 95.0,
@@ -3294,15 +3372,15 @@
         "trend": {
           "label": "Stable",
           "delta_points": -0.33767037377707254,
-          "trend_delta_points": -1.28068097126544,
+          "trend_delta_points": -0.7684085827592639,
           "current_score_pct": 94.66232962622293,
           "previous_score_pct": 95.0
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 95.8395615346288,
-          "letter": "A",
+          "score_pct": 97.50373692077727,
+          "letter": "A+",
           "label": "creative edge"
         },
         "season": {
@@ -3319,6 +3397,7 @@
             "decision_grade_pct": 91.6791230692576,
             "roster_missed_points": 16.700000000000003,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -3337,24 +3416,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 91.6791230692576,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 100.0,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
-                "raw_value": 66.02333333333331,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": true
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 1
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 1,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 66.02333333333331,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -3439,12 +3524,12 @@
             }
           }
         },
-        "summary": "Pat Pidgeon graded A this week and A for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as creative edge.",
+        "summary": "Pat Pidgeon graded A+ this week and A for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as creative edge.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 97.12024250589424,
+              "weekly_score_pct": 98.27214550353654,
               "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 95.0,
@@ -3458,13 +3543,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 95.8395615346288,
-              "weekly_letter": "A",
-              "weekly_delta_points": -1.28068097126544,
+              "weekly_score_pct": 97.50373692077727,
+              "weekly_letter": "A+",
+              "weekly_delta_points": -0.7684085827592639,
               "cumulative_score_pct": 94.66232962622293,
               "cumulative_letter": "A",
               "cumulative_delta_points": -0.33767037377707254,
-              "trend_delta_points": -1.28068097126544,
+              "trend_delta_points": -0.7684085827592639,
               "trend_label": "Stable",
               "score": 183.9999999999999,
               "opponent_score": null,
@@ -3474,7 +3559,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Stable",
-            "trend_delta_points": -1.28068097126544,
+            "trend_delta_points": -0.7684085827592639,
             "current_score_pct": 94.66232962622293,
             "current_letter": "A",
             "previous_score_pct": 95.0,
@@ -3485,7 +3570,7 @@
         "trend": {
           "label": "Stable",
           "delta_points": -0.33767037377707254,
-          "trend_delta_points": -1.28068097126544,
+          "trend_delta_points": -0.7684085827592639,
           "current_score_pct": 94.66232962622293,
           "previous_score_pct": 95.0
         }
@@ -3494,7 +3579,7 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 97.12024250589424,
+            "weekly_score_pct": 98.27214550353654,
             "weekly_letter": "A+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 95.0,
@@ -3508,13 +3593,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 95.8395615346288,
-            "weekly_letter": "A",
-            "weekly_delta_points": -1.28068097126544,
+            "weekly_score_pct": 97.50373692077727,
+            "weekly_letter": "A+",
+            "weekly_delta_points": -0.7684085827592639,
             "cumulative_score_pct": 94.66232962622293,
             "cumulative_letter": "A",
             "cumulative_delta_points": -0.33767037377707254,
-            "trend_delta_points": -1.28068097126544,
+            "trend_delta_points": -0.7684085827592639,
             "trend_label": "Stable",
             "score": 183.9999999999999,
             "opponent_score": null,
@@ -3524,7 +3609,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Stable",
-          "trend_delta_points": -1.28068097126544,
+          "trend_delta_points": -0.7684085827592639,
           "current_score_pct": 94.66232962622293,
           "current_letter": "A",
           "previous_score_pct": 95.0,
@@ -3535,7 +3620,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Stable",
-        "trend_delta_points": -1.28068097126544,
+        "trend_delta_points": -0.7684085827592639,
         "current_score_pct": 94.66232962622293,
         "current_letter": "A",
         "previous_score_pct": 95.0,
@@ -3813,6 +3898,7 @@
             "decision_grade_pct": 100.0,
             "roster_missed_points": 0.0,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -3829,24 +3915,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
+              "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 2,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 38.52333333333331,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -3936,8 +4028,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 85.19043748323777,
-              "weekly_letter": "B",
+              "weekly_score_pct": 87.37276436596102,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 75.71041197840393,
               "cumulative_letter": "C",
@@ -3952,11 +4044,11 @@
               "week": 2,
               "weekly_score_pct": 100.0,
               "weekly_letter": "A+",
-              "weekly_delta_points": 14.809562516762227,
+              "weekly_delta_points": 12.627235634038982,
               "cumulative_score_pct": 91.23032025297749,
               "cumulative_letter": "A-",
               "cumulative_delta_points": 15.519908274573567,
-              "trend_delta_points": 14.809562516762227,
+              "trend_delta_points": 12.627235634038982,
               "trend_label": "Trending Up",
               "score": 156.4999999999999,
               "opponent_score": null,
@@ -3966,7 +4058,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 14.809562516762227,
+            "trend_delta_points": 12.627235634038982,
             "current_score_pct": 91.23032025297749,
             "current_letter": "A-",
             "previous_score_pct": 75.71041197840393,
@@ -3977,7 +4069,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 15.519908274573567,
-          "trend_delta_points": 14.809562516762227,
+          "trend_delta_points": 12.627235634038982,
           "current_score_pct": 91.23032025297749,
           "previous_score_pct": 75.71041197840393
         }
@@ -4002,6 +4094,7 @@
             "decision_grade_pct": 100.0,
             "roster_missed_points": 0.0,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -4018,24 +4111,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
+              "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 2,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 38.52333333333331,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -4125,8 +4224,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 85.19043748323777,
-              "weekly_letter": "B",
+              "weekly_score_pct": 87.37276436596102,
+              "weekly_letter": "B+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 75.71041197840393,
               "cumulative_letter": "C",
@@ -4141,11 +4240,11 @@
               "week": 2,
               "weekly_score_pct": 100.0,
               "weekly_letter": "A+",
-              "weekly_delta_points": 14.809562516762227,
+              "weekly_delta_points": 12.627235634038982,
               "cumulative_score_pct": 91.23032025297749,
               "cumulative_letter": "A-",
               "cumulative_delta_points": 15.519908274573567,
-              "trend_delta_points": 14.809562516762227,
+              "trend_delta_points": 12.627235634038982,
               "trend_label": "Trending Up",
               "score": 156.4999999999999,
               "opponent_score": null,
@@ -4155,7 +4254,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 14.809562516762227,
+            "trend_delta_points": 12.627235634038982,
             "current_score_pct": 91.23032025297749,
             "current_letter": "A-",
             "previous_score_pct": 75.71041197840393,
@@ -4166,7 +4265,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 15.519908274573567,
-          "trend_delta_points": 14.809562516762227,
+          "trend_delta_points": 12.627235634038982,
           "current_score_pct": 91.23032025297749,
           "previous_score_pct": 75.71041197840393
         }
@@ -4175,8 +4274,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 85.19043748323777,
-            "weekly_letter": "B",
+            "weekly_score_pct": 87.37276436596102,
+            "weekly_letter": "B+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 75.71041197840393,
             "cumulative_letter": "C",
@@ -4191,11 +4290,11 @@
             "week": 2,
             "weekly_score_pct": 100.0,
             "weekly_letter": "A+",
-            "weekly_delta_points": 14.809562516762227,
+            "weekly_delta_points": 12.627235634038982,
             "cumulative_score_pct": 91.23032025297749,
             "cumulative_letter": "A-",
             "cumulative_delta_points": 15.519908274573567,
-            "trend_delta_points": 14.809562516762227,
+            "trend_delta_points": 12.627235634038982,
             "trend_label": "Trending Up",
             "score": 156.4999999999999,
             "opponent_score": null,
@@ -4205,7 +4304,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 14.809562516762227,
+          "trend_delta_points": 12.627235634038982,
           "current_score_pct": 91.23032025297749,
           "current_letter": "A-",
           "previous_score_pct": 75.71041197840393,
@@ -4216,7 +4315,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 14.809562516762227,
+        "trend_delta_points": 12.627235634038982,
         "current_score_pct": 91.23032025297749,
         "current_letter": "A-",
         "previous_score_pct": 75.71041197840393,
@@ -4228,8 +4327,8 @@
       "actual_score": 75.16666666666666,
       "ideal_score": 119.63333333333321,
       "optimization_missed": 44.466666666666555,
-      "manager_grade_pct": 53.91543605461134,
-      "manager_grade_letter": "F",
+      "manager_grade_pct": 61.349261632766805,
+      "manager_grade_letter": "D",
       "lineup_grade_pct": 62.83087210922268,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -4254,7 +4353,7 @@
         }
       ],
       "historical_avg": 93.41666666666663,
-      "manager_effectiveness": "failing process",
+      "manager_effectiveness": "bad decisions",
       "recommendations": [
         {
           "position": "QB",
@@ -4491,7 +4590,7 @@
           "position": "QB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 53.91543605461134
+        "manager_grade_final_pct": 61.349261632766805
       },
       "team_story": "In Purdytory is declining with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +44.5 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -4506,8 +4605,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 53.91543605461134,
-      "process_score_letter": "F",
+      "process_score_pct": 61.349261632766805,
+      "process_score_letter": "D",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -4725,9 +4824,9 @@
       "team_key": "470.l.932349.t.5",
       "manager_grades": {
         "weekly": {
-          "score_pct": 53.91543605461134,
-          "letter": "F",
-          "label": "failing process"
+          "score_pct": 61.349261632766805,
+          "letter": "D",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 57.13674184537478,
@@ -4743,6 +4842,7 @@
             "decision_grade_pct": 62.83087210922268,
             "roster_missed_points": 44.466666666666555,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -4759,24 +4859,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 62.83087210922268,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 45.0,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 45.0,
-                  "scoring_pct": 45.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 10,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": -42.80999999999992,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -4861,13 +4967,13 @@
             }
           }
         },
-        "summary": "In Purdytory graded F this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
+        "summary": "In Purdytory graded D this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 68.66114669741235,
-              "weekly_letter": "C-",
+              "weekly_score_pct": 72.06466416087532,
+              "weekly_letter": "C",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.02452581703591,
               "cumulative_letter": "D+",
@@ -4880,13 +4986,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 53.91543605461134,
-              "weekly_letter": "F",
-              "weekly_delta_points": -14.745710642801008,
+              "weekly_score_pct": 61.349261632766805,
+              "weekly_letter": "D",
+              "weekly_delta_points": -10.71540252810852,
               "cumulative_score_pct": 57.13674184537478,
               "cumulative_letter": "D-",
               "cumulative_delta_points": -6.887783971661129,
-              "trend_delta_points": -14.745710642801008,
+              "trend_delta_points": -10.71540252810852,
               "trend_label": "Trending Down",
               "score": 75.16666666666666,
               "opponent_score": null,
@@ -4896,7 +5002,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -14.745710642801008,
+            "trend_delta_points": -10.71540252810852,
             "current_score_pct": 57.13674184537478,
             "current_letter": "D-",
             "previous_score_pct": 64.02452581703591,
@@ -4907,16 +5013,16 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -6.887783971661129,
-          "trend_delta_points": -14.745710642801008,
+          "trend_delta_points": -10.71540252810852,
           "current_score_pct": 57.13674184537478,
           "previous_score_pct": 64.02452581703591
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 53.91543605461134,
-          "letter": "F",
-          "label": "failing process"
+          "score_pct": 61.349261632766805,
+          "letter": "D",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 57.13674184537478,
@@ -4932,6 +5038,7 @@
             "decision_grade_pct": 62.83087210922268,
             "roster_missed_points": 44.466666666666555,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -4948,24 +5055,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 62.83087210922268,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 45.0,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 45.0,
-                  "scoring_pct": 45.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 10,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": -42.80999999999992,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -5050,13 +5163,13 @@
             }
           }
         },
-        "summary": "In Purdytory graded F this week and D- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as failing process.",
+        "summary": "In Purdytory graded D this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 68.66114669741235,
-              "weekly_letter": "C-",
+              "weekly_score_pct": 72.06466416087532,
+              "weekly_letter": "C",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.02452581703591,
               "cumulative_letter": "D+",
@@ -5069,13 +5182,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 53.91543605461134,
-              "weekly_letter": "F",
-              "weekly_delta_points": -14.745710642801008,
+              "weekly_score_pct": 61.349261632766805,
+              "weekly_letter": "D",
+              "weekly_delta_points": -10.71540252810852,
               "cumulative_score_pct": 57.13674184537478,
               "cumulative_letter": "D-",
               "cumulative_delta_points": -6.887783971661129,
-              "trend_delta_points": -14.745710642801008,
+              "trend_delta_points": -10.71540252810852,
               "trend_label": "Trending Down",
               "score": 75.16666666666666,
               "opponent_score": null,
@@ -5085,7 +5198,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -14.745710642801008,
+            "trend_delta_points": -10.71540252810852,
             "current_score_pct": 57.13674184537478,
             "current_letter": "D-",
             "previous_score_pct": 64.02452581703591,
@@ -5096,7 +5209,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -6.887783971661129,
-          "trend_delta_points": -14.745710642801008,
+          "trend_delta_points": -10.71540252810852,
           "current_score_pct": 57.13674184537478,
           "previous_score_pct": 64.02452581703591
         }
@@ -5105,8 +5218,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 68.66114669741235,
-            "weekly_letter": "C-",
+            "weekly_score_pct": 72.06466416087532,
+            "weekly_letter": "C",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 64.02452581703591,
             "cumulative_letter": "D+",
@@ -5119,13 +5232,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 53.91543605461134,
-            "weekly_letter": "F",
-            "weekly_delta_points": -14.745710642801008,
+            "weekly_score_pct": 61.349261632766805,
+            "weekly_letter": "D",
+            "weekly_delta_points": -10.71540252810852,
             "cumulative_score_pct": 57.13674184537478,
             "cumulative_letter": "D-",
             "cumulative_delta_points": -6.887783971661129,
-            "trend_delta_points": -14.745710642801008,
+            "trend_delta_points": -10.71540252810852,
             "trend_label": "Trending Down",
             "score": 75.16666666666666,
             "opponent_score": null,
@@ -5135,7 +5248,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -14.745710642801008,
+          "trend_delta_points": -10.71540252810852,
           "current_score_pct": 57.13674184537478,
           "current_letter": "D-",
           "previous_score_pct": 64.02452581703591,
@@ -5146,7 +5259,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -14.745710642801008,
+        "trend_delta_points": -10.71540252810852,
         "current_score_pct": 57.13674184537478,
         "current_letter": "D-",
         "previous_score_pct": 64.02452581703591,
@@ -5158,8 +5271,8 @@
       "actual_score": 87.39999999999993,
       "ideal_score": 108.33333333333329,
       "optimization_missed": 20.93333333333335,
-      "manager_grade_pct": 63.39401709401709,
-      "manager_grade_letter": "D",
+      "manager_grade_pct": 67.25863247863248,
+      "manager_grade_letter": "D+",
       "lineup_grade_pct": 80.67692307692306,
       "trend": "improving",
       "trend_label": "Heating Up",
@@ -5375,7 +5488,7 @@
           "position": "TE"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 63.39401709401709
+        "manager_grade_final_pct": 67.25863247863248
       },
       "team_story": "Nacua-Cola is improving with 2 actionable move(s): 2 start/sit and 0 waiver adds, worth a retrospective +20.9 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -5390,8 +5503,8 @@
           "ownership_status": "BENCH"
         }
       ],
-      "process_score_pct": 63.39401709401709,
-      "process_score_letter": "D",
+      "process_score_pct": 67.25863247863248,
+      "process_score_letter": "D+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -5619,8 +5732,8 @@
       "team_key": "470.l.932349.t.6",
       "manager_grades": {
         "weekly": {
-          "score_pct": 63.39401709401709,
-          "letter": "D",
+          "score_pct": 67.25863247863248,
+          "letter": "D+",
           "label": "bad decisions"
         },
         "season": {
@@ -5637,6 +5750,7 @@
             "decision_grade_pct": 80.67692307692306,
             "roster_missed_points": 20.93333333333335,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 2,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -5655,24 +5769,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 80.67692307692306,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 46.111111111111114,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 47.22222222222222,
-                  "scoring_pct": 45.0
-                },
-                "raw_value": -30.57666666666664,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": true
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 2
+              },
+              "positional_performance": {
+                "score_pct": 47.22222222222222,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 8,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": -30.57666666666664,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -5757,13 +5877,13 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded D this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "summary": "Nacua-Cola graded D+ this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 58.20334048421697,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 63.92200429053018,
+              "weekly_letter": "D",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 54.781405148636225,
               "cumulative_letter": "F",
@@ -5776,13 +5896,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 63.39401709401709,
-              "weekly_letter": "D",
-              "weekly_delta_points": 5.190676609800114,
+              "weekly_score_pct": 67.25863247863248,
+              "weekly_letter": "D+",
+              "weekly_delta_points": 3.3366281881022957,
               "cumulative_score_pct": 58.384272627306785,
               "cumulative_letter": "D-",
               "cumulative_delta_points": 3.602867478670561,
-              "trend_delta_points": 5.190676609800114,
+              "trend_delta_points": 3.3366281881022957,
               "trend_label": "Trending Up",
               "score": 87.39999999999993,
               "opponent_score": null,
@@ -5792,7 +5912,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 5.190676609800114,
+            "trend_delta_points": 3.3366281881022957,
             "current_score_pct": 58.384272627306785,
             "current_letter": "D-",
             "previous_score_pct": 54.781405148636225,
@@ -5803,15 +5923,15 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 3.602867478670561,
-          "trend_delta_points": 5.190676609800114,
+          "trend_delta_points": 3.3366281881022957,
           "current_score_pct": 58.384272627306785,
           "previous_score_pct": 54.781405148636225
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 63.39401709401709,
-          "letter": "D",
+          "score_pct": 67.25863247863248,
+          "letter": "D+",
           "label": "bad decisions"
         },
         "season": {
@@ -5828,6 +5948,7 @@
             "decision_grade_pct": 80.67692307692306,
             "roster_missed_points": 20.93333333333335,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 2,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -5846,24 +5967,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 80.67692307692306,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
-              },
-              "competitive_output": {
-                "score_pct": 46.111111111111114,
-                "weight_pct": 50.0,
-                "available": true,
-                "subscores": {
-                  "position_pct": 47.22222222222222,
-                  "scoring_pct": 45.0
-                },
-                "raw_value": -30.57666666666664,
-                "raw_unit": "points versus weekly league average"
               },
               "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": true
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
+                "available": true,
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 2
+              },
+              "positional_performance": {
+                "score_pct": 47.22222222222222,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 8,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": -30.57666666666664,
+                "raw_unit": "points versus weekly league average"
               }
             },
             "luck": {
@@ -5948,13 +6075,13 @@
             }
           }
         },
-        "summary": "Nacua-Cola graded D this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
+        "summary": "Nacua-Cola graded D+ this week and D- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as failing process.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 58.20334048421697,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 63.92200429053018,
+              "weekly_letter": "D",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 54.781405148636225,
               "cumulative_letter": "F",
@@ -5967,13 +6094,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 63.39401709401709,
-              "weekly_letter": "D",
-              "weekly_delta_points": 5.190676609800114,
+              "weekly_score_pct": 67.25863247863248,
+              "weekly_letter": "D+",
+              "weekly_delta_points": 3.3366281881022957,
               "cumulative_score_pct": 58.384272627306785,
               "cumulative_letter": "D-",
               "cumulative_delta_points": 3.602867478670561,
-              "trend_delta_points": 5.190676609800114,
+              "trend_delta_points": 3.3366281881022957,
               "trend_label": "Trending Up",
               "score": 87.39999999999993,
               "opponent_score": null,
@@ -5983,7 +6110,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 5.190676609800114,
+            "trend_delta_points": 3.3366281881022957,
             "current_score_pct": 58.384272627306785,
             "current_letter": "D-",
             "previous_score_pct": 54.781405148636225,
@@ -5994,7 +6121,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 3.602867478670561,
-          "trend_delta_points": 5.190676609800114,
+          "trend_delta_points": 3.3366281881022957,
           "current_score_pct": 58.384272627306785,
           "previous_score_pct": 54.781405148636225
         }
@@ -6003,8 +6130,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 58.20334048421697,
-            "weekly_letter": "D-",
+            "weekly_score_pct": 63.92200429053018,
+            "weekly_letter": "D",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 54.781405148636225,
             "cumulative_letter": "F",
@@ -6017,13 +6144,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 63.39401709401709,
-            "weekly_letter": "D",
-            "weekly_delta_points": 5.190676609800114,
+            "weekly_score_pct": 67.25863247863248,
+            "weekly_letter": "D+",
+            "weekly_delta_points": 3.3366281881022957,
             "cumulative_score_pct": 58.384272627306785,
             "cumulative_letter": "D-",
             "cumulative_delta_points": 3.602867478670561,
-            "trend_delta_points": 5.190676609800114,
+            "trend_delta_points": 3.3366281881022957,
             "trend_label": "Trending Up",
             "score": 87.39999999999993,
             "opponent_score": null,
@@ -6033,7 +6160,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 5.190676609800114,
+          "trend_delta_points": 3.3366281881022957,
           "current_score_pct": 58.384272627306785,
           "current_letter": "D-",
           "previous_score_pct": 54.781405148636225,
@@ -6044,7 +6171,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 5.190676609800114,
+        "trend_delta_points": 3.3366281881022957,
         "current_score_pct": 58.384272627306785,
         "current_letter": "D-",
         "previous_score_pct": 54.781405148636225,
@@ -6056,8 +6183,8 @@
       "actual_score": 126.89999999999992,
       "ideal_score": 139.09999999999997,
       "optimization_missed": 12.20000000000004,
-      "manager_grade_pct": 89.23083117712724,
-      "manager_grade_letter": "B+",
+      "manager_grade_pct": 90.98496489387779,
+      "manager_grade_letter": "A-",
       "lineup_grade_pct": 91.22933141624728,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -6319,7 +6446,7 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 89.23083117712724
+        "manager_grade_final_pct": 90.98496489387779
       },
       "team_story": "Bend & Snap Count is declining with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +12.2 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -6334,8 +6461,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 89.23083117712724,
-      "process_score_letter": "B+",
+      "process_score_pct": 90.98496489387779,
+      "process_score_letter": "A-",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -6553,8 +6680,8 @@
       "team_key": "470.l.932349.t.7",
       "manager_grades": {
         "weekly": {
-          "score_pct": 89.23083117712724,
-          "letter": "B+",
+          "score_pct": 90.98496489387779,
+          "letter": "A-",
           "label": "well managed"
         },
         "season": {
@@ -6571,6 +6698,7 @@
             "decision_grade_pct": 91.22933141624728,
             "roster_missed_points": 12.20000000000004,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -6587,24 +6715,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 91.22933141624728,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 87.23233093800721,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 80.55555555555556,
-                  "scoring_pct": 93.90910632045887
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 80.55555555555556,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 5,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 93.90910632045887,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 8.923333333333346,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -6689,12 +6823,12 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded B+ this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
+        "summary": "Bend & Snap Count graded A- this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 98.97599647654701,
+              "weekly_score_pct": 99.3855978859282,
               "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 88.88056250723369,
@@ -6708,13 +6842,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 89.23083117712724,
-              "weekly_letter": "B+",
-              "weekly_delta_points": -9.745165299419767,
+              "weekly_score_pct": 90.98496489387779,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -8.400632992050419,
               "cumulative_score_pct": 86.1289800250815,
               "cumulative_letter": "B",
               "cumulative_delta_points": -2.7515824821521875,
-              "trend_delta_points": -9.745165299419767,
+              "trend_delta_points": -8.400632992050419,
               "trend_label": "Trending Down",
               "score": 126.89999999999992,
               "opponent_score": null,
@@ -6724,7 +6858,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -9.745165299419767,
+            "trend_delta_points": -8.400632992050419,
             "current_score_pct": 86.1289800250815,
             "current_letter": "B",
             "previous_score_pct": 88.88056250723369,
@@ -6735,15 +6869,15 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -2.7515824821521875,
-          "trend_delta_points": -9.745165299419767,
+          "trend_delta_points": -8.400632992050419,
           "current_score_pct": 86.1289800250815,
           "previous_score_pct": 88.88056250723369
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 89.23083117712724,
-          "letter": "B+",
+          "score_pct": 90.98496489387779,
+          "letter": "A-",
           "label": "well managed"
         },
         "season": {
@@ -6760,6 +6894,7 @@
             "decision_grade_pct": 91.22933141624728,
             "roster_missed_points": 12.20000000000004,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -6776,24 +6911,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 91.22933141624728,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 87.23233093800721,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 80.55555555555556,
-                  "scoring_pct": 93.90910632045887
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 80.55555555555556,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 5,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 93.90910632045887,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 8.923333333333346,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -6878,12 +7019,12 @@
             }
           }
         },
-        "summary": "Bend & Snap Count graded B+ this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
+        "summary": "Bend & Snap Count graded A- this week and B for the season-to-date (provisional). Weekly management reads as well managed; season management reads as well managed.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 98.97599647654701,
+              "weekly_score_pct": 99.3855978859282,
               "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 88.88056250723369,
@@ -6897,13 +7038,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 89.23083117712724,
-              "weekly_letter": "B+",
-              "weekly_delta_points": -9.745165299419767,
+              "weekly_score_pct": 90.98496489387779,
+              "weekly_letter": "A-",
+              "weekly_delta_points": -8.400632992050419,
               "cumulative_score_pct": 86.1289800250815,
               "cumulative_letter": "B",
               "cumulative_delta_points": -2.7515824821521875,
-              "trend_delta_points": -9.745165299419767,
+              "trend_delta_points": -8.400632992050419,
               "trend_label": "Trending Down",
               "score": 126.89999999999992,
               "opponent_score": null,
@@ -6913,7 +7054,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -9.745165299419767,
+            "trend_delta_points": -8.400632992050419,
             "current_score_pct": 86.1289800250815,
             "current_letter": "B",
             "previous_score_pct": 88.88056250723369,
@@ -6924,7 +7065,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -2.7515824821521875,
-          "trend_delta_points": -9.745165299419767,
+          "trend_delta_points": -8.400632992050419,
           "current_score_pct": 86.1289800250815,
           "previous_score_pct": 88.88056250723369
         }
@@ -6933,7 +7074,7 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 98.97599647654701,
+            "weekly_score_pct": 99.3855978859282,
             "weekly_letter": "A+",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 88.88056250723369,
@@ -6947,13 +7088,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 89.23083117712724,
-            "weekly_letter": "B+",
-            "weekly_delta_points": -9.745165299419767,
+            "weekly_score_pct": 90.98496489387779,
+            "weekly_letter": "A-",
+            "weekly_delta_points": -8.400632992050419,
             "cumulative_score_pct": 86.1289800250815,
             "cumulative_letter": "B",
             "cumulative_delta_points": -2.7515824821521875,
-            "trend_delta_points": -9.745165299419767,
+            "trend_delta_points": -8.400632992050419,
             "trend_label": "Trending Down",
             "score": 126.89999999999992,
             "opponent_score": null,
@@ -6963,7 +7104,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -9.745165299419767,
+          "trend_delta_points": -8.400632992050419,
           "current_score_pct": 86.1289800250815,
           "current_letter": "B",
           "previous_score_pct": 88.88056250723369,
@@ -6974,7 +7115,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -9.745165299419767,
+        "trend_delta_points": -8.400632992050419,
         "current_score_pct": 86.1289800250815,
         "current_letter": "B",
         "previous_score_pct": 88.88056250723369,
@@ -6986,8 +7127,8 @@
       "actual_score": 77.33333333333326,
       "ideal_score": 105.63333333333325,
       "optimization_missed": 28.3,
-      "manager_grade_pct": 59.104607131587244,
-      "manager_grade_letter": "D-",
+      "manager_grade_pct": 64.46276427895235,
+      "manager_grade_letter": "D+",
       "lineup_grade_pct": 73.20921426317449,
       "trend": "declining",
       "trend_label": "Cooling Off",
@@ -7012,7 +7153,7 @@
         }
       ],
       "historical_avg": 106.81666666666658,
-      "manager_effectiveness": "failing process",
+      "manager_effectiveness": "bad decisions",
       "recommendations": [
         {
           "position": "RB",
@@ -7249,7 +7390,7 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 59.104607131587244
+        "manager_grade_final_pct": 64.46276427895235
       },
       "team_story": "ZSzizzle is declining with 3 actionable move(s): 3 start/sit and 0 waiver adds, worth a retrospective +26.1 points; 2 had high hindsight impact.",
       "boom_bust": [
@@ -7274,8 +7415,8 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 59.104607131587244,
-      "process_score_letter": "D-",
+      "process_score_pct": 64.46276427895235,
+      "process_score_letter": "D+",
       "hindsight_opportunities": {
         "lineup_decisions": [
           {
@@ -7493,9 +7634,9 @@
       "team_key": "470.l.932349.t.8",
       "manager_grades": {
         "weekly": {
-          "score_pct": 59.104607131587244,
-          "letter": "D-",
-          "label": "failing process"
+          "score_pct": 64.46276427895235,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 68.37297993390085,
@@ -7511,6 +7652,7 @@
             "decision_grade_pct": 73.20921426317449,
             "roster_missed_points": 28.3,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -7527,24 +7669,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 73.20921426317449,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 45.0,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 45.0,
-                  "scoring_pct": 45.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 9,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": -40.64333333333332,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -7629,13 +7777,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded D- this week and C- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as bad decisions.",
+        "summary": "ZSzizzle graded D+ this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 89.00388531618434,
-              "weekly_letter": "B+",
+              "weekly_score_pct": 92.56899785637728,
+              "weekly_letter": "A-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -7648,13 +7796,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 59.104607131587244,
-              "weekly_letter": "D-",
-              "weekly_delta_points": -29.899278184597094,
+              "weekly_score_pct": 64.46276427895235,
+              "weekly_letter": "D+",
+              "weekly_delta_points": -28.10623357742493,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -29.899278184597094,
+              "trend_delta_points": -28.10623357742493,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -7664,7 +7812,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -29.899278184597094,
+            "trend_delta_points": -28.10623357742493,
             "current_score_pct": 68.37297993390085,
             "current_letter": "C-",
             "previous_score_pct": 87.86613076098605,
@@ -7675,16 +7823,16 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -19.493150827085202,
-          "trend_delta_points": -29.899278184597094,
+          "trend_delta_points": -28.10623357742493,
           "current_score_pct": 68.37297993390085,
           "previous_score_pct": 87.86613076098605
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 59.104607131587244,
-          "letter": "D-",
-          "label": "failing process"
+          "score_pct": 64.46276427895235,
+          "letter": "D+",
+          "label": "bad decisions"
         },
         "season": {
           "score_pct": 68.37297993390085,
@@ -7700,6 +7848,7 @@
             "decision_grade_pct": 73.20921426317449,
             "roster_missed_points": 28.3,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -7716,24 +7865,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 73.20921426317449,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 45.0,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 45.0,
-                  "scoring_pct": 45.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 9,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": -40.64333333333332,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -7818,13 +7973,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded D- this week and C- for the season-to-date (provisional). Weekly management reads as failing process; season management reads as bad decisions.",
+        "summary": "ZSzizzle graded D+ this week and C- for the season-to-date (provisional). Weekly management reads as bad decisions; season management reads as bad decisions.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 89.00388531618434,
-              "weekly_letter": "B+",
+              "weekly_score_pct": 92.56899785637728,
+              "weekly_letter": "A-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -7837,13 +7992,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 59.104607131587244,
-              "weekly_letter": "D-",
-              "weekly_delta_points": -29.899278184597094,
+              "weekly_score_pct": 64.46276427895235,
+              "weekly_letter": "D+",
+              "weekly_delta_points": -28.10623357742493,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -29.899278184597094,
+              "trend_delta_points": -28.10623357742493,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -7853,7 +8008,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -29.899278184597094,
+            "trend_delta_points": -28.10623357742493,
             "current_score_pct": 68.37297993390085,
             "current_letter": "C-",
             "previous_score_pct": 87.86613076098605,
@@ -7864,7 +8019,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -19.493150827085202,
-          "trend_delta_points": -29.899278184597094,
+          "trend_delta_points": -28.10623357742493,
           "current_score_pct": 68.37297993390085,
           "previous_score_pct": 87.86613076098605
         }
@@ -7873,8 +8028,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 89.00388531618434,
-            "weekly_letter": "B+",
+            "weekly_score_pct": 92.56899785637728,
+            "weekly_letter": "A-",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 87.86613076098605,
             "cumulative_letter": "B+",
@@ -7887,13 +8042,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 59.104607131587244,
-            "weekly_letter": "D-",
-            "weekly_delta_points": -29.899278184597094,
+            "weekly_score_pct": 64.46276427895235,
+            "weekly_letter": "D+",
+            "weekly_delta_points": -28.10623357742493,
             "cumulative_score_pct": 68.37297993390085,
             "cumulative_letter": "C-",
             "cumulative_delta_points": -19.493150827085202,
-            "trend_delta_points": -29.899278184597094,
+            "trend_delta_points": -28.10623357742493,
             "trend_label": "Trending Down",
             "score": 77.33333333333326,
             "opponent_score": null,
@@ -7903,7 +8058,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Down",
-          "trend_delta_points": -29.899278184597094,
+          "trend_delta_points": -28.10623357742493,
           "current_score_pct": 68.37297993390085,
           "current_letter": "C-",
           "previous_score_pct": 87.86613076098605,
@@ -7914,7 +8069,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Down",
-        "trend_delta_points": -29.899278184597094,
+        "trend_delta_points": -28.10623357742493,
         "current_score_pct": 68.37297993390085,
         "current_letter": "C-",
         "previous_score_pct": 87.86613076098605,
@@ -7926,7 +8081,7 @@
       "actual_score": 131.86666666666656,
       "ideal_score": 136.36666666666656,
       "optimization_missed": 4.5,
-      "manager_grade_pct": 98.35003666585186,
+      "manager_grade_pct": 99.01002199951111,
       "manager_grade_letter": "A+",
       "lineup_grade_pct": 96.70007333170373,
       "trend": "unchanged",
@@ -8097,7 +8252,7 @@
           "position": "RB"
         },
         "top_waiver_opportunity": null,
-        "manager_grade_final_pct": 98.35003666585186
+        "manager_grade_final_pct": 99.01002199951111
       },
       "team_story": "Two Buck Luck is unchanged with 1 actionable move(s): 1 start/sit and 0 waiver adds, worth a retrospective +4.5 points; 0 had high hindsight impact.",
       "boom_bust": [
@@ -8122,7 +8277,7 @@
           "ownership_status": "ACTIVE"
         }
       ],
-      "process_score_pct": 98.35003666585186,
+      "process_score_pct": 99.01002199951111,
       "process_score_letter": "A+",
       "hindsight_opportunities": {
         "lineup_decisions": [
@@ -8249,7 +8404,7 @@
       "team_key": "470.l.932349.t.9",
       "manager_grades": {
         "weekly": {
-          "score_pct": 98.35003666585186,
+          "score_pct": 99.01002199951111,
           "letter": "A+",
           "label": "creative edge"
         },
@@ -8267,6 +8422,7 @@
             "decision_grade_pct": 96.70007333170373,
             "roster_missed_points": 4.5,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -8283,24 +8439,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 96.70007333170373,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
+              "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 3,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 13.889999999999986,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -8390,8 +8552,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 78.67090797967208,
-              "weekly_letter": "C+",
+              "weekly_score_pct": 81.80506806986375,
+              "weekly_letter": "B-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
               "cumulative_letter": "C",
@@ -8404,13 +8566,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 98.35003666585186,
+              "weekly_score_pct": 99.01002199951111,
               "weekly_letter": "A+",
-              "weekly_delta_points": 19.67912868617978,
+              "weekly_delta_points": 17.20495392964736,
               "cumulative_score_pct": 81.15913268871154,
               "cumulative_letter": "B-",
               "cumulative_delta_points": 7.106091042583657,
-              "trend_delta_points": 19.67912868617978,
+              "trend_delta_points": 17.20495392964736,
               "trend_label": "Trending Up",
               "score": 131.86666666666656,
               "opponent_score": null,
@@ -8420,7 +8582,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 19.67912868617978,
+            "trend_delta_points": 17.20495392964736,
             "current_score_pct": 81.15913268871154,
             "current_letter": "B-",
             "previous_score_pct": 74.05304164612788,
@@ -8431,14 +8593,14 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 7.106091042583657,
-          "trend_delta_points": 19.67912868617978,
+          "trend_delta_points": 17.20495392964736,
           "current_score_pct": 81.15913268871154,
           "previous_score_pct": 74.05304164612788
         }
       },
       "process_scores": {
         "weekly": {
-          "score_pct": 98.35003666585186,
+          "score_pct": 99.01002199951111,
           "letter": "A+",
           "label": "creative edge"
         },
@@ -8456,6 +8618,7 @@
             "decision_grade_pct": 96.70007333170373,
             "roster_missed_points": 4.5,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -8472,24 +8635,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 96.70007333170373,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
+              "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 3,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 13.889999999999986,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -8579,8 +8748,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 78.67090797967208,
-              "weekly_letter": "C+",
+              "weekly_score_pct": 81.80506806986375,
+              "weekly_letter": "B-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
               "cumulative_letter": "C",
@@ -8593,13 +8762,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 98.35003666585186,
+              "weekly_score_pct": 99.01002199951111,
               "weekly_letter": "A+",
-              "weekly_delta_points": 19.67912868617978,
+              "weekly_delta_points": 17.20495392964736,
               "cumulative_score_pct": 81.15913268871154,
               "cumulative_letter": "B-",
               "cumulative_delta_points": 7.106091042583657,
-              "trend_delta_points": 19.67912868617978,
+              "trend_delta_points": 17.20495392964736,
               "trend_label": "Trending Up",
               "score": 131.86666666666656,
               "opponent_score": null,
@@ -8609,7 +8778,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 19.67912868617978,
+            "trend_delta_points": 17.20495392964736,
             "current_score_pct": 81.15913268871154,
             "current_letter": "B-",
             "previous_score_pct": 74.05304164612788,
@@ -8620,7 +8789,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 7.106091042583657,
-          "trend_delta_points": 19.67912868617978,
+          "trend_delta_points": 17.20495392964736,
           "current_score_pct": 81.15913268871154,
           "previous_score_pct": 74.05304164612788
         }
@@ -8629,8 +8798,8 @@
         "weekly": [
           {
             "week": 1,
-            "weekly_score_pct": 78.67090797967208,
-            "weekly_letter": "C+",
+            "weekly_score_pct": 81.80506806986375,
+            "weekly_letter": "B-",
             "weekly_delta_points": 0.0,
             "cumulative_score_pct": 74.05304164612788,
             "cumulative_letter": "C",
@@ -8643,13 +8812,13 @@
           },
           {
             "week": 2,
-            "weekly_score_pct": 98.35003666585186,
+            "weekly_score_pct": 99.01002199951111,
             "weekly_letter": "A+",
-            "weekly_delta_points": 19.67912868617978,
+            "weekly_delta_points": 17.20495392964736,
             "cumulative_score_pct": 81.15913268871154,
             "cumulative_letter": "B-",
             "cumulative_delta_points": 7.106091042583657,
-            "trend_delta_points": 19.67912868617978,
+            "trend_delta_points": 17.20495392964736,
             "trend_label": "Trending Up",
             "score": 131.86666666666656,
             "opponent_score": null,
@@ -8659,7 +8828,7 @@
         "summary": {
           "status": "available",
           "trend_label": "Trending Up",
-          "trend_delta_points": 19.67912868617978,
+          "trend_delta_points": 17.20495392964736,
           "current_score_pct": 81.15913268871154,
           "current_letter": "B-",
           "previous_score_pct": 74.05304164612788,
@@ -8670,7 +8839,7 @@
       "manager_grade_trend": {
         "status": "available",
         "trend_label": "Trending Up",
-        "trend_delta_points": 19.67912868617978,
+        "trend_delta_points": 17.20495392964736,
         "current_score_pct": 81.15913268871154,
         "current_letter": "B-",
         "previous_score_pct": 74.05304164612788,

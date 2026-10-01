@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 3,
-    "generated_at": "2026-09-29T22:45:38.020224",
+    "generated_at": "2026-09-30T20:09:23.930176",
     "page_title": "ZSzizzle vs Love(land) Hurts matchup report",
     "matchup_id": "week-03-zszizzle-vs-love-land-hurts",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_03"
@@ -49,13 +49,13 @@
       "manager_display": "Mike",
       "actual_score": 147.39999999999995,
       "ideal_score": 155.79999999999995,
-      "manager_grade_pct": 95.22090286692341,
-      "manager_grade_letter": "A",
+      "manager_grade_pct": 90.47910256671489,
+      "manager_grade_letter": "A-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 95.22090286692341,
-          "letter": "A",
-          "label": "creative edge"
+          "score_pct": 90.47910256671489,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
           "score_pct": 77.52335359202469,
@@ -71,6 +71,7 @@
             "decision_grade_pct": 83.28860008475772,
             "roster_missed_points": 8.399999999999999,
             "free_agent_missed_points": 60.49999999999999,
+            "market_opportunity_capture_pct": 70.8994708994709,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -87,24 +88,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 94.60847240051348,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 95.83333333333333,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 70.8994708994709,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 91.66666666666666,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 70.8994708994709,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 91.66666666666666,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 4,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 20.370000000000047,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -189,13 +196,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded A this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
+        "summary": "ZSzizzle graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 89.00388531618434,
-              "weekly_letter": "B+",
+              "weekly_score_pct": 92.56899785637728,
+              "weekly_letter": "A-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -208,13 +215,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 59.104607131587244,
-              "weekly_letter": "D-",
-              "weekly_delta_points": -29.899278184597094,
+              "weekly_score_pct": 64.46276427895235,
+              "weekly_letter": "D+",
+              "weekly_delta_points": -28.10623357742493,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -29.899278184597094,
+              "trend_delta_points": -28.10623357742493,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -222,13 +229,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 95.22090286692341,
-              "weekly_letter": "A",
-              "weekly_delta_points": 36.116295735336166,
+              "weekly_score_pct": 90.47910256671489,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 26.016338287762537,
               "cumulative_score_pct": 77.52335359202469,
               "cumulative_letter": "C+",
               "cumulative_delta_points": 9.15037365812384,
-              "trend_delta_points": 36.116295735336166,
+              "trend_delta_points": 26.016338287762537,
               "trend_label": "Trending Up",
               "score": 147.39999999999995,
               "opponent_score": null,
@@ -238,7 +245,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 36.116295735336166,
+            "trend_delta_points": 26.016338287762537,
             "current_score_pct": 77.52335359202469,
             "current_letter": "C+",
             "previous_score_pct": 68.37297993390085,
@@ -249,18 +256,18 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.15037365812384,
-          "trend_delta_points": 36.116295735336166,
+          "trend_delta_points": 26.016338287762537,
           "current_score_pct": 77.52335359202469,
           "previous_score_pct": 68.37297993390085
         }
       },
-      "process_score_pct": 95.22090286692341,
-      "process_score_letter": "A",
+      "process_score_pct": 90.47910256671489,
+      "process_score_letter": "A-",
       "process_scores": {
         "weekly": {
-          "score_pct": 95.22090286692341,
-          "letter": "A",
-          "label": "creative edge"
+          "score_pct": 90.47910256671489,
+          "letter": "A-",
+          "label": "well managed"
         },
         "season": {
           "score_pct": 77.52335359202469,
@@ -276,6 +283,7 @@
             "decision_grade_pct": 83.28860008475772,
             "roster_missed_points": 8.399999999999999,
             "free_agent_missed_points": 60.49999999999999,
+            "market_opportunity_capture_pct": 70.8994708994709,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -292,24 +300,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 94.60847240051348,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 95.83333333333333,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 70.8994708994709,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 91.66666666666666,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 70.8994708994709,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 91.66666666666666,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 4,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 20.370000000000047,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -394,13 +408,13 @@
             }
           }
         },
-        "summary": "ZSzizzle graded A this week and C+ for the season-to-date (developing). Weekly management reads as creative edge; season management reads as reasonable but costly.",
+        "summary": "ZSzizzle graded A- this week and C+ for the season-to-date (developing). Weekly management reads as well managed; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 89.00388531618434,
-              "weekly_letter": "B+",
+              "weekly_score_pct": 92.56899785637728,
+              "weekly_letter": "A-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 87.86613076098605,
               "cumulative_letter": "B+",
@@ -413,13 +427,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 59.104607131587244,
-              "weekly_letter": "D-",
-              "weekly_delta_points": -29.899278184597094,
+              "weekly_score_pct": 64.46276427895235,
+              "weekly_letter": "D+",
+              "weekly_delta_points": -28.10623357742493,
               "cumulative_score_pct": 68.37297993390085,
               "cumulative_letter": "C-",
               "cumulative_delta_points": -19.493150827085202,
-              "trend_delta_points": -29.899278184597094,
+              "trend_delta_points": -28.10623357742493,
               "trend_label": "Trending Down",
               "score": 77.33333333333326,
               "opponent_score": null,
@@ -427,13 +441,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 95.22090286692341,
-              "weekly_letter": "A",
-              "weekly_delta_points": 36.116295735336166,
+              "weekly_score_pct": 90.47910256671489,
+              "weekly_letter": "A-",
+              "weekly_delta_points": 26.016338287762537,
               "cumulative_score_pct": 77.52335359202469,
               "cumulative_letter": "C+",
               "cumulative_delta_points": 9.15037365812384,
-              "trend_delta_points": 36.116295735336166,
+              "trend_delta_points": 26.016338287762537,
               "trend_label": "Trending Up",
               "score": 147.39999999999995,
               "opponent_score": null,
@@ -443,7 +457,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Up",
-            "trend_delta_points": 36.116295735336166,
+            "trend_delta_points": 26.016338287762537,
             "current_score_pct": 77.52335359202469,
             "current_letter": "C+",
             "previous_score_pct": 68.37297993390085,
@@ -454,7 +468,7 @@
         "trend": {
           "label": "Trending Up",
           "delta_points": 9.15037365812384,
-          "trend_delta_points": 36.116295735336166,
+          "trend_delta_points": 26.016338287762537,
           "current_score_pct": 77.52335359202469,
           "previous_score_pct": 68.37297993390085
         }
@@ -1329,11 +1343,11 @@
       "manager_display": "Matt",
       "actual_score": 95.99999999999994,
       "ideal_score": 117.49999999999994,
-      "manager_grade_pct": 63.906619385342786,
+      "manager_grade_pct": 62.96314653987537,
       "manager_grade_letter": "D",
       "manager_grades": {
         "weekly": {
-          "score_pct": 63.906619385342786,
+          "score_pct": 62.96314653987537,
           "letter": "D",
           "label": "bad decisions"
         },
@@ -1351,13 +1365,16 @@
             "decision_grade_pct": 75.26755262848405,
             "roster_missed_points": 21.5,
             "free_agent_missed_points": 28.699999999999996,
-            "good_moves_this_week": 0,
+            "market_opportunity_capture_pct": 76.98476343223737,
+            "good_moves_this_week": 1,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
-            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
-            "move_grade_tags": [],
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash"
+            ],
             "move_assisted_win": false,
-            "transaction_activity_count": 0,
+            "transaction_activity_count": 1,
             "score_vs_historical_avg": -11.799999999999969,
             "season_average_score": 122.96366666666668,
             "score_vs_season_average": -26.96366666666674,
@@ -1367,24 +1384,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 81.70212765957446,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 46.111111111111114,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 76.98476343223737,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 47.22222222222222,
-                  "scoring_pct": 45.0
-                },
+                "raw_value": 76.98476343223737,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 1
+              },
+              "positional_performance": {
+                "score_pct": 47.22222222222222,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 8,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": -31.02999999999996,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -1474,8 +1497,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 56.28922620872942,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 62.99575794745987,
+              "weekly_letter": "D",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
               "cumulative_letter": "D+",
@@ -1488,13 +1511,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 94.83790771678599,
+              "weekly_score_pct": 96.06941129673825,
               "weekly_letter": "A",
-              "weekly_delta_points": 38.548681508056575,
+              "weekly_delta_points": 33.07365334927838,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 38.548681508056575,
+              "trend_delta_points": 33.07365334927838,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -1502,13 +1525,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 63.906619385342786,
+              "weekly_score_pct": 62.96314653987537,
               "weekly_letter": "D",
-              "weekly_delta_points": -30.931288331443206,
+              "weekly_delta_points": -33.106264756862885,
               "cumulative_score_pct": 66.86510107643517,
               "cumulative_letter": "D+",
               "cumulative_delta_points": -6.885244932571737,
-              "trend_delta_points": -30.931288331443206,
+              "trend_delta_points": -33.106264756862885,
               "trend_label": "Trending Down",
               "score": 95.99999999999994,
               "opponent_score": null,
@@ -1518,7 +1541,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -30.931288331443206,
+            "trend_delta_points": -33.106264756862885,
             "current_score_pct": 66.86510107643517,
             "current_letter": "D+",
             "previous_score_pct": 73.7503460090069,
@@ -1529,16 +1552,16 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -6.885244932571737,
-          "trend_delta_points": -30.931288331443206,
+          "trend_delta_points": -33.106264756862885,
           "current_score_pct": 66.86510107643517,
           "previous_score_pct": 73.7503460090069
         }
       },
-      "process_score_pct": 63.906619385342786,
+      "process_score_pct": 62.96314653987537,
       "process_score_letter": "D",
       "process_scores": {
         "weekly": {
-          "score_pct": 63.906619385342786,
+          "score_pct": 62.96314653987537,
           "letter": "D",
           "label": "bad decisions"
         },
@@ -1556,13 +1579,16 @@
             "decision_grade_pct": 75.26755262848405,
             "roster_missed_points": 21.5,
             "free_agent_missed_points": 28.699999999999996,
-            "good_moves_this_week": 0,
+            "market_opportunity_capture_pct": 76.98476343223737,
+            "good_moves_this_week": 1,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
-            "move_grade_summary": "Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.",
-            "move_grade_tags": [],
+            "move_grade_summary": "Adds classified this week: 1 positive | 0 bad. Adds were grade-neutral this week.",
+            "move_grade_tags": [
+              "Bench stash"
+            ],
             "move_assisted_win": false,
-            "transaction_activity_count": 0,
+            "transaction_activity_count": 1,
             "score_vs_historical_avg": -11.799999999999969,
             "season_average_score": 122.96366666666668,
             "score_vs_season_average": -26.96366666666674,
@@ -1572,24 +1598,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 81.70212765957446,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 46.111111111111114,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 76.98476343223737,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 47.22222222222222,
-                  "scoring_pct": 45.0
-                },
+                "raw_value": 76.98476343223737,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 1
+              },
+              "positional_performance": {
+                "score_pct": 47.22222222222222,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 8,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 45.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": -31.02999999999996,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -1679,8 +1711,8 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 56.28922620872942,
-              "weekly_letter": "D-",
+              "weekly_score_pct": 62.99575794745987,
+              "weekly_letter": "D",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 64.61647798304398,
               "cumulative_letter": "D+",
@@ -1693,13 +1725,13 @@
             },
             {
               "week": 2,
-              "weekly_score_pct": 94.83790771678599,
+              "weekly_score_pct": 96.06941129673825,
               "weekly_letter": "A",
-              "weekly_delta_points": 38.548681508056575,
+              "weekly_delta_points": 33.07365334927838,
               "cumulative_score_pct": 73.7503460090069,
               "cumulative_letter": "C",
               "cumulative_delta_points": 9.133868025962926,
-              "trend_delta_points": 38.548681508056575,
+              "trend_delta_points": 33.07365334927838,
               "trend_label": "Trending Up",
               "score": 131.06666666666658,
               "opponent_score": null,
@@ -1707,13 +1739,13 @@
             },
             {
               "week": 3,
-              "weekly_score_pct": 63.906619385342786,
+              "weekly_score_pct": 62.96314653987537,
               "weekly_letter": "D",
-              "weekly_delta_points": -30.931288331443206,
+              "weekly_delta_points": -33.106264756862885,
               "cumulative_score_pct": 66.86510107643517,
               "cumulative_letter": "D+",
               "cumulative_delta_points": -6.885244932571737,
-              "trend_delta_points": -30.931288331443206,
+              "trend_delta_points": -33.106264756862885,
               "trend_label": "Trending Down",
               "score": 95.99999999999994,
               "opponent_score": null,
@@ -1723,7 +1755,7 @@
           "summary": {
             "status": "available",
             "trend_label": "Trending Down",
-            "trend_delta_points": -30.931288331443206,
+            "trend_delta_points": -33.106264756862885,
             "current_score_pct": 66.86510107643517,
             "current_letter": "D+",
             "previous_score_pct": 73.7503460090069,
@@ -1734,7 +1766,7 @@
         "trend": {
           "label": "Trending Down",
           "delta_points": -6.885244932571737,
-          "trend_delta_points": -30.931288331443206,
+          "trend_delta_points": -33.106264756862885,
           "current_score_pct": 66.86510107643517,
           "previous_score_pct": 73.7503460090069
         }
@@ -1752,7 +1784,7 @@
           "waiver_upside_points": 28.699999999999996
         },
         "moves": {
-          "good_moves_this_week": 0,
+          "good_moves_this_week": 1,
           "bad_moves_this_week": 0,
           "neutral_moves_this_week": 0,
           "drop_regret_points_total": 0.0,
@@ -2136,7 +2168,32 @@
           }
         }
       ],
-      "top_additions_this_week": [],
+      "top_additions_this_week": [
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "actual_team": "Philadelphia Eagles",
+          "started": false,
+          "points": 5.2,
+          "outscored_team_active_players": 2,
+          "outscored_league_active_players": 18,
+          "lineup_impact_points": 0.0,
+          "prior_scoring_avg": 13.850000000000001,
+          "prior_scoring_sample_weeks": 2,
+          "surprise_points_vs_prior": -8.650000000000002,
+          "grade_adjustment_points": 0.0,
+          "grade_impact_label": "Bench stash",
+          "tags": [
+            "Bench stash",
+            "Good Bench Stash",
+            "Bench Add"
+          ],
+          "move_quality": "GOOD_BENCH_STASH",
+          "move_quality_label": "Good Bench Stash",
+          "usage_label": "benched",
+          "summary": "Dontayvion Wicks (WR, 5.2 pts, benched, Bench stash) - Good Bench Stash"
+        }
+      ],
       "started_all": [
         {
           "team_name": "Love(land) Hurts",
@@ -3133,7 +3190,33 @@
         "starter_points": 12.0
       }
     ],
-    "top_additions_this_week": []
+    "top_additions_this_week": [
+      {
+        "team_name": "Love(land) Hurts",
+        "name": "Dontayvion Wicks",
+        "position": "WR",
+        "actual_team": "Philadelphia Eagles",
+        "started": false,
+        "points": 5.2,
+        "outscored_team_active_players": 2,
+        "outscored_league_active_players": 18,
+        "lineup_impact_points": 0.0,
+        "prior_scoring_avg": 13.850000000000001,
+        "prior_scoring_sample_weeks": 2,
+        "surprise_points_vs_prior": -8.650000000000002,
+        "grade_adjustment_points": 0.0,
+        "grade_impact_label": "Bench stash",
+        "tags": [
+          "Bench stash",
+          "Good Bench Stash",
+          "Bench Add"
+        ],
+        "move_quality": "GOOD_BENCH_STASH",
+        "move_quality_label": "Good Bench Stash",
+        "usage_label": "benched",
+        "summary": "Dontayvion Wicks (WR, 5.2 pts, benched, Bench stash) - Good Bench Stash"
+      }
+    ]
   },
   "comparison_summary": [
     {

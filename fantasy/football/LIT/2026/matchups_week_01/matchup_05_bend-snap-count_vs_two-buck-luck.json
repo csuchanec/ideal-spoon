@@ -4,7 +4,7 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-09-29T22:44:35.776701",
+    "generated_at": "2026-09-30T20:09:11.013264",
     "page_title": "Bend & Snap Count vs Two Buck Luck matchup report",
     "matchup_id": "week-01-bend-snap-count-vs-two-buck-luck",
     "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
@@ -49,11 +49,11 @@
       "manager_display": "Elissa P.",
       "actual_score": 148.2666666666666,
       "ideal_score": 151.36666666666662,
-      "manager_grade_pct": 98.97599647654701,
+      "manager_grade_pct": 99.3855978859282,
       "manager_grade_letter": "A+",
       "manager_grades": {
         "weekly": {
-          "score_pct": 98.97599647654701,
+          "score_pct": 99.3855978859282,
           "letter": "A+",
           "label": "creative edge"
         },
@@ -71,6 +71,7 @@
             "decision_grade_pct": 97.95199295309402,
             "roster_missed_points": 3.10000000000003,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -87,24 +88,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 97.95199295309402,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
+              "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 3,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 24.38333333333334,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -194,7 +201,7 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 98.97599647654701,
+              "weekly_score_pct": 99.3855978859282,
               "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 88.88056250723369,
@@ -226,11 +233,11 @@
           "previous_score_pct": null
         }
       },
-      "process_score_pct": 98.97599647654701,
+      "process_score_pct": 99.3855978859282,
       "process_score_letter": "A+",
       "process_scores": {
         "weekly": {
-          "score_pct": 98.97599647654701,
+          "score_pct": 99.3855978859282,
           "letter": "A+",
           "label": "creative edge"
         },
@@ -248,6 +255,7 @@
             "decision_grade_pct": 97.95199295309402,
             "roster_missed_points": 3.10000000000003,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -264,24 +272,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 97.95199295309402,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
+              "transaction_deployment": {
                 "score_pct": 100.0,
-                "weight_pct": 50.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 100.0,
-                  "scoring_pct": 100.0
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 3,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 100.0,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 24.38333333333334,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -371,7 +385,7 @@
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 98.97599647654701,
+              "weekly_score_pct": 99.3855978859282,
               "weekly_letter": "A+",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 88.88056250723369,
@@ -1163,12 +1177,12 @@
       "manager_display": "Dave F.",
       "actual_score": 124.66666666666663,
       "ideal_score": 147.83333333333326,
-      "manager_grade_pct": 78.67090797967208,
-      "manager_grade_letter": "C+",
+      "manager_grade_pct": 81.80506806986375,
+      "manager_grade_letter": "B-",
       "manager_grades": {
         "weekly": {
-          "score_pct": 78.67090797967208,
-          "letter": "C+",
+          "score_pct": 81.80506806986375,
+          "letter": "B-",
           "label": "reasonable but costly"
         },
         "season": {
@@ -1185,6 +1199,7 @@
             "decision_grade_pct": 84.32919954904173,
             "roster_missed_points": 23.166666666666643,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -1201,24 +1216,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 84.32919954904173,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 73.01261641030243,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 69.44444444444444,
-                  "scoring_pct": 76.58078837616043
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 6,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 76.58078837616043,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 0.7833333333333741,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -1303,13 +1324,13 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded C+ this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.",
+        "summary": "Two Buck Luck graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 78.67090797967208,
-              "weekly_letter": "C+",
+              "weekly_score_pct": 81.80506806986375,
+              "weekly_letter": "B-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
               "cumulative_letter": "C",
@@ -1340,12 +1361,12 @@
           "previous_score_pct": null
         }
       },
-      "process_score_pct": 78.67090797967208,
-      "process_score_letter": "C+",
+      "process_score_pct": 81.80506806986375,
+      "process_score_letter": "B-",
       "process_scores": {
         "weekly": {
-          "score_pct": 78.67090797967208,
-          "letter": "C+",
+          "score_pct": 81.80506806986375,
+          "letter": "B-",
           "label": "reasonable but costly"
         },
         "season": {
@@ -1362,6 +1383,7 @@
             "decision_grade_pct": 84.32919954904173,
             "roster_missed_points": 23.166666666666643,
             "free_agent_missed_points": 0.0,
+            "market_opportunity_capture_pct": 100.0,
             "good_moves_this_week": 0,
             "bad_moves_this_week": 0,
             "move_grade_adjustment_points": 0.0,
@@ -1378,24 +1400,30 @@
             "component_scores": {
               "lineup_decisions": {
                 "score_pct": 84.32919954904173,
-                "weight_pct": 50.0,
+                "weight_pct": 30.0,
                 "available": true
               },
-              "competitive_output": {
-                "score_pct": 73.01261641030243,
-                "weight_pct": 50.0,
+              "transaction_deployment": {
+                "score_pct": 100.0,
+                "weight_pct": 20.0,
                 "available": true,
-                "subscores": {
-                  "position_pct": 69.44444444444444,
-                  "scoring_pct": 76.58078837616043
-                },
+                "raw_value": 100.0,
+                "raw_unit": "qualified waiver opportunity capture",
+                "activity_count": 0
+              },
+              "positional_performance": {
+                "score_pct": 69.44444444444444,
+                "weight_pct": 25.0,
+                "available": true,
+                "raw_value": 6,
+                "raw_unit": "weekly league rank"
+              },
+              "scoring_performance": {
+                "score_pct": 76.58078837616043,
+                "weight_pct": 25.0,
+                "available": true,
                 "raw_value": 0.7833333333333741,
                 "raw_unit": "points versus weekly league average"
-              },
-              "transaction_deployment": {
-                "score_pct": 75.0,
-                "weight_pct": 0.0,
-                "available": false
               }
             },
             "luck": {
@@ -1480,13 +1508,13 @@
             }
           }
         },
-        "summary": "Two Buck Luck graded C+ this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.",
+        "summary": "Two Buck Luck graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.",
         "series": {
           "weekly": [
             {
               "week": 1,
-              "weekly_score_pct": 78.67090797967208,
-              "weekly_letter": "C+",
+              "weekly_score_pct": 81.80506806986375,
+              "weekly_letter": "B-",
               "weekly_delta_points": 0.0,
               "cumulative_score_pct": 74.05304164612788,
               "cumulative_letter": "C",
