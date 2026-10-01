@@ -24,21 +24,23 @@
             margin: 0;
             background: var(--bg);
             color: var(--text);
-            font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.38;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.5;
             font-size: 14px;
         }
         .page {
             max-width: 1240px;
             margin: 0 auto;
-            padding: 18px 18px 42px;
+            padding: 20px 28px 48px;
+            background: var(--surface);
         }
         .section {
-            background: var(--surface);
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 24px 0;
+            margin: 0;
         }
         .eyebrow {
             color: var(--text-muted);
@@ -55,9 +57,9 @@
             margin: 0 0 10px;
         }
         h2 {
-            font-size: 19px;
+            font-size: 20px;
             line-height: 1.2;
-            margin: 0 0 6px;
+            margin: 0 0 10px;
         }
         h3 {
             font-size: 16px;
@@ -787,9 +789,9 @@
             margin-top: 6px;
         }
         .award-strip {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px 24px;
         }
         .skill-grid {
             display: grid;
@@ -814,12 +816,52 @@
             background: var(--surface-muted);
         }
         .award-card {
-            border: 1px solid var(--line);
-            border-radius: 6px;
-            padding: 8px 10px;
-            background: #f8fafc;
-            min-width: 220px;
-            flex: 1 1 220px;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px 0;
+            background: transparent;
+            min-width: 0;
+        }
+        .section > .muted { font-size: 13px; margin: 0 0 16px; }
+        .detail-card, .verdict-card, .takeaway-card, .chart-card,
+        .skill-team-card, .skill-hero {
+            border: 0; border-radius: 0; background: transparent; padding: 12px 0;
+        }
+        .detail-card.tertiary, .chart-card.tertiary,
+        .chart-card.highlight { background: transparent; border: 0; }
+        .hero-card { border: 0; border-radius: 4px; background: var(--accent-soft); }
+        .detail-card .value, .verdict-card .value { font-size: 16px; line-height: 1.35; }
+        .chart-title, .award-card strong { font-size: 15px; }
+        .subvalue, .chart-note, .comparison-context { font-size: 12px; line-height: 1.5; }
+        .deep-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+        .deep-card { min-width: 0; padding: 4px 0; }
+        .deep-card p { margin: 8px 0; }
+        details { margin: 12px 0; }
+        summary { font-size: 13px; cursor: pointer; color: var(--accent); }
+        .math-page .page { max-width: 1120px; }
+        .math-page p, .math-page li { max-width: 85ch; }
+        .math-page .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+        .math-team-header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+        .math-grade { font-size: 24px; font-weight: 700; white-space: nowrap; }
+        .math-page .math-table { width: 100%; min-width: 680px; table-layout: fixed; }
+        .math-table th:first-child { width: 21%; }
+        .math-table th:nth-child(2) { width: 46%; }
+        .math-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+        .math-expression { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-formula, .math-page pre { background: var(--surface-muted); padding: 14px 16px; border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-page pre { max-height: 420px; overflow: auto; }
+        .math-page .math-model-list { display: grid; gap: 18px; }
+        .math-page .math-model-list h3 { margin-bottom: 6px; }
+        .math-page .math-model-list p { margin: 6px 0; }
+        @media (max-width: 800px) {
+            .award-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 600px) {
+            .page { padding: 16px; }
+            .section { padding: 20px 0; }
+            .award-strip, .deep-grid { grid-template-columns: 1fr; }
+            .math-team-header { flex-direction: column; gap: 0; }
         }
         details.deep-metrics {
             border: 1px solid var(--line);
@@ -1275,7 +1317,7 @@
             </div>
         </section>
         
-        <section class='section scoring-sources-section'><h2>Where The Points Came From</h2><p class='muted'>The bars attribute counted starter points to the underlying scoring categories. Absolute bars share one scale; percentage bars normalize each team to its own score. Negative categories are called out beside the total.</p><div class='source-bars'><div><div class='source-team-label'><strong>Millan’s Last Supper</strong><span>181.2 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:100.000%'><span class='source-segment' style='width:11.573%;background:#2563eb' title='Passing: 21.0 points' aria-label='Passing: 21.0 points'><span class='source-segment-label'>21.0</span></span><span class='source-segment' style='width:24.121%;background:#15803d' title='Rushing: 43.7 points' aria-label='Rushing: 43.7 points'><span class='source-segment-label'>Rushing 43.7</span></span><span class='source-segment' style='width:49.954%;background:#b45309' title='Receiving: 90.5 points' aria-label='Receiving: 90.5 points'><span class='source-segment-label'>Receiving 90.5</span></span><span class='source-segment' style='width:5.520%;background:#7c3aed' title='Kicking: 10.0 points' aria-label='Kicking: 10.0 points'></span><span class='source-segment' style='width:8.832%;background:#475569' title='Defense: 16.0 points' aria-label='Defense: 16.0 points'><span class='source-segment-label'>16.0</span></span></div><div class='source-scale'><span>0 pts</span><span>181.2 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:11.573%;background:#2563eb' title='Passing: 21.0 points' aria-label='Passing: 21.0 points'><span class='source-segment-label'>12%</span></span><span class='source-segment' style='width:24.121%;background:#15803d' title='Rushing: 43.7 points' aria-label='Rushing: 43.7 points'><span class='source-segment-label'>Rushing 24%</span></span><span class='source-segment' style='width:49.954%;background:#b45309' title='Receiving: 90.5 points' aria-label='Receiving: 90.5 points'><span class='source-segment-label'>Receiving 50%</span></span><span class='source-segment' style='width:5.520%;background:#7c3aed' title='Kicking: 10.0 points' aria-label='Kicking: 10.0 points'></span><span class='source-segment' style='width:8.832%;background:#475569' title='Defense: 16.0 points' aria-label='Defense: 16.0 points'><span class='source-segment-label'>9%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Nacua-Cola</strong><span>109.8 pts · 2.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:60.607%'><span class='source-segment' style='width:12.477%;background:#2563eb' title='Passing: 13.7 points' aria-label='Passing: 13.7 points'><span class='source-segment-label'>13.7</span></span><span class='source-segment' style='width:24.590%;background:#15803d' title='Rushing: 27.0 points' aria-label='Rushing: 27.0 points'><span class='source-segment-label'>Rushing 27.0</span></span><span class='source-segment' style='width:44.718%;background:#b45309' title='Receiving: 49.1 points' aria-label='Receiving: 49.1 points'><span class='source-segment-label'>Receiving 49.1</span></span><span class='source-segment' style='width:10.018%;background:#7c3aed' title='Kicking: 11.0 points' aria-label='Kicking: 11.0 points'><span class='source-segment-label'>11.0</span></span><span class='source-segment' style='width:10.018%;background:#475569' title='Defense: 11.0 points' aria-label='Defense: 11.0 points'><span class='source-segment-label'>11.0</span></span></div><div class='source-scale'><span>0 pts</span><span>181.2 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:12.477%;background:#2563eb' title='Passing: 13.7 points' aria-label='Passing: 13.7 points'><span class='source-segment-label'>12%</span></span><span class='source-segment' style='width:24.590%;background:#15803d' title='Rushing: 27.0 points' aria-label='Rushing: 27.0 points'><span class='source-segment-label'>Rushing 25%</span></span><span class='source-segment' style='width:44.718%;background:#b45309' title='Receiving: 49.1 points' aria-label='Receiving: 49.1 points'><span class='source-segment-label'>Receiving 45%</span></span><span class='source-segment' style='width:10.018%;background:#7c3aed' title='Kicking: 11.0 points' aria-label='Kicking: 11.0 points'><span class='source-segment-label'>10%</span></span><span class='source-segment' style='width:10.018%;background:#475569' title='Defense: 11.0 points' aria-label='Defense: 11.0 points'><span class='source-segment-label'>10%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div></div><div class='source-legend'><span><span class='source-swatch' style='background:#2563eb'></span>Passing</span><span><span class='source-swatch' style='background:#15803d'></span>Rushing</span><span><span class='source-swatch' style='background:#b45309'></span>Receiving</span><span><span class='source-swatch' style='background:#7c3aed'></span>Kicking</span><span><span class='source-swatch' style='background:#475569'></span>Defense</span><span><span class='source-swatch' style='background:#be185d'></span>Miscellaneous</span></div><details><summary>Scoring-stat detail</summary><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Scoring source</th><th>Nacua-Cola</th></tr></thead><tbody><tr><td class='num'>51.5</td><td><span class='comparison-key'>Receiving Yards</span><span class='comparison-context'>Receiving</span></td><td class='num'>26.1</td></tr><tr><td class='num'>21.0</td><td><span class='comparison-key'>Receiving 1st Downs</span><span class='comparison-context'>Receiving</span></td><td class='num'>11.0</td></tr><tr><td class='num'>18.0</td><td><span class='comparison-key'>Receiving Touchdowns</span><span class='comparison-context'>Receiving</span></td><td class='num'>12.0</td></tr><tr><td class='num'>17.7</td><td><span class='comparison-key'>Rushing Yards</span><span class='comparison-context'>Rushing</span></td><td class='num'>11.0</td></tr><tr><td class='num'>18.0</td><td><span class='comparison-key'>Rushing Touchdowns</span><span class='comparison-context'>Rushing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>9.0</td><td><span class='comparison-key'>Passing Yards</span><span class='comparison-context'>Passing</span></td><td class='num'>9.7</td></tr><tr><td class='num'>8.0</td><td><span class='comparison-key'>Rushing 1st Downs</span><span class='comparison-context'>Rushing</span></td><td class='num'>10.0</td></tr><tr><td class='num'>12.0</td><td><span class='comparison-key'>Passing Touchdowns</span><span class='comparison-context'>Passing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Field Goals 20-29 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>6.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Team Sack</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>7.0</td><td><span class='comparison-key'>Points Allowed 1-6 points</span><span class='comparison-context'>Defense</span></td><td class='num'>0.0</td></tr><tr><td class='num'>2.0</td><td><span class='comparison-key'>Team Fumble Recovery</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>4.0</td><td><span class='comparison-key'>Team Interception</span><span class='comparison-context'>Defense</span></td><td class='num'>2.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Point After Attempt Made</span><span class='comparison-context'>Kicking</span></td><td class='num'>2.0</td></tr><tr><td class='num'>4.0</td><td><span class='comparison-key'>Field Goals 40-49 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>0.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Field Goals 30-39 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>3.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Interception Thrown</span><span class='comparison-context'>Passing</span></td><td class='num'>-2.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Fumbles Lost</span><span class='comparison-context'>Miscellaneous</span></td><td class='num'>-2.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Points Allowed 14-20 points</span><span class='comparison-context'>Defense</span></td><td class='num'>1.0</td></tr></tbody></table></div></details></section>
+        <section class='section scoring-sources-section'><h2>Where The Points Came From</h2><p class='muted'>The bars attribute counted starter points to the underlying scoring categories. Absolute bars share one scale; percentage bars normalize each team to its own score. Negative categories are called out beside the total.</p><div class='source-bars'><div><div class='source-team-label'><strong>Millan’s Last Supper</strong><span>181.2 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:100.000%'><span class='source-segment' style='width:11.573%;background:#2563eb' title='Passing: 21.0 points' aria-label='Passing: 21.0 points'><span class='source-segment-label'>21.0</span></span><span class='source-segment' style='width:24.121%;background:#15803d' title='Rushing: 43.7 points' aria-label='Rushing: 43.7 points'><span class='source-segment-label'>Rushing 43.7</span></span><span class='source-segment' style='width:49.954%;background:#b45309' title='Receiving: 90.5 points' aria-label='Receiving: 90.5 points'><span class='source-segment-label'>Receiving 90.5</span></span><span class='source-segment' style='width:5.520%;background:#7c3aed' title='Kicking: 10.0 points' aria-label='Kicking: 10.0 points'></span><span class='source-segment' style='width:8.832%;background:#475569' title='Defense: 16.0 points' aria-label='Defense: 16.0 points'><span class='source-segment-label'>16.0</span></span></div><div class='source-scale'><span>0 pts</span><span>181.2 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:11.573%;background:#2563eb' title='Passing: 21.0 points' aria-label='Passing: 21.0 points'><span class='source-segment-label'>12%</span></span><span class='source-segment' style='width:24.121%;background:#15803d' title='Rushing: 43.7 points' aria-label='Rushing: 43.7 points'><span class='source-segment-label'>Rushing 24%</span></span><span class='source-segment' style='width:49.954%;background:#b45309' title='Receiving: 90.5 points' aria-label='Receiving: 90.5 points'><span class='source-segment-label'>Receiving 50%</span></span><span class='source-segment' style='width:5.520%;background:#7c3aed' title='Kicking: 10.0 points' aria-label='Kicking: 10.0 points'></span><span class='source-segment' style='width:8.832%;background:#475569' title='Defense: 16.0 points' aria-label='Defense: 16.0 points'><span class='source-segment-label'>9%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Nacua-Cola</strong><span>109.8 pts · 2.0 negative</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:60.607%'><span class='source-segment' style='width:12.477%;background:#2563eb' title='Passing: 13.7 points' aria-label='Passing: 13.7 points'><span class='source-segment-label'>13.7</span></span><span class='source-segment' style='width:24.590%;background:#15803d' title='Rushing: 27.0 points' aria-label='Rushing: 27.0 points'><span class='source-segment-label'>Rushing 27.0</span></span><span class='source-segment' style='width:44.718%;background:#b45309' title='Receiving: 49.1 points' aria-label='Receiving: 49.1 points'><span class='source-segment-label'>Receiving 49.1</span></span><span class='source-segment' style='width:10.018%;background:#7c3aed' title='Kicking: 11.0 points' aria-label='Kicking: 11.0 points'><span class='source-segment-label'>11.0</span></span><span class='source-segment' style='width:10.018%;background:#475569' title='Defense: 11.0 points' aria-label='Defense: 11.0 points'><span class='source-segment-label'>11.0</span></span></div><div class='source-scale'><span>0 pts</span><span>181.2 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:12.477%;background:#2563eb' title='Passing: 13.7 points' aria-label='Passing: 13.7 points'><span class='source-segment-label'>12%</span></span><span class='source-segment' style='width:24.590%;background:#15803d' title='Rushing: 27.0 points' aria-label='Rushing: 27.0 points'><span class='source-segment-label'>Rushing 25%</span></span><span class='source-segment' style='width:44.718%;background:#b45309' title='Receiving: 49.1 points' aria-label='Receiving: 49.1 points'><span class='source-segment-label'>Receiving 45%</span></span><span class='source-segment' style='width:10.018%;background:#7c3aed' title='Kicking: 11.0 points' aria-label='Kicking: 11.0 points'><span class='source-segment-label'>10%</span></span><span class='source-segment' style='width:10.018%;background:#475569' title='Defense: 11.0 points' aria-label='Defense: 11.0 points'><span class='source-segment-label'>10%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div></div><div class='source-legend'><span><span class='source-swatch' style='background:#2563eb'></span>Passing</span><span><span class='source-swatch' style='background:#15803d'></span>Rushing</span><span><span class='source-swatch' style='background:#b45309'></span>Receiving</span><span><span class='source-swatch' style='background:#7c3aed'></span>Kicking</span><span><span class='source-swatch' style='background:#475569'></span>Defense</span><span><span class='source-swatch' style='background:#be185d'></span>Miscellaneous</span></div><details><summary>Scoring-stat detail</summary><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Scoring source</th><th>Nacua-Cola</th></tr></thead><tbody><tr><td class='num'>51.5</td><td><span class='comparison-key'>Receiving Yards</span><span class='comparison-context'>Receiving</span></td><td class='num'>26.1</td></tr><tr><td class='num'>21.0</td><td><span class='comparison-key'>Receiving 1st Downs</span><span class='comparison-context'>Receiving</span></td><td class='num'>11.0</td></tr><tr><td class='num'>18.0</td><td><span class='comparison-key'>Receiving Touchdowns</span><span class='comparison-context'>Receiving</span></td><td class='num'>12.0</td></tr><tr><td class='num'>17.7</td><td><span class='comparison-key'>Rushing Yards</span><span class='comparison-context'>Rushing</span></td><td class='num'>11.0</td></tr><tr><td class='num'>18.0</td><td><span class='comparison-key'>Rushing Touchdowns</span><span class='comparison-context'>Rushing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>9.0</td><td><span class='comparison-key'>Passing Yards</span><span class='comparison-context'>Passing</span></td><td class='num'>9.7</td></tr><tr><td class='num'>12.0</td><td><span class='comparison-key'>Passing Touchdowns</span><span class='comparison-context'>Passing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>8.0</td><td><span class='comparison-key'>Rushing 1st Downs</span><span class='comparison-context'>Rushing</span></td><td class='num'>10.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Field Goals 20-29 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>6.0</td></tr><tr><td class='num'>7.0</td><td><span class='comparison-key'>Points Allowed 1-6 points</span><span class='comparison-context'>Defense</span></td><td class='num'>0.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Team Sack</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>4.0</td><td><span class='comparison-key'>Team Interception</span><span class='comparison-context'>Defense</span></td><td class='num'>2.0</td></tr><tr><td class='num'>2.0</td><td><span class='comparison-key'>Team Fumble Recovery</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Point After Attempt Made</span><span class='comparison-context'>Kicking</span></td><td class='num'>2.0</td></tr><tr><td class='num'>4.0</td><td><span class='comparison-key'>Field Goals 40-49 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>0.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Field Goals 30-39 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>3.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Fumbles Lost</span><span class='comparison-context'>Miscellaneous</span></td><td class='num'>-2.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Interception Thrown</span><span class='comparison-context'>Passing</span></td><td class='num'>-2.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Points Allowed 14-20 points</span><span class='comparison-context'>Defense</span></td><td class='num'>1.0</td></tr></tbody></table></div></details></section>
 
         
         <section class="section" id="what-decided-section">

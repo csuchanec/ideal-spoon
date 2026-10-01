@@ -1,3 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grade math · 2026 Week 2</title>
+<style>
+        :root {
+            --bg: #f7f8fa;
+            --surface: #ffffff;
+            --surface-muted: #f2f4f7;
+            --text: #111827;
+            --text-muted: #5b6472;
+            --line: #e2e8f0;
+            --line-strong: #cbd5e1;
+            --accent: #1f4f8c;
+            --accent-soft: #e8f0fb;
+            --positive: #1f7a45;
+            --negative: #b42318;
+            --warning: #a15c07;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .page {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 20px 28px 48px;
+            background: var(--surface);
+        }
+        .section {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 24px 0;
+            margin: 0;
+        }
+        .eyebrow {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 1.1;
+            letter-spacing: 0;
+            margin: 0 0 10px;
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        h1, h2, h3 { scroll-margin-top: 16px; }
+        .heading-anchor {
+            margin-left: 7px;
+            color: var(--text-muted);
+            font-size: 0.75em;
+            text-decoration: none;
+            opacity: 0.35;
+        }
+        h1:hover .heading-anchor,
+        h2:hover .heading-anchor,
+        h3:hover .heading-anchor,
+        .heading-anchor:focus { opacity: 1; }
+        p { margin: 0 0 10px; }
+        .muted { color: var(--text-muted); }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid .detail-card { grid-column: auto; }
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .meta-chip {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 6px 9px;
+            background: #f8fafc;
+            min-height: 34px;
+        }
+        .section-jump-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .section-jump-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            padding: 5px 9px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            color: var(--text);
+            background: var(--surface-muted);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.2;
+            max-width: 180px;
+            overflow-wrap: anywhere;
+        }
+        .section-jump-link:hover,
+        .section-jump-link:focus {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .lineup-toggle {
+            display: inline-flex;
+            gap: 2px;
+            padding: 2px;
+            margin: 2px 0 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+        }
+        .lineup-toggle button {
+            min-width: 72px;
+            min-height: 32px;
+            border: 0;
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-muted);
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .lineup-toggle button.active {
+            background: var(--surface);
+            color: var(--accent);
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+        }
+        .contribution-chart { margin: 12px 0; }
+        .contribution-svg-wrap { overflow-x: auto; }
+        .contribution-svg-wrap svg { display: block; min-width: 760px; width: 100%; }
+        .opportunity-board table { width: 100%; table-layout: fixed; }
+        .opportunity-board th, .opportunity-board td { width: 50%; text-align: left; vertical-align: top; }
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 12px;
+        }
+        .contribution-team {
+            min-width: 0;
+            padding: 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface);
+        }
+        .contribution-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 5px;
+        }
+        .contribution-mode-label {
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+            margin: 6px 0 3px;
+        }
+        .contribution-scale {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .contribution-total-track,
+        .contribution-player-track {
+            width: 100%;
+            min-width: 2px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--surface-muted);
+        }
+        .contribution-total-track { height: 9px; }
+        .contribution-total-fill,
+        .contribution-player-fill {
+            display: block;
+            height: 100%;
+            min-width: 2px;
+            border-radius: inherit;
+        }
+        .contribution-player-list {
+            display: grid;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .contribution-player-row {
+            display: grid;
+            grid-template-columns: minmax(92px, 1.15fr) minmax(70px, 1fr) 72px;
+            gap: 7px;
+            align-items: center;
+            min-height: 24px;
+        }
+        .contribution-player-name {
+            min-width: 0;
+            overflow: hidden;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .contribution-player-name span {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .contribution-player-track { height: 11px; }
+        .contribution-player-fill.negative { background: var(--bad) !important; }
+        .contribution-player-value {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+            white-space: nowrap;
+        }
+        @media (max-width: 760px) {
+            .contribution-grid { grid-template-columns: 1fr; }
+            .contribution-player-row {
+                grid-template-columns: minmax(105px, 1.15fr) minmax(90px, 1fr) 72px;
+            }
+        }
+        .meta-chip strong {
+            color: var(--text);
+            margin-right: 6px;
+        }
+        .insight-pair {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .hero-card {
+            border: 1px solid #c9d8ee;
+            border-radius: 8px;
+            padding: 14px;
+            background: linear-gradient(180deg, #f4f8fe 0%, #e8f0fb 100%);
+        }
+        .hero-card .value {
+            font-size: 34px;
+            line-height: 0.95;
+            margin-bottom: 4px;
+        }
+        .hero-card .subvalue {
+            font-size: 15px;
+            color: var(--text);
+        }
+        .hero-sidekick {
+            display: grid;
+            gap: 12px;
+        }
+        .detail-card {
+            grid-column: span 3;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .detail-card.tertiary,
+        .chart-card.tertiary {
+            background: #f8fafc;
+            border-style: dashed;
+        }
+        .detail-card.wide {
+            grid-column: span 6;
+        }
+        .label {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 26px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        .subvalue {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+        .team-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .manager-comparison {
+            margin-bottom: 10px;
+        }
+        .manager-comparison table {
+            min-width: 680px;
+        }
+        .manager-comparison th:not(:first-child),
+        .manager-comparison td:not(:first-child) {
+            text-align: right;
+        }
+        .manager-comparison .manager-heading {
+            color: var(--text);
+            text-transform: none;
+            font-size: 13px;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+        .manager-comparison .manager-heading span {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-top: 5px;
+        }
+        .manager-comparison .metric-label {
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .comparison-board table {
+            min-width: 620px;
+            table-layout: fixed;
+        }
+        .comparison-board th:first-child,
+        .comparison-board td:first-child { text-align: right; }
+        .comparison-board th:nth-child(2),
+        .comparison-board td:nth-child(2) {
+            width: 24%;
+            text-align: center;
+            background: #eef1f5;
+        }
+        .comparison-board th:nth-child(3),
+        .comparison-board td:nth-child(3) { text-align: left; }
+        .comparison-key { display: block; color: var(--text); font-weight: 800; }
+        .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+        .lineup-board table {
+            min-width: 920px;
+            table-layout: fixed;
+        }
+        .lineup-board .stats-col { width: 22%; }
+        .lineup-board .player-col { width: 20%; }
+        .lineup-board .points-col { width: 7%; }
+        .lineup-board .slot-col {
+            width: 7%;
+            text-align: center;
+            background: #eef1f5;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+        .lineup-board .right { text-align: right; }
+        .lineup-board .player-name {
+            display: block;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .lineup-board .player-meta,
+        .lineup-board .stat-line {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        .lineup-board .mobile-stat { display: none; }
+        .lineup-board .roster-divider td {
+            background: #e7ebf0;
+            color: var(--text);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .lineup-board .total-row td {
+            background: #f8fafc;
+            font-weight: 700;
+            border-top: 2px solid var(--line-strong);
+        }
+        .rating-evidence {
+            border-left: 3px solid var(--accent);
+        }
+        .team-panel {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px;
+            background: var(--surface-muted);
+        }
+        .team-panel.winner {
+            border-color: #c9d8ee;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .team-panel.loser {
+            border-color: #f1d4cf;
+            background: linear-gradient(180deg, #fff8f6 0%, #fdf1ef 100%);
+        }
+        .team-panel h3 { margin-bottom: 6px; }
+        .panel-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .panel-badge.winner {
+            color: var(--accent);
+            background: #e8f0fb;
+        }
+        .panel-badge.loser {
+            color: var(--negative);
+            background: #fde9e5;
+        }
+        .rivalry-banner {
+            border: 1px solid #d8b26a;
+            border-left: 4px solid #b7791f;
+            border-radius: 6px;
+            background: #fffaf0;
+            padding: 10px 12px;
+            margin: 10px 0;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0 12px;
+        }
+        .pill {
+            border: 1px solid var(--line-strong);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background: var(--surface);
+        }
+        .pill.good { color: var(--positive); border-color: #b7e0c4; }
+        .pill.bad { color: var(--negative); border-color: #f1c0ba; }
+        .pill.warn { color: var(--warning); border-color: #f4d39c; }
+        .decision-table-stack {
+            display: grid;
+            gap: 10px;
+        }
+        .decision-table-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
+        }
+        .decision-table-card h3 {
+            margin-bottom: 4px;
+        }
+        .decision-table-card p {
+            margin-bottom: 10px;
+        }
+        .card-grid > .decision-table-card {
+            grid-column: 1 / -1;
+        }
+        .top-grade-table {
+            border-color: #a9c3e8;
+            background: #f8fbff;
+        }
+        .top-grade-table .primary-grade-row td {
+            background: #e8f0fb;
+            border-top: 2px solid #8badd8;
+            border-bottom: 2px solid #8badd8;
+        }
+        .top-grade-table .primary-grade-row td:first-child,
+        .top-grade-table .primary-grade-row td:last-child {
+            color: var(--accent);
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .series-chart-scroll {
+            max-height: 520px;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 4px;
+        }
+        .series-chart-header,
+        .series-chart-row {
+            display: grid;
+            grid-template-columns: 74px minmax(0, 1fr);
+            gap: 8px;
+            align-items: center;
+        }
+        .series-chart-header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            padding: 4px 0 8px;
+            background: var(--surface);
+        }
+        .series-chart-sides {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .series-chart-sides span:first-child { text-align: right; }
+        .series-chart-row {
+            min-height: 25px;
+            border-top: 1px solid var(--line);
+        }
+        .series-chart-label {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-plot {
+            position: relative;
+            height: 16px;
+        }
+        .series-chart-plot::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            bottom: -5px;
+            left: 50%;
+            width: 1px;
+            background: #94a3b8;
+        }
+        .series-chart-bar {
+            position: absolute;
+            top: 2px;
+            min-width: 2px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        .series-chart-bar.left {
+            right: 50%;
+            background: var(--accent);
+        }
+        .series-chart-bar.right {
+            left: 50%;
+            background: var(--negative);
+        }
+        .series-chart-bar.tie {
+            left: calc(50% - 2px);
+            width: 4px !important;
+            background: var(--text-muted);
+        }
+        .series-chart-value {
+            position: absolute;
+            top: 0;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 16px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-value.left { right: calc(50% + 5px); }
+        .series-chart-value.right { left: calc(50% + 5px); }
+        .series-chart-value.tie {
+            left: calc(50% + 5px);
+            color: var(--text-muted);
+        }
+        .compare-cell {
+            min-width: 220px;
+        }
+        .compare-player {
+            display: block;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .compare-meta {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        .compare-edge {
+            font-weight: 700;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .compare-edge.left {
+            color: var(--accent);
+        }
+        .compare-edge.right {
+            color: var(--negative);
+        }
+        .compare-edge.neutral {
+            color: var(--text-muted);
+        }
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .compact-table {
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+        .compact-table table {
+            min-width: 640px;
+        }
+        .compact-table .table-wrap table {
+            min-width: 0;
+        }
+        th, td {
+            padding: 7px 9px;
+            border-bottom: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: var(--surface-muted);
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        ul.compact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+        ul.compact-list li {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: var(--surface);
+        }
+        .two-up {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+        .compare-table td:first-child,
+        .compare-table th:first-child {
+            white-space: nowrap;
+        }
+        .metric-win {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .chart-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .chart-card.highlight {
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+            border-color: #c9d8ee;
+        }
+        .chart-card + .chart-card {
+            margin-top: 8px;
+        }
+        .chart-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-kicker {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-note {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .legend-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            display: inline-block;
+        }
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .verdict-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px;
+            margin: 8px 0 10px;
+        }
+        .verdict-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .verdict-card .value {
+            font-size: 22px;
+        }
+        .callout {
+            border: 1px solid #f1c0ba;
+            background: #fff5f3;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .takeaway-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .takeaway-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        .takeaway-card li + li {
+            margin-top: 6px;
+        }
+        .award-strip {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px 24px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .skill-hero {
+            border: 1px solid #d7e4f7;
+            border-radius: 8px;
+            padding: 12px;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .skill-team-list {
+            display: grid;
+            gap: 8px;
+        }
+        .skill-team-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 9px;
+            background: var(--surface-muted);
+        }
+        .award-card {
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px 0;
+            background: transparent;
+            min-width: 0;
+        }
+        .section > .muted { font-size: 13px; margin: 0 0 16px; }
+        .detail-card, .verdict-card, .takeaway-card, .chart-card,
+        .skill-team-card, .skill-hero {
+            border: 0; border-radius: 0; background: transparent; padding: 12px 0;
+        }
+        .detail-card.tertiary, .chart-card.tertiary,
+        .chart-card.highlight { background: transparent; border: 0; }
+        .hero-card { border: 0; border-radius: 4px; background: var(--accent-soft); }
+        .detail-card .value, .verdict-card .value { font-size: 16px; line-height: 1.35; }
+        .chart-title, .award-card strong { font-size: 15px; }
+        .subvalue, .chart-note, .comparison-context { font-size: 12px; line-height: 1.5; }
+        .deep-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+        .deep-card { min-width: 0; padding: 4px 0; }
+        .deep-card p { margin: 8px 0; }
+        details { margin: 12px 0; }
+        summary { font-size: 13px; cursor: pointer; color: var(--accent); }
+        .math-page .page { max-width: 1120px; }
+        .math-page p, .math-page li { max-width: 85ch; }
+        .math-page .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+        .math-team-header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+        .math-grade { font-size: 24px; font-weight: 700; white-space: nowrap; }
+        .math-page .math-table { width: 100%; min-width: 680px; table-layout: fixed; }
+        .math-table th:first-child { width: 21%; }
+        .math-table th:nth-child(2) { width: 46%; }
+        .math-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+        .math-expression { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-formula, .math-page pre { background: var(--surface-muted); padding: 14px 16px; border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-page pre { max-height: 420px; overflow: auto; }
+        .math-page .math-model-list { display: grid; gap: 18px; }
+        .math-page .math-model-list h3 { margin-bottom: 6px; }
+        .math-page .math-model-list p { margin: 6px 0; }
+        @media (max-width: 800px) {
+            .award-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 600px) {
+            .page { padding: 16px; }
+            .section { padding: 20px 0; }
+            .award-strip, .deep-grid { grid-template-columns: 1fr; }
+            .math-team-header { flex-direction: column; gap: 0; }
+        }
+        details.deep-metrics {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+            padding: 10px;
+        }
+        details.deep-metrics summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .evidence-list {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .evidence-list li + li {
+            margin-top: 6px;
+        }
+        @media (max-width: 900px) {
+            .hub-grid { grid-template-columns: 1fr; }
+            .detail-card,
+            .detail-card.wide {
+                grid-column: span 12;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+            .compare-grid,
+            .verdict-grid,
+            .insight-pair,
+            .takeaway-grid,
+            .team-columns,
+            .two-up {
+                grid-template-columns: 1fr;
+            }
+            .section-jump-link {
+                flex: 1 1 calc(50% - 8px);
+                max-width: none;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 7px 8px;
+            }
+            th {
+                font-size: 11px;
+                letter-spacing: 0.02em;
+                line-height: 1.2;
+            }
+            .chart-card,
+            .decision-table-card {
+                padding: 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .comparison-board table { min-width: 0; width: 100%; }
+            .comparison-board th,
+            .comparison-board td {
+                padding: 7px 5px;
+                font-size: 10px;
+                overflow-wrap: anywhere;
+            }
+            .comparison-board th:first-child,
+            .comparison-board td:first-child,
+            .comparison-board th:nth-child(3),
+            .comparison-board td:nth-child(3) { width: 34%; }
+            .comparison-board th:nth-child(2),
+            .comparison-board td:nth-child(2) { width: 32%; }
+            .manager-comparison table {
+                min-width: 0;
+                table-layout: fixed;
+            }
+            .manager-comparison th,
+            .manager-comparison td {
+                overflow-wrap: anywhere;
+            }
+            .manager-comparison .metric-label {
+                white-space: normal;
+            }
+            .lineup-board table {
+                min-width: 0;
+                table-layout: fixed;
+                font-size: 11px;
+            }
+            .lineup-board th,
+            .lineup-board td { padding: 6px 3px; }
+            .lineup-board .stats-col { display: none; }
+            .lineup-board .player-col { width: 32%; }
+            .lineup-board .points-col { width: 11%; }
+            .lineup-board .slot-col { width: 14%; }
+            .lineup-board .mobile-stat {
+                display: block;
+                color: var(--text-muted);
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+            .lineup-board .total-row td:first-child,
+            .lineup-board .total-row td:last-child {
+                display: table-cell;
+            }
+        }
+        
+    .source-bars { display: grid; gap: 14px; margin: 12px 0; }
+    .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+    .source-mode { color: var(--text-muted); font-size: 11px; font-weight: 700; margin: 5px 0 3px; }
+    .source-scale { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+    .source-track { display: flex; width: 100%; height: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--surface-muted); }
+    .source-track.absolute { max-width: 100%; }
+    .source-segment { display: block; height: 100%; min-width: 1px; border-right: 1px solid rgba(255,255,255,.75); }
+    .source-segment-label { display: block; overflow: hidden; padding: 3px 4px 0; color: #fff; font-size: 10px; font-weight: 800; line-height: 15px; text-align: center; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 1px rgba(0,0,0,.45); }
+    .source-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 10px 0; color: var(--text-muted); font-size: 12px; }
+    .source-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 2px; }
+    .scoring-sources-section .comparison-board table { min-width: 620px; table-layout: fixed; }
+    .scoring-sources-section .comparison-board th:first-child,
+    .scoring-sources-section .comparison-board td:first-child { text-align: right; }
+    .scoring-sources-section .comparison-board th:nth-child(2),
+    .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; text-align: center; background: #eef1f5; }
+    .scoring-sources-section .comparison-board th:nth-child(3),
+    .scoring-sources-section .comparison-board td:nth-child(3) { text-align: left; }
+    .scoring-sources-section .comparison-key { display: block; color: var(--text); font-weight: 800; }
+    .scoring-sources-section .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+    @media (max-width: 600px) {
+        .scoring-sources-section .comparison-board table { min-width: 0; width: 100%; }
+        .scoring-sources-section .comparison-board th,
+        .scoring-sources-section .comparison-board td { padding: 7px 5px; font-size: 10px; overflow-wrap: anywhere; }
+        .scoring-sources-section .comparison-board th:first-child,
+        .scoring-sources-section .comparison-board td:first-child,
+        .scoring-sources-section .comparison-board th:nth-child(3),
+        .scoring-sources-section .comparison-board td:nth-child(3) { width: 33%; }
+        .scoring-sources-section .comparison-board th:nth-child(2),
+        .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; }
+    }
+    </style>
+</head>
+<body class="math-page">
+<main class="page">
 <!-- report-nav:start -->
 <style>
     .report-nav {
@@ -182,13 +1187,27 @@
 </style>
 <nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_02.html">Week 2 Report</a></li><li><a href="index.html">Week 2 Matchups</a></li></ul></div></div></div></nav>
 <!-- report-nav:end -->
-<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Grade math</title><style>body{font:15px/1.6 system-ui;max-width:1150px;margin:30px auto;padding:20px;color:#182536}section{margin:30px 0}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{display:block;overflow:auto}</style><a href='matchup_03_two-buck-luck_vs_love-land-hurts.html'>← Back to matchup</a><h1>Grade formulas and evidence</h1><p>Component scores are grade points on a 0–100 scale, not probability or capture percentages. clamp(x, 45, 100) bounds x to that range. All-play rate counts wins against every other league team, with ties worth half a win. A neutral 50% rate maps to 75 grade points. Scoring maps the weekly league-average score to 75, with a 1% difference worth 2.5 grade points before clipping.</p><p>Roster and waiver management uses actual score divided by actual score plus qualified market gains, then applies bounded move evidence (−6 to +6, multiplied by 3) and 10 points for a move-assisted win. Market gains compare an available player's completed points with the best same-position roster option; the displayed alternative targets a starter. Qualification requires at least 3 scoring samples, a heuristic score of at least 0.65, and an average at least as high as the starter's. The heuristic is min(1, 0.5 + min(gain, 20) ÷ 40); it is not a probability. A strong bench alternative removes the same gain from the market penalty. No upgrade means standing pat earns full opportunity capture.</p><details><summary>Move adjustment rules</summary><p>Rules apply in order. A benched bad stash gets −0.5; other bench adds get 0. With no prior sample, a started add scoring at least 12 and providing positive lineup impact gets +1.5; a started add scoring at most 3 gets −1; otherwise 0. With a sample: prior average below 8, score at least 12, positive impact and surprise at least 6 gives +3.5; prior average below 10, score at least 10 and surprise at least 4 gives +2.5; prior average at least 10, score within 2 below that average and positive impact gives +1; at least 3 samples, prior average at least 10 and surprise at most −6 gives −3; prior average below 8 and score at most 4 gives −1.5; a remaining bad started add gives −2; otherwise 0. Sum additions and clamp to −6…+6. Surprise is completed points minus prior average. These thresholds are modeling choices. Lineup impact currently uses a broad roster alternative; its positional precision remains a limitation.</p></details><p>Limits: this is retrospective outcome analysis. Weekly exports do not provide historical injury designations; bye-week metadata is available, but zero points alone never establish injury. Bench and injured-reserve players are not waiver replacement targets, and no drop action is inferred. Waiver ownership reflects weekly snapshots rather than exact kickoff availability. The current scoring curve, component weights, 45-point floor and move bonuses are modeling choices, not empirically calibrated probabilities.</p><section><h2>Crowd decision model</h2><p>Expectations use the latest Yahoo ownership and starting percentages strictly before the evaluated week. Missing rates are not zero. Players with no recorded game, reserve slots, and known bye weeks are excluded from this outcome comparison; this is not a historical injury-status feed.</p><p>Alignment is Pearson correlation between the binary start/bench decision and prior-week percent started, across covered roster players. It is undefined without variation. Positive alignment is not inherently good: quality is evaluated separately against legal bench alternatives.</p><p>Reference pairs are deterministic and independent of points: starters ordered by ascending start rate (then name) are matched to the highest-start-rate unused eligible bench player. Each bench player is used once. Flex accepts RB/WR/TE; fixed slots accept the starter’s position. This is a legal reference lineup, not the globally optimal crowd lineup. A decision is contrarian when the bench alternative’s starting rate exceeds the starter’s by at least 10 percentage points.</p><pre>gap = (bench starting % − starter starting %) / 100
-weight = gap × max(starter ownership %, bench ownership %) / 100
-edge = actual starter points − bench alternative points
-weighted outcome = weight × tanh(edge / 8)
-crowd score = 75 + 25 × sum(weighted outcomes) / sum(weights)
-roster adjustment = 0.4 × (crowd score − 75)
-final roster component = clamp(base opportunity component + adjustment, 45, 100)</pre><p>Only contrarian pairs enter the weighted outcome. No covered contrarian choice means no adjustment, not a zero grade or zero component weight. Successful disagreement earns a positive adjustment; harmful disagreement a negative one. Ownership scales the evidence weight, and tanh bounds extreme outcomes. The adjustment ranges from −10 to +10 roster-component points (at most ±2 final weekly grade points before clipping). The existing lineup component still measures every legal missed opportunity, including mistakes made while following the crowd.</p><p>Season quality pools all covered weekly weights and outcomes through the report week, rather than averaging weekly grades, and applies the same signed adjustment to the season transaction component. Season alignment is the mean of defined weekly correlations; coverage is disclosed. The 10-point gap, 8-point outcome scale and 0.4 adjustment factor are transparent modeling choices, not empirically calibrated or causal estimates. Prior-week snapshots reduce hindsight leakage but are not exact kickoff snapshots. No history is invented when earlier ownership data is missing.</p></section><section><h2>Two Buck Luck</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 131.867 ÷ 136.367</td><td>96.700</td><td>30%</td><td>29.010</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(clamp(100 × 131.867 ÷ (131.867 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.000), 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 77.778, 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 131.867 ÷ 117.977 − 100), 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr></tbody></table><p>Final weekly grade: 99.010 / 100. League rank: 3; all-play rate: 77.78%; weekly league average: 117.977 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
+<header class="section" id="math-overview">
+  <a href="matchup_03_two-buck-luck_vs_love-land-hurts.html">← Back to matchup</a>
+  <p class="eyebrow">Grading reference</p>
+  <h1>Grade formulas and evidence</h1>
+  <p class="muted">Start with the two worked examples. Expand their evidence, or jump to the model rules below. This page explains the existing grades; no scoring rules have changed.</p>
+  <nav class="section-nav" aria-label="Grade math sections">
+    <a class='section-jump-link' href='#team-1'>Two Buck Luck</a><a class='section-jump-link' href='#team-2'>Love(land) Hurts</a>
+    <a class="section-jump-link" href="#component-models">Component rules</a>
+    <a class="section-jump-link" href="#crowd-model">Crowd model</a>
+    <a class="section-jump-link" href="#model-limits">Definitions &amp; limits</a>
+  </nav>
+</header>
+
+                <section class='section' id='team-1'>
+                  <div class='math-team-header'><h2>Two Buck Luck</h2><span class='math-grade'>A+ · 99.0 / 100</span></div>
+                  <p class='muted'>League rank 3 · all-play rate 77.78% · league average 117.977 points</p>
+                  <div class='table-wrap'><table class='math-table'><thead><tr><th>Component</th><th>Substituted calculation</th><th class='num'>Score</th><th class='num'>Weight</th><th class='num'>Adds to grade</th></tr></thead><tbody><tr><td>Lineup execution</td><td><code class='math-expression'>100 × 131.867 ÷ 136.367</code></td><td class='num'>96.700</td><td class='num'>30%</td><td class='num'>29.010</td></tr><tr><td>Roster &amp; waiver management</td><td><code class='math-expression'>clamp(clamp(100 × 131.867 ÷ (131.867 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.000), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>20%</td><td class='num'>20.000</td></tr><tr><td>All-play position</td><td><code class='math-expression'>clamp(25 + 77.778, 45, 100)</code></td><td class='num'>100.000</td><td class='num'>25%</td><td class='num'>25.000</td></tr><tr><td>Scoring performance</td><td><code class='math-expression'>clamp(75 + 2.5 × (100 × 131.867 ÷ 117.977 − 100), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>25%</td><td class='num'>25.000</td></tr></tbody></table></div>
+                  <p class='math-formula'>Final weekly grade: 29.010 + 20.000 + 25.000 + 25.000 = 99.010 / 100</p>
+                  <details><summary>Crowd-decision arithmetic and comparisons</summary><p>No covered contrarian comparison: crowd adjustment is 0; the roster component retains its weight.</p><div class='table-wrap'><table><thead><tr><th>Started / legal alternative</th><th>Starting rates</th><th>Point edge</th><th>Weight</th><th>Weighted outcome</th></tr></thead><tbody><tr><td>Brock Purdy over Bo Nix</td><td>29% / 31%</td><td>+17.367</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Garrett Wilson over Malik Nabers</td><td>85% / 64%</td><td>+15.600</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Javonte Williams over Tony Pollard</td><td>96% / 31%</td><td>-4.500</td><td>0.0000</td><td>-0.0000</td></tr><tr><td>Kyren Williams over Marvin Harrison Jr.</td><td>96% / 27%</td><td>+17.700</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Chase Brown over J.K. Dobbins</td><td>99% / 16%</td><td>+6.600</td><td>0.0000</td><td>+0.0000</td></tr></tbody></table></div><p>Conforming pairs have zero crowd weight. <a href='#crowd-model'>Reference-pair rules and equations →</a></p></details>
+                  <details><summary>Qualified waiver evidence</summary><ul><li>No qualifying starting-lineup market upgrade.</li></ul></details>
+                  <details><summary>All grading inputs and move evidence</summary><pre>{
   &quot;grades&quot;: {
     &quot;weekly&quot;: {
       &quot;score_pct&quot;: 99.01002199951111,
@@ -609,7 +1628,16 @@ final roster component = clamp(base opportunity component + adjustment, 45, 100)
     &quot;former_player_followup_points&quot;: 0.0
   },
   &quot;additions&quot;: []
-}</pre></details></section><section><h2>Love(land) Hurts</h2><table><thead><tr><th>Component</th><th>Calculation</th><th>Score / 100</th><th>Weight</th><th>Grade contribution</th></tr></thead><tbody><tr><td>Lineup execution</td><td>100 × 131.067 ÷ 139.667</td><td>93.842</td><td>30%</td><td>28.153</td></tr><tr><td>Roster &amp; waiver management</td><td>clamp(clamp(100 × 131.067 ÷ (131.067 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.873), 45, 100)</td><td>100.000</td><td>20%</td><td>20.000</td></tr><tr><td>All-play position</td><td>clamp(25 + 66.667, 45, 100)</td><td>91.667</td><td>25%</td><td>22.917</td></tr><tr><td>Scoring performance</td><td>clamp(75 + 2.5 × (100 × 131.067 ÷ 117.977 − 100), 45, 100)</td><td>100.000</td><td>25%</td><td>25.000</td></tr></tbody></table><p>Final weekly grade: 96.069 / 100. League rank: 4; all-play rate: 66.67%; weekly league average: 117.977 points.</p><h3>Waiver evidence</h3><ul><li>No qualifying starting-lineup market upgrade.</li></ul><details><summary>All grading inputs and move evidence</summary><pre>{
+}</pre></details>
+                </section>
+                <section class='section' id='team-2'>
+                  <div class='math-team-header'><h2>Love(land) Hurts</h2><span class='math-grade'>A · 96.1 / 100</span></div>
+                  <p class='muted'>League rank 4 · all-play rate 66.67% · league average 117.977 points</p>
+                  <div class='table-wrap'><table class='math-table'><thead><tr><th>Component</th><th>Substituted calculation</th><th class='num'>Score</th><th class='num'>Weight</th><th class='num'>Adds to grade</th></tr></thead><tbody><tr><td>Lineup execution</td><td><code class='math-expression'>100 × 131.067 ÷ 139.667</code></td><td class='num'>93.842</td><td class='num'>30%</td><td class='num'>28.153</td></tr><tr><td>Roster &amp; waiver management</td><td><code class='math-expression'>clamp(clamp(100 × 131.067 ÷ (131.067 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.873), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>20%</td><td class='num'>20.000</td></tr><tr><td>All-play position</td><td><code class='math-expression'>clamp(25 + 66.667, 45, 100)</code></td><td class='num'>91.667</td><td class='num'>25%</td><td class='num'>22.917</td></tr><tr><td>Scoring performance</td><td><code class='math-expression'>clamp(75 + 2.5 × (100 × 131.067 ÷ 117.977 − 100), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>25%</td><td class='num'>25.000</td></tr></tbody></table></div>
+                  <p class='math-formula'>Final weekly grade: 28.153 + 20.000 + 22.917 + 25.000 = 96.069 / 100</p>
+                  <details><summary>Crowd-decision arithmetic and comparisons</summary><p>Crowd score 77.182: 0.4 × (77.182 − 75) = +0.873 roster points. Weighted outcome sum +0.0173; weight sum 0.1980.</p><div class='table-wrap'><table><thead><tr><th>Started / legal alternative</th><th>Starting rates</th><th>Point edge</th><th>Weight</th><th>Weighted outcome</th></tr></thead><tbody><tr><td>Quinshon Judkins over Travis Etienne Jr.</td><td>71% / 91%</td><td>+0.700</td><td>0.1980</td><td>+0.0173</td></tr><tr><td>Tyler Loop over Harrison Mevis</td><td>82% / 65%</td><td>+2.000</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Rashee Rice over Jayden Reed</td><td>89% / 20%</td><td>+10.900</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Seahawks over Broncos</td><td>94% / 89%</td><td>+0.000</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>DeVonta Smith over Mark Andrews</td><td>95% / 39%</td><td>+15.800</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Ashton Jeanty over Chris Rodriguez Jr.</td><td>96% / 3%</td><td>+4.000</td><td>0.0000</td><td>+0.0000</td></tr><tr><td>Josh Allen over Jalen Hurts</td><td>96% / 93%</td><td>+32.767</td><td>0.0000</td><td>+0.0000</td></tr></tbody></table></div><p>Conforming pairs have zero crowd weight. <a href='#crowd-model'>Reference-pair rules and equations →</a></p></details>
+                  <details><summary>Qualified waiver evidence</summary><ul><li>No qualifying starting-lineup market upgrade.</li></ul></details>
+                  <details><summary>All grading inputs and move evidence</summary><pre>{
   &quot;grades&quot;: {
     &quot;weekly&quot;: {
       &quot;score_pct&quot;: 96.06941129673825,
@@ -1094,4 +2122,80 @@ final roster component = clamp(base opportunity component + adjustment, 45, 100)
     &quot;former_player_followup_points&quot;: 0.0
   },
   &quot;additions&quot;: []
-}</pre></details></section></html>
+}</pre></details>
+                </section>
+
+    <section class="section" id="component-models">
+      <h2>How the four components work</h2>
+      <p class="muted">Scores are grade points out of 100—not probabilities. The worked examples above use the same rules below.</p>
+      <div class="math-model-list">
+        <div><h3>Lineup execution · 30%</h3>
+          <p>The share of the best legal lineup's points captured by the submitted starters.</p>
+          <div class="math-formula">100 × actual points ÷ best legal lineup points</div>
+        </div>
+        <div><h3>Roster &amp; waiver management · 20%</h3>
+          <p>First score opportunity capture, then adjust for moves and crowd-informed start/sit outcomes.</p>
+          <div class="math-formula">capture = 100 × actual ÷ (actual + qualified market gains)
+base = clamp(capture + 3 × move adjustment + win bonus, 45, 100)
+roster score = clamp(base + crowd adjustment, 45, 100)</div>
+          <p>Move adjustments are bounded to −6…+6; a move-assisted win adds 10 points. No qualifying upgrade means standing pat earns full opportunity capture.</p>
+          <details><summary>Which waiver alternatives qualify?</summary>
+            <p>The target must be a starter. Market gain compares the available player's points with the best same-position option already rostered, so existing bench value is not counted again as waiver value. At least three scoring samples, average points at least as high as the starter's, and a heuristic score ≥0.65 are required.</p>
+            <div class="math-formula">heuristic = min(1, 0.5 + min(gain, 20) ÷ 40)</div>
+            <p>This heuristic is not a probability. These are retrospective lineup alternatives, not recommendations to drop injured or benched players.</p>
+          </details>
+          <details><summary>Move adjustment rules, in evaluation order</summary>
+            <p>Surprise = completed points − prior scoring average. Sum the applicable per-addition adjustments and clamp the total to −6…+6.</p>
+            <div class="table-wrap"><table><thead><tr><th>Condition</th><th>Adjustment</th></tr></thead><tbody>
+              <tr><td>Benched bad stash; other bench addition</td><td>−0.5; otherwise 0</td></tr>
+              <tr><td>No prior sample: started, ≥12 points, positive lineup impact</td><td>+1.5</td></tr>
+              <tr><td>No prior sample: started, ≤3 points</td><td>−1; otherwise 0</td></tr>
+              <tr><td>Prior average &lt;8; ≥12 points; positive impact; surprise ≥6</td><td>+3.5</td></tr>
+              <tr><td>Prior average &lt;10; ≥10 points; surprise ≥4</td><td>+2.5</td></tr>
+              <tr><td>Prior average ≥10; score within 2 below average; positive impact</td><td>+1</td></tr>
+              <tr><td>≥3 prior samples; average ≥10; surprise ≤−6</td><td>−3</td></tr>
+              <tr><td>Prior average &lt;8; ≤4 points</td><td>−1.5</td></tr>
+              <tr><td>Remaining bad started addition; otherwise</td><td>−2; otherwise 0</td></tr>
+            </tbody></table></div>
+            <p>Rules apply in order. Lineup impact currently uses a broad roster alternative; positional precision is a limitation.</p>
+          </details>
+        </div>
+        <div><h3>All-play position · 25%</h3>
+          <p>Compare the team with every other league team. A tie earns half a win. A 50% all-play rate maps to 75 grade points.</p>
+          <div class="math-formula">clamp(25 + all-play win percentage, 45, 100)</div>
+        </div>
+        <div><h3>Scoring performance · 25%</h3>
+          <p>The week's league-average score maps to 75. Each percentage point above or below that average changes the component by 2.5 points, before clipping.</p>
+          <div class="math-formula">clamp(75 + 2.5 × (100 × actual ÷ weekly league average − 100), 45, 100)</div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="crowd-model">
+      <h2>Crowd decision model</h2>
+      <p>Alignment and quality answer different questions. Pearson correlation measures whether starter selection follows Yahoo starting popularity. It does not say whether those choices were good.</p>
+      <h3>1. Set expectations before looking at results</h3>
+      <p>Use the latest ownership and starting percentages strictly before the evaluated week. Missing rates are not zero. Exclude reserve slots, known byes and players with no recorded game. Correlation needs variation in both start/bench selection and starting rates.</p>
+      <h3>2. Choose legal reference alternatives</h3>
+      <p>Order starters by ascending start rate, then name. Match each with the highest-start-rate unused eligible bench player. Each bench player is used once. Flex accepts RB/WR/TE; fixed slots accept the starter's position. This deterministic reference is independent of points, but is not the globally optimal crowd lineup.</p>
+      <h3>3. Score the outcome of disagreement</h3>
+      <p>A pair is contrarian when the bench alternative's starting rate exceeds the starter's by at least 10 percentage points. Only those pairs enter the weighted outcome.</p>
+      <div class="math-formula">gap = (bench starting % − starter starting %) / 100
+weight = gap × max(starter ownership %, bench ownership %) / 100
+edge = actual starter points − bench alternative points
+weighted outcome = weight × tanh(edge / 8)
+crowd score = 75 + 25 × sum(weighted outcomes) / sum(weights)
+roster adjustment = 0.4 × (crowd score − 75)</div>
+      <p>Positive edges reward successful disagreement; negative edges penalize harmful disagreement. Ownership controls relative evidence weight; tanh bounds extreme outcomes. The adjustment is at most ±10 roster-component points, or ±2 final weekly grade points before clipping.</p>
+      <p>No covered contrarian choice means no adjustment—not a zero grade or zero roster-component weight. The lineup component still measures missed opportunities when following the crowd.</p>
+      <details><summary>Season aggregation</summary><p>Pool all covered weekly weights and outcomes through the report week, then use the same signed adjustment on the season transaction component. Do not average weekly crowd scores. Season alignment is the mean of defined weekly correlations; coverage is disclosed. Missing history is not reconstructed.</p></details>
+    </section>
+    <section class="section" id="model-limits">
+      <h2>Definitions &amp; limitations</h2>
+      <p><strong>clamp(x, 45, 100)</strong> keeps x between 45 and 100. <strong>tanh</strong> is a smooth curve bounded between −1 and +1. Weighted component contributions are summed to produce the final grade; displayed decimals may differ slightly because the calculation uses full precision.</p>
+      <p>This is retrospective outcome analysis, not a causal or predictive model. Historical injury designations are unavailable; bye-week metadata is available, but zero points alone never establish injury. Weekly ownership snapshots are not exact kickoff availability snapshots.</p>
+      <p>Component weights, scoring curves, clipping floors, move bonuses, the 10-point starting-rate gap, the 8-point outcome scale and the 0.4 crowd adjustment factor are modeling choices, not empirically calibrated probabilities.</p>
+    </section>
+    
+</main>
+</body>
+</html>

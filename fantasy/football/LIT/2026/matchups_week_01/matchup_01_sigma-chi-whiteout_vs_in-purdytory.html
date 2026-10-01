@@ -24,21 +24,23 @@
             margin: 0;
             background: var(--bg);
             color: var(--text);
-            font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.38;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.5;
             font-size: 14px;
         }
         .page {
             max-width: 1240px;
             margin: 0 auto;
-            padding: 18px 18px 42px;
+            padding: 20px 28px 48px;
+            background: var(--surface);
         }
         .section {
-            background: var(--surface);
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 24px 0;
+            margin: 0;
         }
         .eyebrow {
             color: var(--text-muted);
@@ -55,9 +57,9 @@
             margin: 0 0 10px;
         }
         h2 {
-            font-size: 19px;
+            font-size: 20px;
             line-height: 1.2;
-            margin: 0 0 6px;
+            margin: 0 0 10px;
         }
         h3 {
             font-size: 16px;
@@ -787,9 +789,9 @@
             margin-top: 6px;
         }
         .award-strip {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px 24px;
         }
         .skill-grid {
             display: grid;
@@ -814,12 +816,52 @@
             background: var(--surface-muted);
         }
         .award-card {
-            border: 1px solid var(--line);
-            border-radius: 6px;
-            padding: 8px 10px;
-            background: #f8fafc;
-            min-width: 220px;
-            flex: 1 1 220px;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px 0;
+            background: transparent;
+            min-width: 0;
+        }
+        .section > .muted { font-size: 13px; margin: 0 0 16px; }
+        .detail-card, .verdict-card, .takeaway-card, .chart-card,
+        .skill-team-card, .skill-hero {
+            border: 0; border-radius: 0; background: transparent; padding: 12px 0;
+        }
+        .detail-card.tertiary, .chart-card.tertiary,
+        .chart-card.highlight { background: transparent; border: 0; }
+        .hero-card { border: 0; border-radius: 4px; background: var(--accent-soft); }
+        .detail-card .value, .verdict-card .value { font-size: 16px; line-height: 1.35; }
+        .chart-title, .award-card strong { font-size: 15px; }
+        .subvalue, .chart-note, .comparison-context { font-size: 12px; line-height: 1.5; }
+        .deep-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+        .deep-card { min-width: 0; padding: 4px 0; }
+        .deep-card p { margin: 8px 0; }
+        details { margin: 12px 0; }
+        summary { font-size: 13px; cursor: pointer; color: var(--accent); }
+        .math-page .page { max-width: 1120px; }
+        .math-page p, .math-page li { max-width: 85ch; }
+        .math-page .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+        .math-team-header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+        .math-grade { font-size: 24px; font-weight: 700; white-space: nowrap; }
+        .math-page .math-table { width: 100%; min-width: 680px; table-layout: fixed; }
+        .math-table th:first-child { width: 21%; }
+        .math-table th:nth-child(2) { width: 46%; }
+        .math-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+        .math-expression { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-formula, .math-page pre { background: var(--surface-muted); padding: 14px 16px; border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-page pre { max-height: 420px; overflow: auto; }
+        .math-page .math-model-list { display: grid; gap: 18px; }
+        .math-page .math-model-list h3 { margin-bottom: 6px; }
+        .math-page .math-model-list p { margin: 6px 0; }
+        @media (max-width: 800px) {
+            .award-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 600px) {
+            .page { padding: 16px; }
+            .section { padding: 20px 0; }
+            .award-strip, .deep-grid { grid-template-columns: 1fr; }
+            .math-team-header { flex-direction: column; gap: 0; }
         }
         details.deep-metrics {
             border: 1px solid var(--line);
