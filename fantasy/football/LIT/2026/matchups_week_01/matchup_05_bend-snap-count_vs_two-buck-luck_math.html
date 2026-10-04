@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grade math · 2026 Week 1</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manager assessment math · 2026 Week 1</title>
 <style>
         :root {
             --bg: #f7f8fa;
@@ -157,6 +154,12 @@
         }
         .contribution-chart { margin: 12px 0; }
         .contribution-svg-wrap { overflow-x: auto; }
+        .chart-scroll-hint { display: none; }
+        .contribution-total-row { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
+        @media (max-width: 600px) {
+            .chart-scroll-hint { display: block; color: var(--text-muted); font-size: 12px; }
+            .contribution-total-row { flex-direction: column; gap: 4px; }
+        }
         .contribution-svg-wrap svg { display: block; min-width: 760px; width: 100%; }
         .opportunity-board table { width: 100%; table-layout: fixed; }
         .opportunity-board th, .opportunity-board td { width: 50%; text-align: left; vertical-align: top; }
@@ -968,7 +971,7 @@
                 display: table-cell;
             }
         }
-        
+
     .source-bars { display: grid; gap: 14px; margin: 12px 0; }
     .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
     .source-mode { color: var(--text-muted); font-size: 11px; font-weight: 700; margin: 5px 0 3px; }
@@ -999,759 +1002,2033 @@
         .scoring-sources-section .comparison-board th:nth-child(2),
         .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; }
     }
-    </style>
-</head>
-<body class="math-page">
-<main class="page">
-<!-- report-nav:start -->
-<style>
-    .report-nav {
-        margin: 0 0 14px;
-        border: 1px solid #d7dee8;
-        border-radius: 8px;
-        background: #fff;
-        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
-    }
-    .report-nav__inner {
-        display: grid;
-        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
-        gap: 0;
-        align-items: stretch;
-    }
-    .report-nav__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1px;
-        padding: 9px 12px;
-        border-right: 1px solid #e6ebf2;
-        background: #f8fafc;
-    }
-    .report-nav__eyebrow {
-        color: #64748b;
-        font-size: 9px;
-        font-weight: 800;
-        letter-spacing: 0.06em;
-        line-height: 1.2;
-        text-transform: uppercase;
-    }
-    .report-nav__current {
-        color: #111827;
-        font-size: 12px;
-        font-weight: 800;
-        line-height: 1.3;
-        overflow-wrap: anywhere;
-    }
-    .report-nav__groups {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 7px 12px;
-        align-items: center;
-        padding: 8px 10px;
-    }
-    .report-nav__group {
-        display: flex;
-        min-width: 0;
-        flex-wrap: wrap;
-        gap: 5px;
-        align-items: center;
-    }
-    .report-nav__group-label {
-        color: #64748b;
-        font-size: 9px;
-        font-weight: 800;
-        letter-spacing: 0.04em;
-        line-height: 1;
-        text-transform: uppercase;
-    }
-    .report-nav__group-toggle {
-        border: 1px solid #dbe3ee;
-        border-radius: 5px;
-        background: #f8fafc;
-        color: #1f4f8c;
-        cursor: pointer;
-        font-size: 11px;
-        font-weight: 800;
-        line-height: 1.2;
-        min-height: 24px;
-        padding: 4px 8px;
-        list-style: none;
-    }
-    .report-nav__group-toggle::-webkit-details-marker {
-        display: none;
-    }
-    .report-nav__group-toggle::after {
-        content: " +";
-        color: #64748b;
-    }
-    details[open] > .report-nav__group-toggle::after {
-        content: " -";
-    }
-    .report-nav__group--collapsed {
-        position: relative;
-    }
-    .report-nav__group--collapsed .report-nav__links {
-        position: absolute;
-        z-index: 20;
-        top: calc(100% + 5px);
-        left: 0;
-        display: none;
-        width: min(420px, 82vw);
-        max-height: 42vh;
-        overflow: auto;
-        border: 1px solid #d7dee8;
-        border-radius: 8px;
-        background: #fff;
-        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
-        padding: 8px;
-    }
-    .report-nav__group--collapsed[open] .report-nav__links {
-        display: flex;
-    }
-    .report-nav__links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    .report-nav__links li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    .report-nav a,
-    .report-nav-current {
-        display: inline-flex;
-        max-width: 100%;
-        min-height: 24px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        padding: 3px 7px;
-        font-size: 11px;
-        font-weight: 750;
-        line-height: 1.2;
-        text-decoration: none;
-        overflow-wrap: anywhere;
-        white-space: normal;
-    }
-    .report-nav a {
-        border: 1px solid #dbe3ee;
-        background: #f8fafc;
-        color: #1f4f8c;
-    }
-    .report-nav a:hover {
-        border-color: #b7c8dd;
-        background: #eef4fb;
-        color: #163b69;
-        text-decoration: none;
-    }
-    .report-nav-current {
-        border: 1px solid #1f4f8c;
-        background: #1f4f8c;
-        color: #fff;
-    }
-    @media (max-width: 760px) {
-        .report-nav__inner {
-            grid-template-columns: 1fr;
-        }
-        .report-nav__title {
-            border-right: 0;
-            border-bottom: 1px solid #e6ebf2;
-        }
-        .report-nav__groups {
-            align-items: flex-start;
-            gap: 12px;
-        }
-        .report-nav__group {
-            width: 100%;
-            align-items: flex-start;
-        }
-        .report-nav__group--collapsed .report-nav__links {
-            position: static;
-            width: 100%;
-            max-height: none;
-            margin-top: 6px;
-            box-shadow: none;
-        }
-        .report-nav__links {
-            width: 100%;
-        }
-        .report-nav__links li {
-            max-width: 100%;
-        }
-    }
-</style>
-<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_01.html">Week 1 Report</a></li><li><a href="index.html">Week 1 Matchups</a></li></ul></div></div></div></nav>
-<!-- report-nav:end -->
-<header class="section" id="math-overview">
-  <a href="matchup_05_bend-snap-count_vs_two-buck-luck.html">← Back to matchup</a>
-  <p class="eyebrow">Grading reference</p>
-  <h1>Grade formulas and evidence</h1>
-  <p class="muted">Start with the two worked examples. Expand their evidence, or jump to the model rules below. This page explains the existing grades; no scoring rules have changed.</p>
-  <nav class="section-nav" aria-label="Grade math sections">
-    <a class='section-jump-link' href='#team-1'>Bend &amp; Snap Count</a><a class='section-jump-link' href='#team-2'>Two Buck Luck</a>
-    <a class="section-jump-link" href="#component-models">Component rules</a>
-    <a class="section-jump-link" href="#crowd-model">Crowd model</a>
-    <a class="section-jump-link" href="#model-limits">Definitions &amp; limits</a>
-  </nav>
-</header>
 
-                <section class='section' id='team-1'>
-                  <div class='math-team-header'><h2>Bend &amp; Snap Count</h2><span class='math-grade'>A+ · 99.4 / 100</span></div>
-                  <p class='muted'>League rank 3 · all-play rate 77.78% · league average 123.883 points</p>
-                  <div class='table-wrap'><table class='math-table'><thead><tr><th>Component</th><th>Substituted calculation</th><th class='num'>Score</th><th class='num'>Weight</th><th class='num'>Adds to grade</th></tr></thead><tbody><tr><td>Lineup execution</td><td><code class='math-expression'>100 × 148.267 ÷ 151.367</code></td><td class='num'>97.952</td><td class='num'>30%</td><td class='num'>29.386</td></tr><tr><td>Roster &amp; waiver management</td><td><code class='math-expression'>clamp(clamp(100 × 148.267 ÷ (148.267 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.000), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>20%</td><td class='num'>20.000</td></tr><tr><td>All-play position</td><td><code class='math-expression'>clamp(25 + 77.778, 45, 100)</code></td><td class='num'>100.000</td><td class='num'>25%</td><td class='num'>25.000</td></tr><tr><td>Scoring performance</td><td><code class='math-expression'>clamp(75 + 2.5 × (100 × 148.267 ÷ 123.883 − 100), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>25%</td><td class='num'>25.000</td></tr></tbody></table></div>
-                  <p class='math-formula'>Final weekly grade: 29.386 + 20.000 + 25.000 + 25.000 = 99.386 / 100</p>
-                  <details><summary>Crowd-decision arithmetic and comparisons</summary><p>No covered contrarian comparison: crowd adjustment is 0; the roster component retains its weight.</p><div class='table-wrap'><table><thead><tr><th>Started / legal alternative</th><th>Starting rates</th><th>Point edge</th><th>Weight</th><th>Weighted outcome</th></tr></thead><tbody><tr><td colspan="5">No covered legal comparisons.</td></tr></tbody></table></div><p>Conforming pairs have zero crowd weight. <a href='#crowd-model'>Reference-pair rules and equations →</a></p></details>
-                  <details><summary>Qualified waiver evidence</summary><ul><li>No qualifying starting-lineup market upgrade.</li></ul></details>
-                  <details><summary>All grading inputs and move evidence</summary><pre>{
-  &quot;grades&quot;: {
-    &quot;weekly&quot;: {
-      &quot;score_pct&quot;: 99.3855978859282,
-      &quot;letter&quot;: &quot;A+&quot;,
-      &quot;label&quot;: &quot;creative edge&quot;
+.math-period { padding: 16px 0; }
+.math-page pre { font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+</style></head><body class="math-page"><main class="page">
+<header class="section" id="math-overview"><a href="matchup_05_bend-snap-count_vs_two-buck-luck.html">← Back to matchup</a>
+<p class="eyebrow">Overall Manager Assessment reference</p><h1>Formulas, worked examples &amp; evidence</h1>
+<p class="muted">One balanced assessment, with explicit evidence and uncertainty. Expand component inputs without cluttering the matchup.</p>
+<nav class="section-nav" aria-label="Grade math sections"><a class='section-jump-link' href='#team-1'>Bend &amp; Snap Count</a><a class='section-jump-link' href='#team-2'>Two Buck Luck</a>
+<a class="section-jump-link" href="#component-models">Overall and P/E rules</a><a class="section-jump-link" href="#crowd-model">J/S rules</a>
+<a class="section-jump-link" href="#hindsight-model">Hindsight</a><a class="section-jump-link" href="#model-limits">Definitions &amp; limits</a></nav></header>
+<section class='section' id='team-1'><h2>Bend &amp; Snap Count</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 24.96 + 33.79 + 15.00 + 7.50 = 81.26 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>71.32 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>24.96</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>96.56 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>33.79</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 68.76–88.76 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Available dated transaction feed ends 2026-09-16 UTC; ledger completeness is unverified.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 77.78; scoring magnitude 64.86.</p><pre>{
+  &quot;score_pct&quot;: 71.3183617285375,
+  &quot;assessed_score&quot;: 71.3183617285375,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 24.961426604988123,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 0,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 71.3183617285375,
+    &quot;max_score_pct&quot;: 71.3183617285375
+  },
+  &quot;raw&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;competitive_performance&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;score_pct&quot;: 71.3183617285375,
+    &quot;letter&quot;: &quot;B&quot;,
+    &quot;actual_points&quot;: 148.2666666666666,
+    &quot;positional_score&quot;: 77.77777777777777,
+    &quot;scoring_score&quot;: 64.85894567929722,
+    &quot;all_play_pct&quot;: 77.77777777777777,
+    &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+    &quot;scoring_z&quot;: 0.6128447596733001,
+    &quot;league_mean&quot;: 123.88333333333325,
+    &quot;league_sd&quot;: 39.78712871157092,
+    &quot;league_size&quot;: 10
+  }
+}</pre></details><details><summary>E · Lineup execution: inputs and evidence</summary><p>Supported optimum 151.37 − actual 148.27; supported regret 3.10; denominator 90.00; continuous competition credit 1.00.</p><pre>{
+  &quot;score_pct&quot;: 96.55555555555553,
+  &quot;assessed_score&quot;: 96.55555555555553,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 33.79444444444444,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 0,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 96.55555555555553,
+    &quot;max_score_pct&quot;: 96.55555555555553
+  },
+  &quot;raw&quot;: {
+    &quot;actual_points&quot;: 148.2666666666666,
+    &quot;supported_optimal_points&quot;: 151.36666666666662,
+    &quot;regret_points&quot;: 3.1000000000000227,
+    &quot;occupied_slots&quot;: 9,
+    &quot;denominator_points&quot;: 90.0,
+    &quot;decision_slot_types&quot;: [
+      &quot;QB&quot;,
+      &quot;RB&quot;,
+      &quot;TE&quot;,
+      &quot;W/R/T&quot;,
+      &quot;WR&quot;
+    ],
+    &quot;decision_slot_count&quot;: 7,
+    &quot;decision_optimal_points&quot;: 134.36666666666662,
+    &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+    &quot;has_alternative&quot;: true,
+    &quot;competition_credit&quot;: 1.0,
+    &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+    &quot;excluded_candidates&quot;: [],
+    &quot;supported_player_count&quot;: 16,
+    &quot;roster_player_count&quot;: 16,
+    &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+  }
+}</pre></details><details><summary>J · Expectation-aware judgment: inputs and evidence</summary><p>Crowd points Unavailable; actual-minus-crowd edge Unavailable; confidence contrast Unavailable. Hindsight regret is assessed separately in execution.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 20,
+  &quot;contribution_points&quot;: 15.0,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 50,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 50.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+    &quot;covered_players&quot;: 0,
+    &quot;eligible_players&quot;: 16
+  }
+}</pre></details><details><summary>S · Roster stewardship: inputs and evidence</summary><p>Acquisition before optimum Unavailable; after Unavailable; signed frontier gain Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 10,
+  &quot;contribution_points&quot;: 7.5,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 0,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 0.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;acquisition&quot;: {
+      &quot;score_pct&quot;: 75.0,
+      &quot;assessed_score&quot;: null,
+      &quot;weight_pct&quot;: 50,
+      &quot;contribution_points&quot;: 37.5,
+      &quot;evidence_coverage&quot;: 0.0,
+      &quot;status&quot;: &quot;unavailable&quot;,
+      &quot;reference_anchor&quot;: 75.0,
+      &quot;reference_range&quot;: {
+        &quot;min_score_pct&quot;: 0,
+        &quot;max_score_pct&quot;: 100
+      },
+      &quot;sensitivity_range&quot;: {
+        &quot;min_score_pct&quot;: 0.0,
+        &quot;max_score_pct&quot;: 100.0
+      },
+      &quot;raw&quot;: {
+        &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+        &quot;source_ledger_rows&quot;: 44,
+        &quot;source_latest_timestamp&quot;: 1789549726.0,
+        &quot;observed_team_week_events&quot;: 0,
+        &quot;transaction_completeness&quot;: &quot;unverified&quot;
+      }
     },
-    &quot;season&quot;: {
-      &quot;score_pct&quot;: 88.88056250723369,
-      &quot;letter&quot;: &quot;B+&quot;,
-      &quot;label&quot;: &quot;well managed&quot;,
-      &quot;confidence&quot;: 0.16666666666666666,
-      &quot;confidence_label&quot;: &quot;Provisional&quot;
-    },
-    &quot;components&quot;: {
-      &quot;weekly&quot;: {
-        &quot;baseline&quot;: 75.0,
-        &quot;lineup_efficiency_pct&quot;: 97.95199295309402,
-        &quot;decision_grade_pct&quot;: 97.95199295309402,
-        &quot;roster_missed_points&quot;: 3.10000000000003,
-        &quot;free_agent_missed_points&quot;: 0.0,
-        &quot;market_opportunity_capture_pct&quot;: 100.0,
-        &quot;good_moves_this_week&quot;: 0,
-        &quot;bad_moves_this_week&quot;: 0,
-        &quot;move_grade_adjustment_points&quot;: 0.0,
-        &quot;move_grade_summary&quot;: &quot;Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.&quot;,
-        &quot;move_grade_tags&quot;: [],
-        &quot;move_assisted_win&quot;: false,
-        &quot;transaction_activity_count&quot;: 0,
-        &quot;score_vs_historical_avg&quot;: 0.0,
-        &quot;season_average_score&quot;: 123.88400000000001,
-        &quot;score_vs_season_average&quot;: 24.38266666666658,
-        &quot;weekly_rank&quot;: 3,
-        &quot;league_size&quot;: 10,
-        &quot;beat_league_median&quot;: true,
-        &quot;component_scores&quot;: {
-          &quot;lineup_decisions&quot;: {
-            &quot;score_pct&quot;: 97.95199295309402,
-            &quot;weight_pct&quot;: 30.0,
-            &quot;available&quot;: true
-          },
-          &quot;transaction_deployment&quot;: {
-            &quot;score_pct&quot;: 100.0,
-            &quot;weight_pct&quot;: 20.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 100.0,
-            &quot;raw_unit&quot;: &quot;qualified waiver opportunity capture&quot;,
-            &quot;activity_count&quot;: 0,
-            &quot;opportunity_management_score&quot;: 100.0,
-            &quot;crowd_decision_score&quot;: null,
-            &quot;crowd_adjustment_points&quot;: 0.0
-          },
-          &quot;positional_performance&quot;: {
-            &quot;score_pct&quot;: 100.0,
-            &quot;weight_pct&quot;: 25.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 3,
-            &quot;raw_unit&quot;: &quot;weekly league rank&quot;
-          },
-          &quot;scoring_performance&quot;: {
-            &quot;score_pct&quot;: 100.0,
-            &quot;weight_pct&quot;: 25.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 24.38333333333334,
-            &quot;raw_unit&quot;: &quot;points versus weekly league average&quot;
-          }
+    &quot;waiver&quot;: {
+      &quot;score_pct&quot;: 75.0,
+      &quot;assessed_score&quot;: null,
+      &quot;weight_pct&quot;: 50,
+      &quot;contribution_points&quot;: 37.5,
+      &quot;evidence_coverage&quot;: 0.0,
+      &quot;status&quot;: &quot;unavailable&quot;,
+      &quot;reference_anchor&quot;: 75.0,
+      &quot;reference_range&quot;: {
+        &quot;min_score_pct&quot;: 0,
+        &quot;max_score_pct&quot;: 100
+      },
+      &quot;sensitivity_range&quot;: {
+        &quot;min_score_pct&quot;: 0.0,
+        &quot;max_score_pct&quot;: 100.0
+      },
+      &quot;raw&quot;: {
+        &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+      }
+    }
+  }
+}</pre></details><p>Separate team performance: 71.3 / 100.</p><h4>Full hindsight opportunity</h4><p>151.4 optimal − 148.3 actual = 3.1 unused points. Capture: 98.0%.</p><details><summary>Exact period observations, lineups and source weeks</summary><pre>{
+  &quot;balanced_assessment&quot;: {
+    &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+    &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;assessment_status&quot;: &quot;provisional&quot;,
+    &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
+    &quot;score_pct&quot;: 81.25587104943256,
+    &quot;letter&quot;: &quot;B&quot;,
+    &quot;component_scores&quot;: {
+      &quot;production&quot;: {
+        &quot;score_pct&quot;: 71.3183617285375,
+        &quot;assessed_score&quot;: 71.3183617285375,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 24.961426604988123,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 0,
+          &quot;max_score_pct&quot;: 100
         },
-        &quot;crowd_decisions&quot;: {
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 71.3183617285375,
+          &quot;max_score_pct&quot;: 71.3183617285375
+        },
+        &quot;raw&quot;: {
+          &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+          &quot;metric&quot;: &quot;competitive_performance&quot;,
+          &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+          &quot;year&quot;: 2026,
           &quot;week&quot;: 1,
-          &quot;correlation&quot;: null,
-          &quot;coverage_players&quot;: 0,
-          &quot;roster_players&quot;: 16,
-          &quot;pairs&quot;: [],
-          &quot;decision_pairs&quot;: 0,
-          &quot;crowd_alignment_pct&quot;: null,
-          &quot;contrarian_decisions&quot;: 0,
-          &quot;contrarian_value_points&quot;: 0,
-          &quot;total_weight&quot;: 0,
-          &quot;weighted_outcome&quot;: 0,
-          &quot;score_pct&quot;: null
-        },
-        &quot;luck&quot;: {
-          &quot;actual_win_credit&quot;: 1.0,
-          &quot;expected_win_credit&quot;: 0.6805555555555556,
-          &quot;luck_win_credit&quot;: 0.3194444444444444,
-          &quot;all_play_win_pct&quot;: 77.77777777777779,
-          &quot;dominant_win&quot;: false,
-          &quot;victory_margin_pct&quot;: 19.0500791062607,
-          &quot;weekly_score_rank&quot;: 3,
-          &quot;league_size&quot;: 10,
-          &quot;score_vs_winning_baseline&quot;: 0.0,
-          &quot;opponent_score_vs_week_average&quot;: 0.7859999999999872,
-          &quot;opponent_lineup_miss_points&quot;: 23.163333333333256,
-          &quot;opponent_assisted_win&quot;: false,
-          &quot;opponent_decisive_bench_points&quot;: 0.0
+          &quot;status&quot;: &quot;available&quot;,
+          &quot;score_pct&quot;: 71.3183617285375,
+          &quot;letter&quot;: &quot;B&quot;,
+          &quot;actual_points&quot;: 148.2666666666666,
+          &quot;positional_score&quot;: 77.77777777777777,
+          &quot;scoring_score&quot;: 64.85894567929722,
+          &quot;all_play_pct&quot;: 77.77777777777777,
+          &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+          &quot;scoring_z&quot;: 0.6128447596733001,
+          &quot;league_mean&quot;: 123.88333333333325,
+          &quot;league_sd&quot;: 39.78712871157092,
+          &quot;league_size&quot;: 10
         }
       },
-      &quot;season&quot;: {
-        &quot;baseline&quot;: 75.0,
-        &quot;season_actual_points&quot;: 148.2666666666666,
-        &quot;season_ideal_points&quot;: 151.36666666666662,
-        &quot;season_lineup_efficiency_pct&quot;: 97.95199295309402,
-        &quot;drop_regret_points_total&quot;: 0.0,
-        &quot;trend&quot;: &quot;insufficient_data&quot;,
-        &quot;weeks_completed&quot;: 1,
-        &quot;confidence&quot;: 0.16666666666666666,
-        &quot;confidence_label&quot;: &quot;Provisional&quot;,
-        &quot;raw_score_pct&quot;: 88.88056250723369,
-        &quot;component_scores&quot;: {
-          &quot;lineup_management&quot;: {
-            &quot;score_pct&quot;: 100.0,
-            &quot;weight_pct&quot;: 20.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 97.95199295309402,
-            &quot;raw_unit&quot;: &quot;lineup efficiency&quot;,
-            &quot;league_rank&quot;: 1,
-            &quot;league_size&quot;: 10
-          },
-          &quot;roster_construction&quot;: {
-            &quot;score_pct&quot;: 84.80044396640506,
-            &quot;weight_pct&quot;: 25.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 151.36666666666662,
-            &quot;raw_unit&quot;: &quot;ideal points per week&quot;,
-            &quot;league_rank&quot;: 4,
-            &quot;league_size&quot;: 10
-          },
-          &quot;transaction_value&quot;: {
-            &quot;score_pct&quot;: 75.0,
-            &quot;weight_pct&quot;: 20.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 0.0,
-            &quot;raw_unit&quot;: &quot;post-draft value over replacement&quot;,
-            &quot;league_rank&quot;: 1,
-            &quot;league_size&quot;: 10
-          },
-          &quot;competitive_strength&quot;: {
-            &quot;score_pct&quot;: 93.37271861609268,
-            &quot;weight_pct&quot;: 35.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 77.77777777777779,
-            &quot;raw_unit&quot;: &quot;all-play win rate&quot;,
-            &quot;league_rank&quot;: 3,
-            &quot;league_size&quot;: 10
-          }
+      &quot;lineup_execution&quot;: {
+        &quot;score_pct&quot;: 96.55555555555553,
+        &quot;assessed_score&quot;: 96.55555555555553,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 33.79444444444444,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 0,
+          &quot;max_score_pct&quot;: 100
         },
-        &quot;crowd_decisions&quot;: {
-          &quot;score_pct&quot;: null,
-          &quot;contrarian_decisions&quot;: 0,
-          &quot;contrarian_value_points&quot;: 0,
-          &quot;mean_weekly_correlation&quot;: null,
-          &quot;weeks_with_correlation&quot;: 0,
-          &quot;weeks&quot;: [
-            {
-              &quot;week&quot;: 1,
-              &quot;correlation&quot;: null,
-              &quot;coverage_players&quot;: 0,
-              &quot;roster_players&quot;: 16,
-              &quot;pairs&quot;: [],
-              &quot;decision_pairs&quot;: 0,
-              &quot;crowd_alignment_pct&quot;: null,
-              &quot;contrarian_decisions&quot;: 0,
-              &quot;contrarian_value_points&quot;: 0,
-              &quot;total_weight&quot;: 0,
-              &quot;weighted_outcome&quot;: 0,
-              &quot;score_pct&quot;: null
-            }
-          ]
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 96.55555555555553,
+          &quot;max_score_pct&quot;: 96.55555555555553
         },
-        &quot;competitive_strength&quot;: {
-          &quot;all_play_win_pct&quot;: 77.77777777777779,
-          &quot;win_pct&quot;: 100.0,
-          &quot;dominant_win_rate&quot;: 0.0,
-          &quot;victory_margin_pct&quot;: 18.72718616092684
-        },
-        &quot;move_impact&quot;: {
-          &quot;post_draft_value_points&quot;: 0.0,
-          &quot;move_assisted_wins&quot;: 0
-        },
-        &quot;adaptability&quot;: {
-          &quot;included_in_rating&quot;: false,
-          &quot;trend&quot;: &quot;insufficient_data&quot;,
-          &quot;reason&quot;: &quot;Shown as context only; the current trend label is not precise enough to grade.&quot;
-        }
-      }
-    },
-    &quot;summary&quot;: &quot;Bend &amp; Snap Count graded A+ this week and B+ for the season-to-date (provisional). Weekly management reads as creative edge; season management reads as well managed.&quot;,
-    &quot;series&quot;: {
-      &quot;weekly&quot;: [
-        {
-          &quot;week&quot;: 1,
-          &quot;weekly_score_pct&quot;: 99.3855978859282,
-          &quot;weekly_letter&quot;: &quot;A+&quot;,
-          &quot;weekly_delta_points&quot;: 0.0,
-          &quot;cumulative_score_pct&quot;: 88.88056250723369,
-          &quot;cumulative_letter&quot;: &quot;B+&quot;,
-          &quot;cumulative_delta_points&quot;: 0.0,
-          &quot;trend_delta_points&quot;: 0.0,
-          &quot;trend_label&quot;: &quot;Stable&quot;,
-          &quot;score&quot;: 148.2666666666666,
-          &quot;opponent_score&quot;: null,
-          &quot;result&quot;: null
-        }
-      ],
-      &quot;summary&quot;: {
-        &quot;status&quot;: &quot;available&quot;,
-        &quot;trend_label&quot;: &quot;Stable&quot;,
-        &quot;trend_delta_points&quot;: 0.0,
-        &quot;current_score_pct&quot;: 88.88056250723369,
-        &quot;current_letter&quot;: &quot;B+&quot;,
-        &quot;previous_score_pct&quot;: null,
-        &quot;delta_points&quot;: 0.0,
-        &quot;weeks&quot;: 1
-      }
-    },
-    &quot;trend&quot;: {
-      &quot;label&quot;: &quot;Stable&quot;,
-      &quot;delta_points&quot;: 0.0,
-      &quot;trend_delta_points&quot;: 0.0,
-      &quot;current_score_pct&quot;: 88.88056250723369,
-      &quot;previous_score_pct&quot;: null
-    }
-  },
-  &quot;moves&quot;: {
-    &quot;good_moves_this_week&quot;: 0,
-    &quot;bad_moves_this_week&quot;: 0,
-    &quot;neutral_moves_this_week&quot;: 0,
-    &quot;drop_regret_points_total&quot;: 0.0,
-    &quot;former_player_followup_points&quot;: 0.0
-  },
-  &quot;additions&quot;: []
-}</pre></details>
-                </section>
-                <section class='section' id='team-2'>
-                  <div class='math-team-header'><h2>Two Buck Luck</h2><span class='math-grade'>B- · 81.8 / 100</span></div>
-                  <p class='muted'>League rank 6 · all-play rate 44.44% · league average 123.883 points</p>
-                  <div class='table-wrap'><table class='math-table'><thead><tr><th>Component</th><th>Substituted calculation</th><th class='num'>Score</th><th class='num'>Weight</th><th class='num'>Adds to grade</th></tr></thead><tbody><tr><td>Lineup execution</td><td><code class='math-expression'>100 × 124.667 ÷ 147.833</code></td><td class='num'>84.329</td><td class='num'>30%</td><td class='num'>25.299</td></tr><tr><td>Roster &amp; waiver management</td><td><code class='math-expression'>clamp(clamp(100 × 124.667 ÷ (124.667 + 0.000) + 3 × 0.000 + 0.0, 45, 100) + (+0.000), 45, 100)</code></td><td class='num'>100.000</td><td class='num'>20%</td><td class='num'>20.000</td></tr><tr><td>All-play position</td><td><code class='math-expression'>clamp(25 + 44.444, 45, 100)</code></td><td class='num'>69.444</td><td class='num'>25%</td><td class='num'>17.361</td></tr><tr><td>Scoring performance</td><td><code class='math-expression'>clamp(75 + 2.5 × (100 × 124.667 ÷ 123.883 − 100), 45, 100)</code></td><td class='num'>76.581</td><td class='num'>25%</td><td class='num'>19.145</td></tr></tbody></table></div>
-                  <p class='math-formula'>Final weekly grade: 25.299 + 20.000 + 17.361 + 19.145 = 81.805 / 100</p>
-                  <details><summary>Crowd-decision arithmetic and comparisons</summary><p>No covered contrarian comparison: crowd adjustment is 0; the roster component retains its weight.</p><div class='table-wrap'><table><thead><tr><th>Started / legal alternative</th><th>Starting rates</th><th>Point edge</th><th>Weight</th><th>Weighted outcome</th></tr></thead><tbody><tr><td colspan="5">No covered legal comparisons.</td></tr></tbody></table></div><p>Conforming pairs have zero crowd weight. <a href='#crowd-model'>Reference-pair rules and equations →</a></p></details>
-                  <details><summary>Qualified waiver evidence</summary><ul><li>No qualifying starting-lineup market upgrade.</li></ul></details>
-                  <details><summary>All grading inputs and move evidence</summary><pre>{
-  &quot;grades&quot;: {
-    &quot;weekly&quot;: {
-      &quot;score_pct&quot;: 81.80506806986375,
-      &quot;letter&quot;: &quot;B-&quot;,
-      &quot;label&quot;: &quot;reasonable but costly&quot;
-    },
-    &quot;season&quot;: {
-      &quot;score_pct&quot;: 74.05304164612788,
-      &quot;letter&quot;: &quot;C&quot;,
-      &quot;label&quot;: &quot;reasonable but costly&quot;,
-      &quot;confidence&quot;: 0.16666666666666666,
-      &quot;confidence_label&quot;: &quot;Provisional&quot;
-    },
-    &quot;components&quot;: {
-      &quot;weekly&quot;: {
-        &quot;baseline&quot;: 75.0,
-        &quot;lineup_efficiency_pct&quot;: 84.32919954904173,
-        &quot;decision_grade_pct&quot;: 84.32919954904173,
-        &quot;roster_missed_points&quot;: 23.166666666666643,
-        &quot;free_agent_missed_points&quot;: 0.0,
-        &quot;market_opportunity_capture_pct&quot;: 100.0,
-        &quot;good_moves_this_week&quot;: 0,
-        &quot;bad_moves_this_week&quot;: 0,
-        &quot;move_grade_adjustment_points&quot;: 0.0,
-        &quot;move_grade_summary&quot;: &quot;Adds classified this week: 0 positive | 0 bad. No additions influenced the weekly grade.&quot;,
-        &quot;move_grade_tags&quot;: [],
-        &quot;move_assisted_win&quot;: false,
-        &quot;transaction_activity_count&quot;: 0,
-        &quot;score_vs_historical_avg&quot;: 0.0,
-        &quot;season_average_score&quot;: 123.88400000000001,
-        &quot;score_vs_season_average&quot;: 0.7826666666666142,
-        &quot;weekly_rank&quot;: 6,
-        &quot;league_size&quot;: 10,
-        &quot;beat_league_median&quot;: false,
-        &quot;component_scores&quot;: {
-          &quot;lineup_decisions&quot;: {
-            &quot;score_pct&quot;: 84.32919954904173,
-            &quot;weight_pct&quot;: 30.0,
-            &quot;available&quot;: true
-          },
-          &quot;transaction_deployment&quot;: {
-            &quot;score_pct&quot;: 100.0,
-            &quot;weight_pct&quot;: 20.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 100.0,
-            &quot;raw_unit&quot;: &quot;qualified waiver opportunity capture&quot;,
-            &quot;activity_count&quot;: 0,
-            &quot;opportunity_management_score&quot;: 100.0,
-            &quot;crowd_decision_score&quot;: null,
-            &quot;crowd_adjustment_points&quot;: 0.0
-          },
-          &quot;positional_performance&quot;: {
-            &quot;score_pct&quot;: 69.44444444444444,
-            &quot;weight_pct&quot;: 25.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 6,
-            &quot;raw_unit&quot;: &quot;weekly league rank&quot;
-          },
-          &quot;scoring_performance&quot;: {
-            &quot;score_pct&quot;: 76.58078837616043,
-            &quot;weight_pct&quot;: 25.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 0.7833333333333741,
-            &quot;raw_unit&quot;: &quot;points versus weekly league average&quot;
-          }
-        },
-        &quot;crowd_decisions&quot;: {
-          &quot;week&quot;: 1,
-          &quot;correlation&quot;: null,
-          &quot;coverage_players&quot;: 0,
-          &quot;roster_players&quot;: 16,
-          &quot;pairs&quot;: [],
-          &quot;decision_pairs&quot;: 0,
-          &quot;crowd_alignment_pct&quot;: null,
-          &quot;contrarian_decisions&quot;: 0,
-          &quot;contrarian_value_points&quot;: 0,
-          &quot;total_weight&quot;: 0,
-          &quot;weighted_outcome&quot;: 0,
-          &quot;score_pct&quot;: null
-        },
-        &quot;luck&quot;: {
-          &quot;actual_win_credit&quot;: 0.0,
-          &quot;expected_win_credit&quot;: 0.35888888888888887,
-          &quot;luck_win_credit&quot;: -0.35888888888888887,
-          &quot;all_play_win_pct&quot;: 44.44444444444444,
-          &quot;dominant_win&quot;: false,
-          &quot;victory_margin_pct&quot;: 0.0,
-          &quot;weekly_score_rank&quot;: 6,
-          &quot;league_size&quot;: 10,
-          &quot;score_vs_winning_baseline&quot;: -23.60000000000001,
-          &quot;opponent_score_vs_week_average&quot;: 24.385999999999996,
-          &quot;opponent_lineup_miss_points&quot;: 3.096666666666607,
-          &quot;opponent_assisted_win&quot;: false,
-          &quot;opponent_decisive_bench_points&quot;: 0.0
+        &quot;raw&quot;: {
+          &quot;actual_points&quot;: 148.2666666666666,
+          &quot;supported_optimal_points&quot;: 151.36666666666662,
+          &quot;regret_points&quot;: 3.1000000000000227,
+          &quot;occupied_slots&quot;: 9,
+          &quot;denominator_points&quot;: 90.0,
+          &quot;decision_slot_types&quot;: [
+            &quot;QB&quot;,
+            &quot;RB&quot;,
+            &quot;TE&quot;,
+            &quot;W/R/T&quot;,
+            &quot;WR&quot;
+          ],
+          &quot;decision_slot_count&quot;: 7,
+          &quot;decision_optimal_points&quot;: 134.36666666666662,
+          &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+          &quot;has_alternative&quot;: true,
+          &quot;competition_credit&quot;: 1.0,
+          &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+          &quot;excluded_candidates&quot;: [],
+          &quot;supported_player_count&quot;: 16,
+          &quot;roster_player_count&quot;: 16,
+          &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
         }
       },
-      &quot;season&quot;: {
-        &quot;baseline&quot;: 75.0,
-        &quot;season_actual_points&quot;: 124.66666666666663,
-        &quot;season_ideal_points&quot;: 147.83333333333326,
-        &quot;season_lineup_efficiency_pct&quot;: 84.32919954904173,
-        &quot;drop_regret_points_total&quot;: 0.0,
-        &quot;trend&quot;: &quot;insufficient_data&quot;,
-        &quot;weeks_completed&quot;: 1,
-        &quot;confidence&quot;: 0.16666666666666666,
-        &quot;confidence_label&quot;: &quot;Provisional&quot;,
-        &quot;raw_score_pct&quot;: 74.05304164612788,
-        &quot;component_scores&quot;: {
-          &quot;lineup_management&quot;: {
-            &quot;score_pct&quot;: 82.79255918827512,
-            &quot;weight_pct&quot;: 20.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 84.32919954904173,
-            &quot;raw_unit&quot;: &quot;lineup efficiency&quot;,
-            &quot;league_rank&quot;: 5,
-            &quot;league_size&quot;: 10
-          },
-          &quot;roster_construction&quot;: {
-            &quot;score_pct&quot;: 78.7359544133464,
-            &quot;weight_pct&quot;: 25.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 147.83333333333326,
-            &quot;raw_unit&quot;: &quot;ideal points per week&quot;,
-            &quot;league_rank&quot;: 5,
-            &quot;league_size&quot;: 10
-          },
-          &quot;transaction_value&quot;: {
+      &quot;expectation_judgment&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 20,
+        &quot;contribution_points&quot;: 15.0,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 50,
+          &quot;max_score_pct&quot;: 100
+        },
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 50.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+          &quot;covered_players&quot;: 0,
+          &quot;eligible_players&quot;: 16
+        }
+      },
+      &quot;roster_stewardship&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 10,
+        &quot;contribution_points&quot;: 7.5,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 0,
+          &quot;max_score_pct&quot;: 100
+        },
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 0.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;acquisition&quot;: {
             &quot;score_pct&quot;: 75.0,
-            &quot;weight_pct&quot;: 20.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 0.0,
-            &quot;raw_unit&quot;: &quot;post-draft value over replacement&quot;,
-            &quot;league_rank&quot;: 1,
-            &quot;league_size&quot;: 10
-          },
-          &quot;competitive_strength&quot;: {
-            &quot;score_pct&quot;: 65.17297487181789,
-            &quot;weight_pct&quot;: 35.0,
-            &quot;available&quot;: true,
-            &quot;raw_value&quot;: 44.44444444444444,
-            &quot;raw_unit&quot;: &quot;all-play win rate&quot;,
-            &quot;league_rank&quot;: 6,
-            &quot;league_size&quot;: 10
-          }
-        },
-        &quot;crowd_decisions&quot;: {
-          &quot;score_pct&quot;: null,
-          &quot;contrarian_decisions&quot;: 0,
-          &quot;contrarian_value_points&quot;: 0,
-          &quot;mean_weekly_correlation&quot;: null,
-          &quot;weeks_with_correlation&quot;: 0,
-          &quot;weeks&quot;: [
-            {
-              &quot;week&quot;: 1,
-              &quot;correlation&quot;: null,
-              &quot;coverage_players&quot;: 0,
-              &quot;roster_players&quot;: 16,
-              &quot;pairs&quot;: [],
-              &quot;decision_pairs&quot;: 0,
-              &quot;crowd_alignment_pct&quot;: null,
-              &quot;contrarian_decisions&quot;: 0,
-              &quot;contrarian_value_points&quot;: 0,
-              &quot;total_weight&quot;: 0,
-              &quot;weighted_outcome&quot;: 0,
-              &quot;score_pct&quot;: null
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 50,
+            &quot;contribution_points&quot;: 37.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+              &quot;source_ledger_rows&quot;: 44,
+              &quot;source_latest_timestamp&quot;: 1789549726.0,
+              &quot;observed_team_week_events&quot;: 0,
+              &quot;transaction_completeness&quot;: &quot;unverified&quot;
             }
-          ]
-        },
-        &quot;competitive_strength&quot;: {
-          &quot;all_play_win_pct&quot;: 44.44444444444444,
-          &quot;win_pct&quot;: 0.0,
-          &quot;dominant_win_rate&quot;: 0.0,
-          &quot;victory_margin_pct&quot;: 0.0
-        },
-        &quot;move_impact&quot;: {
-          &quot;post_draft_value_points&quot;: 0.0,
-          &quot;move_assisted_wins&quot;: 0
-        },
-        &quot;adaptability&quot;: {
-          &quot;included_in_rating&quot;: false,
-          &quot;trend&quot;: &quot;insufficient_data&quot;,
-          &quot;reason&quot;: &quot;Shown as context only; the current trend label is not precise enough to grade.&quot;
+          },
+          &quot;waiver&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 50,
+            &quot;contribution_points&quot;: 37.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+            }
+          }
         }
       }
     },
-    &quot;summary&quot;: &quot;Two Buck Luck graded B- this week and C for the season-to-date (provisional). Weekly management reads as reasonable but costly; season management reads as reasonable but costly.&quot;,
-    &quot;series&quot;: {
-      &quot;weekly&quot;: [
-        {
-          &quot;week&quot;: 1,
-          &quot;weekly_score_pct&quot;: 81.80506806986375,
-          &quot;weekly_letter&quot;: &quot;B-&quot;,
-          &quot;weekly_delta_points&quot;: 0.0,
-          &quot;cumulative_score_pct&quot;: 74.05304164612788,
-          &quot;cumulative_letter&quot;: &quot;C&quot;,
-          &quot;cumulative_delta_points&quot;: 0.0,
-          &quot;trend_delta_points&quot;: 0.0,
-          &quot;trend_label&quot;: &quot;Stable&quot;,
-          &quot;score&quot;: 124.66666666666663,
-          &quot;opponent_score&quot;: null,
-          &quot;result&quot;: null
-        }
-      ],
-      &quot;summary&quot;: {
-        &quot;status&quot;: &quot;available&quot;,
-        &quot;trend_label&quot;: &quot;Stable&quot;,
-        &quot;trend_delta_points&quot;: 0.0,
-        &quot;current_score_pct&quot;: 74.05304164612788,
-        &quot;current_letter&quot;: &quot;C&quot;,
-        &quot;previous_score_pct&quot;: null,
-        &quot;delta_points&quot;: 0.0,
-        &quot;weeks&quot;: 1
-      }
-    },
-    &quot;trend&quot;: {
-      &quot;label&quot;: &quot;Stable&quot;,
-      &quot;delta_points&quot;: 0.0,
-      &quot;trend_delta_points&quot;: 0.0,
-      &quot;current_score_pct&quot;: 74.05304164612788,
-      &quot;previous_score_pct&quot;: null
+    &quot;evidence_weight_pct&quot;: 70.0,
+    &quot;sensitivity_range&quot;: {
+      &quot;min_score_pct&quot;: 68.75587104943256,
+      &quot;max_score_pct&quot;: 88.75587104943256
     }
   },
-  &quot;moves&quot;: {
-    &quot;good_moves_this_week&quot;: 0,
-    &quot;bad_moves_this_week&quot;: 0,
-    &quot;neutral_moves_this_week&quot;: 0,
-    &quot;drop_regret_points_total&quot;: 0.0,
-    &quot;former_player_followup_points&quot;: 0.0
+  &quot;performance&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;competitive_performance&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;score_pct&quot;: 71.3183617285375,
+    &quot;letter&quot;: &quot;B&quot;,
+    &quot;actual_points&quot;: 148.2666666666666,
+    &quot;positional_score&quot;: 77.77777777777777,
+    &quot;scoring_score&quot;: 64.85894567929722,
+    &quot;all_play_pct&quot;: 77.77777777777777,
+    &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+    &quot;scoring_z&quot;: 0.6128447596733001,
+    &quot;league_mean&quot;: 123.88333333333325,
+    &quot;league_sd&quot;: 39.78712871157092,
+    &quot;league_size&quot;: 10
   },
-  &quot;additions&quot;: []
-}</pre></details>
-                </section>
-
+  &quot;hindsight&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;hindsight_opportunity&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;actual_points&quot;: 148.2666666666666,
+    &quot;optimal_points&quot;: 151.36666666666662,
+    &quot;regret_points&quot;: 3.1000000000000227,
+    &quot;capture_pct&quot;: 97.951992953094
+  }
+}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 24.96 + 33.79 + 15.00 + 7.50 = 81.26 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>71.32 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>24.96</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>96.56 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>33.79</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 68.76–88.76 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 81.3–81.3.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 71.3183617285375,
+  &quot;assessed_score&quot;: 71.3183617285375,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 24.961426604988123,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 71.3183617285375,
+    &quot;max_score_pct&quot;: 71.3183617285375
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><details><summary>E · Lineup execution: inputs and evidence</summary><p>Supported optimum Unavailable − actual Unavailable; supported regret Unavailable; denominator Unavailable; continuous competition credit Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 96.55555555555553,
+  &quot;assessed_score&quot;: 96.55555555555553,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 33.79444444444444,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 96.55555555555553,
+    &quot;max_score_pct&quot;: 96.55555555555553
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><details><summary>J · Expectation-aware judgment: inputs and evidence</summary><p>Crowd points Unavailable; actual-minus-crowd edge Unavailable; confidence contrast Unavailable. Hindsight regret is assessed separately in execution.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 20,
+  &quot;contribution_points&quot;: 15.0,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 50.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 0,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><details><summary>S · Roster stewardship: inputs and evidence</summary><p>Acquisition before optimum Unavailable; after Unavailable; signed frontier gain Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 10,
+  &quot;contribution_points&quot;: 7.5,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 0.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 0,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><p>Separate team performance: 71.3 / 100.</p><h4>Full hindsight opportunity</h4><p>151.4 optimal − 148.3 actual = 3.1 unused points. Capture: 98.0%.</p><details><summary>Exact period observations, lineups and source weeks</summary><pre>{
+  &quot;balanced_assessment&quot;: {
+    &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+    &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;assessment_status&quot;: &quot;provisional&quot;,
+    &quot;comparability_note&quot;: &quot;Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.&quot;,
+    &quot;score_pct&quot;: 81.25587104943256,
+    &quot;letter&quot;: &quot;B&quot;,
+    &quot;component_scores&quot;: {
+      &quot;production&quot;: {
+        &quot;score_pct&quot;: 71.3183617285375,
+        &quot;assessed_score&quot;: 71.3183617285375,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 24.961426604988123,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 71.3183617285375,
+          &quot;max_score_pct&quot;: 71.3183617285375
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 1,
+          &quot;total_weeks&quot;: 1
+        }
+      },
+      &quot;lineup_execution&quot;: {
+        &quot;score_pct&quot;: 96.55555555555553,
+        &quot;assessed_score&quot;: 96.55555555555553,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 33.79444444444444,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 96.55555555555553,
+          &quot;max_score_pct&quot;: 96.55555555555553
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 1,
+          &quot;total_weeks&quot;: 1
+        }
+      },
+      &quot;expectation_judgment&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 20,
+        &quot;contribution_points&quot;: 15.0,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 50.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 0,
+          &quot;total_weeks&quot;: 1
+        }
+      },
+      &quot;roster_stewardship&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 10,
+        &quot;contribution_points&quot;: 7.5,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 0.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 0,
+          &quot;total_weeks&quot;: 1
+        }
+      }
+    },
+    &quot;covered_weeks&quot;: 1,
+    &quot;period_story&quot;: {
+      &quot;covered_weeks&quot;: 1,
+      &quot;weekly_min&quot;: 81.25587104943256,
+      &quot;weekly_max&quot;: 81.25587104943256,
+      &quot;half_comparison&quot;: null
+    },
+    &quot;total_weeks&quot;: 1,
+    &quot;evidence_weight_pct&quot;: 70.0,
+    &quot;sensitivity_range&quot;: {
+      &quot;min_score_pct&quot;: 68.75587104943256,
+      &quot;max_score_pct&quot;: 88.75587104943256
+    },
+    &quot;observations&quot;: [
+      {
+        &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+        &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;assessment_status&quot;: &quot;provisional&quot;,
+        &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
+        &quot;score_pct&quot;: 81.25587104943256,
+        &quot;letter&quot;: &quot;B&quot;,
+        &quot;component_scores&quot;: {
+          &quot;production&quot;: {
+            &quot;score_pct&quot;: 71.3183617285375,
+            &quot;assessed_score&quot;: 71.3183617285375,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 24.961426604988123,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 71.3183617285375,
+              &quot;max_score_pct&quot;: 71.3183617285375
+            },
+            &quot;raw&quot;: {
+              &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+              &quot;metric&quot;: &quot;competitive_performance&quot;,
+              &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+              &quot;year&quot;: 2026,
+              &quot;week&quot;: 1,
+              &quot;status&quot;: &quot;available&quot;,
+              &quot;score_pct&quot;: 71.3183617285375,
+              &quot;letter&quot;: &quot;B&quot;,
+              &quot;actual_points&quot;: 148.2666666666666,
+              &quot;positional_score&quot;: 77.77777777777777,
+              &quot;scoring_score&quot;: 64.85894567929722,
+              &quot;all_play_pct&quot;: 77.77777777777777,
+              &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+              &quot;scoring_z&quot;: 0.6128447596733001,
+              &quot;league_mean&quot;: 123.88333333333325,
+              &quot;league_sd&quot;: 39.78712871157092,
+              &quot;league_size&quot;: 10
+            }
+          },
+          &quot;lineup_execution&quot;: {
+            &quot;score_pct&quot;: 96.55555555555553,
+            &quot;assessed_score&quot;: 96.55555555555553,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 33.79444444444444,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 96.55555555555553,
+              &quot;max_score_pct&quot;: 96.55555555555553
+            },
+            &quot;raw&quot;: {
+              &quot;actual_points&quot;: 148.2666666666666,
+              &quot;supported_optimal_points&quot;: 151.36666666666662,
+              &quot;regret_points&quot;: 3.1000000000000227,
+              &quot;occupied_slots&quot;: 9,
+              &quot;denominator_points&quot;: 90.0,
+              &quot;decision_slot_types&quot;: [
+                &quot;QB&quot;,
+                &quot;RB&quot;,
+                &quot;TE&quot;,
+                &quot;W/R/T&quot;,
+                &quot;WR&quot;
+              ],
+              &quot;decision_slot_count&quot;: 7,
+              &quot;decision_optimal_points&quot;: 134.36666666666662,
+              &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+              &quot;has_alternative&quot;: true,
+              &quot;competition_credit&quot;: 1.0,
+              &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+              &quot;excluded_candidates&quot;: [],
+              &quot;supported_player_count&quot;: 16,
+              &quot;roster_player_count&quot;: 16,
+              &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+            }
+          },
+          &quot;expectation_judgment&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 20,
+            &quot;contribution_points&quot;: 15.0,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 50,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 50.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+              &quot;covered_players&quot;: 0,
+              &quot;eligible_players&quot;: 16
+            }
+          },
+          &quot;roster_stewardship&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 10,
+            &quot;contribution_points&quot;: 7.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;acquisition&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+                  &quot;source_ledger_rows&quot;: 44,
+                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;observed_team_week_events&quot;: 0,
+                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                }
+              },
+              &quot;waiver&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                }
+              }
+            }
+          }
+        },
+        &quot;evidence_weight_pct&quot;: 70.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 68.75587104943256,
+          &quot;max_score_pct&quot;: 88.75587104943256
+        }
+      }
+    ],
+    &quot;weeks&quot;: [
+      {
+        &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+        &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;assessment_status&quot;: &quot;provisional&quot;,
+        &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
+        &quot;score_pct&quot;: 81.25587104943256,
+        &quot;letter&quot;: &quot;B&quot;,
+        &quot;component_scores&quot;: {
+          &quot;production&quot;: {
+            &quot;score_pct&quot;: 71.3183617285375,
+            &quot;assessed_score&quot;: 71.3183617285375,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 24.961426604988123,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 71.3183617285375,
+              &quot;max_score_pct&quot;: 71.3183617285375
+            },
+            &quot;raw&quot;: {
+              &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+              &quot;metric&quot;: &quot;competitive_performance&quot;,
+              &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+              &quot;year&quot;: 2026,
+              &quot;week&quot;: 1,
+              &quot;status&quot;: &quot;available&quot;,
+              &quot;score_pct&quot;: 71.3183617285375,
+              &quot;letter&quot;: &quot;B&quot;,
+              &quot;actual_points&quot;: 148.2666666666666,
+              &quot;positional_score&quot;: 77.77777777777777,
+              &quot;scoring_score&quot;: 64.85894567929722,
+              &quot;all_play_pct&quot;: 77.77777777777777,
+              &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+              &quot;scoring_z&quot;: 0.6128447596733001,
+              &quot;league_mean&quot;: 123.88333333333325,
+              &quot;league_sd&quot;: 39.78712871157092,
+              &quot;league_size&quot;: 10
+            }
+          },
+          &quot;lineup_execution&quot;: {
+            &quot;score_pct&quot;: 96.55555555555553,
+            &quot;assessed_score&quot;: 96.55555555555553,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 33.79444444444444,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 96.55555555555553,
+              &quot;max_score_pct&quot;: 96.55555555555553
+            },
+            &quot;raw&quot;: {
+              &quot;actual_points&quot;: 148.2666666666666,
+              &quot;supported_optimal_points&quot;: 151.36666666666662,
+              &quot;regret_points&quot;: 3.1000000000000227,
+              &quot;occupied_slots&quot;: 9,
+              &quot;denominator_points&quot;: 90.0,
+              &quot;decision_slot_types&quot;: [
+                &quot;QB&quot;,
+                &quot;RB&quot;,
+                &quot;TE&quot;,
+                &quot;W/R/T&quot;,
+                &quot;WR&quot;
+              ],
+              &quot;decision_slot_count&quot;: 7,
+              &quot;decision_optimal_points&quot;: 134.36666666666662,
+              &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+              &quot;has_alternative&quot;: true,
+              &quot;competition_credit&quot;: 1.0,
+              &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+              &quot;excluded_candidates&quot;: [],
+              &quot;supported_player_count&quot;: 16,
+              &quot;roster_player_count&quot;: 16,
+              &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+            }
+          },
+          &quot;expectation_judgment&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 20,
+            &quot;contribution_points&quot;: 15.0,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 50,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 50.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+              &quot;covered_players&quot;: 0,
+              &quot;eligible_players&quot;: 16
+            }
+          },
+          &quot;roster_stewardship&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 10,
+            &quot;contribution_points&quot;: 7.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;acquisition&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+                  &quot;source_ledger_rows&quot;: 44,
+                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;observed_team_week_events&quot;: 0,
+                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                }
+              },
+              &quot;waiver&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                }
+              }
+            }
+          }
+        },
+        &quot;evidence_weight_pct&quot;: 70.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 68.75587104943256,
+          &quot;max_score_pct&quot;: 88.75587104943256
+        }
+      }
+    ]
+  },
+  &quot;performance&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;competitive_performance&quot;,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;score_pct&quot;: 71.3183617285375,
+    &quot;letter&quot;: &quot;B&quot;,
+    &quot;covered_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1,
+    &quot;positional_score&quot;: 77.77777777777777,
+    &quot;scoring_score&quot;: 64.85894567929722,
+    &quot;observations&quot;: [
+      {
+        &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+        &quot;metric&quot;: &quot;competitive_performance&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;score_pct&quot;: 71.3183617285375,
+        &quot;letter&quot;: &quot;B&quot;,
+        &quot;actual_points&quot;: 148.2666666666666,
+        &quot;positional_score&quot;: 77.77777777777777,
+        &quot;scoring_score&quot;: 64.85894567929722,
+        &quot;all_play_pct&quot;: 77.77777777777777,
+        &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+        &quot;scoring_z&quot;: 0.6128447596733001,
+        &quot;league_mean&quot;: 123.88333333333325,
+        &quot;league_sd&quot;: 39.78712871157092,
+        &quot;league_size&quot;: 10
+      }
+    ],
+    &quot;weeks&quot;: [
+      {
+        &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+        &quot;metric&quot;: &quot;competitive_performance&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;score_pct&quot;: 71.3183617285375,
+        &quot;letter&quot;: &quot;B&quot;,
+        &quot;actual_points&quot;: 148.2666666666666,
+        &quot;positional_score&quot;: 77.77777777777777,
+        &quot;scoring_score&quot;: 64.85894567929722,
+        &quot;all_play_pct&quot;: 77.77777777777777,
+        &quot;scoring_magnitude_pct&quot;: 64.85894567929722,
+        &quot;scoring_z&quot;: 0.6128447596733001,
+        &quot;league_mean&quot;: 123.88333333333325,
+        &quot;league_sd&quot;: 39.78712871157092,
+        &quot;league_size&quot;: 10
+      }
+    ]
+  },
+  &quot;hindsight&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;hindsight_opportunity&quot;,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;actual_points&quot;: 148.2666666666666,
+    &quot;optimal_points&quot;: 151.36666666666662,
+    &quot;regret_points&quot;: 3.1000000000000227,
+    &quot;capture_pct&quot;: 97.951992953094,
+    &quot;covered_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1,
+    &quot;observations&quot;: [
+      {
+        &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+        &quot;metric&quot;: &quot;hindsight_opportunity&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.7&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;actual_points&quot;: 148.2666666666666,
+        &quot;optimal_points&quot;: 151.36666666666662,
+        &quot;regret_points&quot;: 3.1000000000000227,
+        &quot;capture_pct&quot;: 97.951992953094
+      }
+    ]
+  }
+}</pre></details></section></section><section class='section' id='team-2'><h2>Two Buck Luck</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 16.61 + 25.99 + 15.00 + 7.50 = 65.10 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>47.47 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>16.61</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>74.26 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>25.99</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 52.60–72.60 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Available dated transaction feed ends 2026-09-16 UTC; ledger completeness is unverified.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 44.44; scoring magnitude 50.49.</p><pre>{
+  &quot;score_pct&quot;: 47.4683156375429,
+  &quot;assessed_score&quot;: 47.4683156375429,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 16.613910473140017,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 0,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 47.4683156375429,
+    &quot;max_score_pct&quot;: 47.4683156375429
+  },
+  &quot;raw&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;competitive_performance&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;score_pct&quot;: 47.4683156375429,
+    &quot;letter&quot;: &quot;C&quot;,
+    &quot;actual_points&quot;: 124.66666666666663,
+    &quot;positional_score&quot;: 44.44444444444444,
+    &quot;scoring_score&quot;: 50.49218683064135,
+    &quot;all_play_pct&quot;: 44.44444444444444,
+    &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+    &quot;scoring_z&quot;: 0.019688109162437864,
+    &quot;league_mean&quot;: 123.88333333333325,
+    &quot;league_sd&quot;: 39.78712871157092,
+    &quot;league_size&quot;: 10
+  }
+}</pre></details><details><summary>E · Lineup execution: inputs and evidence</summary><p>Supported optimum 147.83 − actual 124.67; supported regret 23.17; denominator 90.00; continuous competition credit 1.00.</p><pre>{
+  &quot;score_pct&quot;: 74.2592592592593,
+  &quot;assessed_score&quot;: 74.2592592592593,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 25.99074074074075,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 0,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 74.2592592592593,
+    &quot;max_score_pct&quot;: 74.2592592592593
+  },
+  &quot;raw&quot;: {
+    &quot;actual_points&quot;: 124.66666666666663,
+    &quot;supported_optimal_points&quot;: 147.83333333333326,
+    &quot;regret_points&quot;: 23.16666666666663,
+    &quot;occupied_slots&quot;: 9,
+    &quot;denominator_points&quot;: 90.0,
+    &quot;decision_slot_types&quot;: [
+      &quot;QB&quot;,
+      &quot;RB&quot;,
+      &quot;TE&quot;,
+      &quot;W/R/T&quot;,
+      &quot;WR&quot;
+    ],
+    &quot;decision_slot_count&quot;: 7,
+    &quot;decision_optimal_points&quot;: 120.83333333333327,
+    &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+    &quot;has_alternative&quot;: true,
+    &quot;competition_credit&quot;: 1.0,
+    &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+    &quot;excluded_candidates&quot;: [
+      {
+        &quot;player_key&quot;: &quot;470.p.31856&quot;,
+        &quot;name&quot;: &quot;Josh Jacobs&quot;,
+        &quot;reason&quot;: &quot;reserve, known bye, or unverified recorded participation&quot;
+      }
+    ],
+    &quot;supported_player_count&quot;: 15,
+    &quot;roster_player_count&quot;: 16,
+    &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+  }
+}</pre></details><details><summary>J · Expectation-aware judgment: inputs and evidence</summary><p>Crowd points Unavailable; actual-minus-crowd edge Unavailable; confidence contrast Unavailable. Hindsight regret is assessed separately in execution.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 20,
+  &quot;contribution_points&quot;: 15.0,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 50,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 50.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+    &quot;covered_players&quot;: 0,
+    &quot;eligible_players&quot;: 15
+  }
+}</pre></details><details><summary>S · Roster stewardship: inputs and evidence</summary><p>Acquisition before optimum Unavailable; after Unavailable; signed frontier gain Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 10,
+  &quot;contribution_points&quot;: 7.5,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;reference_range&quot;: {
+    &quot;min_score_pct&quot;: 0,
+    &quot;max_score_pct&quot;: 100
+  },
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 0.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;acquisition&quot;: {
+      &quot;score_pct&quot;: 75.0,
+      &quot;assessed_score&quot;: null,
+      &quot;weight_pct&quot;: 50,
+      &quot;contribution_points&quot;: 37.5,
+      &quot;evidence_coverage&quot;: 0.0,
+      &quot;status&quot;: &quot;unavailable&quot;,
+      &quot;reference_anchor&quot;: 75.0,
+      &quot;reference_range&quot;: {
+        &quot;min_score_pct&quot;: 0,
+        &quot;max_score_pct&quot;: 100
+      },
+      &quot;sensitivity_range&quot;: {
+        &quot;min_score_pct&quot;: 0.0,
+        &quot;max_score_pct&quot;: 100.0
+      },
+      &quot;raw&quot;: {
+        &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+        &quot;source_ledger_rows&quot;: 44,
+        &quot;source_latest_timestamp&quot;: 1789549726.0,
+        &quot;observed_team_week_events&quot;: 0,
+        &quot;transaction_completeness&quot;: &quot;unverified&quot;
+      }
+    },
+    &quot;waiver&quot;: {
+      &quot;score_pct&quot;: 75.0,
+      &quot;assessed_score&quot;: null,
+      &quot;weight_pct&quot;: 50,
+      &quot;contribution_points&quot;: 37.5,
+      &quot;evidence_coverage&quot;: 0.0,
+      &quot;status&quot;: &quot;unavailable&quot;,
+      &quot;reference_anchor&quot;: 75.0,
+      &quot;reference_range&quot;: {
+        &quot;min_score_pct&quot;: 0,
+        &quot;max_score_pct&quot;: 100
+      },
+      &quot;sensitivity_range&quot;: {
+        &quot;min_score_pct&quot;: 0.0,
+        &quot;max_score_pct&quot;: 100.0
+      },
+      &quot;raw&quot;: {
+        &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+      }
+    }
+  }
+}</pre></details><p>Separate team performance: 47.5 / 100.</p><h4>Full hindsight opportunity</h4><p>147.8 optimal − 124.7 actual = 23.2 unused points. Capture: 84.3%.</p><details><summary>Exact period observations, lineups and source weeks</summary><pre>{
+  &quot;balanced_assessment&quot;: {
+    &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+    &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;assessment_status&quot;: &quot;provisional&quot;,
+    &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
+    &quot;score_pct&quot;: 65.10465121388077,
+    &quot;letter&quot;: &quot;C-&quot;,
+    &quot;component_scores&quot;: {
+      &quot;production&quot;: {
+        &quot;score_pct&quot;: 47.4683156375429,
+        &quot;assessed_score&quot;: 47.4683156375429,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 16.613910473140017,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 0,
+          &quot;max_score_pct&quot;: 100
+        },
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 47.4683156375429,
+          &quot;max_score_pct&quot;: 47.4683156375429
+        },
+        &quot;raw&quot;: {
+          &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+          &quot;metric&quot;: &quot;competitive_performance&quot;,
+          &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+          &quot;year&quot;: 2026,
+          &quot;week&quot;: 1,
+          &quot;status&quot;: &quot;available&quot;,
+          &quot;score_pct&quot;: 47.4683156375429,
+          &quot;letter&quot;: &quot;C&quot;,
+          &quot;actual_points&quot;: 124.66666666666663,
+          &quot;positional_score&quot;: 44.44444444444444,
+          &quot;scoring_score&quot;: 50.49218683064135,
+          &quot;all_play_pct&quot;: 44.44444444444444,
+          &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+          &quot;scoring_z&quot;: 0.019688109162437864,
+          &quot;league_mean&quot;: 123.88333333333325,
+          &quot;league_sd&quot;: 39.78712871157092,
+          &quot;league_size&quot;: 10
+        }
+      },
+      &quot;lineup_execution&quot;: {
+        &quot;score_pct&quot;: 74.2592592592593,
+        &quot;assessed_score&quot;: 74.2592592592593,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 25.99074074074075,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 0,
+          &quot;max_score_pct&quot;: 100
+        },
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 74.2592592592593,
+          &quot;max_score_pct&quot;: 74.2592592592593
+        },
+        &quot;raw&quot;: {
+          &quot;actual_points&quot;: 124.66666666666663,
+          &quot;supported_optimal_points&quot;: 147.83333333333326,
+          &quot;regret_points&quot;: 23.16666666666663,
+          &quot;occupied_slots&quot;: 9,
+          &quot;denominator_points&quot;: 90.0,
+          &quot;decision_slot_types&quot;: [
+            &quot;QB&quot;,
+            &quot;RB&quot;,
+            &quot;TE&quot;,
+            &quot;W/R/T&quot;,
+            &quot;WR&quot;
+          ],
+          &quot;decision_slot_count&quot;: 7,
+          &quot;decision_optimal_points&quot;: 120.83333333333327,
+          &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+          &quot;has_alternative&quot;: true,
+          &quot;competition_credit&quot;: 1.0,
+          &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+          &quot;excluded_candidates&quot;: [
+            {
+              &quot;player_key&quot;: &quot;470.p.31856&quot;,
+              &quot;name&quot;: &quot;Josh Jacobs&quot;,
+              &quot;reason&quot;: &quot;reserve, known bye, or unverified recorded participation&quot;
+            }
+          ],
+          &quot;supported_player_count&quot;: 15,
+          &quot;roster_player_count&quot;: 16,
+          &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+        }
+      },
+      &quot;expectation_judgment&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 20,
+        &quot;contribution_points&quot;: 15.0,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 50,
+          &quot;max_score_pct&quot;: 100
+        },
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 50.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+          &quot;covered_players&quot;: 0,
+          &quot;eligible_players&quot;: 15
+        }
+      },
+      &quot;roster_stewardship&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 10,
+        &quot;contribution_points&quot;: 7.5,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;reference_range&quot;: {
+          &quot;min_score_pct&quot;: 0,
+          &quot;max_score_pct&quot;: 100
+        },
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 0.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;acquisition&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 50,
+            &quot;contribution_points&quot;: 37.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+              &quot;source_ledger_rows&quot;: 44,
+              &quot;source_latest_timestamp&quot;: 1789549726.0,
+              &quot;observed_team_week_events&quot;: 0,
+              &quot;transaction_completeness&quot;: &quot;unverified&quot;
+            }
+          },
+          &quot;waiver&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 50,
+            &quot;contribution_points&quot;: 37.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+            }
+          }
+        }
+      }
+    },
+    &quot;evidence_weight_pct&quot;: 70.0,
+    &quot;sensitivity_range&quot;: {
+      &quot;min_score_pct&quot;: 52.60465121388077,
+      &quot;max_score_pct&quot;: 72.60465121388077
+    }
+  },
+  &quot;performance&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;competitive_performance&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;score_pct&quot;: 47.4683156375429,
+    &quot;letter&quot;: &quot;C&quot;,
+    &quot;actual_points&quot;: 124.66666666666663,
+    &quot;positional_score&quot;: 44.44444444444444,
+    &quot;scoring_score&quot;: 50.49218683064135,
+    &quot;all_play_pct&quot;: 44.44444444444444,
+    &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+    &quot;scoring_z&quot;: 0.019688109162437864,
+    &quot;league_mean&quot;: 123.88333333333325,
+    &quot;league_sd&quot;: 39.78712871157092,
+    &quot;league_size&quot;: 10
+  },
+  &quot;hindsight&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;hindsight_opportunity&quot;,
+    &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+    &quot;year&quot;: 2026,
+    &quot;week&quot;: 1,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;actual_points&quot;: 124.66666666666663,
+    &quot;optimal_points&quot;: 147.83333333333326,
+    &quot;regret_points&quot;: 23.16666666666663,
+    &quot;capture_pct&quot;: 84.32919954904173
+  }
+}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 16.61 + 25.99 + 15.00 + 7.50 = 65.10 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>47.47 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>16.61</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>74.26 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>25.99</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 52.60–72.60 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 65.1–65.1.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 47.4683156375429,
+  &quot;assessed_score&quot;: 47.4683156375429,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 16.613910473140017,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 47.4683156375429,
+    &quot;max_score_pct&quot;: 47.4683156375429
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><details><summary>E · Lineup execution: inputs and evidence</summary><p>Supported optimum Unavailable − actual Unavailable; supported regret Unavailable; denominator Unavailable; continuous competition credit Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 74.2592592592593,
+  &quot;assessed_score&quot;: 74.2592592592593,
+  &quot;weight_pct&quot;: 35,
+  &quot;contribution_points&quot;: 25.99074074074075,
+  &quot;evidence_coverage&quot;: 1.0,
+  &quot;status&quot;: &quot;assessed&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 74.2592592592593,
+    &quot;max_score_pct&quot;: 74.2592592592593
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><details><summary>J · Expectation-aware judgment: inputs and evidence</summary><p>Crowd points Unavailable; actual-minus-crowd edge Unavailable; confidence contrast Unavailable. Hindsight regret is assessed separately in execution.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 20,
+  &quot;contribution_points&quot;: 15.0,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 50.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 0,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><details><summary>S · Roster stewardship: inputs and evidence</summary><p>Acquisition before optimum Unavailable; after Unavailable; signed frontier gain Unavailable.</p><pre>{
+  &quot;score_pct&quot;: 75.0,
+  &quot;assessed_score&quot;: null,
+  &quot;weight_pct&quot;: 10,
+  &quot;contribution_points&quot;: 7.5,
+  &quot;evidence_coverage&quot;: 0.0,
+  &quot;status&quot;: &quot;unavailable&quot;,
+  &quot;reference_anchor&quot;: 75.0,
+  &quot;sensitivity_range&quot;: {
+    &quot;min_score_pct&quot;: 0.0,
+    &quot;max_score_pct&quot;: 100.0
+  },
+  &quot;raw&quot;: {
+    &quot;assessed_weeks&quot;: 0,
+    &quot;total_weeks&quot;: 1
+  }
+}</pre></details><p>Separate team performance: 47.5 / 100.</p><h4>Full hindsight opportunity</h4><p>147.8 optimal − 124.7 actual = 23.2 unused points. Capture: 84.3%.</p><details><summary>Exact period observations, lineups and source weeks</summary><pre>{
+  &quot;balanced_assessment&quot;: {
+    &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+    &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;assessment_status&quot;: &quot;provisional&quot;,
+    &quot;comparability_note&quot;: &quot;Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.&quot;,
+    &quot;score_pct&quot;: 65.10465121388077,
+    &quot;letter&quot;: &quot;C-&quot;,
+    &quot;component_scores&quot;: {
+      &quot;production&quot;: {
+        &quot;score_pct&quot;: 47.4683156375429,
+        &quot;assessed_score&quot;: 47.4683156375429,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 16.613910473140017,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 47.4683156375429,
+          &quot;max_score_pct&quot;: 47.4683156375429
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 1,
+          &quot;total_weeks&quot;: 1
+        }
+      },
+      &quot;lineup_execution&quot;: {
+        &quot;score_pct&quot;: 74.2592592592593,
+        &quot;assessed_score&quot;: 74.2592592592593,
+        &quot;weight_pct&quot;: 35,
+        &quot;contribution_points&quot;: 25.99074074074075,
+        &quot;evidence_coverage&quot;: 1.0,
+        &quot;status&quot;: &quot;assessed&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 74.2592592592593,
+          &quot;max_score_pct&quot;: 74.2592592592593
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 1,
+          &quot;total_weeks&quot;: 1
+        }
+      },
+      &quot;expectation_judgment&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 20,
+        &quot;contribution_points&quot;: 15.0,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 50.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 0,
+          &quot;total_weeks&quot;: 1
+        }
+      },
+      &quot;roster_stewardship&quot;: {
+        &quot;score_pct&quot;: 75.0,
+        &quot;assessed_score&quot;: null,
+        &quot;weight_pct&quot;: 10,
+        &quot;contribution_points&quot;: 7.5,
+        &quot;evidence_coverage&quot;: 0.0,
+        &quot;status&quot;: &quot;unavailable&quot;,
+        &quot;reference_anchor&quot;: 75.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 0.0,
+          &quot;max_score_pct&quot;: 100.0
+        },
+        &quot;raw&quot;: {
+          &quot;assessed_weeks&quot;: 0,
+          &quot;total_weeks&quot;: 1
+        }
+      }
+    },
+    &quot;covered_weeks&quot;: 1,
+    &quot;period_story&quot;: {
+      &quot;covered_weeks&quot;: 1,
+      &quot;weekly_min&quot;: 65.10465121388077,
+      &quot;weekly_max&quot;: 65.10465121388077,
+      &quot;half_comparison&quot;: null
+    },
+    &quot;total_weeks&quot;: 1,
+    &quot;evidence_weight_pct&quot;: 70.0,
+    &quot;sensitivity_range&quot;: {
+      &quot;min_score_pct&quot;: 52.60465121388077,
+      &quot;max_score_pct&quot;: 72.60465121388077
+    },
+    &quot;observations&quot;: [
+      {
+        &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+        &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;assessment_status&quot;: &quot;provisional&quot;,
+        &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
+        &quot;score_pct&quot;: 65.10465121388077,
+        &quot;letter&quot;: &quot;C-&quot;,
+        &quot;component_scores&quot;: {
+          &quot;production&quot;: {
+            &quot;score_pct&quot;: 47.4683156375429,
+            &quot;assessed_score&quot;: 47.4683156375429,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 16.613910473140017,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 47.4683156375429,
+              &quot;max_score_pct&quot;: 47.4683156375429
+            },
+            &quot;raw&quot;: {
+              &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+              &quot;metric&quot;: &quot;competitive_performance&quot;,
+              &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+              &quot;year&quot;: 2026,
+              &quot;week&quot;: 1,
+              &quot;status&quot;: &quot;available&quot;,
+              &quot;score_pct&quot;: 47.4683156375429,
+              &quot;letter&quot;: &quot;C&quot;,
+              &quot;actual_points&quot;: 124.66666666666663,
+              &quot;positional_score&quot;: 44.44444444444444,
+              &quot;scoring_score&quot;: 50.49218683064135,
+              &quot;all_play_pct&quot;: 44.44444444444444,
+              &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+              &quot;scoring_z&quot;: 0.019688109162437864,
+              &quot;league_mean&quot;: 123.88333333333325,
+              &quot;league_sd&quot;: 39.78712871157092,
+              &quot;league_size&quot;: 10
+            }
+          },
+          &quot;lineup_execution&quot;: {
+            &quot;score_pct&quot;: 74.2592592592593,
+            &quot;assessed_score&quot;: 74.2592592592593,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 25.99074074074075,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 74.2592592592593,
+              &quot;max_score_pct&quot;: 74.2592592592593
+            },
+            &quot;raw&quot;: {
+              &quot;actual_points&quot;: 124.66666666666663,
+              &quot;supported_optimal_points&quot;: 147.83333333333326,
+              &quot;regret_points&quot;: 23.16666666666663,
+              &quot;occupied_slots&quot;: 9,
+              &quot;denominator_points&quot;: 90.0,
+              &quot;decision_slot_types&quot;: [
+                &quot;QB&quot;,
+                &quot;RB&quot;,
+                &quot;TE&quot;,
+                &quot;W/R/T&quot;,
+                &quot;WR&quot;
+              ],
+              &quot;decision_slot_count&quot;: 7,
+              &quot;decision_optimal_points&quot;: 120.83333333333327,
+              &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+              &quot;has_alternative&quot;: true,
+              &quot;competition_credit&quot;: 1.0,
+              &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+              &quot;excluded_candidates&quot;: [
+                {
+                  &quot;player_key&quot;: &quot;470.p.31856&quot;,
+                  &quot;name&quot;: &quot;Josh Jacobs&quot;,
+                  &quot;reason&quot;: &quot;reserve, known bye, or unverified recorded participation&quot;
+                }
+              ],
+              &quot;supported_player_count&quot;: 15,
+              &quot;roster_player_count&quot;: 16,
+              &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+            }
+          },
+          &quot;expectation_judgment&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 20,
+            &quot;contribution_points&quot;: 15.0,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 50,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 50.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+              &quot;covered_players&quot;: 0,
+              &quot;eligible_players&quot;: 15
+            }
+          },
+          &quot;roster_stewardship&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 10,
+            &quot;contribution_points&quot;: 7.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;acquisition&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+                  &quot;source_ledger_rows&quot;: 44,
+                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;observed_team_week_events&quot;: 0,
+                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                }
+              },
+              &quot;waiver&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                }
+              }
+            }
+          }
+        },
+        &quot;evidence_weight_pct&quot;: 70.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 52.60465121388077,
+          &quot;max_score_pct&quot;: 72.60465121388077
+        }
+      }
+    ],
+    &quot;weeks&quot;: [
+      {
+        &quot;model_version&quot;: &quot;balanced-manager-v3&quot;,
+        &quot;metric&quot;: &quot;balanced_manager_assessment&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;assessment_status&quot;: &quot;provisional&quot;,
+        &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
+        &quot;score_pct&quot;: 65.10465121388077,
+        &quot;letter&quot;: &quot;C-&quot;,
+        &quot;component_scores&quot;: {
+          &quot;production&quot;: {
+            &quot;score_pct&quot;: 47.4683156375429,
+            &quot;assessed_score&quot;: 47.4683156375429,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 16.613910473140017,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 47.4683156375429,
+              &quot;max_score_pct&quot;: 47.4683156375429
+            },
+            &quot;raw&quot;: {
+              &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+              &quot;metric&quot;: &quot;competitive_performance&quot;,
+              &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+              &quot;year&quot;: 2026,
+              &quot;week&quot;: 1,
+              &quot;status&quot;: &quot;available&quot;,
+              &quot;score_pct&quot;: 47.4683156375429,
+              &quot;letter&quot;: &quot;C&quot;,
+              &quot;actual_points&quot;: 124.66666666666663,
+              &quot;positional_score&quot;: 44.44444444444444,
+              &quot;scoring_score&quot;: 50.49218683064135,
+              &quot;all_play_pct&quot;: 44.44444444444444,
+              &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+              &quot;scoring_z&quot;: 0.019688109162437864,
+              &quot;league_mean&quot;: 123.88333333333325,
+              &quot;league_sd&quot;: 39.78712871157092,
+              &quot;league_size&quot;: 10
+            }
+          },
+          &quot;lineup_execution&quot;: {
+            &quot;score_pct&quot;: 74.2592592592593,
+            &quot;assessed_score&quot;: 74.2592592592593,
+            &quot;weight_pct&quot;: 35,
+            &quot;contribution_points&quot;: 25.99074074074075,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 74.2592592592593,
+              &quot;max_score_pct&quot;: 74.2592592592593
+            },
+            &quot;raw&quot;: {
+              &quot;actual_points&quot;: 124.66666666666663,
+              &quot;supported_optimal_points&quot;: 147.83333333333326,
+              &quot;regret_points&quot;: 23.16666666666663,
+              &quot;occupied_slots&quot;: 9,
+              &quot;denominator_points&quot;: 90.0,
+              &quot;decision_slot_types&quot;: [
+                &quot;QB&quot;,
+                &quot;RB&quot;,
+                &quot;TE&quot;,
+                &quot;W/R/T&quot;,
+                &quot;WR&quot;
+              ],
+              &quot;decision_slot_count&quot;: 7,
+              &quot;decision_optimal_points&quot;: 120.83333333333327,
+              &quot;denominator_basis&quot;: &quot;Fixed 10 points per occupied lineup slot; unrelated scoring cannot dilute regret, and one contested slot does not represent the entire lineup&quot;,
+              &quot;has_alternative&quot;: true,
+              &quot;competition_credit&quot;: 1.0,
+              &quot;competition_basis&quot;: &quot;Strongest feasible single-swap positive bench points / fixed 10-point reference; not summed or divided by actual performance&quot;,
+              &quot;excluded_candidates&quot;: [
+                {
+                  &quot;player_key&quot;: &quot;470.p.31856&quot;,
+                  &quot;name&quot;: &quot;Josh Jacobs&quot;,
+                  &quot;reason&quot;: &quot;reserve, known bye, or unverified recorded participation&quot;
+                }
+              ],
+              &quot;supported_player_count&quot;: 15,
+              &quot;roster_player_count&quot;: 16,
+              &quot;availability_limit&quot;: &quot;Recorded participation does not establish pre-lock actionability&quot;
+            }
+          },
+          &quot;expectation_judgment&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 20,
+            &quot;contribution_points&quot;: 15.0,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 50,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 50.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;reason&quot;: &quot;No valid strictly prior starting rates&quot;,
+              &quot;covered_players&quot;: 0,
+              &quot;eligible_players&quot;: 15
+            }
+          },
+          &quot;roster_stewardship&quot;: {
+            &quot;score_pct&quot;: 75.0,
+            &quot;assessed_score&quot;: null,
+            &quot;weight_pct&quot;: 10,
+            &quot;contribution_points&quot;: 7.5,
+            &quot;evidence_coverage&quot;: 0.0,
+            &quot;status&quot;: &quot;unavailable&quot;,
+            &quot;reference_anchor&quot;: 75.0,
+            &quot;reference_range&quot;: {
+              &quot;min_score_pct&quot;: 0,
+              &quot;max_score_pct&quot;: 100
+            },
+            &quot;sensitivity_range&quot;: {
+              &quot;min_score_pct&quot;: 0.0,
+              &quot;max_score_pct&quot;: 100.0
+            },
+            &quot;raw&quot;: {
+              &quot;acquisition&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
+                  &quot;source_ledger_rows&quot;: 44,
+                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;observed_team_week_events&quot;: 0,
+                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                }
+              },
+              &quot;waiver&quot;: {
+                &quot;score_pct&quot;: 75.0,
+                &quot;assessed_score&quot;: null,
+                &quot;weight_pct&quot;: 50,
+                &quot;contribution_points&quot;: 37.5,
+                &quot;evidence_coverage&quot;: 0.0,
+                &quot;status&quot;: &quot;unavailable&quot;,
+                &quot;reference_anchor&quot;: 75.0,
+                &quot;reference_range&quot;: {
+                  &quot;min_score_pct&quot;: 0,
+                  &quot;max_score_pct&quot;: 100
+                },
+                &quot;sensitivity_range&quot;: {
+                  &quot;min_score_pct&quot;: 0.0,
+                  &quot;max_score_pct&quot;: 100.0
+                },
+                &quot;raw&quot;: {
+                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                }
+              }
+            }
+          }
+        },
+        &quot;evidence_weight_pct&quot;: 70.0,
+        &quot;sensitivity_range&quot;: {
+          &quot;min_score_pct&quot;: 52.60465121388077,
+          &quot;max_score_pct&quot;: 72.60465121388077
+        }
+      }
+    ]
+  },
+  &quot;performance&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;competitive_performance&quot;,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;score_pct&quot;: 47.4683156375429,
+    &quot;letter&quot;: &quot;C&quot;,
+    &quot;covered_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1,
+    &quot;positional_score&quot;: 44.44444444444444,
+    &quot;scoring_score&quot;: 50.49218683064135,
+    &quot;observations&quot;: [
+      {
+        &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+        &quot;metric&quot;: &quot;competitive_performance&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;score_pct&quot;: 47.4683156375429,
+        &quot;letter&quot;: &quot;C&quot;,
+        &quot;actual_points&quot;: 124.66666666666663,
+        &quot;positional_score&quot;: 44.44444444444444,
+        &quot;scoring_score&quot;: 50.49218683064135,
+        &quot;all_play_pct&quot;: 44.44444444444444,
+        &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+        &quot;scoring_z&quot;: 0.019688109162437864,
+        &quot;league_mean&quot;: 123.88333333333325,
+        &quot;league_sd&quot;: 39.78712871157092,
+        &quot;league_size&quot;: 10
+      }
+    ],
+    &quot;weeks&quot;: [
+      {
+        &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+        &quot;metric&quot;: &quot;competitive_performance&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;score_pct&quot;: 47.4683156375429,
+        &quot;letter&quot;: &quot;C&quot;,
+        &quot;actual_points&quot;: 124.66666666666663,
+        &quot;positional_score&quot;: 44.44444444444444,
+        &quot;scoring_score&quot;: 50.49218683064135,
+        &quot;all_play_pct&quot;: 44.44444444444444,
+        &quot;scoring_magnitude_pct&quot;: 50.49218683064135,
+        &quot;scoring_z&quot;: 0.019688109162437864,
+        &quot;league_mean&quot;: 123.88333333333325,
+        &quot;league_sd&quot;: 39.78712871157092,
+        &quot;league_size&quot;: 10
+      }
+    ]
+  },
+  &quot;hindsight&quot;: {
+    &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+    &quot;metric&quot;: &quot;hindsight_opportunity&quot;,
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;actual_points&quot;: 124.66666666666663,
+    &quot;optimal_points&quot;: 147.83333333333326,
+    &quot;regret_points&quot;: 23.16666666666663,
+    &quot;capture_pct&quot;: 84.32919954904173,
+    &quot;covered_weeks&quot;: 1,
+    &quot;total_weeks&quot;: 1,
+    &quot;observations&quot;: [
+      {
+        &quot;model_version&quot;: &quot;separated-evidence-v1&quot;,
+        &quot;metric&quot;: &quot;hindsight_opportunity&quot;,
+        &quot;team_key&quot;: &quot;470.l.932349.t.9&quot;,
+        &quot;year&quot;: 2026,
+        &quot;week&quot;: 1,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;actual_points&quot;: 124.66666666666663,
+        &quot;optimal_points&quot;: 147.83333333333326,
+        &quot;regret_points&quot;: 23.16666666666663,
+        &quot;capture_pct&quot;: 84.32919954904173
+      }
+    ]
+  }
+}</pre></details></section></section>
     <section class="section" id="component-models">
-      <h2>How the four components work</h2>
-      <p class="muted">Scores are grade points out of 100—not probabilities. The worked examples above use the same rules below.</p>
-      <div class="math-model-list">
-        <div><h3>Lineup execution · 30%</h3>
-          <p>The share of the best legal lineup's points captured by the submitted starters.</p>
-          <div class="math-formula">100 × actual points ÷ best legal lineup points</div>
-        </div>
-        <div><h3>Roster &amp; waiver management · 20%</h3>
-          <p>First score opportunity capture, then adjust for moves and crowd-informed start/sit outcomes.</p>
-          <div class="math-formula">capture = 100 × actual ÷ (actual + qualified market gains)
-base = clamp(capture + 3 × move adjustment + win bonus, 45, 100)
-roster score = clamp(base + crowd adjustment, 45, 100)</div>
-          <p>Move adjustments are bounded to −6…+6; a move-assisted win adds 10 points. No qualifying upgrade means standing pat earns full opportunity capture.</p>
-          <details><summary>Which waiver alternatives qualify?</summary>
-            <p>The target must be a starter. Market gain compares the available player's points with the best same-position option already rostered, so existing bench value is not counted again as waiver value. At least three scoring samples, average points at least as high as the starter's, and a heuristic score ≥0.65 are required.</p>
-            <div class="math-formula">heuristic = min(1, 0.5 + min(gain, 20) ÷ 40)</div>
-            <p>This heuristic is not a probability. These are retrospective lineup alternatives, not recommendations to drop injured or benched players.</p>
-          </details>
-          <details><summary>Move adjustment rules, in evaluation order</summary>
-            <p>Surprise = completed points − prior scoring average. Sum the applicable per-addition adjustments and clamp the total to −6…+6.</p>
-            <div class="table-wrap"><table><thead><tr><th>Condition</th><th>Adjustment</th></tr></thead><tbody>
-              <tr><td>Benched bad stash; other bench addition</td><td>−0.5; otherwise 0</td></tr>
-              <tr><td>No prior sample: started, ≥12 points, positive lineup impact</td><td>+1.5</td></tr>
-              <tr><td>No prior sample: started, ≤3 points</td><td>−1; otherwise 0</td></tr>
-              <tr><td>Prior average &lt;8; ≥12 points; positive impact; surprise ≥6</td><td>+3.5</td></tr>
-              <tr><td>Prior average &lt;10; ≥10 points; surprise ≥4</td><td>+2.5</td></tr>
-              <tr><td>Prior average ≥10; score within 2 below average; positive impact</td><td>+1</td></tr>
-              <tr><td>≥3 prior samples; average ≥10; surprise ≤−6</td><td>−3</td></tr>
-              <tr><td>Prior average &lt;8; ≤4 points</td><td>−1.5</td></tr>
-              <tr><td>Remaining bad started addition; otherwise</td><td>−2; otherwise 0</td></tr>
-            </tbody></table></div>
-            <p>Rules apply in order. Lineup impact currently uses a broad roster alternative; positional precision is a limitation.</p>
-          </details>
-        </div>
-        <div><h3>All-play position · 25%</h3>
-          <p>Compare the team with every other league team. A tie earns half a win. A 50% all-play rate maps to 75 grade points.</p>
-          <div class="math-formula">clamp(25 + all-play win percentage, 45, 100)</div>
-        </div>
-        <div><h3>Scoring performance · 25%</h3>
-          <p>The week's league-average score maps to 75. Each percentage point above or below that average changes the component by 2.5 points, before clipping.</p>
-          <div class="math-formula">clamp(75 + 2.5 × (100 × actual ÷ weekly league average − 100), 45, 100)</div>
-        </div>
-      </div>
+      <h2>Overall Manager Assessment</h2>
+      <p>A retrospective rubric in grade points out of 100—not a probability or causal skill estimate.</p>
+      <div class="math-formula">Overall = .35 P + .35 E + .20 J + .10 S</div>
+      <p>Fixed shares: team performance 35%, lineup execution 35%, expectation-aware judgment 20%, roster stewardship 10%. Missing management evidence uses an explicit 75-point reference anchor at its unchanged share. Missing production makes the overall unavailable. Shares are never redistributed.</p>
+      <p>Season and historical assessments average compatible raw weekly overall observations and the same weekly component contributions, including declared anchors. They do not average letters or apply nonlinear formulas to averaged inputs. Sensitivity varies missing components over their stated ranges at fixed shares (judgment 50–100, other components 0–100); it is not a confidence interval.</p>
+      <h3>P · Relative team performance</h3>
+      <div class="math-formula">all-play = 100 × (wins + .5 × ties) / other league teams
+z = (points − weekly league mean) / weekly standard deviation
+scoring magnitude = 50 + 50 × tanh(z / 2)
+P = .5 × all-play + .5 × scoring magnitude</div>
+      <p>An equal-score cohort receives 50. This describes production; it is not the whole management assessment.</p>
+      <h3>E · Legal lineup execution</h3>
+      <div class="math-formula">R = max(0, supported optimal points O − actual points A)
+q = strongest feasible single-swap support: clip(positive bench points / 10, 0, 1)
+D = 10 × occupied lineup slot count
+E = clip(75 + 25 q − 100 R / D, 0, 100)</div>
+      <p>The denominator is a fixed per-slot scoring reference for the whole lineup: unrelated starter scoring cannot dilute a mistake, but a single contested position does not represent the entire lineup. Interchangeable decision slots, including FLEX/superflex chains, remain available as worked diagnostics. No alternatives means zero regret and no competition credit.</p>
+      <p>Retain actual starters, including zero/negative outcomes. Exclude reserves, known bench byes and hypothetical replacements without positive recorded participation. This is an evidence filter, not an inferred injury. No choice and a zero-point bench option both receive zero competition credit; playable scoring alternatives introduce continuous credit against a fixed 10-point reference, not an automatic 25-point jump. The credit is not divided by actual performance or summed across slots; stronger actual scoring cannot reduce it. Exact global legal regret remains the opportunity comparison. Participation does not prove availability at lineup lock.</p>
     </section>
     <section class="section" id="crowd-model">
-      <h2>Crowd decision model</h2>
-      <p>Alignment and quality answer different questions. Pearson correlation measures whether starter selection follows Yahoo starting popularity. It does not say whether those choices were good.</p>
-      <h3>1. Set expectations before looking at results</h3>
-      <p>Use the latest ownership and starting percentages strictly before the evaluated week. Missing rates are not zero. Exclude reserve slots, known byes and players with no recorded game. Correlation needs variation in both start/bench selection and starting rates.</p>
-      <h3>2. Choose legal reference alternatives</h3>
-      <p>Order starters by ascending start rate, then name. Match each with the highest-start-rate unused eligible bench player. Each bench player is used once. Flex accepts RB/WR/TE; fixed slots accept the starter's position. This deterministic reference is independent of points, but is not the globally optimal crowd lineup.</p>
-      <h3>3. Score the outcome of disagreement</h3>
-      <p>A pair is contrarian when the bench alternative's starting rate exceeds the starter's by at least 10 percentage points. Only those pairs enter the weighted outcome.</p>
-      <div class="math-formula">gap = (bench starting % − starter starting %) / 100
-weight = gap × max(starter ownership %, bench ownership %) / 100
-edge = actual starter points − bench alternative points
-weighted outcome = weight × tanh(edge / 8)
-crowd score = 75 + 25 × sum(weighted outcomes) / sum(weights)
-roster adjustment = 0.4 × (crowd score − 75)</div>
-      <p>Positive edges reward successful disagreement; negative edges penalize harmful disagreement. Ownership controls relative evidence weight; tanh bounds extreme outcomes. The adjustment is at most ±10 roster-component points, or ±2 final weekly grade points before clipping.</p>
-      <p>No covered contrarian choice means no adjustment—not a zero grade or zero roster-component weight. The lineup component still measures missed opportunities when following the crowd.</p>
-      <details><summary>Season aggregation</summary><p>Pool all covered weekly weights and outcomes through the report week, then use the same signed adjustment on the season transaction component. Do not average weekly crowd scores. Season alignment is the mean of defined weekly correlations; coverage is disclosed. Missing history is not reconstructed.</p></details>
+      <h2>J · Expectations and outcomes</h2>
+      <div class="math-formula">C = legal crowd lineup maximizing strictly prior expectation indices
+U = sum(.8 × prior starting percentage + .2 × prior ownership percentage)
+c = clip((U(C) − U(A)) / (100 × max(crowd replacement count, 1)), 0, 1)
+J_assessed = 75 + 25 c tanh((A − C) / 8)
+J_effective = 75 + starting-rate coverage × (J_assessed − 75)</div>
+      <p>Missing ownership falls back to starting percentage alone with explicit coverage. Unknown actual starters are held fixed in the crowd reference; unknown bench expectations are excluded, not assigned zero. Known decisions remain assessed at their declared partial coverage. No prior rates means unassessed judgment. Actual selections that maximize the expectation objective count as the reference, preventing tie-only credit. Crowd following receives 75 even if an unexpected bench breakout creates hindsight regret. Stronger prior expectation gaps scale both successful and costly dissent; near-tie preferences earn smaller adjustments. Ownership and starting rates are not scoring probabilities.</p>
+      <p>Judgment does not subtract hindsight regret a second time. Execution and judgment still share actual outcomes, so they are not independent evidence. Judgment's theoretical missing-evidence range is 50–100, symmetrically centered on 75; partial and historical point rankings require comparable coverage.</p>
+      <h3>S · Roster stewardship</h3>
+      <div class="math-formula">net acquisition = supported optimal after-roster points − supported optimal before-roster points
+acquisition score = 75 + 25 tanh(net acquisition / 8)
+effective acquisition = 75 + reliability × (acquisition score − 75)
+waiver score = 75 − 25 tanh(verified marginal gain × expectation index / 8)
+S = .5 × acquisition subscore + .5 × waiver subscore</div>
+      <p>Reconstruct successful transaction-linked adds and drops jointly, keeping occupied slots fixed. Missing drop/scoring evidence makes acquisition unassessed. Signed legal frontier value—not pickup bench points—is credited. Deployment is already assessed in execution/judgment, not a second acquisition bonus. Reliability is 0.5 without verified pre-lock feasibility, a rubric convention rather than a calibrated probability.</p>
+      <p>A confirmed feasible pre-lock waiver pool with no supported improvement earns 85 for justified patience. Unknown acquisition or waiver evidence uses its explicit 75 reference anchor; observed absence of moves does not prove complete inactivity. Snapshots alone cannot justify injury-drop recommendations or penalties.</p>
+    </section>
+    <section class="section" id="hindsight-model">
+      <h2>Full hindsight remains separate</h2>
+      <div class="math-formula">unused points = exact legal optimum − actual points
+capture = 100 × actual / optimum, when optimum &gt; 0</div>
+      <p>Full retrospective opportunity and the supported grading reference are different comparisons. Preserve both: do not hide raw missed points by excluding uncertain candidates from grading. Both respect full eligibility, unique players and signed scoring.</p>
     </section>
     <section class="section" id="model-limits">
-      <h2>Definitions &amp; limitations</h2>
-      <p><strong>clamp(x, 45, 100)</strong> keeps x between 45 and 100. <strong>tanh</strong> is a smooth curve bounded between −1 and +1. Weighted component contributions are summed to produce the final grade; displayed decimals may differ slightly because the calculation uses full precision.</p>
-      <p>This is retrospective outcome analysis, not a causal or predictive model. Historical injury designations are unavailable; bye-week metadata is available, but zero points alone never establish injury. Weekly ownership snapshots are not exact kickoff availability snapshots.</p>
-      <p>Component weights, scoring curves, clipping floors, move bonuses, the 10-point starting-rate gap, the 8-point outcome scale and the 0.4 crowd adjustment factor are modeling choices, not empirically calibrated probabilities.</p>
+      <h2>Definitions, provenance &amp; uncertainty</h2>
+      <p>Model: <code>balanced-manager-v3</code>. <strong>tanh</strong> smoothly bounds outcomes; <strong>clip</strong> limits values to the stated interval. Display rounding may differ from full precision. Weights, 75 anchors, eight-point scale, ten points per occupied lineup slot and ownership contrast are transparent rubric conventions—not coefficients fitted to a desired team's letter. Nominal shares do not promise equal empirical variation. Unknown waiver access remains unassessed, not proof of no moves or perfect stewardship.</p>
+      <p>Prior Yahoo snapshots are not exact kickoff snapshots. Unknown injury/bye/acquisition feasibility remains explicit. Evidence weight measures assessed coverage, not certainty or causality. Periods pool only compatible observations; legacy achievement ratings stay separate.</p>
+      <p>Overall letter cutoffs (unchanged from v2): A+ ≥93; A ≥88; A− ≥85; B+ ≥82; B ≥78; B− ≥75; C+ ≥72; C ≥68; C− ≥64; D+ ≥60; D ≥55; D− ≥50; F below50. Strong production P90 with E100/J75/S75 yields89 (A); weak production P20 with the same management yields64.5 (C−); strong P90 with E60/J55/S75 yields71 (C). These are explicit rubric anchors, not population percentiles; legacy achievement and production bands remain separate. Period letters describe the average weekly rubric, not career résumé standing; use the trajectory and component evidence to interpret them.</p>
     </section>
-    
-</main>
-</body>
-</html>
+    </main></body></html>
