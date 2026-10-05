@@ -4,10 +4,10 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 1,
-    "generated_at": "2026-10-04T08:20:57.427955",
+    "generated_at": "2026-10-04T19:44:11.189796",
     "page_title": "Bend & Snap Count vs Two Buck Luck matchup report",
     "matchup_id": "week-01-bend-snap-count-vs-two-buck-luck",
-    "output_dir": "/Users/csuchanec/dev/code/FantasyFootball/analysis/weekly_report/data/2026/matchups_week_01"
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_01"
   },
   "matchup": {
     "matchup_id": "week-01-bend-snap-count-vs-two-buck-luck",
@@ -416,11 +416,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -440,7 +440,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -689,11 +689,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -713,7 +713,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -872,11 +872,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -896,7 +896,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -1060,11 +1060,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -1084,7 +1084,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -1235,11 +1235,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "No verified acquisition counterfactual",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 0,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -1259,7 +1259,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -1390,11 +1390,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "No verified acquisition counterfactual",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 0,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -1414,7 +1414,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -1729,11 +1729,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -1753,7 +1753,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -1912,11 +1912,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -1936,7 +1936,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -2538,11 +2538,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -2562,7 +2562,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -2811,11 +2811,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -2835,7 +2835,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -2994,11 +2994,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -3018,7 +3018,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -3182,11 +3182,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -3206,7 +3206,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -3357,11 +3357,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "No verified acquisition counterfactual",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 0,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -3381,7 +3381,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -3512,11 +3512,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "No verified acquisition counterfactual",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 0,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -3536,7 +3536,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -3851,11 +3851,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -3875,7 +3875,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -4034,11 +4034,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -4058,7 +4058,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -5426,11 +5426,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -5450,7 +5450,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -5705,11 +5705,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -5729,7 +5729,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -5894,11 +5894,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -5918,7 +5918,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -6088,11 +6088,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -6112,7 +6112,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -6269,11 +6269,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "No verified acquisition counterfactual",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 0,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -6293,7 +6293,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -6424,11 +6424,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "No verified acquisition counterfactual",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 0,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -6448,7 +6448,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -6769,11 +6769,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -6793,7 +6793,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -6958,11 +6958,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -6982,7 +6982,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -7590,11 +7590,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -7614,7 +7614,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -7869,11 +7869,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -7893,7 +7893,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -8058,11 +8058,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -8082,7 +8082,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -8252,11 +8252,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -8276,7 +8276,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -8433,11 +8433,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "No verified acquisition counterfactual",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 0,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -8457,7 +8457,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -8588,11 +8588,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "No verified acquisition counterfactual",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 0,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -8612,7 +8612,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -8933,11 +8933,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -8957,7 +8957,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -9122,11 +9122,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -9146,7 +9146,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }

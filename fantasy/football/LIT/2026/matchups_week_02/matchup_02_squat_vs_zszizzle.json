@@ -4,10 +4,10 @@
     "report_type": "matchup_weekly",
     "year": 2026,
     "week": 2,
-    "generated_at": "2026-10-04T08:21:05.332486",
+    "generated_at": "2026-10-04T19:44:20.834543",
     "page_title": "Squat vs ZSzizzle matchup report",
     "matchup_id": "week-02-squat-vs-zszizzle",
-    "output_dir": "/Users/csuchanec/dev/code/FantasyFootball/analysis/weekly_report/data/2026/matchups_week_02"
+    "output_dir": "analysis/weekly_report/data/2026/matchups_week_02"
   },
   "matchup": {
     "matchup_id": "week-02-squat-vs-zszizzle",
@@ -749,11 +749,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Dropped player scoring/participation not verified",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 8,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -773,7 +773,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -1022,11 +1022,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -1046,7 +1046,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -1426,11 +1426,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Dropped player scoring/participation not verified",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 8,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -1450,7 +1450,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -1609,11 +1609,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -1633,7 +1633,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -2013,11 +2013,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Dropped player scoring/participation not verified",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 8,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -2037,7 +2037,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -2424,11 +2424,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Dropped player scoring/participation not verified",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 8,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -2448,7 +2448,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -2822,11 +2822,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Dropped player scoring/participation not verified",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 8,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -2846,7 +2846,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -2981,11 +2981,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Dropped player scoring/participation not verified",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 8,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -3005,7 +3005,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -3320,11 +3320,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -3344,7 +3344,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -3724,11 +3724,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Dropped player scoring/participation not verified",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 8,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -3748,7 +3748,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -3907,11 +3907,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -3931,7 +3931,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -4311,11 +4311,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Dropped player scoring/participation not verified",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 8,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -4335,7 +4335,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -5400,11 +5400,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Dropped player scoring/participation not verified",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 8,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -5424,7 +5424,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -5673,11 +5673,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -5697,7 +5697,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -6077,11 +6077,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Dropped player scoring/participation not verified",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 8,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -6101,7 +6101,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -6260,11 +6260,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -6284,7 +6284,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -6664,11 +6664,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Dropped player scoring/participation not verified",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 8,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -6688,7 +6688,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -7075,11 +7075,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Dropped player scoring/participation not verified",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 8,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -7099,7 +7099,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -7473,11 +7473,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Dropped player scoring/participation not verified",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 8,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -7497,7 +7497,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -7632,11 +7632,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Dropped player scoring/participation not verified",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 8,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -7656,7 +7656,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -7971,11 +7971,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -7995,7 +7995,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -8375,11 +8375,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Dropped player scoring/participation not verified",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 8,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -8399,7 +8399,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -8558,11 +8558,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -8582,7 +8582,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -8962,11 +8962,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Dropped player scoring/participation not verified",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "Dropped player recorded no games; historical pre-kickoff availability is not established",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 8,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -8986,7 +8986,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -10362,7 +10362,7 @@
                 "started_pct": 89.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 86.9
+                "average_pick": 87.8
               },
               {
                 "player_key": "470.p.30994",
@@ -10372,7 +10372,7 @@
                 "started_pct": 66.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 56.6
+                "average_pick": 56.8
               },
               {
                 "player_key": "470.p.31002",
@@ -10382,7 +10382,7 @@
                 "started_pct": 96.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 38.9
+                "average_pick": 38.4
               },
               {
                 "player_key": "470.p.31905",
@@ -10392,7 +10392,7 @@
                 "started_pct": 81.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 52.9
+                "average_pick": 52.6
               },
               {
                 "player_key": "470.p.33394",
@@ -10402,7 +10402,7 @@
                 "started_pct": 90.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 38.6
+                "average_pick": 38.7
               },
               {
                 "player_key": "470.p.34344",
@@ -10412,7 +10412,7 @@
                 "started_pct": 95.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 124.5
+                "average_pick": 124.6
               },
               {
                 "player_key": "470.p.40055",
@@ -10432,7 +10432,7 @@
                 "started_pct": 82.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 70.0
+                "average_pick": 71.0
               },
               {
                 "player_key": "470.p.42625",
@@ -10442,7 +10442,7 @@
                 "started_pct": 71.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 30.2
+                "average_pick": 30.4
               }
             ],
             "crowd_lineup": [
@@ -10454,7 +10454,7 @@
                 "started_pct": 89.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 86.9
+                "average_pick": 87.8
               },
               {
                 "player_key": "470.p.30994",
@@ -10464,7 +10464,7 @@
                 "started_pct": 66.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 56.6
+                "average_pick": 56.8
               },
               {
                 "player_key": "470.p.31002",
@@ -10474,7 +10474,7 @@
                 "started_pct": 96.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 38.9
+                "average_pick": 38.4
               },
               {
                 "player_key": "470.p.31905",
@@ -10484,7 +10484,7 @@
                 "started_pct": 81.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 52.9
+                "average_pick": 52.6
               },
               {
                 "player_key": "470.p.33394",
@@ -10494,7 +10494,7 @@
                 "started_pct": 90.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 38.6
+                "average_pick": 38.7
               },
               {
                 "player_key": "470.p.34344",
@@ -10504,7 +10504,7 @@
                 "started_pct": 95.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 124.5
+                "average_pick": 124.6
               },
               {
                 "player_key": "470.p.40055",
@@ -10524,7 +10524,7 @@
                 "started_pct": 82.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 70.0
+                "average_pick": 71.0
               },
               {
                 "player_key": "470.p.42625",
@@ -10534,7 +10534,7 @@
                 "started_pct": 71.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 30.2
+                "average_pick": 30.4
               }
             ],
             "expectation_weeks": [
@@ -10618,7 +10618,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -10628,7 +10628,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -10638,7 +10638,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -10648,7 +10648,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -10658,7 +10658,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -10668,7 +10668,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -10688,7 +10688,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -10698,7 +10698,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "crowd_lineup": [
@@ -10710,7 +10710,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -10720,7 +10720,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -10730,7 +10730,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -10740,7 +10740,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -10750,7 +10750,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -10760,7 +10760,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -10780,7 +10780,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -10790,7 +10790,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "expectation_weeks": [
@@ -10860,7 +10860,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -10870,7 +10870,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -10880,7 +10880,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -10890,7 +10890,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -10900,7 +10900,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -10910,7 +10910,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -10930,7 +10930,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -10940,7 +10940,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "crowd_lineup": [
@@ -10952,7 +10952,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -10962,7 +10962,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -10972,7 +10972,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -10982,7 +10982,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -10992,7 +10992,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -11002,7 +11002,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -11022,7 +11022,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -11032,7 +11032,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "expectation_weeks": [
@@ -11464,11 +11464,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -11488,7 +11488,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -11739,11 +11739,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -11763,7 +11763,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -12141,11 +12141,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -12165,7 +12165,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -12326,11 +12326,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -12350,7 +12350,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -12728,11 +12728,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -12752,7 +12752,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -13137,11 +13137,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -13161,7 +13161,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -13533,11 +13533,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "No verified acquisition counterfactual",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 0,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -13557,7 +13557,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -13609,7 +13609,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -13619,7 +13619,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -13629,7 +13629,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -13639,7 +13639,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -13649,7 +13649,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -13659,7 +13659,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -13679,7 +13679,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -13689,7 +13689,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "crowd_lineup": [
@@ -13701,7 +13701,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -13711,7 +13711,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -13721,7 +13721,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -13731,7 +13731,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -13741,7 +13741,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -13751,7 +13751,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -13771,7 +13771,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -13781,7 +13781,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "expectation_weeks": [
@@ -13822,7 +13822,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -13832,7 +13832,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -13842,7 +13842,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -13852,7 +13852,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -13862,7 +13862,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -13872,7 +13872,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -13892,7 +13892,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -13902,7 +13902,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "crowd_lineup": [
@@ -13914,7 +13914,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -13924,7 +13924,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -13934,7 +13934,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -13944,7 +13944,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -13954,7 +13954,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -13964,7 +13964,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -13984,7 +13984,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -13994,7 +13994,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "expectation_weeks": [
@@ -14060,11 +14060,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "No verified acquisition counterfactual",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 0,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -14084,7 +14084,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -14401,11 +14401,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -14425,7 +14425,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -14803,11 +14803,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -14827,7 +14827,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -14988,11 +14988,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -15012,7 +15012,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -15390,11 +15390,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -15414,7 +15414,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -15511,7 +15511,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -15521,7 +15521,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -15531,7 +15531,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -15541,7 +15541,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -15551,7 +15551,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -15561,7 +15561,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -15581,7 +15581,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -15591,7 +15591,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -15603,7 +15603,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -15613,7 +15613,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -15623,7 +15623,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -15633,7 +15633,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -15643,7 +15643,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -15653,7 +15653,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -15673,7 +15673,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -15683,7 +15683,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -15753,7 +15753,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -15763,7 +15763,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -15773,7 +15773,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -15783,7 +15783,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -15793,7 +15793,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -15803,7 +15803,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -15823,7 +15823,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -15833,7 +15833,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -15845,7 +15845,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -15855,7 +15855,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -15865,7 +15865,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -15875,7 +15875,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -15885,7 +15885,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -15895,7 +15895,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -15915,7 +15915,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -15925,7 +15925,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -16011,7 +16011,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -16021,7 +16021,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -16031,7 +16031,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -16041,7 +16041,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -16051,7 +16051,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -16061,7 +16061,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -16081,7 +16081,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -16091,7 +16091,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -16103,7 +16103,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -16113,7 +16113,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -16123,7 +16123,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -16133,7 +16133,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -16143,7 +16143,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -16153,7 +16153,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -16173,7 +16173,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -16183,7 +16183,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -16253,7 +16253,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -16263,7 +16263,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -16273,7 +16273,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -16283,7 +16283,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -16293,7 +16293,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -16303,7 +16303,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -16323,7 +16323,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -16333,7 +16333,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -16345,7 +16345,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -16355,7 +16355,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -16365,7 +16365,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -16375,7 +16375,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -16385,7 +16385,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -16395,7 +16395,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -16415,7 +16415,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -16425,7 +16425,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -16663,7 +16663,7 @@
                 "started_pct": 89.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 86.9
+                "average_pick": 87.8
               },
               {
                 "player_key": "470.p.30994",
@@ -16673,7 +16673,7 @@
                 "started_pct": 66.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 56.6
+                "average_pick": 56.8
               },
               {
                 "player_key": "470.p.31002",
@@ -16683,7 +16683,7 @@
                 "started_pct": 96.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 38.9
+                "average_pick": 38.4
               },
               {
                 "player_key": "470.p.31905",
@@ -16693,7 +16693,7 @@
                 "started_pct": 81.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 52.9
+                "average_pick": 52.6
               },
               {
                 "player_key": "470.p.33394",
@@ -16703,7 +16703,7 @@
                 "started_pct": 90.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 38.6
+                "average_pick": 38.7
               },
               {
                 "player_key": "470.p.34344",
@@ -16713,7 +16713,7 @@
                 "started_pct": 95.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 124.5
+                "average_pick": 124.6
               },
               {
                 "player_key": "470.p.40055",
@@ -16733,7 +16733,7 @@
                 "started_pct": 82.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 70.0
+                "average_pick": 71.0
               },
               {
                 "player_key": "470.p.42625",
@@ -16743,7 +16743,7 @@
                 "started_pct": 71.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 30.2
+                "average_pick": 30.4
               }
             ],
             "crowd_lineup": [
@@ -16755,7 +16755,7 @@
                 "started_pct": 89.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 86.9
+                "average_pick": 87.8
               },
               {
                 "player_key": "470.p.30994",
@@ -16765,7 +16765,7 @@
                 "started_pct": 66.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 56.6
+                "average_pick": 56.8
               },
               {
                 "player_key": "470.p.31002",
@@ -16775,7 +16775,7 @@
                 "started_pct": 96.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 38.9
+                "average_pick": 38.4
               },
               {
                 "player_key": "470.p.31905",
@@ -16785,7 +16785,7 @@
                 "started_pct": 81.0,
                 "expectation_week": 1,
                 "owned_pct": 97.0,
-                "average_pick": 52.9
+                "average_pick": 52.6
               },
               {
                 "player_key": "470.p.33394",
@@ -16795,7 +16795,7 @@
                 "started_pct": 90.0,
                 "expectation_week": 1,
                 "owned_pct": 99.0,
-                "average_pick": 38.6
+                "average_pick": 38.7
               },
               {
                 "player_key": "470.p.34344",
@@ -16805,7 +16805,7 @@
                 "started_pct": 95.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 124.5
+                "average_pick": 124.6
               },
               {
                 "player_key": "470.p.40055",
@@ -16825,7 +16825,7 @@
                 "started_pct": 82.0,
                 "expectation_week": 1,
                 "owned_pct": 98.0,
-                "average_pick": 70.0
+                "average_pick": 71.0
               },
               {
                 "player_key": "470.p.42625",
@@ -16835,7 +16835,7 @@
                 "started_pct": 71.0,
                 "expectation_week": 1,
                 "owned_pct": 100.0,
-                "average_pick": 30.2
+                "average_pick": 30.4
               }
             ],
             "expectation_weeks": [
@@ -16919,7 +16919,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -16929,7 +16929,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -16939,7 +16939,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -16949,7 +16949,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -16959,7 +16959,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -16969,7 +16969,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -16989,7 +16989,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -16999,7 +16999,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "crowd_lineup": [
@@ -17011,7 +17011,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -17021,7 +17021,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -17031,7 +17031,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -17041,7 +17041,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -17051,7 +17051,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -17061,7 +17061,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -17081,7 +17081,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -17091,7 +17091,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "expectation_weeks": [
@@ -17161,7 +17161,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -17171,7 +17171,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -17181,7 +17181,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -17191,7 +17191,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -17201,7 +17201,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -17211,7 +17211,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -17231,7 +17231,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -17241,7 +17241,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "crowd_lineup": [
@@ -17253,7 +17253,7 @@
                     "started_pct": 89.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 86.9
+                    "average_pick": 87.8
                   },
                   {
                     "player_key": "470.p.30994",
@@ -17263,7 +17263,7 @@
                     "started_pct": 66.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 56.6
+                    "average_pick": 56.8
                   },
                   {
                     "player_key": "470.p.31002",
@@ -17273,7 +17273,7 @@
                     "started_pct": 96.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 38.9
+                    "average_pick": 38.4
                   },
                   {
                     "player_key": "470.p.31905",
@@ -17283,7 +17283,7 @@
                     "started_pct": 81.0,
                     "expectation_week": 1,
                     "owned_pct": 97.0,
-                    "average_pick": 52.9
+                    "average_pick": 52.6
                   },
                   {
                     "player_key": "470.p.33394",
@@ -17293,7 +17293,7 @@
                     "started_pct": 90.0,
                     "expectation_week": 1,
                     "owned_pct": 99.0,
-                    "average_pick": 38.6
+                    "average_pick": 38.7
                   },
                   {
                     "player_key": "470.p.34344",
@@ -17303,7 +17303,7 @@
                     "started_pct": 95.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 124.5
+                    "average_pick": 124.6
                   },
                   {
                     "player_key": "470.p.40055",
@@ -17323,7 +17323,7 @@
                     "started_pct": 82.0,
                     "expectation_week": 1,
                     "owned_pct": 98.0,
-                    "average_pick": 70.0
+                    "average_pick": 71.0
                   },
                   {
                     "player_key": "470.p.42625",
@@ -17333,7 +17333,7 @@
                     "started_pct": 71.0,
                     "expectation_week": 1,
                     "owned_pct": 100.0,
-                    "average_pick": 30.2
+                    "average_pick": 30.4
                   }
                 ],
                 "expectation_weeks": [
@@ -17765,11 +17765,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -17789,7 +17789,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -18040,11 +18040,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -18064,7 +18064,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -18442,11 +18442,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -18466,7 +18466,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -18627,11 +18627,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -18651,7 +18651,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -19029,11 +19029,11 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "No verified acquisition counterfactual",
-                          "source_ledger_rows": 44,
-                          "source_latest_timestamp": 1789549726.0,
+                          "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                          "source_ledger_rows": 102,
+                          "source_latest_timestamp": 1791120066.0,
                           "observed_team_week_events": 0,
-                          "transaction_completeness": "unverified"
+                          "transaction_completeness": "imported_event_feed"
                         }
                       },
                       "waiver": {
@@ -19053,7 +19053,7 @@
                           "max_score_pct": 100.0
                         },
                         "raw": {
-                          "reason": "Pre-lock available pool and feasibility unverified"
+                          "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                         }
                       }
                     }
@@ -19438,11 +19438,11 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "No verified acquisition counterfactual",
-                      "source_ledger_rows": 44,
-                      "source_latest_timestamp": 1789549726.0,
+                      "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                      "source_ledger_rows": 102,
+                      "source_latest_timestamp": 1791120066.0,
                       "observed_team_week_events": 0,
-                      "transaction_completeness": "unverified"
+                      "transaction_completeness": "imported_event_feed"
                     }
                   },
                   "waiver": {
@@ -19462,7 +19462,7 @@
                       "max_score_pct": 100.0
                     },
                     "raw": {
-                      "reason": "Pre-lock available pool and feasibility unverified"
+                      "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                     }
                   }
                 }
@@ -19834,11 +19834,11 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "No verified acquisition counterfactual",
-                        "source_ledger_rows": 44,
-                        "source_latest_timestamp": 1789549726.0,
+                        "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                        "source_ledger_rows": 102,
+                        "source_latest_timestamp": 1791120066.0,
                         "observed_team_week_events": 0,
-                        "transaction_completeness": "unverified"
+                        "transaction_completeness": "imported_event_feed"
                       }
                     },
                     "waiver": {
@@ -19858,7 +19858,7 @@
                         "max_score_pct": 100.0
                       },
                       "raw": {
-                        "reason": "Pre-lock available pool and feasibility unverified"
+                        "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                       }
                     }
                   }
@@ -19910,7 +19910,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -19920,7 +19920,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -19930,7 +19930,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -19940,7 +19940,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -19950,7 +19950,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -19960,7 +19960,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -19980,7 +19980,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -19990,7 +19990,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "crowd_lineup": [
@@ -20002,7 +20002,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -20012,7 +20012,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -20022,7 +20022,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -20032,7 +20032,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -20042,7 +20042,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -20052,7 +20052,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -20072,7 +20072,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -20082,7 +20082,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "expectation_weeks": [
@@ -20123,7 +20123,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -20133,7 +20133,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -20143,7 +20143,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -20153,7 +20153,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -20163,7 +20163,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -20173,7 +20173,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -20193,7 +20193,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -20203,7 +20203,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "crowd_lineup": [
@@ -20215,7 +20215,7 @@
                   "started_pct": 89.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 86.9
+                  "average_pick": 87.8
                 },
                 {
                   "player_key": "470.p.30994",
@@ -20225,7 +20225,7 @@
                   "started_pct": 66.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 56.6
+                  "average_pick": 56.8
                 },
                 {
                   "player_key": "470.p.31002",
@@ -20235,7 +20235,7 @@
                   "started_pct": 96.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 38.9
+                  "average_pick": 38.4
                 },
                 {
                   "player_key": "470.p.31905",
@@ -20245,7 +20245,7 @@
                   "started_pct": 81.0,
                   "expectation_week": 1,
                   "owned_pct": 97.0,
-                  "average_pick": 52.9
+                  "average_pick": 52.6
                 },
                 {
                   "player_key": "470.p.33394",
@@ -20255,7 +20255,7 @@
                   "started_pct": 90.0,
                   "expectation_week": 1,
                   "owned_pct": 99.0,
-                  "average_pick": 38.6
+                  "average_pick": 38.7
                 },
                 {
                   "player_key": "470.p.34344",
@@ -20265,7 +20265,7 @@
                   "started_pct": 95.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 124.5
+                  "average_pick": 124.6
                 },
                 {
                   "player_key": "470.p.40055",
@@ -20285,7 +20285,7 @@
                   "started_pct": 82.0,
                   "expectation_week": 1,
                   "owned_pct": 98.0,
-                  "average_pick": 70.0
+                  "average_pick": 71.0
                 },
                 {
                   "player_key": "470.p.42625",
@@ -20295,7 +20295,7 @@
                   "started_pct": 71.0,
                   "expectation_week": 1,
                   "owned_pct": 100.0,
-                  "average_pick": 30.2
+                  "average_pick": 30.4
                 }
               ],
               "expectation_weeks": [
@@ -20361,11 +20361,11 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "No verified acquisition counterfactual",
-                    "source_ledger_rows": 44,
-                    "source_latest_timestamp": 1789549726.0,
+                    "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                    "source_ledger_rows": 102,
+                    "source_latest_timestamp": 1791120066.0,
                     "observed_team_week_events": 0,
-                    "transaction_completeness": "unverified"
+                    "transaction_completeness": "imported_event_feed"
                   }
                 },
                 "waiver": {
@@ -20385,7 +20385,7 @@
                     "max_score_pct": 100.0
                   },
                   "raw": {
-                    "reason": "Pre-lock available pool and feasibility unverified"
+                    "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                   }
                 }
               }
@@ -20702,11 +20702,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -20726,7 +20726,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -21104,11 +21104,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -21128,7 +21128,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -21289,11 +21289,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -21313,7 +21313,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -21691,11 +21691,11 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "No verified acquisition counterfactual",
-                            "source_ledger_rows": 44,
-                            "source_latest_timestamp": 1789549726.0,
+                            "reason": "No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence",
+                            "source_ledger_rows": 102,
+                            "source_latest_timestamp": 1791120066.0,
                             "observed_team_week_events": 0,
-                            "transaction_completeness": "unverified"
+                            "transaction_completeness": "imported_event_feed"
                           }
                         },
                         "waiver": {
@@ -21715,7 +21715,7 @@
                             "max_score_pct": 100.0
                           },
                           "raw": {
-                            "reason": "Pre-lock available pool and feasibility unverified"
+                            "reason": "Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots"
                           }
                         }
                       }
@@ -21812,7 +21812,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -21822,7 +21822,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -21832,7 +21832,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -21842,7 +21842,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -21852,7 +21852,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -21862,7 +21862,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -21882,7 +21882,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -21892,7 +21892,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -21904,7 +21904,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -21914,7 +21914,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -21924,7 +21924,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -21934,7 +21934,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -21944,7 +21944,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -21954,7 +21954,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -21974,7 +21974,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -21984,7 +21984,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -22054,7 +22054,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -22064,7 +22064,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -22074,7 +22074,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -22084,7 +22084,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -22094,7 +22094,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -22104,7 +22104,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -22124,7 +22124,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -22134,7 +22134,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -22146,7 +22146,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -22156,7 +22156,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -22166,7 +22166,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -22176,7 +22176,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -22186,7 +22186,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -22196,7 +22196,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -22216,7 +22216,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -22226,7 +22226,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -22312,7 +22312,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -22322,7 +22322,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -22332,7 +22332,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -22342,7 +22342,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -22352,7 +22352,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -22362,7 +22362,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -22382,7 +22382,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -22392,7 +22392,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -22404,7 +22404,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -22414,7 +22414,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -22424,7 +22424,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -22434,7 +22434,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -22444,7 +22444,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -22454,7 +22454,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -22474,7 +22474,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -22484,7 +22484,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [
@@ -22554,7 +22554,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -22564,7 +22564,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -22574,7 +22574,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -22584,7 +22584,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -22594,7 +22594,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -22604,7 +22604,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -22624,7 +22624,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -22634,7 +22634,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "crowd_lineup": [
@@ -22646,7 +22646,7 @@
                       "started_pct": 89.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 86.9
+                      "average_pick": 87.8
                     },
                     {
                       "player_key": "470.p.30994",
@@ -22656,7 +22656,7 @@
                       "started_pct": 66.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 56.6
+                      "average_pick": 56.8
                     },
                     {
                       "player_key": "470.p.31002",
@@ -22666,7 +22666,7 @@
                       "started_pct": 96.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 38.9
+                      "average_pick": 38.4
                     },
                     {
                       "player_key": "470.p.31905",
@@ -22676,7 +22676,7 @@
                       "started_pct": 81.0,
                       "expectation_week": 1,
                       "owned_pct": 97.0,
-                      "average_pick": 52.9
+                      "average_pick": 52.6
                     },
                     {
                       "player_key": "470.p.33394",
@@ -22686,7 +22686,7 @@
                       "started_pct": 90.0,
                       "expectation_week": 1,
                       "owned_pct": 99.0,
-                      "average_pick": 38.6
+                      "average_pick": 38.7
                     },
                     {
                       "player_key": "470.p.34344",
@@ -22696,7 +22696,7 @@
                       "started_pct": 95.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 124.5
+                      "average_pick": 124.6
                     },
                     {
                       "player_key": "470.p.40055",
@@ -22716,7 +22716,7 @@
                       "started_pct": 82.0,
                       "expectation_week": 1,
                       "owned_pct": 98.0,
-                      "average_pick": 70.0
+                      "average_pick": 71.0
                     },
                     {
                       "player_key": "470.p.42625",
@@ -22726,7 +22726,7 @@
                       "started_pct": 71.0,
                       "expectation_week": 1,
                       "owned_pct": 100.0,
-                      "average_pick": 30.2
+                      "average_pick": 30.4
                     }
                   ],
                   "expectation_weeks": [

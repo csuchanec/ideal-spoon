@@ -159,8 +159,10 @@
         .contribution-svg-wrap { overflow-x: auto; }
         .chart-scroll-hint { display: none; }
         .contribution-total-row { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
-        @media (max-width: 600px) {
+        @media (max-width: 840px) {
             .chart-scroll-hint { display: block; color: var(--text-muted); font-size: 12px; }
+        }
+        @media (max-width: 600px) {
             .contribution-total-row { flex-direction: column; gap: 4px; }
         }
         .contribution-svg-wrap svg { display: block; min-width: 760px; width: 100%; }
@@ -927,6 +929,12 @@
             }
         }
         @media (max-width: 600px) {
+            .top-grade-table .primary-grade-row td:first-child,
+            .top-grade-table .primary-grade-row td:last-child {
+                font-size: 16px;
+                line-height: 1.4;
+                overflow-wrap: normal;
+            }
             .comparison-board table { min-width: 0; width: 100%; }
             .comparison-board th,
             .comparison-board td {

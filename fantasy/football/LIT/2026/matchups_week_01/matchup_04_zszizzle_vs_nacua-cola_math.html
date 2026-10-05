@@ -1204,7 +1204,7 @@
 <nav class="section-nav" aria-label="Grade math sections"><a class='section-jump-link' href='#team-1'>ZSzizzle</a><a class='section-jump-link' href='#team-2'>Nacua-Cola</a>
 <a class="section-jump-link" href="#component-models">Overall and P/E rules</a><a class="section-jump-link" href="#crowd-model">J/S rules</a>
 <a class="section-jump-link" href="#hindsight-model">Hindsight</a><a class="section-jump-link" href="#model-limits">Definitions &amp; limits</a></nav></header>
-<section class='section' id='team-1'><h2>ZSzizzle</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 21.77 + 23.31 + 15.00 + 7.50 = 67.58 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>62.20 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>21.77</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>66.59 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>23.31</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 55.08–75.08 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Available dated transaction feed ends 2026-09-16 UTC; ledger completeness is unverified.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 66.67; scoring magnitude 57.74.</p><pre>{
+<section class='section' id='team-1'><h2>ZSzizzle</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 21.77 + 23.31 + 15.00 + 7.50 = 67.58 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>62.20 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>21.77</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>66.59 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>23.31</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Unassessed-component sensitivity range: 55.08–75.08 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 66.67; scoring magnitude 57.74.</p><pre>{
   &quot;score_pct&quot;: 62.20294673603746,
   &quot;assessed_score&quot;: 62.20294673603746,
   &quot;weight_pct&quot;: 35,
@@ -1336,11 +1336,11 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-        &quot;source_ledger_rows&quot;: 44,
-        &quot;source_latest_timestamp&quot;: 1789549726.0,
+        &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+        &quot;source_ledger_rows&quot;: 102,
+        &quot;source_latest_timestamp&quot;: 1791120066.0,
         &quot;observed_team_week_events&quot;: 0,
-        &quot;transaction_completeness&quot;: &quot;unverified&quot;
+        &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
       }
     },
     &quot;waiver&quot;: {
@@ -1360,7 +1360,7 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+        &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
       }
     }
   }
@@ -1512,11 +1512,11 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-              &quot;source_ledger_rows&quot;: 44,
-              &quot;source_latest_timestamp&quot;: 1789549726.0,
+              &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+              &quot;source_ledger_rows&quot;: 102,
+              &quot;source_latest_timestamp&quot;: 1791120066.0,
               &quot;observed_team_week_events&quot;: 0,
-              &quot;transaction_completeness&quot;: &quot;unverified&quot;
+              &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
             }
           },
           &quot;waiver&quot;: {
@@ -1536,7 +1536,7 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+              &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
             }
           }
         }
@@ -1579,7 +1579,7 @@
     &quot;regret_points&quot;: 30.066666666666663,
     &quot;capture_pct&quot;: 81.927469445001
   }
-}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 21.77 + 23.31 + 15.00 + 7.50 = 67.58 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>62.20 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>21.77</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>66.59 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>23.31</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 55.08–75.08 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 67.6–67.6.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
+}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 21.77 + 23.31 + 15.00 + 7.50 = 67.58 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>62.20 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>21.77</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>66.59 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>23.31</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Unassessed-component sensitivity range: 55.08–75.08 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 67.6–67.6.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
   &quot;score_pct&quot;: 62.20294673603746,
   &quot;assessed_score&quot;: 62.20294673603746,
   &quot;weight_pct&quot;: 35,
@@ -1883,11 +1883,11 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 0,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
                 }
               },
               &quot;waiver&quot;: {
@@ -1907,7 +1907,7 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
@@ -2068,11 +2068,11 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 0,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
                 }
               },
               &quot;waiver&quot;: {
@@ -2092,7 +2092,7 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
@@ -2184,7 +2184,7 @@
       }
     ]
   }
-}</pre></details></section></section><section class='section' id='team-2'><h2>Nacua-Cola</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 6.12 + 22.44 + 15.00 + 7.10 = 50.66 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>17.47 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>6.12</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>64.11 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>22.44</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>59.06 / 100 assessed · 71.01 / 100 effective including 75-point reference anchors</td><td class='num'>10.00%</td><td class='num'>7.10</td><td>25.0% · provisional</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 72.50%. Missing-evidence sensitivity range: 40.03–57.53 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is only partly assessed; its reference contribution is not proof of good management or no missed opportunities. Available dated transaction feed ends 2026-09-16 UTC; ledger completeness is unverified.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 11.11; scoring magnitude 23.84.</p><pre>{
+}</pre></details></section></section><section class='section' id='team-2'><h2>Nacua-Cola</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 6.12 + 22.44 + 15.00 + 6.70 = 50.26 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>17.47 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>6.12</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>64.11 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>22.44</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>59.06 / 100 assessed · 67.03 / 100 effective including 75-point reference anchors</td><td class='num'>10.00%</td><td class='num'>6.70</td><td>50.0% · partial coverage</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 75.00%. Unassessed-component sensitivity range: 41.51–56.51 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is only partly assessed; its reference contribution is not proof of good management or no missed opportunities. Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. Successful events before scheduled kickoff; injury knowledge and counterfactual claims are not established Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 11.11; scoring magnitude 23.84.</p><pre>{
   &quot;score_pct&quot;: 17.474403631001024,
   &quot;assessed_score&quot;: 17.47440363100102,
   &quot;weight_pct&quot;: 35,
@@ -2281,11 +2281,11 @@
     &quot;eligible_players&quot;: 16
   }
 }</pre></details><details><summary>S · Roster stewardship: inputs and evidence</summary><p>Acquisition before optimum 116.00; after 109.97; signed frontier gain -6.03.</p><pre>{
-  &quot;score_pct&quot;: 71.01482405527602,
+  &quot;score_pct&quot;: 67.02964811055205,
   &quot;assessed_score&quot;: 59.05929622110409,
   &quot;weight_pct&quot;: 10,
-  &quot;contribution_points&quot;: 7.101482405527602,
-  &quot;evidence_coverage&quot;: 0.25,
+  &quot;contribution_points&quot;: 6.702964811055205,
+  &quot;evidence_coverage&quot;: 0.5,
   &quot;status&quot;: &quot;provisional&quot;,
   &quot;reference_anchor&quot;: 75.0,
   &quot;reference_range&quot;: {
@@ -2293,25 +2293,25 @@
     &quot;max_score_pct&quot;: 100
   },
   &quot;sensitivity_range&quot;: {
-    &quot;min_score_pct&quot;: 14.764824055276023,
-    &quot;max_score_pct&quot;: 89.76482405527602
+    &quot;min_score_pct&quot;: 29.529648110552046,
+    &quot;max_score_pct&quot;: 79.52964811055205
   },
   &quot;raw&quot;: {
     &quot;acquisition&quot;: {
-      &quot;score_pct&quot;: 67.02964811055205,
+      &quot;score_pct&quot;: 59.05929622110409,
       &quot;assessed_score&quot;: 59.05929622110409,
       &quot;weight_pct&quot;: 50,
-      &quot;contribution_points&quot;: 33.51482405527602,
-      &quot;evidence_coverage&quot;: 0.5,
-      &quot;status&quot;: &quot;provisional&quot;,
+      &quot;contribution_points&quot;: 29.529648110552042,
+      &quot;evidence_coverage&quot;: 1.0,
+      &quot;status&quot;: &quot;assessed&quot;,
       &quot;reference_anchor&quot;: 75.0,
       &quot;reference_range&quot;: {
         &quot;min_score_pct&quot;: 0,
         &quot;max_score_pct&quot;: 100
       },
       &quot;sensitivity_range&quot;: {
-        &quot;min_score_pct&quot;: 29.529648110552046,
-        &quot;max_score_pct&quot;: 79.52964811055205
+        &quot;min_score_pct&quot;: 59.05929622110409,
+        &quot;max_score_pct&quot;: 59.05929622110409
       },
       &quot;raw&quot;: {
         &quot;net_frontier_points&quot;: -6.03333333333326,
@@ -2323,11 +2323,29 @@
         &quot;dropped_player_keys&quot;: [
           &quot;470.p.32696&quot;
         ],
-        &quot;source_ledger_rows&quot;: 44,
-        &quot;source_latest_timestamp&quot;: 1789549726.0,
+        &quot;source_ledger_rows&quot;: 102,
+        &quot;source_latest_timestamp&quot;: 1791120066.0,
         &quot;observed_team_week_events&quot;: 2,
-        &quot;transaction_completeness&quot;: &quot;unverified&quot;,
-        &quot;timing_reason&quot;: &quot;Observed dated events; pre-lock feasibility unverified&quot;
+        &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;,
+        &quot;timing_reason&quot;: &quot;Successful events before scheduled kickoff; injury knowledge and counterfactual claims are not established&quot;,
+        &quot;timing_events&quot;: [
+          {
+            &quot;playerKey&quot;: &quot;470.p.30971&quot;,
+            &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+            &quot;timestampRaw&quot;: 1789313203,
+            &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T17:00:00+00:00&quot;,
+            &quot;prelock_verified&quot;: true,
+            &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+          },
+          {
+            &quot;playerKey&quot;: &quot;470.p.32696&quot;,
+            &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+            &quot;timestampRaw&quot;: 1789313203,
+            &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T20:25:00+00:00&quot;,
+            &quot;prelock_verified&quot;: true,
+            &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+          }
+        ]
       }
     },
     &quot;waiver&quot;: {
@@ -2347,7 +2365,7 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+        &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
       }
     }
   }
@@ -2361,7 +2379,7 @@
     &quot;status&quot;: &quot;available&quot;,
     &quot;assessment_status&quot;: &quot;provisional&quot;,
     &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
-    &quot;score_pct&quot;: 50.65641256526685,
+    &quot;score_pct&quot;: 50.25789497079445,
     &quot;letter&quot;: &quot;D-&quot;,
     &quot;component_scores&quot;: {
       &quot;production&quot;: {
@@ -2464,11 +2482,11 @@
         }
       },
       &quot;roster_stewardship&quot;: {
-        &quot;score_pct&quot;: 71.01482405527602,
+        &quot;score_pct&quot;: 67.02964811055205,
         &quot;assessed_score&quot;: 59.05929622110409,
         &quot;weight_pct&quot;: 10,
-        &quot;contribution_points&quot;: 7.101482405527602,
-        &quot;evidence_coverage&quot;: 0.25,
+        &quot;contribution_points&quot;: 6.702964811055205,
+        &quot;evidence_coverage&quot;: 0.5,
         &quot;status&quot;: &quot;provisional&quot;,
         &quot;reference_anchor&quot;: 75.0,
         &quot;reference_range&quot;: {
@@ -2476,25 +2494,25 @@
           &quot;max_score_pct&quot;: 100
         },
         &quot;sensitivity_range&quot;: {
-          &quot;min_score_pct&quot;: 14.764824055276023,
-          &quot;max_score_pct&quot;: 89.76482405527602
+          &quot;min_score_pct&quot;: 29.529648110552046,
+          &quot;max_score_pct&quot;: 79.52964811055205
         },
         &quot;raw&quot;: {
           &quot;acquisition&quot;: {
-            &quot;score_pct&quot;: 67.02964811055205,
+            &quot;score_pct&quot;: 59.05929622110409,
             &quot;assessed_score&quot;: 59.05929622110409,
             &quot;weight_pct&quot;: 50,
-            &quot;contribution_points&quot;: 33.51482405527602,
-            &quot;evidence_coverage&quot;: 0.5,
-            &quot;status&quot;: &quot;provisional&quot;,
+            &quot;contribution_points&quot;: 29.529648110552042,
+            &quot;evidence_coverage&quot;: 1.0,
+            &quot;status&quot;: &quot;assessed&quot;,
             &quot;reference_anchor&quot;: 75.0,
             &quot;reference_range&quot;: {
               &quot;min_score_pct&quot;: 0,
               &quot;max_score_pct&quot;: 100
             },
             &quot;sensitivity_range&quot;: {
-              &quot;min_score_pct&quot;: 29.529648110552046,
-              &quot;max_score_pct&quot;: 79.52964811055205
+              &quot;min_score_pct&quot;: 59.05929622110409,
+              &quot;max_score_pct&quot;: 59.05929622110409
             },
             &quot;raw&quot;: {
               &quot;net_frontier_points&quot;: -6.03333333333326,
@@ -2506,11 +2524,29 @@
               &quot;dropped_player_keys&quot;: [
                 &quot;470.p.32696&quot;
               ],
-              &quot;source_ledger_rows&quot;: 44,
-              &quot;source_latest_timestamp&quot;: 1789549726.0,
+              &quot;source_ledger_rows&quot;: 102,
+              &quot;source_latest_timestamp&quot;: 1791120066.0,
               &quot;observed_team_week_events&quot;: 2,
-              &quot;transaction_completeness&quot;: &quot;unverified&quot;,
-              &quot;timing_reason&quot;: &quot;Observed dated events; pre-lock feasibility unverified&quot;
+              &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;,
+              &quot;timing_reason&quot;: &quot;Successful events before scheduled kickoff; injury knowledge and counterfactual claims are not established&quot;,
+              &quot;timing_events&quot;: [
+                {
+                  &quot;playerKey&quot;: &quot;470.p.30971&quot;,
+                  &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+                  &quot;timestampRaw&quot;: 1789313203,
+                  &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T17:00:00+00:00&quot;,
+                  &quot;prelock_verified&quot;: true,
+                  &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+                },
+                {
+                  &quot;playerKey&quot;: &quot;470.p.32696&quot;,
+                  &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+                  &quot;timestampRaw&quot;: 1789313203,
+                  &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T20:25:00+00:00&quot;,
+                  &quot;prelock_verified&quot;: true,
+                  &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+                }
+              ]
             }
           },
           &quot;waiver&quot;: {
@@ -2530,16 +2566,16 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+              &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
             }
           }
         }
       }
     },
-    &quot;evidence_weight_pct&quot;: 72.5,
+    &quot;evidence_weight_pct&quot;: 75.0,
     &quot;sensitivity_range&quot;: {
-      &quot;min_score_pct&quot;: 40.03141256526685,
-      &quot;max_score_pct&quot;: 57.53141256526685
+      &quot;min_score_pct&quot;: 41.507894970794446,
+      &quot;max_score_pct&quot;: 56.507894970794446
     }
   },
   &quot;performance&quot;: {
@@ -2573,7 +2609,7 @@
     &quot;regret_points&quot;: 32.30000000000001,
     &quot;capture_pct&quot;: 70.62746286753558
   }
-}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 6.12 + 22.44 + 15.00 + 7.10 = 50.66 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>17.47 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>6.12</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>64.11 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>22.44</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>59.06 / 100 assessed · 71.01 / 100 effective including 75-point reference anchors</td><td class='num'>10.00%</td><td class='num'>7.10</td><td>25.0% · provisional</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 72.50%. Missing-evidence sensitivity range: 40.03–57.53 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is only partly assessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 50.7–50.7.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
+}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 6.12 + 22.44 + 15.00 + 6.70 = 50.26 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>17.47 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>6.12</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>64.11 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>22.44</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>59.06 / 100 assessed · 67.03 / 100 effective including 75-point reference anchors</td><td class='num'>10.00%</td><td class='num'>6.70</td><td>50.0% · partial coverage</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 75.00%. Unassessed-component sensitivity range: 41.51–56.51 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is only partly assessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 50.3–50.3.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
   &quot;score_pct&quot;: 17.474403631001024,
   &quot;assessed_score&quot;: 17.47440363100102,
   &quot;weight_pct&quot;: 35,
@@ -2622,16 +2658,16 @@
     &quot;total_weeks&quot;: 1
   }
 }</pre></details><details><summary>S · Roster stewardship: inputs and evidence</summary><p>Acquisition before optimum Unavailable; after Unavailable; signed frontier gain Unavailable.</p><pre>{
-  &quot;score_pct&quot;: 71.01482405527602,
+  &quot;score_pct&quot;: 67.02964811055205,
   &quot;assessed_score&quot;: 59.05929622110409,
   &quot;weight_pct&quot;: 10,
-  &quot;contribution_points&quot;: 7.101482405527602,
-  &quot;evidence_coverage&quot;: 0.25,
+  &quot;contribution_points&quot;: 6.702964811055205,
+  &quot;evidence_coverage&quot;: 0.5,
   &quot;status&quot;: &quot;provisional&quot;,
   &quot;reference_anchor&quot;: 75.0,
   &quot;sensitivity_range&quot;: {
-    &quot;min_score_pct&quot;: 14.764824055276023,
-    &quot;max_score_pct&quot;: 89.76482405527602
+    &quot;min_score_pct&quot;: 29.529648110552046,
+    &quot;max_score_pct&quot;: 79.52964811055205
   },
   &quot;raw&quot;: {
     &quot;assessed_weeks&quot;: 1,
@@ -2644,7 +2680,7 @@
     &quot;status&quot;: &quot;available&quot;,
     &quot;assessment_status&quot;: &quot;provisional&quot;,
     &quot;comparability_note&quot;: &quot;Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.&quot;,
-    &quot;score_pct&quot;: 50.65641256526685,
+    &quot;score_pct&quot;: 50.25789497079445,
     &quot;letter&quot;: &quot;D-&quot;,
     &quot;component_scores&quot;: {
       &quot;production&quot;: {
@@ -2699,16 +2735,16 @@
         }
       },
       &quot;roster_stewardship&quot;: {
-        &quot;score_pct&quot;: 71.01482405527602,
+        &quot;score_pct&quot;: 67.02964811055205,
         &quot;assessed_score&quot;: 59.05929622110409,
         &quot;weight_pct&quot;: 10,
-        &quot;contribution_points&quot;: 7.101482405527602,
-        &quot;evidence_coverage&quot;: 0.25,
+        &quot;contribution_points&quot;: 6.702964811055205,
+        &quot;evidence_coverage&quot;: 0.5,
         &quot;status&quot;: &quot;provisional&quot;,
         &quot;reference_anchor&quot;: 75.0,
         &quot;sensitivity_range&quot;: {
-          &quot;min_score_pct&quot;: 14.764824055276023,
-          &quot;max_score_pct&quot;: 89.76482405527602
+          &quot;min_score_pct&quot;: 29.529648110552046,
+          &quot;max_score_pct&quot;: 79.52964811055205
         },
         &quot;raw&quot;: {
           &quot;assessed_weeks&quot;: 1,
@@ -2719,15 +2755,15 @@
     &quot;covered_weeks&quot;: 1,
     &quot;period_story&quot;: {
       &quot;covered_weeks&quot;: 1,
-      &quot;weekly_min&quot;: 50.65641256526685,
-      &quot;weekly_max&quot;: 50.65641256526685,
+      &quot;weekly_min&quot;: 50.25789497079445,
+      &quot;weekly_max&quot;: 50.25789497079445,
       &quot;half_comparison&quot;: null
     },
     &quot;total_weeks&quot;: 1,
-    &quot;evidence_weight_pct&quot;: 72.5,
+    &quot;evidence_weight_pct&quot;: 75.0,
     &quot;sensitivity_range&quot;: {
-      &quot;min_score_pct&quot;: 40.03141256526685,
-      &quot;max_score_pct&quot;: 57.53141256526685
+      &quot;min_score_pct&quot;: 41.507894970794446,
+      &quot;max_score_pct&quot;: 56.507894970794446
     },
     &quot;observations&quot;: [
       {
@@ -2739,7 +2775,7 @@
         &quot;status&quot;: &quot;available&quot;,
         &quot;assessment_status&quot;: &quot;provisional&quot;,
         &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
-        &quot;score_pct&quot;: 50.65641256526685,
+        &quot;score_pct&quot;: 50.25789497079445,
         &quot;letter&quot;: &quot;D-&quot;,
         &quot;component_scores&quot;: {
           &quot;production&quot;: {
@@ -2842,11 +2878,11 @@
             }
           },
           &quot;roster_stewardship&quot;: {
-            &quot;score_pct&quot;: 71.01482405527602,
+            &quot;score_pct&quot;: 67.02964811055205,
             &quot;assessed_score&quot;: 59.05929622110409,
             &quot;weight_pct&quot;: 10,
-            &quot;contribution_points&quot;: 7.101482405527602,
-            &quot;evidence_coverage&quot;: 0.25,
+            &quot;contribution_points&quot;: 6.702964811055205,
+            &quot;evidence_coverage&quot;: 0.5,
             &quot;status&quot;: &quot;provisional&quot;,
             &quot;reference_anchor&quot;: 75.0,
             &quot;reference_range&quot;: {
@@ -2854,25 +2890,25 @@
               &quot;max_score_pct&quot;: 100
             },
             &quot;sensitivity_range&quot;: {
-              &quot;min_score_pct&quot;: 14.764824055276023,
-              &quot;max_score_pct&quot;: 89.76482405527602
+              &quot;min_score_pct&quot;: 29.529648110552046,
+              &quot;max_score_pct&quot;: 79.52964811055205
             },
             &quot;raw&quot;: {
               &quot;acquisition&quot;: {
-                &quot;score_pct&quot;: 67.02964811055205,
+                &quot;score_pct&quot;: 59.05929622110409,
                 &quot;assessed_score&quot;: 59.05929622110409,
                 &quot;weight_pct&quot;: 50,
-                &quot;contribution_points&quot;: 33.51482405527602,
-                &quot;evidence_coverage&quot;: 0.5,
-                &quot;status&quot;: &quot;provisional&quot;,
+                &quot;contribution_points&quot;: 29.529648110552042,
+                &quot;evidence_coverage&quot;: 1.0,
+                &quot;status&quot;: &quot;assessed&quot;,
                 &quot;reference_anchor&quot;: 75.0,
                 &quot;reference_range&quot;: {
                   &quot;min_score_pct&quot;: 0,
                   &quot;max_score_pct&quot;: 100
                 },
                 &quot;sensitivity_range&quot;: {
-                  &quot;min_score_pct&quot;: 29.529648110552046,
-                  &quot;max_score_pct&quot;: 79.52964811055205
+                  &quot;min_score_pct&quot;: 59.05929622110409,
+                  &quot;max_score_pct&quot;: 59.05929622110409
                 },
                 &quot;raw&quot;: {
                   &quot;net_frontier_points&quot;: -6.03333333333326,
@@ -2884,11 +2920,29 @@
                   &quot;dropped_player_keys&quot;: [
                     &quot;470.p.32696&quot;
                   ],
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 2,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;,
-                  &quot;timing_reason&quot;: &quot;Observed dated events; pre-lock feasibility unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;,
+                  &quot;timing_reason&quot;: &quot;Successful events before scheduled kickoff; injury knowledge and counterfactual claims are not established&quot;,
+                  &quot;timing_events&quot;: [
+                    {
+                      &quot;playerKey&quot;: &quot;470.p.30971&quot;,
+                      &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+                      &quot;timestampRaw&quot;: 1789313203,
+                      &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T17:00:00+00:00&quot;,
+                      &quot;prelock_verified&quot;: true,
+                      &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+                    },
+                    {
+                      &quot;playerKey&quot;: &quot;470.p.32696&quot;,
+                      &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+                      &quot;timestampRaw&quot;: 1789313203,
+                      &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T20:25:00+00:00&quot;,
+                      &quot;prelock_verified&quot;: true,
+                      &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+                    }
+                  ]
                 }
               },
               &quot;waiver&quot;: {
@@ -2908,16 +2962,16 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
           }
         },
-        &quot;evidence_weight_pct&quot;: 72.5,
+        &quot;evidence_weight_pct&quot;: 75.0,
         &quot;sensitivity_range&quot;: {
-          &quot;min_score_pct&quot;: 40.03141256526685,
-          &quot;max_score_pct&quot;: 57.53141256526685
+          &quot;min_score_pct&quot;: 41.507894970794446,
+          &quot;max_score_pct&quot;: 56.507894970794446
         }
       }
     ],
@@ -2931,7 +2985,7 @@
         &quot;status&quot;: &quot;available&quot;,
         &quot;assessment_status&quot;: &quot;provisional&quot;,
         &quot;comparability_note&quot;: &quot;Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.&quot;,
-        &quot;score_pct&quot;: 50.65641256526685,
+        &quot;score_pct&quot;: 50.25789497079445,
         &quot;letter&quot;: &quot;D-&quot;,
         &quot;component_scores&quot;: {
           &quot;production&quot;: {
@@ -3034,11 +3088,11 @@
             }
           },
           &quot;roster_stewardship&quot;: {
-            &quot;score_pct&quot;: 71.01482405527602,
+            &quot;score_pct&quot;: 67.02964811055205,
             &quot;assessed_score&quot;: 59.05929622110409,
             &quot;weight_pct&quot;: 10,
-            &quot;contribution_points&quot;: 7.101482405527602,
-            &quot;evidence_coverage&quot;: 0.25,
+            &quot;contribution_points&quot;: 6.702964811055205,
+            &quot;evidence_coverage&quot;: 0.5,
             &quot;status&quot;: &quot;provisional&quot;,
             &quot;reference_anchor&quot;: 75.0,
             &quot;reference_range&quot;: {
@@ -3046,25 +3100,25 @@
               &quot;max_score_pct&quot;: 100
             },
             &quot;sensitivity_range&quot;: {
-              &quot;min_score_pct&quot;: 14.764824055276023,
-              &quot;max_score_pct&quot;: 89.76482405527602
+              &quot;min_score_pct&quot;: 29.529648110552046,
+              &quot;max_score_pct&quot;: 79.52964811055205
             },
             &quot;raw&quot;: {
               &quot;acquisition&quot;: {
-                &quot;score_pct&quot;: 67.02964811055205,
+                &quot;score_pct&quot;: 59.05929622110409,
                 &quot;assessed_score&quot;: 59.05929622110409,
                 &quot;weight_pct&quot;: 50,
-                &quot;contribution_points&quot;: 33.51482405527602,
-                &quot;evidence_coverage&quot;: 0.5,
-                &quot;status&quot;: &quot;provisional&quot;,
+                &quot;contribution_points&quot;: 29.529648110552042,
+                &quot;evidence_coverage&quot;: 1.0,
+                &quot;status&quot;: &quot;assessed&quot;,
                 &quot;reference_anchor&quot;: 75.0,
                 &quot;reference_range&quot;: {
                   &quot;min_score_pct&quot;: 0,
                   &quot;max_score_pct&quot;: 100
                 },
                 &quot;sensitivity_range&quot;: {
-                  &quot;min_score_pct&quot;: 29.529648110552046,
-                  &quot;max_score_pct&quot;: 79.52964811055205
+                  &quot;min_score_pct&quot;: 59.05929622110409,
+                  &quot;max_score_pct&quot;: 59.05929622110409
                 },
                 &quot;raw&quot;: {
                   &quot;net_frontier_points&quot;: -6.03333333333326,
@@ -3076,11 +3130,29 @@
                   &quot;dropped_player_keys&quot;: [
                     &quot;470.p.32696&quot;
                   ],
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 2,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;,
-                  &quot;timing_reason&quot;: &quot;Observed dated events; pre-lock feasibility unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;,
+                  &quot;timing_reason&quot;: &quot;Successful events before scheduled kickoff; injury knowledge and counterfactual claims are not established&quot;,
+                  &quot;timing_events&quot;: [
+                    {
+                      &quot;playerKey&quot;: &quot;470.p.30971&quot;,
+                      &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+                      &quot;timestampRaw&quot;: 1789313203,
+                      &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T17:00:00+00:00&quot;,
+                      &quot;prelock_verified&quot;: true,
+                      &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+                    },
+                    {
+                      &quot;playerKey&quot;: &quot;470.p.32696&quot;,
+                      &quot;transactionKey&quot;: &quot;470.l.932349.tr.38&quot;,
+                      &quot;timestampRaw&quot;: 1789313203,
+                      &quot;scheduled_kickoff_utc&quot;: &quot;2026-09-13T20:25:00+00:00&quot;,
+                      &quot;prelock_verified&quot;: true,
+                      &quot;timing_evidence_reason&quot;: &quot;Successful transaction before reported team&#x27;s scheduled kickoff&quot;
+                    }
+                  ]
                 }
               },
               &quot;waiver&quot;: {
@@ -3100,16 +3172,16 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
           }
         },
-        &quot;evidence_weight_pct&quot;: 72.5,
+        &quot;evidence_weight_pct&quot;: 75.0,
         &quot;sensitivity_range&quot;: {
-          &quot;min_score_pct&quot;: 40.03141256526685,
-          &quot;max_score_pct&quot;: 57.53141256526685
+          &quot;min_score_pct&quot;: 41.507894970794446,
+          &quot;max_score_pct&quot;: 56.507894970794446
         }
       }
     ]
@@ -3228,8 +3300,8 @@ acquisition score = 75 + 25 tanh(net acquisition / 8)
 effective acquisition = 75 + reliability × (acquisition score − 75)
 waiver score = 75 − 25 tanh(verified marginal gain × expectation index / 8)
 S = .5 × acquisition subscore + .5 × waiver subscore</div>
-      <p>Reconstruct successful transaction-linked adds and drops jointly, keeping occupied slots fixed. Missing drop/scoring evidence makes acquisition unassessed. Signed legal frontier value—not pickup bench points—is credited. Deployment is already assessed in execution/judgment, not a second acquisition bonus. Reliability is 0.5 without verified pre-lock feasibility, a rubric convention rather than a calibrated probability.</p>
-      <p>A confirmed feasible pre-lock waiver pool with no supported improvement earns 85 for justified patience. Unknown acquisition or waiver evidence uses its explicit 75 reference anchor; observed absence of moves does not prove complete inactivity. Snapshots alone cannot justify injury-drop recommendations or penalties.</p>
+      <p>Reconstruct successful transaction-linked adds and drops jointly, keeping occupied slots fixed. Missing drop/scoring evidence makes acquisition unassessed. Signed legal frontier value—not pickup bench points—is credited. Deployment is already assessed in execution/judgment, not a second acquisition bonus. Downloaded event timestamps are compared with the reported NFL team's scheduled kickoff in US Eastern time (converted to UTC). Successful events strictly before kickoff resolve scheduled timing; they do not establish historical injury knowledge or counterfactual claim success. Reliability remains 0.5 when scheduled timing cannot be resolved for every event, a rubric convention rather than a calibrated probability.</p>
+      <p>A confirmed feasible pre-lock waiver pool with no supported improvement earns 85 for justified patience. Unknown acquisition or waiver evidence uses its explicit 75 reference anchor. No recorded moves is not automatically good or bad: weekly/current ownership snapshots do not establish which alternative claims would have succeeded before kickoff. Those grading limits do not mean the importer download is incomplete. Snapshots alone cannot justify injury-drop recommendations or penalties.</p>
     </section>
     <section class="section" id="hindsight-model">
       <h2>Full hindsight remains separate</h2>

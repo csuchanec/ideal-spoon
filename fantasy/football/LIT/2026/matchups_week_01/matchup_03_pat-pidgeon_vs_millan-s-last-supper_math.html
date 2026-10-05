@@ -1204,7 +1204,7 @@
 <nav class="section-nav" aria-label="Grade math sections"><a class='section-jump-link' href='#team-1'>Pat Pidgeon</a><a class='section-jump-link' href='#team-2'>Millan’s Last Supper</a>
 <a class="section-jump-link" href="#component-models">Overall and P/E rules</a><a class="section-jump-link" href="#crowd-model">J/S rules</a>
 <a class="section-jump-link" href="#hindsight-model">Hindsight</a><a class="section-jump-link" href="#model-limits">Definitions &amp; limits</a></nav></header>
-<section class='section' id='team-1'><h2>Pat Pidgeon</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 32.00 + 30.57 + 15.00 + 7.50 = 85.06 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>91.42 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>32.00</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>87.33 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>30.57</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 72.56–92.56 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Available dated transaction feed ends 2026-09-16 UTC; ledger completeness is unverified.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 100.00; scoring magnitude 82.84.</p><pre>{
+<section class='section' id='team-1'><h2>Pat Pidgeon</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 32.00 + 30.57 + 15.00 + 7.50 = 85.06 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>91.42 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>32.00</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>87.33 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>30.57</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Unassessed-component sensitivity range: 72.56–92.56 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 100.00; scoring magnitude 82.84.</p><pre>{
   &quot;score_pct&quot;: 91.42213134244228,
   &quot;assessed_score&quot;: 91.42213134244228,
   &quot;weight_pct&quot;: 35,
@@ -1340,11 +1340,11 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-        &quot;source_ledger_rows&quot;: 44,
-        &quot;source_latest_timestamp&quot;: 1789549726.0,
+        &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+        &quot;source_ledger_rows&quot;: 102,
+        &quot;source_latest_timestamp&quot;: 1791120066.0,
         &quot;observed_team_week_events&quot;: 0,
-        &quot;transaction_completeness&quot;: &quot;unverified&quot;
+        &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
       }
     },
     &quot;waiver&quot;: {
@@ -1364,7 +1364,7 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+        &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
       }
     }
   }
@@ -1520,11 +1520,11 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-              &quot;source_ledger_rows&quot;: 44,
-              &quot;source_latest_timestamp&quot;: 1789549726.0,
+              &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+              &quot;source_ledger_rows&quot;: 102,
+              &quot;source_latest_timestamp&quot;: 1791120066.0,
               &quot;observed_team_week_events&quot;: 0,
-              &quot;transaction_completeness&quot;: &quot;unverified&quot;
+              &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
             }
           },
           &quot;waiver&quot;: {
@@ -1544,7 +1544,7 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+              &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
             }
           }
         }
@@ -1587,7 +1587,7 @@
     &quot;regret_points&quot;: 11.400000000000006,
     &quot;capture_pct&quot;: 94.24048501178848
   }
-}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 32.00 + 30.57 + 15.00 + 7.50 = 85.06 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>91.42 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>32.00</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>87.33 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>30.57</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 72.56–92.56 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 85.1–85.1.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
+}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 32.00 + 30.57 + 15.00 + 7.50 = 85.06 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>91.42 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>32.00</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>87.33 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>30.57</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Unassessed-component sensitivity range: 72.56–92.56 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 85.1–85.1.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
   &quot;score_pct&quot;: 91.42213134244228,
   &quot;assessed_score&quot;: 91.42213134244228,
   &quot;weight_pct&quot;: 35,
@@ -1895,11 +1895,11 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 0,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
                 }
               },
               &quot;waiver&quot;: {
@@ -1919,7 +1919,7 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
@@ -2084,11 +2084,11 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 0,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
                 }
               },
               &quot;waiver&quot;: {
@@ -2108,7 +2108,7 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
@@ -2200,7 +2200,7 @@
       }
     ]
   }
-}</pre></details></section></section><section class='section' id='team-2'><h2>Millan’s Last Supper</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 18.86 + 26.48 + 15.00 + 7.50 = 67.84 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>53.87 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>18.86</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>75.67 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>26.48</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 55.34–75.34 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Available dated transaction feed ends 2026-09-16 UTC; ledger completeness is unverified.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 55.56; scoring magnitude 52.19.</p><pre>{
+}</pre></details></section></section><section class='section' id='team-2'><h2>Millan’s Last Supper</h2><section class='math-period'><h3>This week</h3><p class='math-formula'>Overall = 18.86 + 26.48 + 15.00 + 7.50 = 67.84 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>53.87 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>18.86</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>75.67 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>26.48</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Unassessed-component sensitivity range: 55.34–75.34 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play 55.56; scoring magnitude 52.19.</p><pre>{
   &quot;score_pct&quot;: 53.871444941094126,
   &quot;assessed_score&quot;: 53.871444941094126,
   &quot;weight_pct&quot;: 35,
@@ -2330,11 +2330,11 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-        &quot;source_ledger_rows&quot;: 44,
-        &quot;source_latest_timestamp&quot;: 1789549726.0,
+        &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+        &quot;source_ledger_rows&quot;: 102,
+        &quot;source_latest_timestamp&quot;: 1791120066.0,
         &quot;observed_team_week_events&quot;: 0,
-        &quot;transaction_completeness&quot;: &quot;unverified&quot;
+        &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
       }
     },
     &quot;waiver&quot;: {
@@ -2354,7 +2354,7 @@
         &quot;max_score_pct&quot;: 100.0
       },
       &quot;raw&quot;: {
-        &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+        &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
       }
     }
   }
@@ -2504,11 +2504,11 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-              &quot;source_ledger_rows&quot;: 44,
-              &quot;source_latest_timestamp&quot;: 1789549726.0,
+              &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+              &quot;source_ledger_rows&quot;: 102,
+              &quot;source_latest_timestamp&quot;: 1791120066.0,
               &quot;observed_team_week_events&quot;: 0,
-              &quot;transaction_completeness&quot;: &quot;unverified&quot;
+              &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
             }
           },
           &quot;waiver&quot;: {
@@ -2528,7 +2528,7 @@
               &quot;max_score_pct&quot;: 100.0
             },
             &quot;raw&quot;: {
-              &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+              &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
             }
           }
         }
@@ -2571,7 +2571,7 @@
     &quot;regret_points&quot;: 21.90000000000002,
     &quot;capture_pct&quot;: 85.328271549799
   }
-}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 18.86 + 26.48 + 15.00 + 7.50 = 67.84 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>53.87 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>18.86</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>75.67 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>26.48</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Missing-evidence sensitivity range: 55.34–75.34 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Provisional assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 67.8–67.8.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
+}</pre></details></section><section class='math-period'><h3>Season through this week</h3><p>Period score and component contributions are equal-week means of canonical weekly observations, including explicit anchors. Nonlinear component formulas are applied before pooling, not to period-average inputs.</p><p class='math-formula'>Overall = 18.86 + 26.48 + 15.00 + 7.50 = 67.84 / 100</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>53.87 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>18.86</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>75.67 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>26.48</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>0.0% · unavailable</td></tr><tr><td>S · Roster stewardship</td><td>Unassessed · 75.00 / 100 reference anchor</td><td class='num'>10.00%</td><td class='num'>7.50</td><td>0.0% · unavailable</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 70.00%. Unassessed-component sensitivity range: 55.34–75.34 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Partial coverage assessment. Cross-period and historical point rankings with different judgment/stewardship coverage are provisional, not proof of superior management.</p><p class='note'>Roster/waiver management is unassessed; its reference contribution is not proof of good management or no missed opportunities. 1 covered team-weeks; weekly range 67.8–67.8.</p><details><summary>P · Team performance: inputs and evidence</summary><p>All-play Unavailable; scoring magnitude Unavailable.</p><pre>{
   &quot;score_pct&quot;: 53.871444941094126,
   &quot;assessed_score&quot;: 53.871444941094126,
   &quot;weight_pct&quot;: 35,
@@ -2873,11 +2873,11 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 0,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
                 }
               },
               &quot;waiver&quot;: {
@@ -2897,7 +2897,7 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
@@ -3056,11 +3056,11 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;No verified acquisition counterfactual&quot;,
-                  &quot;source_ledger_rows&quot;: 44,
-                  &quot;source_latest_timestamp&quot;: 1789549726.0,
+                  &quot;reason&quot;: &quot;No recorded same-week adds or drops; justified inactivity requires historical waiver-pool and claim-feasibility evidence&quot;,
+                  &quot;source_ledger_rows&quot;: 102,
+                  &quot;source_latest_timestamp&quot;: 1791120066.0,
                   &quot;observed_team_week_events&quot;: 0,
-                  &quot;transaction_completeness&quot;: &quot;unverified&quot;
+                  &quot;transaction_completeness&quot;: &quot;imported_event_feed&quot;
                 }
               },
               &quot;waiver&quot;: {
@@ -3080,7 +3080,7 @@
                   &quot;max_score_pct&quot;: 100.0
                 },
                 &quot;raw&quot;: {
-                  &quot;reason&quot;: &quot;Pre-lock available pool and feasibility unverified&quot;
+                  &quot;reason&quot;: &quot;Historical pre-kickoff waiver pool and competing-claim feasibility are not established by weekly/current ownership snapshots&quot;
                 }
               }
             }
@@ -3208,8 +3208,8 @@ acquisition score = 75 + 25 tanh(net acquisition / 8)
 effective acquisition = 75 + reliability × (acquisition score − 75)
 waiver score = 75 − 25 tanh(verified marginal gain × expectation index / 8)
 S = .5 × acquisition subscore + .5 × waiver subscore</div>
-      <p>Reconstruct successful transaction-linked adds and drops jointly, keeping occupied slots fixed. Missing drop/scoring evidence makes acquisition unassessed. Signed legal frontier value—not pickup bench points—is credited. Deployment is already assessed in execution/judgment, not a second acquisition bonus. Reliability is 0.5 without verified pre-lock feasibility, a rubric convention rather than a calibrated probability.</p>
-      <p>A confirmed feasible pre-lock waiver pool with no supported improvement earns 85 for justified patience. Unknown acquisition or waiver evidence uses its explicit 75 reference anchor; observed absence of moves does not prove complete inactivity. Snapshots alone cannot justify injury-drop recommendations or penalties.</p>
+      <p>Reconstruct successful transaction-linked adds and drops jointly, keeping occupied slots fixed. Missing drop/scoring evidence makes acquisition unassessed. Signed legal frontier value—not pickup bench points—is credited. Deployment is already assessed in execution/judgment, not a second acquisition bonus. Downloaded event timestamps are compared with the reported NFL team's scheduled kickoff in US Eastern time (converted to UTC). Successful events strictly before kickoff resolve scheduled timing; they do not establish historical injury knowledge or counterfactual claim success. Reliability remains 0.5 when scheduled timing cannot be resolved for every event, a rubric convention rather than a calibrated probability.</p>
+      <p>A confirmed feasible pre-lock waiver pool with no supported improvement earns 85 for justified patience. Unknown acquisition or waiver evidence uses its explicit 75 reference anchor. No recorded moves is not automatically good or bad: weekly/current ownership snapshots do not establish which alternative claims would have succeeded before kickoff. Those grading limits do not mean the importer download is incomplete. Snapshots alone cannot justify injury-drop recommendations or penalties.</p>
     </section>
     <section class="section" id="hindsight-model">
       <h2>Full hindsight remains separate</h2>
