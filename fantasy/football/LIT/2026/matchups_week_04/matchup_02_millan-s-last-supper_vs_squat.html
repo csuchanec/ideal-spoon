@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millan’s Last Supper vs Squat matchup report</title>
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --surface: #ffffff;
+            --surface-muted: #f2f4f7;
+            --text: #111827;
+            --text-muted: #5b6472;
+            --line: #e2e8f0;
+            --line-strong: #cbd5e1;
+            --accent: #1f4f8c;
+            --accent-soft: #e8f0fb;
+            --positive: #1f7a45;
+            --negative: #b42318;
+            --warning: #a15c07;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .page {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 20px 28px 48px;
+            background: var(--surface);
+        }
+        .section {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 24px 0;
+            margin: 0;
+        }
+        .eyebrow {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 1.1;
+            letter-spacing: 0;
+            margin: 0 0 10px;
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        h1, h2, h3 { scroll-margin-top: 16px; }
+        .heading-anchor {
+            margin-left: 7px;
+            color: var(--text-muted);
+            font-size: 0.75em;
+            text-decoration: none;
+            opacity: 0.35;
+        }
+        h1:hover .heading-anchor,
+        h2:hover .heading-anchor,
+        h3:hover .heading-anchor,
+        .heading-anchor:focus { opacity: 1; }
+        p { margin: 0 0 10px; }
+        .muted { color: var(--text-muted); }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid .detail-card { grid-column: auto; }
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .meta-chip {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 6px 9px;
+            background: #f8fafc;
+            min-height: 34px;
+        }
+        .section-jump-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .section-jump-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            padding: 5px 9px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            color: var(--text);
+            background: var(--surface-muted);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.2;
+            max-width: 180px;
+            overflow-wrap: anywhere;
+        }
+        .section-jump-link:hover,
+        .section-jump-link:focus {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .lineup-toggle {
+            display: inline-flex;
+            gap: 2px;
+            padding: 2px;
+            margin: 2px 0 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+        }
+        .lineup-toggle button {
+            min-width: 72px;
+            min-height: 32px;
+            border: 0;
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-muted);
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .lineup-toggle button.active {
+            background: var(--surface);
+            color: var(--accent);
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+        }
+        .contribution-chart { margin: 12px 0; }
+        .contribution-svg-wrap { overflow-x: auto; }
+        .chart-scroll-hint { display: none; }
+        .contribution-total-row { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
+        @media (max-width: 840px) {
+            .chart-scroll-hint { display: block; color: var(--text-muted); font-size: 12px; }
+        }
+        @media (max-width: 600px) {
+            .contribution-total-row { flex-direction: column; gap: 4px; }
+        }
+        .contribution-svg-wrap svg { display: block; min-width: 760px; width: 100%; }
+        .opportunity-board table { width: 100%; table-layout: fixed; }
+        .opportunity-board th, .opportunity-board td { width: 50%; text-align: left; vertical-align: top; }
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 12px;
+        }
+        .contribution-team {
+            min-width: 0;
+            padding: 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface);
+        }
+        .contribution-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 5px;
+        }
+        .contribution-mode-label {
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+            margin: 6px 0 3px;
+        }
+        .contribution-scale {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .contribution-total-track,
+        .contribution-player-track {
+            width: 100%;
+            min-width: 2px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--surface-muted);
+        }
+        .contribution-total-track { height: 9px; }
+        .contribution-total-fill,
+        .contribution-player-fill {
+            display: block;
+            height: 100%;
+            min-width: 2px;
+            border-radius: inherit;
+        }
+        .contribution-player-list {
+            display: grid;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .contribution-player-row {
+            display: grid;
+            grid-template-columns: minmax(92px, 1.15fr) minmax(70px, 1fr) 72px;
+            gap: 7px;
+            align-items: center;
+            min-height: 24px;
+        }
+        .contribution-player-name {
+            min-width: 0;
+            overflow: hidden;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .contribution-player-name span {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .contribution-player-track { height: 11px; }
+        .contribution-player-fill.negative { background: var(--bad) !important; }
+        .contribution-player-value {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+            white-space: nowrap;
+        }
+        @media (max-width: 760px) {
+            .contribution-grid { grid-template-columns: 1fr; }
+            .contribution-player-row {
+                grid-template-columns: minmax(105px, 1.15fr) minmax(90px, 1fr) 72px;
+            }
+        }
+        .meta-chip strong {
+            color: var(--text);
+            margin-right: 6px;
+        }
+        .insight-pair {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .hero-card {
+            border: 1px solid #c9d8ee;
+            border-radius: 8px;
+            padding: 14px;
+            background: linear-gradient(180deg, #f4f8fe 0%, #e8f0fb 100%);
+        }
+        .hero-card .value {
+            font-size: 34px;
+            line-height: 0.95;
+            margin-bottom: 4px;
+        }
+        .hero-card .subvalue {
+            font-size: 15px;
+            color: var(--text);
+        }
+        .hero-sidekick {
+            display: grid;
+            gap: 12px;
+        }
+        .detail-card {
+            grid-column: span 3;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .detail-card.tertiary,
+        .chart-card.tertiary {
+            background: #f8fafc;
+            border-style: dashed;
+        }
+        .detail-card.wide {
+            grid-column: span 6;
+        }
+        .label {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 26px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        .subvalue {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+        .team-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .manager-comparison {
+            margin-bottom: 10px;
+        }
+        .manager-comparison table {
+            min-width: 680px;
+        }
+        .manager-comparison th:not(:first-child),
+        .manager-comparison td:not(:first-child) {
+            text-align: right;
+        }
+        .manager-comparison .manager-heading {
+            color: var(--text);
+            text-transform: none;
+            font-size: 13px;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+        .manager-comparison .manager-heading span {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-top: 5px;
+        }
+        .manager-comparison .metric-label {
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .comparison-board table {
+            min-width: 620px;
+            table-layout: fixed;
+        }
+        .comparison-board th:first-child,
+        .comparison-board td:first-child { text-align: right; }
+        .comparison-board th:nth-child(2),
+        .comparison-board td:nth-child(2) {
+            width: 24%;
+            text-align: center;
+            background: #eef1f5;
+        }
+        .comparison-board th:nth-child(3),
+        .comparison-board td:nth-child(3) { text-align: left; }
+        .comparison-key { display: block; color: var(--text); font-weight: 800; }
+        .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+        .lineup-board table {
+            min-width: 920px;
+            table-layout: fixed;
+        }
+        .lineup-board .stats-col { width: 22%; }
+        .lineup-board .player-col { width: 20%; }
+        .lineup-board .points-col { width: 7%; }
+        .lineup-board .slot-col {
+            width: 7%;
+            text-align: center;
+            background: #eef1f5;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+        .lineup-board .right { text-align: right; }
+        .lineup-board .player-name {
+            display: block;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .lineup-board .player-meta,
+        .lineup-board .stat-line {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        .lineup-board .mobile-stat { display: none; }
+        .lineup-board .roster-divider td {
+            background: #e7ebf0;
+            color: var(--text);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .lineup-board .total-row td {
+            background: #f8fafc;
+            font-weight: 700;
+            border-top: 2px solid var(--line-strong);
+        }
+        .rating-evidence {
+            border-left: 3px solid var(--accent);
+        }
+        .team-panel {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px;
+            background: var(--surface-muted);
+        }
+        .team-panel.winner {
+            border-color: #c9d8ee;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .team-panel.loser {
+            border-color: #f1d4cf;
+            background: linear-gradient(180deg, #fff8f6 0%, #fdf1ef 100%);
+        }
+        .team-panel h3 { margin-bottom: 6px; }
+        .panel-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .panel-badge.winner {
+            color: var(--accent);
+            background: #e8f0fb;
+        }
+        .panel-badge.loser {
+            color: var(--negative);
+            background: #fde9e5;
+        }
+        .rivalry-banner {
+            border: 1px solid #d8b26a;
+            border-left: 4px solid #b7791f;
+            border-radius: 6px;
+            background: #fffaf0;
+            padding: 10px 12px;
+            margin: 10px 0;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0 12px;
+        }
+        .pill {
+            border: 1px solid var(--line-strong);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background: var(--surface);
+        }
+        .pill.good { color: var(--positive); border-color: #b7e0c4; }
+        .pill.bad { color: var(--negative); border-color: #f1c0ba; }
+        .pill.warn { color: var(--warning); border-color: #f4d39c; }
+        .decision-table-stack {
+            display: grid;
+            gap: 10px;
+        }
+        .decision-table-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
+        }
+        .decision-table-card h3 {
+            margin-bottom: 4px;
+        }
+        .decision-table-card p {
+            margin-bottom: 10px;
+        }
+        .card-grid > .decision-table-card {
+            grid-column: 1 / -1;
+        }
+        .top-grade-table {
+            border-color: #a9c3e8;
+            background: #f8fbff;
+        }
+        .top-grade-table .primary-grade-row td {
+            background: #e8f0fb;
+            border-top: 2px solid #8badd8;
+            border-bottom: 2px solid #8badd8;
+        }
+        .top-grade-table .primary-grade-row td:first-child,
+        .top-grade-table .primary-grade-row td:last-child {
+            color: var(--accent);
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .series-chart-scroll {
+            max-height: 520px;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 4px;
+        }
+        .series-chart-header,
+        .series-chart-row {
+            display: grid;
+            grid-template-columns: 74px minmax(0, 1fr);
+            gap: 8px;
+            align-items: center;
+        }
+        .series-chart-header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            padding: 4px 0 8px;
+            background: var(--surface);
+        }
+        .series-chart-sides {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .series-chart-sides span:first-child { text-align: right; }
+        .series-chart-row {
+            min-height: 25px;
+            border-top: 1px solid var(--line);
+        }
+        .series-chart-label {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-plot {
+            position: relative;
+            height: 16px;
+        }
+        .series-chart-plot::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            bottom: -5px;
+            left: 50%;
+            width: 1px;
+            background: #94a3b8;
+        }
+        .series-chart-bar {
+            position: absolute;
+            top: 2px;
+            min-width: 2px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        .series-chart-bar.left {
+            right: 50%;
+            background: var(--accent);
+        }
+        .series-chart-bar.right {
+            left: 50%;
+            background: var(--negative);
+        }
+        .series-chart-bar.tie {
+            left: calc(50% - 2px);
+            width: 4px !important;
+            background: var(--text-muted);
+        }
+        .series-chart-value {
+            position: absolute;
+            top: 0;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 16px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-value.left { right: calc(50% + 5px); }
+        .series-chart-value.right { left: calc(50% + 5px); }
+        .series-chart-value.tie {
+            left: calc(50% + 5px);
+            color: var(--text-muted);
+        }
+        .compare-cell {
+            min-width: 220px;
+        }
+        .compare-player {
+            display: block;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .compare-meta {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        .compare-edge {
+            font-weight: 700;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .compare-edge.left {
+            color: var(--accent);
+        }
+        .compare-edge.right {
+            color: var(--negative);
+        }
+        .compare-edge.neutral {
+            color: var(--text-muted);
+        }
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .compact-table {
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+        .compact-table table {
+            min-width: 640px;
+        }
+        .compact-table .table-wrap table {
+            min-width: 0;
+        }
+        th, td {
+            padding: 7px 9px;
+            border-bottom: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: var(--surface-muted);
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        ul.compact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+        ul.compact-list li {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: var(--surface);
+        }
+        .two-up {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+        .compare-table td:first-child,
+        .compare-table th:first-child {
+            white-space: nowrap;
+        }
+        .metric-win {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .chart-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .chart-card.highlight {
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+            border-color: #c9d8ee;
+        }
+        .chart-card + .chart-card {
+            margin-top: 8px;
+        }
+        .chart-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-kicker {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-note {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .legend-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            display: inline-block;
+        }
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .verdict-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px;
+            margin: 8px 0 10px;
+        }
+        .verdict-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .verdict-card .value {
+            font-size: 22px;
+        }
+        .callout {
+            border: 1px solid #f1c0ba;
+            background: #fff5f3;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .takeaway-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .takeaway-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        .takeaway-card li + li {
+            margin-top: 6px;
+        }
+        .award-strip {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px 24px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .skill-hero {
+            border: 1px solid #d7e4f7;
+            border-radius: 8px;
+            padding: 12px;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .skill-team-list {
+            display: grid;
+            gap: 8px;
+        }
+        .skill-team-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 9px;
+            background: var(--surface-muted);
+        }
+        .award-card {
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px 0;
+            background: transparent;
+            min-width: 0;
+        }
+        .section > .muted { font-size: 13px; margin: 0 0 16px; }
+        .detail-card, .verdict-card, .takeaway-card, .chart-card,
+        .skill-team-card, .skill-hero {
+            border: 0; border-radius: 0; background: transparent; padding: 12px 0;
+        }
+        .detail-card.tertiary, .chart-card.tertiary,
+        .chart-card.highlight { background: transparent; border: 0; }
+        .hero-card { border: 0; border-radius: 4px; background: var(--accent-soft); }
+        .detail-card .value, .verdict-card .value { font-size: 16px; line-height: 1.35; }
+        .chart-title, .award-card strong { font-size: 15px; }
+        .subvalue, .chart-note, .comparison-context { font-size: 12px; line-height: 1.5; }
+        .deep-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+        .deep-card { min-width: 0; padding: 4px 0; }
+        .deep-card p { margin: 8px 0; }
+        details { margin: 12px 0; }
+        summary { font-size: 13px; cursor: pointer; color: var(--accent); }
+        .math-page .page { max-width: 1120px; }
+        .math-page p, .math-page li { max-width: 85ch; }
+        .math-page .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+        .math-team-header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+        .math-grade { font-size: 24px; font-weight: 700; white-space: nowrap; }
+        .math-page .math-table { width: 100%; min-width: 680px; table-layout: fixed; }
+        .math-table th:first-child { width: 21%; }
+        .math-table th:nth-child(2) { width: 46%; }
+        .math-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+        .math-expression { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-formula, .math-page pre { background: var(--surface-muted); padding: 14px 16px; border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-page pre { max-height: 420px; overflow: auto; }
+        .math-page .math-model-list { display: grid; gap: 18px; }
+        .math-page .math-model-list h3 { margin-bottom: 6px; }
+        .math-page .math-model-list p { margin: 6px 0; }
+        @media (max-width: 800px) {
+            .award-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 600px) {
+            .page { padding: 16px; }
+            .section { padding: 20px 0; }
+            .award-strip, .deep-grid { grid-template-columns: 1fr; }
+            .math-team-header { flex-direction: column; gap: 0; }
+        }
+        details.deep-metrics {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+            padding: 10px;
+        }
+        details.deep-metrics summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .evidence-list {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .evidence-list li + li {
+            margin-top: 6px;
+        }
+        @media (max-width: 900px) {
+            .hub-grid { grid-template-columns: 1fr; }
+            .detail-card,
+            .detail-card.wide {
+                grid-column: span 12;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+            .compare-grid,
+            .verdict-grid,
+            .insight-pair,
+            .takeaway-grid,
+            .team-columns,
+            .two-up {
+                grid-template-columns: 1fr;
+            }
+            .section-jump-link {
+                flex: 1 1 calc(50% - 8px);
+                max-width: none;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 7px 8px;
+            }
+            th {
+                font-size: 11px;
+                letter-spacing: 0.02em;
+                line-height: 1.2;
+            }
+            .chart-card,
+            .decision-table-card {
+                padding: 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .top-grade-table .primary-grade-row td:first-child,
+            .top-grade-table .primary-grade-row td:last-child {
+                font-size: 16px;
+                line-height: 1.4;
+                overflow-wrap: normal;
+            }
+            .comparison-board table { min-width: 0; width: 100%; }
+            .comparison-board th,
+            .comparison-board td {
+                padding: 7px 5px;
+                font-size: 10px;
+                overflow-wrap: anywhere;
+            }
+            .comparison-board th:first-child,
+            .comparison-board td:first-child,
+            .comparison-board th:nth-child(3),
+            .comparison-board td:nth-child(3) { width: 34%; }
+            .comparison-board th:nth-child(2),
+            .comparison-board td:nth-child(2) { width: 32%; }
+            .manager-comparison table {
+                min-width: 0;
+                table-layout: fixed;
+            }
+            .manager-comparison th,
+            .manager-comparison td {
+                overflow-wrap: anywhere;
+            }
+            .manager-comparison .metric-label {
+                white-space: normal;
+            }
+            .lineup-board table {
+                min-width: 0;
+                table-layout: fixed;
+                font-size: 11px;
+            }
+            .lineup-board th,
+            .lineup-board td { padding: 6px 3px; }
+            .lineup-board .stats-col { display: none; }
+            .lineup-board .player-col { width: 32%; }
+            .lineup-board .points-col { width: 11%; }
+            .lineup-board .slot-col { width: 14%; }
+            .lineup-board .mobile-stat {
+                display: block;
+                color: var(--text-muted);
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+            .lineup-board .total-row td:first-child,
+            .lineup-board .total-row td:last-child {
+                display: table-cell;
+            }
+        }
+
+    .source-bars { display: grid; gap: 14px; margin: 12px 0; }
+    .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+    .source-mode { color: var(--text-muted); font-size: 11px; font-weight: 700; margin: 5px 0 3px; }
+    .source-scale { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+    .source-track { display: flex; width: 100%; height: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--surface-muted); }
+    .source-track.absolute { max-width: 100%; }
+    .source-segment { display: block; height: 100%; min-width: 1px; border-right: 1px solid rgba(255,255,255,.75); }
+    .source-segment-label { display: block; overflow: hidden; padding: 3px 4px 0; color: #fff; font-size: 10px; font-weight: 800; line-height: 15px; text-align: center; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 1px rgba(0,0,0,.45); }
+    .source-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 10px 0; color: var(--text-muted); font-size: 12px; }
+    .source-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 2px; }
+    .scoring-sources-section .comparison-board table { min-width: 620px; table-layout: fixed; }
+    .scoring-sources-section .comparison-board th:first-child,
+    .scoring-sources-section .comparison-board td:first-child { text-align: right; }
+    .scoring-sources-section .comparison-board th:nth-child(2),
+    .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; text-align: center; background: #eef1f5; }
+    .scoring-sources-section .comparison-board th:nth-child(3),
+    .scoring-sources-section .comparison-board td:nth-child(3) { text-align: left; }
+    .scoring-sources-section .comparison-key { display: block; color: var(--text); font-weight: 800; }
+    .scoring-sources-section .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+    @media (max-width: 600px) {
+        .scoring-sources-section .comparison-board table { min-width: 0; width: 100%; }
+        .scoring-sources-section .comparison-board th,
+        .scoring-sources-section .comparison-board td { padding: 7px 5px; font-size: 10px; overflow-wrap: anywhere; }
+        .scoring-sources-section .comparison-board th:first-child,
+        .scoring-sources-section .comparison-board td:first-child,
+        .scoring-sources-section .comparison-board th:nth-child(3),
+        .scoring-sources-section .comparison-board td:nth-child(3) { width: 33%; }
+        .scoring-sources-section .comparison-board th:nth-child(2),
+        .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; }
+    }
+    </style>
+</head>
+<body>
+    <main class="page">
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li><li><a href="../week_04.html">W4</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_04.html">Week 4 Report</a></li><li><a href="index.html">Week 4 Matchups</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">This Matchup</span><ul class="report-nav__links"><li><a href="matchup_01_two-buck-luck_vs_sigma-chi-whiteout.html">Previous Matchup</a></li><li><span class="report-nav-current">Current Matchup</span></li><li><a href="matchup_03_pat-pidgeon_vs_love-land-hurts.html">Next Matchup</a></li></ul></div></div></div></nav>
+<!-- report-nav:end -->
+        <section class="section" id="matchup-header-section">
+            <div class="eyebrow">Weekly Matchup Report</div>
+            <h1>Millan’s Last Supper vs Squat matchup report</h1>
+            <p class="muted">Season 2026, Week 4 | Score, player production, lineup decisions, and series history for this head-to-head.</p>
+            <nav class="section-jump-nav" aria-label="Matchup report sections">
+                <a class="section-jump-link" href="#matchup-snapshot-section">Snapshot</a>
+                <a class="section-jump-link" href="#difference-makers-section">Players</a>
+                <a class="section-jump-link" href="#weekly-headlines-section">Headlines</a>
+                <a class="section-jump-link" href="#kickoff-replay-section">Game Windows</a>
+                <a class="section-jump-link" href="#what-decided-section">What Decided It</a>
+                <a class="section-jump-link" href="#visual-comparison-section">Comparison</a>
+                <a class="section-jump-link" href="#skill-luck-section">Schedule Context</a>
+                <a class="section-jump-link" href="#decision-breakdown-section">Decisions</a>
+                <a class="section-jump-link" href="#head-to-head-section">History</a>
+                <a class="section-jump-link" href="#deep-metrics-section">Deep Metrics</a>
+            </nav>
+        </section>
+
+        <section class="section" id="matchup-snapshot-section">
+            <h2>Matchup Snapshot</h2>
+            <p class="muted">Start with the scoreline, then move into the lineup and move decisions that shaped it.</p>
+
+        <div class="hero-grid">
+            <div class="hero-card">
+                <div class="label">Result</div>
+                <div class="value">Millan’s Last Supper by 44.7</div>
+                <div class="subvalue">Millan’s Last Supper 120.8 to 76.1</div>
+                <p style="margin-top:14px;">Millan’s Last Supper won by 44.7, led by a 18.6-point edge at RB. The leading starters were Derrick Henry (20.9) and Jared Goff (19.7).</p>
+            </div>
+            <div class="hero-sidekick">
+                <div class="detail-card">
+                    <div class="label">Strength vs Schedule Breaks</div>
+                    <div class="value">Schedule-Fortunate Win</div>
+                    <div class="subvalue">The winner secured the result despite finishing below the league median for the week.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Decision Read</div>
+                    <div class="subvalue" style="margin-top:0;color:var(--text);">Millan’s Last Supper won by 44.7. Millan’s Last Supper left 52.5 lineup points on the table, while Squat left 42.1.</div>
+                </div>
+            </div>
+        </div>
+        <details><summary>Result and hindsight context</summary><div class="verdict-grid">
+
+            <div class="verdict-card">
+                <div class="label">Score Battle</div>
+                <div class="value">Millan’s Last Supper</div>
+                <div class="subvalue">Millan’s Last Supper won the raw scoring battle by 44.7 points.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Lineup Battle</div>
+                <div class="value">Squat</div>
+                <div class="subvalue">Squat had the cleaner lineup week by 10.4 points of leakage.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Process Cost</div>
+                <div class="value">Millan’s Last Supper</div>
+                <div class="subvalue">Millan’s Last Supper carried the larger combined lineup and waiver miss total.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Did Decisions Matter?</div>
+                <div class="value">MOSTLY</div>
+                <div class="subvalue">Missed opportunities exceeded the 44.7-point margin, but not from one clear swap.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Biggest Unit Edge</div>
+                <div class="value">Millan’s Last Supper</div>
+                <div class="subvalue">Millan’s Last Supper controlled total RB output by 18.6 points.</div>
+            </div>
+
+        </div></details>
+
+            <div class='decision-table-card manager-comparison top-grade-table'><h3>Overall Manager Assessment</h3><p class='muted'>Balanced performance and management. Missing evidence uses declared reference anchors, not hidden zero-weight exclusions. <a href='matchup_02_millan-s-last-supper_vs_squat_math.html'>Formulas and evidence →</a></p><div class='table-wrap comparison-board'><table><thead><tr><th class='manager-heading'>Liana<span>Millan’s Last Supper</span></th><th>Comparison</th><th class='manager-heading'>Yarp<span>Squat</span></th></tr></thead><tbody><tr class='primary-grade-row'><td>D- · 54.0 / 100</td><td><span class='comparison-key'>Overall Manager Assessment · week</span><span class='comparison-context'>Balanced production, lineup execution, expectation-aware judgment and roster stewardship</span></td><td>F · 41.8 / 100</td></tr><tr class=''><td>C · 49.4 / 100</td><td><span class='comparison-key'>Team performance · week</span><span class='comparison-context'>Separate descriptive production score: all-play position and scoring magnitude</span></td><td>F · 4.0 / 100</td></tr><tr class=''><td>C+ · 72.5 / 100</td><td><span class='comparison-key'>Overall Manager Assessment · season</span><span class='comparison-context'>Equal-week pooled balanced assessments, not an average of letters</span></td><td>D · 55.9 / 100</td></tr><tr class=''><td>69.7%</td><td><span class='comparison-key'>Hindsight lineup capture</span><span class='comparison-context'>Actual / exact best legal lineup; diagnostic only</span></td><td>64.4%</td></tr><tr class=''><td>52.5</td><td><span class='comparison-key'>Unused lineup points</span><span class='comparison-context'>Completed-score opportunity, not proof of a bad decision</span></td><td>42.1</td></tr><tr class=''><td>B+</td><td><span class='comparison-key'>Yahoo matchup grade</span><span class='comparison-context'>Yahoo recap grade; methodology not provided</span></td><td>D</td></tr><tr class=''><td>129.8</td><td><span class='comparison-key'>Yahoo projection</span><span class='comparison-context'>Projected fantasy points</span></td><td>106.6</td></tr><tr class=''><td>8.9 under projection</td><td><span class='comparison-key'>Difference from projection</span><span class='comparison-context'>Actual minus projected points</span></td><td>30.4 under projection</td></tr></tbody></table></div><details><summary>Millan’s Last Supper: assessment breakdown and coverage</summary><p class='note'>Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. No recorded same-week adds or drops: neutral transaction effect; roster sufficiency is assessed separately Roster opportunity is assessed against the observed unrostered pool and best legal owned lineup. Unknown competing auction bids do not block this assessment.</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>49.45 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>17.31</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>41.67 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>14.58</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>75.00 / 100 assessed</td><td class='num'>20.00%</td><td class='num'>15.00</td><td>100.0% · assessed</td></tr><tr><td>S · Roster stewardship</td><td>71.06 / 100 assessed</td><td class='num'>10.00%</td><td class='num'>7.11</td><td>100.0% · assessed</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 100.00%. Unassessed-component sensitivity range: 54.00–54.00 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Assessed assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p></details><details><summary>Squat: assessment breakdown and coverage</summary><p class='note'>Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. Successful events before scheduled kickoff Roster opportunity is assessed against the observed unrostered pool and best legal owned lineup. Unknown competing auction bids do not block this assessment.</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>3.96 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>1.39</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>53.19 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>18.61</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>71.09 / 100 assessed</td><td class='num'>20.00%</td><td class='num'>14.22</td><td>100.0% · assessed</td></tr><tr><td>S · Roster stewardship</td><td>75.73 / 100 assessed</td><td class='num'>10.00%</td><td class='num'>7.57</td><td>100.0% · assessed</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 100.00%. Unassessed-component sensitivity range: 41.79–41.79 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Assessed assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p></details></div>
+            <div class="meta-strip"><div class='meta-chip'><strong>Series:</strong>4-5</div><div class='meta-chip'><strong>Ideal Result:</strong>Millan’s Last Supper</div><div class='meta-chip'><strong>Weekly Ranks:</strong>6/10</div><div class='meta-chip'><strong>League Median:</strong>123.0</div></div>
+            <div class="insight-pair">
+                <div class="detail-card wide">
+                    <h3>Why Millan’s Last Supper Won</h3>
+                    <p>Millan’s Last Supper won by 44.7, led by a 18.6-point edge at RB. The leading starters were Derrick Henry (20.9) and Jared Goff (19.7).</p>
+                </div>
+                <div class="detail-card wide">
+                    <h3>Why Squat Lost</h3>
+                    <p>Squat could not match the opponent&#x27;s RB production, losing that position battle by 18.6 points. Saquon Barkley scored 1.0. A best legal lineup added 42.1, still short of the 44.7-point margin.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="weekly-headlines-section">
+            <h2>The Week’s Headlines</h2>
+            <p class="muted">Scoring records, lineup wins and costly decisions. Each headline states its comparison group and the numbers behind it.</p>
+            <div class="award-strip"><div class='award-card'><div class='muted'>League · this week</div><div class='label'>The Basement Bureau</div><div><strong>Squat</strong></div><div class='subvalue'>Lowest league score this week: 76.1 points.</div></div><div class='award-card'><div class='muted'>League · this week</div><div class='label'>The Bench Was a Gold Mine</div><div><strong>Millan’s Last Supper</strong></div><div class='subvalue'>League&#x27;s largest legal lineup gap: 52.5 points left unused. This measures start/sit cost, not injured bench holds.</div></div></div>
+            <details><summary>Elsewhere around the league</summary><div class='award-strip'><div class='award-card'><div class='muted'>League · this week</div><div class='label'>The Scoreboard Showstopper</div><div><strong>Pat Pidgeon</strong></div><div class='subvalue'>Highest league score this week: 134.2 points.</div></div><div class='award-card'><div class='muted'>League · Weeks 1–4</div><div class='label'>The Season High-Water Mark</div><div><strong>Pat Pidgeon</strong></div><div class='subvalue'>Season-to-date scoring record: 186.5 points (Week 1).</div></div><div class='award-card'><div class='muted'>NFL player pool · this week</div><div class='label'>The Who-Is-This-Guy Game?</div><div><strong>Tyquan Thornton</strong></div><div class='subvalue'>Breakout of the week: 27.1 points versus 4.9 across 3 prior played games (+22.2); prior-week Yahoo ownership 5%, starts 1%. Zero-game injury/bye rows are excluded.</div></div><div class='award-card'><div class='muted'>NFL player pool · this week</div><div class='label'>The Vanishing Act</div><div><strong>Parker Washington</strong></div><div class='subvalue'>Bust of the week: 1.1 points versus 14.4 across 3 prior played games (-13.3); prior-week Yahoo ownership 97%, starts 78%; draft ADP 73.0. Zero-game injury/bye rows are excluded.</div></div></div></details>
+        </section>
+
+
+        <section class="section" id="difference-makers-section">
+            <h2>Who Came Up Big, Who Came Up Small</h2>
+            <p class="muted">Player production is separated by manager. The chart shows both absolute points and each starter's share of team scoring; the tables keep the underlying players and stat lines comparable.</p>
+            <p>Largest unit edge: total RB output favored Millan’s Last Supper by 18.6.</p>
+            <div class='chart-card contribution-chart'><div class='chart-title'>Starter Point Contribution</div><p class='chart-note'>Both team bars use the same points scale. Each starter's segment connects directly to their name, points, and share of team score.</p><div class='contribution-total-row'><span><strong>Millan’s Last Supper</strong> · 120.8 pts</span><span><strong>Squat</strong> · 76.1 pts</span></div><p class='chart-scroll-hint'>Swipe horizontally to inspect every directly labeled starter. Both bars share one points scale.</p><div class='contribution-svg-wrap' tabindex='0' role='region' aria-label='Scrollable starter comparison'><svg viewBox='0 0 1000 330' role='img' aria-label='Starter point contributions on a shared team-total scale'><g aria-label='Starter contribution bars'><text x='20' y='20' font-size='15' font-weight='700' fill='#1f4f8c'>Millan’s Last Supper · 120.8 pts</text><rect x='20' y='38' width='960' height='26' rx='3' fill='#eef1f5'/><g aria-label='Derrick Henry: 20.9 points, 17.3% of team score'><title>Derrick Henry · RB: 20.9 points, 17.3% of team score</title><rect x='20.00' y='38' width='166.05' height='26' fill='#1f4f8c' opacity='1.00' stroke='white'/><path d='M 103.02 64 L 103.02 73 L 73.33 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='73.33' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='73.33'>Derrick</tspan><tspan x='73.33' dy='14' font-weight='700'>Henry</tspan><tspan x='73.33' dy='15' fill='#1f4f8c'>20.9 pts · 17%</tspan></text></g><g aria-label='Jared Goff: 19.7 points, 16.3% of team score'><title>Jared Goff · QB: 19.7 points, 16.3% of team score</title><rect x='186.05' y='38' width='156.78' height='26' fill='#1f4f8c' opacity='0.95' stroke='white'/><path d='M 264.44 64 L 264.44 73 L 180.00 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='180.00' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='180.00'>Jared</tspan><tspan x='180.00' dy='14' font-weight='700'>Goff</tspan><tspan x='180.00' dy='15' fill='#1f4f8c'>19.7 pts · 16%</tspan></text></g><g aria-label='Christian McCaffrey: 17.0 points, 14.1% of team score'><title>Christian McCaffrey · RB: 17.0 points, 14.1% of team score</title><rect x='342.82' y='38' width='135.06' height='26' fill='#1f4f8c' opacity='0.91' stroke='white'/><path d='M 410.36 64 L 410.36 73 L 286.67 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='286.67' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='286.67'>Christian</tspan><tspan x='286.67' dy='14' font-weight='700'>McCaffrey</tspan><tspan x='286.67' dy='15' fill='#1f4f8c'>17.0 pts · 14%</tspan></text></g><g aria-label='Drake London: 14.6 points, 12.1% of team score'><title>Drake London · WR: 14.6 points, 12.1% of team score</title><rect x='477.89' y='38' width='115.99' height='26' fill='#1f4f8c' opacity='0.86' stroke='white'/><path d='M 535.88 64 L 535.88 73 L 393.33 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='393.33' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='393.33'>Drake</tspan><tspan x='393.33' dy='14' font-weight='700'>London</tspan><tspan x='393.33' dy='15' fill='#1f4f8c'>14.6 pts · 12%</tspan></text></g><g aria-label='George Kittle: 14.0 points, 11.6% of team score'><title>George Kittle · TE: 14.0 points, 11.6% of team score</title><rect x='593.88' y='38' width='111.23' height='26' fill='#1f4f8c' opacity='0.82' stroke='white'/><path d='M 649.50 64 L 649.50 73 L 500.00 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='500.00' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='500.00'>George</tspan><tspan x='500.00' dy='14' font-weight='700'>Kittle</tspan><tspan x='500.00' dy='15' fill='#1f4f8c'>14.0 pts · 12%</tspan></text></g><g aria-label='Luther Burden III: 11.4 points, 9.4% of team score'><title>Luther Burden III · WR: 11.4 points, 9.4% of team score</title><rect x='705.11' y='38' width='90.57' height='26' fill='#1f4f8c' opacity='0.78' stroke='white'/><path d='M 750.39 64 L 750.39 73 L 606.67 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='606.67' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='606.67'>Luther Burden</tspan><tspan x='606.67' dy='14' font-weight='700'>III</tspan><tspan x='606.67' dy='15' fill='#1f4f8c'>11.4 pts · 9%</tspan></text></g><g aria-label='Cairo Santos: 11.0 points, 9.1% of team score'><title>Cairo Santos · K: 11.0 points, 9.1% of team score</title><rect x='795.68' y='38' width='87.39' height='26' fill='#1f4f8c' opacity='0.73' stroke='white'/><path d='M 839.38 64 L 839.38 73 L 713.33 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='713.33' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='713.33'>Cairo</tspan><tspan x='713.33' dy='14' font-weight='700'>Santos</tspan><tspan x='713.33' dy='15' fill='#1f4f8c'>11.0 pts · 9%</tspan></text></g><g aria-label='Jaguars: 7.0 points, 5.8% of team score'><title>Jaguars · DEF: 7.0 points, 5.8% of team score</title><rect x='883.07' y='38' width='55.61' height='26' fill='#1f4f8c' opacity='0.69' stroke='white'/><path d='M 910.88 64 L 910.88 73 L 820.00 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='820.00' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='820.00'>Jaguars</tspan><tspan x='820.00' dy='14' font-weight='700'>DEF</tspan><tspan x='820.00' dy='15' fill='#1f4f8c'>7.0 pts · 6%</tspan></text></g><g aria-label='Davante Adams: 5.2 points, 4.3% of team score'><title>Davante Adams · WR: 5.2 points, 4.3% of team score</title><rect x='938.69' y='38' width='41.31' height='26' fill='#1f4f8c' opacity='0.64' stroke='white'/><path d='M 959.34 64 L 959.34 73 L 926.67 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='926.67' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='926.67'>Davante</tspan><tspan x='926.67' dy='14' font-weight='700'>Adams</tspan><tspan x='926.67' dy='15' fill='#1f4f8c'>5.2 pts · 4%</tspan></text></g></g><g aria-label='Starter contribution bars'><text x='20' y='180' font-size='15' font-weight='700' fill='#b42318'>Squat · 76.1 pts</text><rect x='20' y='198' width='960' height='26' rx='3' fill='#eef1f5'/><g aria-label='James Cook III: 18.3 points, 24.0% of team score'><title>James Cook III · RB: 18.3 points, 24.0% of team score</title><rect x='20.00' y='198' width='145.39' height='26' fill='#b42318' opacity='1.00' stroke='white'/><path d='M 92.70 224 L 92.70 233 L 73.33 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='73.33' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='73.33'>James Cook</tspan><tspan x='73.33' dy='14' font-weight='700'>III</tspan><tspan x='73.33' dy='15' fill='#b42318'>18.3 pts · 24%</tspan></text></g><g aria-label='Tyler Shough: 17.0 points, 22.4% of team score'><title>Tyler Shough · QB: 17.0 points, 22.4% of team score</title><rect x='165.39' y='198' width='135.33' height='26' fill='#b42318' opacity='0.95' stroke='white'/><path d='M 233.05 224 L 233.05 233 L 180.00 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='180.00' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='180.00'>Tyler</tspan><tspan x='180.00' dy='14' font-weight='700'>Shough</tspan><tspan x='180.00' dy='15' fill='#b42318'>17.0 pts · 22%</tspan></text></g><g aria-label='Tucker Kraft: 14.5 points, 19.0% of team score'><title>Tucker Kraft · TE: 14.5 points, 19.0% of team score</title><rect x='300.72' y='198' width='115.20' height='26' fill='#b42318' opacity='0.91' stroke='white'/><path d='M 358.32 224 L 358.32 233 L 286.67 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='286.67' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='286.67'>Tucker</tspan><tspan x='286.67' dy='14' font-weight='700'>Kraft</tspan><tspan x='286.67' dy='15' fill='#b42318'>14.5 pts · 19%</tspan></text></g><g aria-label='Jordan Addison: 8.1 points, 10.6% of team score'><title>Jordan Addison · WR: 8.1 points, 10.6% of team score</title><rect x='415.92' y='198' width='64.35' height='26' fill='#b42318' opacity='0.86' stroke='white'/><path d='M 448.09 224 L 448.09 233 L 393.33 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='393.33' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='393.33'>Jordan</tspan><tspan x='393.33' dy='14' font-weight='700'>Addison</tspan><tspan x='393.33' dy='15' fill='#b42318'>8.1 pts · 11%</tspan></text></g><g aria-label='Bears: 7.0 points, 9.2% of team score'><title>Bears · DEF: 7.0 points, 9.2% of team score</title><rect x='480.27' y='198' width='55.61' height='26' fill='#b42318' opacity='0.82' stroke='white'/><path d='M 508.08 224 L 508.08 233 L 500.00 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='500.00' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='500.00'>Bears</tspan><tspan x='500.00' dy='14' font-weight='700'>DEF</tspan><tspan x='500.00' dy='15' fill='#b42318'>7.0 pts · 9%</tspan></text></g><g aria-label='Stefon Diggs: 4.5 points, 5.9% of team score'><title>Stefon Diggs · WR: 4.5 points, 5.9% of team score</title><rect x='535.88' y='198' width='35.75' height='26' fill='#b42318' opacity='0.78' stroke='white'/><path d='M 553.76 224 L 553.76 233 L 606.67 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='606.67' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='606.67'>Stefon</tspan><tspan x='606.67' dy='14' font-weight='700'>Diggs</tspan><tspan x='606.67' dy='15' fill='#b42318'>4.5 pts · 6%</tspan></text></g><g aria-label='Ja&#x27;Marr Chase: 3.7 points, 4.9% of team score'><title>Ja&#x27;Marr Chase · WR: 3.7 points, 4.9% of team score</title><rect x='571.64' y='198' width='29.40' height='26' fill='#b42318' opacity='0.73' stroke='white'/><path d='M 586.33 224 L 586.33 233 L 713.33 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='713.33' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='713.33'>Ja&#x27;Marr</tspan><tspan x='713.33' dy='14' font-weight='700'>Chase</tspan><tspan x='713.33' dy='15' fill='#b42318'>3.7 pts · 5%</tspan></text></g><g aria-label='Chase McLaughlin: 2.0 points, 2.6% of team score'><title>Chase McLaughlin · K: 2.0 points, 2.6% of team score</title><rect x='601.03' y='198' width='15.89' height='26' fill='#b42318' opacity='0.69' stroke='white'/><path d='M 608.98 224 L 608.98 233 L 820.00 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='820.00' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='820.00'>Chase</tspan><tspan x='820.00' dy='14' font-weight='700'>McLaughlin</tspan><tspan x='820.00' dy='15' fill='#b42318'>2.0 pts · 3%</tspan></text></g><g aria-label='Saquon Barkley: 1.0 points, 1.3% of team score'><title>Saquon Barkley · RB: 1.0 points, 1.3% of team score</title><rect x='616.92' y='198' width='7.94' height='26' fill='#b42318' opacity='0.64' stroke='white'/><path d='M 620.89 224 L 620.89 233 L 926.67 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='926.67' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='926.67'>Saquon</tspan><tspan x='926.67' dy='14' font-weight='700'>Barkley</tspan><tspan x='926.67' dy='15' fill='#b42318'>1.0 pts · 1%</tspan></text></g></g></svg></div></div>
+            <div class="verdict-grid">
+                <div class="verdict-card">
+                    <div class="label">Top Started Performance</div>
+                    <div class="value">Derrick Henry</div>
+                    <div class="subvalue">Millan’s Last Supper at 20.9 points.</div>
+                </div>
+                <div class="verdict-card">
+                    <div class="label">Most Relevant Bench Miss</div>
+                    <div class="value">Alvin Kamara</div>
+                    <div class="subvalue">Squat gave up 20.8 points by starting Saquon Barkley (1.0) instead of Alvin Kamara (21.8).</div>
+                </div>
+                <div class="verdict-card">
+                    <div class="label">Only Counterpunch</div>
+                    <div class="value">TE</div>
+                    <div class="subvalue">Squat by 0.5.</div>
+                </div>
+            </div>
+            <div class="decision-table-stack">
+                <div class='decision-table-card'><h3>Who Came Up Big</h3><p class='muted'>Each manager&#x27;s highest-scoring starters, compared in parallel.</p><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Team rank</th><th>Squat</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Derrick Henry</span><span class='compare-meta'>RB | 20.9 pts</span></td><td><span class='comparison-key'>#1</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>James Cook III</span><span class='compare-meta'>RB | 18.3 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Jared Goff</span><span class='compare-meta'>QB | 19.7 pts</span></td><td><span class='comparison-key'>#2</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Tyler Shough</span><span class='compare-meta'>QB | 17.0 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Christian McCaffrey</span><span class='compare-meta'>RB | 17.0 pts</span></td><td><span class='comparison-key'>#3</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Tucker Kraft</span><span class='compare-meta'>TE | 14.5 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Drake London</span><span class='compare-meta'>WR | 14.6 pts</span></td><td><span class='comparison-key'>#4</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='muted'>No notable row</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>George Kittle</span><span class='compare-meta'>TE | 14.0 pts</span></td><td><span class='comparison-key'>#5</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='muted'>No notable row</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Luther Burden III</span><span class='compare-meta'>WR | 11.4 pts</span></td><td><span class='comparison-key'>#6</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='muted'>No notable row</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Cairo Santos</span><span class='compare-meta'>K | 11.0 pts</span></td><td><span class='comparison-key'>#7</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='muted'>No notable row</span></td></tr></tbody></table></div></div>
+                <div class='decision-table-card'><h3>Who Came Up Small</h3><p class='muted'>Each manager&#x27;s lowest-scoring starters. These are scoring outcomes, not claims that every start was a mistake.</p><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Team rank</th><th>Squat</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Davante Adams</span><span class='compare-meta'>WR in W/R/T | 5.2 pts</span></td><td><span class='comparison-key'>#1</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Saquon Barkley</span><span class='compare-meta'>RB | 1.0 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Jaguars</span><span class='compare-meta'>DEF | 7.0 pts</span></td><td><span class='comparison-key'>#2</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Chase McLaughlin</span><span class='compare-meta'>K | 2.0 pts</span></td></tr><tr><td class='compare-cell'><span class='muted'>No notable row</span></td><td><span class='comparison-key'>#3</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Ja&#x27;Marr Chase</span><span class='compare-meta'>WR | 3.7 pts</span></td></tr><tr><td class='compare-cell'><span class='muted'>No notable row</span></td><td><span class='comparison-key'>#4</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Stefon Diggs</span><span class='compare-meta'>WR in W/R/T | 4.5 pts</span></td></tr></tbody></table></div></div>
+            </div>
+            <div class="decision-table-stack">
+                <div class='decision-table-card'><h3>Top Bench Misses</h3><p class='muted'>The highest-scoring actionable bench misses for each manager; each player row includes the lineup differential.</p><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Team rank</th><th>Squat</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Kyle Monangai</span><span class='compare-meta'>RB in BN | 35.0 pts | +18.0 differential</span></td><td><span class='comparison-key'>#1</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Alvin Kamara</span><span class='compare-meta'>RB in BN | 21.8 pts | +20.8 differential</span></td></tr><tr><td class='compare-cell'><span class='muted'>No notable row</span></td><td><span class='comparison-key'>#2</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Deebo Samuel Sr.</span><span class='compare-meta'>WR in BN | 17.6 pts | +13.9 differential</span></td></tr></tbody></table></div></div>
+
+                <div class='decision-table-card'><h3>Position Battles</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Comparison</th><th>Squat</th></tr></thead><tbody><tr><td>37.9</td><td><span class='comparison-key'>RB</span><span class='comparison-context'>Millan’s Last Supper by 18.6</span></td><td>19.3</td></tr><tr><td>31.2</td><td><span class='comparison-key'>WR</span><span class='comparison-context'>Millan’s Last Supper by 14.9</span></td><td>16.3</td></tr><tr><td>11.0</td><td><span class='comparison-key'>K</span><span class='comparison-context'>Millan’s Last Supper by 9.0</span></td><td>2.0</td></tr><tr><td>19.7</td><td><span class='comparison-key'>QB</span><span class='comparison-context'>Millan’s Last Supper by 2.7</span></td><td>17.0</td></tr><tr><td>14.0</td><td><span class='comparison-key'>TE</span><span class='comparison-context'>Squat by 0.5</span></td><td>14.5</td></tr><tr><td>7.0</td><td><span class='comparison-key'>DEF</span><span class='comparison-context'>Tie by 0.0</span></td><td>7.0</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+        <section class='section scoring-sources-section'><h2>Where The Points Came From</h2><p class='muted'>The bars attribute counted starter points to the underlying scoring categories. Absolute bars share one scale; percentage bars normalize each team to its own score. Negative categories are called out beside the total.</p><div class='source-bars'><div><div class='source-team-label'><strong>Millan’s Last Supper</strong><span>120.8 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:100.000%'><span class='source-segment' style='width:16.331%;background:#2563eb' title='Passing: 19.7 points' aria-label='Passing: 19.7 points'><span class='source-segment-label'>Passing 19.7</span></span><span class='source-segment' style='width:31.117%;background:#15803d' title='Rushing: 37.6 points' aria-label='Rushing: 37.6 points'><span class='source-segment-label'>Rushing 37.6</span></span><span class='source-segment' style='width:37.655%;background:#b45309' title='Receiving: 45.5 points' aria-label='Receiving: 45.5 points'><span class='source-segment-label'>Receiving 45.5</span></span><span class='source-segment' style='width:9.103%;background:#7c3aed' title='Kicking: 11.0 points' aria-label='Kicking: 11.0 points'><span class='source-segment-label'>11.0</span></span><span class='source-segment' style='width:5.793%;background:#475569' title='Defense: 7.0 points' aria-label='Defense: 7.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>120.8 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:16.331%;background:#2563eb' title='Passing: 19.7 points' aria-label='Passing: 19.7 points'><span class='source-segment-label'>Passing 16%</span></span><span class='source-segment' style='width:31.117%;background:#15803d' title='Rushing: 37.6 points' aria-label='Rushing: 37.6 points'><span class='source-segment-label'>Rushing 31%</span></span><span class='source-segment' style='width:37.655%;background:#b45309' title='Receiving: 45.5 points' aria-label='Receiving: 45.5 points'><span class='source-segment-label'>Receiving 38%</span></span><span class='source-segment' style='width:9.103%;background:#7c3aed' title='Kicking: 11.0 points' aria-label='Kicking: 11.0 points'><span class='source-segment-label'>9%</span></span><span class='source-segment' style='width:5.793%;background:#475569' title='Defense: 7.0 points' aria-label='Defense: 7.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Squat</strong><span>76.1 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:63.007%'><span class='source-segment' style='width:20.403%;background:#2563eb' title='Passing: 15.5 points' aria-label='Passing: 15.5 points'><span class='source-segment-label'>Passing 15.5</span></span><span class='source-segment' style='width:27.583%;background:#15803d' title='Rushing: 21.0 points' aria-label='Rushing: 21.0 points'><span class='source-segment-label'>Rushing 21.0</span></span><span class='source-segment' style='width:40.193%;background:#b45309' title='Receiving: 30.6 points' aria-label='Receiving: 30.6 points'><span class='source-segment-label'>Receiving 30.6</span></span><span class='source-segment' style='width:2.627%;background:#7c3aed' title='Kicking: 2.0 points' aria-label='Kicking: 2.0 points'></span><span class='source-segment' style='width:9.194%;background:#475569' title='Defense: 7.0 points' aria-label='Defense: 7.0 points'><span class='source-segment-label'>7.0</span></span></div><div class='source-scale'><span>0 pts</span><span>120.8 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:20.403%;background:#2563eb' title='Passing: 15.5 points' aria-label='Passing: 15.5 points'><span class='source-segment-label'>Passing 20%</span></span><span class='source-segment' style='width:27.583%;background:#15803d' title='Rushing: 21.0 points' aria-label='Rushing: 21.0 points'><span class='source-segment-label'>Rushing 28%</span></span><span class='source-segment' style='width:40.193%;background:#b45309' title='Receiving: 30.6 points' aria-label='Receiving: 30.6 points'><span class='source-segment-label'>Receiving 40%</span></span><span class='source-segment' style='width:2.627%;background:#7c3aed' title='Kicking: 2.0 points' aria-label='Kicking: 2.0 points'></span><span class='source-segment' style='width:9.194%;background:#475569' title='Defense: 7.0 points' aria-label='Defense: 7.0 points'><span class='source-segment-label'>9%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div></div><div class='source-legend'><span><span class='source-swatch' style='background:#2563eb'></span>Passing</span><span><span class='source-swatch' style='background:#15803d'></span>Rushing</span><span><span class='source-swatch' style='background:#b45309'></span>Receiving</span><span><span class='source-swatch' style='background:#7c3aed'></span>Kicking</span><span><span class='source-swatch' style='background:#475569'></span>Defense</span></div><details><summary>Scoring-stat detail</summary><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Scoring source</th><th>Squat</th></tr></thead><tbody><tr><td class='num'>28.5</td><td><span class='comparison-key'>Receiving Yards</span><span class='comparison-context'>Receiving</span></td><td class='num'>16.6</td></tr><tr><td class='num'>13.7</td><td><span class='comparison-key'>Passing Yards</span><span class='comparison-context'>Passing</span></td><td class='num'>9.5</td></tr><tr><td class='num'>13.6</td><td><span class='comparison-key'>Rushing Yards</span><span class='comparison-context'>Rushing</span></td><td class='num'>9.0</td></tr><tr><td class='num'>11.0</td><td><span class='comparison-key'>Receiving 1st Downs</span><span class='comparison-context'>Receiving</span></td><td class='num'>8.0</td></tr><tr><td class='num'>12.0</td><td><span class='comparison-key'>Rushing Touchdowns</span><span class='comparison-context'>Rushing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>12.0</td><td><span class='comparison-key'>Rushing 1st Downs</span><span class='comparison-context'>Rushing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>6.0</td><td><span class='comparison-key'>Receiving Touchdowns</span><span class='comparison-context'>Receiving</span></td><td class='num'>6.0</td></tr><tr><td class='num'>6.0</td><td><span class='comparison-key'>Passing Touchdowns</span><span class='comparison-context'>Passing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>6.0</td><td><span class='comparison-key'>Field Goals 30-39 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>0.0</td></tr><tr><td class='num'>2.0</td><td><span class='comparison-key'>Team Sack</span><span class='comparison-context'>Defense</span></td><td class='num'>3.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Points Allowed 7-13 points</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>4.0</td><td><span class='comparison-key'>Team Interception</span><span class='comparison-context'>Defense</span></td><td class='num'>0.0</td></tr><tr><td class='num'>2.0</td><td><span class='comparison-key'>Point After Attempt Made</span><span class='comparison-context'>Kicking</span></td><td class='num'>2.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Field Goals 20-29 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>0.0</td></tr><tr><td class='num'>1.0</td><td><span class='comparison-key'>Points Allowed 14-20 points</span><span class='comparison-context'>Defense</span></td><td class='num'>0.0</td></tr></tbody></table></div></details></section>
+
+
+        <section class="section" id="what-decided-section">
+            <h2>What Decided It</h2>
+            <p class="muted">Compare the final score with the best legal lineups to see whether start/sit choices could have changed the winner.</p>
+            <div class="takeaway-grid">
+                <div class="takeaway-card">
+                    <div class="chart-title">Takeaways</div>
+                    <ul><li>Millan’s Last Supper still won despite leaving 52.5 lineup points on the table, which exceeded the final margin.</li><li>The clearest unit edge was total RB output: Millan’s Last Supper by 18.6 points.</li><li>Against projection, Millan’s Last Supper finished -8.9 while Squat finished -30.4.</li><li>The biggest started performance was Derrick Henry for Millan’s Last Supper at 20.9 points.</li></ul>
+                    <p class='muted'>No single realistic lineup swap clearly exceeded the final margin.</p>
+                </div>
+                <div class='detail-card wide'><h3>Actual Result vs Best Legal Lineups</h3><div class='table-wrap'><table><thead><tr><th class=''>Scenario</th><th class=''>Winner</th><th class='num'>High Score</th><th class='num'>Low Score</th><th class='num'>Margin</th></tr></thead><tbody><tr><td class=''>Actual lineups</td><td class=''>Millan’s Last Supper</td><td class='num'>120.8</td><td class='num'>76.1</td><td class='num'>44.7</td></tr><tr><td class=''>Both best legal lineups</td><td class=''>Millan’s Last Supper</td><td class='num'>173.3</td><td class='num'>118.3</td><td class='num'>55.1</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visual-comparison-section">
+            <h2>Matchup Comparison</h2>
+            <p class="muted">The current-week comparison uses the same left-versus-right structure as the lineup board. The full manager series is shown below.</p>
+            <div class='chart-card'><div class='chart-title'>Quick Comparison Table</div><div class='table-wrap compare-table comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Comparison</th><th>Squat</th></tr></thead><tbody><tr><td class='num metric-win'>120.8</td><td><span class='comparison-key'>Actual Score</span></td><td class='num '>76.1</td></tr><tr><td class='num metric-win'>173.3</td><td><span class='comparison-key'>Ideal Score</span></td><td class='num '>118.3</td></tr><tr><td class='num '>52.5</td><td><span class='comparison-key'>Lineup Delta</span></td><td class='num metric-win'>42.1</td></tr><tr><td class='num metric-win'>8.0</td><td><span class='comparison-key'>Waiver Upside</span></td><td class='num '>17.0</td></tr></tbody></table></div><p class='chart-note'>Bold values mark the favorable side. Lower is favorable for lineup delta and unused waiver upside.</p></div>
+            <div class='chart-card'><div class='chart-title'>All-Time Series Margins</div><div class='series-chart-scroll'><div class='series-chart-header'><span></span><div class='series-chart-sides'><span>Millan’s Last Supper wins</span><span>Squat wins</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2026 W4</div><div class='series-chart-plot' title='Millan’s Last Supper won by 44.7'><span class='series-chart-bar left' style='width:24.91%'></span><span class='series-chart-value left'>44.7</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2025 W11</div><div class='series-chart-plot' title='Squat won by 3.5'><span class='series-chart-bar right' style='width:1.97%'></span><span class='series-chart-value right'>3.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2025 W2</div><div class='series-chart-plot' title='Squat won by 36.0'><span class='series-chart-bar right' style='width:20.07%'></span><span class='series-chart-value right'>36.0</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2024 W12</div><div class='series-chart-plot' title='Millan’s Last Supper won by 28.6'><span class='series-chart-bar left' style='width:15.92%'></span><span class='series-chart-value left'>28.6</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2024 W3</div><div class='series-chart-plot' title='Millan’s Last Supper won by 82.5'><span class='series-chart-bar left' style='width:46.00%'></span><span class='series-chart-value left'>82.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2023 W8</div><div class='series-chart-plot' title='Millan’s Last Supper won by 3.4'><span class='series-chart-bar left' style='width:1.91%'></span><span class='series-chart-value left'>3.4</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2022 W9</div><div class='series-chart-plot' title='Squat won by 32.8'><span class='series-chart-bar right' style='width:18.27%'></span><span class='series-chart-value right'>32.8</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2021 W15</div><div class='series-chart-plot' title='Squat won by 53.3'><span class='series-chart-bar right' style='width:29.71%'></span><span class='series-chart-value right'>53.3</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2021 W6</div><div class='series-chart-plot' title='Squat won by 11.8'><span class='series-chart-bar right' style='width:6.60%'></span><span class='series-chart-value right'>11.8</span></div></div></div><p class='chart-note'>All 9 completed meetings are shown, newest first. Direction shows the winner; length shows the final margin.</p></div>
+        </section>
+
+        <section class='section' id='kickoff-replay-section'><h2>How the Matchup Took Shape</h2><p class='muted'>Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.</p><p><span style='color:#1f4f8c'>Millan’s Last Supper</span> · <span style='color:#b42318'>Squat</span></p><div class='contribution-svg-wrap'><svg viewBox='0 0 1000 220' role='img' aria-label='Reconstructed cumulative starter points by kickoff group'><text x='20' y='40' font-size='11'>121 pts</text><text x='20' y='180' font-size='11'>0</text><polyline points='70.0,180.0 242.0,115.7 414.0,115.7 586.0,79.8 758.0,56.9 930.0,40.0' fill='none' stroke='#1f4f8c' stroke-width='3'/><polyline points='70.0,174.8 242.0,120.9 414.0,111.5 586.0,111.5 758.0,111.5 930.0,91.8' fill='none' stroke='#b42318' stroke-width='3'/><text x='70.0' y='202' text-anchor='middle' font-size='11'>1</text><text x='242.0' y='202' text-anchor='middle' font-size='11'>2</text><text x='414.0' y='202' text-anchor='middle' font-size='11'>3</text><text x='586.0' y='202' text-anchor='middle' font-size='11'>4</text><text x='758.0' y='202' text-anchor='middle' font-size='11'>5</text><text x='930.0' y='202' text-anchor='middle' font-size='11'>6</text></svg></div><div class='table-wrap'><table><thead><tr><th>Kickoff group (Eastern)</th><th>Millan’s Last Supper</th><th>Squat</th></tr></thead><tbody><tr><td>1 · Sun Oct 04 · 09:30 AM ET</td><td><strong>0.0</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td><td><strong>4.5</strong> cumulative · +4.5 in window<details><summary>Starters</summary>Stefon Diggs 4.5</details></td></tr><tr><td>2 · Sun Oct 04 · 01:00 PM ET</td><td><strong>55.5</strong> cumulative · +55.5 in window<details><summary>Starters</summary>Derrick Henry 20.9; Luther Burden III 11.4; Cairo Santos 11.0; Jaguars 7.0; Davante Adams 5.2</details></td><td><strong>51.0</strong> cumulative · +46.5 in window<details><summary>Starters</summary>James Cook III 18.3; Tucker Kraft 14.5; Bears 7.0; Ja&#x27;Marr Chase 3.7; Chase McLaughlin 2.0; Saquon Barkley 1.0</details></td></tr><tr><td>3 · Sun Oct 04 · 04:05 PM ET</td><td><strong>55.5</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td><td><strong>59.1</strong> cumulative · +8.1 in window<details><summary>Starters</summary>Jordan Addison 8.1</details></td></tr><tr><td>4 · Sun Oct 04 · 04:25 PM ET</td><td><strong>86.5</strong> cumulative · +31.0 in window<details><summary>Starters</summary>Christian McCaffrey 17.0; George Kittle 14.0</details></td><td><strong>59.1</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td></tr><tr><td>5 · Sun Oct 04 · 08:20 PM ET</td><td><strong>106.2</strong> cumulative · +19.7 in window<details><summary>Starters</summary>Jared Goff 19.7</details></td><td><strong>59.1</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td></tr><tr><td>6 · Mon Oct 05 · 08:15 PM ET</td><td><strong>120.8</strong> cumulative · +14.6 in window<details><summary>Starters</summary>Drake London 14.6</details></td><td><strong>76.1</strong> cumulative · +17.0 in window<details><summary>Starters</summary>Tyler Shough 17.0</details></td></tr></tbody></table></div><p class='muted'><a href='https://github.com/nflverse/nfldata/blob/master/data/games.csv'>Kickoff schedule source: nflverse</a></p></section>
+
+        <section class="section" id="skill-luck-section">
+            <h2>Weekly Strength and Schedule Context</h2>
+            <p class="muted">The comparison table separates how well each team scored from the opponent it happened to draw. League average: 117.8; median: 123.0.</p>
+            <p><strong>Schedule-Fortunate Win</strong>: The winner secured the result despite finishing below the league median for the week.</p>
+            <div class='decision-table-card'><h3>Strength And Schedule Evidence</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Comparison</th><th>Squat</th></tr></thead><tbody><tr><td>6</td><td><span class='comparison-key'>Weekly rank</span><span class='comparison-context'>Lower is better</span></td><td>10</td></tr><tr><td>4-5</td><td><span class='comparison-key'>All-play record</span><span class='comparison-context'>Record against every team</span></td><td>0-9</td></tr><tr><td>No</td><td><span class='comparison-key'>Beat league median</span><span class='comparison-context'>Score strength</span></td><td>No</td></tr><tr><td>129.8</td><td><span class='comparison-key'>Projected score</span><span class='comparison-context'>Pre-week baseline</span></td><td>106.6</td></tr><tr><td>-8.9</td><td><span class='comparison-key'>Vs projection</span><span class='comparison-context'>Actual minus projected</span></td><td>-30.4</td></tr><tr><td>10</td><td><span class='comparison-key'>Opponent rank</span><span class='comparison-context'>Schedule draw this week</span></td><td>6</td></tr></tbody></table></div></div>
+        </section>
+
+
+
+        <section class="section" id="decision-breakdown-section">
+            <h2>Decision Breakdown</h2>
+            <p class="muted">Inspect submitted lineups and completed-score legal alternatives. These hindsight opportunities are separate from performance and manager decision evidence.</p>
+            <div class='decision-table-card manager-comparison rating-evidence'><h3>Results &amp; Hindsight Evidence</h3><p class='muted'>Production, observed decisions and hindsight opportunity answer different questions. Hindsight differences are not grade contributions or proof of a bad decision.</p><div class='table-wrap comparison-board'><table><thead><tr><th class='manager-heading'>Liana<span>Millan’s Last Supper</span></th><th>Comparison</th><th class='manager-heading'>Yarp<span>Squat</span></th></tr></thead><tbody><tr><td>Winner</td><td><span class='comparison-key'>Result</span><span class='comparison-context'>44.7 pts</span></td><td>Loser</td></tr><tr><td>120.8</td><td><span class='comparison-key'>Score</span><span class='comparison-context'>+44.7</span></td><td>76.1</td></tr><tr><td>6/10</td><td><span class='comparison-key'>Weekly rank</span><span class='comparison-context'>Lower is better</span></td><td>10/10</td></tr><tr><td>4-5</td><td><span class='comparison-key'>All-play record</span><span class='comparison-context'>Vs every team</span></td><td>0-9</td></tr><tr><td>-8.9</td><td><span class='comparison-key'>Vs projection</span><span class='comparison-context'>Points</span></td><td>-30.4</td></tr><tr><td>69.7%</td><td><span class='comparison-key'>Lineup execution</span><span class='comparison-context'>Actual / best legal lineup</span></td><td>64.4%</td></tr><tr><td>120.8 / 173.3</td><td><span class='comparison-key'>Actual / optimal points</span><span class='comparison-context'>Lineup evidence</span></td><td>76.1 / 118.3</td></tr><tr><td>7/9 (77.8%)</td><td><span class='comparison-key'>Optimal starts</span><span class='comparison-context'>Legal lineup slots</span></td><td>7/9 (77.8%)</td></tr><tr><td>52.5</td><td><span class='comparison-key'>Actionable bench miss</span><span class='comparison-context'>+10.4</span></td><td>42.1</td></tr><tr><td>Kyle Monangai over Christian McCaffrey (+18.0)</td><td><span class='comparison-key'>Best available swap</span><span class='comparison-context'>Hindsight</span></td><td>Alvin Kamara over Saquon Barkley (+20.8)</td></tr><tr><td>3-1</td><td><span class='comparison-key'>Season record</span><span class='comparison-context'>Through this week</span></td><td>2-2</td></tr><tr><td>0.32</td><td><span class='comparison-key'>Expected win credit</span><span class='comparison-context'>Score strength, 0-1</span></td><td>0.00</td></tr><tr><td>+0.68</td><td><span class='comparison-key'>Luck win credit</span><span class='comparison-context'>Actual result minus expectation</span></td><td>+0.00</td></tr><tr><td>No</td><td><span class='comparison-key'>Opponent-assisted win</span><span class='comparison-context'>Would opponent&#x27;s best legal lineup reverse it?</span></td><td>No</td></tr></tbody></table></div></div>
+            <div class="decision-table-stack"><div class='decision-table-card lineup-board' id='full-lineup-board'><h3>Full Matchup Lineups</h3><p class='muted'>Every starter and reserve, aligned by lineup slot. Switch to Ideal to see the highest-scoring legal lineup from the same roster.</p><div class='lineup-toggle' role='group' aria-label='Lineup view'><button type='button' class='active' data-lineup-target='actual'>Actual</button><button type='button' data-lineup-target='ideal'>Ideal</button></div><div class='table-wrap lineup-view' data-lineup-view='actual'><table><thead><tr><th class='stats-col'>Stats</th><th class='player-col'>Millan’s Last Supper</th><th class='points-col num'>Pts</th><th class='slot-col'>Pos</th><th class='points-col num'>Pts</th><th class='player-col right'>Squat</th><th class='stats-col right'>Stats</th></tr></thead><tbody><tr><td class='stats-col'><span class='stat-line'>32/52, 412 pass yds · 1 pass TD · 19 pass 1D</span></td><td class='player-col'><span class='player-name'>Jared Goff</span><span class='player-meta'>Detroit Lions · QB</span><span class='mobile-stat'>32/52, 412 pass yds · 1 pass TD · 19 pass 1D</span></td><td class='points-col num'>19.7</td><td class='slot-col'>QB</td><td class='points-col num'>17.0</td><td class='player-col'><span class='player-name right'>Tyler Shough</span><span class='player-meta right'>New Orleans Saints · QB</span><span class='mobile-stat right'>30/48, 286 pass yds · 1 pass TD · 13 pass 1D · 2 rush, 5 yds · 1 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>30/48, 286 pass yds · 1 pass TD · 13 pass 1D · 2 rush, 5 yds · 1 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>15 rush, 52 yds · 3 rec, 18 yds · 1 rush TD · 4 rush 1D</span></td><td class='player-col'><span class='player-name'>Christian McCaffrey</span><span class='player-meta'>San Francisco 49ers · RB</span><span class='mobile-stat'>15 rush, 52 yds · 3 rec, 18 yds · 1 rush TD · 4 rush 1D</span></td><td class='points-col num'>17.0</td><td class='slot-col'>RB1</td><td class='points-col num'>18.3</td><td class='player-col'><span class='player-name right'>James Cook III</span><span class='player-meta right'>Buffalo Bills · RB</span><span class='mobile-stat right'>12 rush, 75 yds · 2 rec, 8 yds · 1 rush TD · 4 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>12 rush, 75 yds · 2 rec, 8 yds · 1 rush TD · 4 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>23 rush, 73 yds · 2 rec, 6 yds · 1 rush TD · 7 rush 1D</span></td><td class='player-col'><span class='player-name'>Derrick Henry</span><span class='player-meta'>Baltimore Ravens · RB</span><span class='mobile-stat'>23 rush, 73 yds · 2 rec, 6 yds · 1 rush TD · 7 rush 1D</span></td><td class='points-col num'>20.9</td><td class='slot-col'>RB2</td><td class='points-col num'>1.0</td><td class='player-col'><span class='player-name right'>Saquon Barkley</span><span class='player-meta right'>Philadelphia Eagles · RB</span><span class='mobile-stat right'>2 rush, 8 yds · 1 rec, 2 yds</span></td><td class='stats-col'><span class='stat-line right'>2 rush, 8 yds · 1 rec, 2 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>5 rec, 96 yds · 5 rec 1D</span></td><td class='player-col'><span class='player-name'>Drake London</span><span class='player-meta'>Atlanta Falcons · WR</span><span class='mobile-stat'>5 rec, 96 yds · 5 rec 1D</span></td><td class='points-col num'>14.6</td><td class='slot-col'>WR1</td><td class='points-col num'>3.7</td><td class='player-col'><span class='player-name right'>Ja&#x27;Marr Chase</span><span class='player-meta right'>Cincinnati Bengals · WR</span><span class='mobile-stat right'>3 rec, 27 yds · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>3 rec, 27 yds · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>4 rec, 63 yds · 1 rush, 11 yds · 1 rush 1D · 3 rec 1D</span></td><td class='player-col'><span class='player-name'>Luther Burden III</span><span class='player-meta'>Chicago Bears · WR</span><span class='mobile-stat'>4 rec, 63 yds · 1 rush, 11 yds · 1 rush 1D · 3 rec 1D</span></td><td class='points-col num'>11.4</td><td class='slot-col'>WR2</td><td class='points-col num'>8.1</td><td class='player-col'><span class='player-name right'>Jordan Addison</span><span class='player-meta right'>Minnesota Vikings · WR</span><span class='mobile-stat right'>4 rec, 52 yds · 1 rush, -1 yds · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>4 rec, 52 yds · 1 rush, -1 yds · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>4 rec, 70 yds · 1 rec TD · 1 rec 1D</span></td><td class='player-col'><span class='player-name'>George Kittle</span><span class='player-meta'>San Francisco 49ers · TE</span><span class='mobile-stat'>4 rec, 70 yds · 1 rec TD · 1 rec 1D</span></td><td class='points-col num'>14.0</td><td class='slot-col'>TE</td><td class='points-col num'>14.5</td><td class='player-col'><span class='player-name right'>Tucker Kraft</span><span class='player-meta right'>Green Bay Packers · TE</span><span class='mobile-stat right'>6 rec, 42 yds · 1 rush, 3 yds · 1 rec TD · 1 rush 1D · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>6 rec, 42 yds · 1 rush, 3 yds · 1 rec TD · 1 rush 1D · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>4 rec, 32 yds · 2 rec 1D</span></td><td class='player-col'><span class='player-name'>Davante Adams</span><span class='player-meta'>Los Angeles Rams · WR</span><span class='mobile-stat'>4 rec, 32 yds · 2 rec 1D</span></td><td class='points-col num'>5.2</td><td class='slot-col'>W/R/T</td><td class='points-col num'>4.5</td><td class='player-col'><span class='player-name right'>Stefon Diggs</span><span class='player-meta right'>Washington Commanders · WR</span><span class='mobile-stat right'>5 rec, 35 yds · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>5 rec, 35 yds · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>3 FG (1 from 20-29, 2 from 30-39) · 2 XP</span></td><td class='player-col'><span class='player-name'>Cairo Santos</span><span class='player-meta'>Chicago Bears · K</span><span class='mobile-stat'>3 FG (1 from 20-29, 2 from 30-39) · 2 XP</span></td><td class='points-col num'>11.0</td><td class='slot-col'>K</td><td class='points-col num'>2.0</td><td class='player-col'><span class='player-name right'>Chase McLaughlin</span><span class='player-meta right'>Tampa Bay Buccaneers · K</span><span class='mobile-stat right'>2 XP</span></td><td class='stats-col'><span class='stat-line right'>2 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>17 PA · 2 sacks · 2 INT</span></td><td class='player-col'><span class='player-name'>Jaguars</span><span class='player-meta'>Jacksonville Jaguars · DEF</span><span class='mobile-stat'>17 PA · 2 sacks · 2 INT</span></td><td class='points-col num'>7.0</td><td class='slot-col'>DEF</td><td class='points-col num'>7.0</td><td class='player-col'><span class='player-name right'>Bears</span><span class='player-meta right'>Chicago Bears · DEF</span><span class='mobile-stat right'>12 PA · 3 sacks</span></td><td class='stats-col'><span class='stat-line right'>12 PA · 3 sacks</span></td></tr><tr class='total-row'><td colspan='2'>Starter total</td><td class='num'>120.8</td><td class='slot-col'>Total</td><td class='num'>76.1</td><td colspan='2' class='right'>Starter total</td></tr><tr class='roster-divider'><td colspan='7'>Bench and reserve players</td></tr><tr><td class='stats-col'><span class='stat-line'>30 rush, 146 yds · 1 rec, 4 yds · 2 rush TD · 8 rush 1D</span></td><td class='player-col'><span class='player-name'>Kyle Monangai</span><span class='player-meta'>Chicago Bears · RB</span><span class='mobile-stat'>30 rush, 146 yds · 1 rec, 4 yds · 2 rush TD · 8 rush 1D</span></td><td class='points-col num'>35.0</td><td class='slot-col'>BN</td><td class='points-col num'>21.8</td><td class='player-col'><span class='player-name right'>Alvin Kamara</span><span class='player-meta right'>New Orleans Saints · RB</span><span class='mobile-stat right'>7 rush, 23 yds · 5 rec, 35 yds · 2 rush TD · 3 rush 1D · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>7 rush, 23 yds · 5 rec, 35 yds · 2 rush TD · 3 rush 1D · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>14 rush, 62 yds · 1 rec, 5 yds · 3 rush TD · 7 rush 1D</span></td><td class='player-col'><span class='player-name'>Brian Robinson</span><span class='player-meta'>Atlanta Falcons · RB</span><span class='mobile-stat'>14 rush, 62 yds · 1 rec, 5 yds · 3 rush TD · 7 rush 1D</span></td><td class='points-col num'>31.7</td><td class='slot-col'>BN</td><td class='points-col num'>17.6</td><td class='player-col'><span class='player-name right'>Deebo Samuel Sr.</span><span class='player-meta right'>San Francisco 49ers · WR</span><span class='mobile-stat right'>5 rec, 26 yds · 3 rush, 44 yds · 1 rec TD · 2 rush 1D · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>5 rec, 26 yds · 3 rush, 44 yds · 1 rec TD · 2 rush 1D · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>9 rec, 145 yds · 6 rec 1D · 1 fumble lost</span></td><td class='player-col'><span class='player-name'>Carnell Tate</span><span class='player-meta'>Tennessee Titans · WR</span><span class='mobile-stat'>9 rec, 145 yds · 6 rec 1D · 1 fumble lost</span></td><td class='points-col num'>18.5</td><td class='slot-col'>BN</td><td class='points-col num'>11.9</td><td class='player-col'><span class='player-name right'>Denzel Boston</span><span class='player-meta right'>Cleveland Browns · WR</span><span class='mobile-stat right'>4 rec, 89 yds · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>4 rec, 89 yds · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>7 rec, 95 yds · 6 rec 1D</span></td><td class='player-col'><span class='player-name'>Michael Wilson</span><span class='player-meta'>Arizona Cardinals · WR</span><span class='mobile-stat'>7 rec, 95 yds · 6 rec 1D</span></td><td class='points-col num'>15.5</td><td class='slot-col'>BN</td><td class='points-col num'>7.6</td><td class='player-col'><span class='player-name right'>Matthew Stafford</span><span class='player-meta right'>Los Angeles Rams · QB</span><span class='mobile-stat right'>32/51, 317 pass yds · 2 INT · 16 pass 1D · 3 rush, 10 yds</span></td><td class='stats-col'><span class='stat-line right'>32/51, 317 pass yds · 2 INT · 16 pass 1D · 3 rush, 10 yds</span></td></tr><tr><td class='stats-col'><span class='stat-line'>18/23, 227 pass yds · 1 pass TD · 11 pass 1D · 3 rush, 0 yds · 1 rush 1D</span></td><td class='player-col'><span class='player-name'>Trevor Lawrence</span><span class='player-meta'>Jacksonville Jaguars · QB</span><span class='mobile-stat'>18/23, 227 pass yds · 1 pass TD · 11 pass 1D · 3 rush, 0 yds · 1 rush 1D</span></td><td class='points-col num'>14.6</td><td class='slot-col'>BN</td><td class='points-col num'>0.0</td><td class='player-col'><span class='player-name right'>Dallas Goedert</span><span class='player-meta right'>Philadelphia Eagles · TE</span><span class='mobile-stat right'>No recorded counting stats</span></td><td class='stats-col'><span class='stat-line right'>No recorded counting stats</span></td></tr><tr><td class='stats-col'><span class='stat-line'>7 rush, 13 yds · 5 rec, 36 yds · 1 rush 1D · 2 rec 1D</span></td><td class='player-col'><span class='player-name'>MarShawn Lloyd</span><span class='player-meta'>Green Bay Packers · RB</span><span class='mobile-stat'>7 rush, 13 yds · 5 rec, 36 yds · 1 rush 1D · 2 rec 1D</span></td><td class='points-col num'>7.9</td><td class='slot-col'>BN</td><td class='points-col num'>0.0</td><td class='player-col'><span class='player-name right'>Jalen Coker</span><span class='player-meta right'>Carolina Panthers · WR</span><span class='mobile-stat right'>No recorded counting stats</span></td><td class='stats-col'><span class='stat-line right'>No recorded counting stats</span></td></tr><tr><td class='stats-col'><span class='stat-line'>No recorded counting stats</span></td><td class='player-col'><span class='player-name'>Rico Dowdle</span><span class='player-meta'>Pittsburgh Steelers · RB</span><span class='mobile-stat'>No recorded counting stats</span></td><td class='points-col num'>0.0</td><td class='slot-col'>BN</td><td class='points-col num'>0.0</td><td class='player-col'><span class='player-name right'>Zach Charbonnet</span><span class='player-meta right'>Seattle Seahawks · RB</span><span class='mobile-stat right'>No recorded counting stats</span></td><td class='stats-col'><span class='stat-line right'>No recorded counting stats</span></td></tr></tbody></table></div><div class='table-wrap lineup-view' data-lineup-view='ideal' hidden><table><thead><tr><th class='stats-col'>Stats</th><th class='player-col'>Millan’s Last Supper</th><th class='points-col num'>Pts</th><th class='slot-col'>Pos</th><th class='points-col num'>Pts</th><th class='player-col right'>Squat</th><th class='stats-col right'>Stats</th></tr></thead><tbody><tr><td class='stats-col'><span class='stat-line'>32/52, 412 pass yds · 1 pass TD · 19 pass 1D</span></td><td class='player-col'><span class='player-name'>Jared Goff</span><span class='player-meta'>Detroit Lions · QB</span><span class='mobile-stat'>32/52, 412 pass yds · 1 pass TD · 19 pass 1D</span></td><td class='points-col num'>19.7</td><td class='slot-col'>QB</td><td class='points-col num'>17.0</td><td class='player-col'><span class='player-name right'>Tyler Shough</span><span class='player-meta right'>New Orleans Saints · QB</span><span class='mobile-stat right'>30/48, 286 pass yds · 1 pass TD · 13 pass 1D · 2 rush, 5 yds · 1 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>30/48, 286 pass yds · 1 pass TD · 13 pass 1D · 2 rush, 5 yds · 1 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>14 rush, 62 yds · 1 rec, 5 yds · 3 rush TD · 7 rush 1D</span></td><td class='player-col'><span class='player-name'>Brian Robinson</span><span class='player-meta'>Atlanta Falcons · RB</span><span class='mobile-stat'>14 rush, 62 yds · 1 rec, 5 yds · 3 rush TD · 7 rush 1D</span></td><td class='points-col num'>31.7</td><td class='slot-col'>RB1</td><td class='points-col num'>21.8</td><td class='player-col'><span class='player-name right'>Alvin Kamara</span><span class='player-meta right'>New Orleans Saints · RB</span><span class='mobile-stat right'>7 rush, 23 yds · 5 rec, 35 yds · 2 rush TD · 3 rush 1D · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>7 rush, 23 yds · 5 rec, 35 yds · 2 rush TD · 3 rush 1D · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>23 rush, 73 yds · 2 rec, 6 yds · 1 rush TD · 7 rush 1D</span></td><td class='player-col'><span class='player-name'>Derrick Henry</span><span class='player-meta'>Baltimore Ravens · RB</span><span class='mobile-stat'>23 rush, 73 yds · 2 rec, 6 yds · 1 rush TD · 7 rush 1D</span></td><td class='points-col num'>20.9</td><td class='slot-col'>RB2</td><td class='points-col num'>18.3</td><td class='player-col'><span class='player-name right'>James Cook III</span><span class='player-meta right'>Buffalo Bills · RB</span><span class='mobile-stat right'>12 rush, 75 yds · 2 rec, 8 yds · 1 rush TD · 4 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>12 rush, 75 yds · 2 rec, 8 yds · 1 rush TD · 4 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>9 rec, 145 yds · 6 rec 1D · 1 fumble lost</span></td><td class='player-col'><span class='player-name'>Carnell Tate</span><span class='player-meta'>Tennessee Titans · WR</span><span class='mobile-stat'>9 rec, 145 yds · 6 rec 1D · 1 fumble lost</span></td><td class='points-col num'>18.5</td><td class='slot-col'>WR1</td><td class='points-col num'>11.9</td><td class='player-col'><span class='player-name right'>Denzel Boston</span><span class='player-meta right'>Cleveland Browns · WR</span><span class='mobile-stat right'>4 rec, 89 yds · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>4 rec, 89 yds · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>7 rec, 95 yds · 6 rec 1D</span></td><td class='player-col'><span class='player-name'>Michael Wilson</span><span class='player-meta'>Arizona Cardinals · WR</span><span class='mobile-stat'>7 rec, 95 yds · 6 rec 1D</span></td><td class='points-col num'>15.5</td><td class='slot-col'>WR2</td><td class='points-col num'>8.1</td><td class='player-col'><span class='player-name right'>Jordan Addison</span><span class='player-meta right'>Minnesota Vikings · WR</span><span class='mobile-stat right'>4 rec, 52 yds · 1 rush, -1 yds · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>4 rec, 52 yds · 1 rush, -1 yds · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>4 rec, 70 yds · 1 rec TD · 1 rec 1D</span></td><td class='player-col'><span class='player-name'>George Kittle</span><span class='player-meta'>San Francisco 49ers · TE</span><span class='mobile-stat'>4 rec, 70 yds · 1 rec TD · 1 rec 1D</span></td><td class='points-col num'>14.0</td><td class='slot-col'>TE</td><td class='points-col num'>14.5</td><td class='player-col'><span class='player-name right'>Tucker Kraft</span><span class='player-meta right'>Green Bay Packers · TE</span><span class='mobile-stat right'>6 rec, 42 yds · 1 rush, 3 yds · 1 rec TD · 1 rush 1D · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>6 rec, 42 yds · 1 rush, 3 yds · 1 rec TD · 1 rush 1D · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>30 rush, 146 yds · 1 rec, 4 yds · 2 rush TD · 8 rush 1D</span></td><td class='player-col'><span class='player-name'>Kyle Monangai</span><span class='player-meta'>Chicago Bears · RB</span><span class='mobile-stat'>30 rush, 146 yds · 1 rec, 4 yds · 2 rush TD · 8 rush 1D</span></td><td class='points-col num'>35.0</td><td class='slot-col'>W/R/T</td><td class='points-col num'>17.6</td><td class='player-col'><span class='player-name right'>Deebo Samuel Sr.</span><span class='player-meta right'>San Francisco 49ers · WR</span><span class='mobile-stat right'>5 rec, 26 yds · 3 rush, 44 yds · 1 rec TD · 2 rush 1D · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>5 rec, 26 yds · 3 rush, 44 yds · 1 rec TD · 2 rush 1D · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>3 FG (1 from 20-29, 2 from 30-39) · 2 XP</span></td><td class='player-col'><span class='player-name'>Cairo Santos</span><span class='player-meta'>Chicago Bears · K</span><span class='mobile-stat'>3 FG (1 from 20-29, 2 from 30-39) · 2 XP</span></td><td class='points-col num'>11.0</td><td class='slot-col'>K</td><td class='points-col num'>2.0</td><td class='player-col'><span class='player-name right'>Chase McLaughlin</span><span class='player-meta right'>Tampa Bay Buccaneers · K</span><span class='mobile-stat right'>2 XP</span></td><td class='stats-col'><span class='stat-line right'>2 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>17 PA · 2 sacks · 2 INT</span></td><td class='player-col'><span class='player-name'>Jaguars</span><span class='player-meta'>Jacksonville Jaguars · DEF</span><span class='mobile-stat'>17 PA · 2 sacks · 2 INT</span></td><td class='points-col num'>7.0</td><td class='slot-col'>DEF</td><td class='points-col num'>7.0</td><td class='player-col'><span class='player-name right'>Bears</span><span class='player-meta right'>Chicago Bears · DEF</span><span class='mobile-stat right'>12 PA · 3 sacks</span></td><td class='stats-col'><span class='stat-line right'>12 PA · 3 sacks</span></td></tr><tr class='total-row'><td colspan='2'>Ideal total</td><td class='num'>173.3</td><td class='slot-col'>Total</td><td class='num'>118.3</td><td colspan='2' class='right'>Ideal total</td></tr></tbody></table></div></div><div class='decision-table-card'><h3>Lineup Opportunities</h3><p class='muted'>Legal start-sit changes available on each manager&#x27;s submitted roster, ranked by realized point gain.</p><div class='table-wrap opportunity-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Squat</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Kyle Monangai over Christian McCaffrey</span><span class='compare-meta'>RB | +18.0 pts | BENCH VS STARTER</span></td><td class='compare-cell'><span class='compare-player'>Alvin Kamara over Saquon Barkley</span><span class='compare-meta'>RB | +20.8 pts | BENCH VS STARTER</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Carnell Tate over Davante Adams</span><span class='compare-meta'>WR | +13.3 pts | BENCH VS STARTER</span></td><td class='compare-cell'><span class='compare-player'>Deebo Samuel Sr. over Ja&#x27;Marr Chase</span><span class='compare-meta'>WR | +13.9 pts | BENCH VS STARTER</span></td></tr></tbody></table></div></div><div class='decision-table-card'><h3>Waiver Alternatives</h3><p class='muted'>Available-player starts that improved the lineup beyond same-position options already rostered. These are completed-score alternatives, not drop recommendations.</p><div class='table-wrap opportunity-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Squat</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Start available Will Reichard over Cairo Santos</span><span class='compare-meta'>K | +8.0 pts | GAIN BEYOND ROSTER OPTIONS</span></td><td class='compare-cell'><span class='compare-player'>Start available Will Reichard over Chase McLaughlin</span><span class='compare-meta'>K | +17.0 pts | GAIN BEYOND ROSTER OPTIONS</span></td></tr></tbody></table></div></div></div>
+        </section>
+
+        <section class='section' id='crowd-decisions-section'><h2>Following the Crowd—or Finding an Edge?</h2><p class='muted'>The grading reference uses legal lineups and strictly prior starting/ownership expectations. Crowd following receives competent judgment credit even when an unexpected bench breakout creates hindsight regret. Unknown starters are held fixed and unknown bench expectations are excluded from the observed crowd reference; partial coverage remains explicit. Successful unpopular choices and costly high-expectation benchings affect judgment. Recorded participation does not prove availability at lineup lock; excluded or uncertain alternatives are not fabricated mistakes. <a href='matchup_02_millan-s-last-supper_vs_squat_math.html#crowd-model'>Model and arithmetic →</a></p><div class='deep-grid'><article class='deep-card'><h3>Millan’s Last Supper</h3><p><strong>Expectation-aware judgment: 75.00 / 100 assessed</strong> · assessed</p><p>Supported actual-versus-crowd edge: <strong>+0.0 fantasy points</strong>. Crowd lineup: 120.8 points; confidence contrast: 0.000. Judgment does not repeat hindsight missed points.</p><p class='muted'>Assessed judgment coverage: 100.0%. Prior ownership coverage: 100.0%. Prior expectation snapshot weeks: 3. Missing ownership falls back to prior starting rates, never zero ownership.</p><p class='muted'>Season judgment: 75.39 / 100 assessed. This is the J component of Overall Manager Assessment, not the legacy changed-lineup decision diagnostic.</p><details><summary>Supported actual and crowd-preferred lineups</summary><div class='deep-grid'><div><h4>Actual</h4><ul><li><strong>QB · Jared Goff</strong> — 19.7 pts; prior starting rate 56.0%; prior ownership 93.0% (snapshot week 3)</li><li><strong>RB · Christian McCaffrey</strong> — 17.0 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Derrick Henry</strong> — 20.9 pts; prior starting rate 99.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Drake London</strong> — 14.6 pts; prior starting rate 94.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Luther Burden III</strong> — 11.4 pts; prior starting rate 42.0%; prior ownership 94.0% (snapshot week 3)</li><li><strong>TE · George Kittle</strong> — 14.0 pts; prior starting rate 75.0%; prior ownership 97.0% (snapshot week 3)</li><li><strong>W/R/T · Davante Adams</strong> — 5.2 pts; prior starting rate 84.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>K · Cairo Santos</strong> — 11.0 pts; prior starting rate 32.0%; prior ownership 36.0% (snapshot week 3)</li><li><strong>DEF · Jaguars</strong> — 7.0 pts; prior starting rate 47.0%; prior ownership 53.0% (snapshot week 3)</li></ul></div><div><h4>Crowd-preferred</h4><ul><li><strong>QB · Jared Goff</strong> — 19.7 pts; prior starting rate 56.0%; prior ownership 93.0% (snapshot week 3)</li><li><strong>RB · Christian McCaffrey</strong> — 17.0 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Derrick Henry</strong> — 20.9 pts; prior starting rate 99.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Drake London</strong> — 14.6 pts; prior starting rate 94.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Luther Burden III</strong> — 11.4 pts; prior starting rate 42.0%; prior ownership 94.0% (snapshot week 3)</li><li><strong>TE · George Kittle</strong> — 14.0 pts; prior starting rate 75.0%; prior ownership 97.0% (snapshot week 3)</li><li><strong>W/R/T · Davante Adams</strong> — 5.2 pts; prior starting rate 84.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>K · Cairo Santos</strong> — 11.0 pts; prior starting rate 32.0%; prior ownership 36.0% (snapshot week 3)</li><li><strong>DEF · Jaguars</strong> — 7.0 pts; prior starting rate 47.0%; prior ownership 53.0% (snapshot week 3)</li></ul></div></div></details></article><article class='deep-card'><h3>Squat</h3><p><strong>Expectation-aware judgment: 71.09 / 100 assessed</strong> · assessed</p><p>Supported actual-versus-crowd edge: <strong>-16.9 fantasy points</strong>. Crowd lineup: 93.1 points; confidence contrast: 0.161. Judgment does not repeat hindsight missed points.</p><p class='muted'>Assessed judgment coverage: 100.0%. Prior ownership coverage: 100.0%. Prior expectation snapshot weeks: 3. Missing ownership falls back to prior starting rates, never zero ownership.</p><p class='muted'>Season judgment: 77.36 / 100 assessed. This is the J component of Overall Manager Assessment, not the legacy changed-lineup decision diagnostic.</p><details><summary>Supported actual and crowd-preferred lineups</summary><div class='deep-grid'><div><h4>Actual</h4><ul><li><strong>QB · Tyler Shough</strong> — 17.0 pts; prior starting rate 51.0%; prior ownership 83.0% (snapshot week 3)</li><li><strong>RB · James Cook III</strong> — 18.3 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Saquon Barkley</strong> — 1.0 pts; prior starting rate 93.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Ja&#x27;Marr Chase</strong> — 3.7 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Jordan Addison</strong> — 8.1 pts; prior starting rate 13.0%; prior ownership 73.0% (snapshot week 3)</li><li><strong>TE · Tucker Kraft</strong> — 14.5 pts; prior starting rate 82.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>W/R/T · Stefon Diggs</strong> — 4.5 pts; prior starting rate 30.0%; prior ownership 90.0% (snapshot week 3)</li><li><strong>K · Chase McLaughlin</strong> — 2.0 pts; prior starting rate 24.0%; prior ownership 26.0% (snapshot week 3)</li><li><strong>DEF · Bears</strong> — 7.0 pts; prior starting rate 4.0%; prior ownership 8.0% (snapshot week 3)</li></ul></div><div><h4>Crowd-preferred</h4><ul><li><strong>QB · Tyler Shough</strong> — 17.0 pts; prior starting rate 51.0%; prior ownership 83.0% (snapshot week 3)</li><li><strong>RB · James Cook III</strong> — 18.3 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Saquon Barkley</strong> — 1.0 pts; prior starting rate 93.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Ja&#x27;Marr Chase</strong> — 3.7 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>TE · Tucker Kraft</strong> — 14.5 pts; prior starting rate 82.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>W/R/T · Deebo Samuel Sr.</strong> — 17.6 pts; prior starting rate 49.0%; prior ownership 84.0% (snapshot week 3)</li><li><strong>WR · Denzel Boston</strong> — 11.9 pts; prior starting rate 35.0%; prior ownership 76.0% (snapshot week 3)</li><li><strong>K · Chase McLaughlin</strong> — 2.0 pts; prior starting rate 24.0%; prior ownership 26.0% (snapshot week 3)</li><li><strong>DEF · Bears</strong> — 7.0 pts; prior starting rate 4.0%; prior ownership 8.0% (snapshot week 3)</li></ul></div></div></details></article></div></section>
+
+        <section class="section" id="head-to-head-section">
+            <h2>Head-to-Head History</h2>
+            <p class="muted">This compares the current result to the full series between these managers, not just the current season.</p>
+
+            <div class="card-grid">
+                <div class="detail-card">
+                    <div class="label">Manager Series Record</div>
+                    <div class="value">4-5</div>
+                    <div class="subvalue">Millan’s Last Supper vs Squat</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Average Margin</div>
+                    <div class="value">2.4</div>
+                    <div class="subvalue">Average margin from Millan’s Last Supper&#x27;s perspective: +2.4.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Current Margin Rank</div>
+                    <div class="value">7th closest</div>
+                    <div class="subvalue">6th highest combined score</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Playoff Meetings</div>
+                    <div class="value">0</div>
+                    <div class="subvalue">Millan’s Last Supper carries the current 1-game streak.</div>
+                </div>
+                <div class='detail-card wide'><h3>Last Five Meetings</h3><div class='table-wrap'><table><thead><tr><th>Season</th><th>Context</th><th>Winner</th><th class='num'>Margin</th><th class='num'>Combined</th></tr></thead><tbody><tr><td><a href="matchup_02_millan-s-last-supper_vs_squat.html">2026 W4</a></td><td>regular season</td><td>Millan’s Last Supper</td><td class='num'>44.7</td><td class='num'>197.0</td></tr><tr><td><a href="../../2025/matchups_week_11/matchup_03_millan-darling-millan_vs_reverse-ted-lasso.html">2025 W11</a></td><td>regular season</td><td>Squat</td><td class='num'>3.5</td><td class='num'>129.3</td></tr><tr><td><a href="../../2025/matchups_week_02/matchup_03_millan-darling-millan_vs_reverse-ted-lasso.html">2025 W2</a></td><td>regular season</td><td>Squat</td><td class='num'>36.0</td><td class='num'>263.5</td></tr><tr><td>2024 W12</td><td>regular season</td><td>Millan’s Last Supper</td><td class='num'>28.6</td><td class='num'>250.0</td></tr><tr><td>2024 W3</td><td>regular season</td><td>Millan’s Last Supper</td><td class='num'>82.5</td><td class='num'>213.1</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+        <section class="section" id="deep-metrics-section">
+            <h2>Deep Metrics</h2>
+            <p class="muted">Expandable evidence for people who want the extra analytical layer.</p>
+            <details class="deep-metrics">
+                <summary>Open deep metrics</summary>
+                <div class="card-grid" style="margin-top:12px;">
+                    <div class='decision-table-card'><h3>Lineup Decisions</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Comparison</th><th>Squat</th></tr></thead><tbody><tr><td>120.8</td><td><span class='comparison-key'>Actual</span><span class='comparison-context'>Started points</span></td><td>76.1</td></tr><tr><td>173.3</td><td><span class='comparison-key'>Optimal</span><span class='comparison-context'>Best legal lineup</span></td><td>118.3</td></tr><tr><td>52.5</td><td><span class='comparison-key'>Left on bench</span><span class='comparison-context'>Actionable gap</span></td><td>42.1</td></tr><tr><td>77.8%</td><td><span class='comparison-key'>Optimal start rate</span><span class='comparison-context'>Correct slots</span></td><td>77.8%</td></tr></tbody></table></div></div>
+                    <div class='decision-table-card'><h3>Team Style</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Millan’s Last Supper</th><th>Comparison</th><th>Squat</th></tr></thead><tbody><tr><td>Stable Build</td><td><span class='comparison-key'>Style</span><span class='comparison-context'>Scoring shape</span></td><td>Stable Build</td></tr><tr><td>47.7%</td><td><span class='comparison-key'>Top 3 share</span><span class='comparison-context'>Starter concentration</span></td><td>65.5%</td></tr><tr><td>52.3%</td><td><span class='comparison-key'>Structural integrity</span><span class='comparison-context'>Depth across starters</span></td><td>34.5%</td></tr><tr><td>33.6</td><td><span class='comparison-key'>Fragility</span><span class='comparison-context'>Reliance on top scorers</span></td><td>46.4</td></tr><tr><td>5.0</td><td><span class='comparison-key'>Volatility</span><span class='comparison-context'>Starter scoring spread</span></td><td>6.2</td></tr></tbody></table></div></div>
+                    <div class="detail-card wide">
+                        <h3>Timeline Status</h3>
+                        <p>Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.</p>
+                        <p class="muted">Status: available</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+    </main>
+    <script>
+    document.querySelectorAll('.lineup-toggle button').forEach((button) => {
+        button.addEventListener('click', () => {
+            const board = button.closest('.lineup-board');
+            const target = button.dataset.lineupTarget;
+            board.querySelectorAll('.lineup-toggle button').forEach((item) =>
+                item.classList.toggle('active', item === button)
+            );
+            board.querySelectorAll('[data-lineup-view]').forEach((view) => {
+                view.hidden = view.dataset.lineupView !== target;
+            });
+        });
+    });
+    const usedHeadingIds = new Set();
+    document.querySelectorAll('h1, h2, h3').forEach((heading) => {
+        const base = (heading.id || heading.textContent || 'section').trim().toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section';
+        let id = base;
+        let suffix = 2;
+        while (usedHeadingIds.has(id) || (document.getElementById(id) && document.getElementById(id) !== heading)) {
+            id = `${base}-${suffix++}`;
+        }
+        heading.id = id;
+        usedHeadingIds.add(id);
+        const anchor = document.createElement('a');
+        anchor.className = 'heading-anchor';
+        anchor.href = `#${id}`;
+        anchor.textContent = '#';
+        anchor.setAttribute('aria-label', `Link to ${heading.textContent.trim()}`);
+        heading.appendChild(anchor);
+    });
+    </script>
+</body>
+</html>

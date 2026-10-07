@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat Pidgeon vs Love(land) Hurts matchup report</title>
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --surface: #ffffff;
+            --surface-muted: #f2f4f7;
+            --text: #111827;
+            --text-muted: #5b6472;
+            --line: #e2e8f0;
+            --line-strong: #cbd5e1;
+            --accent: #1f4f8c;
+            --accent-soft: #e8f0fb;
+            --positive: #1f7a45;
+            --negative: #b42318;
+            --warning: #a15c07;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .page {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 20px 28px 48px;
+            background: var(--surface);
+        }
+        .section {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 24px 0;
+            margin: 0;
+        }
+        .eyebrow {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 1.1;
+            letter-spacing: 0;
+            margin: 0 0 10px;
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        h1, h2, h3 { scroll-margin-top: 16px; }
+        .heading-anchor {
+            margin-left: 7px;
+            color: var(--text-muted);
+            font-size: 0.75em;
+            text-decoration: none;
+            opacity: 0.35;
+        }
+        h1:hover .heading-anchor,
+        h2:hover .heading-anchor,
+        h3:hover .heading-anchor,
+        .heading-anchor:focus { opacity: 1; }
+        p { margin: 0 0 10px; }
+        .muted { color: var(--text-muted); }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .hub-grid .detail-card { grid-column: auto; }
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .meta-chip {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 6px 9px;
+            background: #f8fafc;
+            min-height: 34px;
+        }
+        .section-jump-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .section-jump-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            padding: 5px 9px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            color: var(--text);
+            background: var(--surface-muted);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.2;
+            max-width: 180px;
+            overflow-wrap: anywhere;
+        }
+        .section-jump-link:hover,
+        .section-jump-link:focus {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .lineup-toggle {
+            display: inline-flex;
+            gap: 2px;
+            padding: 2px;
+            margin: 2px 0 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+        }
+        .lineup-toggle button {
+            min-width: 72px;
+            min-height: 32px;
+            border: 0;
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-muted);
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .lineup-toggle button.active {
+            background: var(--surface);
+            color: var(--accent);
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+        }
+        .contribution-chart { margin: 12px 0; }
+        .contribution-svg-wrap { overflow-x: auto; }
+        .chart-scroll-hint { display: none; }
+        .contribution-total-row { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
+        @media (max-width: 840px) {
+            .chart-scroll-hint { display: block; color: var(--text-muted); font-size: 12px; }
+        }
+        @media (max-width: 600px) {
+            .contribution-total-row { flex-direction: column; gap: 4px; }
+        }
+        .contribution-svg-wrap svg { display: block; min-width: 760px; width: 100%; }
+        .opportunity-board table { width: 100%; table-layout: fixed; }
+        .opportunity-board th, .opportunity-board td { width: 50%; text-align: left; vertical-align: top; }
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 12px;
+        }
+        .contribution-team {
+            min-width: 0;
+            padding: 10px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface);
+        }
+        .contribution-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 5px;
+        }
+        .contribution-mode-label {
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+            margin: 6px 0 3px;
+        }
+        .contribution-scale {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .contribution-total-track,
+        .contribution-player-track {
+            width: 100%;
+            min-width: 2px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--surface-muted);
+        }
+        .contribution-total-track { height: 9px; }
+        .contribution-total-fill,
+        .contribution-player-fill {
+            display: block;
+            height: 100%;
+            min-width: 2px;
+            border-radius: inherit;
+        }
+        .contribution-player-list {
+            display: grid;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .contribution-player-row {
+            display: grid;
+            grid-template-columns: minmax(92px, 1.15fr) minmax(70px, 1fr) 72px;
+            gap: 7px;
+            align-items: center;
+            min-height: 24px;
+        }
+        .contribution-player-name {
+            min-width: 0;
+            overflow: hidden;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .contribution-player-name span {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .contribution-player-track { height: 11px; }
+        .contribution-player-fill.negative { background: var(--bad) !important; }
+        .contribution-player-value {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+            white-space: nowrap;
+        }
+        @media (max-width: 760px) {
+            .contribution-grid { grid-template-columns: 1fr; }
+            .contribution-player-row {
+                grid-template-columns: minmax(105px, 1.15fr) minmax(90px, 1fr) 72px;
+            }
+        }
+        .meta-chip strong {
+            color: var(--text);
+            margin-right: 6px;
+        }
+        .insight-pair {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .hero-card {
+            border: 1px solid #c9d8ee;
+            border-radius: 8px;
+            padding: 14px;
+            background: linear-gradient(180deg, #f4f8fe 0%, #e8f0fb 100%);
+        }
+        .hero-card .value {
+            font-size: 34px;
+            line-height: 0.95;
+            margin-bottom: 4px;
+        }
+        .hero-card .subvalue {
+            font-size: 15px;
+            color: var(--text);
+        }
+        .hero-sidekick {
+            display: grid;
+            gap: 12px;
+        }
+        .detail-card {
+            grid-column: span 3;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .detail-card.tertiary,
+        .chart-card.tertiary {
+            background: #f8fafc;
+            border-style: dashed;
+        }
+        .detail-card.wide {
+            grid-column: span 6;
+        }
+        .label {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 26px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        .subvalue {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+        .team-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .manager-comparison {
+            margin-bottom: 10px;
+        }
+        .manager-comparison table {
+            min-width: 680px;
+        }
+        .manager-comparison th:not(:first-child),
+        .manager-comparison td:not(:first-child) {
+            text-align: right;
+        }
+        .manager-comparison .manager-heading {
+            color: var(--text);
+            text-transform: none;
+            font-size: 13px;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+        .manager-comparison .manager-heading span {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-top: 5px;
+        }
+        .manager-comparison .metric-label {
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .comparison-board table {
+            min-width: 620px;
+            table-layout: fixed;
+        }
+        .comparison-board th:first-child,
+        .comparison-board td:first-child { text-align: right; }
+        .comparison-board th:nth-child(2),
+        .comparison-board td:nth-child(2) {
+            width: 24%;
+            text-align: center;
+            background: #eef1f5;
+        }
+        .comparison-board th:nth-child(3),
+        .comparison-board td:nth-child(3) { text-align: left; }
+        .comparison-key { display: block; color: var(--text); font-weight: 800; }
+        .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+        .lineup-board table {
+            min-width: 920px;
+            table-layout: fixed;
+        }
+        .lineup-board .stats-col { width: 22%; }
+        .lineup-board .player-col { width: 20%; }
+        .lineup-board .points-col { width: 7%; }
+        .lineup-board .slot-col {
+            width: 7%;
+            text-align: center;
+            background: #eef1f5;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+        .lineup-board .right { text-align: right; }
+        .lineup-board .player-name {
+            display: block;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .lineup-board .player-meta,
+        .lineup-board .stat-line {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        .lineup-board .mobile-stat { display: none; }
+        .lineup-board .roster-divider td {
+            background: #e7ebf0;
+            color: var(--text);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .lineup-board .total-row td {
+            background: #f8fafc;
+            font-weight: 700;
+            border-top: 2px solid var(--line-strong);
+        }
+        .rating-evidence {
+            border-left: 3px solid var(--accent);
+        }
+        .team-panel {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px;
+            background: var(--surface-muted);
+        }
+        .team-panel.winner {
+            border-color: #c9d8ee;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .team-panel.loser {
+            border-color: #f1d4cf;
+            background: linear-gradient(180deg, #fff8f6 0%, #fdf1ef 100%);
+        }
+        .team-panel h3 { margin-bottom: 6px; }
+        .panel-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .panel-badge.winner {
+            color: var(--accent);
+            background: #e8f0fb;
+        }
+        .panel-badge.loser {
+            color: var(--negative);
+            background: #fde9e5;
+        }
+        .rivalry-banner {
+            border: 1px solid #d8b26a;
+            border-left: 4px solid #b7791f;
+            border-radius: 6px;
+            background: #fffaf0;
+            padding: 10px 12px;
+            margin: 10px 0;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0 12px;
+        }
+        .pill {
+            border: 1px solid var(--line-strong);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background: var(--surface);
+        }
+        .pill.good { color: var(--positive); border-color: #b7e0c4; }
+        .pill.bad { color: var(--negative); border-color: #f1c0ba; }
+        .pill.warn { color: var(--warning); border-color: #f4d39c; }
+        .decision-table-stack {
+            display: grid;
+            gap: 10px;
+        }
+        .decision-table-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
+        }
+        .decision-table-card h3 {
+            margin-bottom: 4px;
+        }
+        .decision-table-card p {
+            margin-bottom: 10px;
+        }
+        .card-grid > .decision-table-card {
+            grid-column: 1 / -1;
+        }
+        .top-grade-table {
+            border-color: #a9c3e8;
+            background: #f8fbff;
+        }
+        .top-grade-table .primary-grade-row td {
+            background: #e8f0fb;
+            border-top: 2px solid #8badd8;
+            border-bottom: 2px solid #8badd8;
+        }
+        .top-grade-table .primary-grade-row td:first-child,
+        .top-grade-table .primary-grade-row td:last-child {
+            color: var(--accent);
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .series-chart-scroll {
+            max-height: 520px;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 4px;
+        }
+        .series-chart-header,
+        .series-chart-row {
+            display: grid;
+            grid-template-columns: 74px minmax(0, 1fr);
+            gap: 8px;
+            align-items: center;
+        }
+        .series-chart-header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            padding: 4px 0 8px;
+            background: var(--surface);
+        }
+        .series-chart-sides {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .series-chart-sides span:first-child { text-align: right; }
+        .series-chart-row {
+            min-height: 25px;
+            border-top: 1px solid var(--line);
+        }
+        .series-chart-label {
+            color: var(--text-muted);
+            font-size: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-plot {
+            position: relative;
+            height: 16px;
+        }
+        .series-chart-plot::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            bottom: -5px;
+            left: 50%;
+            width: 1px;
+            background: #94a3b8;
+        }
+        .series-chart-bar {
+            position: absolute;
+            top: 2px;
+            min-width: 2px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        .series-chart-bar.left {
+            right: 50%;
+            background: var(--accent);
+        }
+        .series-chart-bar.right {
+            left: 50%;
+            background: var(--negative);
+        }
+        .series-chart-bar.tie {
+            left: calc(50% - 2px);
+            width: 4px !important;
+            background: var(--text-muted);
+        }
+        .series-chart-value {
+            position: absolute;
+            top: 0;
+            color: var(--text);
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 16px;
+            font-variant-numeric: tabular-nums;
+        }
+        .series-chart-value.left { right: calc(50% + 5px); }
+        .series-chart-value.right { left: calc(50% + 5px); }
+        .series-chart-value.tie {
+            left: calc(50% + 5px);
+            color: var(--text-muted);
+        }
+        .compare-cell {
+            min-width: 220px;
+        }
+        .compare-player {
+            display: block;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .compare-meta {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        .compare-edge {
+            font-weight: 700;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .compare-edge.left {
+            color: var(--accent);
+        }
+        .compare-edge.right {
+            color: var(--negative);
+        }
+        .compare-edge.neutral {
+            color: var(--text-muted);
+        }
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .compact-table {
+            overflow-x: auto;
+            max-width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+        .compact-table table {
+            min-width: 640px;
+        }
+        .compact-table .table-wrap table {
+            min-width: 0;
+        }
+        th, td {
+            padding: 7px 9px;
+            border-bottom: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: var(--surface-muted);
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        ul.compact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+        ul.compact-list li {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: var(--surface);
+        }
+        .two-up {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+        .compare-table td:first-child,
+        .compare-table th:first-child {
+            white-space: nowrap;
+        }
+        .metric-win {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .chart-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .chart-card.highlight {
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+            border-color: #c9d8ee;
+        }
+        .chart-card + .chart-card {
+            margin-top: 8px;
+        }
+        .chart-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-kicker {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .chart-note {
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .legend-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            display: inline-block;
+        }
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .verdict-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px;
+            margin: 8px 0 10px;
+        }
+        .verdict-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .verdict-card .value {
+            font-size: 22px;
+        }
+        .callout {
+            border: 1px solid #f1c0ba;
+            background: #fff5f3;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .takeaway-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            background: var(--surface-muted);
+        }
+        .takeaway-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        .takeaway-card li + li {
+            margin-top: 6px;
+        }
+        .award-strip {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px 24px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .skill-hero {
+            border: 1px solid #d7e4f7;
+            border-radius: 8px;
+            padding: 12px;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef4fd 100%);
+        }
+        .skill-team-list {
+            display: grid;
+            gap: 8px;
+        }
+        .skill-team-card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 9px;
+            background: var(--surface-muted);
+        }
+        .award-card {
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px 0;
+            background: transparent;
+            min-width: 0;
+        }
+        .section > .muted { font-size: 13px; margin: 0 0 16px; }
+        .detail-card, .verdict-card, .takeaway-card, .chart-card,
+        .skill-team-card, .skill-hero {
+            border: 0; border-radius: 0; background: transparent; padding: 12px 0;
+        }
+        .detail-card.tertiary, .chart-card.tertiary,
+        .chart-card.highlight { background: transparent; border: 0; }
+        .hero-card { border: 0; border-radius: 4px; background: var(--accent-soft); }
+        .detail-card .value, .verdict-card .value { font-size: 16px; line-height: 1.35; }
+        .chart-title, .award-card strong { font-size: 15px; }
+        .subvalue, .chart-note, .comparison-context { font-size: 12px; line-height: 1.5; }
+        .deep-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+        .deep-card { min-width: 0; padding: 4px 0; }
+        .deep-card p { margin: 8px 0; }
+        details { margin: 12px 0; }
+        summary { font-size: 13px; cursor: pointer; color: var(--accent); }
+        .math-page .page { max-width: 1120px; }
+        .math-page p, .math-page li { max-width: 85ch; }
+        .math-page .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+        .math-team-header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+        .math-grade { font-size: 24px; font-weight: 700; white-space: nowrap; }
+        .math-page .math-table { width: 100%; min-width: 680px; table-layout: fixed; }
+        .math-table th:first-child { width: 21%; }
+        .math-table th:nth-child(2) { width: 46%; }
+        .math-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+        .math-expression { display: block; white-space: normal; overflow-wrap: anywhere; font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-formula, .math-page pre { background: var(--surface-muted); padding: 14px 16px; border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .math-page pre { max-height: 420px; overflow: auto; }
+        .math-page .math-model-list { display: grid; gap: 18px; }
+        .math-page .math-model-list h3 { margin-bottom: 6px; }
+        .math-page .math-model-list p { margin: 6px 0; }
+        @media (max-width: 800px) {
+            .award-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 600px) {
+            .page { padding: 16px; }
+            .section { padding: 20px 0; }
+            .award-strip, .deep-grid { grid-template-columns: 1fr; }
+            .math-team-header { flex-direction: column; gap: 0; }
+        }
+        details.deep-metrics {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface-muted);
+            padding: 10px;
+        }
+        details.deep-metrics summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .evidence-list {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .evidence-list li + li {
+            margin-top: 6px;
+        }
+        @media (max-width: 900px) {
+            .hub-grid { grid-template-columns: 1fr; }
+            .detail-card,
+            .detail-card.wide {
+                grid-column: span 12;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+            .compare-grid,
+            .verdict-grid,
+            .insight-pair,
+            .takeaway-grid,
+            .team-columns,
+            .two-up {
+                grid-template-columns: 1fr;
+            }
+            .section-jump-link {
+                flex: 1 1 calc(50% - 8px);
+                max-width: none;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 7px 8px;
+            }
+            th {
+                font-size: 11px;
+                letter-spacing: 0.02em;
+                line-height: 1.2;
+            }
+            .chart-card,
+            .decision-table-card {
+                padding: 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .top-grade-table .primary-grade-row td:first-child,
+            .top-grade-table .primary-grade-row td:last-child {
+                font-size: 16px;
+                line-height: 1.4;
+                overflow-wrap: normal;
+            }
+            .comparison-board table { min-width: 0; width: 100%; }
+            .comparison-board th,
+            .comparison-board td {
+                padding: 7px 5px;
+                font-size: 10px;
+                overflow-wrap: anywhere;
+            }
+            .comparison-board th:first-child,
+            .comparison-board td:first-child,
+            .comparison-board th:nth-child(3),
+            .comparison-board td:nth-child(3) { width: 34%; }
+            .comparison-board th:nth-child(2),
+            .comparison-board td:nth-child(2) { width: 32%; }
+            .manager-comparison table {
+                min-width: 0;
+                table-layout: fixed;
+            }
+            .manager-comparison th,
+            .manager-comparison td {
+                overflow-wrap: anywhere;
+            }
+            .manager-comparison .metric-label {
+                white-space: normal;
+            }
+            .lineup-board table {
+                min-width: 0;
+                table-layout: fixed;
+                font-size: 11px;
+            }
+            .lineup-board th,
+            .lineup-board td { padding: 6px 3px; }
+            .lineup-board .stats-col { display: none; }
+            .lineup-board .player-col { width: 32%; }
+            .lineup-board .points-col { width: 11%; }
+            .lineup-board .slot-col { width: 14%; }
+            .lineup-board .mobile-stat {
+                display: block;
+                color: var(--text-muted);
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+            .lineup-board .total-row td:first-child,
+            .lineup-board .total-row td:last-child {
+                display: table-cell;
+            }
+        }
+
+    .source-bars { display: grid; gap: 14px; margin: 12px 0; }
+    .source-team-label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+    .source-mode { color: var(--text-muted); font-size: 11px; font-weight: 700; margin: 5px 0 3px; }
+    .source-scale { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+    .source-track { display: flex; width: 100%; height: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--surface-muted); }
+    .source-track.absolute { max-width: 100%; }
+    .source-segment { display: block; height: 100%; min-width: 1px; border-right: 1px solid rgba(255,255,255,.75); }
+    .source-segment-label { display: block; overflow: hidden; padding: 3px 4px 0; color: #fff; font-size: 10px; font-weight: 800; line-height: 15px; text-align: center; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 1px rgba(0,0,0,.45); }
+    .source-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 10px 0; color: var(--text-muted); font-size: 12px; }
+    .source-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 2px; }
+    .scoring-sources-section .comparison-board table { min-width: 620px; table-layout: fixed; }
+    .scoring-sources-section .comparison-board th:first-child,
+    .scoring-sources-section .comparison-board td:first-child { text-align: right; }
+    .scoring-sources-section .comparison-board th:nth-child(2),
+    .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; text-align: center; background: #eef1f5; }
+    .scoring-sources-section .comparison-board th:nth-child(3),
+    .scoring-sources-section .comparison-board td:nth-child(3) { text-align: left; }
+    .scoring-sources-section .comparison-key { display: block; color: var(--text); font-weight: 800; }
+    .scoring-sources-section .comparison-context { display: block; color: var(--text-muted); font-size: 11px; font-weight: 500; margin-top: 2px; }
+    @media (max-width: 600px) {
+        .scoring-sources-section .comparison-board table { min-width: 0; width: 100%; }
+        .scoring-sources-section .comparison-board th,
+        .scoring-sources-section .comparison-board td { padding: 7px 5px; font-size: 10px; overflow-wrap: anywhere; }
+        .scoring-sources-section .comparison-board th:first-child,
+        .scoring-sources-section .comparison-board td:first-child,
+        .scoring-sources-section .comparison-board th:nth-child(3),
+        .scoring-sources-section .comparison-board td:nth-child(3) { width: 33%; }
+        .scoring-sources-section .comparison-board th:nth-child(2),
+        .scoring-sources-section .comparison-board td:nth-child(2) { width: 34%; }
+    }
+    </style>
+</head>
+<body>
+    <main class="page">
+<!-- report-nav:start -->
+<style>
+    .report-nav {
+        margin: 0 0 14px;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(15, 23, 42, 0.04);
+    }
+    .report-nav__inner {
+        display: grid;
+        grid-template-columns: minmax(112px, 0.28fr) minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+    }
+    .report-nav__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding: 9px 12px;
+        border-right: 1px solid #e6ebf2;
+        background: #f8fafc;
+    }
+    .report-nav__eyebrow {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .report-nav__current {
+        color: #111827;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .report-nav__groups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 12px;
+        align-items: center;
+        padding: 8px 10px;
+    }
+    .report-nav__group {
+        display: flex;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+    .report-nav__group-label {
+        color: #64748b;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .report-nav__group-toggle {
+        border: 1px solid #dbe3ee;
+        border-radius: 5px;
+        background: #f8fafc;
+        color: #1f4f8c;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.2;
+        min-height: 24px;
+        padding: 4px 8px;
+        list-style: none;
+    }
+    .report-nav__group-toggle::-webkit-details-marker {
+        display: none;
+    }
+    .report-nav__group-toggle::after {
+        content: " +";
+        color: #64748b;
+    }
+    details[open] > .report-nav__group-toggle::after {
+        content: " -";
+    }
+    .report-nav__group--collapsed {
+        position: relative;
+    }
+    .report-nav__group--collapsed .report-nav__links {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% + 5px);
+        left: 0;
+        display: none;
+        width: min(420px, 82vw);
+        max-height: 42vh;
+        overflow: auto;
+        border: 1px solid #d7dee8;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
+        padding: 8px;
+    }
+    .report-nav__group--collapsed[open] .report-nav__links {
+        display: flex;
+    }
+    .report-nav__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav__links li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .report-nav a,
+    .report-nav-current {
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 24px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+    .report-nav a {
+        border: 1px solid #dbe3ee;
+        background: #f8fafc;
+        color: #1f4f8c;
+    }
+    .report-nav a:hover {
+        border-color: #b7c8dd;
+        background: #eef4fb;
+        color: #163b69;
+        text-decoration: none;
+    }
+    .report-nav-current {
+        border: 1px solid #1f4f8c;
+        background: #1f4f8c;
+        color: #fff;
+    }
+    @media (max-width: 760px) {
+        .report-nav__inner {
+            grid-template-columns: 1fr;
+        }
+        .report-nav__title {
+            border-right: 0;
+            border-bottom: 1px solid #e6ebf2;
+        }
+        .report-nav__groups {
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .report-nav__group {
+            width: 100%;
+            align-items: flex-start;
+        }
+        .report-nav__group--collapsed .report-nav__links {
+            position: static;
+            width: 100%;
+            max-height: none;
+            margin-top: 6px;
+            box-shadow: none;
+        }
+        .report-nav__links {
+            width: 100%;
+        }
+        .report-nav__links li {
+            max-width: 100%;
+        }
+    }
+</style>
+<nav class="report-nav" aria-label="Report navigation"><div class="report-nav__inner"><div class="report-nav__title"><span class="report-nav__eyebrow">Navigation</span><span class="report-nav__current">Matchup Report</span></div><div class="report-nav__groups"><div class="report-nav__group"><span class="report-nav__group-label">Site</span><ul class="report-nav__links"><li><a href="../../index.html">Report Index</a></li><li><a href="../../history/league_history.html">League History</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Season</span><ul class="report-nav__links"><li><a href="../index.html">Season Index</a></li><li><a href="../season_so_far.html">Season So Far</a></li><li><a href="../teams/index.html">Team Index</a></li></ul></div><details class="report-nav__group report-nav__group--collapsed"><summary class="report-nav__group-toggle">Teams (10)</summary><ul class="report-nav__links"><li><a href="../teams/index.html">All Teams</a></li><li><a href="../teams/bend-snap-count.html">Bend &amp; Snap Count</a></li><li><a href="../teams/in-purdytory.html">In Purdytory</a></li><li><a href="../teams/love-land-hurts.html">Love(land) Hurts</a></li><li><a href="../teams/millans-last-supper.html">Millan’s Last Supper</a></li><li><a href="../teams/nacua-cola.html">Nacua-Cola</a></li><li><a href="../teams/pat-pidgeon.html">Pat Pidgeon</a></li><li><a href="../teams/sigma-chi-whiteout.html">Sigma Chi Whiteout</a></li><li><a href="../teams/squat.html">Squat</a></li><li><a href="../teams/two-buck-luck.html">Two Buck Luck</a></li><li><a href="../teams/zszizzle.html">ZSzizzle</a></li></ul></details><div class="report-nav__group"><span class="report-nav__group-label">Weeks</span><ul class="report-nav__links"><li><a href="../week_01.html">W1</a></li><li><a href="../week_02.html">W2</a></li><li><a href="../week_03.html">W3</a></li><li><a href="../week_04.html">W4</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">Week</span><ul class="report-nav__links"><li><a href="../week_04.html">Week 4 Report</a></li><li><a href="index.html">Week 4 Matchups</a></li></ul></div><div class="report-nav__group"><span class="report-nav__group-label">This Matchup</span><ul class="report-nav__links"><li><a href="matchup_02_millan-s-last-supper_vs_squat.html">Previous Matchup</a></li><li><span class="report-nav-current">Current Matchup</span></li><li><a href="matchup_04_zszizzle_vs_in-purdytory.html">Next Matchup</a></li></ul></div></div></div></nav>
+<!-- report-nav:end -->
+        <section class="section" id="matchup-header-section">
+            <div class="eyebrow">Weekly Matchup Report</div>
+            <h1>Pat Pidgeon vs Love(land) Hurts matchup report</h1>
+            <p class="muted">Season 2026, Week 4 | Score, player production, lineup decisions, and series history for this head-to-head.</p>
+            <nav class="section-jump-nav" aria-label="Matchup report sections">
+                <a class="section-jump-link" href="#matchup-snapshot-section">Snapshot</a>
+                <a class="section-jump-link" href="#difference-makers-section">Players</a>
+                <a class="section-jump-link" href="#weekly-headlines-section">Headlines</a>
+                <a class="section-jump-link" href="#kickoff-replay-section">Game Windows</a>
+                <a class="section-jump-link" href="#what-decided-section">What Decided It</a>
+                <a class="section-jump-link" href="#visual-comparison-section">Comparison</a>
+                <a class="section-jump-link" href="#skill-luck-section">Schedule Context</a>
+                <a class="section-jump-link" href="#decision-breakdown-section">Decisions</a>
+                <a class="section-jump-link" href="#head-to-head-section">History</a>
+                <a class="section-jump-link" href="#deep-metrics-section">Deep Metrics</a>
+            </nav>
+        </section>
+
+        <section class="section" id="matchup-snapshot-section">
+            <h2>Matchup Snapshot</h2>
+            <p class="muted">Start with the scoreline, then move into the lineup and move decisions that shaped it.</p>
+
+        <div class="hero-grid">
+            <div class="hero-card">
+                <div class="label">Result</div>
+                <div class="value">Pat Pidgeon by 15.9</div>
+                <div class="subvalue">Pat Pidgeon 134.2 to 118.2</div>
+                <p style="margin-top:14px;">Pat Pidgeon won by 15.9, led by a 29.5-point edge at WR. The leading starters were Chuba Hubbard (33.9) and Nico Collins (28.8).</p>
+            </div>
+            <div class="hero-sidekick">
+                <div class="detail-card">
+                    <div class="label">Strength vs Schedule Breaks</div>
+                    <div class="value">Elite-Score Win</div>
+                    <div class="subvalue">The winner paired one of the league&#x27;s best weekly scores with the head-to-head result.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Decision Read</div>
+                    <div class="subvalue" style="margin-top:0;color:var(--text);">Pat Pidgeon won by 15.9. Pat Pidgeon left 19.4 lineup points on the table, while Love(land) Hurts left 11.5.</div>
+                </div>
+            </div>
+        </div>
+        <details><summary>Result and hindsight context</summary><div class="verdict-grid">
+
+            <div class="verdict-card">
+                <div class="label">Score Battle</div>
+                <div class="value">Pat Pidgeon</div>
+                <div class="subvalue">Pat Pidgeon won the raw scoring battle by 15.9 points.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Lineup Battle</div>
+                <div class="value">Love(land) Hurts</div>
+                <div class="subvalue">Love(land) Hurts had the cleaner lineup week by 7.9 points of leakage.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Process Cost</div>
+                <div class="value">Pat Pidgeon</div>
+                <div class="subvalue">Pat Pidgeon carried the larger combined lineup and waiver miss total.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Did Decisions Matter?</div>
+                <div class="value">MOSTLY</div>
+                <div class="subvalue">Missed opportunities exceeded the 15.9-point margin, but not from one clear swap.</div>
+            </div>
+
+            <div class="verdict-card">
+                <div class="label">Biggest Unit Edge</div>
+                <div class="value">Pat Pidgeon</div>
+                <div class="subvalue">Pat Pidgeon controlled total WR output by 29.5 points.</div>
+            </div>
+
+        </div></details>
+
+            <div class='decision-table-card manager-comparison top-grade-table'><h3>Overall Manager Assessment</h3><p class='muted'>Balanced performance and management. Missing evidence uses declared reference anchors, not hidden zero-weight exclusions. <a href='matchup_03_pat-pidgeon_vs_love-land-hurts_math.html'>Formulas and evidence →</a></p><div class='table-wrap comparison-board'><table><thead><tr><th class='manager-heading'>Jason P.<span>Pat Pidgeon</span></th><th>Comparison</th><th class='manager-heading'>Matt<span>Love(land) Hurts</span></th></tr></thead><tbody><tr class='primary-grade-row'><td>B+ · 82.3 / 100</td><td><span class='comparison-key'>Overall Manager Assessment · week</span><span class='comparison-context'>Balanced production, lineup execution, expectation-aware judgment and roster stewardship</span></td><td>D+ · 63.8 / 100</td></tr><tr class=''><td>B · 86.2 / 100</td><td><span class='comparison-key'>Team performance · week</span><span class='comparison-context'>Separate descriptive production score: all-play position and scoring magnitude</span></td><td>D · 36.4 / 100</td></tr><tr class=''><td>B · 80.9 / 100</td><td><span class='comparison-key'>Overall Manager Assessment · season</span><span class='comparison-context'>Equal-week pooled balanced assessments, not an average of letters</span></td><td>D+ · 60.7 / 100</td></tr><tr class=''><td>87.4%</td><td><span class='comparison-key'>Hindsight lineup capture</span><span class='comparison-context'>Actual / exact best legal lineup; diagnostic only</span></td><td>91.1%</td></tr><tr class=''><td>19.4</td><td><span class='comparison-key'>Unused lineup points</span><span class='comparison-context'>Completed-score opportunity, not proof of a bad decision</span></td><td>11.5</td></tr><tr class=''><td>B+</td><td><span class='comparison-key'>Yahoo matchup grade</span><span class='comparison-context'>Yahoo recap grade; methodology not provided</span></td><td>C-</td></tr><tr class=''><td>141.3</td><td><span class='comparison-key'>Yahoo projection</span><span class='comparison-context'>Projected fantasy points</span></td><td>119.0</td></tr><tr class=''><td>7.2 under projection</td><td><span class='comparison-key'>Difference from projection</span><span class='comparison-context'>Actual minus projected points</span></td><td>0.8 under projection</td></tr></tbody></table></div><details><summary>Pat Pidgeon: assessment breakdown and coverage</summary><p class='note'>Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. No recorded same-week adds or drops: neutral transaction effect; roster sufficiency is assessed separately Roster opportunity is assessed against the observed unrostered pool and best legal owned lineup. Unknown competing auction bids do not block this assessment.</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>86.19 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>30.17</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>78.44 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>27.46</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>89.75 / 100 assessed</td><td class='num'>20.00%</td><td class='num'>17.95</td><td>100.0% · assessed</td></tr><tr><td>S · Roster stewardship</td><td>66.77 / 100 assessed</td><td class='num'>10.00%</td><td class='num'>6.68</td><td>100.0% · assessed</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 100.00%. Unassessed-component sensitivity range: 82.25–82.25 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Assessed assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p></details><details><summary>Love(land) Hurts: assessment breakdown and coverage</summary><p class='note'>Latest recorded transaction: 2026-10-04 UTC. This is an event date, not the download&#x27;s coverage end date. No recorded same-week adds or drops: neutral transaction effect; roster sufficiency is assessed separately Roster opportunity is assessed against the observed unrostered pool and best legal owned lineup. Unknown competing auction bids do not block this assessment.</p><div class='table-wrap compact-table'><table><thead><tr><th>Component</th><th>Assessed score / reference</th><th>Fixed share</th><th>Overall points</th><th>Evidence coverage / status</th></tr></thead><tbody><tr><td>P · Team performance</td><td>36.43 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>12.75</td><td>100.0% · assessed</td></tr><tr><td>E · Lineup execution</td><td>87.22 / 100 assessed</td><td class='num'>35.00%</td><td class='num'>30.53</td><td>100.0% · assessed</td></tr><tr><td>J · Expectation-aware judgment</td><td>68.65 / 100 assessed</td><td class='num'>20.00%</td><td class='num'>13.73</td><td>100.0% · assessed</td></tr><tr><td>S · Roster stewardship</td><td>67.94 / 100 assessed</td><td class='num'>10.00%</td><td class='num'>6.79</td><td>100.0% · assessed</td></tr></tbody></table></div><p class='muted'>Assessed evidence weight: 100.00%. Unassessed-component sensitivity range: 63.80–63.80 / 100. Reference anchors preserve fixed shares; they are not evidence of competent decisions. This range is not a statistical confidence interval.</p><p class='muted'>Assessed assessment. Compare judgment/stewardship coverage before ranking assessments; reference anchors are not observed manager performance.</p></details></div>
+            <div class="meta-strip"><div class='meta-chip'><strong>Rivalry:</strong>37 meetings / 20 seasons</div><div class='meta-chip'><strong>Series:</strong>21-16</div><div class='meta-chip'><strong>Ideal Result:</strong>Pat Pidgeon</div><div class='meta-chip'><strong>Weekly Ranks:</strong>1/8</div><div class='meta-chip'><strong>League Median:</strong>123.0</div></div>
+            <div class="insight-pair">
+                <div class="detail-card wide">
+                    <h3>Why Pat Pidgeon Won</h3>
+                    <p>Pat Pidgeon won by 15.9, led by a 29.5-point edge at WR. The leading starters were Chuba Hubbard (33.9) and Nico Collins (28.8).</p>
+                </div>
+                <div class="detail-card wide">
+                    <h3>Why Love(land) Hurts Lost</h3>
+                    <p>Love(land) Hurts could not match the opponent&#x27;s WR production, losing that position battle by 29.5 points. Rashee Rice scored 0.0. A best legal lineup added 11.5, still short of the 15.9-point margin.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="weekly-headlines-section">
+            <h2>The Week’s Headlines</h2>
+            <p class="muted">Scoring records, lineup wins and costly decisions. Each headline states its comparison group and the numbers behind it.</p>
+            <div class="award-strip"><div class='award-card'><div class='muted'>League · this week</div><div class='label'>The Scoreboard Showstopper</div><div><strong>Pat Pidgeon</strong></div><div class='subvalue'>Highest league score this week: 134.2 points.</div></div><div class='award-card'><div class='muted'>League · Weeks 1–4</div><div class='label'>The Season High-Water Mark</div><div><strong>Pat Pidgeon</strong></div><div class='subvalue'>Season-to-date scoring record: 186.5 points (Week 1).</div></div></div>
+            <details><summary>Elsewhere around the league</summary><div class='award-strip'><div class='award-card'><div class='muted'>League · this week</div><div class='label'>The Basement Bureau</div><div><strong>Squat</strong></div><div class='subvalue'>Lowest league score this week: 76.1 points.</div></div><div class='award-card'><div class='muted'>League · this week</div><div class='label'>The Bench Was a Gold Mine</div><div><strong>Millan’s Last Supper</strong></div><div class='subvalue'>League&#x27;s largest legal lineup gap: 52.5 points left unused. This measures start/sit cost, not injured bench holds.</div></div><div class='award-card'><div class='muted'>NFL player pool · this week</div><div class='label'>The Who-Is-This-Guy Game?</div><div><strong>Tyquan Thornton</strong></div><div class='subvalue'>Breakout of the week: 27.1 points versus 4.9 across 3 prior played games (+22.2); prior-week Yahoo ownership 5%, starts 1%. Zero-game injury/bye rows are excluded.</div></div><div class='award-card'><div class='muted'>NFL player pool · this week</div><div class='label'>The Vanishing Act</div><div><strong>Parker Washington</strong></div><div class='subvalue'>Bust of the week: 1.1 points versus 14.4 across 3 prior played games (-13.3); prior-week Yahoo ownership 97%, starts 78%; draft ADP 73.0. Zero-game injury/bye rows are excluded.</div></div></div></details>
+        </section>
+
+
+        <section class="section" id="difference-makers-section">
+            <h2>Who Came Up Big, Who Came Up Small</h2>
+            <p class="muted">Player production is separated by manager. The chart shows both absolute points and each starter's share of team scoring; the tables keep the underlying players and stat lines comparable.</p>
+            <p>Largest unit edge: total WR output favored Pat Pidgeon by 29.5.</p>
+            <div class='chart-card contribution-chart'><div class='chart-title'>Starter Point Contribution</div><p class='chart-note'>Both team bars use the same points scale. Each starter's segment connects directly to their name, points, and share of team score.</p><div class='contribution-total-row'><span><strong>Pat Pidgeon</strong> · 134.2 pts</span><span><strong>Love(land) Hurts</strong> · 118.2 pts</span></div><p class='chart-scroll-hint'>Swipe horizontally to inspect every directly labeled starter. Both bars share one points scale.</p><div class='contribution-svg-wrap' tabindex='0' role='region' aria-label='Scrollable starter comparison'><svg viewBox='0 0 1000 330' role='img' aria-label='Starter point contributions on a shared team-total scale'><g aria-label='Starter contribution bars'><text x='20' y='20' font-size='15' font-weight='700' fill='#1f4f8c'>Pat Pidgeon · 134.2 pts</text><rect x='20' y='38' width='960' height='26' rx='3' fill='#eef1f5'/><g aria-label='Chuba Hubbard: 33.9 points, 25.3% of team score'><title>Chuba Hubbard · RB: 33.9 points, 25.3% of team score</title><rect x='20.00' y='38' width='242.56' height='26' fill='#1f4f8c' opacity='1.00' stroke='white'/><path d='M 141.28 64 L 141.28 73 L 73.33 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='73.33' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='73.33'>Chuba</tspan><tspan x='73.33' dy='14' font-weight='700'>Hubbard</tspan><tspan x='73.33' dy='15' fill='#1f4f8c'>33.9 pts · 25%</tspan></text></g><g aria-label='Nico Collins: 28.8 points, 21.5% of team score'><title>Nico Collins · WR: 28.8 points, 21.5% of team score</title><rect x='262.56' y='38' width='206.07' height='26' fill='#1f4f8c' opacity='0.95' stroke='white'/><path d='M 365.60 64 L 365.60 73 L 180.00 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='180.00' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='180.00'>Nico</tspan><tspan x='180.00' dy='14' font-weight='700'>Collins</tspan><tspan x='180.00' dy='15' fill='#1f4f8c'>28.8 pts · 21%</tspan></text></g><g aria-label='Dak Prescott: 17.9 points, 13.3% of team score'><title>Dak Prescott · QB: 17.9 points, 13.3% of team score</title><rect x='468.64' y='38' width='127.84' height='26' fill='#1f4f8c' opacity='0.91' stroke='white'/><path d='M 532.56 64 L 532.56 73 L 286.67 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='286.67' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='286.67'>Dak</tspan><tspan x='286.67' dy='14' font-weight='700'>Prescott</tspan><tspan x='286.67' dy='15' fill='#1f4f8c'>17.9 pts · 13%</tspan></text></g><g aria-label='Jahmyr Gibbs: 16.7 points, 12.4% of team score'><title>Jahmyr Gibbs · RB: 16.7 points, 12.4% of team score</title><rect x='596.48' y='38' width='119.49' height='26' fill='#1f4f8c' opacity='0.86' stroke='white'/><path d='M 656.22 64 L 656.22 73 L 393.33 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='393.33' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='393.33'>Jahmyr</tspan><tspan x='393.33' dy='14' font-weight='700'>Gibbs</tspan><tspan x='393.33' dy='15' fill='#1f4f8c'>16.7 pts · 12%</tspan></text></g><g aria-label='Chris Olave: 16.6 points, 12.4% of team score'><title>Chris Olave · WR: 16.6 points, 12.4% of team score</title><rect x='715.97' y='38' width='118.78' height='26' fill='#1f4f8c' opacity='0.82' stroke='white'/><path d='M 775.36 64 L 775.36 73 L 500.00 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='500.00' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='500.00'>Chris</tspan><tspan x='500.00' dy='14' font-weight='700'>Olave</tspan><tspan x='500.00' dy='15' fill='#1f4f8c'>16.6 pts · 12%</tspan></text></g><g aria-label='Jaxon Smith-Njigba: 10.6 points, 7.9% of team score'><title>Jaxon Smith-Njigba · WR: 10.6 points, 7.9% of team score</title><rect x='834.75' y='38' width='75.85' height='26' fill='#1f4f8c' opacity='0.78' stroke='white'/><path d='M 872.67 64 L 872.67 73 L 606.67 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='606.67' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='606.67'>Jaxon</tspan><tspan x='606.67' dy='14' font-weight='700'>Smith-Njigba</tspan><tspan x='606.67' dy='15' fill='#1f4f8c'>10.6 pts · 8%</tspan></text></g><g aria-label='Evan McPherson: 5.0 points, 3.7% of team score'><title>Evan McPherson · K: 5.0 points, 3.7% of team score</title><rect x='910.59' y='38' width='35.78' height='26' fill='#1f4f8c' opacity='0.73' stroke='white'/><path d='M 928.48 64 L 928.48 73 L 713.33 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='713.33' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='713.33'>Evan</tspan><tspan x='713.33' dy='14' font-weight='700'>McPherson</tspan><tspan x='713.33' dy='15' fill='#1f4f8c'>5.0 pts · 4%</tspan></text></g><g aria-label='Chargers: 4.0 points, 3.0% of team score'><title>Chargers · DEF: 4.0 points, 3.0% of team score</title><rect x='946.37' y='38' width='28.62' height='26' fill='#1f4f8c' opacity='0.69' stroke='white'/><path d='M 960.68 64 L 960.68 73 L 820.00 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='820.00' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='820.00'>Chargers</tspan><tspan x='820.00' dy='14' font-weight='700'>DEF</tspan><tspan x='820.00' dy='15' fill='#1f4f8c'>4.0 pts · 3%</tspan></text></g><g aria-label='Dalton Kincaid: 0.7 points, 0.5% of team score'><title>Dalton Kincaid · TE: 0.7 points, 0.5% of team score</title><rect x='974.99' y='38' width='5.01' height='26' fill='#1f4f8c' opacity='0.64' stroke='white'/><path d='M 977.50 64 L 977.50 73 L 926.67 90' fill='none' stroke='#1f4f8c' stroke-width='1' opacity='.65'/><text x='926.67' y='105' text-anchor='middle' font-size='11' fill='#182536'><tspan x='926.67'>Dalton</tspan><tspan x='926.67' dy='14' font-weight='700'>Kincaid</tspan><tspan x='926.67' dy='15' fill='#1f4f8c'>0.7 pts · 1%</tspan></text></g></g><g aria-label='Starter contribution bars'><text x='20' y='180' font-size='15' font-weight='700' fill='#b42318'>Love(land) Hurts · 118.2 pts</text><rect x='20' y='198' width='960' height='26' rx='3' fill='#eef1f5'/><g aria-label='Tee Higgins: 23.7 points, 20.0% of team score'><title>Tee Higgins · WR: 23.7 points, 20.0% of team score</title><rect x='20.00' y='198' width='169.58' height='26' fill='#b42318' opacity='1.00' stroke='white'/><path d='M 104.79 224 L 104.79 233 L 73.33 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='73.33' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='73.33'>Tee</tspan><tspan x='73.33' dy='14' font-weight='700'>Higgins</tspan><tspan x='73.33' dy='15' fill='#b42318'>23.7 pts · 20%</tspan></text></g><g aria-label='Quinshon Judkins: 22.6 points, 19.1% of team score'><title>Quinshon Judkins · RB: 22.6 points, 19.1% of team score</title><rect x='189.58' y='198' width='161.71' height='26' fill='#b42318' opacity='0.95' stroke='white'/><path d='M 270.43 224 L 270.43 233 L 180.00 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='180.00' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='180.00'>Quinshon</tspan><tspan x='180.00' dy='14' font-weight='700'>Judkins</tspan><tspan x='180.00' dy='15' fill='#b42318'>22.6 pts · 19%</tspan></text></g><g aria-label='Josh Allen: 20.8 points, 17.6% of team score'><title>Josh Allen · QB: 20.8 points, 17.6% of team score</title><rect x='351.29' y='198' width='149.07' height='26' fill='#b42318' opacity='0.91' stroke='white'/><path d='M 425.82 224 L 425.82 233 L 286.67 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='286.67' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='286.67'>Josh</tspan><tspan x='286.67' dy='14' font-weight='700'>Allen</tspan><tspan x='286.67' dy='15' fill='#b42318'>20.8 pts · 18%</tspan></text></g><g aria-label='Ashton Jeanty: 18.6 points, 15.7% of team score'><title>Ashton Jeanty · RB: 18.6 points, 15.7% of team score</title><rect x='500.36' y='198' width='133.09' height='26' fill='#b42318' opacity='0.86' stroke='white'/><path d='M 566.90 224 L 566.90 233 L 393.33 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='393.33' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='393.33'>Ashton</tspan><tspan x='393.33' dy='14' font-weight='700'>Jeanty</tspan><tspan x='393.33' dy='15' fill='#b42318'>18.6 pts · 16%</tspan></text></g><g aria-label='Seahawks: 12.0 points, 10.1% of team score'><title>Seahawks · DEF: 12.0 points, 10.1% of team score</title><rect x='633.45' y='198' width='85.86' height='26' fill='#b42318' opacity='0.82' stroke='white'/><path d='M 676.38 224 L 676.38 233 L 500.00 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='500.00' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='500.00'>Seahawks</tspan><tspan x='500.00' dy='14' font-weight='700'>DEF</tspan><tspan x='500.00' dy='15' fill='#b42318'>12.0 pts · 10%</tspan></text></g><g aria-label='Mark Andrews: 10.7 points, 9.0% of team score'><title>Mark Andrews · TE: 10.7 points, 9.0% of team score</title><rect x='719.31' y='198' width='76.56' height='26' fill='#b42318' opacity='0.78' stroke='white'/><path d='M 757.59 224 L 757.59 233 L 606.67 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='606.67' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='606.67'>Mark</tspan><tspan x='606.67' dy='14' font-weight='700'>Andrews</tspan><tspan x='606.67' dy='15' fill='#b42318'>10.7 pts · 9%</tspan></text></g><g aria-label='Tyler Loop: 7.0 points, 5.9% of team score'><title>Tyler Loop · K: 7.0 points, 5.9% of team score</title><rect x='795.87' y='198' width='50.09' height='26' fill='#b42318' opacity='0.73' stroke='white'/><path d='M 820.91 224 L 820.91 233 L 713.33 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='713.33' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='713.33'>Tyler</tspan><tspan x='713.33' dy='14' font-weight='700'>Loop</tspan><tspan x='713.33' dy='15' fill='#b42318'>7.0 pts · 6%</tspan></text></g><g aria-label='Dontayvion Wicks: 2.8 points, 2.4% of team score'><title>Dontayvion Wicks · WR: 2.8 points, 2.4% of team score</title><rect x='845.96' y='198' width='20.03' height='26' fill='#b42318' opacity='0.69' stroke='white'/><path d='M 855.98 224 L 855.98 233 L 820.00 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='820.00' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='820.00'>Dontayvion</tspan><tspan x='820.00' dy='14' font-weight='700'>Wicks</tspan><tspan x='820.00' dy='15' fill='#b42318'>2.8 pts · 2%</tspan></text></g><g aria-label='Rashee Rice: 0.0 points, 0.0% of team score'><title>Rashee Rice · WR: 0.0 points, 0.0% of team score</title><rect x='865.99' y='198' width='0.00' height='26' fill='#b42318' opacity='0.64' stroke='white'/><path d='M 865.99 224 L 865.99 233 L 926.67 250' fill='none' stroke='#b42318' stroke-width='1' opacity='.65'/><text x='926.67' y='265' text-anchor='middle' font-size='11' fill='#182536'><tspan x='926.67'>Rashee</tspan><tspan x='926.67' dy='14' font-weight='700'>Rice</tspan><tspan x='926.67' dy='15' fill='#b42318'>0.0 pts · 0%</tspan></text></g></g></svg></div></div>
+            <div class="verdict-grid">
+                <div class="verdict-card">
+                    <div class="label">Top Started Performance</div>
+                    <div class="value">Chuba Hubbard</div>
+                    <div class="subvalue">Pat Pidgeon at 33.9 points.</div>
+                </div>
+                <div class="verdict-card">
+                    <div class="label">Most Relevant Bench Miss</div>
+                    <div class="value">Zay Flowers</div>
+                    <div class="subvalue">Pat Pidgeon gave up 11.2 points by starting Jaxon Smith-Njigba (10.6) instead of Zay Flowers (21.8).</div>
+                </div>
+                <div class="verdict-card">
+                    <div class="label">Only Counterpunch</div>
+                    <div class="value">TE</div>
+                    <div class="subvalue">Love(land) Hurts by 10.0.</div>
+                </div>
+            </div>
+            <div class="decision-table-stack">
+                <div class='decision-table-card'><h3>Who Came Up Big</h3><p class='muted'>Each manager&#x27;s highest-scoring starters, compared in parallel.</p><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Team rank</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Chuba Hubbard</span><span class='compare-meta'>RB | 33.9 pts</span></td><td><span class='comparison-key'>#1</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Tee Higgins</span><span class='compare-meta'>WR | 23.7 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Nico Collins</span><span class='compare-meta'>WR in W/R/T | 28.8 pts</span></td><td><span class='comparison-key'>#2</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Quinshon Judkins</span><span class='compare-meta'>RB | 22.6 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Dak Prescott</span><span class='compare-meta'>QB | 17.9 pts</span></td><td><span class='comparison-key'>#3</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Josh Allen</span><span class='compare-meta'>QB | 20.8 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Jahmyr Gibbs</span><span class='compare-meta'>RB | 16.7 pts</span></td><td><span class='comparison-key'>#4</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Ashton Jeanty</span><span class='compare-meta'>RB | 18.6 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Chris Olave</span><span class='compare-meta'>WR | 16.6 pts</span></td><td><span class='comparison-key'>#5</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Seahawks</span><span class='compare-meta'>DEF | 12.0 pts</span></td></tr></tbody></table></div></div>
+                <div class='decision-table-card'><h3>Who Came Up Small</h3><p class='muted'>Each manager&#x27;s lowest-scoring starters. These are scoring outcomes, not claims that every start was a mistake.</p><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Team rank</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Dalton Kincaid</span><span class='compare-meta'>TE | 0.7 pts</span></td><td><span class='comparison-key'>#1</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Rashee Rice</span><span class='compare-meta'>WR | 0.0 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Chargers</span><span class='compare-meta'>DEF | 4.0 pts</span></td><td><span class='comparison-key'>#2</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Dontayvion Wicks</span><span class='compare-meta'>WR in W/R/T | 2.8 pts</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Evan McPherson</span><span class='compare-meta'>K | 5.0 pts</span></td><td><span class='comparison-key'>#3</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='compare-player'>Tyler Loop</span><span class='compare-meta'>K | 7.0 pts</span></td></tr></tbody></table></div></div>
+            </div>
+            <div class="decision-table-stack">
+                <div class='decision-table-card'><h3>Top Bench Misses</h3><p class='muted'>The highest-scoring actionable bench misses for each manager; each player row includes the lineup differential.</p><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Team rank</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Zay Flowers</span><span class='compare-meta'>WR in BN | 21.8 pts | +11.2 differential</span></td><td><span class='comparison-key'>#1</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='muted'>No notable row</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Juwan Johnson</span><span class='compare-meta'>TE in BN | 8.9 pts | +8.2 differential</span></td><td><span class='comparison-key'>#2</span><span class='comparison-context'>Rank within each team</span></td><td class='compare-cell'><span class='muted'>No notable row</span></td></tr></tbody></table></div></div>
+
+                <div class='decision-table-card'><h3>Position Battles</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Comparison</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td>56.0</td><td><span class='comparison-key'>WR</span><span class='comparison-context'>Pat Pidgeon by 29.5</span></td><td>26.5</td></tr><tr><td>0.7</td><td><span class='comparison-key'>TE</span><span class='comparison-context'>Love(land) Hurts by 10.0</span></td><td>10.7</td></tr><tr><td>50.6</td><td><span class='comparison-key'>RB</span><span class='comparison-context'>Pat Pidgeon by 9.4</span></td><td>41.2</td></tr><tr><td>4.0</td><td><span class='comparison-key'>DEF</span><span class='comparison-context'>Love(land) Hurts by 8.0</span></td><td>12.0</td></tr><tr><td>17.9</td><td><span class='comparison-key'>QB</span><span class='comparison-context'>Love(land) Hurts by 3.0</span></td><td>20.8</td></tr><tr><td>5.0</td><td><span class='comparison-key'>K</span><span class='comparison-context'>Love(land) Hurts by 2.0</span></td><td>7.0</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+        <section class='section scoring-sources-section'><h2>Where The Points Came From</h2><p class='muted'>The bars attribute counted starter points to the underlying scoring categories. Absolute bars share one scale; percentage bars normalize each team to its own score. Negative categories are called out beside the total.</p><div class='source-bars'><div><div class='source-team-label'><strong>Pat Pidgeon</strong><span>134.2 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:100.000%'><span class='source-segment' style='width:12.795%;background:#2563eb' title='Passing: 17.2 points' aria-label='Passing: 17.2 points'><span class='source-segment-label'>17.2</span></span><span class='source-segment' style='width:34.658%;background:#15803d' title='Rushing: 46.5 points' aria-label='Rushing: 46.5 points'><span class='source-segment-label'>Rushing 46.5</span></span><span class='source-segment' style='width:45.839%;background:#b45309' title='Receiving: 61.5 points' aria-label='Receiving: 61.5 points'><span class='source-segment-label'>Receiving 61.5</span></span><span class='source-segment' style='width:3.727%;background:#7c3aed' title='Kicking: 5.0 points' aria-label='Kicking: 5.0 points'></span><span class='source-segment' style='width:2.981%;background:#475569' title='Defense: 4.0 points' aria-label='Defense: 4.0 points'></span></div><div class='source-scale'><span>0 pts</span><span>134.2 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:12.795%;background:#2563eb' title='Passing: 17.2 points' aria-label='Passing: 17.2 points'><span class='source-segment-label'>13%</span></span><span class='source-segment' style='width:34.658%;background:#15803d' title='Rushing: 46.5 points' aria-label='Rushing: 46.5 points'><span class='source-segment-label'>Rushing 35%</span></span><span class='source-segment' style='width:45.839%;background:#b45309' title='Receiving: 61.5 points' aria-label='Receiving: 61.5 points'><span class='source-segment-label'>Receiving 46%</span></span><span class='source-segment' style='width:3.727%;background:#7c3aed' title='Kicking: 5.0 points' aria-label='Kicking: 5.0 points'></span><span class='source-segment' style='width:2.981%;background:#475569' title='Defense: 4.0 points' aria-label='Defense: 4.0 points'></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div><div><div class='source-team-label'><strong>Love(land) Hurts</strong><span>118.2 pts</span></div><div class='source-mode'>Absolute fantasy points</div><div class='source-track absolute' style='width:88.124%'><span class='source-segment' style='width:10.516%;background:#2563eb' title='Passing: 12.4 points' aria-label='Passing: 12.4 points'><span class='source-segment-label'>12.4</span></span><span class='source-segment' style='width:27.488%;background:#15803d' title='Rushing: 32.5 points' aria-label='Rushing: 32.5 points'><span class='source-segment-label'>Rushing 32.5</span></span><span class='source-segment' style='width:45.926%;background:#b45309' title='Receiving: 54.3 points' aria-label='Receiving: 54.3 points'><span class='source-segment-label'>Receiving 54.3</span></span><span class='source-segment' style='width:5.920%;background:#7c3aed' title='Kicking: 7.0 points' aria-label='Kicking: 7.0 points'></span><span class='source-segment' style='width:10.149%;background:#475569' title='Defense: 12.0 points' aria-label='Defense: 12.0 points'><span class='source-segment-label'>12.0</span></span></div><div class='source-scale'><span>0 pts</span><span>134.2 pts league high</span></div><div class='source-mode'>Percent of team score</div><div class='source-track'><span class='source-segment' style='width:10.516%;background:#2563eb' title='Passing: 12.4 points' aria-label='Passing: 12.4 points'><span class='source-segment-label'>11%</span></span><span class='source-segment' style='width:27.488%;background:#15803d' title='Rushing: 32.5 points' aria-label='Rushing: 32.5 points'><span class='source-segment-label'>Rushing 27%</span></span><span class='source-segment' style='width:45.926%;background:#b45309' title='Receiving: 54.3 points' aria-label='Receiving: 54.3 points'><span class='source-segment-label'>Receiving 46%</span></span><span class='source-segment' style='width:5.920%;background:#7c3aed' title='Kicking: 7.0 points' aria-label='Kicking: 7.0 points'></span><span class='source-segment' style='width:10.149%;background:#475569' title='Defense: 12.0 points' aria-label='Defense: 12.0 points'><span class='source-segment-label'>10%</span></span></div><div class='source-scale'><span>0%</span><span>100% of team score</span></div></div></div><div class='source-legend'><span><span class='source-swatch' style='background:#2563eb'></span>Passing</span><span><span class='source-swatch' style='background:#15803d'></span>Rushing</span><span><span class='source-swatch' style='background:#b45309'></span>Receiving</span><span><span class='source-swatch' style='background:#7c3aed'></span>Kicking</span><span><span class='source-swatch' style='background:#475569'></span>Defense</span></div><details><summary>Scoring-stat detail</summary><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Scoring source</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='num'>35.5</td><td><span class='comparison-key'>Receiving Yards</span><span class='comparison-context'>Receiving</span></td><td class='num'>31.3</td></tr><tr><td class='num'>14.0</td><td><span class='comparison-key'>Receiving 1st Downs</span><span class='comparison-context'>Receiving</span></td><td class='num'>17.0</td></tr><tr><td class='num'>18.0</td><td><span class='comparison-key'>Rushing Touchdowns</span><span class='comparison-context'>Rushing</span></td><td class='num'>12.0</td></tr><tr><td class='num'>17.5</td><td><span class='comparison-key'>Rushing Yards</span><span class='comparison-context'>Rushing</span></td><td class='num'>11.5</td></tr><tr><td class='num'>11.0</td><td><span class='comparison-key'>Rushing 1st Downs</span><span class='comparison-context'>Rushing</span></td><td class='num'>9.0</td></tr><tr><td class='num'>11.2</td><td><span class='comparison-key'>Passing Yards</span><span class='comparison-context'>Passing</span></td><td class='num'>8.4</td></tr><tr><td class='num'>12.0</td><td><span class='comparison-key'>Receiving Touchdowns</span><span class='comparison-context'>Receiving</span></td><td class='num'>6.0</td></tr><tr><td class='num'>6.0</td><td><span class='comparison-key'>Passing Touchdowns</span><span class='comparison-context'>Passing</span></td><td class='num'>6.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Team Sack</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>2.0</td><td><span class='comparison-key'>Team Interception</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>2.0</td><td><span class='comparison-key'>Point After Attempt Made</span><span class='comparison-context'>Kicking</span></td><td class='num'>3.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Field Goals 50+ Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>5.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Team Fumble Recovery</span><span class='comparison-context'>Defense</span></td><td class='num'>4.0</td></tr><tr><td class='num'>3.0</td><td><span class='comparison-key'>Field Goals 20-29 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>0.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Interception Thrown</span><span class='comparison-context'>Passing</span></td><td class='num'>-2.0</td></tr><tr><td class='num'>-1.0</td><td><span class='comparison-key'>Points Allowed 28-34 points</span><span class='comparison-context'>Defense</span></td><td class='num'>0.0</td></tr><tr><td class='num'>0.0</td><td><span class='comparison-key'>Field Goals Missed 40-49 Yards</span><span class='comparison-context'>Kicking</span></td><td class='num'>-1.0</td></tr></tbody></table></div></details></section>
+
+
+        <section class="section" id="what-decided-section">
+            <h2>What Decided It</h2>
+            <p class="muted">Compare the final score with the best legal lineups to see whether start/sit choices could have changed the winner.</p>
+            <div class="takeaway-grid">
+                <div class="takeaway-card">
+                    <div class="chart-title">Takeaways</div>
+                    <ul><li>Pat Pidgeon still won despite leaving 19.4 lineup points on the table, which exceeded the final margin.</li><li>The clearest unit edge was total WR output: Pat Pidgeon by 29.5 points.</li><li>Against projection, Pat Pidgeon finished -7.2 while Love(land) Hurts finished -0.8.</li><li>The biggest started performance was Chuba Hubbard for Pat Pidgeon at 33.9 points.</li></ul>
+                    <p class='muted'>No single realistic lineup swap clearly exceeded the final margin.</p>
+                </div>
+                <div class='detail-card wide'><h3>Actual Result vs Best Legal Lineups</h3><div class='table-wrap'><table><thead><tr><th class=''>Scenario</th><th class=''>Winner</th><th class='num'>High Score</th><th class='num'>Low Score</th><th class='num'>Margin</th></tr></thead><tbody><tr><td class=''>Actual lineups</td><td class=''>Pat Pidgeon</td><td class='num'>134.2</td><td class='num'>118.2</td><td class='num'>15.9</td></tr><tr><td class=''>Both best legal lineups</td><td class=''>Pat Pidgeon</td><td class='num'>153.6</td><td class='num'>129.7</td><td class='num'>23.8</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+        <section class="section" id="visual-comparison-section">
+            <h2>Matchup Comparison</h2>
+            <p class="muted">The current-week comparison uses the same left-versus-right structure as the lineup board. The full manager series is shown below.</p>
+            <div class='chart-card'><div class='chart-title'>Quick Comparison Table</div><div class='table-wrap compare-table comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Comparison</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='num metric-win'>134.2</td><td><span class='comparison-key'>Actual Score</span></td><td class='num '>118.2</td></tr><tr><td class='num metric-win'>153.6</td><td><span class='comparison-key'>Ideal Score</span></td><td class='num '>129.7</td></tr><tr><td class='num '>19.4</td><td><span class='comparison-key'>Lineup Delta</span></td><td class='num metric-win'>11.5</td></tr><tr><td class='num '>24.0</td><td><span class='comparison-key'>Waiver Upside</span></td><td class='num metric-win'>21.2</td></tr></tbody></table></div><p class='chart-note'>Bold values mark the favorable side. Lower is favorable for lineup delta and unused waiver upside.</p></div>
+            <div class='chart-card'><div class='chart-title'>All-Time Series Margins</div><div class='series-chart-scroll'><div class='series-chart-header'><span></span><div class='series-chart-sides'><span>Pat Pidgeon wins</span><span>Love(land) Hurts wins</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2026 W4</div><div class='series-chart-plot' title='Pat Pidgeon won by 15.9'><span class='series-chart-bar left' style='width:6.70%'></span><span class='series-chart-value left'>15.9</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2025 W16</div><div class='series-chart-plot' title='Pat Pidgeon won by 20.7'><span class='series-chart-bar left' style='width:8.72%'></span><span class='series-chart-value left'>20.7</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2025 W7</div><div class='series-chart-plot' title='Pat Pidgeon won by 109.4'><span class='series-chart-bar left' style='width:46.00%'></span><span class='series-chart-value left'>109.4</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2024 W14</div><div class='series-chart-plot' title='Love(land) Hurts won by 24.3'><span class='series-chart-bar right' style='width:10.20%'></span><span class='series-chart-value right'>24.3</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2024 W5</div><div class='series-chart-plot' title='Pat Pidgeon won by 3.2'><span class='series-chart-bar left' style='width:1.33%'></span><span class='series-chart-value left'>3.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2023 W16</div><div class='series-chart-plot' title='Love(land) Hurts won by 72.9'><span class='series-chart-bar right' style='width:30.63%'></span><span class='series-chart-value right'>72.9</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2023 W14</div><div class='series-chart-plot' title='Pat Pidgeon won by 26.9'><span class='series-chart-bar left' style='width:11.32%'></span><span class='series-chart-value left'>26.9</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2023 W5</div><div class='series-chart-plot' title='Love(land) Hurts won by 22.0'><span class='series-chart-bar right' style='width:9.26%'></span><span class='series-chart-value right'>22.0</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2022 W7</div><div class='series-chart-plot' title='Pat Pidgeon won by 32.8'><span class='series-chart-bar left' style='width:13.77%'></span><span class='series-chart-value left'>32.8</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2021 W12</div><div class='series-chart-plot' title='Love(land) Hurts won by 17.3'><span class='series-chart-bar right' style='width:7.26%'></span><span class='series-chart-value right'>17.3</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2021 W3</div><div class='series-chart-plot' title='Love(land) Hurts won by 50.4'><span class='series-chart-bar right' style='width:21.19%'></span><span class='series-chart-value right'>50.4</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2020 W15</div><div class='series-chart-plot' title='Love(land) Hurts won by 11.2'><span class='series-chart-bar right' style='width:4.69%'></span><span class='series-chart-value right'>11.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2020 W12</div><div class='series-chart-plot' title='Love(land) Hurts won by 26.3'><span class='series-chart-bar right' style='width:11.04%'></span><span class='series-chart-value right'>26.3</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2020 W3</div><div class='series-chart-plot' title='Pat Pidgeon won by 48.7'><span class='series-chart-bar left' style='width:20.48%'></span><span class='series-chart-value left'>48.7</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2019 W13</div><div class='series-chart-plot' title='Pat Pidgeon won by 6.9'><span class='series-chart-bar left' style='width:2.90%'></span><span class='series-chart-value left'>6.9</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2019 W4</div><div class='series-chart-plot' title='Pat Pidgeon won by 19.5'><span class='series-chart-bar left' style='width:8.21%'></span><span class='series-chart-value left'>19.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2018 W13</div><div class='series-chart-plot' title='Pat Pidgeon won by 1.9'><span class='series-chart-bar left' style='width:0.80%'></span><span class='series-chart-value left'>1.9</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2018 W4</div><div class='series-chart-plot' title='Pat Pidgeon won by 19.2'><span class='series-chart-bar left' style='width:8.07%'></span><span class='series-chart-value left'>19.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2017 W13</div><div class='series-chart-plot' title='Love(land) Hurts won by 25.2'><span class='series-chart-bar right' style='width:10.58%'></span><span class='series-chart-value right'>25.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2017 W4</div><div class='series-chart-plot' title='Love(land) Hurts won by 2.0'><span class='series-chart-bar right' style='width:0.85%'></span><span class='series-chart-value right'>2.0</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2016 W13</div><div class='series-chart-plot' title='Love(land) Hurts won by 3.4'><span class='series-chart-bar right' style='width:1.41%'></span><span class='series-chart-value right'>3.4</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2016 W4</div><div class='series-chart-plot' title='Love(land) Hurts won by 39.2'><span class='series-chart-bar right' style='width:16.50%'></span><span class='series-chart-value right'>39.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2015 W11</div><div class='series-chart-plot' title='Pat Pidgeon won by 34.2'><span class='series-chart-bar left' style='width:14.37%'></span><span class='series-chart-value left'>34.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2015 W2</div><div class='series-chart-plot' title='Pat Pidgeon won by 18.2'><span class='series-chart-bar left' style='width:7.63%'></span><span class='series-chart-value left'>18.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2014 W14</div><div class='series-chart-plot' title='Pat Pidgeon won by 6.2'><span class='series-chart-bar left' style='width:2.60%'></span><span class='series-chart-value left'>6.2</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2014 W5</div><div class='series-chart-plot' title='Pat Pidgeon won by 26.5'><span class='series-chart-bar left' style='width:11.12%'></span><span class='series-chart-value left'>26.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2013 W14</div><div class='series-chart-plot' title='Pat Pidgeon won by 26.8'><span class='series-chart-bar left' style='width:11.26%'></span><span class='series-chart-value left'>26.8</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2013 W5</div><div class='series-chart-plot' title='Love(land) Hurts won by 8.5'><span class='series-chart-bar right' style='width:3.58%'></span><span class='series-chart-value right'>8.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2012 W12</div><div class='series-chart-plot' title='Love(land) Hurts won by 19.3'><span class='series-chart-bar right' style='width:8.11%'></span><span class='series-chart-value right'>19.3</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2012 W3</div><div class='series-chart-plot' title='Pat Pidgeon won by 37.5'><span class='series-chart-bar left' style='width:15.74%'></span><span class='series-chart-value left'>37.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2011 W9</div><div class='series-chart-plot' title='Love(land) Hurts won by 30.5'><span class='series-chart-bar right' style='width:12.80%'></span><span class='series-chart-value right'>30.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2010 W14</div><div class='series-chart-plot' title='Love(land) Hurts won by 12.4'><span class='series-chart-bar right' style='width:5.21%'></span><span class='series-chart-value right'>12.4</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2010 W7</div><div class='series-chart-plot' title='Pat Pidgeon won by 59.5'><span class='series-chart-bar left' style='width:25.01%'></span><span class='series-chart-value left'>59.5</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2008 W12</div><div class='series-chart-plot' title='Pat Pidgeon won by 17.7'><span class='series-chart-bar left' style='width:7.45%'></span><span class='series-chart-value left'>17.7</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2008 W3</div><div class='series-chart-plot' title='Pat Pidgeon won by 18.3'><span class='series-chart-bar left' style='width:7.68%'></span><span class='series-chart-value left'>18.3</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2007 W9</div><div class='series-chart-plot' title='Love(land) Hurts won by 8.0'><span class='series-chart-bar right' style='width:3.38%'></span><span class='series-chart-value right'>8.0</span></div></div><div class='series-chart-row' data-series-game='true'><div class='series-chart-label'>2005 W11</div><div class='series-chart-plot' title='Pat Pidgeon won by 45.4'><span class='series-chart-bar left' style='width:19.08%'></span><span class='series-chart-value left'>45.4</span></div></div></div><p class='chart-note'>All 37 completed meetings are shown, newest first. Direction shows the winner; length shows the final margin.</p></div>
+        </section>
+
+        <section class='section' id='kickoff-replay-section'><h2>How the Matchup Took Shape</h2><p class='muted'>Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.</p><p><span style='color:#1f4f8c'>Pat Pidgeon</span> · <span style='color:#b42318'>Love(land) Hurts</span></p><div class='contribution-svg-wrap'><svg viewBox='0 0 1000 220' role='img' aria-label='Reconstructed cumulative starter points by kickoff group'><text x='20' y='40' font-size='11'>134 pts</text><text x='20' y='180' font-size='11'>0</text><polyline points='70.0,180.0 285.0,125.4 500.0,110.1 715.0,57.3 930.0,40.0' fill='none' stroke='#1f4f8c' stroke-width='3'/><polyline points='70.0,156.4 285.0,88.6 500.0,56.6 715.0,56.6 930.0,56.6' fill='none' stroke='#b42318' stroke-width='3'/><text x='70.0' y='202' text-anchor='middle' font-size='11'>1</text><text x='285.0' y='202' text-anchor='middle' font-size='11'>2</text><text x='500.0' y='202' text-anchor='middle' font-size='11'>3</text><text x='715.0' y='202' text-anchor='middle' font-size='11'>4</text><text x='930.0' y='202' text-anchor='middle' font-size='11'>5</text></svg></div><div class='table-wrap'><table><thead><tr><th>Kickoff group (Eastern)</th><th>Pat Pidgeon</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td>1 · Thu Oct 01 · 08:15 PM ET</td><td><strong>0.0</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td><td><strong>22.6</strong> cumulative · +22.6 in window<details><summary>Starters</summary>Quinshon Judkins 22.6</details></td></tr><tr><td>2 · Sun Oct 04 · 01:00 PM ET</td><td><strong>52.4</strong> cumulative · +52.4 in window<details><summary>Starters</summary>Nico Collins 28.8; Dak Prescott 17.9; Evan McPherson 5.0; Dalton Kincaid 0.7</details></td><td><strong>87.6</strong> cumulative · +65.0 in window<details><summary>Starters</summary>Tee Higgins 23.7; Josh Allen 20.8; Mark Andrews 10.7; Tyler Loop 7.0; Dontayvion Wicks 2.8</details></td></tr><tr><td>3 · Sun Oct 04 · 04:25 PM ET</td><td><strong>67.0</strong> cumulative · +14.6 in window<details><summary>Starters</summary>Jaxon Smith-Njigba 10.6; Chargers 4.0</details></td><td><strong>118.2</strong> cumulative · +30.6 in window<details><summary>Starters</summary>Ashton Jeanty 18.6; Seahawks 12.0; Rashee Rice 0.0</details></td></tr><tr><td>4 · Sun Oct 04 · 08:20 PM ET</td><td><strong>117.6</strong> cumulative · +50.6 in window<details><summary>Starters</summary>Chuba Hubbard 33.9; Jahmyr Gibbs 16.7</details></td><td><strong>118.2</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td></tr><tr><td>5 · Mon Oct 05 · 08:15 PM ET</td><td><strong>134.2</strong> cumulative · +16.6 in window<details><summary>Starters</summary>Chris Olave 16.6</details></td><td><strong>118.2</strong> cumulative · +0.0 in window<details><summary>Starters</summary>No starters in this window</details></td></tr></tbody></table></div><p class='muted'><a href='https://github.com/nflverse/nfldata/blob/master/data/games.csv'>Kickoff schedule source: nflverse</a></p></section>
+
+        <section class="section" id="skill-luck-section">
+            <h2>Weekly Strength and Schedule Context</h2>
+            <p class="muted">The comparison table separates how well each team scored from the opponent it happened to draw. League average: 117.8; median: 123.0.</p>
+            <p><strong>Elite-Score Win</strong>: The winner paired one of the league&#x27;s best weekly scores with the head-to-head result.</p>
+            <div class='decision-table-card'><h3>Strength And Schedule Evidence</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Comparison</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td>1</td><td><span class='comparison-key'>Weekly rank</span><span class='comparison-context'>Lower is better</span></td><td>8</td></tr><tr><td>9-0</td><td><span class='comparison-key'>All-play record</span><span class='comparison-context'>Record against every team</span></td><td>2-7</td></tr><tr><td>Yes</td><td><span class='comparison-key'>Beat league median</span><span class='comparison-context'>Score strength</span></td><td>No</td></tr><tr><td>141.3</td><td><span class='comparison-key'>Projected score</span><span class='comparison-context'>Pre-week baseline</span></td><td>119.0</td></tr><tr><td>-7.2</td><td><span class='comparison-key'>Vs projection</span><span class='comparison-context'>Actual minus projected</span></td><td>-0.8</td></tr><tr><td>8</td><td><span class='comparison-key'>Opponent rank</span><span class='comparison-context'>Schedule draw this week</span></td><td>1</td></tr></tbody></table></div></div>
+        </section>
+
+
+
+        <section class="section" id="decision-breakdown-section">
+            <h2>Decision Breakdown</h2>
+            <p class="muted">Inspect submitted lineups and completed-score legal alternatives. These hindsight opportunities are separate from performance and manager decision evidence.</p>
+            <div class='decision-table-card manager-comparison rating-evidence'><h3>Results &amp; Hindsight Evidence</h3><p class='muted'>Production, observed decisions and hindsight opportunity answer different questions. Hindsight differences are not grade contributions or proof of a bad decision.</p><div class='table-wrap comparison-board'><table><thead><tr><th class='manager-heading'>Jason P.<span>Pat Pidgeon</span></th><th>Comparison</th><th class='manager-heading'>Matt<span>Love(land) Hurts</span></th></tr></thead><tbody><tr><td>Winner</td><td><span class='comparison-key'>Result</span><span class='comparison-context'>15.9 pts</span></td><td>Loser</td></tr><tr><td>134.2</td><td><span class='comparison-key'>Score</span><span class='comparison-context'>+15.9</span></td><td>118.2</td></tr><tr><td>1/10</td><td><span class='comparison-key'>Weekly rank</span><span class='comparison-context'>Lower is better</span></td><td>8/10</td></tr><tr><td>9-0</td><td><span class='comparison-key'>All-play record</span><span class='comparison-context'>Vs every team</span></td><td>2-7</td></tr><tr><td>-7.2</td><td><span class='comparison-key'>Vs projection</span><span class='comparison-context'>Points</span></td><td>-0.8</td></tr><tr><td>87.4%</td><td><span class='comparison-key'>Lineup execution</span><span class='comparison-context'>Actual / best legal lineup</span></td><td>91.1%</td></tr><tr><td>134.2 / 153.6</td><td><span class='comparison-key'>Actual / optimal points</span><span class='comparison-context'>Lineup evidence</span></td><td>118.2 / 129.7</td></tr><tr><td>7/9 (77.8%)</td><td><span class='comparison-key'>Optimal starts</span><span class='comparison-context'>Legal lineup slots</span></td><td>9/9 (100.0%)</td></tr><tr><td>19.4</td><td><span class='comparison-key'>Actionable bench miss</span><span class='comparison-context'>+7.9</span></td><td>11.5</td></tr><tr><td>Zay Flowers over Jaxon Smith-Njigba (+11.2)</td><td><span class='comparison-key'>Best available swap</span><span class='comparison-context'>Hindsight</span></td><td>None</td></tr><tr><td>4-0</td><td><span class='comparison-key'>Season record</span><span class='comparison-context'>Through this week</span></td><td>1-3</td></tr><tr><td>0.97</td><td><span class='comparison-key'>Expected win credit</span><span class='comparison-context'>Score strength, 0-1</span></td><td>0.14</td></tr><tr><td>+0.03</td><td><span class='comparison-key'>Luck win credit</span><span class='comparison-context'>Actual result minus expectation</span></td><td>-0.14</td></tr><tr><td>No</td><td><span class='comparison-key'>Opponent-assisted win</span><span class='comparison-context'>Would opponent&#x27;s best legal lineup reverse it?</span></td><td>No</td></tr></tbody></table></div></div>
+            <div class="decision-table-stack"><div class='decision-table-card lineup-board' id='full-lineup-board'><h3>Full Matchup Lineups</h3><p class='muted'>Every starter and reserve, aligned by lineup slot. Switch to Ideal to see the highest-scoring legal lineup from the same roster.</p><div class='lineup-toggle' role='group' aria-label='Lineup view'><button type='button' class='active' data-lineup-target='actual'>Actual</button><button type='button' data-lineup-target='ideal'>Ideal</button></div><div class='table-wrap lineup-view' data-lineup-view='actual'><table><thead><tr><th class='stats-col'>Stats</th><th class='player-col'>Pat Pidgeon</th><th class='points-col num'>Pts</th><th class='slot-col'>Pos</th><th class='points-col num'>Pts</th><th class='player-col right'>Love(land) Hurts</th><th class='stats-col right'>Stats</th></tr></thead><tbody><tr><td class='stats-col'><span class='stat-line'>32/45, 335 pass yds · 1 pass TD · 17 pass 1D · 2 rush, 7 yds</span></td><td class='player-col'><span class='player-name'>Dak Prescott</span><span class='player-meta'>Dallas Cowboys · QB</span><span class='mobile-stat'>32/45, 335 pass yds · 1 pass TD · 17 pass 1D · 2 rush, 7 yds</span></td><td class='points-col num'>17.9</td><td class='slot-col'>QB</td><td class='points-col num'>20.8</td><td class='player-col'><span class='player-name right'>Josh Allen</span><span class='player-meta right'>Buffalo Bills · QB</span><span class='mobile-stat right'>23/33, 253 pass yds · 1 pass TD · 1 INT · 9 pass 1D · 5 rush, 4 yds · 1 rush TD · 2 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>23/33, 253 pass yds · 1 pass TD · 1 INT · 9 pass 1D · 5 rush, 4 yds · 1 rush TD · 2 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>20 rush, 122 yds · 1 rec, 7 yds · 2 rush TD · 8 rush 1D · 1 rec 1D</span></td><td class='player-col'><span class='player-name'>Chuba Hubbard</span><span class='player-meta'>Carolina Panthers · RB</span><span class='mobile-stat'>20 rush, 122 yds · 1 rec, 7 yds · 2 rush TD · 8 rush 1D · 1 rec 1D</span></td><td class='points-col num'>33.9</td><td class='slot-col'>RB1</td><td class='points-col num'>18.6</td><td class='player-col'><span class='player-name right'>Ashton Jeanty</span><span class='player-meta right'>Las Vegas Raiders · RB</span><span class='mobile-stat right'>15 rush, 58 yds · 6 rec, 68 yds · 3 rush 1D · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>15 rush, 58 yds · 6 rec, 68 yds · 3 rush 1D · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>15 rush, 46 yds · 4 rec, 31 yds · 1 rush TD · 3 rush 1D</span></td><td class='player-col'><span class='player-name'>Jahmyr Gibbs</span><span class='player-meta'>Detroit Lions · RB</span><span class='mobile-stat'>15 rush, 46 yds · 4 rec, 31 yds · 1 rush TD · 3 rush 1D</span></td><td class='points-col num'>16.7</td><td class='slot-col'>RB2</td><td class='points-col num'>22.6</td><td class='player-col'><span class='player-name right'>Quinshon Judkins</span><span class='player-meta right'>Cleveland Browns · RB</span><span class='mobile-stat right'>17 rush, 53 yds · 6 rec, 43 yds · 1 rush TD · 4 rush 1D · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>17 rush, 53 yds · 6 rec, 43 yds · 1 rush TD · 4 rush 1D · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>8 rec, 116 yds · 5 rec 1D</span></td><td class='player-col'><span class='player-name'>Chris Olave</span><span class='player-meta'>New Orleans Saints · WR</span><span class='mobile-stat'>8 rec, 116 yds · 5 rec 1D</span></td><td class='points-col num'>16.6</td><td class='slot-col'>WR1</td><td class='points-col num'>0.0</td><td class='player-col'><span class='player-name right'>Rashee Rice</span><span class='player-meta right'>Kansas City Chiefs · WR</span><span class='mobile-stat right'>No recorded counting stats</span></td><td class='stats-col'><span class='stat-line right'>No recorded counting stats</span></td></tr><tr><td class='stats-col'><span class='stat-line'>5 rec, 76 yds · 3 rec 1D</span></td><td class='player-col'><span class='player-name'>Jaxon Smith-Njigba</span><span class='player-meta'>Seattle Seahawks · WR</span><span class='mobile-stat'>5 rec, 76 yds · 3 rec 1D</span></td><td class='points-col num'>10.6</td><td class='slot-col'>WR2</td><td class='points-col num'>23.7</td><td class='player-col'><span class='player-name right'>Tee Higgins</span><span class='player-meta right'>Cincinnati Bengals · WR</span><span class='mobile-stat right'>11 rec, 157 yds · 8 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>11 rec, 157 yds · 8 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>1 rec, 7 yds</span></td><td class='player-col'><span class='player-name'>Dalton Kincaid</span><span class='player-meta'>Buffalo Bills · TE</span><span class='mobile-stat'>1 rec, 7 yds</span></td><td class='points-col num'>0.7</td><td class='slot-col'>TE</td><td class='points-col num'>10.7</td><td class='player-col'><span class='player-name right'>Mark Andrews</span><span class='player-meta right'>Baltimore Ravens · TE</span><span class='mobile-stat right'>5 rec, 27 yds · 1 rec TD · 2 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>5 rec, 27 yds · 1 rec TD · 2 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>7 rec, 118 yds · 2 rec TD · 5 rec 1D</span></td><td class='player-col'><span class='player-name'>Nico Collins</span><span class='player-meta'>Houston Texans · WR</span><span class='mobile-stat'>7 rec, 118 yds · 2 rec TD · 5 rec 1D</span></td><td class='points-col num'>28.8</td><td class='slot-col'>W/R/T</td><td class='points-col num'>2.8</td><td class='player-col'><span class='player-name right'>Dontayvion Wicks</span><span class='player-meta right'>Philadelphia Eagles · WR</span><span class='mobile-stat right'>3 rec, 18 yds · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>3 rec, 18 yds · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>1 FG (1 from 20-29) · 2 XP</span></td><td class='player-col'><span class='player-name'>Evan McPherson</span><span class='player-meta'>Cincinnati Bengals · K</span><span class='mobile-stat'>1 FG (1 from 20-29) · 2 XP</span></td><td class='points-col num'>5.0</td><td class='slot-col'>K</td><td class='points-col num'>7.0</td><td class='player-col'><span class='player-name right'>Tyler Loop</span><span class='player-meta right'>Baltimore Ravens · K</span><span class='mobile-stat right'>1 FG (1 from 50+) · 1 FG miss · 3 XP</span></td><td class='stats-col'><span class='stat-line right'>1 FG (1 from 50+) · 1 FG miss · 3 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>30 PA · 3 sacks · 1 INT</span></td><td class='player-col'><span class='player-name'>Chargers</span><span class='player-meta'>Los Angeles Chargers · DEF</span><span class='mobile-stat'>30 PA · 3 sacks · 1 INT</span></td><td class='points-col num'>4.0</td><td class='slot-col'>DEF</td><td class='points-col num'>12.0</td><td class='player-col'><span class='player-name right'>Seahawks</span><span class='player-meta right'>Seattle Seahawks · DEF</span><span class='mobile-stat right'>23 PA · 4 sacks · 2 INT · 2 FR</span></td><td class='stats-col'><span class='stat-line right'>23 PA · 4 sacks · 2 INT · 2 FR</span></td></tr><tr class='total-row'><td colspan='2'>Starter total</td><td class='num'>134.2</td><td class='slot-col'>Total</td><td class='num'>118.2</td><td colspan='2' class='right'>Starter total</td></tr><tr class='roster-divider'><td colspan='7'>Bench and reserve players</td></tr><tr><td class='stats-col'><span class='stat-line'>8 rec, 118 yds · 1 rec TD · 4 rec 1D</span></td><td class='player-col'><span class='player-name'>Zay Flowers</span><span class='player-meta'>Baltimore Ravens · WR</span><span class='mobile-stat'>8 rec, 118 yds · 1 rec TD · 4 rec 1D</span></td><td class='points-col num'>21.8</td><td class='slot-col'>BN</td><td class='points-col num'>17.9</td><td class='player-col'><span class='player-name right'>Jalen Hurts</span><span class='player-meta right'>Philadelphia Eagles · QB</span><span class='mobile-stat right'>12/27, 93 pass yds · 2 pass TD · 5 pass 1D · 5 rush, 18 yds · 1 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>12/27, 93 pass yds · 2 pass TD · 5 pass 1D · 5 rush, 18 yds · 1 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>9 rush, 45 yds · 2 rec, 8 yds · 1 rush TD · 4 rush 1D</span></td><td class='player-col'><span class='player-name'>Omarion Hampton</span><span class='player-meta'>Los Angeles Chargers · RB</span><span class='mobile-stat'>9 rush, 45 yds · 2 rec, 8 yds · 1 rush TD · 4 rush 1D</span></td><td class='points-col num'>15.3</td><td class='slot-col'>BN</td><td class='points-col num'>11.5</td><td class='player-col'><span class='player-name right'>Chris Rodriguez Jr.</span><span class='player-meta right'>Jacksonville Jaguars · RB</span><span class='mobile-stat right'>6 rush, 35 yds · 1 rush TD · 2 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>6 rush, 35 yds · 1 rush TD · 2 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>10 rush, 39 yds · 5 rec, 24 yds · 1 rush 1D · 2 rec 1D</span></td><td class='player-col'><span class='player-name'>Keaton Mitchell</span><span class='player-meta'>Los Angeles Chargers · RB</span><span class='mobile-stat'>10 rush, 39 yds · 5 rec, 24 yds · 1 rush 1D · 2 rec 1D</span></td><td class='points-col num'>10.2</td><td class='slot-col'>BN</td><td class='points-col num'>9.7</td><td class='player-col'><span class='player-name right'>Colston Loveland</span><span class='player-meta right'>Chicago Bears · TE</span><span class='mobile-stat right'>6 rec, 57 yds · 4 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>6 rec, 57 yds · 4 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>6 rec, 59 yds · 3 rec 1D</span></td><td class='player-col'><span class='player-name'>Juwan Johnson</span><span class='player-meta'>New Orleans Saints · TE</span><span class='mobile-stat'>6 rec, 59 yds · 3 rec 1D</span></td><td class='points-col num'>8.9</td><td class='slot-col'>BN</td><td class='points-col num'>6.0</td><td class='player-col'><span class='player-name right'>Harrison Mevis</span><span class='player-meta right'>Los Angeles Rams · K</span><span class='mobile-stat right'>1 FG (1 from 40-49) · 1 FG miss · 3 XP</span></td><td class='stats-col'><span class='stat-line right'>1 FG (1 from 40-49) · 1 FG miss · 3 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>9/17, 85 pass yds · 3 pass 1D · 2 rush, 11 yds · 1 rush 1D · 1 fumble lost</span></td><td class='player-col'><span class='player-name'>Malik Willis</span><span class='player-meta'>Miami Dolphins · QB</span><span class='mobile-stat'>9/17, 85 pass yds · 3 pass 1D · 2 rush, 11 yds · 1 rush 1D · 1 fumble lost</span></td><td class='points-col num'>2.9</td><td class='slot-col'>BN</td><td class='points-col num'>2.0</td><td class='player-col'><span class='player-name right'>Broncos</span><span class='player-meta right'>Denver Broncos · DEF</span><span class='mobile-stat right'>24 PA</span></td><td class='stats-col'><span class='stat-line right'>24 PA</span></td></tr><tr><td class='stats-col'><span class='stat-line'>3 rec, 16 yds</span></td><td class='player-col'><span class='player-name'>Josh Downs</span><span class='player-meta'>Indianapolis Colts · WR</span><span class='mobile-stat'>3 rec, 16 yds</span></td><td class='points-col num'>1.6</td><td class='slot-col'>BN</td><td class='points-col num'>0.0</td><td class='player-col'><span class='player-name right'>DeVonta Smith</span><span class='player-meta right'>Philadelphia Eagles · WR</span><span class='mobile-stat right'>No recorded counting stats</span></td><td class='stats-col'><span class='stat-line right'>No recorded counting stats</span></td></tr><tr><td class='stats-col'><span class='stat-line'>No recorded counting stats</span></td><td class='player-col'><span class='player-name'>Caleb Douglas</span><span class='player-meta'>Miami Dolphins · WR</span><span class='mobile-stat'>No recorded counting stats</span></td><td class='points-col num'>0.0</td><td class='slot-col'>BN</td><td class='points-col num'>0.0</td><td class='player-col'><span class='player-name right'>Travis Etienne Jr.</span><span class='player-meta right'>New Orleans Saints · RB</span><span class='mobile-stat right'>No recorded counting stats</span></td><td class='stats-col'><span class='stat-line right'>No recorded counting stats</span></td></tr></tbody></table></div><div class='table-wrap lineup-view' data-lineup-view='ideal' hidden><table><thead><tr><th class='stats-col'>Stats</th><th class='player-col'>Pat Pidgeon</th><th class='points-col num'>Pts</th><th class='slot-col'>Pos</th><th class='points-col num'>Pts</th><th class='player-col right'>Love(land) Hurts</th><th class='stats-col right'>Stats</th></tr></thead><tbody><tr><td class='stats-col'><span class='stat-line'>32/45, 335 pass yds · 1 pass TD · 17 pass 1D · 2 rush, 7 yds</span></td><td class='player-col'><span class='player-name'>Dak Prescott</span><span class='player-meta'>Dallas Cowboys · QB</span><span class='mobile-stat'>32/45, 335 pass yds · 1 pass TD · 17 pass 1D · 2 rush, 7 yds</span></td><td class='points-col num'>17.9</td><td class='slot-col'>QB</td><td class='points-col num'>20.8</td><td class='player-col'><span class='player-name right'>Josh Allen</span><span class='player-meta right'>Buffalo Bills · QB</span><span class='mobile-stat right'>23/33, 253 pass yds · 1 pass TD · 1 INT · 9 pass 1D · 5 rush, 4 yds · 1 rush TD · 2 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>23/33, 253 pass yds · 1 pass TD · 1 INT · 9 pass 1D · 5 rush, 4 yds · 1 rush TD · 2 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>20 rush, 122 yds · 1 rec, 7 yds · 2 rush TD · 8 rush 1D · 1 rec 1D</span></td><td class='player-col'><span class='player-name'>Chuba Hubbard</span><span class='player-meta'>Carolina Panthers · RB</span><span class='mobile-stat'>20 rush, 122 yds · 1 rec, 7 yds · 2 rush TD · 8 rush 1D · 1 rec 1D</span></td><td class='points-col num'>33.9</td><td class='slot-col'>RB1</td><td class='points-col num'>18.6</td><td class='player-col'><span class='player-name right'>Ashton Jeanty</span><span class='player-meta right'>Las Vegas Raiders · RB</span><span class='mobile-stat right'>15 rush, 58 yds · 6 rec, 68 yds · 3 rush 1D · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>15 rush, 58 yds · 6 rec, 68 yds · 3 rush 1D · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>15 rush, 46 yds · 4 rec, 31 yds · 1 rush TD · 3 rush 1D</span></td><td class='player-col'><span class='player-name'>Jahmyr Gibbs</span><span class='player-meta'>Detroit Lions · RB</span><span class='mobile-stat'>15 rush, 46 yds · 4 rec, 31 yds · 1 rush TD · 3 rush 1D</span></td><td class='points-col num'>16.7</td><td class='slot-col'>RB2</td><td class='points-col num'>11.5</td><td class='player-col'><span class='player-name right'>Chris Rodriguez Jr.</span><span class='player-meta right'>Jacksonville Jaguars · RB</span><span class='mobile-stat right'>6 rush, 35 yds · 1 rush TD · 2 rush 1D</span></td><td class='stats-col'><span class='stat-line right'>6 rush, 35 yds · 1 rush TD · 2 rush 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>8 rec, 116 yds · 5 rec 1D</span></td><td class='player-col'><span class='player-name'>Chris Olave</span><span class='player-meta'>New Orleans Saints · WR</span><span class='mobile-stat'>8 rec, 116 yds · 5 rec 1D</span></td><td class='points-col num'>16.6</td><td class='slot-col'>WR1</td><td class='points-col num'>2.8</td><td class='player-col'><span class='player-name right'>Dontayvion Wicks</span><span class='player-meta right'>Philadelphia Eagles · WR</span><span class='mobile-stat right'>3 rec, 18 yds · 1 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>3 rec, 18 yds · 1 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>8 rec, 118 yds · 1 rec TD · 4 rec 1D</span></td><td class='player-col'><span class='player-name'>Zay Flowers</span><span class='player-meta'>Baltimore Ravens · WR</span><span class='mobile-stat'>8 rec, 118 yds · 1 rec TD · 4 rec 1D</span></td><td class='points-col num'>21.8</td><td class='slot-col'>WR2</td><td class='points-col num'>23.7</td><td class='player-col'><span class='player-name right'>Tee Higgins</span><span class='player-meta right'>Cincinnati Bengals · WR</span><span class='mobile-stat right'>11 rec, 157 yds · 8 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>11 rec, 157 yds · 8 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>6 rec, 59 yds · 3 rec 1D</span></td><td class='player-col'><span class='player-name'>Juwan Johnson</span><span class='player-meta'>New Orleans Saints · TE</span><span class='mobile-stat'>6 rec, 59 yds · 3 rec 1D</span></td><td class='points-col num'>8.9</td><td class='slot-col'>TE</td><td class='points-col num'>10.7</td><td class='player-col'><span class='player-name right'>Mark Andrews</span><span class='player-meta right'>Baltimore Ravens · TE</span><span class='mobile-stat right'>5 rec, 27 yds · 1 rec TD · 2 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>5 rec, 27 yds · 1 rec TD · 2 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>7 rec, 118 yds · 2 rec TD · 5 rec 1D</span></td><td class='player-col'><span class='player-name'>Nico Collins</span><span class='player-meta'>Houston Texans · WR</span><span class='mobile-stat'>7 rec, 118 yds · 2 rec TD · 5 rec 1D</span></td><td class='points-col num'>28.8</td><td class='slot-col'>W/R/T</td><td class='points-col num'>22.6</td><td class='player-col'><span class='player-name right'>Quinshon Judkins</span><span class='player-meta right'>Cleveland Browns · RB</span><span class='mobile-stat right'>17 rush, 53 yds · 6 rec, 43 yds · 1 rush TD · 4 rush 1D · 3 rec 1D</span></td><td class='stats-col'><span class='stat-line right'>17 rush, 53 yds · 6 rec, 43 yds · 1 rush TD · 4 rush 1D · 3 rec 1D</span></td></tr><tr><td class='stats-col'><span class='stat-line'>1 FG (1 from 20-29) · 2 XP</span></td><td class='player-col'><span class='player-name'>Evan McPherson</span><span class='player-meta'>Cincinnati Bengals · K</span><span class='mobile-stat'>1 FG (1 from 20-29) · 2 XP</span></td><td class='points-col num'>5.0</td><td class='slot-col'>K</td><td class='points-col num'>7.0</td><td class='player-col'><span class='player-name right'>Tyler Loop</span><span class='player-meta right'>Baltimore Ravens · K</span><span class='mobile-stat right'>1 FG (1 from 50+) · 1 FG miss · 3 XP</span></td><td class='stats-col'><span class='stat-line right'>1 FG (1 from 50+) · 1 FG miss · 3 XP</span></td></tr><tr><td class='stats-col'><span class='stat-line'>30 PA · 3 sacks · 1 INT</span></td><td class='player-col'><span class='player-name'>Chargers</span><span class='player-meta'>Los Angeles Chargers · DEF</span><span class='mobile-stat'>30 PA · 3 sacks · 1 INT</span></td><td class='points-col num'>4.0</td><td class='slot-col'>DEF</td><td class='points-col num'>12.0</td><td class='player-col'><span class='player-name right'>Seahawks</span><span class='player-meta right'>Seattle Seahawks · DEF</span><span class='mobile-stat right'>23 PA · 4 sacks · 2 INT · 2 FR</span></td><td class='stats-col'><span class='stat-line right'>23 PA · 4 sacks · 2 INT · 2 FR</span></td></tr><tr class='total-row'><td colspan='2'>Ideal total</td><td class='num'>153.6</td><td class='slot-col'>Total</td><td class='num'>129.7</td><td colspan='2' class='right'>Ideal total</td></tr></tbody></table></div></div><div class='decision-table-card'><h3>Lineup Opportunities</h3><p class='muted'>Legal start-sit changes available on each manager&#x27;s submitted roster, ranked by realized point gain.</p><div class='table-wrap opportunity-board'><table><thead><tr><th>Pat Pidgeon</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Zay Flowers over Jaxon Smith-Njigba</span><span class='compare-meta'>WR | +11.2 pts | BENCH VS STARTER</span></td><td class='compare-cell'><span class='muted'>No notable swing</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Juwan Johnson over Dalton Kincaid</span><span class='compare-meta'>TE | +8.2 pts | BENCH VS STARTER</span></td><td class='compare-cell'><span class='muted'>No notable swing</span></td></tr></tbody></table></div></div><div class='decision-table-card'><h3>Waiver Alternatives</h3><p class='muted'>Available-player starts that improved the lineup beyond same-position options already rostered. These are completed-score alternatives, not drop recommendations.</p><div class='table-wrap opportunity-board'><table><thead><tr><th>Pat Pidgeon</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td class='compare-cell'><span class='compare-player'>Start available Will Reichard over Evan McPherson</span><span class='compare-meta'>K | +14.0 pts | GAIN BEYOND ROSTER OPTIONS</span></td><td class='compare-cell'><span class='compare-player'>Start available Will Reichard over Tyler Loop</span><span class='compare-meta'>K | +12.0 pts | GAIN BEYOND ROSTER OPTIONS</span></td></tr><tr><td class='compare-cell'><span class='compare-player'>Start available Giants over Chargers</span><span class='compare-meta'>DEF | +10.0 pts | GAIN BEYOND ROSTER OPTIONS</span></td><td class='compare-cell'><span class='compare-player'>Start available T.J. Hockenson over Mark Andrews</span><span class='compare-meta'>TE | +9.2 pts | GAIN BEYOND ROSTER OPTIONS</span></td></tr></tbody></table></div></div></div>
+        </section>
+
+        <section class='section' id='crowd-decisions-section'><h2>Following the Crowd—or Finding an Edge?</h2><p class='muted'>The grading reference uses legal lineups and strictly prior starting/ownership expectations. Crowd following receives competent judgment credit even when an unexpected bench breakout creates hindsight regret. Unknown starters are held fixed and unknown bench expectations are excluded from the observed crowd reference; partial coverage remains explicit. Successful unpopular choices and costly high-expectation benchings affect judgment. Recorded participation does not prove availability at lineup lock; excluded or uncertain alternatives are not fabricated mistakes. <a href='matchup_03_pat-pidgeon_vs_love-land-hurts_math.html#crowd-model'>Model and arithmetic →</a></p><div class='deep-grid'><article class='deep-card'><h3>Pat Pidgeon</h3><p><strong>Expectation-aware judgment: 89.75 / 100 assessed</strong> · assessed</p><p>Supported actual-versus-crowd edge: <strong>+13.5 fantasy points</strong>. Crowd lineup: 120.7 points; confidence contrast: 0.632. Judgment does not repeat hindsight missed points.</p><p class='muted'>Assessed judgment coverage: 100.0%. Prior ownership coverage: 100.0%. Prior expectation snapshot weeks: 3. Missing ownership falls back to prior starting rates, never zero ownership.</p><p class='muted'>Season judgment: 73.41 / 100 assessed. This is the J component of Overall Manager Assessment, not the legacy changed-lineup decision diagnostic.</p><details><summary>Supported actual and crowd-preferred lineups</summary><div class='deep-grid'><div><h4>Actual</h4><ul><li><strong>QB · Dak Prescott</strong> — 17.9 pts; prior starting rate 79.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>RB · Jahmyr Gibbs</strong> — 16.7 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Chuba Hubbard</strong> — 33.9 pts; prior starting rate 75.0%; prior ownership 95.0% (snapshot week 3)</li><li><strong>WR · Jaxon Smith-Njigba</strong> — 10.6 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Chris Olave</strong> — 16.6 pts; prior starting rate 97.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>TE · Dalton Kincaid</strong> — 0.7 pts; prior starting rate 81.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>W/R/T · Nico Collins</strong> — 28.8 pts; prior starting rate 16.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>K · Evan McPherson</strong> — 5.0 pts; prior starting rate 64.0%; prior ownership 67.0% (snapshot week 3)</li><li><strong>DEF · Chargers</strong> — 4.0 pts; prior starting rate 13.0%; prior ownership 20.0% (snapshot week 3)</li></ul></div><div><h4>Crowd-preferred</h4><ul><li><strong>QB · Dak Prescott</strong> — 17.9 pts; prior starting rate 79.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>RB · Jahmyr Gibbs</strong> — 16.7 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Chuba Hubbard</strong> — 33.9 pts; prior starting rate 75.0%; prior ownership 95.0% (snapshot week 3)</li><li><strong>WR · Jaxon Smith-Njigba</strong> — 10.6 pts; prior starting rate 100.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Chris Olave</strong> — 16.6 pts; prior starting rate 97.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>TE · Dalton Kincaid</strong> — 0.7 pts; prior starting rate 81.0%; prior ownership 98.0% (snapshot week 3)</li><li><strong>W/R/T · Omarion Hampton</strong> — 15.3 pts; prior starting rate 95.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>K · Evan McPherson</strong> — 5.0 pts; prior starting rate 64.0%; prior ownership 67.0% (snapshot week 3)</li><li><strong>DEF · Chargers</strong> — 4.0 pts; prior starting rate 13.0%; prior ownership 20.0% (snapshot week 3)</li></ul></div></div></details></article><article class='deep-card'><h3>Love(land) Hurts</h3><p><strong>Expectation-aware judgment: 68.65 / 100 assessed</strong> · assessed</p><p>Supported actual-versus-crowd edge: <strong>-6.9 fantasy points</strong>. Crowd lineup: 125.1 points; confidence contrast: 0.364. Judgment does not repeat hindsight missed points.</p><p class='muted'>Assessed judgment coverage: 100.0%. Prior ownership coverage: 100.0%. Prior expectation snapshot weeks: 3. Missing ownership falls back to prior starting rates, never zero ownership.</p><p class='muted'>Season judgment: 72.10 / 100 assessed. This is the J component of Overall Manager Assessment, not the legacy changed-lineup decision diagnostic.</p><details><summary>Supported actual and crowd-preferred lineups</summary><div class='deep-grid'><div><h4>Actual</h4><ul><li><strong>QB · Josh Allen</strong> — 20.8 pts; prior starting rate 98.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Quinshon Judkins</strong> — 22.6 pts; prior starting rate 74.0%; prior ownership 96.0% (snapshot week 3)</li><li><strong>RB · Ashton Jeanty</strong> — 18.6 pts; prior starting rate 97.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Rashee Rice</strong> — 0.0 pts; prior starting rate 87.0%; prior ownership 99.0% (snapshot week 3)</li><li><strong>WR · Tee Higgins</strong> — 23.7 pts; prior starting rate 92.0%; prior ownership 99.0% (snapshot week 3)</li><li><strong>TE · Mark Andrews</strong> — 10.7 pts; prior starting rate 51.0%; prior ownership 90.0% (snapshot week 3)</li><li><strong>W/R/T · Dontayvion Wicks</strong> — 2.8 pts; prior starting rate 18.0%; prior ownership 50.0% (snapshot week 3)</li><li><strong>K · Tyler Loop</strong> — 7.0 pts; prior starting rate 82.0%; prior ownership 85.0% (snapshot week 3)</li><li><strong>DEF · Seahawks</strong> — 12.0 pts; prior starting rate 97.0%; prior ownership 99.0% (snapshot week 3)</li></ul></div><div><h4>Crowd-preferred</h4><ul><li><strong>QB · Josh Allen</strong> — 20.8 pts; prior starting rate 98.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>RB · Quinshon Judkins</strong> — 22.6 pts; prior starting rate 74.0%; prior ownership 96.0% (snapshot week 3)</li><li><strong>RB · Ashton Jeanty</strong> — 18.6 pts; prior starting rate 97.0%; prior ownership 100.0% (snapshot week 3)</li><li><strong>WR · Rashee Rice</strong> — 0.0 pts; prior starting rate 87.0%; prior ownership 99.0% (snapshot week 3)</li><li><strong>WR · Tee Higgins</strong> — 23.7 pts; prior starting rate 92.0%; prior ownership 99.0% (snapshot week 3)</li><li><strong>TE · Mark Andrews</strong> — 10.7 pts; prior starting rate 51.0%; prior ownership 90.0% (snapshot week 3)</li><li><strong>W/R/T · Colston Loveland</strong> — 9.7 pts; prior starting rate 52.0%; prior ownership 96.0% (snapshot week 3)</li><li><strong>K · Tyler Loop</strong> — 7.0 pts; prior starting rate 82.0%; prior ownership 85.0% (snapshot week 3)</li><li><strong>DEF · Seahawks</strong> — 12.0 pts; prior starting rate 97.0%; prior ownership 99.0% (snapshot week 3)</li></ul></div></div></details></article></div></section>
+
+        <section class="section" id="head-to-head-section">
+            <h2>Head-to-Head History</h2>
+            <p class="muted">This compares the current result to the full series between these managers, not just the current season.</p>
+            <div class='rivalry-banner'><strong>Historic Rivalry</strong><br>37 meetings across 20 seasons, including 1 in the playoffs.</div>
+            <div class="card-grid">
+                <div class="detail-card">
+                    <div class="label">Manager Series Record</div>
+                    <div class="value">21-16</div>
+                    <div class="subvalue">Pat Pidgeon vs Love(land) Hurts</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Average Margin</div>
+                    <div class="value">6.0</div>
+                    <div class="subvalue">Average margin from Pat Pidgeon&#x27;s perspective: +6.0.</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Current Margin Rank</div>
+                    <div class="value">11th closest</div>
+                    <div class="subvalue">6th highest combined score</div>
+                </div>
+                <div class="detail-card">
+                    <div class="label">Playoff Meetings</div>
+                    <div class="value">1</div>
+                    <div class="subvalue">Pat Pidgeon carries the current 3-game streak.</div>
+                </div>
+                <div class='detail-card wide'><h3>Last Five Meetings</h3><div class='table-wrap'><table><thead><tr><th>Season</th><th>Context</th><th>Winner</th><th class='num'>Margin</th><th class='num'>Combined</th></tr></thead><tbody><tr><td><a href="matchup_03_pat-pidgeon_vs_love-land-hurts.html">2026 W4</a></td><td>regular season</td><td>Pat Pidgeon</td><td class='num'>15.9</td><td class='num'>252.4</td></tr><tr><td><a href="../../2025/matchups_week_16/matchup_01_pat-pidgeon_vs_you-aren-t-worthy-of-coleman.html">2025 W16</a></td><td>consolation</td><td>Pat Pidgeon</td><td class='num'>20.7</td><td class='num'>157.8</td></tr><tr><td><a href="../../2025/matchups_week_07/matchup_02_pat-pidgeon_vs_you-aren-t-worthy-of-coleman.html">2025 W7</a></td><td>regular season</td><td>Pat Pidgeon</td><td class='num'>109.4</td><td class='num'>209.0</td></tr><tr><td>2024 W14</td><td>regular season</td><td>Love(land) Hurts</td><td class='num'>24.3</td><td class='num'>216.0</td></tr><tr><td>2024 W5</td><td>regular season</td><td>Pat Pidgeon</td><td class='num'>3.2</td><td class='num'>232.4</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+
+        <section class="section" id="deep-metrics-section">
+            <h2>Deep Metrics</h2>
+            <p class="muted">Expandable evidence for people who want the extra analytical layer.</p>
+            <details class="deep-metrics">
+                <summary>Open deep metrics</summary>
+                <div class="card-grid" style="margin-top:12px;">
+                    <div class='decision-table-card'><h3>Lineup Decisions</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Comparison</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td>134.2</td><td><span class='comparison-key'>Actual</span><span class='comparison-context'>Started points</span></td><td>118.2</td></tr><tr><td>153.6</td><td><span class='comparison-key'>Optimal</span><span class='comparison-context'>Best legal lineup</span></td><td>129.7</td></tr><tr><td>19.4</td><td><span class='comparison-key'>Left on bench</span><span class='comparison-context'>Actionable gap</span></td><td>11.5</td></tr><tr><td>77.8%</td><td><span class='comparison-key'>Optimal start rate</span><span class='comparison-context'>Correct slots</span></td><td>100.0%</td></tr></tbody></table></div></div>
+                    <div class='decision-table-card'><h3>Team Style</h3><div class='table-wrap comparison-board'><table><thead><tr><th>Pat Pidgeon</th><th>Comparison</th><th>Love(land) Hurts</th></tr></thead><tbody><tr><td>Stable Build</td><td><span class='comparison-key'>Style</span><span class='comparison-context'>Scoring shape</span></td><td>Stable Build</td></tr><tr><td>60.0%</td><td><span class='comparison-key'>Top 3 share</span><span class='comparison-context'>Starter concentration</span></td><td>56.8%</td></tr><tr><td>40.0%</td><td><span class='comparison-key'>Structural integrity</span><span class='comparison-context'>Depth across starters</span></td><td>43.2%</td></tr><tr><td>46.7</td><td><span class='comparison-key'>Fragility</span><span class='comparison-context'>Reliance on top scorers</span></td><td>39.2</td></tr><tr><td>10.6</td><td><span class='comparison-key'>Volatility</span><span class='comparison-context'>Starter scoring spread</span></td><td>8.3</td></tr></tbody></table></div></div>
+                    <div class="detail-card wide">
+                        <h3>Timeline Status</h3>
+                        <p>Final starter points grouped by scheduled kickoff, not live scores or actual lead changes. All points from each group are credited together; overlapping games are not reconstructed minute by minute.</p>
+                        <p class="muted">Status: available</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+    </main>
+    <script>
+    document.querySelectorAll('.lineup-toggle button').forEach((button) => {
+        button.addEventListener('click', () => {
+            const board = button.closest('.lineup-board');
+            const target = button.dataset.lineupTarget;
+            board.querySelectorAll('.lineup-toggle button').forEach((item) =>
+                item.classList.toggle('active', item === button)
+            );
+            board.querySelectorAll('[data-lineup-view]').forEach((view) => {
+                view.hidden = view.dataset.lineupView !== target;
+            });
+        });
+    });
+    const usedHeadingIds = new Set();
+    document.querySelectorAll('h1, h2, h3').forEach((heading) => {
+        const base = (heading.id || heading.textContent || 'section').trim().toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section';
+        let id = base;
+        let suffix = 2;
+        while (usedHeadingIds.has(id) || (document.getElementById(id) && document.getElementById(id) !== heading)) {
+            id = `${base}-${suffix++}`;
+        }
+        heading.id = id;
+        usedHeadingIds.add(id);
+        const anchor = document.createElement('a');
+        anchor.className = 'heading-anchor';
+        anchor.href = `#${id}`;
+        anchor.textContent = '#';
+        anchor.setAttribute('aria-label', `Link to ${heading.textContent.trim()}`);
+        heading.appendChild(anchor);
+    });
+    </script>
+</body>
+</html>
