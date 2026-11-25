@@ -1,10 +1,10 @@
 {
-  "finished_at": "2026-11-24T12:42:34.971917+00:00",
+  "finished_at": "2026-11-25T01:35:15.673401+00:00",
   "metadata": {
     "write_back": true
   },
   "pipeline": "season",
-  "run_id": "season-2026-1795524146",
+  "run_id": "season-2026-1795570505",
   "stages": [
     {
       "details": {
@@ -102,7 +102,7 @@
         "source_path": "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/LIT/pivoted_scoring.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/scoring/2026.csv"
       },
-      "duration_ms": 8,
+      "duration_ms": 34,
       "error": null,
       "name": "league_scoring",
       "outputs_written": [
@@ -220,14 +220,15 @@
         ],
         "mode": "write_back",
         "parity": {
-          "derived_rows": 28902,
+          "derived_rows": 31794,
           "existing_rows": 28902
         },
-        "rows": 28902,
+        "rows": 31794,
         "source_mode": "raw_importer_weekly_player_stats",
         "source_paths": [
           "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/all/weekly/stats/weekly_player_stats_week_1.csv",
           "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/all/weekly/stats/weekly_player_stats_week_10.csv",
+          "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/all/weekly/stats/weekly_player_stats_week_11.csv",
           "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/all/weekly/stats/weekly_player_stats_week_2.csv",
           "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/all/weekly/stats/weekly_player_stats_week_3.csv",
           "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/all/weekly/stats/weekly_player_stats_week_4.csv",
@@ -248,10 +249,11 @@
           7,
           8,
           9,
-          10
+          10,
+          11
         ]
       },
-      "duration_ms": 925,
+      "duration_ms": 1221,
       "error": null,
       "name": "players_raw",
       "outputs_written": [
@@ -283,7 +285,7 @@
         "source_path": "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/LIT/weeklyroster.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv"
       },
-      "duration_ms": 124,
+      "duration_ms": 185,
       "error": null,
       "name": "roster_with_positions",
       "outputs_written": [
@@ -492,14 +494,14 @@
           "existing_cols": 192,
           "existing_rows": 28902,
           "generated_cols": 192,
-          "generated_rows": 28902
+          "generated_rows": 31794
         },
         "points_columns_generated": 87,
-        "rows": 28902,
+        "rows": 31794,
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/raw/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/enriched/weekly/2026.csv"
       },
-      "duration_ms": 1481,
+      "duration_ms": 1902,
       "error": null,
       "name": "players_enriched_weekly",
       "outputs_written": [
@@ -519,13 +521,13 @@
           "comparison_rows": 170,
           "derived_rows": 170,
           "existing_rows": 170,
-          "max_abs_total_diff": 1.4210854715202004e-14
+          "max_abs_total_diff": 164.9666666666666
         },
         "roster_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
         "rows": 170,
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/actual/weekly/2026.csv"
       },
-      "duration_ms": 15,
+      "duration_ms": 17,
       "error": null,
       "name": "team_score_actual_weekly",
       "outputs_written": [
@@ -583,9 +585,9 @@
     },
     {
       "details": {
-        "checked_team_weeks": 100
+        "checked_team_weeks": 110
       },
-      "duration_ms": 158,
+      "duration_ms": 178,
       "error": null,
       "name": "completed_score_reconciliation",
       "outputs_written": [],
@@ -611,14 +613,14 @@
         ],
         "mode": "write_back",
         "parity": {
-          "derived_rows": 1600,
+          "derived_rows": 1760,
           "existing_rows": 1600
         },
         "roster_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
-        "rows": 1600,
+        "rows": 1760,
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/lineup/ideal/lineup/weekly/2026.csv"
       },
-      "duration_ms": 1359,
+      "duration_ms": 1518,
       "error": null,
       "name": "ideal_lineup_weekly",
       "outputs_written": [
@@ -635,16 +637,16 @@
         ],
         "mode": "write_back",
         "parity": {
-          "comparison_rows": 100,
-          "derived_rows": 100,
+          "comparison_rows": 110,
+          "derived_rows": 110,
           "existing_rows": 100,
-          "max_abs_total_diff": 2.842170943040401e-14
+          "max_abs_total_diff": 191.33333333333323
         },
         "roster_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
-        "rows": 100,
+        "rows": 110,
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/lineup/ideal/total/2026.csv"
       },
-      "duration_ms": 1246,
+      "duration_ms": 1474,
       "error": null,
       "name": "ideal_total",
       "outputs_written": [
@@ -668,14 +670,14 @@
         ],
         "mode": "write_back",
         "parity": {
-          "derived_rows": 1600,
+          "derived_rows": 1760,
           "existing_rows": 1600
         },
         "roster_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
-        "rows": 1600,
+        "rows": 1760,
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/comparison/over_replacement/weekly/2026.csv"
       },
-      "duration_ms": 1950,
+      "duration_ms": 2375,
       "error": null,
       "name": "over_replacement_weekly",
       "outputs_written": [
@@ -708,7 +710,7 @@
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/worst/by_position/weekly/2026.csv"
       },
-      "duration_ms": 9,
+      "duration_ms": 10,
       "error": null,
       "name": "worst_by_position_weekly",
       "outputs_written": [
@@ -731,7 +733,7 @@
         "source_path": "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/LIT/draft_results.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/2026.csv"
       },
-      "duration_ms": 2,
+      "duration_ms": 1,
       "error": null,
       "name": "teams_draft",
       "outputs_written": [
@@ -755,10 +757,10 @@
         ],
         "draft_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/2026.csv",
         "mode": "write_back",
-        "rows": 267,
+        "rows": 279,
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/draft/evaluation/points/season/2026.csv"
       },
-      "duration_ms": 1039,
+      "duration_ms": 1261,
       "error": null,
       "name": "draft_evaluation_points_season",
       "outputs_written": [
@@ -777,11 +779,11 @@
           "weeks_played"
         ],
         "mode": "write_back",
-        "rows": 2915,
+        "rows": 2917,
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/enriched/weekly/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/players/score/season/2026.csv"
       },
-      "duration_ms": 142,
+      "duration_ms": 198,
       "error": null,
       "name": "players_score_season",
       "outputs_written": [
@@ -801,7 +803,7 @@
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/played/total/2026.csv"
       },
-      "duration_ms": 5,
+      "duration_ms": 7,
       "error": null,
       "name": "teams_score_played_total",
       "outputs_written": [
@@ -821,7 +823,7 @@
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/roster/with_positions/weekly/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/bench/total/2026.csv"
       },
-      "duration_ms": 5,
+      "duration_ms": 6,
       "error": null,
       "name": "teams_score_bench_total",
       "outputs_written": [
@@ -843,7 +845,7 @@
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/matchup/raw/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/stats/2026.csv"
       },
-      "duration_ms": 1,
+      "duration_ms": 2,
       "error": null,
       "name": "league_stats",
       "outputs_written": [
@@ -889,7 +891,7 @@
         "source_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/teams/score/played/total/2026.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/alternative_scoring/2026.csv"
       },
-      "duration_ms": 11,
+      "duration_ms": 14,
       "error": null,
       "name": "standings_alt",
       "outputs_written": [
@@ -914,7 +916,7 @@
         "rows": 10,
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/standings/season/alternative_scoring_with_changes/2026.csv"
       },
-      "duration_ms": 17,
+      "duration_ms": 20,
       "error": null,
       "name": "standings_alt_with_changes",
       "outputs_written": [
@@ -1004,11 +1006,11 @@
           "playerDestinationTeamKey"
         ],
         "mode": "write_back",
-        "rows": 276,
+        "rows": 318,
         "source_path": "/Users/csuchanec/dev/code/YahooFantasyImporter/data/yahoo/2026/LIT/transaction.csv",
         "target_path": "/Users/csuchanec/dev/code/FantasyFootball/datasets/yahoo/league/transactions/raw/2026.csv"
       },
-      "duration_ms": 3,
+      "duration_ms": 4,
       "error": null,
       "name": "transactions_raw_optional",
       "outputs_written": [
@@ -1017,7 +1019,7 @@
       "success": true
     }
   ],
-  "started_at": "2026-11-24T12:42:26.432792+00:00",
+  "started_at": "2026-11-25T01:35:05.204838+00:00",
   "strict": true,
   "year": 2026
 }
